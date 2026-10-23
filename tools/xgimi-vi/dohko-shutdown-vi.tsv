@@ -1,0 +1,51 @@
+# Menu tat may cua may chieu XGIMI DOHKO (com.xgimi.shutdown, firmware v1.6.50): ten chuoi<TAB>tieng Viet.
+# App khong co ban vi nen hien tieng Anh (mac dinh). Cai bang dohko-shutdown-vi.ps1.
+app_name	Menu tắt máy
+power_off	Tắt máy
+power_sleep	Ngủ
+power_standby	Chờ
+restart	Khởi động lại
+shut_screen	Tắt màn hình
+power_travel	Tắt máy khi di chuyển
+time_power_off	Hẹn giờ tắt
+time_power_off_tip	Hủy hẹn giờ tắt
+time_power_title	%d phút
+time_shutdown_toast	Máy sẽ tắt sau %d phút
+clean_time_shutdown	Đã hủy hẹn giờ tắt máy
+cancel_power_txt	Hủy
+update_power_off	Cập nhật và tắt máy
+notice_update_power_off	Cập nhật và tắt máy
+notice_update_power_off_tip	Không ngắt điện trong khi cập nhật
+shutdown_force_update_tip	Không ngắt điện trong khi cập nhật
+notice_please_use_adapter_retry	Hãy cắm bộ sạc rồi thử lại
+portrait_error_tip	Hãy đặt máy nằm ngang rồi thử lại
+movie_mode	Chế độ xem phim
+music_mode	Chế độ loa nhạc
+power_sleep_title	Ứng dụng XGIMI có thể tải phim GMAX từ xa
+power_sleep_title2	Đánh thức bằng giọng nói, Bluetooth điện thoại hoặc truyền màn hình
+power_sleep_title_downloading	Đang tải phim về máy, nên dùng chế độ Ngủ
+power_sleep_title_downloading2	Đang tải phim về máy, nên dùng chế độ Ngủ
+power_shutdown_down_cache_tip	Đang tải phim về máy, nên dùng chế độ Ngủ
+power_travel_tip_mcu	Chưa cắm điện: bấm nút nguồn 2 lần để bật máy
+power_travel_tip_no_mcu	Bật bảo vệ khi di chuyển, tránh vô tình bật máy
+timed	Nhắc tự tắt máy
+timed_cancel	Hủy tắt máy
+timed_sure	Tắt ngay
+dialog_title_10_second	Tự tắt máy sau %d giây
+dialog_title_5_minute	Tự tắt máy sau 5 phút
+dialog_tip	Bấm để hủy hẹn giờ tắt máy
+resetTv	[{key:OPEN_RESTART_DEVICE_SYSTEM_UI,name:Khởi động lại,supportState:1,pkg:com.xgimi.systemui, category:[]},{key:SEND_COUNT_DOWN_MINUTE_TIME_SYSTEM_UI,name:Đếm ngược hẹn giờ tắt,supportState:1,pkg:com.xgimi.systemui, category:[]}]
+widget_dialog_loading	Đang tải…
+widget_dialog_loading2	Đang tải
+xbase_error_ConnectException	Mạng có vấn đề, mã lỗi: %s
+xbase_error_default	Lỗi không xác định, mã lỗi: %s
+xbase_error_no_network	Chưa kết nối mạng, mã lỗi: %s
+xbase_error_no_space	Không đủ bộ nhớ, mã lỗi: %s
+xbase_error_service_exception	Máy chủ đang gặp sự cố, mã lỗi: %s
+xbase_error_SocketTimeoutException	Hết thời gian chờ mạng, mã lỗi: %s
+xbase_error_SSLHandshakeException	Hãy kiểm tra ngày giờ của máy, mã lỗi: %s
+xbase_error_TimeoutException	Hết thời gian kết nối mạng, mã lỗi: %s
+xbase_no_data	Chưa có dữ liệu
+xbase_progress_wait_fail	Có lỗi!
+xbase_to_connect_network	Kết nối mạng
+xbase_to_retry	Thử lại

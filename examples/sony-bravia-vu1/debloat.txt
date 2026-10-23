@@ -1,0 +1,39 @@
+# Sony BRAVIA VU1 4K (device BRAVIA_VU1, Realtek SoC), Vietnam/Asia firmware, 2 GB RAM
+# Android TV 11 (API 30), build RTT7.210105.001
+#
+# Stock launcher: com.google.android.tvlauncher
+# New launcher:   com.gathin.tvhome (Apple TV style native leanback launcher)
+#
+# Apply debloat:
+#   powershell -File tools/disable.ps1 -TvHost 192.168.2.21 examples/sony-bravia-vu1/debloat.txt
+#
+# Restore all:
+#   powershell -File backup/sony-bravia-vu1/restore_all.ps1 -TvHost 192.168.2.21
+
+# Google telemetry, trackers, and unused extras
+com.google.android.feedback              # Google feedback reporter
+com.google.android.partnersetup          # RLZ install-attribution provider
+com.google.android.onetimeinitializer    # runs once after first setup
+com.google.android.syncadapters.calendar # calendar sync & GrowthKit promos
+com.google.android.play.games            # Play Games
+com.google.android.tvsetup.partnercustomizer # Partner customizer
+android.autoinstalls.config.Sony.BRAVIA_VU1  # Sony partner auto-installs
+com.android.printspooler                 # Android print spooler
+
+# Sony promo and help tiles
+com.sony.dtv.smarthelp                   # Sony help tile
+com.sony.dtv.helpguidecontents           # help guide contents
+com.sony.dtv.eulaviewer                  # EULA viewer
+com.sony.dtv.softwarelicense             # Software license viewer
+com.sony.dtv.ime.chww                    # Chinese IME
+
+# Realtek background leftovers
+com.realtek.servicemenu                  # Factory/service menu
+com.realtek.media.notification           # USB media insertion popup notification
+
+# Recommendations & Setup Wizard
+com.google.android.tvrecommendations     # Sponsored rows and recommendation channels (~114 MB RAM)
+com.google.android.tungsten.setupwraith  # Setup wizard (~87 MB RAM)
+
+# Stock launcher (replaced by com.gathin.tvhome)
+com.google.android.tvlauncher            # Stock Android TV launcher (~166 MB RAM)

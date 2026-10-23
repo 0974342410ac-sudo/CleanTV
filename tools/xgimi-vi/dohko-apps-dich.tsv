@@ -1,0 +1,230 @@
+# Bang dich chu tieng Trung -> tieng Viet cho cac ung dung XGIMI DOHKO hay thay (dohko-apps-chuoi.tsv).
+# Moi cau dich mot lan, ap dung cho moi ung dung co cau do. Giu nguyen %s, %d, %f, %1$s, %ds va \n.
+# Dung chung cho dohko-boot-vi.ps1 va ban cap nhat USB (build-usb.ps1).
+暂停	Tạm dừng
+播放	Phát
+试听VIP	Nghe thử VIP
+播放VIP	Phát VIP
+播放列表	Danh sách phát
+切换悬浮歌词	Bật/tắt lời bài hát nổi
+全键盘	Bàn phím đầy đủ
+九宫格	Bàn phím số
+正在加载中…	Đang tải…
+正在加载中	Đang tải
+网络好像有问题，错误码：%s	Mạng có vấn đề, mã lỗi: %s
+请查看系统时间日期是否正确，错误码：%s	Hãy kiểm tra ngày giờ của máy, mã lỗi: %s
+网络请求超时，错误码：%s	Hết thời gian chờ mạng, mã lỗi: %s
+网络连接超时，错误码：%s	Hết thời gian kết nối mạng, mã lỗi: %s
+未知异常，错误码：%s	Lỗi không xác định, mã lỗi: %s
+未连接网络，错误码：%s	Chưa kết nối mạng, mã lỗi: %s
+存储空间不足，错误码：%s	Không đủ bộ nhớ, mã lỗi: %s
+服务器开小差了，错误码：%s	Máy chủ đang gặp sự cố, mã lỗi: %s
+暂无数据	Chưa có dữ liệu
+出错啦！	Có lỗi!
+连接网络	Kết nối mạng
+重试	Thử lại
+应用打开失败，请稍后重试	Không mở được ứng dụng, hãy thử lại sau
+打开失败	Mở thất bại
+# systemui
+巨幕模式下不支持3D功能	Chế độ màn hình siêu rộng không hỗ trợ 3D
+网络受限	Mạng bị hạn chế
+同时使用Wi-Fi和热点将导致网速变慢	Dùng Wi-Fi và điểm phát sóng cùng lúc sẽ làm mạng chậm hơn
+通过移轴减少画质损失(%ds)	Dịch trục quang để giảm mất chất lượng hình (%ds)
+按移轴	Bấm để dịch trục
+调整投影侧投角度，使投影正投、画面方正(%ds)	Chỉnh góc chiếu xiên để chiếu thẳng, hình vuông vức (%ds)
+按微调	Bấm để tinh chỉnh
+微调投影位置(%ds)	Tinh chỉnh vị trí chiếu (%ds)
+调整投影侧投角度，使投影画面位于目标位置(%ds)	Chỉnh góc chiếu xiên để hình nằm đúng vị trí mong muốn (%ds)
+# xhplayer (HDMI)
+色彩空间	Không gian màu
+原始	Nguyên bản
+HDR动态亮度映射	Ánh xạ độ sáng HDR động
+自动调节各区域亮度，呈现丰富细节，开启后请在游戏机内重新校准HDR	Tự chỉnh độ sáng từng vùng để hiện rõ chi tiết; sau khi bật, hãy hiệu chỉnh lại HDR trên máy chơi game
+忠实还原游戏开发者设定的原始明暗效果，开启后请务必在【游戏主机】内重新校准HDR	Giữ đúng độ sáng tối gốc do nhà làm game đặt; sau khi bật, hãy hiệu chỉnh lại HDR trên [máy chơi game]
+请确认信号源设备输出HDR信号	Hãy kiểm tra thiết bị nguồn có xuất tín hiệu HDR
+HDR设置	Cài đặt HDR
+小地图放大	Phóng to bản đồ nhỏ
+底部	Dưới
+将小地图放大并放置在屏幕的底部	Phóng to bản đồ nhỏ và đặt ở dưới màn hình
+居左	Trái
+将小地图放大并放置在画面左侧	Phóng to bản đồ nhỏ và đặt ở bên trái hình
+居右	Phải
+将小地图放大并放置在画面右侧	Phóng to bản đồ nhỏ và đặt ở bên phải hình
+顶部	Trên
+将小地图放大并放置在屏幕的顶端	Phóng to bản đồ nhỏ và đặt ở trên cùng màn hình
+小地图放大模式下不可调整画面比例	Không chỉnh được tỉ lệ khung hình khi đang phóng to bản đồ nhỏ
+小地图放大模式下不可进行屏幕位移	Không dịch chuyển màn hình được khi đang phóng to bản đồ nhỏ
+请接入信号源后使用小地图放大	Hãy kết nối nguồn tín hiệu rồi mới phóng to bản đồ nhỏ
+画面位移后不支持小地图放大	Đã dịch chuyển hình thì không phóng to bản đồ nhỏ được
+21:9画面比例下不支持小地图放大	Tỉ lệ 21:9 không hỗ trợ phóng to bản đồ nhỏ
+请将画面比例调整为16：9后重试	Hãy chỉnh tỉ lệ khung hình về 16:9 rồi thử lại
+# xgimiframeworkui (cai ung dung)
+取消	Hủy
+完成	Xong
+安装	Cài đặt
+安装极米认证版本	Cài bản đã được XGIMI xác thực
+确定	Đồng ý
+打开	Mở
+好的	OK
+安装 \"%s\" ？	Cài đặt \"%s\"?
+该应用安装来源未经极米认证，可能存在兼容性问题，建议安装应用市场中的认证应用	Nguồn cài ứng dụng này chưa được XGIMI xác thực, có thể không tương thích; nên cài bản đã xác thực trong kho ứng dụng
+应用安装异常	Cài ứng dụng bị lỗi
+系统已禁止安装当前应用	Hệ thống đã chặn cài ứng dụng này
+冲突	Xung đột
+当前应用和系统不兼容，无法安装	Ứng dụng không tương thích với hệ thống, không cài được
+无效安装包，无法安装	Gói cài không hợp lệ, không cài được
+可用空间不足，建立清理后重试	Không đủ dung lượng trống, hãy dọn bớt rồi thử lại
+安装异常，请卸载本地已安装的\"%s\"后重试	Cài bị lỗi, hãy gỡ \"%s\" đang có trên máy rồi thử lại
+应用签名校验失败，无法安装	Kiểm tra chữ ký ứng dụng thất bại, không cài được
+本地已存在更高版本的\"%s\"，请卸载后重试	Máy đã có bản \"%s\" mới hơn, hãy gỡ rồi thử lại
+应用签名无效，无法安装	Chữ ký ứng dụng không hợp lệ, không cài được
+应用UID不兼容或签名与UID不一致	UID ứng dụng không tương thích hoặc chữ ký không khớp UID
+当前安装包仅用于测试，无法安装	Gói cài này chỉ dùng để thử nghiệm, không cài được
+正在准备安装应用	Đang chuẩn bị cài ứng dụng
+版本 %s	Phiên bản %s
+正在安装\"%s\"	Đang cài \"%s\"
+\"%s\"安装完成	Đã cài xong \"%s\"
+# autokst (can hinh tu dong, man hinh kiem tra)
+左投移轴左投测试通过\n等级:%d\n旋转:%f	Thử chiếu trái (dịch trục trái) đạt\nMức: %d\nXoay: %f
+右投移轴右投测试通过\n等级:%d\n旋转:%f	Thử chiếu phải (dịch trục phải) đạt\nMức: %d\nXoay: %f
+位置[1]\n左投测试	Vị trí [1]\nThử chiếu trái
+位置[3]\n左投移轴左投测试	Vị trí [3]\nThử chiếu trái dịch trục
+位置[2]\n右投测试	Vị trí [2]\nThử chiếu phải
+位置[4]\n右投移轴右投测试	Vị trí [4]\nThử chiếu phải dịch trục
+左投移轴左投等级	Mức chiếu trái dịch trục
+右投移轴右投等级	Mức chiếu phải dịch trục
+算法返回未知错误,请按确认键可继续进行该方位测试	Thuật toán báo lỗi không xác định, bấm OK để tiếp tục thử hướng này
+# tof (lay net tu dong)
+AF失败	AF thất bại
+AF通过	AF đạt
+AF未做	AF chưa làm
+AF无状态	AF không có trạng thái
+AK标定测试	Thử hiệu chuẩn AK
+自动对焦已被打断\n请重新按确认键开始流程	Tự lấy nét đã bị ngắt\nBấm OK để bắt đầu lại
+AF【已计算失败】\n 读取数据为0\n	AF [Tính toán thất bại]\n Dữ liệu đọc được bằng 0\n
+AF【已计算失败】\n 画面覆盖比例过小，请调整摄像头角度\n	AF [Tính toán thất bại]\n Hình phủ quá nhỏ, hãy chỉnh góc camera\n
+AF【已计算失败】\n 请保证对焦清晰且计算图正确显示\n	AF [Tính toán thất bại]\n Hãy lấy nét rõ và hiển thị đúng hình mẫu\n
+AF【已计算失败】\n 画面超出绿色矩形框，请调整摄像头角度\n	AF [Tính toán thất bại]\n Hình vượt khung chữ nhật xanh, hãy chỉnh góc camera\n
+AF【已计算失败】\n 摄像头异常\n	AF [Tính toán thất bại]\n Camera bị lỗi\n
+启动传参错误	Lỗi tham số khởi động
+AF【已计算成功】\n	AF [Tính toán thành công]\n
+机器不支持AF/TOF	Máy không hỗ trợ AF/TOF
+再按一次退出程序	Bấm lần nữa để thoát
+摄像头模组	Mô-đun camera
+已校正完成\n是否重新开始校正	Đã hiệu chỉnh xong\nHiệu chỉnh lại từ đầu?
+警告弹窗(Warning)	Cảnh báo
+马达状态异常	Động cơ bị lỗi
+马达数异常	Số động cơ bất thường
+无TOF设备	Không có cảm biến TOF
+请在正确场景中使用	Hãy dùng trong điều kiện phù hợp
+请等待显示项重置…	Đang đặt lại hiển thị, vui lòng chờ…
+请按确认键进行计算流程	Bấm OK để bắt đầu tính toán
+失败	Thất bại
+通过	Đạt
+未做	Chưa làm
+【对焦失败】\n 摄像头异常	[Lấy nét thất bại]\n Camera bị lỗi
+【对焦失败】\n 自动对焦已被打断	[Lấy nét thất bại]\n Tự lấy nét đã bị ngắt
+【对焦失败】\n 自动对焦超时	[Lấy nét thất bại]\n Tự lấy nét quá thời gian
+【已计算失败】\n 读取数据为0	[Tính toán thất bại]\n Dữ liệu đọc được bằng 0
+【已计算失败】\n 画面覆盖比例过小，请调整摄像头角度	[Tính toán thất bại]\n Hình phủ quá nhỏ, hãy chỉnh góc camera
+【已计算失败】\n 请保证对焦清晰且计算图正确显示	[Tính toán thất bại]\n Hãy lấy nét rõ và hiển thị đúng hình mẫu
+【已计算失败】\n 画面超出绿色矩形框，请调整摄像头角度	[Tính toán thất bại]\n Hình vượt khung chữ nhật xanh, hãy chỉnh góc camera
+【已计算失败】\n 摄像头异常	[Tính toán thất bại]\n Camera bị lỗi
+【已计算成功】	[Tính toán thành công]
+【已计算成功】\n Rotate 180	[Tính toán thành công]\n Xoay 180
+【已计算成功】\n Rotate 270	[Tính toán thành công]\n Xoay 270
+【已计算成功】\n Rotate 90	[Tính toán thành công]\n Xoay 90
+TOF失败	TOF thất bại
+TOF通过	TOF đạt
+TOF未做	TOF chưa làm
+TOF无状态	TOF không có trạng thái
+TOF读取错误	Lỗi đọc TOF
+TOF数据异常	Dữ liệu TOF bất thường
+TOF距离异常	Khoảng cách TOF bất thường
+TOFI2C错误	Lỗi I2C của TOF
+TOFI2C超时	I2C của TOF quá thời gian
+TOF初始错误	Lỗi khởi tạo TOF
+TOF传参异常	Tham số TOF bất thường
+TOF马达被占用	Động cơ TOF đang bận
+TOF空指针异常	Lỗi con trỏ rỗng TOF
+TOF参数错误	Lỗi tham số TOF
+获取值错误	Lỗi lấy giá trị
+# gimiplayer (trinh phat)
+请关闭%1$s自适应后重试	Hãy tắt chế độ tự thích ứng %1$s rồi thử lại
+极速模式下不支持画面位移	Chế độ siêu tốc không hỗ trợ dịch chuyển hình
+极速模式下不支持手动梯形校正	Chế độ siêu tốc không hỗ trợ chỉnh hình thang thủ công
+极速模式下不支持画面缩放	Chế độ siêu tốc không hỗ trợ thu phóng hình
+极速模式下不支持自动画面调整	Chế độ siêu tốc không hỗ trợ tự chỉnh hình
+极速模式下不支持画面旋转	Chế độ siêu tốc không hỗ trợ xoay hình
+极速模式下不支持画面缩放与位移	Chế độ siêu tốc không hỗ trợ thu phóng và dịch chuyển hình
+巨幕模式下仅支持手动梯形校正	Chế độ màn hình siêu rộng chỉ hỗ trợ chỉnh hình thang thủ công
+至臻120Hz下不能3D播放	Không phát 3D được ở chế độ 120Hz
+# atmosphere (Cua than ky / bao ve man hinh)
+再按一次退出	Bấm lần nữa để thoát
+我知道了	Đã hiểu
+1.在手机蓝牙列表中搜索“%s”并配对连接\n2.连接后可使用手机播放音乐，在任意门中实现边看边听	1. Trên điện thoại, tìm "%s" trong danh sách Bluetooth và ghép nối\n2. Sau khi kết nối, phát nhạc từ điện thoại để vừa xem Cửa thần kỳ vừa nghe nhạc
+任意门与音乐随心搭配	Kết hợp Cửa thần kỳ với âm nhạc
+按查看更多	Bấm để xem thêm
+连接手机蓝牙实现边看边听	Kết nối Bluetooth điện thoại để vừa xem vừa nghe
+氛围音乐	Nhạc nền
+请至少选择一张	Hãy chọn ít nhất một ảnh
+漂浮泡泡	Bong bóng bay
+简约相框	Khung ảnh đơn giản
+简约相框2	Khung ảnh đơn giản 2
+油画	Tranh sơn dầu
+全屏壁纸	Hình nền toàn màn hình
+下载极米 App 解锁更多模板	Tải ứng dụng XGIMI để mở thêm mẫu
+上传照片墙	Tải lên tường ảnh
+%s，%s月%s日	%s, %s/%s
+%s月%s日    %s	%s/%s    %s
+艺术馆	Phòng tranh
+港口船舶	Bến cảng
+喜鹊	Chim ác là
+纽伯里波特草地	Đồng cỏ Newburyport
+十月	Tháng Mười
+睡莲	Hoa súng
+关于任意门	Giới thiệu Cửa thần kỳ
+任意门	Cửa thần kỳ
+全新屏保内容，更多妙趣氛围	Hình bảo vệ màn hình mới, thêm nhiều không khí thú vị
+自动节能进入时间	Thời gian tự vào tiết kiệm năng lượng
+自动锁屏	Tự khoá màn hình
+每次启动任意门时，将在选中的内容中轮播	Mỗi lần mở Cửa thần kỳ sẽ lần lượt chiếu các nội dung đã chọn
+已降低亮度以减少电量消耗	Đã giảm độ sáng để tiết kiệm điện
+开启后，根据预设时间降低亮度以减少电量消耗	Khi bật, máy giảm độ sáng theo thời gian đặt sẵn để tiết kiệm điện
+节能模式	Chế độ tiết kiệm năng lượng
+任意门节能模式	Chế độ tiết kiệm năng lượng cho Cửa thần kỳ
+立即进入	Vào ngay
+1小时	1 giờ
+1分钟	1 phút
+10分钟	10 phút
+30分钟	30 phút
+5分钟	5 phút
+时气	Thời tiết và mùa
+灵动空间	Không gian sống động
+天气	Thời tiết
+选择角色	Chọn nhân vật
+可至极米 App 创建更多角色	Tạo thêm nhân vật trong ứng dụng XGIMI
+吊装场景下暂不支持	Chưa hỗ trợ khi treo trần
+背投场景下暂不支持	Chưa hỗ trợ khi chiếu từ phía sau
+成为时光的见证者，记录每一个温暖瞬间	Lưu giữ từng khoảnh khắc ấm áp
+数据访问权限获取失败，请重试	Không lấy được quyền truy cập dữ liệu, hãy thử lại
+随机	Ngẫu nhiên
+氛围信息	Thông tin không khí
+氛围模式	Chế độ không khí
+自定义照片墙	Tường ảnh tuỳ chỉnh
+默认屏保	Bảo vệ màn hình mặc định
+动态屏保	Bảo vệ màn hình động
+普通屏保	Bảo vệ màn hình thường
+照片墙	Tường ảnh
+照片墙预览信息	Thông tin xem trước tường ảnh
+预览自定义照片墙	Xem trước tường ảnh tuỳ chỉnh
+预览照片墙	Xem trước tường ảnh
+保存_删除自定义照片墙	Lưu/xoá tường ảnh tuỳ chỉnh
+屏保	Bảo vệ màn hình
+屏保信息	Thông tin bảo vệ màn hình
+系统屏保	Bảo vệ màn hình hệ thống
+屏保设置	Cài đặt bảo vệ màn hình
+正在下载更多屏保...	Đang tải thêm hình bảo vệ màn hình...
+网络未连接～	Chưa kết nối mạng
+最高 %1$s°    最低 %2$s°	Cao %1$s°    Thấp %2$s°
+移轴后不支持此功能，请恢复默认画面后重试	Đã dịch trục thì không dùng được chức năng này, hãy đưa hình về mặc định rồi thử lại

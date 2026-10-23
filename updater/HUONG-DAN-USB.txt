@@ -1,0 +1,58 @@
+﻿CẬP NHẬT MÁY CHIẾU / TV BOX BẰNG USB
+===================================
+
+Không cần máy tính. Dành cho máy chiếu XGIMI DOHKO (RS 20 Pro Max, Android 14), máy chiếu XGIMI đời cũ
+chạy Android 6 (synsepalum) và onn 4K Streaming Box (Google TV 14). Máy khác (Android 8 trở lên): chỉ cài
+launcher, không tắt ứng dụng nào.
+
+CÁCH DÙNG
+1. Chép thư mục USB-CapNhat (có file CapNhatMayChieu.apk) vào USB.
+2. Cắm USB vào máy chiếu. Mở ứng dụng X-plore (hoặc trình quản lý file), vào USB,
+   chọn CapNhatMayChieu.apk và cài đặt. Nếu máy hỏi cho phép cài ứng dụng không rõ nguồn: chọn Cho phép.
+3. Mở ứng dụng "Cập nhật máy chiếu" (trong danh sách ứng dụng), bấm "Cập nhật". Ứng dụng tự:
+   1/3 cài launcher mới nhất, đặt làm màn hình chính và bật "tự bật lại ADB"
+       (launcher tự bật lại Gỡ lỗi mạng mỗi lần máy khởi động)
+   2/3 tắt quảng cáo và ứng dụng thừa (không gỡ, bật lại được)
+   3/3 Việt hoá Cài đặt XGIMI (chỉ máy chiếu XGIMI)
+4. Xong thì bấm "Trở về" (hoặc Home) để về màn hình chính mới. Có thể rút USB.
+
+RIÊNG MÁY CHIẾU XGIMI ĐỜI CŨ (ANDROID 6)
+- Ứng dụng "Cập nhật máy chiếu" KHÔNG chạy được trên máy này (ADB của máy không nhận kết nối từ chính nó).
+  Dùng file ManHinhChinh-Launcher.apk trong thư mục USB thay thế:
+  1. Mở trình quản lý file (FileManager), vào USB, chọn ManHinhChinh-Launcher.apk, cài đặt (cài đè lên
+     bản cũ nếu có). Máy hỏi cho phép cài ứng dụng không rõ nguồn: chọn Cho phép.
+  2. Mở ô "Màn hình chính" (Home) trong danh sách ứng dụng.
+- Máy đã thiết lập bằng máy tính (máy .239): cài đè xong là xong, nút Home và tiếng Việt vẫn giữ nguyên.
+- Máy mới, chưa thiết lập: launcher tự mở mỗi khi bật máy. Để nút Home trên remote cũng mở launcher,
+  cần bật dịch vụ "Nút Home" MỘT LẦN từ máy tính (máy không có mục Trợ năng trong Cài đặt); launcher
+  hiện hướng dẫn kèm lệnh. Việt hoá Cài đặt XGIMI cũng chỉ làm được bằng máy tính.
+
+RIÊNG ONN 4K BOX (GOOGLE TV)
+- Lần đầu bấm Cập nhật, TV hỏi "Cho phép gỡ lỗi USB?": chọn "Luôn cho phép từ máy tính này" rồi bấm
+  Cho phép. Các lần sau không hỏi nữa.
+- Nếu ứng dụng báo Wi-Fi do trình thiết lập Google giữ: vào Cài đặt > Mạng và Internet, chọn mạng đang
+  dùng, Quên mạng, kết nối lại (nhập lại mật khẩu), rồi bấm Cập nhật lần nữa. Không làm bước này thì
+  máy giữ màn hình chính Google (để không mất Wi-Fi).
+- Phím micro trên remote onn vẫn mở Trợ lý Google như cũ.
+
+TÌM KIẾM GIỌNG NÓI
+- Giữ phím micro trên remote trong lúc nói, nói xong thả ra là tìm (micro nằm trong remote, chỉ thu
+  âm khi giữ phím). Nói tên ứng dụng để mở nó; nói nội dung khác thì tìm trên YouTube.
+
+BẬT ADB
+- Mở "Cập nhật máy chiếu", bấm "Bật ADB". Nếu ADB đang tắt, ứng dụng nhờ launcher bật lại (máy cần
+  đã được "Cập nhật" ít nhất một lần). Sau đó ADB tự bật lại mỗi lần máy khởi động.
+- Máy chưa từng cập nhật mà ADB đang tắt: không ứng dụng nào tự bật được; phải bật Gỡ lỗi mạng (ADB)
+  bằng tay một lần.
+
+KHÔI PHỤC
+- Mở "Cập nhật máy chiếu", bấm "Khôi phục": bật lại các ứng dụng đã tắt, trả màn hình chính gốc
+  (XGIMI hoặc Google TV), bỏ Việt hoá (XGIMI).
+
+YÊU CẦU
+- Máy chiếu bật Gỡ lỗi mạng (ADB) cho lần cập nhật đầu tiên. Ứng dụng nói chuyện với ADB của chính
+  máy chiếu; không có ADB thì ứng dụng báo lỗi và không thay đổi gì.
+- Từ lần sau: nếu ADB lỡ bị tắt, ứng dụng tự nhờ launcher bật lại rồi làm tiếp.
+- Lưu ý: ADB luôn bật thì mọi thiết bị cùng Wi-Fi đều điều khiển được máy chiếu. Chỉ dùng trong mạng nhà.
+  Muốn tắt: mở ứng dụng Chỉnh sửa Launcher TV trên máy tính, bỏ ô "Tự bật lại ADB", bấm Áp dụng.
+- Lần sau có bản mới: chép APK mới vào USB, cài đè, bấm "Cập nhật" lại.

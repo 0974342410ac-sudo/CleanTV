@@ -1,0 +1,371 @@
+# Bản dịch tiếng Việt cho Cài đặt XGIMI (com.android.newsettings) trên máy XGIMI Android 6 (synsepalum_YN).
+# Cột: loại (s = chuỗi, a = danh sách, các mục cách nhau bằng " | "), tên tài nguyên, tiếng Việt.
+# tools\xgimi-vi\build-synsepalum-overlay.ps1 dựng file dịch (overlay) từ đây.
+s	a1_screent_set_led_text	Chế độ độ sáng
+s	accurate	Hiệu chỉnh hình thang nâng cao
+s	acoustic_mode	Chế độ loa
+s	adb_state_close	Đã tắt ADB
+s	adb_state_open	Đã bật ADB
+s	android_version	Phiên bản Android
+s	ap_close_tip	Đã tắt điểm phát sóng
+s	ap_failed_tip	Lỗi không xác định, vui lòng thử lại sau
+s	ap_open_tip	Đã bật điểm phát sóng %s
+s	app_choosed	Không có
+s	app_info	Ứng dụng đang mở bằng phím X:
+s	app_name	Cài đặt hệ thống
+s	appname	Galaxy Kiwi
+s	appstart	Mở ứng dụng
+s	auto	Tự động
+s	auto_set_item_text	Tự động
+s	auto_turn_on	Tự động bật/tắt khẩu độ
+s	autofocus_heat	Bù nhiệt khi lấy nét
+s	autofocus_onoff	Tự động lấy nét
+s	autokeystone	Hiệu chỉnh hỗ trợ thông minh
+s	autokeystone_correction	Hiệu chỉnh chính xác
+s	automatic_update	Cài đặt tự động cập nhật
+s	autoupdate	Khi bật, hệ thống sẽ tự cập nhật các thành phần tối ưu để thiết bị luôn có phần mềm mới nhất. Bạn có chắc muốn tắt?
+s	autoupdateopen	Khi bật, máy sẽ tự cập nhật các thành phần nhỏ trên nền phiên bản ổn định, giúp hệ thống tương thích và an toàn nhất
+s	availabe_sapce	Dung lượng trống
+s	available_device	Thiết bị khả dụng
+s	battery_mode	Chế độ pin
+s	bedroom	Phòng ngủ
+s	blu_pair_request_tip	Yêu cầu ghép đôi Bluetooth
+s	blu_pair_text	Ghép đôi
+s	blue	Xanh dương
+s	bluetooth	Bluetooth
+s	bluetooth_confirm_passkey_msg	Ghép đôi với thiết bị: %1$s \nHãy chắc chắn mã ghép đôi hiển thị là: %2$s
+s	bluetooth_connect	Kết nối Bluetooth
+s	bluetooth_display_passkey_pin_msg	Để ghép đôi với thiết bị %1$s\nhãy nhập trên thiết bị đó: %2$s, rồi bấm Enter.
+s	bluetooth_incoming_pairing_msg	Từ: %1$s \n Ghép đôi với thiết bị này?
+s	bluetoth_scan	Tìm thiết bị
+s	boot_music	Nhạc khởi động
+s	boot_resource	Nguồn khi khởi động
+s	bootdome	Cách bật máy
+s	bright	Sáng
+s	brightness	Độ sáng
+s	btn_cancle	Huỷ
+s	btn_confirm	Xác nhận
+s	built_in	Bộ nhớ trong
+s	cancle	Huỷ
+s	checkitem_sound_mode_paly_auto	Tự phát ở chế độ loa
+s	clean_bluetooth_info	Xoá thông tin ghép đôi Bluetooth
+s	clean_data_set	Xoá dữ liệu và cài đặt
+s	clean_msg	Xoá dữ liệu và cài đặt sẽ khôi phục mọi cài đặt hệ thống và tuỳ chỉnh, đồng thời xoá dữ liệu và tệp đa phương tiện trong máy. Bạn có chắc chắn?
+s	clean_toast	Sau khi xoá thông tin ghép đôi Bluetooth, remote của bạn phải ghép đôi lại và máy sẽ tự khởi động lại. Bạn có chắc chắn?
+s	close_boot_source	Tắt
+s	coaxial_sound	Đồng trục
+s	cold_tone	Tông lạnh
+s	color_power_mode	Chế độ màu
+s	color_sature	Độ bão hoà màu
+s	color_temp	Nhiệt độ màu
+s	commom_info	Thông tin chung
+s	conference_room	Phòng họp
+s	connect	Kết nối
+s	connect_method	Cách kết nối
+s	connected	Đã kết nối
+s	constrast_ratio	Độ tương phản
+s	contrast_enhance	Tăng độ tương phản
+s	convenient	Hiệu chỉnh hình thang thủ công
+s	country	Quốc gia
+s	custombt	Phím tuỳ chỉnh
+s	customer	Tuỳ chỉnh
+s	customimage	Chế độ hình ảnh
+s	day	Ngày
+s	default_gateway	Cổng mặc định
+s	delete_black_side	Bỏ viền đen
+s	device_input_tip	Nhập tên thiết bị
+s	device_mode	Kiểu máy
+s	device_name	Tên thiết bị
+s	device_name_changed_reboot_msg	Sau khi đổi tên thiết bị, các dịch vụ liên quan cần khởi động lại để cập nhật. Khởi động lại ngay?
+s	device_name_changed_reboot_tip	Thông báo
+s	disconnect	Ngắt kết nối
+s	dns_server	Máy chủ DNS1
+s	dns_servers	Máy chủ DNS2
+s	dress_cast	Đặt bàn, chiếu trước
+s	dynamic_mode	Chế độ sống động
+s	empty_device_name_tip	Tên thiết bị không được để trống
+s	external_sound	Quang/ARC
+s	failure	Sửa không thành công, vui lòng thử lại sau
+s	fast_boot	Khởi động nhanh
+s	fast_toast	Khởi động nhanh giúp máy bật và vào mạng nhanh hơn, nhưng tốn điện chờ hơn một chút
+s	file_check_fail	Kiểm tra tệp bị lỗi, mã lỗi: 001
+s	five_minute	5 phút
+s	forget_network_tip_text	Quên mạng này
+s	forward_project	Đặt bàn, chiếu sau
+s	general_set_boot_music_text	Nhạc khởi động
+s	general_set_boot_source_text	Nguồn khi khởi động
+s	general_set_device_name_text	Tên thiết bị
+s	general_set_fast_boot_text	Khởi động nhanh
+s	general_set_focus	Hình lấy nét
+s	general_set_hide	Cài đặt ẩn
+s	general_set_inputmethod_text	Bàn phím
+s	general_set_internet_of_thing	Nhà thông minh
+s	general_set_lighting	Điều khiển đèn
+s	general_set_more	Thêm cài đặt
+s	general_set_screen_save_text	Bảo vệ màn hình
+s	general_set_stereo_mode_text	Chế độ loa
+s	general_set_system_eye	Chế độ bảo vệ mắt
+s	general_set_system_info_text	Thông tin hệ thống
+s	general_set_system_restore_text	Khôi phục cài đặt gốc
+s	general_set_system_upgrade	Nâng cấp hệ thống
+s	general_set_theme_text	Giao diện
+s	general_set_time_text	Ngày giờ
+s	general_set_wind_speed_text	Tốc độ quạt
+s	gesture	Bật/tắt cử chỉ 3D
+s	global_scale	Thu phóng toàn màn hình
+s	gm_version	Phiên bản GMUI
+s	green	Xanh lá
+s	half_hour	30 phút
+s	hardcreencv	Màn cứng P134S
+s	head_general_setting_text	Cài đặt chung
+s	head_network_setting_text	Mạng
+s	head_screen_setting_text	Hình ảnh
+s	head_sound_setting_text	Âm thanh
+s	head_system_setting_text	Hệ thống
+s	head_used_setting_text	Hay dùng
+s	headphone_output	Đã chuyển sang tai nghe
+s	headset_sound	Tai nghe
+s	help_adj	Điều chỉnh
+s	help_back	Quay lại
+s	help_ok	Chọn điểm
+s	high	Cao
+s	hoist_cast	Treo trần, chiếu trước
+s	hollow	Hướng dẫn lắp tường rỗng
+s	horizental_scale	Thu phóng ngang
+s	hour	Giờ
+s	image_mode	Chế độ hình ảnh
+s	infinite_mac	Địa chỉ MAC không dây
+s	infinite_zoom	Thu phóng vô cấp
+s	input_max_tip_msg	Đã đạt giới hạn ký tự
+s	input_method	Bàn phím
+s	internal_loudspeaker_output	Đã chuyển sang loa trong
+s	internal_sound	Loa trong
+s	ip_addr_get_info	Lấy địa chỉ IP
+s	ip_info	Địa chỉ IP
+s	ip_pair_failure_text	Sửa mạng không thành công
+s	ip_pair_over_text	Đã sửa mạng
+s	ip_repair	Sửa IP
+s	jd	JD Weilian
+s	join_beta	Tham gia thử nghiệm phần mềm
+s	join_beta_text	Ghi chú: khi tham gia thử nghiệm, chúng tôi sẽ gửi phần mềm có tính năng mới nhất tới máy của bạn. Bạn có thể chia sẻ cảm nhận và góp ý trên diễn đàn; góp ý hay sẽ được thưởng định kỳ và giúp sản phẩm tốt hơn
+s	join_error	Lỗi không xác định, vui lòng thử lại sau
+s	keep_subtitle	Giữ phụ đề
+s	keystone_correction	Hiệu chỉnh hình thang
+s	keystone_more	Bấm phím "Menu" để có thêm chức năng
+s	keytone	Âm phím
+s	kst_title	Dùng phím mũi tên chỉnh hình cho tới khi đường phụ thành hình chữ nhật
+s	language	Ngôn ngữ
+s	lboratory	Tính năng thử nghiệm
+s	led_light	Chế độ độ sáng
+s	leveltop	Cân bằng ngang bằng con quay
+s	lift_rear_project	Treo trần, chiếu sau
+s	light	Độ sáng
+s	light_on	Bật đèn
+s	living_room	Phòng khách
+s	local_music	Nhạc trong máy
+s	log_explain	Mô tả: \nKhi máy gặp sự cố, tính năng này giúp kỹ thuật viên xử lý nhanh cho bạn. Nhớ tắt công tắc sau khi xong
+s	log_explain_use	Cách dùng dữ liệu: \nĐể xử lý sự cố, chúng tôi cần tải lên nhật ký hệ thống trong khoảng thời gian từ lúc bật tới lúc tắt tải dữ liệu. Việc này không xâm phạm quyền riêng tư của bạn. Đội phát triển XGIMI cảm ơn bạn!
+s	log_popup_bt	Kết nối mạng
+s	log_popup_txt	Không tìm thấy mạng
+s	log_set_hide	Gửi nhật ký
+s	low	Thấp
+s	manual_set_item_text	Thủ công
+s	manual_setup	Thủ công
+s	manual_toast_text	Khi bật, độ sáng giảm 10% để tăng độ tương phản 100%
+s	matural	Tự nhiên
+s	memory_info	Thông tin bộ nhớ
+s	middle	Vừa
+s	min	Phút
+s	min_input_msg_tip	Cần ít nhất %d ký tự.
+s	min_wifi_pass_msg_tip	Mật khẩu cần ít nhất 8 ký tự.
+s	min_wifi_pass_msg_tip2	Mật khẩu cần ít nhất 5 ký tự.
+s	month	Tháng
+s	motion_compensation	Bù chuyển động
+s	movie_mode	Chế độ tiêu chuẩn
+s	music_play_light	Đèn khi phát nhạc
+s	my_love	Yêu thích
+s	net_music	Nghe nhạc
+s	network_set_ap_text	Điểm phát sóng
+s	network_set_blu_per_text	Bluetooth
+s	network_set_wifi_text	Kết nối Wi-Fi
+s	network_set_write_text	Mạng có dây
+s	network_wifi_ap_type	Kiểu điểm phát sóng
+s	newkeystone	Chế độ chiếu nghiêng không hỗ trợ 3D
+s	newkeystone_correction	Chế độ chiếu nghiêng
+s	nnknownhostexception	Hãy kiểm tra kết nối mạng
+s	no_save	Không lưu
+s	none	Không có
+s	off	Tắt
+s	office_mode	Chế độ sáng cao
+s	office_room	Văn phòng
+s	one_hour	1 giờ
+s	one_minute	1 phút
+s	onekey3d	3D một chạm
+s	optical_fiber_output	Đã chuyển sang ngõ ra quang
+s	optical_fiber_sound	Quang
+s	option_tip_text	Phím "lên" "xuống" để chọn chức năng, phím "trái" "phải" để chỉnh giá trị
+s	original_ratio	Tự động
+s	output_format	Định dạng âm thanh ra
+s	paired	Đã ghép đôi
+s	paired_device	Thiết bị đã kết nối
+s	pass_input_title_name_txt	Nhập mật khẩu của %s
+s	picture_scaling_item_text	Thu phóng hình
+s	play_prority	Phát mặc định
+s	point_2_point	Kích thước gốc
+s	posinvescaschkitv	Chế độ chiếu trước
+s	powerdome	Bật khi có điện
+s	progress_wait_fail	Lỗi mạng
+s	progress_wait_loading	Đang tải...
+s	projection_settings	Cách chiếu
+s	reboot_later	Để sau
+s	reboot_now	Khởi động lại ngay
+s	recover	Khôi phục mặc định
+s	red	Đỏ
+s	reset	Đặt lại
+s	reset_error_tip_text	Khôi phục cấu hình bị lỗi ở tầng hệ thống
+s	reset_prompt	Đang khởi động lại...
+s	reset_tip_text	Đã khôi phục cấu hình mặc định
+s	restore_factory_setting	Khôi phục cài đặt gốc
+s	restory_factory	Khôi phục cài đặt gốc
+s	restory_msg	Khôi phục cài đặt gốc sẽ trả lại mọi cài đặt hệ thống và tuỳ chỉnh, nhưng không xoá dữ liệu và tệp đa phương tiện trong máy. Bạn có chắc chắn?
+s	save	Lưu cấu hình
+s	save_config	Lưu và thoát
+s	save_config_tip	Cấu hình hiện tại chưa lưu. Lưu rồi thoát?
+s	save_power_mode	Chế độ tiết kiệm điện
+s	save_tip_text	Đã lưu cấu hình hiện tại
+s	scaling_enlarge_text	Phóng to
+s	scaling_narrow_text	Thu nhỏ
+s	screen_alignment	Căn màn chiếu
+s	screen_alignment_eyeon	Sau khi tắt công tắc, tuyệt đối không nhìn thẳng vào nguồn sáng để tránh hại mắt. Không tắt nếu không cần thiết
+s	screen_alignment_toast	Khi căn màn chiếu, chế độ bảo vệ mắt sẽ tắt. Hãy chú ý bảo vệ mắt
+s	screen_save	Bảo vệ màn hình
+s	screencapture	Chụp màn hình
+s	screent_set_infinite_zoom_text	Thu phóng vô cấp
+s	screent_set_intelligent_aperture	Tăng độ tương phản
+s	screent_set_led_text	Chế độ độ sáng
+s	screent_set_projection_way_text	Cách chiếu
+s	screent_set_trap_cor_text	Hiệu chỉnh hình thang
+s	screent_set_video_text	Cài đặt video
+s	self_define_mode	Chế độ tuỳ chỉnh
+s	serial_number	Số sê-ri máy
+s	settings	Cài đặt
+s	settings_nerwork_wifi_confirm	Đang kết nối...
+s	settings_nerwork_wifi_connected	Đã kết nối
+s	settings_nerwork_wifi_pwd_error	Sai mật khẩu, vui lòng nhập lại
+s	settings_nerwork_wifi_save	Đã lưu
+s	settings_nerworkip_defaultgateway	Cổng mặc định
+s	settings_nerworkip_dnsserver	Máy chủ DNS
+s	settings_nerworkip_inputerror	%s không hợp lệ
+s	settings_nerworkip_ipaddress	Địa chỉ IP
+s	settings_nerworkip_subnetmask	Mặt nạ mạng con
+s	settings_tixing_menu	Thêm cài đặt
+s	settings_tixing_msg	Khi vòng tròn ở giữa tròn đều thì tỉ lệ màn hình đúng với cài đặt hệ thống
+s	settings_tixing_reset	Đặt lại hiệu chỉnh hình thang
+s	settings_tixing_resets	Chế độ tiêu chuẩn
+s	settings_wifiap_inputerror	Vui lòng nhập %s
+s	settings_wifiap_password	Mật khẩu
+s	settings_wifiap_pwdshort	Mật khẩu phải có ít nhất 8 ký tự
+s	settings_wifiap_pwdshort_f	Mật khẩu phải có ít nhất 5 ký tự
+s	sharpness	Độ nét
+s	show_pwd	Hiện mật khẩu
+s	sidecas	Chế độ chiếu nghiêng
+s	soft	Dịu
+s	softscreencv	Màn mềm P132S
+s	solid	Hướng dẫn lắp tường đặc
+s	sound_effect_Journalism_type	Tin tức
+s	sound_effect_movie_type	Rạp phim
+s	sound_effect_music_type	Âm nhạc
+s	sound_effect_outdoors_type	Ngoài trời
+s	sound_effect_standard_type	Tiêu chuẩn
+s	sound_effect_title	Hiệu ứng âm thanh
+s	sound_output	Ngõ ra âm thanh
+s	sound_set_input_text	Ngõ ra âm thanh
+s	sound_set_keys_text	Âm phím
+s	sound_set_virtual_sou_text	Âm thanh vòm ảo
+s	speech_diff_retrieval	Tìm kiếm giọng nói cá nhân hoá
+s	speech_diff_retrieval_focutxt	Khi bật, lúc tìm phim bằng giọng nói, hệ thống sẽ gợi ý kết quả riêng theo đặc điểm giọng của bạn.
+s	standred	Tiêu chuẩn
+s	strong	Mạnh
+s	subnet_mask	Mặt nạ mạng con
+s	sys_set_auto_focus_text	Cài đặt lấy nét
+s	sys_set_auto_focus_title	Tự lấy nét khi bật máy
+s	sys_set_contrast_enhance_text	Tăng độ tương phản
+s	system_check_fail	Kiểm tra toàn vẹn hệ thống không đạt, không thể nâng cấp
+s	system_info	Thông tin hệ thống
+s	system_set_electric_sliding_door	Nắp trượt điện
+s	system_storage	Bộ nhớ hệ thống
+s	system_update	Nâng cấp hệ thống
+s	system_version	Phiên bản hệ thống
+s	tempure	Nhiệt độ
+s	ten_minute	10 phút
+s	thing_internet	Nhà thông minh
+s	three_noise_reduct	Giảm nhiễu 3D
+s	time_coming_set	Thời gian chờ
+s	time_out	Hết thời gian kết nối, vui lòng thử lại sau
+s	time_save	Lưu
+s	time_settins	Ngày giờ
+s	time_toast	Đặt giờ thủ công có thể làm máy không vào được mạng
+s	timezone	Múi giờ
+s	topkst	Độ lệch
+s	unpair	Huỷ ghép đôi
+s	update_online	Nâng cấp trực tuyến
+s	update_usb	Nâng cấp bằng USB
+s	usb_bin_update_msg	Hệ thống sắp cập nhật. Bản cập nhật sẽ xoá cài đặt và tệp của bạn. Bạn có chắc chắn?
+s	usb_error	Không thấy USB. Hãy kiểm tra định dạng USB và chắc chắn đã cắm vào cổng USB 2.0
+s	usb_no_update_file	Không thấy tệp nâng cấp. Hãy kiểm tra tệp đã nằm ở thư mục gốc của USB chưa
+s	usb_update_file	Đã tìm thấy tệp nâng cấp
+s	usb_update_msg	Hệ thống sắp cập nhật. Bản cập nhật không xoá cài đặt và tệp của bạn. Bạn có chắc chắn?
+s	usb_update_toast_text	Chép tệp nâng cấp vào thư mục gốc của USB định dạng FAT32, cắm vào cổng USB 2.0 của máy, rồi chọn Nâng cấp bằng USB
+s	vcontroldome	Bật bằng remote
+s	vertical_scale	Thu phóng dọc
+s	verticalkeystone	Hiệu chỉnh hình thang dọc
+s	video_keystone_toast	Không dùng được bù chuyển động ở chế độ chiếu nghiêng
+s	video_ratio	Tỉ lệ khung hình
+s	video_set	Cài đặt video
+s	virtual_surround	Âm thanh vòm ảo
+s	voice	Chế độ âm thanh
+s	voice_song	Đọc tên bài hát bằng giọng nói
+s	voicekey	Khoá giọng nói
+s	voicekey_focutxt	Khoá giọng nói sẽ tự chuyển sang chế độ trẻ em khi nhận ra trẻ em đang dùng. Phụ huynh có thể nói "vào/thoát chế độ trẻ em" để bật hoặc tắt nhanh.
+s	wait_connect_light	Đèn chờ kết nối
+s	wait_light	Đèn chờ
+s	warm_tone	Tông ấm
+s	weak	Yếu
+s	wifi_add	Thêm mạng thủ công
+s	wifi_add_other_ssid_error_tip	Vui lòng nhập SSID
+s	wifi_ap	Điểm phát sóng
+s	wifi_con_hide_error_tip	Không kết nối được mạng này
+s	wifi_con_none_error_tip	Không lưu được mạng
+s	wifi_describe_text	Mạng tìm thấy...
+s	wifi_dialog_fast_connect_tip	Kết nối ngay
+s	wifi_dialog_network_page_tip	Trang cài đặt mạng
+s	wifi_failed_tip	Mô-đun Wi-Fi gặp lỗi, vui lòng thử lại sau
+s	wifi_ipconfig_switch_text	Lấy địa chỉ IP
+s	wifi_psk_pass_error_tip	Mật khẩu phải có từ 8 ký tự trở lên
+s	wifi_pwd	Mật khẩu
+s	wifi_pwd_error	Mật khẩu phải có từ 5 ký tự trở lên
+s	wifi_pwd_leng_error	Mật khẩu phải có từ 5 đến dưới 64 ký tự
+s	wifi_security	Bảo mật
+s	wifi_wpe_pass_error_tip	Mật khẩu phải có từ 5 ký tự trở lên
+s	wind_speed	Tốc độ quạt
+s	wind_speed_110	Cấp 10
+s	wind_speed_12	Cấp 2
+s	wind_speed_13	Cấp 3
+s	wind_speed_14	Cấp 4
+s	wind_speed_15	Cấp 5
+s	wind_speed_16	Cấp 6
+s	wind_speed_17	Cấp 7
+s	wind_speed_18	Cấp 8
+s	wind_speed_19	Cấp 9
+s	wind_speed_1l	Cấp 1
+s	wind_speed_level	Mức tốc độ quạt
+s	wired_mac	Địa chỉ MAC có dây
+s	wired_network	Mạng có dây
+s	year	Năm
+s	zoom_ratio	Tỉ lệ thu phóng
+s	zoommodel	Chế độ thu phóng
+s	loading	Đang tải dữ liệu…
+s	scaling_item_text_operation	Để chỉnh kích thước hình, dùng phím "lên" "xuống" trên remote để thu phóng
+a	switch_manual_auto	Thủ công | Tự động
+a	switch_on_off	Tắt | Bật
+a	switch_wind_speed	Tự động | Tối đa

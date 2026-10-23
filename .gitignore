@@ -1,0 +1,31 @@
+# --- Secrets: never shared ---
+# The ADB private key this PC uses to control the TVs (each PC makes its own)
+tools/adbkey
+tools/adbkey.pub
+*.keystore
+*.jks
+local.properties
+
+# --- Personal / per-device data ---
+# Backups hold the TVs' settings, serial numbers and Wi-Fi details
+backup/
+tools/last-tv-ip.txt
+screenshot_*.png
+
+# --- Built and downloaded files (rebuilt by the scripts) ---
+dist/
+prebuilt/
+launcher/.gradle/
+launcher/.idea/
+**/build/
+*.iml
+# Filled by updater/build-usb.ps1 before each build
+launcher/updater/src/main/assets/
+launcher/updater/src/chung/assets/
+# Third-party tools: download platform-tools from Google, recreate the venv from tools/requirements.txt
+tools/platform-tools/
+tools/venv/
+*.exe
+*.apk
+*.bin
+*.zip

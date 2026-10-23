@@ -1,0 +1,123 @@
+# Bản dịch tiếng Việt cho thanh cài đặt nhanh XGIMI (com.xgimi.misckey, phím cài đặt nhanh trên remote) trên máy
+# XGIMI Android 6 (synsepalum_YN). Cột: loại (s = chuỗi, a = danh sách " | "), tên tài nguyên, tiếng Việt.
+# build-synsepalum-overlay.ps1 -Quick dựng file dịch từ đây.
+s	add_app	Thêm ứng dụng
+s	advanced_setting	Cài đặt nâng cao
+s	app_name	Menu nhanh
+s	auto_correction	Tự hiệu chỉnh
+s	auto_focus	Tự lấy nét
+s	blue	Xanh dương
+s	brightness	Độ sáng
+s	config_unknow	Thiếu tệp cấu hình
+s	custom	Tuỳ chỉnh
+s	edit	Sửa
+s	fl_3d_setting	Cài đặt 3D
+s	fl_accelerate	Tăng tốc
+s	fl_auto	Tự động
+s	fl_back	Quay lại
+s	fl_double_screen	Chia đôi màn hình
+s	fl_fast_app	Ứng dụng nhanh
+s	fl_image_setting	Hình ảnh
+s	fl_image_setting_auto_correction	Tự hiệu chỉnh
+s	fl_image_setting_auto_focus	Tự lấy nét
+s	fl_image_setting_focusing	Lấy nét
+s	fl_image_setting_keystone	Hiệu chỉnh hình thang
+s	fl_image_setting_ld	Chế độ độ sáng
+s	fl_image_setting_led	Chế độ độ sáng
+s	fl_image_setting_manual_correction	Hiệu chỉnh thủ công
+s	fl_image_setting_zoom	Thu phóng vô cấp
+s	fl_intelligence_correction	Hiệu chỉnh thông minh
+s	fl_led_auto_mode	Chế độ sống động
+s	fl_led_battery_mode	Chế độ pin
+s	fl_led_color_mode	Chế độ màu
+s	fl_led_energy_mode	Tiết kiệm điện
+s	fl_led_highlight_mode	Sáng cao
+s	fl_led_movie_mode	Xem phim
+s	fl_led_standard_mode	Tiêu chuẩn
+s	fl_led_user_mode	Tuỳ chỉnh
+s	fl_led_work_mode	Văn phòng
+s	fl_one_key_correction	Hiệu chỉnh một chạm
+s	fl_signal_source	Nguồn vào
+s	fl_sound_output	Ngõ ra âm thanh
+s	fl_sound_output_fiber_pcm	Quang ARC (PCM)
+s	fl_sound_output_fiber_pcm_Z3S	Quang (PCM)
+s	fl_sound_output_fiber_raw	Quang ARC (RAW)
+s	fl_sound_output_fiber_raw_Z3S	Quang (RAW)
+s	fl_sound_output_headset	Tai nghe
+s	fl_sound_output_internal_speaker	Loa trong
+s	fl_sound_output_pcm	Đồng trục PCM
+s	fl_sound_output_raw	Đồng trục RAW
+s	fl_sound_setting	Hiệu ứng âm thanh
+s	fl_sound_setting_cinema	Rạp phim
+s	fl_sound_setting_music	Âm nhạc
+s	fl_sound_setting_news	Tin tức
+s	fl_sound_setting_outdoors	Ngoài trời
+s	fl_sound_setting_standard	Tiêu chuẩn
+s	fl_system_setting	Tất cả cài đặt
+s	fl_video_3d_noise_reduction	Giảm nhiễu 3D
+s	fl_video_image_mode	Chế độ hình ảnh
+s	fl_video_image_mode_football	Bóng đá
+s	fl_video_image_mode_game	Trò chơi
+s	fl_video_image_mode_light	Sáng
+s	fl_video_image_mode_natural	Tự nhiên
+s	fl_video_image_mode_noise_reduction	Giảm nhiễu
+s	fl_video_image_mode_normal	Tiêu chuẩn
+s	fl_video_image_mode_office	Văn phòng
+s	fl_video_image_mode_reset	Đặt lại
+s	fl_video_image_mode_soft	Dịu
+s	fl_video_image_mode_turnlight	Bật đèn
+s	fl_video_image_mode_user	Tuỳ chỉnh
+s	fl_video_image_mode_user_1	Người dùng
+s	fl_video_image_mode_user_color_temp	Nhiệt độ màu
+s	fl_video_image_mode_user_color_temp_cold	Lạnh
+s	fl_video_image_mode_user_color_temp_standard	Tiêu chuẩn
+s	fl_video_image_mode_user_color_temp_warm	Ấm
+s	fl_video_image_mode_user_contrast_ratio	Độ tương phản
+s	fl_video_image_mode_user_saturation	Độ bão hoà
+s	fl_video_image_mode_user_sharpness	Độ nét
+s	fl_video_image_scale	Tỉ lệ khung hình
+s	fl_video_image_scale_black_edge	Bỏ viền đen
+s	fl_video_image_scale_default	Tự động
+s	fl_video_image_scale_ptop	Kích thước gốc
+s	fl_video_image_scale_subtitle	Giữ phụ đề
+s	fl_video_motion_compensation	Bù chuyển động
+s	fl_video_motion_compensation_close	Tắt
+s	fl_video_motion_compensation_close_1	Tắt
+s	fl_video_motion_compensation_high	Cao
+s	fl_video_motion_compensation_low	Thấp
+s	fl_video_motion_compensation_middle	Vừa
+s	fl_video_motion_compensation_strong	Mạnh
+s	fl_video_motion_compensation_weak	Yếu
+s	fl_video_setting	Cài đặt video
+s	fl_video_setting_2t03	2D sang 3D
+s	fl_video_setting_auto_3d	3D tự động
+s	fl_video_setting_blue_3d	3D Blu-ray
+s	fl_video_setting_close_3d	Tắt 3D
+s	fl_video_setting_lf_3d	3D trái-phải
+s	fl_video_setting_lr_to_3d	3D trái-phải sang 2D
+s	fl_video_setting_tb_3d	3D trên-dưới
+s	fl_video_setting_tb_to_3d	3D trên-dưới sang 2D
+s	fl_zoom_image_global_scaling	Thu phóng toàn màn hình
+s	fl_zoom_image_horizontal_scaling	Thu phóng ngang
+s	fl_zoom_image_proportion	Tỉ lệ khung chiếu
+s	fl_zoom_image_vertical_scaling	Thu phóng dọc
+s	green	Xanh lá
+s	image_gyroscope	Cân bằng ngang bằng con quay
+s	image_setting_hint	Thay đổi hình ảnh chỉ có tác dụng khi phát video
+s	is_accurate_keystone	Không dùng được cài đặt 3D ở chế độ chiếu nghiêng
+s	list_over	Danh sách ứng dụng nhanh đã đầy
+s	low_battery_hint	Pin yếu, chế độ này không dùng được
+s	manual_correction	Hiệu chỉnh thủ công
+s	no_suport_4k_for_3d	Chưa hỗ trợ 3D ở độ phân giải hiện tại
+s	picture_mode_prompt	Chỉ có tác dụng khi phát video
+s	red	Đỏ
+s	reset_success	Đã đặt lại thông số hình ảnh
+s	threed_setting	Cài đặt 3D
+a	misckey_array	Ứng dụng nhanh | Nguồn vào | Tăng tốc | Hình ảnh | Cài đặt 3D | Cài đặt video | Cài đặt hệ thống | Chia đôi màn hình
+a	miske_3d_setting	Tắt 3D | 2D sang 3D | 3D trái-phải | 3D trên-dưới | 3D Blu-ray | 3D trái-phải sang 2D | 3D trên-dưới sang 2D
+a	miske_focus_setting	Tự lấy nét
+a	miske_led_mode	Xem phim | Văn phòng | Sống động | Tuỳ chỉnh
+a	miske_video_image_mode	Sáng | Tiêu chuẩn | Dịu | Tự nhiên | Tuỳ chỉnh
+a	miske_video_image_scale	Tỉ lệ gốc | 16:9 | 4:3 | Giữ phụ đề | Bỏ viền đen | Điểm ảnh 1:1
+a	miske_video_setting	Tỉ lệ khung hình | Chế độ hình ảnh
+a	miskey_image_setting	Độ sáng LED | Tự lấy nét | Hiệu chỉnh hình thang | Thu phóng vô cấp

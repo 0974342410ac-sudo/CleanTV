@@ -1,0 +1,49 @@
+# Older XGIMI projector (ro.product.model "XGIMI TV", device synsepalum_YN, MStar, 1.8 GB RAM),
+# Android 6.0 (MRA58K, firmware V1.3.15 userdebug), stock home com.xgimi.overseashome ("overseas" GMUI).
+# Set up 2026-10-22 (backup in backup/XGIMI_synsepalum_YN_20261022_pre-launcher). Nothing disabled: no list yet.
+#
+# ADB: ro.adb.secure=1 (accept the PC's key once), shell is uid 2000, not root, and Android 6 has no `cmd`:
+# - pm disable-user and pm hide both fail on the stock home (system uid: "Permission Denial ... package uid=1000",
+#   "MANAGE_USERS"), and the firmware's chooser always opens it for Home without asking. So the launcher takes
+#   Home through HomeKeyService instead: config.json "home_redirect_package": "com.xgimi.overseashome" and
+#     settings put secure enabled_accessibility_services com.gathin.tvhome/.HomeKeyService
+#     settings put secure accessibility_enabled 1
+#   The remote's Home key goes straight to the launcher, and whenever the stock home comes up (Back, boot) the
+#   launcher opens over it about 0.1 s later. `am force-stop com.gathin.tvhome` drops the service from that
+#   list (Android does that to a force-stopped app): put it back after one.
+# - The USB updater cannot run here (no `cmd`); install with adb from a PC: pm install -r <apk>.
+# - The time zone cannot be set over ADB (no SET_TIME_ZONE for the shell): set GMT+7 in Settings > Date & time.
+# - Language: no system language picker; MoreLocale 2 (jp.co.c_lis.ccl.morelocale, CHANGE_CONFIGURATION granted)
+#   set "vi" (persist.sys.locale=vi) on 2026-10-22, owner's choice. Android and the launcher are Vietnamese, but
+#   XGIMI's own Settings items (com.android.newsettings) fall back to Chinese: its vi strings cover only AOSP
+#   parts and its default resources are Chinese. The firmware is userdebug, so `adb root` works: a static overlay
+#   with the 365 strings and 3 arrays translated (tools/xgimi-vi/synsepalum-settings-vi.tsv, built by
+#   build-synsepalum-overlay.ps1) sits in /system/vendor/overlay/XgimiSettingsVi.apk since 2026-10-22, installed
+#   with install-synsepalum-overlay.ps1 (-Remove takes it out); Settings shows Vietnamese after the reboot.
+#   The remote's quick settings key opens a bar from com.xgimi.misckey (信号源, 一键加速 ...): its 112 strings and
+#   8 arrays are in synsepalum-quick-vi.tsv, installed as /system/vendor/overlay/XgimiQuickVi.apk by the same
+#   scripts (2026-10-22, checked on the remote).
+#   The power-key menu and system popups (timer, overheating, keystone, focus) come from com.xgimi.windowsystem
+#   (/system/app/systwind): 51 strings in synsepalum-power-vi.tsv, installed as /system/vendor/overlay/XgimiPowerVi.apk
+#   by the same scripts (2026-10-22).
+#   Second machine of this model at 192.168.31.150: same three overlays installed
+#   2026-10-22 (backup/XGIMI_synsepalum_YN_150_20261022_pre-vi). Its language kept going back to en_US at boot:
+#   the third-party launcher com.dinhlap.hometv (HomeTV DinhLap) applies its own "langauge" pref (shared_prefs/
+#   multi_language_active.xml) to the whole system whenever it starts. Set to vi_VN there (what its own language
+#   menu writes); change it in HomeTV's menu, not only with setprop, or the next boot undoes it.
+#   HomeTV also rewrote enabled_accessibility_services with only its own service (boot receiver and Home.onStart),
+#   dropping HomeKeyService. The launcher now puts HomeKeyService back at boot and on every resume
+#   (AdbKeeper.ensureHomeKeyService). By 14:17 on 2026-10-22 HomeTV was no longer installed (not removed by us);
+#   the new launcher is Home there, checked across a reboot (locale stays vi-VN through MoreLocale's restore).
+#   Back to English: pick "English (United States)" in MoreLocale 2 (the overlay still shows Vietnamese there).
+# - Network ADB switches itself off at every boot on this firmware: turn it on again by hand to work over ADB.
+#
+# Inputs: no TV input service (TvInputManager has no binder; getTvInputList throws). HDMI goes through MStar's
+# player: am start -a mstar.tvsetting.ui.intent.action.RootActivity -n com.mstar.tv.tvplayer.ui/.RootActivity
+# --ei inputSrc 23 (HDMI1; 24 = HDMI2), which is what the stock home sends. The launcher's Inputs menu does this
+# by itself on such TVs (MainActivity.mstarSources).
+#
+# DO NOT open com.xgimi.minitvfactory (factory menu); it was found open on this machine once.
+#
+# Undo: settings put secure enabled_accessibility_services ''   (stock home is Home again at once)
+#       rm /sdcard/Android/data/com.gathin.tvhome/files/config.json; pm uninstall com.gathin.tvhome

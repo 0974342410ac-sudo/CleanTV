@@ -1,0 +1,417 @@
+﻿# Cau dai (giai thich, hop thoai) trong Cai dat XGIMI. Cung dinh dang dich.tsv; apply.ps1 doc ca hai file.
+# Giu nguyen %s, %1$s, \n va ky hieu nut (@, $). Khong dich cac chuoi cau hinh dang [{key:...}].
+请先关闭%1$s自适应后再重试	Hãy tắt %1$s thích ứng rồi thử lại
+根据环境光自动调整画面亮度，并且可以自定义色彩显示等增强功能	Tự chỉnh độ sáng theo ánh sáng phòng, có thể tùy chỉnh màu và các tăng cường khác
+根据环境光自动调整画面亮度和对比度	Tự chỉnh độ sáng và tương phản theo ánh sáng phòng
+提供更广的亮度与色彩调整范围以适应强光环境	Dải chỉnh độ sáng và màu rộng hơn cho phòng nhiều ánh sáng
+根据偏好选择亮度自适应时画面显示调整的范围	Chọn mức điều chỉnh hình khi độ sáng thích ứng
+AI画质图像模式下不支持基础设置	Chế độ Chất lượng AI không hỗ trợ cài đặt cơ bản
+AI画质图像模式下不支持专业设置	Chế độ Chất lượng AI không hỗ trợ cài đặt chuyên nghiệp
+侧投梯形校正状态下进入3D模式，梯形校正效果将消失且暂时无法自动校正	Vào 3D khi đang chiếu xiên sẽ mất hiệu chỉnh hình thang và tạm không tự hiệu chỉnh được
+推荐正投画面后进入3D模式	Nên chiếu thẳng rồi mới vào 3D
+请关闭“亮度调节-亮度自适应”后重试	Hãy tắt “Chỉnh độ sáng - Độ sáng thích ứng” rồi thử lại
+请关闭%1$s自适应后重试	Hãy tắt %1$s thích ứng rồi thử lại
+正投画面至墙面，并保持设备水平放置	Chiếu thẳng vào tường và đặt máy cân bằng
+将投影仪放置在距墙面/幕布1.8–2.1米的水平桌面上	Đặt máy chiếu trên bàn phẳng, cách tường/màn 1,8–2,1 m
+校准越精确，画面校正效果越佳	Hiệu chuẩn càng chính xác, căn hình càng tốt
+若自动梯形校正后画面不是矩形，请使用梯形校准	Nếu tự hiệu chỉnh xong hình chưa vuông, hãy dùng hiệu chuẩn hình thang
+仅当自动梯形校正效果不方正时使用	Chỉ dùng khi tự hiệu chỉnh hình thang chưa vuông
+请关闭%1$s自适应再使用3D设置	Hãy tắt %1$s thích ứng rồi mới dùng 3D
+已开启自动翻转投影方式，可在设置中取消自动翻转	Đã bật tự lật hướng chiếu, có thể tắt trong cài đặt
+根据设备放置方向，自动转换为正装或吊装模式	Tự chuyển giữa đặt bàn và treo trần theo hướng đặt máy
+设备出现偶然虚焦时，系统将自动调整画面至清晰	Khi hình bị mờ, máy sẽ tự lấy nét lại
+开启后将自动下载更新，并提示您安装最新的系统	Khi bật, máy tự tải bản cập nhật và nhắc cài hệ thống mới nhất
+移动投影仪，使投影画面四边超出幕布边框	Di chuyển máy chiếu để hình vượt ra ngoài cả bốn cạnh màn
+已安装幕布时，自动调整投影画面对齐幕布边框	Khi có màn chiếu, tự căn hình theo viền màn
+开关打开时，识别到HDR Vivid等特定的图像模式片源，将自动切换至对应的图像模式	Khi bật, gặp nội dung như HDR Vivid máy tự chuyển sang chế độ hình tương ứng
+“%1$s”请求蓝牙配对	“%1$s” yêu cầu ghép đôi Bluetooth
+音频共享功能仅支持声音输出为“自动”时使用	Chia sẻ âm thanh chỉ dùng được khi đầu ra âm thanh là “Tự động”
+清除后将不保留有关该设备的所有数据	Xóa xong sẽ không giữ dữ liệu nào về thiết bị này
+请确认以下配对码显示在“%1$s”上	Hãy kiểm tra mã ghép đôi dưới đây có hiện trên “%1$s”
+开启时，可被发现为“%s”	Khi bật, thiết bị khác thấy máy là “%s”
+清除后，无法使用遥控器控制此投影设备，可长按 和 重新配对	Xóa xong sẽ không điều khiển được máy chiếu bằng điều khiển này; nhấn giữ hai nút để ghép đôi lại
+清除无线HDMI同屏器配对？	Xóa ghép đôi bộ chiếu HDMI không dây?
+清除“极米智能光子幕布”配对后，可在”设置-蓝牙”中重新发起配对	Sau khi xóa ghép đôi “Màn chiếu thông minh XGIMI”, có thể ghép lại trong “Cài đặt - Bluetooth”
+重新配对需要长按同屏器按钮	Muốn ghép lại hãy nhấn giữ nút trên bộ chiếu
+清除“极米便携蓝牙音箱”配对后，可在”设置-蓝牙”中重新发起配对	Sau khi xóa ghép đôi “Loa Bluetooth XGIMI”, có thể ghép lại trong “Cài đặt - Bluetooth”
+请在该设备上输入以下配对码，然后按回车键	Nhập mã ghép đôi dưới đây trên thiết bị đó rồi bấm Enter
+开启时，可被发现为“XGIMI小鹏定制版投影仪”	Khi bật, thiết bị khác thấy máy là “Máy chiếu XGIMI bản XPeng”
+来自： %1$s \n 要与此设备配对吗？	Từ: %1$s \n Ghép đôi với thiết bị này?
+开启后，开机幕布降落时显示动画	Khi bật, hiện hiệu ứng khi màn chiếu hạ xuống lúc bật máy
+最多支持3台唤醒设备同时连接，如需添加更多，请关闭其中1台设备的蓝牙	Tối đa 3 thiết bị đánh thức; muốn thêm hãy tắt Bluetooth của một thiết bị
+在手机上打开蓝牙，连接 “ %s ”	Bật Bluetooth trên điện thoại và kết nối “ %s ”
+唤醒设备在附近时，可通过蓝牙、投屏或说“你好极米”，唤醒投影仪	Khi thiết bị đánh thức ở gần, có thể bật máy chiếu bằng Bluetooth, chiếu màn hình hoặc nói “你好极米”
+可配置【快捷键】，快速前往指定功能	Có thể đặt [Phím tắt] để mở nhanh một chức năng
+当前设备可被发现为“%s”，可将蓝牙或 Wi-Fi设备添加至我的设备	Máy đang hiện tên “%s”; có thể thêm thiết bị Bluetooth hoặc Wi-Fi vào Thiết bị của tôi
+降低亮度以获得更鲜艳的色彩，退出过程中将保持屏幕关闭一段时间，完成后将自动亮屏	Giảm độ sáng để màu rực hơn; màn hình sẽ tắt một lúc rồi tự sáng lại
+再按一次 @ 可退出 Boost 档	Bấm @ lần nữa để thoát mức Boost
+退出“Boost 档位”以获得更鲜艳的色彩？	Thoát mức “Boost” để màu rực hơn?
+切换过程将保持屏幕关闭一段时间，完成后自动亮屏	Khi chuyển, màn hình tắt một lúc rồi tự sáng lại
+Boost 亮度档位下不支持色彩空间	Mức sáng Boost không hỗ trợ không gian màu
+请退出 Boost 亮度档位后重试	Hãy thoát mức sáng Boost rồi thử lại
+3D设置下不支持切换 Boost 亮度档位	Khi bật 3D không chuyển được mức sáng Boost
+再按一次 @ 切换至 Boost 档	Bấm @ lần nữa để chuyển sang mức Boost
+切换至“Boost 档位”获得更高亮度？	Chuyển sang mức “Boost” để sáng hơn?
+设备每次开机时会自动调整画面对焦	Máy sẽ tự lấy nét mỗi lần bật
+设备每次开机时会自动进行画面校正	Máy sẽ tự căn hình mỗi lần bật
+10+: 切换至 Boost 档可提供更高亮度	10+: chuyển sang mức Boost để sáng hơn
+通过 IRIS (光圈) 调节亮度，低亮度下\n对比度更高，画面更清晰	Chỉnh độ sáng bằng IRIS (khẩu độ); sáng thấp thì\ntương phản cao hơn, hình rõ hơn
+: IRIS调节亮度，低亮度下画面对比度更高，画面更清晰\n10+: 切换至 Boost 档可提供更高亮度	: chỉnh độ sáng bằng IRIS, sáng thấp thì tương phản cao hơn, hình rõ hơn\n10+: chuyển sang mức Boost để sáng hơn
+通过 IRIS（光圈）调节亮度，低亮度下对比度更高，画面更清晰	Chỉnh độ sáng bằng IRIS (khẩu độ); sáng thấp thì tương phản cao hơn, hình rõ hơn
+微调投影角度至正投，保证当前投影画面为矩形	Chỉnh nhẹ góc máy để chiếu thẳng, hình thành chữ nhật
+当前画面更接近以下哪种情况	Hình hiện tại giống trường hợp nào dưới đây
+自动梯形功能将恢复至默认状态	Hình thang tự động sẽ về mặc định
+对焦效果将恢复出厂默认状态	Lấy nét sẽ về mặc định gốc
+自动画面调整功能将恢复至默认状态	Tự chỉnh hình sẽ về mặc định
+若方正请选择完成校准，不方正请选择继续校准	Nếu hình vuông chọn Hoàn tất, chưa vuông chọn Tiếp tục hiệu chuẩn
+陀螺仪已校准\n当前画面是否方正？	Đã hiệu chuẩn con quay\nHình đã vuông chưa?
+保持投影仪水平放置并正投\n确保画面矩形且底边和地面平行	Đặt máy cân bằng và chiếu thẳng\nHình chữ nhật, cạnh dưới song song mặt đất
+梯形校正已校准\n当前画面是否方正？	Đã hiệu chuẩn hình thang\nHình đã vuông chưa?
+自动画面调整功能已校准\n当前画面是否方正？	Đã hiệu chuẩn tự chỉnh hình\nHình đã vuông chưa?
+将投影仪放置在距墙面/幕布15–30cm的水平桌面上	Đặt máy chiếu trên bàn phẳng, cách tường/màn 15–30 cm
+若确认当前投影距离已是1.8-2.1米，否则将影响校准效果	Hãy chắc khoảng cách chiếu là 1,8–2,1 m, nếu không sẽ ảnh hưởng hiệu chuẩn
+若确认当前投影距离已是1.8–2.1米，可能是测距感应器异常，请联系客服	Nếu khoảng cách đã là 1,8–2,1 m, có thể cảm biến đo khoảng cách bị lỗi, hãy liên hệ hỗ trợ
+若确认当前投影距离已是15–30cm，可能是测距感应器异常，请联系客服	Nếu khoảng cách đã là 15–30 cm, có thể cảm biến đo khoảng cách bị lỗi, hãy liên hệ hỗ trợ
+请在引导下完成右侧步骤恢复正常画面	Làm theo các bước bên phải để hình trở lại bình thường
+画面是否方正将影响校准效果	Hình có vuông hay không sẽ ảnh hưởng hiệu chuẩn
+手机和投影连接同一个网络，当前网络：	Điện thoại và máy chiếu cùng một mạng, mạng hiện tại:
+手机拍照上传，完成幕布对齐	Chụp ảnh bằng điện thoại để căn màn chiếu
+调整投影仪位置（侧投角度不超过20度），使投影画面完全覆盖幕布	Chỉnh vị trí máy (chiếu xiên không quá 20°) để hình phủ kín màn
+•调整投影仪位置，使画面完全覆盖幕布\n•侧投角度不超过20度	•Chỉnh vị trí máy để hình phủ kín màn\n•Chiếu xiên không quá 20°
+开启后，投影可与车载系统进行配对连接。\n请注意：\n为保障驾驶安全，请务必将车辆停稳后使用。因本品内含电池，请勿将本品置于高温环境中，离开车辆时请随身携带	Khi bật, máy chiếu có thể ghép đôi với hệ thống trên ô tô.\nLưu ý:\nChỉ dùng khi xe đã dừng hẳn. Máy có pin, đừng để nơi nóng; mang theo khi rời xe
+清除后，无法使用遥控器控制此投影设备，可\n长按back和home重新配对	Xóa xong sẽ không điều khiển được máy chiếu bằng điều khiển này;\nnhấn giữ Back và Home để ghép lại
+请关闭开机画面自动定位后重试	Hãy tắt Tự định vị hình khi bật máy rồi thử lại
+请关闭开机源-灵动墙后重试	Hãy tắt Nguồn khi bật máy - Tường linh hoạt rồi thử lại
+请恢复 Turbo Light 后重试	Hãy trả Turbo Light về rồi thử lại
+将自动更改亮度及色彩相关设置，同时调整图像模式自定义参数，以实现最佳色彩准确度	Sẽ tự đổi cài đặt độ sáng, màu và chế độ hình để màu chuẩn nhất
+∗ 开启后，调节亮度、色彩及图像模式将影响色准效果	∗ Khi bật, chỉnh độ sáng, màu hoặc chế độ hình sẽ làm giảm độ chuẩn màu
+根据偏好为色彩调节选择增强效果	Chọn mức tăng cường màu theo ý thích
+根据偏好选择或自定义色彩显示的整体风格	Chọn hoặc tùy chỉnh phong cách màu theo ý thích
+将投影设备显示的色彩范围与信号源相匹配	Khớp dải màu của máy chiếu với nguồn vào
+仅限于使用无法正确输出RGB范围信息的HDMI设备时进行变更	Chỉ đổi khi thiết bị HDMI không báo đúng dải RGB
+将投影显示的色彩范围与信号源相匹配	Khớp dải màu của máy chiếu với nguồn vào
+专业摄影(Adobe RGB)	Nhiếp ảnh chuyên nghiệp (Adobe RGB)
+适用于杜比视界、IMAX Enhanced、HDR等片源，提供更鲜艳、细致的颜色使图像更逼真	Cho Dolby Vision, IMAX Enhanced, HDR: màu rực và chi tiết hơn, hình chân thực hơn
+适合大多数常规视频 ，根据DCI P3标准，显示更丰富的颜色，让视频更绚丽	Hợp với đa số video, theo chuẩn DCI-P3, màu phong phú hơn
+选择亮度与色彩调整的强度，以获得偏好的观影显示效果	Chọn mức chỉnh độ sáng và màu theo ý thích khi xem
+适合HDR、杜比视界等广色域视频，使用最广的色彩空间，显示最丰富的颜色细节	Cho video gam màu rộng như HDR, Dolby Vision: không gian màu rộng nhất, nhiều chi tiết màu nhất
+适合大多数常规视频，根据Rec.709标准，显示基础的颜色	Hợp với đa số video, theo chuẩn Rec.709, màu cơ bản
+三色激光模式专属色彩风格生效中	Đang dùng phong cách màu riêng của laser 3 màu
+确认自动画面调整功能已校准	Xác nhận đã hiệu chuẩn tự chỉnh hình
+调整设备角度，使设备水平放置，再点击校准\n水平校准越精确，画面校准效果越佳	Chỉnh góc để máy cân bằng rồi bấm Hiệu chuẩn\nCân bằng càng chính xác, căn hình càng tốt
+智能调整画面以对齐幕布边缘，校准前请确保投影画面完全覆盖住幕布	Tự căn hình theo viền màn; trước khi hiệu chuẩn hãy để hình phủ kín màn
+画面校正时，自动对齐幕布边缘，需先确保投影画面超出幕布四边	Khi căn hình, tự căn theo viền màn; hình phải vượt ra ngoài cả bốn cạnh màn
+自定义模式下不支持亮度调节	Chế độ tùy chỉnh không chỉnh được độ sáng
+自定义模式下不支持墙面颜色适配	Chế độ tùy chỉnh không hỗ trợ thích ứng màu tường
+将删除所有设置数据、本地文件和已安装应用	Sẽ xóa toàn bộ cài đặt, tệp trong máy và ứng dụng đã cài
+将删除所有设置数据，同时保留本地文件和\n已安装应用	Sẽ xóa toàn bộ cài đặt, giữ lại tệp trong máy và\nứng dụng đã cài
+将删除所有设置数据，\n保留已安装的应用和本地文件	Sẽ xóa toàn bộ cài đặt,\ngiữ lại ứng dụng đã cài và tệp trong máy
+将删除所有设置数据，同时保留本地文件和已安装应用	Sẽ xóa toàn bộ cài đặt, giữ lại tệp trong máy và ứng dụng đã cài
+将删除所有设置数据、本地文件、已安装的应用	Sẽ xóa toàn bộ cài đặt, tệp trong máy và ứng dụng đã cài
+将恢复至默认画面位置\n智能模式可使用一键画面校正、自动对焦、墙面颜色适配、智能防射眼等功能	Hình sẽ về vị trí mặc định\nChế độ thông minh có căn hình một chạm, lấy nét tự động, thích ứng màu tường, chống chói mắt…
+专家模式可使用光学移轴等高阶功能，但不能使用一键画面校正、自动对焦、墙面颜色适配、智能防射眼等智能功能	Chế độ chuyên gia có dịch trục quang và các chức năng nâng cao, nhưng không có căn hình một chạm, lấy nét tự động, thích ứng màu tường, chống chói mắt…
+为了保证显示效果最佳，将清除墙面颜色适配数据	Để hình đẹp nhất, dữ liệu thích ứng màu tường sẽ bị xóa
+投影仪倒挂于画面前方天花板上时使用，调节画面翻转\n∗ 吊装下暂不支持部分功能，如实时画面校正、墙面平整度适配等（具体功能可能因不同型号有所差异）。如需了解后续支持情况，请联系客服	Dùng khi treo ngược máy trên trần phía trước màn, để lật hình\n∗ Khi treo trần, một số chức năng như căn hình thời gian thực, thích ứng tường không phẳng chưa hỗ trợ (tùy kiểu máy). Liên hệ hỗ trợ để biết thêm
+游戏模式延迟更低，但不支持“ %s ” 。	Chế độ trò chơi có độ trễ thấp hơn nhưng không hỗ trợ “ %s ”.
+校准后效果不好，可选择恢复默认	Hiệu chuẩn xong chưa tốt có thể khôi phục mặc định
+请将投影放在水平面上，再开始校准陀螺仪	Đặt máy chiếu trên mặt phẳng rồi mới hiệu chuẩn con quay
+切换前请确保设备通风口无遮挡、且室温不超过25°C。请勿长时间使用此模式，否则可能造成设备过热影响使用寿命。	Trước khi chuyển, hãy để lỗ thông gió thông thoáng và phòng không quá 25°C. Đừng dùng chế độ này quá lâu, máy có thể quá nóng và giảm tuổi thọ.
+请确认画面矩形、底边和地面平行，且校准完成\n前不要移动设备，否则会影响自动梯形校正效果	Hãy để hình chữ nhật, cạnh dưới song song mặt đất, và đừng di chuyển máy\ncho tới khi hiệu chuẩn xong, nếu không sẽ ảnh hưởng hình thang tự động
+切换前请将投影设备移动至正投状态，否则将导致画面歪斜。	Trước khi chuyển, hãy đặt máy chiếu thẳng, nếu không hình sẽ bị lệch.
+极速模式延迟更低，但不支持“ %s ” 。	Chế độ siêu tốc có độ trễ thấp hơn nhưng không hỗ trợ “ %s ”.
+通过光学变焦和移轴实现专业级安装精度和无损画质体验，推荐搭配幕布场景使用	Zoom quang và dịch trục cho độ chính xác lắp đặt chuyên nghiệp, không giảm chất lượng hình; nên dùng với màn chiếu
+*专家模式不支持一键画面校正、自动对焦、墙面颜色适配、智能防射眼等智能功能	*Chế độ chuyên gia không có căn hình một chạm, lấy nét tự động, thích ứng màu tường, chống chói mắt…
+本次更新将删除当前设置数据、本地文件、已安装应用，\n过程中请勿断开电源及U盘	Bản cập nhật này sẽ xóa cài đặt, tệp trong máy và ứng dụng đã cài,\nđừng rút điện hoặc USB trong lúc cập nhật
+本次更新将保留当前设置数据、本地文件、已安装应用，\n过程中请勿断开电源及U盘	Bản cập nhật này giữ nguyên cài đặt, tệp trong máy và ứng dụng đã cài,\nđừng rút điện hoặc USB trong lúc cập nhật
+删除“%s”?	Xóa “%s”?
+配对失败，请在“%s”上重试	Ghép đôi thất bại, hãy thử lại trên “%s”
+DICOM图像模式下不支持Gamma指数	Chế độ hình DICOM không hỗ trợ chỉ số Gamma
+开机状态下，移动设备会自动画面校正	Khi máy đang bật, di chuyển máy sẽ tự căn hình
+设备开机状态下发生位移时会自动调整画面对焦	Khi máy đang bật mà bị dịch chuyển sẽ tự lấy nét
+开机状态下移动设备会自动进行画面校正	Khi máy đang bật, di chuyển máy sẽ tự căn hình
+位移可能造成画面模糊，按\"@\"手动对焦	Dịch chuyển có thể làm mờ hình, bấm "@" để lấy nét
+实时动态对焦，保持画面清晰	Lấy nét liên tục để hình luôn rõ
+使用极米电池支架、充电宝供电时，关闭节能模式可能会导致耗电量增加或关机	Khi chạy bằng giá pin XGIMI hoặc sạc dự phòng, tắt tiết kiệm điện có thể tốn pin hơn hoặc làm máy tắt
+· 节能模式下会降低亮度和听觉效果\n· 使用极米电池支架、充电宝供电时，为提升续航、保\n   护设备，推荐开启节能模式	· Tiết kiệm điện sẽ giảm độ sáng và âm thanh\n· Khi chạy bằng giá pin XGIMI hoặc sạc dự phòng, nên bật\n   tiết kiệm điện để dùng lâu hơn và bảo vệ máy
+降低亮度和听觉效果，以获得更长的续航时间，推荐接入极米电池支架、充电宝时使用	Giảm độ sáng và âm thanh để dùng pin lâu hơn; nên dùng khi chạy bằng giá pin XGIMI hoặc sạc dự phòng
+设备接通电源时将自动开机，使用时请做好电源安全管理	Máy sẽ tự bật khi có điện; hãy dùng nguồn điện an toàn
+关闭墙面颜色适配后再进行%1$s自适应	Hãy tắt thích ứng màu tường rồi mới dùng %1$s thích ứng
+根据环境光自动调整画面亮度，以达到最佳的观影效果	Tự chỉnh độ sáng theo ánh sáng phòng để xem đẹp nhất
+根据环境光自动调整画面亮度	Tự chỉnh độ sáng theo ánh sáng phòng
+智能检测投影环境，以匹配最佳校正方式	Tự kiểm tra môi trường chiếu để chọn cách căn hình tốt nhất
+•︎请使用FAT32格式的U盘连接投影	•︎Hãy dùng USB định dạng FAT32
+•︎请使用FAT32格式的U盘连接投影\n•︎导出过程中请勿操作投影	•︎Hãy dùng USB định dạng FAT32\n•︎Đừng thao tác máy chiếu khi đang xuất
+批量设置数据导出中......	Đang xuất cài đặt hàng loạt......
+检测到人体后自动息屏或全屏遮罩，人体离开或按【返回键】恢复屏幕	Phát hiện người thì tắt hoặc che màn hình; người rời đi hoặc bấm [Quay lại] để mở lại
+关闭后，镜头前有人时不再自动降低亮度。 请注意保护眼睛，避免直视光源	Khi tắt, máy không còn tự giảm sáng khi có người trước ống kính. Hãy bảo vệ mắt, đừng nhìn thẳng vào nguồn sáng
+开启后，检测到镜头前有人时，降低投影仪亮度，避免人眼刺激\n*该功能处于Beta测试中，可能存在不稳定现象	Khi bật, có người trước ống kính thì máy giảm sáng để không chói mắt\n*Chức năng đang thử nghiệm, có thể chưa ổn định
+关闭“%1$s”功能？	Tắt chức năng “%1$s”?
+开启“%1$s”功能？	Bật chức năng “%1$s”?
+跟随人体移动实时降低局部亮度，不影响观看	Giảm sáng từng vùng theo người di chuyển, không ảnh hưởng việc xem
+检测到镜头前有人时，降低亮度，避免人眼刺激	Có người trước ống kính thì giảm sáng để không chói mắt
+检测到镜头前有人时，自动关闭屏幕	Có người trước ống kính thì tự tắt hình
+达到中国标准化研究院视觉舒适度A+等级，提供更高亮度的同时大幅提升观影舒适度	Đạt mức dễ chịu thị giác A+ (Viện Tiêu chuẩn hóa Trung Quốc): sáng hơn mà vẫn dễ chịu cho mắt
+达到中国标准化研究院视觉舒适度A等级，提供更高亮度的同时大幅提升观影舒适度	Đạt mức dễ chịu thị giác A (Viện Tiêu chuẩn hóa Trung Quốc): sáng hơn mà vẫn dễ chịu cho mắt
+请先在隐藏设置中关闭“支架模式”后重试	Hãy tắt “Chế độ giá đỡ” trong Cài đặt ẩn rồi thử lại
+删除我上传的滤镜后，会同步删除云端数据	Xóa bộ lọc tôi đã tải lên cũng sẽ xóa trên đám mây
+删除后无法恢复，是否继续？	Xóa rồi không khôi phục được, tiếp tục?
+针对不平整的墙面进行智能适配，以呈现最佳画面	Tự thích ứng với tường không phẳng để hình đẹp nhất
+扫码下载极米 App，使用极米 App “爱机 > 墙面平整” 进行\n智能适配	Quét mã tải ứng dụng XGIMI, vào “Máy của tôi > Tường phẳng” để\ntự thích ứng
+若自动对焦后画面仍然不清晰，请使用对焦校准	Nếu lấy nét tự động xong hình vẫn mờ, hãy dùng hiệu chuẩn lấy nét
+将设备 正投 并保持投影距离在 1—2米，再进行对焦校准	Đặt máy chiếu thẳng, cách 1–2 m, rồi hiệu chuẩn lấy nét
+请确认画面矩形、且校准完成前不要移动设备，\n 否则会影响自动对焦效果	Hãy để hình chữ nhật và đừng di chuyển máy cho tới khi xong,\n nếu không sẽ ảnh hưởng lấy nét tự động
+可按【对焦键】自动对焦，或长按使用手动对焦	Bấm [Lấy nét] để lấy nét tự động, nhấn giữ để lấy nét thủ công
+可按侧边【对焦键】自动对焦，或长按使用手动对焦	Bấm nút [Lấy nét] bên hông để lấy nét tự động, nhấn giữ để lấy nét thủ công
+按【对焦键】自动对焦，或长按使用手动对焦	Bấm [Lấy nét] để lấy nét tự động, nhấn giữ để lấy nét thủ công
+可将底部拨杆拨至Focus自动对焦，或继续按音量【加减键】手动对焦	Gạt cần dưới đáy sang Focus để lấy nét tự động, hoặc bấm [Tăng/Giảm âm lượng] để lấy nét thủ công
+参考图像对整个画面进行精准调焦	Lấy nét chính xác toàn hình theo hình mẫu
+当画面模糊时，通过对焦调整清晰度	Khi hình mờ, lấy nét để rõ hơn
+优化HDMI外接游戏设备的体验：更低延迟、专用游戏图像，并提供更多游戏工具	Tối ưu cho máy chơi game qua HDMI: độ trễ thấp hơn, hình riêng cho game, thêm công cụ game
+“游戏增强模式”为自动或打开时，在信号源画面下可长按【设置键】呼出游戏增强工具	Khi “Tăng cường trò chơi” là Tự động hoặc Bật, nhấn giữ [Cài đặt] lúc xem nguồn vào để mở công cụ game
+请接入HDMI并打开游戏增强模式后重试	Hãy cắm HDMI và bật Tăng cường trò chơi rồi thử lại
+识别到游戏内容时（ALLM）	Khi nhận ra nội dung game (ALLM)
+若游戏设备不支持ALLM，请选择“识别到游戏设备时”或选择“打开”	Nếu máy chơi game không hỗ trợ ALLM, chọn “Khi nhận ra máy chơi game” hoặc “Bật”
+若选择“自动”，当识别到HDMI进入游戏内容或接入游戏设备后，将切换游戏增强模式	Chọn “Tự động”: khi HDMI có nội dung game hoặc cắm máy chơi game, máy chuyển sang Tăng cường trò chơi
+极速模式下不支持自动画面调整	Chế độ siêu tốc không hỗ trợ tự chỉnh hình
+降低画面延迟，同时保证画面分辨率	Giảm độ trễ mà vẫn giữ độ phân giải
+画面延迟更低，但不支持“画面校正”	Độ trễ thấp hơn nhưng không hỗ trợ “Căn hình”
+极速模式下不支持手动梯形校正	Chế độ siêu tốc không hỗ trợ hình thang thủ công
+极速模式下不支持投影环境检测	Chế độ siêu tốc không hỗ trợ kiểm tra môi trường chiếu
+极速模式下不支持画面自动定位	Chế độ siêu tốc không hỗ trợ tự định vị hình
+极速模式下不支持画面缩放与位移	Chế độ siêu tốc không hỗ trợ thu phóng và dịch chuyển hình
+选择“自动”，将自动识别游戏设备并切换至游戏模式; 选择“打开”保持游戏模式常开; 选择“关闭”保持游戏模式常关	“Tự động”: nhận ra máy chơi game thì vào chế độ trò chơi; “Bật”: luôn bật; “Tắt”: luôn tắt
+选择“自动”，将自动识别游戏设备并切换至游戏模式; 选择“关闭”保持游戏模式常关	“Tự động”: nhận ra máy chơi game thì vào chế độ trò chơi; “Tắt”: luôn tắt
+降低延迟提升游戏体验，提供基础、极速两种模式	Giảm độ trễ khi chơi game, có hai chế độ Cơ bản và Siêu tốc
+手动梯形校正”与“画面缩放	Hình thang thủ công” và “Thu phóng hình
+梯形校正”、“墙面平整适配	Hiệu chỉnh hình thang”, “Thích ứng tường không phẳng
+HDMI连接的设备可控制投影开关机	Thiết bị nối HDMI có thể bật/tắt máy chiếu
+投影可控制HDMI连接的设备，关闭后，音频ARC输出将不可用	Máy chiếu điều khiển được thiết bị nối HDMI; khi tắt, không dùng được âm thanh ARC
+若校准后效果不佳，可尝试恢复至默认校准状态	Hiệu chuẩn xong chưa tốt có thể khôi phục hiệu chuẩn mặc định
+将投影仪放置在水平桌面上，调整投影角度至正投，确保投影画面矩形且底边与地面平行	Đặt máy trên bàn phẳng, chiếu thẳng, hình chữ nhật và cạnh dưới song song mặt đất
+请将投影放置于距离墙面约1.8m~2.1m的位置，并确保侧投角度小于20度，俯仰角度小于10度\n校准时角度尽量与日常使用角度一致	Đặt máy cách tường khoảng 1,8–2,1 m, chiếu xiên dưới 20°, nghiêng dưới 10°\nGóc khi hiệu chuẩn nên giống góc dùng hằng ngày
+请移动投影或投射其他墙面，确认校准后的对焦效果	Di chuyển máy hoặc chiếu sang tường khác để kiểm tra lấy nét sau hiệu chuẩn
+如自动对焦后，面面仍不清晰，请使用对焦校准	Nếu lấy nét tự động xong hình vẫn mờ, hãy dùng hiệu chuẩn lấy nét
+当前水平角度过大，请调整投影角度后重试	Góc ngang quá lớn, hãy chỉnh góc máy rồi thử lại
+当前俯仰角度过大，请调整投影角度后重试	Góc nghiêng quá lớn, hãy chỉnh góc máy rồi thử lại
+当前水平、俯仰角度过大，请调整投影角度后重试	Góc ngang và góc nghiêng quá lớn, hãy chỉnh góc máy rồi thử lại
+此功能仅在信号源下可用\n输入起始位置坐标和显示范围	Chỉ dùng được khi xem nguồn vào\nNhập tọa độ bắt đầu và vùng hiển thị
+请在信号输入大于100Hz时使用	Chỉ dùng khi tín hiệu vào trên 100Hz
+HDR Vivid图像模式生效中	Đang dùng chế độ hình HDR Vivid
+远程诊断时，极米将远程控制您的设备，了解并定位您的问题。远程诊断后，请根据客服引导结束此次诊断。	Khi chẩn đoán từ xa, XGIMI sẽ điều khiển máy của bạn để tìm lỗi. Xong hãy kết thúc theo hướng dẫn của bộ phận hỗ trợ.
+建议在高海拔地区使用，将加大风扇转速、提高散热效率	Nên dùng ở vùng cao: quạt quay nhanh hơn để tản nhiệt tốt hơn
+至臻120Hz下不能3D播放	120Hz đỉnh cao không phát được 3D
+至臻120Hz下不支持原帧显示	120Hz đỉnh cao không hỗ trợ hiển thị khung gốc
+至臻120Hz下不支持3D设置	120Hz đỉnh cao không hỗ trợ 3D
+根据视频画面内容，AI实时调整对比度	AI chỉnh tương phản theo nội dung video
+当画面暗部场景较多时，动态调整画面对比度，提升暗部细节表现	Khi cảnh tối nhiều, tự chỉnh tương phản để rõ chi tiết vùng tối
+选择“自动”，将自动识别游戏设备并切换至游戏模式；选择“打开”保持游戏模式常开；选择“关闭”保持游戏模式常关	“Tự động”: nhận ra máy chơi game thì vào chế độ trò chơi; “Bật”: luôn bật; “Tắt”: luôn tắt
+杜比视界专属图像模式生效中	Đang dùng chế độ hình riêng của Dolby Vision
+办公图像模式下不支持色温调节	Chế độ văn phòng không chỉnh được nhiệt độ màu
+当画面播放暗部场景画面时，可带来更生动的高光感受与更清晰的阴影暗部细节	Cảnh tối có điểm sáng sống động hơn và chi tiết vùng tối rõ hơn
+根据观看内容选择模式，自定义色彩空间、运动补偿等	Chọn chế độ theo nội dung, tùy chỉnh không gian màu, bù chuyển động…
+通过校准，在增强暗部细节时维持色彩还原度	Nhờ hiệu chuẩn, tăng chi tiết vùng tối mà vẫn giữ màu đúng
+解决播放特定帧视频时，不均匀补帧导致的画面抖动问题	Sửa giật hình do bù khung không đều với một số video
+游戏模式下不支持图像比例设置	Chế độ trò chơi không hỗ trợ đặt tỉ lệ hình
+低延迟下不支持图像比例设置	Độ trễ thấp không hỗ trợ đặt tỉ lệ hình
+请在HDMI源下调整图像比例设置	Hãy đặt tỉ lệ hình khi đang xem nguồn HDMI
+请在HDMI源下调整HDMI模式	Hãy đổi chế độ HDMI khi đang xem nguồn HDMI
+识别到支持的片源时，自动切换到HDR Vivid模式	Gặp nội dung hỗ trợ thì tự chuyển sang HDR Vivid
+观影画面过渡更加顺滑，开启后将降低分辨率，如需低延迟请使用游戏模式-高帧率模式	Hình chuyển động mượt hơn nhưng giảm độ phân giải; cần độ trễ thấp hãy dùng Chế độ trò chơi - tốc độ khung cao
+IMAX Enhanced模式下暂不支持	Chế độ IMAX Enhanced chưa hỗ trợ
+IMAX Enhanced不支持风格滤镜	IMAX Enhanced không hỗ trợ bộ lọc phong cách
+IMAX Enhanced专属图像模式生效中	Đang dùng chế độ hình riêng của IMAX Enhanced
+检查到批量设置文件，是否导入？	Phát hiện tệp cài đặt hàng loạt, nhập không?
+•︎请使用FAT32格式的U盘连接投影\n•︎导入过程中请勿操作投影	•︎Hãy dùng USB định dạng FAT32\n•︎Đừng thao tác máy chiếu khi đang nhập
+批量设置数据导入中......	Đang nhập cài đặt hàng loạt......
+XGIMI Sound+低音炮	XGIMI Sound + loa trầm
+XGIMI Sound+内部扬声器 (低音)	XGIMI Sound + loa trong (trầm)
+开启后我们将推送软件新版本到您的设备，您可以通过论坛发帖分享您的使用感受和建议，我们会不定期挑选优质回复给予奖励，您的建议会让我们产品做的更好	Khi bật, XGIMI gửi bản thử nghiệm mới tới máy; bạn có thể góp ý trên diễn đàn để nhận thưởng
+云台自动转动扫描墙面，识别最佳投影位置	Giá đỡ tự xoay quét tường để tìm vị trí chiếu tốt nhất
+极速模式下不能触发一键校准	Chế độ siêu tốc không dùng được hiệu chuẩn một chạm
+请确认画面矩形、且校准完成前不要移动设备，\n 否则会影响自动梯形校正效果	Hãy để hình chữ nhật và đừng di chuyển máy cho tới khi xong,\n nếu không sẽ ảnh hưởng hình thang tự động
+请先关闭「镜头锁定」再重试	Hãy tắt «Khóa ống kính» rồi thử lại
+若自动梯形校正后投影出现旋转，请使用陀螺仪水平校准	Nếu tự hiệu chỉnh xong hình bị xoay, hãy dùng hiệu chuẩn cân bằng con quay
+切换不同的光源模式，选择偏好的显示效果	Đổi chế độ nguồn sáng để có hình theo ý thích
+色温智能跟随日光调节，提供自然规律的生活照明	Nhiệt độ màu đèn thay đổi theo ánh nắng trong ngày
+可配置【延时关灯键】，定义每次按下后自动关灯的延迟时间	Có thể đặt [Phím tắt đèn hẹn giờ] và thời gian chờ trước khi tắt đèn
+将用于获取所在地天气、出行等服务信息	Dùng để lấy thời tiết và thông tin đi lại nơi bạn ở
+为解决您的问题，我们将上传日志开启期间的系统操作记录，不会侵犯您的任何隐私，感谢您的配合	Để xử lý lỗi, XGIMI sẽ tải lên nhật ký hệ thống trong thời gian bật; không đụng tới dữ liệu riêng tư
+当前投影角度过大，请正投后重试	Góc chiếu quá lớn, hãy chiếu thẳng rồi thử lại
+与德国 CONNECT TESTLAB 联合开发，通过精细拆解显示效果，基于高色准的显示进一步精调参数，以最大化还原色彩和细节表现，实现最佳色彩准确度。	Phát triển cùng CONNECT TESTLAB (Đức), tinh chỉnh từ hiển thị màu chuẩn để tái hiện màu và chi tiết tốt nhất.
+与德国 CONNECT TESTLAB 联合开发，最大化还原色彩表现，实现最佳色彩准确度	Phát triển cùng CONNECT TESTLAB (Đức), tái hiện màu chuẩn nhất
+1. 按电源键打开麦克风\n2. 长按电源键重新配对	1. Bấm nút nguồn để bật micro\n2. Nhấn giữ nút nguồn để ghép đôi lại
+连接有问题？请试试\n以下办法：	Kết nối có vấn đề? Thử\ncác cách sau:
+密码长度应大于等于5个字符	Mật khẩu phải có ít nhất 5 ký tự
+自定义模式下不支持%1$s自适应	Chế độ tùy chỉnh không hỗ trợ %1$s thích ứng
+性能模式下不支持%1$s自适应	Chế độ hiệu năng không hỗ trợ %1$s thích ứng
+3D设置下不支持%1$s自适应	Khi bật 3D không hỗ trợ %1$s thích ứng
+开启后，投影可与车载系统进行配对连接	Khi bật, máy chiếu có thể ghép đôi với hệ thống trên ô tô
+针对长辈视觉特点优化色彩，提高长辈使用体验	Tối ưu màu cho mắt người lớn tuổi
+将设置中除Wi-Fi和投影ID外的其他参数导出到U盘	Xuất toàn bộ cài đặt, trừ Wi-Fi và ID máy chiếu, ra USB
+切换网格数量将恢复默认画面，是否继续？	Đổi số ô lưới sẽ đưa hình về mặc định, tiếp tục?
+开启后，将主控设备的亮度或设置参数同步至被控机器	Khi bật, độ sáng hoặc cài đặt của máy chính được đồng bộ sang máy phụ
+开启后将保证同步的投影亮度一致	Khi bật, các máy chiếu đồng bộ có độ sáng như nhau
+开机后将主控设备的画质参数同步给被控设备	Khi bật máy, thông số hình của máy chính được đồng bộ sang máy phụ
+将主控设备设置内除画质参数和亮度、网络设置、ID设置、设备名称外的其他设置参数同步给被控设备	Đồng bộ các cài đặt của máy chính sang máy phụ, trừ hình, độ sáng, mạng, ID và tên thiết bị
+移焦或者按返回键退出时保存	Lưu khi chuyển mục hoặc bấm Quay lại
+色觉异常人群可使用色觉优化来区分颜色	Người khó phân biệt màu có thể dùng tối ưu màu để dễ phân biệt hơn
+投影开机时，灯光将切换至观影模式	Khi bật máy chiếu, đèn chuyển sang chế độ xem phim
+清除后，无法使用遥控器控制此投影设备，可\n长按@和$重新配对	Xóa xong sẽ không điều khiển được máy chiếu bằng điều khiển này;\nnhấn giữ @ và $ để ghép lại
+保持手机和投影在同一局域网，手机轻碰音乐控制器可实现同屏。（仅支持华为NFC手机，且EMUI11及以上版本）	Điện thoại và máy chiếu cùng mạng; chạm điện thoại vào bộ điều khiển nhạc để chiếu màn hình. (Chỉ điện thoại Huawei có NFC, EMUI 11 trở lên)
+手机轻碰音乐控制器，可将手机播放的音乐传到投影上。(仅支持安卓NFC手机)	Chạm điện thoại vào bộ điều khiển nhạc để phát nhạc từ điện thoại trên máy chiếu. (Chỉ điện thoại Android có NFC)
+关闭 Turbo Light	Tắt Turbo Light
+Turbo light 是通过光学变焦缩小画面以提升亮度。关闭后可能出现画面大小和亮度变化。	Turbo Light thu nhỏ hình bằng zoom quang để sáng hơn. Khi tắt, kích thước và độ sáng hình có thể thay đổi.
+请关闭“Turbo Light”后再试	Hãy tắt “Turbo Light” rồi thử lại
+原帧显示下不支持至臻120Hz	Hiển thị khung gốc không hỗ trợ 120Hz đỉnh cao
+%s输入错误	%s nhập sai
+请输入\" %s \"的密码	Nhập mật khẩu của " %s "
+忽略后，设备将不会再加入此网络	Quên mạng thì máy sẽ không tự kết nối mạng này nữa
+成功打开 %s 热点	Đã bật điểm phát %s
+清除配对后，不再保留该设备信息	Xóa ghép đôi sẽ không giữ thông tin thiết bị này
+同时使用Wi-Fi和热点将导致网速变慢	Dùng Wi-Fi và điểm phát cùng lúc sẽ làm mạng chậm hơn
+USB(%s的U盘)	USB (USB của %s)
+请输入%s	Nhập %s
+开启后，关机时将无风扇噪音，但无法使用语音、投屏和蓝牙唤醒功能	Khi bật, tắt máy sẽ không có tiếng quạt nhưng không đánh thức được bằng giọng nói, chiếu màn hình hay Bluetooth
+IMAX Enhanced下不支持调节	IMAX Enhanced không chỉnh được
+移轴后不支持此功能，请恢复默认画面后重试	Đã dịch trục nên không dùng được, hãy về hình mặc định rồi thử lại
+请关闭投影数据同步-亮度同步后重试	Hãy tắt Đồng bộ máy chiếu - Đồng bộ độ sáng rồi thử lại
+请关闭投影数据同步-画质同步后重试	Hãy tắt Đồng bộ máy chiếu - Đồng bộ chất lượng hình rồi thử lại
+当前画质同步模式不支持此功能	Chế độ đồng bộ hình hiện tại không hỗ trợ chức năng này
+图像模式-办公下不支持动态黑位增强	Chế độ hình Văn phòng không hỗ trợ tăng cường mức đen động
+仅支持一个存储分区的外接存储	Chỉ hỗ trợ ổ ngoài có một phân vùng
+通过手机扫码上传图片，并设置为开机图	Quét mã bằng điện thoại để tải ảnh lên làm hình khởi động
+性能模式下不支持墙面颜色适配	Chế độ hiệu năng không hỗ trợ thích ứng màu tường
+性能图像模式下不支持基础设置	Chế độ hình Hiệu năng không hỗ trợ cài đặt cơ bản
+性能图像模式下不支持专业设置	Chế độ hình Hiệu năng không hỗ trợ cài đặt chuyên nghiệp
+根据观影记录进行智能化内容推荐；关闭后，将根据全网热度展示内容	Gợi ý nội dung theo lịch sử xem; khi tắt sẽ hiện nội dung đang thịnh hành
+识别到FILMMAKER MODE片源时,自动切换至对应模式	Gặp nội dung FILMMAKER MODE thì tự chuyển sang chế độ đó
+开启后，画面对比度将增强，暗部细节更加清晰可见	Khi bật, tương phản cao hơn, chi tiết vùng tối rõ hơn
+设置幕布参数，以获取最佳杜比视界效果。*仅支持官方配套幕布，使用其他幕布或不使用幕布无法达到最佳效果	Đặt thông số màn chiếu để Dolby Vision đẹp nhất. *Chỉ hỗ trợ màn chính hãng; màn khác hoặc không màn sẽ không đạt tốt nhất
+采用突破性的高动态范围 (HDR) 和广色域影像技术，实现令人惊叹的画面质量	Công nghệ HDR và gam màu rộng cho chất lượng hình ấn tượng
+根据内容动态调整亮度和细节平衡	Tự cân bằng độ sáng và chi tiết theo nội dung
+禁用图像后期处理，忠实还原导演创作意图，适用于艺术片和经典叙事片	Tắt xử lý hình để giữ đúng ý đạo diễn, hợp với phim nghệ thuật và phim kinh điển
+HDR片源下不支持色彩空间	Nội dung HDR không hỗ trợ không gian màu
+识别到支持的片源时，自动切换到IMAX Enhanced模式	Gặp nội dung hỗ trợ thì tự chuyển sang IMAX Enhanced
+为 IMAX Enhanced 片源提供震撼影音和独占画幅	Hình tiếng ấn tượng và khung hình riêng cho nội dung IMAX Enhanced
+选择符合观看内容的图像模式，自定义色彩空间、运动补偿等	Chọn chế độ hình hợp với nội dung, tùy chỉnh không gian màu, bù chuyển động…
+根据观看内容选择，自定义运动补偿等，仅在视频或HDMI下生效	Chọn theo nội dung, tùy chỉnh bù chuyển động…, chỉ áp dụng với video hoặc HDMI
+Windows HDR映射	Ánh xạ HDR cho Windows
+适用于接入Windows设备的HDR映射方案	Ánh xạ HDR cho máy tính Windows
+打开后，可通过PJLink协议控制本机	Khi bật, có thể điều khiển máy qua giao thức PJLink
+可使用一键画面校准、自动对焦、墙面颜色适配、智能防射眼等功能	Có căn hình một chạm, lấy nét tự động, thích ứng màu tường, chống chói mắt…
+自动梯形校正时智能调整画面大小和位置，避开墙面开关等障碍物	Khi tự hiệu chỉnh hình thang, tự đổi kích thước và vị trí để tránh công tắc và vật cản trên tường
+画面校正时，智能避开墙面开关等障碍物	Khi căn hình, tự tránh công tắc và vật cản trên tường
+选择设备投影方向，以调节画面翻转	Chọn hướng chiếu để lật hình cho đúng
+开机时，自动恢复至上次观影角度，无需每次手动调整	Khi bật máy, tự về góc xem lần trước, không phải chỉnh lại
+关机时，云台将自动收起至开机前位置，维持美观角度	Khi tắt máy, giá đỡ tự thu về vị trí ban đầu
+开机自动恢复至上次观影角度，关机云台将自动收起，无需手动调整	Bật máy tự về góc xem lần trước, tắt máy giá đỡ tự thu về, không phải chỉnh tay
+拉：将手握拳放在画面内，出现提示后缓慢向后拉	Kéo: nắm tay đặt trong hình, khi có gợi ý thì từ từ kéo về sau
+推：将手靠近画面边缘外，出现提示后缓慢向前推	Đẩy: đưa tay ra gần mép ngoài hình, khi có gợi ý thì từ từ đẩy về trước
+人在画面边缘时，通过推拉控制画面位移	Đứng ở mép hình, đẩy hoặc kéo tay để dịch hình
+观看者和投影仪位于画面两侧	Người xem và máy chiếu ở hai bên màn
+恢复画面形状至校正前初始状态	Đưa hình về như trước khi căn chỉnh
+提供高色彩鲜艳的显示效果，推荐对彩边、散斑不敏感的人群使用	Màu rất rực; hợp với người không nhạy với viền màu và lốm đốm
+画面参数包括画面形状、大小	Thông số hình gồm hình dạng và kích thước
+将当前的画面参数更新至选择的画面	Cập nhật thông số hình hiện tại vào hình đã chọn
+记忆不同的画面参数，手掰云台至对应位置后一键应用，无需再次调整即享大屏观影	Ghi nhớ nhiều bộ thông số; xoay giá đỡ tới vị trí đó rồi áp dụng một chạm, không phải chỉnh lại
+巨幕模式下仅支持手动梯形校正	Chế độ màn lớn chỉ hỗ trợ hình thang thủ công
+与串口ID号组成本机的串口ID，用于响应针对本串口ID的控制指令	Cùng ID cổng nối tiếp tạo thành ID của máy, dùng để nhận lệnh điều khiển gửi tới ID đó
+与串口ID组组成本机的串口ID，用于响应针对本串口ID的控制指令	Cùng nhóm ID cổng nối tiếp tạo thành ID của máy, dùng để nhận lệnh điều khiển gửi tới ID đó
+开启后，当接收到所有ID同时执行的命令时，本机会进行应答，请注意所有设备只能设置一台设备进行应答	Khi bật, máy sẽ phản hồi lệnh gửi tới mọi ID; chỉ để một máy phản hồi trong tất cả các máy
+开启后，当接收到ID组同时执行的命令时，本机会进行应答，请注意相同串口ID组内只能设置一台设备进行应答	Khi bật, máy sẽ phản hồi lệnh gửi tới nhóm ID; trong một nhóm chỉ để một máy phản hồi
+关闭后，将不再执行任何串口指令	Khi tắt, máy không nhận lệnh cổng nối tiếp nào nữa
+关闭后已配对手机无法再连接，其他设备不受影响	Khi tắt, điện thoại đã ghép đôi không kết nối được nữa; thiết bị khác không ảnh hưởng
+开启后，投影音量将与蓝牙设备音量始终保持同步，可能会导致音量无法调节。	Khi bật, âm lượng máy chiếu luôn đồng bộ với thiết bị Bluetooth, có thể không chỉnh được âm lượng.
+当投影仪待机时，手机可蓝牙唤醒投影仪	Khi máy chiếu chờ, điện thoại có thể bật máy qua Bluetooth
+•︎同步时间约4分钟\n•同步过程中请勿操作设备，同步完成将自动退出	•︎Đồng bộ mất khoảng 4 phút\n•Đừng thao tác máy khi đang đồng bộ, xong sẽ tự thoát
+设置数据同步中......	Đang đồng bộ cài đặt......
+请确保“%s\"已打开，并重新尝试连接	Hãy bật “%s" rồi thử kết nối lại
+%s断开	%s đã ngắt
+保持蓝牙音频设备可被发现，选择2个共享	Để thiết bị âm thanh Bluetooth ở chế độ tìm thấy được, chọn 2 thiết bị để chia sẻ
+如「HDMI控制投影」已开启并接收到CEC开机信号时，优先进入对应HDMI通道，此时「开机源」设置将不生效	Khi bật «HDMI điều khiển máy chiếu» và có tín hiệu bật máy CEC, máy vào cổng HDMI đó; «Nguồn khi bật máy» sẽ không áp dụng
+HDMI 2.0 支持全色彩范围的 4K 60Hz	HDMI 2.0 hỗ trợ 4K 60Hz đủ dải màu
+HDMI 2.1 支持全色彩范围的 4K 60Hz	HDMI 2.1 hỗ trợ 4K 60Hz đủ dải màu
+1. 将同屏器接入电脑、电视盒子、游戏机等信号源\n2. 长按同屏器按钮以配对投影设备	1. Cắm bộ chiếu vào máy tính, TV box, máy chơi game…\n2. Nhấn giữ nút trên bộ chiếu để ghép với máy chiếu
+无线同屏器\n即插即用，小屏秒变大屏	Bộ chiếu không dây\nCắm là chạy, màn nhỏ thành màn lớn
+HDMI连接的设备可控制投影自动切换至其画面	Thiết bị nối HDMI có thể tự chuyển máy chiếu sang hình của nó
+使用2台投影仪拼接更大的投影画面\n此功能仅在信号源下可用，输入源必须连接投影的HDMI或HDBaseT端口	Ghép 2 máy chiếu thành hình lớn hơn\nChỉ dùng khi xem nguồn vào, nguồn phải nối cổng HDMI hoặc HDBaseT
+投影仪移动时自动对焦，保持画面清晰	Tự lấy nét khi máy chiếu di chuyển để hình luôn rõ
+选择“上升”或“下降”，将幕布调至最佳观看高度	Chọn “Nâng lên” hoặc “Hạ xuống” để đưa màn tới độ cao xem tốt nhất
+支持将屏幕分为“左右屏”及“画中画”两种模式	Chia màn hình kiểu “Trái phải” hoặc “Hình trong hình”
+画面参数包括当前云台角度与画面形状	Thông số hình gồm góc giá đỡ và hình dạng hình
+将当前的画面参数保存至选择的墙面	Lưu thông số hình hiện tại vào tường đã chọn
+适用于专家用户，可使用光学移轴等高阶功能	Cho người dùng chuyên gia, có dịch trục quang và chức năng nâng cao
+选择或创建新的墙面，云台自动转动投射出不同内容	Chọn hoặc tạo tường mới, giá đỡ tự xoay để chiếu nội dung khác
+当前已自动切换为“光纤/ARC”，可切换输出格式	Đã tự chuyển sang “Quang/ARC”, có thể đổi định dạng âm thanh ra
+当声音输出设备接入后，自动切换为对应输出。关闭后，可手动切换声音输出	Cắm thiết bị âm thanh thì tự chuyển đầu ra. Khi tắt, chuyển đầu ra thủ công
+优化K歌音效，麦克风语音键可用	Tối ưu âm thanh karaoke, nút giọng nói trên micro dùng được
+优化会议音效，防止误碰麦克风语音键	Tối ưu âm thanh họp, tránh bấm nhầm nút giọng nói trên micro
+搭配专属Total Immersion 天空音效、Total Surround 环绕音效,沉浸观影视听享受	Kèm âm thanh trần Total Immersion và âm vòm Total Surround cho trải nghiệm xem phim cuốn hút
+选择“自动”，并使用 HDMI 2.1以上线材连接支持eARC的音频系统，可输出高质量声音	Chọn “Tự động” và dùng cáp HDMI 2.1 nối dàn âm thanh có eARC để có âm thanh chất lượng cao
+选择“关闭”，声音将通过HDMI-ARC向功放输出	Chọn “Tắt”, âm thanh ra amply qua HDMI-ARC
+光纤/ARC-Passthrough	Quang/ARC - Truyền thẳng
+内部扬声器+XGIMI Sound	Loa trong + XGIMI Sound
+内部扬声器+XGIMI Sound+低音炮	Loa trong + XGIMI Sound + loa trầm
+可为当前音效模式自定义增强音效	Tùy chỉnh âm thanh tăng cường cho chế độ âm thanh hiện tại
+当前已自动切换为“音响系统”，可控制发声的设备组合	Đã tự chuyển sang “Hệ thống loa”, có thể chọn bộ loa phát tiếng
+清除 “XGIMI Sound 组合” 配对后，可长按音箱按钮重新发起配对	Sau khi xóa ghép đôi “Bộ loa XGIMI Sound”, nhấn giữ nút trên loa để ghép lại
+清除 “XGIMI Sound” 配对后，可长按音箱按钮重新发起配对	Sau khi xóa ghép đôi “XGIMI Sound”, nhấn giữ nút trên loa để ghép lại
+灵动分屏模式下不支持系统设置	Chế độ chia màn hình không dùng được cài đặt hệ thống
+通过AI算法，提升视频清晰度	Dùng AI làm video nét hơn
+适用于投影面非平面的使用场景	Dùng khi mặt chiếu không phẳng
+根据日出日落时间启动切换白昼、暗夜主题；此功能需要连接网络	Tự đổi giao diện sáng/tối theo giờ mặt trời mọc và lặn; cần có mạng
+HDR视频下不支持3D设置	Video HDR không hỗ trợ 3D
+请播放视频或接入信号源后重试	Hãy phát video hoặc cắm nguồn vào rồi thử lại
+3D设置下不支持图像比例设置	Khi bật 3D không đặt được tỉ lệ hình
+3D设置下不支持墙面颜色适配	Khi bật 3D không hỗ trợ thích ứng màu tường
+3D播放下不支持画面高帧率	Khi phát 3D không hỗ trợ tốc độ khung cao
+根据视频画面内容，AI实时调整对比度，仅在SDR视频下生效	AI chỉnh tương phản theo nội dung, chỉ với video SDR
+请将更新文件存放在（FAT32格式）U盘根目录中，并将U盘插入投影仪的USB2.0接口	Chép tệp cập nhật vào thư mục gốc USB (định dạng FAT32) rồi cắm vào cổng USB 2.0 của máy chiếu
+性能模式下暂不支持色彩调节	Chế độ hiệu năng chưa hỗ trợ chỉnh màu
+自定义模式不支持%1$s自适应	Chế độ tùy chỉnh không hỗ trợ %1$s thích ứng
+文件检测出错，错误代码：001	Kiểm tra tệp bị lỗi, mã lỗi: 001
+手动设置时间可能会导致设备无法访问网络	Đặt giờ thủ công có thể khiến máy không vào được mạng
+性能模式下暂不支持亮度调节	Chế độ hiệu năng chưa chỉnh được độ sáng
+性能模式下暂不支持对比度增强	Chế độ hiệu năng chưa hỗ trợ tăng tương phản
+请先恢复Turbo Light后重试	Hãy trả Turbo Light về rồi thử lại
+当前方向到达极限，无法继续移动	Đã tới giới hạn hướng này, không đi tiếp được
+打开智能幕布应用失败，请检查是否安装了此应用	Không mở được ứng dụng màn chiếu thông minh, hãy kiểm tra đã cài chưa
+性能模式不支持%1$s自适应	Chế độ hiệu năng không hỗ trợ %1$s thích ứng
+确定开启Turbo Light ？	Bật Turbo Light?
+当环境光过强时，应用Turbo Light效果可通过光学变焦提升画面亮度，同时画面缩放0–20%	Khi phòng quá sáng, Turbo Light dùng zoom quang làm hình sáng hơn và thu nhỏ hình 0–20%
+点击后恢复到Turbo Light之前的画面亮度和大小	Bấm để trả độ sáng và kích thước hình như trước Turbo Light
+Turbo Light 自适应	Turbo Light thích ứng
+环境光过强时，自动通过光学变焦提升画面亮度，同时画面缩放 0-20%	Khi phòng quá sáng, tự dùng zoom quang làm hình sáng hơn và thu nhỏ hình 0–20%
+环境光过强时，应用 Turbo Light 效果可提升画面亮度，同时画面缩放 0-20%	Khi phòng quá sáng, Turbo Light làm hình sáng hơn và thu nhỏ hình 0–20%
+请将升级文件存放于FAT32格式的U盘根目录中，插入设备USB2.0接口（包名被修改后将不能被读取）	Chép tệp nâng cấp vào thư mục gốc USB định dạng FAT32 rồi cắm vào cổng USB 2.0 (đổi tên tệp sẽ không đọc được)
+自动垂直梯形为开时不支持画面校正	Khi bật hình thang dọc tự động không căn hình được
+请在视频播放状态下切换至臻120Hz	Hãy chuyển sang 120Hz đỉnh cao khi đang phát video
+HDR Vivid下不支持动态黑位增强	HDR Vivid không hỗ trợ tăng cường mức đen động
+USB（Harman Kardon低音音响）	USB (loa trầm Harman Kardon)
+可选择声音输出设备，音频输出格式	Chọn thiết bị và định dạng âm thanh ra
+亮度调节导致墙面颜色适配失效	Chỉnh độ sáng làm mất thích ứng màu tường
+切换模式导致墙面颜色适配失效	Đổi chế độ làm mất thích ứng màu tường
+调节色彩导致墙面颜色适配失效	Chỉnh màu làm mất thích ứng màu tường
+%1$s自适应导致墙面颜色适配失效	%1$s thích ứng làm mất thích ứng màu tường
+为获得最佳色彩效果，画面将自动升至最高亮度，并关闭环境亮度自适应相关功能	Để màu đẹp nhất, hình sẽ lên độ sáng tối đa và tắt độ sáng thích ứng
+智能匹配投影墙面颜色，以达到最佳色彩效果	Tự khớp với màu tường để màu đẹp nhất
+动态黑位增强导致墙面颜色适配失效	Tăng cường mức đen động làm mất thích ứng màu tường
+画面校正时，画面颜色匹配墙面颜色	Khi căn hình, màu hình được khớp với màu tường
+1.开启后，使用自动画面调整功能时将执行墙面\n颜色适配，以获得最佳色彩效果\n  \n2.自定义色彩风格、3D模式和亮度自适应下将\n不支持墙面颜色适配	1. Khi bật, tự chỉnh hình sẽ thích ứng màu\ntường để màu đẹp nhất\n  \n2. Phong cách màu tùy chỉnh, 3D và độ sáng thích ứng\nkhông hỗ trợ thích ứng màu tường
+如出现加载异常或无内容显示，按【返回】退出	Nếu tải lỗi hoặc không có nội dung, bấm [Quay lại] để thoát
+网络好像有问题，错误码：%s	Mạng có vấn đề, mã lỗi: %s
+请查看系统时间日期是否正确，错误码：%s	Hãy kiểm tra ngày giờ hệ thống, mã lỗi: %s
+网络请求超时，错误码：%s	Yêu cầu mạng quá thời gian, mã lỗi: %s
+网络连接超时，错误码：%s	Kết nối mạng quá thời gian, mã lỗi: %s
+未知异常，错误码：%s	Lỗi không rõ, mã lỗi: %s
+未连接网络，错误码：%s	Chưa kết nối mạng, mã lỗi: %s
+存储空间不足，错误码：%s	Không đủ dung lượng, mã lỗi: %s
+服务器开小差了，错误码：%s	Máy chủ đang lỗi, mã lỗi: %s
+仅在杜比视界片源下支持调整	Chỉ chỉnh được với nội dung Dolby Vision
+Total Surround 环绕音效	Âm vòm Total Surround
+XGIMI Sound 音效	Âm thanh XGIMI Sound
+XGIMI Sound 专属音效使用中	Đang dùng âm thanh riêng XGIMI Sound
+Total Immersion 天空音效	Âm thanh trần Total Immersion
+画面不清晰？按 @ 自动对焦	Hình chưa rõ? Bấm @ để lấy nét tự động
+注意：移轴后防射眼会在部分范围时失效。墙面颜色适配、墙面记忆功能将不可用	Lưu ý: sau khi dịch trục, chống chói mắt có thể không hoạt động ở một số vùng; thích ứng màu tường và ghi nhớ tường sẽ không dùng được
+注意：移轴后防射眼会在部分范围时失效。墙面颜色适配、画面自动定位、灵动墙面功能将不可用	Lưu ý: sau khi dịch trục, chống chói mắt có thể không hoạt động ở một số vùng; thích ứng màu tường, tự định vị hình và tường linh hoạt sẽ không dùng được

@@ -1,0 +1,91 @@
+# XGIMI China-market projector "RS 20 Pro Max" (ro.product.model XGIMI TV DOHKO, product athenamasterhl),
+# GMUI on Android 14 (UQ1A.240105.004.A1 test-keys), no Google Play. ro.adb.secure=0: close network ADB after use.
+#
+# Applied by hand on 2026-10-21 with the bundled adb, one `pm disable-user --user 0` per call.
+# Undo:    tools\restore-xgimi-dohko.ps1 -TvHost <projector ip>
+# Survived a reboot: the firmware re-enabled nothing.
+#
+# Sideloads work (no verification failure, third-party HOME accepted). Home is com.gathin.tvhome
+# (role android.app.role.HOME); the stock launcher com.xgimi.home stays enabled (see below).
+# Settings is NOT an activity here: android.settings.SETTINGS and WIFI_SETTINGS resolve to nothing. XGIMI's
+# settings panel is a service: `am startservice -a com.xgimi.settings.SETTINGS -p com.android.newsettings`.
+# The launcher falls back to that service (SystemSettings.java), so its Settings and Wi-Fi pills open the
+# panel; verified 2026-10-21. The panel has no Wi-Fi deep link: Network is its third entry (网络).
+# Inputs: HDMI rows need config.xml input_action com.xgimi.action.hdmiPlayer (com.xgimi.xhplayer/.InputActivity);
+# with it empty, picking HDMI1 did nothing. A CEC device on HDMI1 shows as a third row (HDMI100008).
+# 2026-10-21 evening: the launcher had been uninstalled and com.xgimi.home re-enabled (cause unknown);
+# reinstalled with the dock TV360, YouTube, FPT Play, TizenTube. com.xgimi.smartconnect had not
+# actually been disabled the first time; done then. Survived a reboot (the projector came back in standby).
+# Remote (BT 000d:3838, Vendor_000d_Product_3838.kl) sends only Home, Back (KEY_ESC = scancode 1), D-pad,
+# OK and volume: no Settings or Input button, so no key services are needed; the pills cover both.
+# Network ADB: persist.adb.tcp.port=5555 and there is no Developer options screen
+# (APPLICATION_DEVELOPMENT_SETTINGS resolves to nothing), so the only shell-side off switch is
+# `settings put global adb_enabled 0`, which also locks the shell out until a reset. Left on by the
+# owner's choice (2026-10-21) so restore keeps working. ADB here runs as root (uid 0), so anyone on the LAN gets root.
+# Settings panel Vietnamese: tools\xgimi-vi\apply.ps1 (fabricated overlay com.android.shell:VietHoa, ~760 strings;
+# the panel ships Chinese only). Undo: apply.ps1 -TvHost <ip> -Remove.
+# Time zone shipped as Asia/Shanghai (clock 1 h ahead in Vietnam): set with `settings put global
+# auto_time_zone 0` then `cmd alarm set-timezone Asia/Ho_Chi_Minh`. Network time (auto_time) stays on.
+#
+# Already disabled before this session: com.xgimi.datareporter, com.xgimi.bugreportsender,
+# com.android.settings.intelligence (restore leaves these alone).
+#
+# DO NOT DISABLE (checked with dumpsys package, kept):
+# com.android.newsettings   settings panel service, FallbackHome, misckey (remote keys)
+# com.xgimi.systemui, com.xgimi.shutdown (hosts a SystemUIService), com.xgimi.xgimiframeworkui (resolver)
+# com.xgimi.autokst, windowsystem, tof, agilewall   keystone / focus / wall adaptation
+# com.xgimi.tvinput, xhplayer                        HDMI inputs
+# com.xgimi.bluetoothservice, remote, misckey        remote control
+# com.xgimi.config, manager, persistentservice, inuiserver, gmservice, xgimiservice, appdb, xgimiui.api
+# com.xgimi.account, user, skinmanager, skinconfig, bootwizard
+# com.xgimi.vcontrol, xgimiiotserver, mateservice, smartaccessories   voice (kept by choice)
+# com.sogou.inputmethod.iot  on-screen keyboard
+# Kept for now (no answer yet): filemanager, gimiplayer, karaokesdk, doubanfm, screensaver, atmosphere
+
+# Ads, messages, content portal, tutorial
+com.xgimi.adservice                    # ad boot receiver
+com.xgimi.msgcenter                    # push message centre
+com.xgimi.stream.video                 # Mango TV content portal + coupons
+com.xgimi.payview                      # VIP / payment screens
+com.xgimi.instruction30                # usage tutorial
+
+# Factory
+com.xgimi.minitvfactory                # factory menu (never launch it)
+
+# Casting (off by choice)
+com.xgimi.wirelessscreen               # screen mirroring / Miracast
+com.xgimi.mobilebridgeservice          # phone bridge
+com.xgimi.smartconnect                 # phone smart connect
+com.google.android.tv.remote.service   # Google TV phone remote
+
+# Updates and store (off by choice)
+com.xgimi.upgrade                      # firmware OTA
+com.xgimi.ota.accessories              # accessory OTA
+com.xgimi.rgbdupgrade                  # RGBD sensor upgrade
+com.xgimi.newappmarket                 # XGIMI app store
+
+# XGIMI voice assistant (Chinese DuerOS): its accessibility key monitor took the remote's mic button (F5)
+# and closed the launcher's Vietnamese voice search; it also re-adds itself to the accessibility list.
+com.xgimi.duertts                      # 极米语音 assistant + mic key monitor (off by choice, 2026-10-21)
+
+# Stock launcher: kept enabled since 2026-10-22 (owner's choice: disabling it risks errors in XGIMI features that
+# call it). Home still opens com.gathin.tvhome, set as the home activity / HOME role by the updater.
+# com.xgimi.home                       # GMUI home
+
+# Quick settings panel (remote's quick settings key, com.android.newsettings / com.xgimi.misckey code inside it):
+# the tile names live in /data/data/com.android.newsettings/databases/misckey_config.db, and newsettings downloads
+# the panel config from XGIMI's server on start (MisckeyManager.fetchConfigData -> saveMisckeyConfig), writing the
+# Chinese names back. EROFS partitions and the shared system uid rule out overlays and a per-app firewall, so
+# tools/xgimi-vi/dohko-quick-panel-vi.ps1 (adb root) puts SQLite triggers in that DB that rename each tile as it is
+# written (2026-10-22, checked on the remote). Original DB: /sdcard/misckey_config.db.bak. A newsettings update
+# that rebuilds the DB drops the triggers: run the script again.#
+# Power-off menu (com.xgimi.shutdown) has no vi strings and showed English: 49 strings translated in
+# tools/xgimi-vi/dohko-shutdown-vi.tsv, installed as fabricated overlay com.android.shell:VietHoaTatMay by
+# dohko-shutdown-vi.ps1 (2026-10-22; -Remove takes it out).
+# The quick panel's date line stays Chinese (owner's choice, 2026-10-22): TopInfoAndFuncCell formats it with the dex
+# literal "yyyy年M月dd日" and DateUtil's "星期一..星期日" and calls setText directly, so no overlay or DB can reach it.#
+# Fabricated overlays (VietHoa for Settings, VietHoaTatMay for the power menu) are dropped at every boot on this
+# firmware (seen 2026-10-22: overlays.xml loses their entries, /data/resource-cache loses the .frro). Kept by
+# tools/xgimi-vi/dohko-boot-vi.ps1: files + boot.sh in /data/local/tmp/cleantv (root-owned), and config.json
+# "boot_script": true, so the launcher (BootScript.java) runs boot.sh through the TV's own adbd after each boot.
+# Checked across a reboot. Undo: dohko-boot-vi.ps1 -Remove. The quick panel triggers (DB) survive reboots as is.

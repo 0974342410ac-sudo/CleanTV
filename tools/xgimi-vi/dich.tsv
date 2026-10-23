@@ -1,0 +1,962 @@
+﻿# Bang dich Cai dat XGIMI (com.android.newsettings): chu tieng Trung<TAB>tieng Viet. Moi dong mot chu.
+# Ap dung bang tools\xgimi-vi\apply.ps1 (overlay "fabricated", can ADB root). Go: apply.ps1 -Remove
+# Menu chinh
+画面校正	Căn hình
+亮度与显示	Hiển thị
+网络	Mạng
+信号源	Nguồn vào
+蓝牙与配件	Bluetooth
+声音	Âm thanh
+通用	Chung
+系统	Hệ thống
+图像	Hình ảnh
+灯光	Đèn
+3D设置	Cài đặt 3D
+视频图像模式	Chế độ hình ảnh video
+# Can chinh hinh
+对焦	Lấy nét
+梯形校正	Hiệu chỉnh hình thang
+一键画面校正	Căn hình một chạm
+手动梯形校正	Hình thang thủ công
+画面校正设置	Cài đặt căn chỉnh hình
+大小和位置	Kích thước & vị trí
+光学变焦与移轴	Zoom quang & dịch trục
+画面位移	Dịch chuyển hình
+自动对焦	Lấy nét tự động
+自动梯形校正	Hiệu chỉnh hình thang tự động
+自动梯形功能校准	Hiệu chuẩn hình thang tự động
+梯形校正校准	Hiệu chuẩn hình thang
+校正功能校准	Hiệu chuẩn căn chỉnh
+自动画面调整	Tự động căn hình
+移轴幕布对齐	Căn theo màn chiếu
+自动垂直翻转	Tự lật dọc
+一键校准	Hiệu chuẩn một chạm
+校准还原	Khôi phục hiệu chuẩn
+对焦校准	Hiệu chuẩn lấy nét
+对焦设置	Cài đặt lấy nét
+对焦图	Hình lấy nét
+精准校正	Hiệu chỉnh chính xác
+四点画面调整	Chỉnh hình 4 điểm
+四点校正	Hiệu chỉnh 4 điểm
+多点校正	Hiệu chỉnh nhiều điểm
+网格数量	Số ô lưới
+开始校正	Bắt đầu hiệu chỉnh
+画面自动定位	Tự định vị hình
+手动画面调整	Chỉnh hình thủ công
+画面校正增强	Tăng cường căn chỉnh hình
+判断画面问题	Xác định lỗi hình
+画面旋转	Xoay hình
+恢复初始角度	Về góc ban đầu
+已旋转至最大角度	Đã xoay tới góc tối đa
+墙面记忆	Ghi nhớ tường
+更新画面参数	Cập nhật thông số hình
+墙面颜色适配	Thích ứng màu tường
+开始适配	Bắt đầu thích ứng
+开启墙面颜色适配？	Bật thích ứng màu tường?
+陀螺仪校准	Hiệu chuẩn con quay
+梯形校准	Hiệu chuẩn hình thang
+调整画面至矩形	Chỉnh hình thành chữ nhật
+左右调整	Chỉnh trái phải
+校准画面	Hình hiệu chuẩn
+输入距离	Nhập khoảng cách
+上一步	Bước trước
+下一步	Bước tiếp
+继续校准	Tiếp tục hiệu chuẩn
+完成校准	Hoàn tất hiệu chuẩn
+结束校准	Kết thúc hiệu chuẩn
+重新校准	Hiệu chuẩn lại
+去调整	Đi chỉnh
+恢复默认校准数据	Khôi phục dữ liệu hiệu chuẩn
+已恢复至默认校准状态	Đã khôi phục hiệu chuẩn mặc định
+已恢复至默认画面	Đã về hình mặc định
+请确认当前画面	Hãy xác nhận hình hiện tại
+请确认投影画面是否方正?	Hình chiếu đã vuông vắn chưa?
+重新摆放	Đặt lại máy
+投影距离过近，请调整后再试	Máy chiếu quá gần, hãy chỉnh rồi thử lại
+投影距离过远，请调整后再试	Máy chiếu quá xa, hãy chỉnh rồi thử lại
+已调整到最大	Đã chỉnh tối đa
+已调整到最小	Đã chỉnh tối thiểu
+已调整上限	Đã tới giới hạn
+已调整到最低	Đã xuống thấp nhất
+已调整到最高	Đã lên cao nhất
+已调整到最左	Đã sang trái nhất
+已调整到最右	Đã sang phải nhất
+可按【对焦键】手动对焦	Bấm nút Lấy nét để lấy nét thủ công
+吊装场景下暂不支持	Chưa hỗ trợ khi treo trần
+工程测试图样	Hình kiểm tra kỹ thuật
+长按查看更多功能	Nhấn giữ để xem thêm
+查看更多功能	Xem thêm chức năng
+# Hinh anh
+图像模式	Chế độ hình ảnh
+图像风格	Phong cách hình ảnh
+基础设置	Cài đặt cơ bản
+专业设置	Cài đặt chuyên nghiệp
+高级设置	Cài đặt nâng cao
+更多设置	Cài đặt khác
+恢复默认设置	Khôi phục cài đặt mặc định
+重置图像设置	Đặt lại cài đặt hình ảnh
+恢复默认	Khôi phục mặc định
+亮度	Độ sáng
+亮度模式	Chế độ độ sáng
+亮度与色彩	Độ sáng & màu
+亮度与色彩风格	Độ sáng & phong cách màu
+对比度	Độ tương phản
+动态对比度	Tương phản động
+局部对比度	Tương phản cục bộ
+AI对比度	Tương phản AI
+对比度增强	Tăng tương phản
+饱和度	Độ bão hòa
+锐度	Độ sắc nét
+清晰度	Độ rõ nét
+色温	Nhiệt độ màu
+色温1	Nhiệt độ màu 1
+色温2	Nhiệt độ màu 2
+色温3	Nhiệt độ màu 3
+冷	Lạnh
+暖	Ấm
+标准	Chuẩn
+标准（推荐）	Chuẩn (khuyên dùng)
+自定义	Tùy chỉnh
+用户	Người dùng
+色彩	Màu sắc
+色彩风格	Phong cách màu
+色彩调节	Điều chỉnh màu
+色彩空间	Không gian màu
+色彩范围	Dải màu
+色彩增强	Tăng cường màu
+自定义色彩增强	Tăng cường màu tùy chỉnh
+色彩自适应	Màu thích ứng
+色彩校正	Hiệu chỉnh màu
+色彩优化	Tối ưu màu
+专业色准	Màu chuẩn chuyên nghiệp
+大师色准	Màu chuẩn chuyên gia
+色相	Sắc độ
+肤色	Màu da
+红色	Đỏ
+绿色	Xanh lá
+蓝色	Xanh dương
+青色	Lục lam
+黄色	Vàng
+品红	Hồng tím
+红	Đỏ
+绿	Xanh lá
+蓝	Xanh dương
+红色增益	Độ lợi đỏ
+绿色增益	Độ lợi xanh lá
+蓝色增益	Độ lợi xanh dương
+红色偏移	Độ lệch đỏ
+绿色偏移	Độ lệch xanh lá
+蓝色偏移	Độ lệch xanh dương
+白平衡	Cân bằng trắng
+2点白平衡	Cân bằng trắng 2 điểm
+11点白平衡	Cân bằng trắng 11 điểm
+Gamma指数	Chỉ số Gamma
+降噪	Giảm nhiễu
+运动补偿	Bù chuyển động
+超分辨率	Siêu phân giải
+通过AI算法提升视频清晰度	Dùng AI làm video nét hơn
+动态黑位增强	Tăng cường mức đen động
+动态黑位校正	Hiệu chỉnh mức đen động
+HDR增强	Tăng cường HDR
+HDR动态亮度映射	Ánh xạ độ sáng HDR động
+原帧显示	Hiển thị khung gốc
+画面融合	Hòa trộn hình
+风格滤镜	Bộ lọc phong cách
+AI画质	Chất lượng AI
+自动切换	Tự chuyển
+影院	Rạp phim
+观影	Xem phim
+电影	Phim
+电影D65	Phim D65
+电视	TV
+运动	Thể thao
+足球	Bóng đá
+游戏	Trò chơi
+办公	Văn phòng
+艳丽	Rực rỡ
+明亮	Sáng
+柔和	Dịu
+臻彩	Màu chân thực
+动态	Động
+性能	Hiệu năng
+更多	Thêm
+高	Cao
+中	Trung bình
+低	Thấp
+强	Mạnh
+弱	Yếu
+关	Tắt
+自动	Tự động
+关闭	Tắt
+打开	Bật
+开启	Bật
+游戏模式	Chế độ trò chơi
+低延迟	Độ trễ thấp
+基础模式	Chế độ cơ bản
+极速模式	Chế độ siêu tốc
+基础	Cơ bản
+极速	Siêu tốc
+模式选项	Tùy chọn chế độ
+原始比例	Tỉ lệ gốc
+HDMI画面比例	Tỉ lệ hình HDMI
+关闭3D	Tắt 3D
+左右3D	3D trái-phải
+上下3D	3D trên-dưới
+左右3D转2D	3D trái-phải sang 2D
+上下3D转2D	3D trên-dưới sang 2D
+蓝光3D	3D Blu-ray
+杜比视界	Dolby Vision
+杜比视界设置	Cài đặt Dolby Vision
+杜比视界明亮	Dolby Vision sáng
+杜比视界柔和	Dolby Vision dịu
+适合在明亮环境下使用	Dùng khi phòng sáng
+适合在黑暗环境下使用	Dùng khi phòng tối
+幕布尺寸	Kích thước màn chiếu
+幕布增益	Độ lợi màn chiếu
+原始色域	Gam màu gốc
+标准色域	Gam màu chuẩn
+电影色域	Gam màu điện ảnh
+广色域	Gam màu rộng
+专业摄影	Nhiếp ảnh chuyên nghiệp
+原始	Gốc
+完整	Đầy đủ
+限制	Giới hạn
+强（推荐）	Mạnh (khuyên dùng)
+弱（推荐）	Yếu (khuyên dùng)
+长辈色彩优化	Tối ưu màu cho người lớn tuổi
+色觉优化	Tối ưu cho người khó phân biệt màu
+护眼三色激光	Laser 3 màu bảo vệ mắt
+安心模式	Chế độ an tâm
+跟随模式	Chế độ theo dõi
+# Mang
+Wi-Fi连接	Kết nối Wi-Fi
+Wi-Fi详情	Chi tiết Wi-Fi
+Wi-Fi未连接	Chưa kết nối Wi-Fi
+有线网络	Mạng có dây
+无线热点	Điểm phát Wi-Fi
+蓝牙	Bluetooth
+手动添加网络	Thêm mạng thủ công
+请输入密码	Nhập mật khẩu
+请输入SSID	Nhập tên mạng (SSID)
+请输入ssid	Nhập tên mạng (SSID)
+安全性	Bảo mật
+显示密码	Hiện mật khẩu
+忽略	Quên mạng
+连接	Kết nối
+立即连接	Kết nối ngay
+已连接	Đã kết nối
+未连接	Chưa kết nối
+已断开	Đã ngắt
+断开连接	Ngắt kết nối
+网络受限	Mạng bị hạn chế
+网络不可用	Mạng không khả dụng
+无法连接此网络	Không kết nối được mạng này
+无法保存网络	Không lưu được mạng
+网络认证	Xác thực mạng
+请拔出网线后再连接Wi-Fi	Rút cáp mạng rồi kết nối Wi-Fi
+配置方式	Cách cấu hình
+手动	Thủ công
+IP地址	Địa chỉ IP
+IP地址获取	Lấy địa chỉ IP
+IP修复	Sửa IP
+子网掩码	Mặt nạ mạng con
+默认网关	Cổng mặc định
+DNS服务器	Máy chủ DNS
+网络修复失败	Sửa mạng thất bại
+已对网络进行修复	Đã sửa mạng
+热点类型	Loại điểm phát
+名称	Tên
+密码	Mật khẩu
+常规信息	Thông tin chung
+热点已关闭	Đã tắt điểm phát
+当前配置已保存	Đã lưu cấu hình
+至少输入8个字符	Nhập ít nhất 8 ký tự
+至少输入5个字符	Nhập ít nhất 5 ký tự
+USB有线同屏	Chiếu màn hình qua USB
+其他	Khác
+无	Không
+# Bluetooth
+我的设备	Thiết bị của tôi
+可用设备	Thiết bị khả dụng
+添加更多设备	Thêm thiết bị
+扫描查找设备	Quét tìm thiết bị
+已扫描设备	Thiết bị đã quét
+遥控器	Điều khiển
+极米遥控器	Điều khiển XGIMI
+已配对	Đã ghép đôi
+共享中	Đang chia sẻ
+清除配对	Xóa ghép đôi
+清除配对?	Xóa ghép đôi?
+清除	Xóa
+清除蓝牙配对信息	Xóa thông tin ghép đôi Bluetooth
+清除配对后，需要重新进行配对	Sau khi xóa phải ghép đôi lại
+清除极米遥控器配对?	Xóa ghép đôi điều khiển XGIMI?
+清除遥控器配对?	Xóa ghép đôi điều khiển?
+清除开关面板配对?	Xóa ghép đôi bảng công tắc?
+音频共享	Chia sẻ âm thanh
+电池电量	Mức pin
+正在充电	Đang sạc
+快捷键	Phím tắt
+型号号码	Số hiệu
+序列号	Số sê-ri
+版本	Phiên bản
+版本更新	Cập nhật phiên bản
+开关面板	Bảng công tắc
+无线同屏器	Bộ chiếu không dây
+极米便携蓝牙音箱	Loa Bluetooth XGIMI
+极米智能光子幕布	Màn chiếu thông minh XGIMI
+调整幕布高度	Chỉnh độ cao màn chiếu
+幕布动画	Hiệu ứng màn chiếu
+添加唤醒设备	Thêm thiết bị đánh thức
+快速唤醒	Đánh thức nhanh
+车载蓝牙模式	Chế độ Bluetooth ô tô
+# Nguon vao
+信号源设置	Cài đặt nguồn vào
+HDMI 设置	Cài đặt HDMI
+全局设置	Cài đặt chung
+开机源	Nguồn khi bật máy
+默认	Mặc định
+HDMI即插即播	Tự phát khi cắm HDMI
+HDMI控制投影	HDMI điều khiển máy chiếu
+CEC控制	Điều khiển CEC
+HDMI模式	Chế độ HDMI
+兼容模式	Chế độ tương thích
+增强模式	Chế độ nâng cao
+优先考虑与连接设备的兼容性	Ưu tiên tương thích với thiết bị kết nối
+一键即玩	Chơi một chạm
+信号源备份	Nguồn dự phòng
+主信号	Nguồn chính
+备份信号	Nguồn dự phòng
+画面拼接	Ghép hình
+拼接参数设置	Thông số ghép hình
+显示宽度	Chiều rộng hiển thị
+显示高度	Chiều cao hiển thị
+像素	Điểm ảnh
+应用	Áp dụng
+取消	Hủy
+确定	OK
+确认	Xác nhận
+已确认	Đã xác nhận
+好的	Đồng ý
+输入数据过大	Số nhập quá lớn
+请输入大于100的数字	Nhập số lớn hơn 100
+输入已达最大限制	Đã nhập tối đa
+# Am thanh
+音效	Hiệu ứng âm thanh
+音效模式	Chế độ âm thanh
+全局音效	Âm thanh chung
+增强音效	Âm tăng cường
+根据播放内容选择偏好的音效	Chọn âm thanh theo nội dung đang phát
+AI音效	Âm thanh AI
+低音增强	Tăng âm trầm
+人声清晰	Giọng nói rõ
+人声	Giọng nói
+提高嘈杂背景音中人声的清晰度	Làm giọng nói rõ hơn khi nền ồn
+杜比全景声	Dolby Atmos
+自动音量平衡	Cân bằng âm lượng tự động
+自动调节剧烈的音量变化	Tự giảm thay đổi âm lượng đột ngột
+虚拟环绕声	Âm thanh vòm ảo
+音乐	Âm nhạc
+新闻	Tin tức
+体育	Thể thao
+K歌	Karaoke
+会议	Họp
+音量	Âm lượng
+音量调节	Chỉnh âm lượng
+音量平衡	Cân bằng âm lượng
+手动切换	Chuyển thủ công
+DTS音效	Âm thanh DTS
+哈曼音效	Âm thanh Harman
+哈曼卡顿	Harman Kardon
+哈曼卡顿原声	Harman Kardon gốc
+原声	Âm thanh gốc
+鸿鹄音效	Âm thanh Hồng Hộc
+声光影氛围	Không khí âm thanh ánh sáng
+eARC 模式	Chế độ eARC
+光纤/ARC	Quang/ARC
+内部扬声器+低音炮	Loa trong + loa trầm
+XGIMI Sound 组合	Bộ loa XGIMI Sound
+创建音响组合	Tạo bộ loa
+取消音响组合	Hủy bộ loa
+取消组合	Hủy ghép
+声道配置	Cấu hình kênh
+当前声道	Kênh hiện tại
+连接状态	Trạng thái kết nối
+设备信息	Thông tin thiết bị
+空间位置	Vị trí không gian
+左声道(L)	Kênh trái (L)
+右声道(R)	Kênh phải (R)
+左环绕(LS)	Vòm trái (LS)
+右环绕(RS)	Vòm phải (RS)
+左前	Trước trái
+右前	Trước phải
+左后	Sau trái
+右后	Sau phải
+左	Trái
+右	Phải
+取消后，将无法享受增强音质	Hủy sẽ mất âm thanh nâng cao
+# Chung / he thong
+关于本机	Giới thiệu máy
+系统更新	Cập nhật hệ thống
+系统版本	Phiên bản hệ thống
+语言/Language	Ngôn ngữ/Language
+简体中文	Tiếng Trung giản thể
+屏保	Bảo vệ màn hình
+屏幕保护	Bảo vệ màn hình
+等待时间	Thời gian chờ
+永不	Không bao giờ
+1分钟	1 phút
+3分钟	3 phút
+5分钟	5 phút
+10分钟	10 phút
+30分钟	30 phút
+1个小时	1 giờ
+开机动画	Hoạt ảnh khởi động
+开机时显示开机动画	Hiện hoạt ảnh khi bật máy
+地理位置	Vị trí địa lý
+导入批量设置	Nhập cài đặt hàng loạt
+导出批量设置	Xuất cài đặt hàng loạt
+投影ID设置	Đặt ID máy chiếu
+投影数据同步	Đồng bộ dữ liệu máy chiếu
+内测尝鲜	Dùng thử bản beta
+软件公测	Thử nghiệm công khai
+联系客服	Liên hệ hỗ trợ
+添加	Thêm
+灯光模式	Chế độ đèn
+小夜灯	Đèn ngủ
+阅读	Đọc
+放松	Thư giãn
+工作	Làm việc
+关灯	Tắt đèn
+灯	Đèn
+# Bo sung sau khi xem man hinh
+输出	Đầu ra
+声音输出	Đầu ra âm thanh
+按键音	Âm bấm phím
+# Bo sung: Hien thi, Bluetooth, Chung
+投影亮度	Độ sáng chiếu
+环境自适应	Thích ứng môi trường
+环境自适应已关闭	Đã tắt thích ứng môi trường
+环境自适应已开启	Đã bật thích ứng môi trường
+环境光自适应	Thích ứng ánh sáng phòng
+亮度调节	Chỉnh độ sáng
+亮度增强	Tăng độ sáng
+亮度自适应	Độ sáng thích ứng
+亮度自适应已关闭	Đã tắt độ sáng thích ứng
+亮度自适应已开启	Đã bật độ sáng thích ứng
+自适应设置	Cài đặt thích ứng
+环境	Môi trường
+环境光	Ánh sáng phòng
+投影环境检测	Kiểm tra môi trường chiếu
+节能模式	Chế độ tiết kiệm điện
+开启节能模式	Bật tiết kiệm điện
+关闭节能模式	Tắt tiết kiệm điện
+开启节能模式？	Bật tiết kiệm điện?
+关闭节能模式？	Tắt tiết kiệm điện?
+高海拔模式	Chế độ độ cao lớn
+光源模式	Chế độ nguồn sáng
+光源使用时间	Thời gian dùng nguồn sáng
+投影使用时间	Thời gian dùng máy chiếu
+投影方式	Cách chiếu
+镜头设置	Cài đặt ống kính
+校正设置	Cài đặt hiệu chỉnh
+画面调整设置	Cài đặt chỉnh hình
+开机自动对焦	Lấy nét tự động khi bật máy
+开机自动梯形校正	Hiệu chỉnh hình thang khi bật máy
+开机自动校正	Tự căn hình khi bật máy
+开机自动画面调整	Tự chỉnh hình khi bật máy
+开机画面自动定位	Tự định vị hình khi bật máy
+恢复默认画面	Về hình mặc định
+游戏增强模式	Chế độ tăng cường trò chơi
+切换游戏模式	Chuyển chế độ trò chơi
+3D模式	Chế độ 3D
+保持3D模式	Giữ chế độ 3D
+蓝牙可被发现	Cho phép tìm thấy Bluetooth
+蓝牙绝对音量	Âm lượng tuyệt đối Bluetooth
+蓝牙音乐	Nhạc Bluetooth
+蓝牙音乐播控栏	Thanh điều khiển nhạc Bluetooth
+手机蓝牙唤醒	Đánh thức bằng Bluetooth điện thoại
+我的蓝牙设备:	Thiết bị Bluetooth của tôi:
+遥控器模式	Chế độ điều khiển
+键调整设备音量	Phím chỉnh âm lượng thiết bị
+氛围音箱设置	Cài đặt loa không khí
+音频输出格式	Định dạng âm thanh ra
+静音模式	Chế độ im lặng
+麦克风模式	Chế độ micro
+麦克风音量	Âm lượng micro
+开机音乐	Nhạc khởi động
+设置	Cài đặt
+系统设置	Cài đặt hệ thống
+全部设置	Tất cả cài đặt
+其他设置	Cài đặt khác
+隐藏设置	Cài đặt ẩn
+时间设置	Cài đặt thời gian
+设定时间	Đặt giờ
+开/关机设置	Cài đặt bật/tắt máy
+无信号自动关机	Tự tắt khi không có tín hiệu
+上电自动开机	Tự bật khi cấp điện
+上电开机	Bật khi cấp điện
+通电自动开机	Tự bật khi có điện
+开机图	Hình khởi động
+勿扰模式	Chế độ không làm phiền
+主题风格	Giao diện
+白昼主题	Giao diện sáng
+暗夜主题	Giao diện tối
+黑色	Đen
+白色	Trắng
+物联网	Nhà thông minh
+家长设置	Kiểm soát của cha mẹ
+智能防射眼	Chống chói mắt thông minh
+已关闭智能防射眼	Đã tắt chống chói mắt
+语音助手	Trợ lý giọng nói
+输入法	Bàn phím nhập
+全键盘	Bàn phím đầy đủ
+我的应用	Ứng dụng của tôi
+存储空间	Dung lượng lưu trữ
+内存信息	Thông tin bộ nhớ
+帮助与反馈	Trợ giúp & phản hồi
+连接帮助	Hướng dẫn kết nối
+法律信息	Thông tin pháp lý
+隐私政策	Chính sách quyền riêng tư
+恢复出厂	Khôi phục cài đặt gốc
+恢复出厂设置？	Khôi phục cài đặt gốc?
+保留应用	Giữ ứng dụng
+保留已下载应用	Giữ ứng dụng đã tải
+不保留应用	Không giữ ứng dụng
+恢复	Khôi phục
+配置已恢复默认	Đã khôi phục mặc định
+Android版本	Phiên bản Android
+GMUI版本	Phiên bản GMUI
+INUI版本	Phiên bản INUI
+新版本	Phiên bản mới
+历史版本	Phiên bản trước
+暂无历史版本	Chưa có phiên bản trước
+新版本安装完成	Đã cài phiên bản mới
+支架模式	Chế độ giá đỡ
+智能模式	Chế độ thông minh
+模式选择	Chọn chế độ
+长辈模式自动开启	Tự bật chế độ người lớn tuổi
+
+# Bo sung dot 2: cac chu ngan con lai
+更新失败	Cập nhật thất bại
+稍后再说	Để sau
+立即重启	Khởi động lại ngay
+重试	Thử lại
+重启设备完成更新	Khởi động lại để hoàn tất cập nhật
+入网号	Số giấy phép mạng
+自适应增强	Tăng cường thích ứng
+正在加载中...	Đang tải...
+正在加载中…	Đang tải…
+正在加载中	Đang tải
+进风温度	Nhiệt độ gió vào
+氛围音箱	Loa không khí
+辅助安装	Hỗ trợ lắp đặt
+调整画面	Chỉnh hình
+智能动态调焦	Lấy nét động thông minh
+自动画面调整增强	Tăng cường tự chỉnh hình
+15分钟	15 phút
+辅助幕布对齐	Hỗ trợ căn màn chiếu
+调整后 按	Chỉnh xong bấm
+开始对齐	Bắt đầu căn
+返回	Quay lại
+后台更新	Cập nhật ngầm
+取消配对	Hủy ghép đôi
+配对	Ghép đôi
+蓝灯温度	Nhiệt độ đèn xanh dương
+绿灯温度	Nhiệt độ đèn xanh lá
+红灯温度	Nhiệt độ đèn đỏ
+关屏并退出	Tắt hình và thoát
+关屏并切换	Tắt hình và chuyển
+开机后自动打开对应的应用	Tự mở ứng dụng tương ứng khi bật máy
+切换	Chuyển
+继续	Tiếp tục
+否则将影响校准效果	Nếu không sẽ ảnh hưởng hiệu chuẩn
+请联系客服处理	Hãy liên hệ hỗ trợ
+手机和投影连接同一个网络	Điện thoại và máy chiếu cùng một mạng
+手机扫描二维码	Dùng điện thoại quét mã QR
+立即开启	Bật ngay
+切换控制点	Đổi điểm điều chỉnh
+清除配对？	Xóa ghép đôi?
+请关闭原帧显示后重试	Hãy tắt hiển thị khung gốc rồi thử lại
+请关闭高帧率后重试	Hãy tắt tốc độ khung cao rồi thử lại
+请关闭VRR后重试	Hãy tắt VRR rồi thử lại
+已最大化还原色彩表现	Đã tái hiện màu tối đa
+请退出 3D 模式后重试	Hãy thoát chế độ 3D rồi thử lại
+请退出杜比视界后重试	Hãy thoát Dolby Vision rồi thử lại
+已还原至开启前色彩表现	Đã trả màu như trước khi bật
+广色域(BT.2020)	Gam màu rộng (BT.2020)
+电影色域(DCI-P3)	Gam màu điện ảnh (DCI-P3)
+标准色域(Rec.709)	Gam màu chuẩn (Rec.709)
+确认自动梯形功能已校准	Xác nhận đã hiệu chuẩn hình thang tự động
+网络变化，请重试	Mạng thay đổi, hãy thử lại
+请连接网络后重试	Hãy kết nối mạng rồi thử lại
+手势控制	Điều khiển cử chỉ
+便捷梯形校正	Hiệu chỉnh hình thang nhanh
+恢复默认画面/精准校正	Về hình mặc định / hiệu chỉnh chính xác
+便捷校正	Hiệu chỉnh nhanh
+校正成功	Hiệu chỉnh thành công
+开始校准	Bắt đầu hiệu chuẩn
+一键校准？	Hiệu chuẩn một chạm?
+当前信号刷新率	Tần số quét tín hiệu
+当前信号	Tín hiệu hiện tại
+当前信号分辨率	Độ phân giải tín hiệu
+当前模式不能调整风速	Chế độ này không chỉnh được tốc độ quạt
+画幕自动对齐	Tự căn theo màn chiếu
+卧室的	của phòng ngủ
+客厅的	của phòng khách
+我的	Của tôi
+的	của
+自定义设备名称	Đặt tên thiết bị
+云备份	Sao lưu đám mây
+删除所有内容	Xóa toàn bộ nội dung
+是否保留已下载的应用？	Giữ ứng dụng đã tải?
+设备型号	Kiểu máy
+远程控制设备并定位问题	Điều khiển từ xa để tìm lỗi
+切换至专家模式	Chuyển sang chế độ chuyên gia
+切换至智能模式	Chuyển sang chế độ thông minh
+切换性能模式	Chuyển chế độ hiệu năng
+切换至“三色激光”模式？	Chuyển sang chế độ laser 3 màu?
+切换极速模式	Chuyển chế độ siêu tốc
+专家校正模式	Chế độ hiệu chỉnh chuyên gia
+切换至智能校正模式？	Chuyển sang hiệu chỉnh thông minh?
+切换至专家校正模式？	Chuyển sang hiệu chỉnh chuyên gia?
+切换至吊装？	Chuyển sang treo trần?
+升级	Nâng cấp
+更新	Cập nhật
+检测到安装包，是否更新？	Phát hiện gói cài đặt, cập nhật không?
+升级系统？	Nâng cấp hệ thống?
+删除	Xóa
+我知道了	Tôi đã hiểu
+超出上限，请先删除设备	Đã đủ số lượng, hãy xóa bớt thiết bị
+数码位移	Dịch chuyển số
+数码缩放与位移	Thu phóng & dịch chuyển số
+数码变焦	Zoom số
+位移自动校正	Tự hiệu chỉnh khi dịch chuyển
+位移自动对焦	Tự lấy nét khi dịch chuyển
+位移自动梯形校正	Tự hiệu chỉnh hình thang khi dịch chuyển
+位移自动画面调整	Tự chỉnh hình khi dịch chuyển
+DMD温度	Nhiệt độ DMD
+正装	Đặt bàn
+正装正投	Đặt bàn, chiếu trước
+正装背投	Đặt bàn, chiếu sau
+吊装	Treo trần
+吊装正投	Treo trần, chiếu trước
+吊装背投	Treo trần, chiếu sau
+背投	Chiếu sau
+动态对焦补偿	Bù lấy nét động
+开	Bật
+进入屏保	Vào bảo vệ màn hình
+设备名称	Tên thiết bị
+开始导出	Bắt đầu xuất
+是否导出批量文件？	Xuất tệp cài đặt hàng loạt?
+风速已调整为“自动”	Quạt đã chuyển sang “Tự động”
+滤镜分类	Loại bộ lọc
+输入分享码	Nhập mã chia sẻ
+滤镜管理	Quản lý bộ lọc
+滤镜类型	Kiểu bộ lọc
+滤镜用户协议	Điều khoản bộ lọc
+墙面平整适配	Thích ứng tường không phẳng
+*此功能吊装下不支持	*Không hỗ trợ khi treo trần
+请打开游戏增强模式后重试	Hãy bật tăng cường trò chơi rồi thử lại
+识别到游戏设备时	Khi nhận ra máy chơi game
+自动切换时机	Thời điểm tự chuyển
+3D播放下不支持游戏模式	Không hỗ trợ chế độ trò chơi khi phát 3D
+请在信号源画面下进行设置	Hãy cài đặt khi đang xem nguồn vào
+极速模式下不支持画面位移	Chế độ siêu tốc không hỗ trợ dịch chuyển hình
+极速模式下不支持画面旋转	Chế độ siêu tốc không hỗ trợ xoay hình
+极速模式下不支持画面缩放	Chế độ siêu tốc không hỗ trợ thu phóng hình
+不支持Gamma指数	Không hỗ trợ chỉ số Gamma
+恢复至默认校准状态？	Khôi phục hiệu chuẩn mặc định?
+当前为合适的投影角度	Góc chiếu hiện tại phù hợp
+请调整投影角度后重试	Hãy chỉnh góc chiếu rồi thử lại
+当前角度过大	Góc hiện tại quá lớn
+自动对焦中，请勿移动机器	Đang lấy nét, đừng di chuyển máy
+当前为合适的距离	Khoảng cách hiện tại phù hợp
+确认投影距离	Xác nhận khoảng cách chiếu
+请调整投影距离后重试	Hãy chỉnh khoảng cách chiếu rồi thử lại
+当前距离过远	Khoảng cách quá xa
+当前距离过近	Khoảng cách quá gần
+请确保投影稳定后再重试	Hãy đặt máy chắc chắn rồi thử lại
+按@退出	Bấm @ để thoát
+校准已完成	Đã hiệu chuẩn xong
+校准中，请勿移动机器	Đang hiệu chuẩn, đừng di chuyển máy
+HDBaseT画面比例	Tỉ lệ hình HDBaseT
+X坐标	Tọa độ X
+Y坐标	Tọa độ Y
+开始诊断	Bắt đầu chẩn đoán
+远程诊断	Chẩn đoán từ xa
+接通电源后投影自动开机	Tự bật máy chiếu khi cắm điện
+接通电源后投影仪自动开机	Tự bật máy chiếu khi cắm điện
+风速等级	Mức tốc độ quạt
+风速	Tốc độ quạt
+日志上报	Gửi nhật ký
+智能幕布	Màn chiếu thông minh
+日	Ngày
+时	Giờ
+分	Phút
+月	Tháng
+年	Năm
+当前温度过高	Nhiệt độ đang quá cao
+高帧率下不支持3D设置	Tốc độ khung cao không hỗ trợ 3D
+水平角度	Góc ngang
+水平辅助安装	Hỗ trợ đặt máy cân bằng
+热点:	Điểm phát:
+ISF白天	ISF ban ngày
+ISF黑夜	ISF ban đêm
+请关闭游戏增强模式后重试	Hãy tắt tăng cường trò chơi rồi thử lại
+请关闭节能模式后重试	Hãy tắt tiết kiệm điện rồi thử lại
+游戏模式下不支持图像模式	Chế độ trò chơi không hỗ trợ chế độ hình ảnh
+游戏模式生效中	Đang bật chế độ trò chơi
+低延迟下不支持图像模式	Độ trễ thấp không hỗ trợ chế độ hình ảnh
+至臻120Hz	120Hz đỉnh cao
+电影D65（推荐）	Phim D65 (khuyên dùng)
+开始导入	Bắt đầu nhập
+批量设置数据导入完成	Đã nhập xong cài đặt hàng loạt
+导入时出现异常，请重试	Nhập bị lỗi, hãy thử lại
+实时画面校正	Căn hình theo thời gian thực
+安装方式	Cách lắp đặt
+请接入U盘后重试	Hãy cắm USB rồi thử lại
+九宫格	Lưới 9 ô
+画面自动定位启动失败	Tự định vị hình không khởi động được
+八点画面调整	Chỉnh hình 8 điểm
+局域网	Mạng nội bộ
+隐私政策（摘要版）	Chính sách quyền riêng tư (tóm tắt)
+第三方共享信息清单	Danh sách chia sẻ với bên thứ ba
+用户协议	Điều khoản người dùng
+个人信息收集清单	Danh sách thông tin cá nhân thu thập
+鲜艳	Tươi
+冷色	Màu lạnh
+节能	Tiết kiệm điện
+护眼	Bảo vệ mắt
+高能	Hiệu năng cao
+镜头锁定	Khóa ống kính
+镜头位移	Dịch ống kính
+已调整到上限	Đã tới giới hạn
+校准	Hiệu chuẩn
+陀螺仪水平校准	Hiệu chuẩn cân bằng con quay
+选择生效的光源	Chọn nguồn sáng dùng
+光源1	Nguồn sáng 1
+光源2	Nguồn sáng 2
+全开	Bật hết
+延时关灯键	Phím tắt đèn hẹn giờ
+生日快乐	Chúc mừng sinh nhật
+节律光	Ánh sáng nhịp sinh học
+罗曼蒂克	Lãng mạn
+手动对焦	Lấy nét thủ công
+大师色准模式	Chế độ màu chuẩn chuyên gia
+菜单旋转	Xoay menu
+左旋90度	Xoay trái 90°
+右旋90度	Xoay phải 90°
+麦克风	Micro
+米家	Mi Home
+搜索	Tìm kiếm
+打开失败	Mở thất bại
+请先连接手机蓝牙播放音乐	Hãy kết nối Bluetooth điện thoại để phát nhạc
+未在播放	Không phát
+未知音乐	Bài hát không rõ
+未知歌手	Ca sĩ không rõ
+办公模式	Chế độ văn phòng
+连接方式	Cách kết nối
+设备模式	Chế độ thiết bị
+同步开关	Bật đồng bộ
+亮度同步	Đồng bộ độ sáng
+主控	Máy chính
+被控	Máy phụ
+画质同步	Đồng bộ chất lượng hình
+设置同步	Đồng bộ cài đặt
+同步内容设置	Nội dung đồng bộ
+更多墙面设置	Thêm cài đặt tường
+str开机	Khởi động nhanh (STR)
+观影灯光联动	Liên kết đèn khi xem phim
+清除音乐控制器配对信息	Xóa ghép đôi bộ điều khiển nhạc
+一碰同屏	Chạm để chiếu màn hình
+一碰传音	Chạm để truyền âm thanh
+音乐控制器	Bộ điều khiển nhạc
+导致动态黑位增强失效	Làm tắt tăng cường mức đen động
+原帧显示下不支持3D设置	Hiển thị khung gốc không hỗ trợ 3D
+连接中	Đang kết nối
+忽略此网络	Quên mạng này
+忽略网络	Quên mạng
+密码错误，请重新输入密码	Sai mật khẩu, hãy nhập lại
+已保存	Đã lưu
+未知异常，请稍后再试	Lỗi không rõ, hãy thử lại sau
+无网络连接	Không có kết nối mạng
+仍要开启	Vẫn bật
+结束	Kết thúc
+开始	Bắt đầu
+未检测到可导入的文件	Không thấy tệp để nhập
+请插入电源适配器后重试	Hãy cắm sạc rồi thử lại
+当前HDMI模式下不支持	Chế độ HDMI hiện tại không hỗ trợ
+办公模式下不支持色彩空间	Chế độ văn phòng không hỗ trợ không gian màu
+仅对HDR10生效	Chỉ áp dụng cho HDR10
+请打开画面拼接再使用	Hãy bật ghép hình trước
+光学无损	Quang học không suy hao
+光学变焦	Zoom quang
+密码:	Mật khẩu:
+暂停	Tạm dừng
+执行画面校准	Chạy hiệu chuẩn hình
+性能模式下不支持亮度调节	Chế độ hiệu năng không chỉnh được độ sáng
+节能模式下不支持性能模式	Tiết kiệm điện không hỗ trợ chế độ hiệu năng
+个性化推荐	Gợi ý cá nhân hóa
+100寸	100 inch
+110寸	110 inch
+120寸	120 inch
+130寸	130 inch
+135寸	135 inch
+140寸	140 inch
+150寸	150 inch
+160寸	160 inch
+170寸	170 inch
+180寸	180 inch
+190寸	190 inch
+200寸	200 inch
+250寸	250 inch
+300寸	300 inch
+80寸	80 inch
+88寸	88 inch
+90寸	90 inch
+端口号	Số cổng
+PJLink开关	Bật PJLink
+平面调整	Chỉnh mặt phẳng
+播放	Phát
+试听VIP	Nghe thử VIP
+播放VIP	Phát VIP
+播放列表	Danh sách phát
+专家校正	Hiệu chỉnh chuyên gia
+画面智能避障	Hình tự tránh vật cản
+投影ID	ID máy chiếu
+全自动云台	Giá đỡ tự động
+云台位移	Dịch giá đỡ
+开机云台还原	Trả giá đỡ khi bật máy
+关机云台复位	Đặt lại giá đỡ khi tắt máy
+开关机复位	Đặt lại khi bật/tắt máy
+手推屏	Đẩy hình bằng tay
+学习手推屏	Học đẩy hình bằng tay
+鼠标	Chuột
+遥控器对焦	Lấy nét bằng điều khiển
+遥控器ID	ID điều khiển
+还原	Trả lại
+恢复至默认画面大小？	Về kích thước hình mặc định?
+将清除当前画面校正效果	Sẽ xóa căn chỉnh hình hiện tại
+已还原校准	Đã trả hiệu chuẩn
+已恢复最大默认画面	Đã về hình mặc định lớn nhất
+应用打开失败，请稍后重试	Không mở được ứng dụng, hãy thử lại sau
+三色激光	Laser 3 màu
+分段	Phân đoạn
+可用网络	Mạng khả dụng
+机器序列号	Số sê-ri máy
+串口ID组	Nhóm ID cổng nối tiếp
+串口ID号	ID cổng nối tiếp
+并联	Song song
+串联	Nối tiếp
+主控模式	Chế độ máy chính
+串口应答（全部）	Phản hồi cổng nối tiếp (tất cả)
+串口应答（组）	Phản hồi cổng nối tiếp (nhóm)
+串口控制开关	Bật điều khiển cổng nối tiếp
+串口控制	Điều khiển cổng nối tiếp
+可通过串口指令控制本机	Điều khiển máy bằng lệnh cổng nối tiếp
+串口类型	Loại cổng nối tiếp
+常规开机时显示开机动画	Hiện hoạt ảnh khi bật máy bình thường
+设置同步已完成	Đã đồng bộ cài đặt
+同步失败，请重试	Đồng bộ thất bại, hãy thử lại
+设置同步中	Đang đồng bộ cài đặt
+请重新尝试连接	Hãy thử kết nối lại
+正在连接...	Đang kết nối...
+按遥控器	Bấm điều khiển
+断开连接...	Đang ngắt kết nối...
+音频共享失败	Chia sẻ âm thanh thất bại
+音频共享中	Đang chia sẻ âm thanh
+可共享设备	Thiết bị chia sẻ được
+智能自动对焦	Lấy nét tự động thông minh
+下降	Hạ xuống
+完成	Xong
+上升	Nâng lên
+灵动屏	Màn hình linh hoạt
+灵动墙面	Tường linh hoạt
+天花板观影	Xem phim trên trần
+创建新墙面	Tạo tường mới
+自定义1	Tùy chỉnh 1
+日常观影	Xem phim hằng ngày
+保存当前画面参数	Lưu thông số hình hiện tại
+保存	Lưu
+我的墙面	Tường của tôi
+天窗	Cửa trần
+退出巨幕模式后重试	Hãy thoát chế độ màn lớn rồi thử lại
+光纤/ARC-PCM	Quang/ARC-PCM
+光纤/ARC-AUTO	Quang/ARC-Tự động
+强度	Cường độ
+曲面调整	Chỉnh mặt cong
+曲面1	Mặt cong 1
+曲面2	Mặt cong 2
+曲面3	Mặt cong 3
+曲面4	Mặt cong 4
+曲面5	Mặt cong 5
+曲面6	Mặt cong 6
+切换悬浮歌词	Bật/tắt lời bài hát nổi
+画质同步中，请稍后重试	Đang đồng bộ hình, hãy thử lại sau
+温度	Nhiệt độ
+系统升级	Nâng cấp hệ thống
+4K视频下不支持3D设置	Video 4K không hỗ trợ 3D
+游戏模式下不支持3D设置	Chế độ trò chơi không hỗ trợ 3D
+请关闭3D设置后重试	Hãy tắt 3D rồi thử lại
+3D设置下不支持画面校正	Khi bật 3D không căn hình được
+3D设置下不支持原帧显示	Khi bật 3D không hiển thị khung gốc được
+天猫精灵	Tmall Genie
+画面对焦	Lấy nét hình
+梯形校正至中心圆为正圆	Chỉnh hình thang tới khi vòng tròn giữa tròn đều
+画面调整	Chỉnh hình
+智能	Thông minh
+定时切换需要连接网络	Chuyển theo giờ cần có mạng
+设备名称不能为空	Tên thiết bị không được để trống
+网络异常，请检查后重试	Lỗi mạng, hãy kiểm tra rồi thử lại
+服务器异常，请稍后重试	Lỗi máy chủ, hãy thử lại sau
+请先插入U盘	Hãy cắm USB trước
+请先添加唤醒设备	Hãy thêm thiết bị đánh thức trước
+校准完成	Hiệu chuẩn xong
+当前距离过远，请调整	Quá xa, hãy chỉnh lại
+当前距离过近，请调整	Quá gần, hãy chỉnh lại
+当前距离合适	Khoảng cách phù hợp
+校准失败	Hiệu chuẩn thất bại
+距离过远,校准失败	Quá xa, hiệu chuẩn thất bại
+距离过近,校准失败	Quá gần, hiệu chuẩn thất bại
+当前刷新率已不可提升	Tần số quét đã tối đa
+请将亮度调整为10后重试	Hãy chỉnh độ sáng lên 10 rồi thử lại
+重启设备立即体验新版本	Khởi động lại để dùng bản mới
+自动升级	Tự nâng cấp
+自动更新	Tự cập nhật
+在线更新	Cập nhật trực tuyến
+在线升级	Nâng cấp trực tuyến
+升级系统	Nâng cấp hệ thống
+U盘更新	Cập nhật bằng USB
+U盘升级	Nâng cấp bằng USB
+检测到安装包	Phát hiện gói cài đặt
+未检测到安装包	Không thấy gói cài đặt
+未检测到U盘	Không thấy USB
+用户体验改进计划	Chương trình cải thiện trải nghiệm
+加入用户体验改进计划	Tham gia cải thiện trải nghiệm
+查看用户体验改进计划	Xem chương trình cải thiện trải nghiệm
+俯仰角度	Góc nghiêng
+自动垂直梯形校正	Tự hiệu chỉnh hình thang dọc
+IMAX 片源下暂不支持	Chưa hỗ trợ nội dung IMAX
+视频比例	Tỉ lệ video
+画面缩放 	Thu phóng hình
+蓝/黄滤镜	Lọc xanh/vàng
+灰度	Thang xám
+绿/红滤镜	Lọc xanh lá/đỏ
+红/绿滤镜	Lọc đỏ/xanh lá
+透传	Truyền thẳng
+耳机	Tai nghe
+光纤	Cáp quang
+内部扬声器	Loa trong
+AC4对白增强	Tăng cường thoại AC4
+音画同步	Đồng bộ hình tiếng
+音响系统	Hệ thống loa
+当前连接WIFI:   	Wi-Fi đang kết nối:
+有线MAC地址	Địa chỉ MAC có dây
+无线MAC地址	Địa chỉ MAC không dây
+暂无数据	Chưa có dữ liệu
+出错啦！	Có lỗi!
+连接网络	Kết nối mạng
+缩放与位移	Thu phóng & dịch chuyển
+云台位移与缩放	Dịch & thu phóng giá đỡ
+画面比例	Tỉ lệ hình

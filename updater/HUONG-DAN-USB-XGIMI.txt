@@ -1,0 +1,32 @@
+CẬP NHẬT MÁY CHIẾU XGIMI DOHKO BẰNG USB (BẢN RIÊNG CHO DOHKO)
+==============================================================
+
+Bản này chỉ dành cho máy chiếu XGIMI DOHKO (RS 20 Pro Max, Android 14, GMUI), như máy .12.
+Cắm vào máy khác (XGIMI đời cũ Android 6, onn, TV box…), ứng dụng báo "chỉ dành cho máy chiếu XGIMI
+DOHKO" và không thay đổi gì. Máy khác: dùng gói USB-CapNhat chung.
+
+CÁCH DÙNG
+1. Chép thư mục USB-CapNhat-XGIMI-DOHKO vào USB.
+2. Cắm USB vào máy chiếu. Mở X-plore (hoặc trình quản lý file), vào USB, chọn CapNhatXGIMI-DOHKO.apk và
+   cài đặt. Nếu máy hỏi cho phép cài ứng dụng không rõ nguồn: chọn Cho phép.
+3. Mở ứng dụng "Cập nhật XGIMI DOHKO" (trong danh sách ứng dụng), bấm "Cập nhật". Ứng dụng tự:
+   1/3 cài launcher mới nhất, đặt làm màn hình chính, bật "tự bật lại ADB"
+   2/3 tắt quảng cáo và ứng dụng thừa (không gỡ, bật lại được). Giao diện XGIMI (com.xgimi.home)
+       được GIỮ BẬT để các chức năng XGIMI không bị lỗi; nút Home vẫn mở launcher mới.
+   3/3 Việt hoá Cài đặt XGIMI, menu tắt máy (nút nguồn) và 20 ứng dụng XGIMI (HDMI, thanh hệ thống,
+       cài ứng dụng, lấy nét, Cửa thần kỳ, nhạc, karaoke, tài khoản…), và giữ tiếng Việt sau mỗi lần
+       khởi động lại (máy này tự xoá bản dịch khi khởi động; launcher tạo lại sau khoảng 1 phút).
+4. Xong thì bấm "Trở về" (hoặc Home) để về màn hình chính mới. Có thể rút USB.
+
+BẬT ADB
+- Mở "Cập nhật XGIMI DOHKO", bấm "Bật ADB". Nếu ADB đang tắt, ứng dụng nhờ launcher bật lại (máy cần
+  đã được "Cập nhật" ít nhất một lần). Sau đó ADB tự bật lại mỗi lần máy khởi động.
+
+KHÔI PHỤC
+- Mở "Cập nhật XGIMI DOHKO", bấm "Khôi phục": bật lại các ứng dụng đã tắt, trả màn hình chính XGIMI,
+  bỏ Việt hoá Cài đặt, menu tắt máy và các ứng dụng XGIMI, bỏ tự Việt hoá sau khởi động.
+
+YÊU CẦU
+- Máy chiếu bật Gỡ lỗi mạng (ADB) cho lần cập nhật đầu tiên.
+- Lưu ý: ADB luôn bật thì mọi thiết bị cùng Wi-Fi đều điều khiển được máy chiếu. Chỉ dùng trong mạng nhà.
+- Lần sau có bản mới: chép APK mới vào USB, cài đè, bấm "Cập nhật" lại.

@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Cap nhat may chieu tu USB: cai APK nay tren may chieu, bam Cap nhat. No ket noi ADB cua chinh may
+// (127.0.0.1:5555) va lam nhu updater\CapNhat.ps1. Assets (launcher, debloat, ban dich) do
+// updater\build-usb.ps1 chep vao src/main/assets truoc khi build.
+android {
+    namespace 'vn.cleantv.updater'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'vn.cleantv.updater'
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    // chung: every TV this app knows (USB-CapNhat). xgimi: the XGIMI DOHKO (Android 14) only
+    // (USB-CapNhat-XGIMI-DOHKO), its own app next to the other, refusing any other TV (Android 6 XGIMI included)
+    // without changing anything; the Android 6 and onn assets live in src/chung only. ("all" would clash with Gradle's all {}.)
+    buildFeatures {
+        buildConfig true
+    }
+    flavorDimensions 'target'
+    productFlavors {
+        chung {
+            dimension 'target'
+            buildConfigField 'boolean', 'XGIMI_ONLY', 'false'
+        }
+        xgimi {
+            dimension 'target'
+            applicationIdSuffix '.xgimi'
+            buildConfigField 'boolean', 'XGIMI_ONLY', 'true'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // tvhome.apk is already compressed; storing it as-is keeps the copy fast on the TV
+    androidResources {
+        noCompress 'apk'
+    }
+}

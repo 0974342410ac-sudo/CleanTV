@@ -1,0 +1,22 @@
+CẬP NHẬT MÁY CHIẾU XGIMI (một chạm)
+==================================
+
+Dành cho máy chiếu XGIMI DOHKO (RS 20 Pro Max, Android 14). Không cần cài gì trên máy tính.
+
+CÁCH DÙNG
+1. Giải nén toàn bộ file zip vào một thư mục.
+2. Bật máy chiếu, để máy tính và máy chiếu cùng mạng Wi-Fi.
+3. Nhấp đúp CapNhat.cmd. Chương trình tự tìm máy chiếu rồi làm 3 bước:
+   1/3 Tắt quảng cáo và ứng dụng thừa (không gỡ, bật lại được)
+   2/3 Cài launcher mới nhất, đặt làm màn hình chính
+   3/3 Việt hoá Cài đặt XGIMI
+   Không tìm thấy máy chiếu thì nhập IP (xem trong Cài đặt > Mạng trên máy chiếu).
+4. Chạy lại bất cứ lúc nào để cập nhật lên bản mới hơn; bước đã làm sẽ được bỏ qua.
+
+KHÔI PHỤC
+- Nhấp đúp KhoiPhuc.cmd: bật lại các ứng dụng đã tắt, trả màn hình chính XGIMI, bỏ Việt hoá.
+
+LƯU Ý
+- Máy chiếu cần bật Gỡ lỗi mạng (ADB, cổng 5555).
+- Danh sách gói đã tắt trước mỗi lần cập nhật được lưu trong thư mục nhat-ky.
+- Windows có thể cảnh báo khi chạy lần đầu: chọn "More info" > "Run anyway".

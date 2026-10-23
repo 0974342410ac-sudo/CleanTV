@@ -1,0 +1,54 @@
+# Menu tat may va cac cua so he thong (com.xgimi.windowsystem, /system/app/systwind, v1.9.10) tren may XGIMI
+# Android 6 (synsepalum_YN): menu nut nguon, hen gio tat, canh bao nhiet/quat, hinh thang, lay net, man hinh doi.
+# s<TAB>ten chuoi<TAB>tieng Viet. Dung bang build-synsepalum-overlay.ps1, cai bang install-synsepalum-overlay.ps1.
+s	title_power	Bạn muốn làm gì?
+s	shutdown	Tắt máy
+s	reboot	Khởi động lại
+s	stand_mode	Tắt đèn chiếu
+s	void_mode	Chế độ loa
+s	time_shutdown	Hẹn giờ tắt
+s	fifteen	15 phút
+s	thirty	30 phút
+s	onehour	1 giờ
+s	twohour	2 giờ
+s	cancel	Hủy hẹn giờ tắt
+s	timeclean	Hủy
+s	timed	Nhắc tự tắt máy
+s	sure	Tắt ngay
+s	warning_window_power_off	Tắt ngay
+s	warning_mcu_error	Lỗi MCU, máy sẽ tắt sau %d giây
+s	warning_window_fan_error	Quạt bị lỗi, máy sẽ tắt sau %d giây
+s	warning_window_temperature_high	Máy quá nóng, sẽ tắt sau %d giây
+s	soundoutput	Đầu ra âm thanh
+s	settings_tixing_menu	Cài đặt khác
+s	settings_tixing_msg	Hình đúng tỉ lệ nhất khi vòng tròn ở giữa tròn đều
+s	settings_tixing_reset	Đặt lại hình thang
+s	kst_title	Dùng phím mũi tên chỉnh hình cho tới khi đường kẻ thành hình chữ nhật
+s	keystone_more	Bấm phím "Menu" để có thêm chức năng
+s	autokeystonetxt	Đã chỉnh xong, bấm OK để tinh chỉnh thủ công %d
+s	metopeabnormality	Ngoài vùng nhận diện, hãy chỉnh vị trí chiếu rồi thử lại
+s	auto_focus	Đang tự lấy nét, vui lòng chờ
+s	auto_focus_one	Đang tự lấy nét, vui lòng chờ .
+s	auto_focus_two	Đang tự lấy nét, vui lòng chờ . .
+s	auto_focus_three	Đang tự lấy nét, vui lòng chờ . . .
+s	msaferror	Tự lấy nét thất bại, hãy thử lại
+s	aferror	Không khởi động được camera, khởi động lại máy để khắc phục
+s	help_adj	Chỉnh
+s	help_back	Quay lại
+s	help_ok	Chọn điểm
+s	reset	Đặt lại
+s	pop_string	Bấm phím "OK" trên remote để chuyển
+s	pop_strings	Phím "Trái" "Phải" trên remote để chỉnh giá trị
+s	progress_wait_fail	Lỗi mạng
+s	progress_wait_loading	Đang tải...
+s	double_screen_model	Chế độ hai màn hình
+s	close_double_screen_md	Thoát hai màn hình
+s	abexchange	Đổi màn hình A/B
+s	b_scsource	Nguồn màn hình B
+s	b_size	Cỡ màn hình B
+s	screen_b_voice	Âm lượng màn hình B
+s	popout_a	Màn A: loa máy + S/PDIF  Màn B: tai nghe
+s	popout_b	Màn A: tai nghe  Màn B: loa máy + S/PDIF
+s	popout_c	Màn A: Bluetooth + S/PDIF  Màn B: tai nghe
+s	popout_c_bt	Màn A: Bluetooth  Màn B: tai nghe + S/PDIF
+s	popout_cbt	Màn A: loa máy  Màn B: tai nghe + S/PDIF

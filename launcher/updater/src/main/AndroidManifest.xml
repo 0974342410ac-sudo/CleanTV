@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Only to reach the TV's own ADB on 127.0.0.1:5555; nothing leaves the device. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Ask the launcher (same signing key) to switch ADB on when it is off; see AdbKeeper.Request. -->
+    <uses-permission android:name="com.gathin.tvhome.permission.ENABLE_ADB" />
+
+    <!-- The launcher's name, as XGIMI's home chooser shows it (UpdaterActivity.chooseHomeAlways). -->
+    <queries>
+        <package android:name="com.gathin.tvhome" />
+    </queries>
+
+    <uses-feature android:name="android.software.leanback" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+
+    <application
+        android:label="@string/app_name"
+        android:icon="@drawable/banner"
+        android:banner="@drawable/banner"
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".UpdaterActivity"
+            android:exported="true"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
