@@ -290,8 +290,8 @@ public final class UpdaterActivity extends Activity {
     }
 
     /**
-     * Firmwares with ready-built translation overlays (tools\xgimi-vi\rs10-overlays.ps1 -Device ...): XGIMI RS10
-     * (China market, Android 9, m7642) and the XGIMI models on the IRONMAN firmware (Android 8.0, MSD848).
+     * Firmwares with ready-built translation overlays (tools\xgimi-vi\rs10-overlays.ps1 -Device ...): XGIMI RS10 and
+     * H6 (China market, Android 9, m7642) and the XGIMI models on the IRONMAN firmware (Android 8.0, MSD848).
      */
     private static final String RS10_DEVICE = "m7642";
     private static final String RS10_OVERLAYS = "rs10-vi";
@@ -342,7 +342,7 @@ public final class UpdaterActivity extends Activity {
         if (RS10_DEVICE.equals(adb.shell("getprop ro.product.device")) && !adb.shell("pm path " + STOCK_HOME).isEmpty()) {
             // No removal list yet and XGIMI's home stays; Android 9 has no fabricated overlays, so the Vietnamese
             // text comes as installed overlay APKs
-            return new Device("máy chiếu XGIMI RS10 (Android 9)", null, null, false, false, false, RS10_OVERLAYS);
+            return new Device("máy chiếu XGIMI RS10 / H6 (Android 9)", null, null, false, false, false, RS10_OVERLAYS);
         }
         if (IRONMAN_DEVICE.equals(adb.shell("getprop ro.product.device")) && !adb.shell("pm path " + STOCK_HOME).isEmpty()) {
             // One firmware for many XGIMI models (vendor/etc/xgimimodelname); same approach as the RS10

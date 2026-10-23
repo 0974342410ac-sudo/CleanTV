@@ -1,5 +1,5 @@
-# Dung cac file dich (overlay) tieng Viet cho may chieu XGIMI RS10 (Android 9, firmware XGIMI_PIGCHIVALROUS_XM13M):
-# moi ung dung XGIMI mot APK dist\rs10-vi\VietHoa-<goi>.apk, tu rs10-apps-chuoi.tsv (chuoi tieng Trung cua firmware)
+# Dung cac file dich (overlay) tieng Viet cho may chieu XGIMI RS10 va H6 (Android 9, m7642, firmware XGIMI_PIGCHIVALROUS_*):
+# moi ung dung XGIMI mot APK dist\rs10-vi\VietHoa-<goi>.apk, tu rs10-apps-chuoi.tsv va h6-apps-chuoi.tsv (chuoi tieng Trung cua firmware)
 # va cac bang dich chu Trung -> tieng Viet (dich.tsv, dich-cau-dai.tsv, dohko-apps-dich*.tsv, rs10-apps-dich.tsv).
 # Android 9 khong co `cmd overlay fabricate`: day la overlay thuong, cai bang adb install va bat bang `cmd overlay
 # enable` (rs10-install.ps1), khong can root. Ban dich nam o values/ va values-zh-rCN (may de tieng Trung).
@@ -14,7 +14,7 @@ $bt = 'E:\buildtools\android-sdk\build-tools\34.0.0'
 $androidJar = 'E:\buildtools\android-sdk\platforms\android-34\android.jar'
 if (-not $env:JAVA_HOME) { $env:JAVA_HOME = 'E:\buildtools\jdk\jdk-17.0.20.1+1' }   # apksigner
 $dev = @{
-    rs10    = @{ Strings = 'rs10-apps-chuoi.tsv'; Sdk = 28 }
+    rs10    = @{ Strings = 'rs10-apps-chuoi.tsv', 'h6-apps-chuoi.tsv'; Sdk = 28 }
     ironman = @{ Strings = 'ironman-apps-chuoi.tsv'; Sdk = 26 }
 }[$Device]
 $outDir = Join-Path $root "dist\$Device-vi"
@@ -43,7 +43,7 @@ foreach ($f in 'dich.tsv', 'dich-cau-dai.tsv', 'dohko-apps-dich.tsv', 'dohko-app
 
 # goi -> danh sach (ten chuoi, tieng Viet)
 $byPkg = [ordered]@{}
-foreach ($line in [IO.File]::ReadAllLines((Join-Path $here $dev.Strings), [Text.Encoding]::UTF8)) {
+foreach ($line in ($dev.Strings | ForEach-Object { [IO.File]::ReadAllLines((Join-Path $here $_), [Text.Encoding]::UTF8) })) {
     if (-not $line -or $line.StartsWith('#')) { continue }
     $p = $line.Split("`t")
     if ($p.Count -lt 3 -or $skip -contains $p[0]) { continue }

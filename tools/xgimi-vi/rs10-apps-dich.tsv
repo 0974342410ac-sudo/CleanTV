@@ -1121,3 +1121,33 @@ PC设备	Máy tính
 切换已取消	Đã huỷ chuyển
 即将切换至 %s，按 @ 取消	Sắp chuyển sang %s, bấm @ để huỷ
 当前模式不支持切换3D	Chế độ này không chuyển sang 3D được
+# XGIMI H6 (firmware XGIMI_PIGCHIVALROUS_XM03D, cung nen tang m7642, GMUI 6.0): cac cau con thieu
+可配置【快捷键】，快速前往音响模式/信号源等自定义功能	Gán [Phím tắt] để mở nhanh chế độ loa, nguồn vào hoặc chức năng khác
+电影（D65）	Phim (D65)
+鲜艳（推荐）	Rực rỡ (khuyên dùng)
+当使用充电宝或非官方电源适配器时，关闭充电宝模式可能会导致耗电量增加或关机	Khi dùng pin dự phòng hoặc bộ sạc không chính hãng, tắt chế độ pin dự phòng có thể làm hao điện hơn hoặc máy tự tắt
+接入充电宝或非官方适配器时，开启充电宝模式将会减弱亮度和听觉效果	Khi dùng pin dự phòng hoặc bộ sạc không chính hãng, chế độ pin dự phòng sẽ giảm độ sáng và âm thanh
+游戏模式下不支持手动画面校正	Chế độ trò chơi không hỗ trợ hiệu chỉnh hình thủ công
+请接入信号源重试	Hãy cắm nguồn tín hiệu rồi thử lại
+生物钟照明	Ánh sáng theo nhịp sinh học
+进入灵动墙面	Mở tường linh hoạt
+进入音响模式	Mở chế độ loa
+根据偏好将遥控器【快捷键】设为指定功能，一键直达	Gán [Phím tắt] trên điều khiển cho chức năng bạn muốn để mở bằng một lần bấm
+可至"设置>通用>高级"管理	Quản lý trong "Cài đặt > Chung > Nâng cao"
+以后可至 “设置>通用>高级” 更改此设置	Sau này có thể đổi trong "Cài đặt > Chung > Nâng cao"
+电量低，%ss 后自动关机	Pin yếu, tự tắt máy sau %s giây
+停止复制	Dừng sao chép
+退出百度网盘?	Thoát Baidu Netdisk?
+解压	Giải nén
+解压“%1$s”？	Giải nén "%1$s"?
+删除“%1$s”等%2$d个文件？	Xoá "%1$s" và %2$d tệp khác?
+删除“%1s”？	Xoá "%1s"?
+遥控器点击菜单键进行更多操作	Bấm Menu trên điều khiển để có thêm thao tác
+暂无文件	Chưa có tệp
+仅支持视频/图片/音频，找不到文件可按“菜单”键后选择刷新	Chỉ hỗ trợ video/ảnh/âm thanh; không thấy tệp thì bấm "Menu" rồi chọn Làm mới
+找不到文件可按“菜单”键后选择刷新	Không thấy tệp thì bấm "Menu" rồi chọn Làm mới
+全部文件	Tất cả tệp
+快速打开U盘文件	Mở nhanh tệp trong USB
+感应区域内检测到人体移动，已调低投影亮度以减少人眼刺激	Có người di chuyển trong vùng cảm biến, đã giảm độ sáng để đỡ chói mắt
+选择“禁看”后将退出本次播放，且后续也无法观看。可在“设置-通用-家长设置”中恢复。	Chọn "Chặn" sẽ dừng phát ngay và sau này cũng không xem được. Có thể bỏ chặn trong "Cài đặt - Chung - Cài đặt phụ huynh".
+环境自适应导致墙面颜色适配失效	Thích ứng môi trường làm mất thích ứng màu tường

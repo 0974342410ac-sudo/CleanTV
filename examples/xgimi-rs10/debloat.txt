@@ -17,3 +17,8 @@
 # on a real unit: check that `cmd overlay list` shows [x] and that the Settings text changes.
 # Not translated: Sogou keyboard (use Gboard), factory menus, Chinese TTS, data reporter, string arrays,
 # feature-config JSON strings ([{key:...}]) and Android's autofill patterns.
+#
+# XGIMI H6 (2026-10-23): firmware XGIMI_PIGCHIVALROUS_XM03D built 2024-02-29, same platform (m7642, Android 9,
+# product Product_xiaobai, GMUI 6.0.400.07), same plain bin layout. Its strings are in h6-apps-chuoi.tsv;
+# rs10-overlays.ps1 -Device rs10 builds one overlay set for both (43 APKs, 5,039 strings), and the USB updater's
+# m7642 profile installs it on either. Not yet tried on a real H6.

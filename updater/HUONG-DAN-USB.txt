@@ -2,7 +2,7 @@
 ===================================
 
 Không cần máy tính. Dành cho máy chiếu XGIMI DOHKO (RS 20 Pro Max, Android 14), máy chiếu XGIMI đời cũ
-chạy Android 6 (synsepalum), máy chiếu XGIMI RS10 (Android 9), máy chiếu XGIMI dùng firmware IRONMAN (Android 8) và onn 4K Streaming Box (Google TV 14). Máy khác (Android 8 trở lên): chỉ cài
+chạy Android 6 (synsepalum), máy chiếu XGIMI RS10 và H6 (Android 9), máy chiếu XGIMI dùng firmware IRONMAN (Android 8) và onn 4K Streaming Box (Google TV 14). Máy khác (Android 8 trở lên): chỉ cài
 launcher, không tắt ứng dụng nào.
 
 CÁCH DÙNG
@@ -27,8 +27,8 @@ RIÊNG MÁY CHIẾU XGIMI ĐỜI CŨ (ANDROID 6)
   cần bật dịch vụ "Nút Home" MỘT LẦN từ máy tính (máy không có mục Trợ năng trong Cài đặt); launcher
   hiện hướng dẫn kèm lệnh. Việt hoá Cài đặt XGIMI cũng chỉ làm được bằng máy tính.
 
-RIÊNG MÁY CHIẾU XGIMI RS10 (ANDROID 9)
-- Bước 3/3 cài 41 file dịch tiếng Việt (Cài đặt, màn hình chính, thanh hệ thống, trình phát, chiếu màn
+RIÊNG MÁY CHIẾU XGIMI RS10 VÀ H6 (ANDROID 9)
+- Bước 3/3 cài các file dịch tiếng Việt có ứng dụng trên máy (Cài đặt, màn hình chính, thanh hệ thống, trình phát, chiếu màn
   hình, cập nhật, menu tắt máy...). Bản dịch giữ nguyên sau khi khởi động lại.
 - Chưa có danh sách tắt ứng dụng riêng và màn hình XGIMI vẫn được giữ. Bàn phím Sogou không được dịch:
   cài Gboard nếu cần gõ tiếng Việt.
