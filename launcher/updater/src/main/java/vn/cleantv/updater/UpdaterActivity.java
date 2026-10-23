@@ -289,10 +289,19 @@ public final class UpdaterActivity extends Activity {
         }
     }
 
-    /** XGIMI RS10 (China market, Android 9, m7642): its translation overlays (tools\xgimi-vi\rs10-overlays.ps1). */
+    /**
+     * Firmwares with ready-built translation overlays (tools\xgimi-vi\rs10-overlays.ps1 -Device ...): XGIMI RS10
+     * (China market, Android 9, m7642) and the XGIMI models on the IRONMAN firmware (Android 8.0, MSD848).
+     */
     private static final String RS10_DEVICE = "m7642";
     private static final String RS10_OVERLAYS = "rs10-vi";
-    private static final String RS10_OVERLAY_PREFIX = "vn.cleantv.overlay.rs10.";
+    private static final String IRONMAN_DEVICE = "ironman";
+    private static final String IRONMAN_OVERLAYS = "ironman-vi";
+
+    /** Package names of the overlays in an assets folder: "rs10-vi" holds vn.cleantv.overlay.rs10.<app>. */
+    private static String overlayPrefix(String dir) {
+        return "vn.cleantv.overlay." + dir.substring(0, dir.length() - "-vi".length()) + ".";
+    }
 
     private static final String SETUP_WIZARD = "com.google.android.tungsten.setupwraith";
     /** Android 6 MStar XGIMI (synsepalum_YN): its stock home, and where the Settings translation overlay goes. */
@@ -334,6 +343,10 @@ public final class UpdaterActivity extends Activity {
             // No removal list yet and XGIMI's home stays; Android 9 has no fabricated overlays, so the Vietnamese
             // text comes as installed overlay APKs
             return new Device("máy chiếu XGIMI RS10 (Android 9)", null, null, false, false, false, RS10_OVERLAYS);
+        }
+        if (IRONMAN_DEVICE.equals(adb.shell("getprop ro.product.device")) && !adb.shell("pm path " + STOCK_HOME).isEmpty()) {
+            // One firmware for many XGIMI models (vendor/etc/xgimimodelname); same approach as the RS10
+            return new Device("máy chiếu XGIMI (firmware IRONMAN, Android 8)", null, null, false, false, false, IRONMAN_OVERLAYS);
         }
         if ("onn".equalsIgnoreCase(adb.shell("getprop ro.product.manufacturer"))
                 || "YOC".equals(adb.shell("getprop ro.product.device"))) {
@@ -606,7 +619,7 @@ public final class UpdaterActivity extends Activity {
     }
 
     /**
-     * Android 9 has no `cmd overlay fabricate`, but overlays installed like apps can be enabled by the shell there:
+     * Android 8 and 9 have no `cmd overlay fabricate`, but overlays installed like apps can be enabled by the shell there:
      * installs each assets/<dir>/VietHoa-<target>.apk whose target is on this TV, enables it and restarts the
      * apps on screen most. Installed overlays survive reboots; Restore uninstalls them.
      */
@@ -622,7 +635,7 @@ public final class UpdaterActivity extends Activity {
             String target = apk.substring("VietHoa-".length(), apk.length() - ".apk".length());
             if (adb.shell("pm path " + target).isEmpty()) continue;
             present++;
-            String pkg = RS10_OVERLAY_PREFIX + target.substring(target.lastIndexOf('.') + 1);
+            String pkg = overlayPrefix(dir) + target.substring(target.lastIndexOf('.') + 1);
             long size = getAssets().openFd(dir + "/" + apk).getLength();
             String out;
             try (InputStream in = getAssets().open(dir + "/" + apk)) {
@@ -851,7 +864,7 @@ public final class UpdaterActivity extends Activity {
         if (device.overlays != null) {
             say("== Bỏ Việt hoá");
             int n = 0;
-            for (String line : adb.shell("pm list packages " + RS10_OVERLAY_PREFIX).split("\n")) {
+            for (String line : adb.shell("pm list packages " + overlayPrefix(device.overlays)).split("\n")) {
                 String pkg = line.trim().replace("package:", "");
                 if (pkg.isEmpty()) continue;
                 adb.shell("pm uninstall " + pkg);

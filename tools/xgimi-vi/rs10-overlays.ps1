@@ -3,14 +3,21 @@
 # va cac bang dich chu Trung -> tieng Viet (dich.tsv, dich-cau-dai.tsv, dohko-apps-dich*.tsv, rs10-apps-dich.tsv).
 # Android 9 khong co `cmd overlay fabricate`: day la overlay thuong, cai bang adb install va bat bang `cmd overlay
 # enable` (rs10-install.ps1), khong can root. Ban dich nam o values/ va values-zh-rCN (may de tieng Trung).
-# Chay: powershell -ExecutionPolicy Bypass -File tools\xgimi-vi\rs10-overlays.ps1
+# -Device ironman: cung cach cho cac may XGIMI dung firmware IRONMAN (XGIMI_IRONMAN_XJ03D, Android 8.0), tu
+# ironman-apps-chuoi.tsv, ra dist\ironman-vi.
+# Chay: powershell -ExecutionPolicy Bypass -File tools\xgimi-vi\rs10-overlays.ps1 [-Device rs10|ironman]
+param([ValidateSet('rs10', 'ironman')][string]$Device = 'rs10')
 $ErrorActionPreference = 'Stop'
 $here = $PSScriptRoot
 $root = Split-Path -Parent (Split-Path -Parent $here)
 $bt = 'E:\buildtools\android-sdk\build-tools\34.0.0'
 $androidJar = 'E:\buildtools\android-sdk\platforms\android-34\android.jar'
 if (-not $env:JAVA_HOME) { $env:JAVA_HOME = 'E:\buildtools\jdk\jdk-17.0.20.1+1' }   # apksigner
-$outDir = Join-Path $root 'dist\rs10-vi'
+$dev = @{
+    rs10    = @{ Strings = 'rs10-apps-chuoi.tsv'; Sdk = 28 }
+    ironman = @{ Strings = 'ironman-apps-chuoi.tsv'; Sdk = 26 }
+}[$Device]
+$outDir = Join-Path $root "dist\$Device-vi"
 
 # Khong dich: ban phim Sogou (dung Gboard), menu nha may, giong doc, thu thap du lieu, quang cao, dich vu ben thu ba
 $skip = 'com.sohu.inputmethod.sogou.tv', 'com.xgimi.minitvfactory', 'mediatek.factorymenu.ui', 'com.xgimi.duertts',
@@ -26,7 +33,7 @@ function Escape([string]$s) {
 }
 
 $dict = @{}
-foreach ($f in 'dich.tsv', 'dich-cau-dai.tsv', 'dohko-apps-dich.tsv', 'dohko-apps-dich-them.tsv', 'rs10-apps-dich.tsv') {
+foreach ($f in 'dich.tsv', 'dich-cau-dai.tsv', 'dohko-apps-dich.tsv', 'dohko-apps-dich-them.tsv', 'rs10-apps-dich.tsv', 'ironman-apps-dich.tsv') {
     foreach ($line in [IO.File]::ReadAllLines((Join-Path $here $f), [Text.Encoding]::UTF8)) {
         if (-not $line -or $line.StartsWith('#')) { continue }
         $p = $line.Split("`t")
@@ -36,7 +43,7 @@ foreach ($f in 'dich.tsv', 'dich-cau-dai.tsv', 'dohko-apps-dich.tsv', 'dohko-app
 
 # goi -> danh sach (ten chuoi, tieng Viet)
 $byPkg = [ordered]@{}
-foreach ($line in [IO.File]::ReadAllLines((Join-Path $here 'rs10-apps-chuoi.tsv'), [Text.Encoding]::UTF8)) {
+foreach ($line in [IO.File]::ReadAllLines((Join-Path $here $dev.Strings), [Text.Encoding]::UTF8)) {
     if (-not $line -or $line.StartsWith('#')) { continue }
     $p = $line.Split("`t")
     if ($p.Count -lt 3 -or $skip -contains $p[0]) { continue }
@@ -52,8 +59,8 @@ $utf8 = New-Object Text.UTF8Encoding $false
 $total = 0
 foreach ($target in $byPkg.Keys) {
     $short = ($target -split '\.')[-1]
-    $package = "vn.cleantv.overlay.rs10.$short"
-    $work = Join-Path $env:TEMP "rs10-overlay-$short"
+    $package = "vn.cleantv.overlay.$Device.$short"
+    $work = Join-Path $env:TEMP "$Device-overlay-$short"
     if (Test-Path $work) { Remove-Item $work -Recurse -Force }
     $sb = New-Object System.Text.StringBuilder
     $seen = @{}
@@ -73,7 +80,7 @@ foreach ($target in $byPkg.Keys) {
     package="$package"
     android:versionCode="1"
     android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="28" />
+    <uses-sdk android:minSdkVersion="$($dev.Sdk)" android:targetSdkVersion="$($dev.Sdk)" />
     <overlay android:targetPackage="$target" android:priority="1" />
     <application android:hasCode="false" android:label="VietHoa $short" />
 </manifest>
@@ -84,7 +91,7 @@ foreach ($target in $byPkg.Keys) {
     $out = Join-Path $outDir "VietHoa-$target.apk"
     & "$bt\zipalign.exe" -f 4 "$work\unsigned.apk" "$work\aligned.apk"
     & "$bt\apksigner.bat" sign --ks "$env:USERPROFILE\.android\debug.keystore" --ks-pass pass:android --key-pass pass:android `
-        --min-sdk-version 28 --v4-signing-enabled false --out $out "$work\aligned.apk"
+        --min-sdk-version $($dev.Sdk) --v4-signing-enabled false --out $out "$work\aligned.apk"
     if ($LASTEXITCODE -ne 0) { throw "ky APK that bai ($target)" }
     Remove-Item $work -Recurse -Force
     $total += $seen.Count

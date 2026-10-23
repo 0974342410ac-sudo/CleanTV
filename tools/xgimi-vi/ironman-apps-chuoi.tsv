@@ -1,0 +1,2737 @@
+# Chuoi tieng Trung cua cac ung dung XGIMI trong firmware IRONMAN (XGIMI_IRONMAN_XJ03D, Android 8.0, MSD848, GMUI 4.3):
+# goi<TAB>ten chuoi<TAB>chu goc<TAB>tieng Anh (neu co). Tao tu APK trong system va vendor cua file firmware (aapt2 dump resources).
+# Khong gom ung dung ben thu ba cai san (WPS, iQiyi, Tencent, Mango, PPTV, Sogou) va menu nha may. rs10-overlays.ps1 -Device ironman dung file nay.
+com.xgimi.systemui	adb_state_close	adb已关闭	ADB has been turned off
+com.xgimi.systemui	adb_state_open	adb已开启	ADB is on
+com.xgimi.systemui	af_camera_error	校正失败，请调整投影距离或检查摄像头是否被遮挡	
+com.xgimi.systemui	af_fail	校准失败	
+com.xgimi.systemui	af_fail_too_far	距离过远，校准失败	
+com.xgimi.systemui	af_fail_too_near	距离过近，校准失败	
+com.xgimi.systemui	af_global_focus_error	自动对焦初始化失败	
+com.xgimi.systemui	af_sucess	校准成功	
+com.xgimi.systemui	ak_calibrete_jmp	去校准	
+com.xgimi.systemui	ak_calibrete_ok	效果OK	
+com.xgimi.systemui	ak_calibrete_title	画面自动校正效果不佳？	
+com.xgimi.systemui	ak_end_toast	校正完成，按【OK】键手动微调	The correction is complete. If necessary, press OK for a fine-tune
+com.xgimi.systemui	ak_usr_cali_point_error	校准失败，请调整投影距离或检查摄像头是否被遮挡	
+com.xgimi.systemui	ak_usr_cali_success	已校准	
+com.xgimi.systemui	auto_keystone_3d_error	当前模式不支持自动梯形校正	
+com.xgimi.systemui	auto_keystone_angle_error	校正失败，请调整投影位置或角度	
+com.xgimi.systemui	auto_keystone_error	梯形校正异常，请重启设备	
+com.xgimi.systemui	auto_keystone_frame_error	画面或镜头被遮挡，请检查后重试	
+com.xgimi.systemui	auto_keystone_init_error	梯形校正初始化失败，请联系客服	
+com.xgimi.systemui	auto_keystone_into_str	设备关机中	
+com.xgimi.systemui	cancel_power_txt	取消	
+com.xgimi.systemui	children_mode	儿童模式	
+com.xgimi.systemui	clean_all_task	内存已清空	
+com.xgimi.systemui	clean_time_shutdown	成功取消定时关机	
+com.xgimi.systemui	close_boot_source	关闭	
+com.xgimi.systemui	file_check_fail	文件检测出错，错误代码：001	File detection failure, error code: 001
+com.xgimi.systemui	hatch_door_error_tip	系统将于%d秒后关机，请确认机身底部支架是否正常开启	
+com.xgimi.systemui	join_error	未知错误，请稍后重试	Unknown error, try again later
+com.xgimi.systemui	leveltop_reset	已重置陀螺仪	
+com.xgimi.systemui	mem_clean	成功释放	
+com.xgimi.systemui	mem_remain	当前可用内存	
+com.xgimi.systemui	movie_mode	观影模式	
+com.xgimi.systemui	music_mode	音响模式	
+com.xgimi.systemui	my_xgimi	我的	
+com.xgimi.systemui	nnknownhostexception	请检查网络是否连接	Check network connection
+com.xgimi.systemui	portrait_error_tip	请平放设备后重试	
+com.xgimi.systemui	power_adapter_battery_burn_on	电源功率较小，会造成电量消耗	
+com.xgimi.systemui	power_adapter_in_tip	电源适配器已插入	Power adapter inserted
+com.xgimi.systemui	power_adapter_out_tip	电源已断开	Power adapter unplugged
+com.xgimi.systemui	power_low_adapter_in_tip	电量剩10%，请及时充电	
+com.xgimi.systemui	power_low_shutdown_text	立即关机	
+com.xgimi.systemui	power_low_shutdown_window_tip	电池电量过低，即将关机%d 秒倒计时	
+com.xgimi.systemui	power_low_tip	电量剩30%	
+com.xgimi.systemui	power_off	关机	
+com.xgimi.systemui	power_sleep	休眠	
+com.xgimi.systemui	power_sleep_title_downloading	当前有正在缓存的影片，建议选择“休眠”模式继续缓存	
+com.xgimi.systemui	power_travel	旅行关机	
+com.xgimi.systemui	power_travel_tip	未连接电源时连按两次开机键开机，防止旅途中误触开机	
+com.xgimi.systemui	recents_empty_message	近期没有任何内容	
+com.xgimi.systemui	recents_stack_action_button_label	一键清理	
+com.xgimi.systemui	recents_stack_notice	按上键可关闭应用	
+com.xgimi.systemui	restart	重启	
+com.xgimi.systemui	screenshot_failed_to_capture_text	此应用或您所在的单位不允许进行屏幕截图	
+com.xgimi.systemui	screenshot_failed_to_save_text	由于存储空间有限，无法保存屏幕截图。	
+com.xgimi.systemui	screenshot_success	截屏成功！存储目录：内置存储/Pictures/Screenshots	
+com.xgimi.systemui	shut_screen	关屏	
+com.xgimi.systemui	system_check_fail	系统完成性检测不通过，无法升级	Incomplete system detected, upgrade not available
+com.xgimi.systemui	time_out	连接超时，请稍后重试	Connection timeout, try again later
+com.xgimi.systemui	time_power_off	定时关机	
+com.xgimi.systemui	time_power_off_tip	%s分钟	
+com.xgimi.systemui	time_shutdown_toast	%d分钟定时关机设定成功	
+com.xgimi.systemui	timed	自动关机提醒	
+com.xgimi.systemui	timed_cancel	取消关机	
+com.xgimi.systemui	timed_sure	立即关机	
+com.xgimi.systemui	tof_check_end_successful	校正成功	
+com.xgimi.systemui	tof_error	校正失败	
+com.xgimi.systemui	tof_far	距离过远,校正失败	
+com.xgimi.systemui	tof_near	距离过近,校正失败	
+com.xgimi.systemui	turbo_light_dialog_bt_cancel	取消	
+com.xgimi.systemui	turbo_light_dialog_bt_start	去开启	
+com.xgimi.systemui	turbo_light_dialog_desc	开启Turbo Light智能增强画面亮度，可能会改变画面大小。	
+com.xgimi.systemui	turbo_light_dialog_title	当前画面不够亮？	
+com.xgimi.systemui	turbo_light_error	Turbo Light 失败	
+com.xgimi.systemui	turbo_light_reboot	当前画面已达到最亮	
+com.xgimi.systemui	turbo_light_video_light	Turbo Light已增强画面亮度	
+com.xgimi.systemui	update_finish_shutdown	应用更新中，请勿断电	
+com.xgimi.systemui	usb_name_error_str	设备存储	
+com.xgimi.systemui	vertical_turn_nagative	根据设备放置方向，自动转换为吊装模式	
+com.xgimi.systemui	vertical_turn_positive	根据设备放置方向，自动转换为正装模式	
+com.xgimi.systemui	warn_btn_ok	我知道了	
+com.xgimi.systemui	warn_power_adapter_low	电源功率不足	
+com.xgimi.systemui	warn_power_adapter_low_desc	建议使用原装电源适配器	
+com.xgimi.systemui	warn_power_battery_low	电池电量不足	
+com.xgimi.systemui	warn_power_battery_low_desc	请及时接入原装电源适配器充电	
+com.xgimi.systemui	warning_window_fan_error_tip	设备风扇异常，即将关机 %d 秒倒计时	
+com.xgimi.systemui	warning_window_temperature_high_tip	设备温度过高，即将关机 %d 秒倒计时	
+com.xgimi.systemui	xgimi	的	
+com.xgimi.miracast	settings_user_about	用户&关于	
+com.xgimi.miracast	setting_general_boot_video	开机视频	
+com.xgimi.miracast	setting_general_boot_animation	更新开机动画	
+com.xgimi.miracast	setting_general_bootsource_close	关	
+com.xgimi.miracast	settings_user_honor_roll	荣誉榜	
+com.xgimi.miracast	rom_memory_infor	系统存储	
+com.xgimi.miracast	solution_sure_change	确认切换分辨率吗？	
+com.xgimi.miracast	solution_info	提示信息	
+com.xgimi.miracast	solution_ok	确认	
+com.xgimi.miracast	solution_cancle	取消	
+com.xgimi.miracast	bluetooth_map_profile_summary_use_for	用于地图	
+com.xgimi.miracast	bluetooth_profile_map	消息权限	
+com.xgimi.miracast	bluetooth_map_request	消息权限申请	
+com.xgimi.miracast	bluetooth_map_profile_summary_connected	已连接到地图	
+com.xgimi.miracast	bluetooth_profile_pbap	共享联系人	
+com.xgimi.miracast	bluetooth_profile_pbap_summary	用于共享联系人	
+com.xgimi.miracast	allow	允许	
+com.xgimi.miracast	deny	拒绝	
+com.xgimi.miracast	bluetooth_map_acceptance_dialog_text	“%1$s”想要查看您的消息。要向“%2$s”授予权限吗？	
+com.xgimi.miracast	tongji_lanya	蓝牙	
+com.xgimi.miracast	tongji_yipeidui	已配对设备类型	
+com.xgimi.miracast	tongji_yaokongqi	遥控器	
+com.xgimi.miracast	tongji_yinxiang	音响	
+com.xgimi.miracast	tongji_erji	耳机	
+com.xgimi.miracast	tongji_shubiao	鼠标	
+com.xgimi.miracast	tongji_jianpan	键盘	
+com.xgimi.miracast	tongji_shoubing	游戏手柄	
+com.xgimi.miracast	tongji_qita	其他	
+com.xgimi.miracast	xgimivip_jihuo_title	极米VIP会员	
+com.xgimi.miracast	xgimivip_jihuo	优惠获得	
+com.xgimi.miracast	xgimivip_xufei_sub	当前会员至%s	
+com.xgimi.miracast	xgimivip_error	请求失败(错误码:%d)	
+com.xgimi.miracast	setting_general_speaklound_type_h1s	蓝牙音响	
+com.xgimi.miracast	setting_general_wifi_music_priority_h1s	音响音乐优先级	
+com.xgimi.miracast	soundmode_info	仅在音响模式有效	
+com.xgimi.miracast	jdwl	京东微联	
+com.xgimi.miracast	wpzs	无屏助手	
+com.xgimi.smartcurtain	app_name	智能幕布	
+com.xgimi.smartcurtain	curtain_close	关闭	
+com.xgimi.smartcurtain	curtain_open	打开	
+com.xgimi.smartcurtain	dongle_check	Dongle状态检测	
+com.xgimi.smartcurtain	dongle_connect	极米智能幕布dongle已识别	
+com.xgimi.smartcurtain	dongle_connect_error	幕布Dongle通信异常，请插拔后重新尝试！	
+com.xgimi.smartcurtain	dongle_disconnect	极米智能幕布dongle已移除	
+com.xgimi.smartcurtain	dongle_error	Dongle未识别	
+com.xgimi.smartcurtain	dongle_first	请先插入幕布Dongle	
+com.xgimi.smartcurtain	dongle_no	Dongle未插入	
+com.xgimi.smartcurtain	dongle_ok	Dongle已识别	
+com.xgimi.smartcurtain	down	幕布下降测试	
+com.xgimi.smartcurtain	end_pair	结束配对	
+com.xgimi.smartcurtain	pair_one	1、拔出幕布电源，点击“开始配对”按钮	
+com.xgimi.smartcurtain	pair_test	配对测试	
+com.xgimi.smartcurtain	pair_test_one	1、确保幕布与dongle已配对	
+com.xgimi.smartcurtain	pair_test_two	2、点击“幕布上升/下降测试”按钮，查看幕布是否升降	
+com.xgimi.smartcurtain	pair_three	3、在幕布配对状态蜂鸣器慢响10次结束前，点击“结束配对”，幕布蜂鸣器将快响3次，以提示配对成功	
+com.xgimi.smartcurtain	pair_two	2、插上幕布电源，此时幕布蜂鸣器将慢响10次，慢响则表示幕布进入配对状态	
+com.xgimi.smartcurtain	start_pair	开始配对	
+com.xgimi.smartcurtain	up	幕布上升测试	
+com.xgimi.xrmservice	hdmi_cancel_switch	HDMI切换已取消	
+com.xgimi.xrmservice	hdmi_switch_tip	HDMI切换中，点击 “<img src=%d>” 取消	
+com.xgimi.xrmservice	hdmi_switch_tip_v2	即将切换至%s，点击 “ @ ” 取消	
+com.xgimi.xrmservice	hdmi_close	关闭	
+com.xgimi.xrmservice	xgimi_factory_reset	进入恢复出厂	
+android	autofill_address_line_1_label_re	address|adresse|indirizzo|住所|地址	
+android	autofill_address_line_1_re	address.?line|address1|addr1|street|strasse|straße|hausnummer|housenumber|house.?name|direccion|dirección|adresse|indirizzo|住所1|morada|endereço|Адрес|地址	
+android	autofill_address_line_2_re	address.?line2|address2|addr2|street|suite|unit|adresszusatz|ergänzende.?angaben|direccion2|colonia|adicional|addresssuppl|complementnom|appartement|indirizzo2|住所2	
+android	autofill_card_number_re	number|card.?#|card.?no|ccnum|nummer|credito|numero|número|numéro|カード番号|Номер.*карты|信用卡号|信用卡号码|信用卡卡號	
+android	autofill_city_re	city|town|ort|stadt|suburb|ciudad|provincia|localidad|poblacion|ville|commune|localita|市区町村|cidade|Город|市|分區	
+android	autofill_company_re	company|business|organization|organisation|department|firma|firmenname|empresa|societe|société|ragione.?sociale|会社|название.?компании|单位|公司	
+android	autofill_country_re	country|location|国|国家	
+android	autofill_email_re	e.?mail|メールアドレス|Электронной.?Почты|邮件|邮箱|電郵地址	
+android	autofill_expiration_date_re	exp|^/|year|ablaufdatum|gueltig|gültig|yahr|fecha|scadenza|有効期限|validade|Срок действия карты|年|有效期	
+android	autofill_expiration_month_re	expir|exp.*month|exp.*date|ccmonth|gueltig|gültig|monat|fecha|date.*exp|scadenza|有効期限|validade|Срок действия карты|月	
+android	autofill_fax_re	fax|télécopie|telecopie|ファックス|факс|传真|傳真	
+android	autofill_first_name_re	irst.*name|initials|fname|first$|vorname|nombre|forename|prénom|prenom|名|nome|Имя	
+android	autofill_last_name_re	last.*name|lname|surname|last$|nachname|apellidos|famille|^nom|cognome|姓|morada|apelidos|surename|sobrenome|Фамилия	
+android	autofill_name_on_card_re	card.?holder|name.?on.?card|ccname|owner|karteninhaber|nombre.*tarjeta|nom.*carte|nome.*cart|名前|Имя.*карты|信用卡开户名|开户名|持卡人姓名|持卡人姓名	
+android	autofill_name_re	^name|full.?name|your.?name|customer.?name|firstandlastname|nombre.*y.*apellidos|^nom|お名前|氏名|^nome|姓名	
+android	autofill_phone_re	phone|telefonnummer|telefono|teléfono|telfixe|電話|telefone|telemovel|телефон|电话	
+android	autofill_state_re	state|county|region|province|land|county|principality|都道府県|estado|provincia|область|省|地區	
+android	autofill_username_re	user.?name|user.?id|vollständiger.?name|用户名	
+android	autofill_zip_code_re	zip|postal|post code|pcode|^1z$|postleitzahl|cp|cdp|cap|郵便番号|codigo|codpos|cep|Почтовый.?Индекс|邮政编码|邮编|郵遞區號	
+android	led_down_prompt	即将关闭光机，按power键可唤醒光机	
+android	pm_checkapps_error_title	异常提示	
+android	spidf_vol	请在外接音箱上调节音量	
+android	title_power	您的选择是	
+android	vol_adjust_hdmi	HDMI下不支持调节光纤/ARC音量	
+android	vol_adjust_raw	RAW不支持调节音量，请调节为PCM格式	
+android	xgimi_app_auto_update	应用正在升级中...	
+android	xgimi_app_auto_update_title	应用升级	
+android	xgimi_error_info	应用崩溃了，表担心，上报我们，你还可以登录官方论坛(bbs.xgimi.com)进行吐槽	
+android	xgimi_error_update	报告	
+android	xgimi_poweroff_time_string	定时关机	
+android	xgimi_warn_restart	正在重启...	
+android	xgimi_warn_turnoff	正在关机...	
+com.xgimi.tof	str_af_calibration_result_failed	AF失败	
+com.xgimi.tof	str_af_calibration_result_pass	AF通过	
+com.xgimi.tof	str_af_calibration_result_undo	AF未做	
+com.xgimi.tof	str_af_calibration_value_error	AF无状态	
+com.xgimi.tof	str_ak_item_title	AK标定测试	
+com.xgimi.tof	str_calibration_intent_error	启动传参错误	
+com.xgimi.tof	str_calibration_support_error	机器不支持AF/TOF	
+com.xgimi.tof	str_camera_exit	再按一次退出程序	
+com.xgimi.tof	str_camera_moudle_name	摄像头模组	
+com.xgimi.tof	str_dialog_warning_btn_cancel	取消	
+com.xgimi.tof	str_dialog_warning_btn_sure	确定	
+com.xgimi.tof	str_dialog_warning_title_tip	警告弹窗(Warning)	
+com.xgimi.tof	str_motor_error	马达状态异常	
+com.xgimi.tof	str_motor_number_error	马达数异常	
+com.xgimi.tof	str_no_tof_module	无TOF设备	
+com.xgimi.tof	str_please_use_in_the_correct_scene	请在正确场景中使用	
+com.xgimi.tof	str_please_wait_ui_reset	请等待显示项重置…	
+com.xgimi.tof	str_press_key_to_run_calibration	请按确认键进行计算流程	
+com.xgimi.tof	str_result_failed	失败	
+com.xgimi.tof	str_result_pass	通过	
+com.xgimi.tof	str_result_undo	未做	
+com.xgimi.tof	str_tip_calibration_successful	【已计算成功】	
+com.xgimi.tof	str_tof_calibration_result_failed	TOF失败	
+com.xgimi.tof	str_tof_calibration_result_pass	TOF通过	
+com.xgimi.tof	str_tof_calibration_result_undo	TOF未做	
+com.xgimi.tof	str_tof_calibration_value_error	TOF无状态	
+com.xgimi.tof	str_tof_data_error	TOF读取错误	
+com.xgimi.tof	str_tof_data_params_error	TOF数据异常	
+com.xgimi.tof	str_tof_distance_error	TOF距离异常	
+com.xgimi.tof	str_tof_i2_c_error	TOFI2C错误	
+com.xgimi.tof	str_tof_i2_c_time_out	TOFI2C超时	
+com.xgimi.tof	str_tof_init_error	TOF初始错误	
+com.xgimi.tof	str_tof_method_params_error	TOF传参异常	
+com.xgimi.tof	str_tof_motor_error	TOF马达被占用	
+com.xgimi.tof	str_tof_null_error	TOF空指针异常	
+com.xgimi.tof	str_tof_params_error	TOF参数错误	
+com.xgimi.tof	str_value_error	获取值错误	
+com.xgimi.autokst	str_af_camera_error	摄像头异常,请重新开始流程	
+com.xgimi.autokst	str_af_is_interrupted	自动对焦已被打断,请重新开始流程	
+com.xgimi.autokst	str_ak_init_failed	AK初始化失败	
+com.xgimi.autokst	str_ak_is_doing	计算中……	
+com.xgimi.autokst	str_cal_ae_error	计算端AE【失败】,请按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_cal_error_kst	下值失败【失败】,请按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_cal_init_error	计算端初始化【失败】,请按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_cal_kst_point_error	计算端kstMode【失败】,请按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_cal_photo_error	计算端拍照【失败】,请按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_cal_prepare_error	摄像头准备【失败】,请按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_calibration_failed	校准失败	
+com.xgimi.autokst	str_calibration_successful	校准成功	
+com.xgimi.autokst	str_calibration_undo	未校准	
+com.xgimi.autokst	str_camera_error	摄像头异常,请重新开始流程	
+com.xgimi.autokst	str_check_failed	测试失败	
+com.xgimi.autokst	str_check_mode_successful	测试成功	
+com.xgimi.autokst	str_check_mode_undo	测试未做	
+com.xgimi.autokst	str_check_motor_failed	马达步数校验失败,重新开始流程	
+com.xgimi.autokst	str_check_standard_failed	测试超标准	
+com.xgimi.autokst	str_connect_error	通信库连接失败	
+com.xgimi.autokst	str_dialog_start_calculate_message	正在计算中，请勿操作设备	
+com.xgimi.autokst	str_dialog_warning_btn_cancel	取消	
+com.xgimi.autokst	str_dialog_warning_btn_sure	确定	
+com.xgimi.autokst	str_dialog_warning_title_tip	警告弹窗(Warning)	
+com.xgimi.autokst	str_do_calibration	按确认键进行校正	
+com.xgimi.autokst	str_do_check	按确认键进行测试	
+com.xgimi.autokst	str_gmpf_out_range_error	底层KST【失败】,请按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_is_not_cali	需先进行校正，才能测试	
+com.xgimi.autokst	str_is_not_standard	标准值获取失败	
+com.xgimi.autokst	str_is_time_failed	等待热机结束:%s秒	
+com.xgimi.autokst	str_is_time_successful	已到达标定时间	
+com.xgimi.autokst	str_is_wait_time	请等待热机时间	
+com.xgimi.autokst	str_level_tip	等级	
+com.xgimi.autokst	str_motor_reset_failed	马达归位失败	
+com.xgimi.autokst	str_net_error	正在等待【连接有线】	
+com.xgimi.autokst	str_photo_failed	拍照失败	
+com.xgimi.autokst	str_pic_check_error_bg_position	背景找点【失败】,按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_pic_check_error_device_position	设备找点【失败】,按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_pic_check_error_great	未匹配到等级【失败】,按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_pic_check_error_main_direction	主方向【失败】,按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_pic_check_error_other	其他问题【失败】,按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_pic_check_error_range	等级角超范围【失败】,按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_pic_check_error_small_range	投射角度过小【失败】,请重新摆放后按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_pic_check_error_unknown	测试失败【失败】,请按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_please_use_in_the_correct_scene	请在正确场景中使用	
+com.xgimi.autokst	str_pos_cali_failed	单点位标定失败	
+com.xgimi.autokst	str_total_cali_failed	总点位标定失败	
+com.xgimi.autokst	str_user_init_error	触发端初始化失败【失败】,请按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_user_photo_error	触发端拍照【失败】,请按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_user_point_error	触发端找点【失败】,请按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_user_str_error	进入STR导致【失败】,请按确认键可继续进行该方位测试	
+com.xgimi.autokst	str_value_error	底层取值异常	
+com.xgimi.autokst	text_btn_manual_mode	手动模式	
+com.xgimi.autokst	text_btn_net_mode	自动模式	
+com.xgimi.autokst	text_btn_review_mode	复验模式	
+com.xgimi.autokst	text_btn_serial_mode	串口自动模式	
+com.xgimi.autokst	text_btn_test_mode	测试模式	
+com.xgimi.newbluetoothota	app_name	遥控器升级	
+com.xgimi.newbluetoothota	blu_ota_update_sucess	音乐控制器更新完成	
+com.xgimi.newbluetoothota	connect_no_error_tip	设备未连接，请连接后重试	
+com.xgimi.newbluetoothota	current_new_version_bin_tip	当前是最新固件，保持的不错噢	
+com.xgimi.newbluetoothota	current_system_version	当前版本:	
+com.xgimi.newbluetoothota	get_battery_error_tip	音乐控制器获取电量失败，请稍后重试	
+com.xgimi.newbluetoothota	music_blu_con_name	音乐控制器	
+com.xgimi.newbluetoothota	ota_update_version	发现更新版本:	
+com.xgimi.newbluetoothota	sound_control_pair	点击“触控区”配对	
+com.xgimi.newbluetoothota	sound_control_update_success	连接成功，检查到有固件更新	
+com.xgimi.newbluetoothota	update_ota_battery_error_tip	音乐控制器电量过低，请更换电池	
+com.xgimi.newbluetoothota	update_ota_error_tip	固件升级失败，请检查设备连接	
+com.xgimi.bluetoothservice	btapi_string_bluetooth_connecting	蓝牙连接中...	
+com.xgimi.bluetoothservice	btapi_string_nfc_touch	检测到NFC设备靠近	
+com.xgimi.castscreen	allowed_this_time	本次允许	
+com.xgimi.castscreen	always_allowed	总是允许	
+com.xgimi.castscreen	app_name	Huawei Cast+ 投屏	
+com.xgimi.castscreen	cast	无线投屏	
+com.xgimi.castscreen	cast_devices_name	设备名称:	
+com.xgimi.castscreen	cast_ssid	当前网络:	
+com.xgimi.castscreen	cast_sutitle	使用“Huawei Cast+投屏”将您手机上的内容投送到投影大屏上，需要使用华为手机EMUI10.0及以上部分版本	
+com.xgimi.castscreen	cast_title	Huawei Cast+ 投屏	
+com.xgimi.castscreen	change_the_password	修改密码	
+com.xgimi.castscreen	connect_tv	想要连接你的电视	
+com.xgimi.castscreen	no_network	无网络连接	
+com.xgimi.castscreen	password	加密访问	
+com.xgimi.castscreen	password_change	密码	
+com.xgimi.castscreen	password_title	在手机端输入此密码可发起投屏	
+com.xgimi.castscreen	password_toast	密码不可少于6位	
+com.xgimi.castscreen	pin_code_title	Huawei Cast+ 投屏连接码	
+com.xgimi.castscreen	refuse	拒绝	
+com.xgimi.castscreen	use_toast	需使用华为手机EMUI10.0及以上部分版本	
+com.xgimi.castscreen	using_step1	将手机和投影仪连接到同一WiFi网络下，在手机下拉状态栏中选择 [无线投屏]	
+com.xgimi.castscreen	using_step2	选择搜索到的投影仪，进行投屏	
+com.xgimi.castscreen	wired_network	有线网络	
+com.mstar.tvsetting	volume	音量	
+com.xgimi.soundermodeservice	ok	确定	
+com.xgimi.soundermodeservice	cancel	取消	
+com.xgimi.soundermodeservice	title_confirm	手机蓝牙已连接，是否进入音响模式？	
+com.android.newsettings	adb_state_close	adb已关闭	ADB has been turned off
+com.android.newsettings	adb_state_open	adb已开启	ADB is on
+com.android.newsettings	ak_3d_mode_title	推荐正投画面后进入3D模式	
+com.android.newsettings	al_off_not_led_tip	请关闭环境光自适应再调整	Disable environmental adaptation before you make adjustments Brightness and Color
+com.android.newsettings	android_version	Android版本	Android version
+com.android.newsettings	app_name	系统设置	System setting
+com.android.newsettings	arrow_direction_txt	调整	Adjust
+com.android.newsettings	auto_focus	对焦	Focus
+com.android.newsettings	auto_key_stone_calibration	梯形校正校准	Keystone Correction Calibration
+com.android.newsettings	auto_key_stone_calibration_layout_left_txt	正投画面至墙面，并保持设备水平放置	Keep front projection and ensure the projector horizontal
+com.android.newsettings	auto_key_stone_calibration_layout_right_txt	移动设备至投影距离为1.5-2米	Displace the projector to keep projection distance 1.5-2 meters
+com.android.newsettings	auto_key_stone_calibration_layout_txt	校准越精确，画面校正效果越佳	The more accurate the calibration, the better the keystone correction effect
+com.android.newsettings	auto_key_stone_calibration_title	若自动梯形校正后画面不是矩形，请使用梯形校正校准	If the picture is not rectangular after an automatic keystone correction is complete, use the "Keystone Calibration" feature.
+com.android.newsettings	auto_led_not_3d	请关闭环境光自适应再使用3D设置	Disable environmental adaptation before you use the 3D mode
+com.android.newsettings	auto_vertical_turn	自动垂直翻转	Auto vertical reverse
+com.android.newsettings	auto_vertical_turn_msg	已开启自动翻转投影方式，可在设置中取消自动翻转	The auto reverse projection mode has been turned on, and may be canceled in the setting.
+com.android.newsettings	auto_vertical_turn_tip	根据设备放置方向，自动转换为正装或吊装模式	According to the setting direction of the equipment, it will automatically switch to the normal or hoisting mode.
+com.android.newsettings	autofocus_heat	智能动态调焦	Intelligent dynamic focusing
+com.android.newsettings	autofocus_heat_title	设备出现偶然虚焦时，系统将自动调整画面至清晰	The system will automatically adjust the picture to be clear when the equipment has accidental virtual focus.
+com.android.newsettings	autofocus_onoff	自动对焦	Auto-Focusing
+com.android.newsettings	automatic_update	自动更新	Auto update setting
+com.android.newsettings	automatic_update_title	开启后将在稳定版本基础上自动升级轻量组件，使系统保持最佳兼容性和安全性	After boot, lightweight components will automatically upgrade on the basis of stable versions to maintain the best compatibility and security of the system.
+com.android.newsettings	autoupdate	开启后系统将自动更新优化组件，让您的设备保持最新软件状态，确认要关闭吗？	After boot, the system will automatically update and optimize components to keep your equipment with the latest software. Are you sure you want to turn it off?
+com.android.newsettings	autoupdateopen	开启后将在稳定版本基础上自动升级轻量组件，使系统保持最佳兼容性和安全性	After boot, lightweight components will automatically upgrade on the basis of stable versions to maintain the best compatibility and security of the system.
+com.android.newsettings	availabe_sapce	可用空间	Space available
+com.android.newsettings	b	蓝	Blue
+com.android.newsettings	back_txt	返回	Back
+com.android.newsettings	backup	云备份	Cloud backup
+com.android.newsettings	basic_btn_text	基础	
+com.android.newsettings	bedroom	卧室	Bedroom
+com.android.newsettings	blu_connect_fail	蓝牙连接失败，请重试	Bluetooth connection failed, please try again
+com.android.newsettings	blu_connect_success	蓝牙已连接	Bluetooth connected
+com.android.newsettings	blu_pair_fail	蓝牙配对失败，请重试	Bluetooth pairing failed, please try again
+com.android.newsettings	blu_pair_request_tip	蓝牙配对请求	Bluetooth pairing request
+com.android.newsettings	blu_pair_success	蓝牙已配对	Bluetooth paired
+com.android.newsettings	blu_pair_text	配对	Pairing
+com.android.newsettings	bluetooth	蓝牙	Bluetooth
+com.android.newsettings	boot_auto_focus_title	设备每次开机时会自动调整画面对焦	The equipment automatically adjusts the picture for focusing every time it is booted.
+com.android.newsettings	boot_auto_key_stone	开机自动梯形校正	Automatic correction after boot
+com.android.newsettings	boot_auto_key_stone_title	设备每次开机时会自动进行画面校正	The device will automatically correct the picture every time it is turned on.
+com.android.newsettings	btn_cancle	取消	Cancel
+com.android.newsettings	btn_confirm	确认	OK
+com.android.newsettings	built_in	存储空间	Memory space
+com.android.newsettings	change_focus_txt	切换控制点	Switch Focus
+com.android.newsettings	children_mode	儿童模式	
+com.android.newsettings	chinese	中文	中文
+com.android.newsettings	clean_data_set	抹除数据和设置	Erase data and setting
+com.android.newsettings	clean_msg	此操作将删除系统设置和数据文件，保留已下载的应用，是否继续？	By this operation, the system settings and data files will be deleted but the downloaded applications will remain. Do you want to continue?
+com.android.newsettings	close_boot_source	关闭	
+com.android.newsettings	color_mode_text	色彩模式	
+com.android.newsettings	conference_room	会议室	Meeting room
+com.android.newsettings	connect	链接	Link
+com.android.newsettings	convenient_menu_view_txt	恢复默认画面/精准校正	恢复默认画面/精准校正
+com.android.newsettings	convenient_title	便捷校正	便捷校正
+com.android.newsettings	correcting_current_angle	校准为当前角度	Correct to the current angle
+com.android.newsettings	correcting_setting	校正设置	Correction setting
+com.android.newsettings	correction_no_tip	不支持	
+com.android.newsettings	correction_reset	对焦校正还原	Correction Reset
+com.android.newsettings	correction_tip	画面校正	
+com.android.newsettings	correction_yes_tip	支持	
+com.android.newsettings	curtain_projection_self_adapt_title	画幕自动对齐	Auto Screen Alignment
+com.android.newsettings	curtain_projection_self_adapt_txt	智能调整画面以对齐幕布边缘，校准前请确保投影画面完全覆盖住幕布	Automatically adjust the screen to align the edges of the screen. Make sure that the projected screen completely covers the screen before correction.
+com.android.newsettings	customer	自定义	Customization
+com.android.newsettings	delay_low_tip	低	
+com.android.newsettings	delay_mid_tip	中	
+com.android.newsettings	delay_tip	延迟	
+com.android.newsettings	device_input_tip	请输入设备名称	Please input the equipment name
+com.android.newsettings	device_mode	设备型号	Equipment model
+com.android.newsettings	device_name	设备名称	Equipment name
+com.android.newsettings	device_name_changed_reboot_msg	设备名称修改后，与其相关的服务要重启后更新，确认立即重启吗？	After the equipment name is modified, the services related to it need to be updated after restart. Are you sure you want to restart now?
+com.android.newsettings	device_name_changed_reboot_tip	提示	Hint
+com.android.newsettings	dialog_ak_game_mode_title	推荐正投画面后进入游戏模式	
+com.android.newsettings	dialog_cancel	取消	Cancel
+com.android.newsettings	dialog_not_ak_game_mode_title	使用游戏模式以降低图像延迟	
+com.android.newsettings	dialog_start_def_text	默认	
+com.android.newsettings	dialog_start_game_mode_text	游戏模式	
+com.android.newsettings	dialog_start_hfr_text	高帧率	
+com.android.newsettings	dialog_start_low_latency_game_text	低延迟	
+com.android.newsettings	dialog_switch_mode	切换极速模式	Switch to Boost Mode
+com.android.newsettings	dialog_switch_second	切换前请将投影设备移动至正投状态，否则将导致画面歪斜。	Move the projector to the front of the screen before you switch the mode. Otherwise, the image will be skewed
+com.android.newsettings	dialog_switch_top	极速模式延迟更低，但不支持“ %s ” 。	The boost mode has lower latency but does not support %s
+com.android.newsettings	digital_zoom_optical_txt	缩放不会影响分辨率	During the optical zoom, the focal length of the device changes while the resolution remains unchanged.
+com.android.newsettings	digital_zoom_toast	【方向键】调整 【返回键】返回	Press left/right button to adjust the image
+com.android.newsettings	digital_zoom_txt	缩放可能会影响分辨率	Zoom may affect resolution
+com.android.newsettings	displacement_auto_focus	位移自动对焦	Movement Auto Focus
+com.android.newsettings	displacement_auto_focus_title	设备开机状态下发生位移时会自动调整画面对焦	Auto Focus will be triggered when the projector is displaced
+com.android.newsettings	displacement_auto_key_stone	位移自动梯形校正	Automatic correction after displacement
+com.android.newsettings	displacement_auto_key_stone_tip	开机状态下移动设备会自动进行画面校正	The device in the power-on state will automatically correct the picture when it is moved.
+com.android.newsettings	dress_cast	正装正投	Normal installation and orthographic projection
+com.android.newsettings	dts_premium_sound	DTS音效	DTS Premium Sound
+com.android.newsettings	duer_speech_people_sound	人声	Voice
+com.android.newsettings	duer_speech_sound	语音	Voice
+com.android.newsettings	duer_speech_sound_female_voice	女声	Female
+com.android.newsettings	duer_speech_sound_male_voice	男声	Male
+com.android.newsettings	empty_device_name_tip	设备名称不能为空	The equipment name cannot be empty
+com.android.newsettings	env_self_adapt_title	环境光自适应	Adaptive Brightness and Color
+com.android.newsettings	env_self_adapt_title_toast	根据环境光智能调整画面亮度和色彩，以达到最佳效果	Automatically adjust the brightness and color of the screen based on the ambient light to obtain the optimal picture effect.
+com.android.newsettings	eye_close_txt	关闭护眼功能后，设备将无法感应到接近的人或物体，高亮度的光线可能会给您带来损伤。是否确认继续关闭？	After the eye protection function is turned off, the equipment will be unable to sense the approaching people or objects. As a result, high-brightness ray of light may cause damage to you. Are you sure you want to continue to turn it off?
+com.android.newsettings	eye_protect_title	防射眼保护	Anti-Glare Eye Protection
+com.android.newsettings	eye_protect_title_toast	检测到镜头前有人时，自动降低投影亮度	Automatically reduce the projection brightness when someone is detected in front of the lens.
+com.android.newsettings	failure	修改失败，请稍后重试	Modification failed, please try again later
+com.android.newsettings	file_check_fail	文件检测出错，错误代码：001	Error in file detection, error code: 001
+com.android.newsettings	fluent_btn_text	流畅	
+com.android.newsettings	focus_correction	对焦校正	Focus correction
+com.android.newsettings	focus_image_title	参考图像对整个画面进行精准调焦	Precisely focus for the whole picture with reference to the image.
+com.android.newsettings	focus_reset_txt	还原对焦数据	Focus Data Restore
+com.android.newsettings	forward_project	正装背投	Normal installation and rear projection
+com.android.newsettings	g	绿	Green
+com.android.newsettings	game_keystone_reset_title	是否使用游戏模式	Are you sure to switch on the game mode
+com.android.newsettings	game_keystone_toast	当前游戏模式下不支持画面校正	Image correction is unavailable in boost mode
+com.android.newsettings	game_mode_default	高清	
+com.android.newsettings	game_mode_default_basic	基础	Basic
+com.android.newsettings	game_mode_default_basic_txt	降低画面延迟，同时保证画面分辨率	Reduce the image latency and maintain the resolution
+com.android.newsettings	game_mode_default_tip	适度降低画面延迟，保证最佳分辨率	
+com.android.newsettings	game_mode_low_high_frame_rate	极速	
+com.android.newsettings	game_mode_low_high_frame_rate_tip	优先降低画面延迟，提高画面刷新率不支持梯形校正，使用时请正投画面	
+com.android.newsettings	game_mode_low_latency	极速	Boost
+com.android.newsettings	game_mode_low_latency_tip	提高画面刷新率，适度降低画面延迟	
+com.android.newsettings	game_mode_low_latency_tip_mx_tip	画面延迟更低，但不支持“手动校正”	
+com.android.newsettings	game_mode_low_latency_txt	画面延迟更低，但不支持“画面校正”	Lower image latency, but image correction is temporarily unavailable
+com.android.newsettings	game_mode_no_close_3d_tip	3D播放下不支持游戏模式	
+com.android.newsettings	game_mode_no_hdmi_tip	请在HDMI源下使用游戏模式	Use the game mode via the HDMI source.
+com.android.newsettings	game_mode_switch_dialog_tip	“手动梯形校正”与“画面缩放”	
+com.android.newsettings	game_mode_switch_keystone_tip	梯形校正	
+com.android.newsettings	general_nfc_touch	NFC触碰	NFC Touch
+com.android.newsettings	general_nfc_touch_listen	一碰就听	Touch to Listen
+com.android.newsettings	general_nfc_touch_listen_tip	手机轻碰NFC区域即可连接蓝牙，仅支持带有NFC功能的安卓手机（5.1.1及以上版本）	Touch the NFC area with your mobile phone to connect to Bluetooth. This feature is available only for Android phones (version 5.1.1 or later) that support NFC.6. Use the game mode via the HDMI source.
+com.android.newsettings	general_nfc_touch_watch	一碰就看	Touch to View
+com.android.newsettings	general_nfc_touch_watch_tip	保持手机和投影在同一局域网，用手机轻碰控制器即可同屏。（仅支持华为NFC手机，且系统为EMUI11及以上版本）	Keep your phone and projection in the same LAN, and touch the controller with your phone to synchronize the screens. (Available only for Huawei NFC phones installed with EMUI 11 or later.)
+com.android.newsettings	general_save_electricity__text	省电模式	Power-saving mode
+com.android.newsettings	general_screen_display_text	主题风格	Theme
+com.android.newsettings	general_set_device_auto_startup	投影自动开机	Auto Power On
+com.android.newsettings	general_set_device_auto_startup_tip	HDMI设备可控制投影开关机	HDMI devices can turn on or off the projector.
+com.android.newsettings	general_set_device_control	设备控制	Equipment control
+com.android.newsettings	general_set_device_control_cec_text	CEC控制	CEC control
+com.android.newsettings	general_set_device_control_cec_tip	一键控制HDMI连接的设备（关闭后音频ARC输出将不可用）	Control the HDMI connected equipment by one click (audio ARC output will be unavailable after turnoff)
+com.android.newsettings	general_set_focus	对焦图	Focus chart
+com.android.newsettings	general_set_screen_save_text	屏幕保护	Screen saver
+com.android.newsettings	general_set_system_info_text	系统信息	System information
+com.android.newsettings	general_set_system_restore_text	恢复出厂	Factory reset
+com.android.newsettings	global_scale	全局缩放	Global scaling
+com.android.newsettings	gm_version	INUI版本	INUI Version
+com.android.newsettings	gsou_btn_text	极速	
+com.android.newsettings	ha_man_sound_effect_title	哈曼音效	
+com.android.newsettings	hdmi_game_bt_toast	请在信号输入大于100Hz时使用	
+com.android.newsettings	hdmi_video_ratio	HDMI图像比例	HDMI Aspect Ratio
+com.android.newsettings	head_general_setting_text	通用	General
+com.android.newsettings	head_image_setting_text	视频	Video
+com.android.newsettings	head_network_setting_text	网络	Network
+com.android.newsettings	head_screen_setting_text	画面	Picture
+com.android.newsettings	head_sound_setting_text	声音	Sound
+com.android.newsettings	head_system_setting_text	系统	System
+com.android.newsettings	help_adj	调整	Adjustment
+com.android.newsettings	help_back	返回	Return
+com.android.newsettings	help_ok	选点	Select point
+com.android.newsettings	hidden_setting	隐藏设置	Hidden setting
+com.android.newsettings	hidden_setting_diagnosis_control_sure	开始诊断	Start diagnosis
+com.android.newsettings	hidden_setting_diagnosis_tip	远程控制设备并定位问题	Remotely control the equipment and locate problems
+com.android.newsettings	hidden_setting_diagnosis_title	远程诊断	Remote diagnosis
+com.android.newsettings	hidden_setting_diagnosis_vcontrol	远程诊断时，极米将远程控制您的设备，了解并定位您的问题。远程诊断后，请根据客服引导结束此次诊断。	During remote diagnosis, XGIMI will remotely control your equipment to understand and locate your problems. After remote diagnosis, please end the diagnosis according to customer service guidance.
+com.android.newsettings	hidden_setting_electrify_boot	上电开机	Energize to boot
+com.android.newsettings	hidden_setting_electrify_boot_switch_title	上电自动开机	Energize to boot automatically
+com.android.newsettings	hidden_setting_electrify_boot_tip	设备接通电源时将自动开机，使用时请做好电源安全管理	When the equipment is switched on, it will boot automatically. Please manage the power supply for security when using it.
+com.android.newsettings	hidden_setting_input	输入法	Input method
+com.android.newsettings	hidden_setting_logcat	日志上报	Log reporting
+com.android.newsettings	hidden_setting_logcat_nonet	网络不可用	Network is unavailable
+com.android.newsettings	hidden_setting_logcat_tip	为解决您的问题，我们将上传日志开启期间的系统操作记录，不会侵犯您的任何隐私，感谢您的配合	In order to help you solve the problem, we will upload the system operation records during the opening period of the log, and will not infringe any of your privacy. XGIMI R&D team thanks for your cooperation
+com.android.newsettings	hidden_setting_time	时间设置	Time setting
+com.android.newsettings	hidden_setting_time_day	日	Day
+com.android.newsettings	hidden_setting_time_hour	时	Time
+com.android.newsettings	hidden_setting_time_min	分	Minute
+com.android.newsettings	hidden_setting_time_month	月	Month
+com.android.newsettings	hidden_setting_time_toast	手动设置时间可能会导致设备无法访问网络	Setting time manually may cause the equipment to lose access to the network
+com.android.newsettings	hidden_setting_time_year	年	Year
+com.android.newsettings	hidden_setting_wind	风速	Air speed
+com.android.newsettings	hidden_setting_wind_level	风速等级	Air speed level
+com.android.newsettings	hidden_str_boot	快速开机	
+com.android.newsettings	high_definition_btn_text	高清	
+com.android.newsettings	hoist_cast	吊装正投	Hoisting and orthographic projection
+com.android.newsettings	horizental_scale	水平缩放	Horizontal scaling
+com.android.newsettings	hz120_not_3d	至臻120Hz下不能3D播放	3D playback is not supported in 120 Hz
+com.android.newsettings	hz65_not_3d	画面高帧率下不能播放3D	
+com.android.newsettings	iamge_ratio_game_mode_tip	游戏模式下不支持图像比例设置	
+com.android.newsettings	iamge_ratio_no_hdmi_tip	请在HDMI源下调整图像比例设置	Adjust the aspect ratio via the HDMI source.
+com.android.newsettings	image_set_3d_set_2to3d	2D转3D	2D to 3D
+com.android.newsettings	image_set_3d_set_blue3d	蓝光3D	Blue-ray 3D
+com.android.newsettings	image_set_3d_set_close_3d	关闭3D	Turn off 3D
+com.android.newsettings	image_set_3d_set_lr3d	左右3D	3D at left and right
+com.android.newsettings	image_set_3d_set_lr3dTo2d	左右3D转2D	3D at left and right to 2D
+com.android.newsettings	image_set_3d_set_tb3d	上下3D	3D up and down
+com.android.newsettings	image_set_3d_set_tb3dTo2d	上下3D转2D	3D up and down to 2D
+com.android.newsettings	image_set_ai_mode	AI画质	AI Picture Quality
+com.android.newsettings	image_set_bright_mode	明亮	Bright
+com.android.newsettings	image_set_custom_mode	自定义	Customization
+com.android.newsettings	image_set_football_mode	足球	Football mode
+com.android.newsettings	image_set_frame_refresh_rate	HDMI画面刷新率	HDMI Refresh rate
+com.android.newsettings	image_set_game_mode	游戏	Game mode
+com.android.newsettings	image_set_image_mode	视频图像模式	Video Image Mode
+com.android.newsettings	image_set_image_mode_prefect_120	至臻120Hz	120Hz
+com.android.newsettings	image_set_image_mode_prefect_120_tip	输出更顺滑的播放效果，画面分辨率将对应适配	
+com.android.newsettings	image_set_mode_ai_image_quality_adjustment	智能画质调节	Intelligent adjustment of picture quality
+com.android.newsettings	image_set_mode_bright	亮度	Brightness
+com.android.newsettings	image_set_mode_color_temp	色温	Color temperature
+com.android.newsettings	image_set_mode_color_temp_user_blue	蓝	Blue
+com.android.newsettings	image_set_mode_color_temp_user_green	绿	Green
+com.android.newsettings	image_set_mode_color_temp_user_red	红	Red
+com.android.newsettings	image_set_mode_constrast_ratio	对比度	Contrast
+com.android.newsettings	image_set_mode_high_level_title	高级设置	Advanced setting
+com.android.newsettings	image_set_mode_motion_compensation	运动补偿	Motion compensation
+com.android.newsettings	image_set_mode_noise_reduct	降噪	Noise reduction
+com.android.newsettings	image_set_mode_part_constrast_ratio	局部对比度	Local contrast
+com.android.newsettings	image_set_mode_saturation	饱和度	Saturability
+com.android.newsettings	image_set_mode_sharpness	锐度	Sharpness
+com.android.newsettings	image_set_movice_mode	观影	Movie Mode
+com.android.newsettings	image_set_office_mode	办公	Office mode
+com.android.newsettings	image_set_ratio_auto	自动	Auto
+com.android.newsettings	image_set_ratio_none	原始大小	Original Size
+com.android.newsettings	image_set_soft_mode	柔和	Soft
+com.android.newsettings	image_set_standard_mode	标准	Standard
+com.android.newsettings	image_set_three_setting	3D设置	3D setting
+com.android.newsettings	infinite_mac	无线MAC地址	Wireless MAC
+com.android.newsettings	infinite_zoom	无极变焦	Stepless zoom
+com.android.newsettings	input_max_tip_msg	输入已达最大限制	Maximum time limit of input
+com.android.newsettings	jd	小京鱼	Whale
+com.android.newsettings	join_beta	加入软件公测	Add software public beta
+com.android.newsettings	join_beta_text	说明：加入公测后我们会将搭载最新功能的软件推送到您的设备，您可以通过论坛发帖将您的使用感受和建议分享，我们会不定期挑选优质回复给予奖励，您的建议会让我们产品做的更好	Note: After adding the public beta, we will push the software equipped with the latest functions to your equipment. You can share your experience and suggestions through forum posting. And we will choose high-quality responses from time to time to give rewards and make better products benefiting from your suggestions.
+com.android.newsettings	join_beta_title	开启后我们将推送软件新版本到您的设备，您可以通过论坛发帖分享您的使用感受和建议，我们会不定期挑选优质回复给予奖励，您的建议会让我们产品做的更好	After boot, we will push the software of a new version to your equipment. You can share your experience and suggestions through forum posting. And we will choose high-quality responses from time to time to give rewards and make better products benefiting from your suggestions.
+com.android.newsettings	join_error	未知错误，请稍后重试	Unknown error, try again later
+com.android.newsettings	keep_the_status	保持现状	Cancel
+com.android.newsettings	keystone_3d_title	是否使用3D模式	Are you sure to switch on the 3D mode
+com.android.newsettings	keystone_3d_toast	使用3D模式将取消画面校正并关闭自动校正	Switching on the 3D mode will turn off auto image correction
+com.android.newsettings	keystone_calibration	一键校准	One-Click Calibration
+com.android.newsettings	keystone_calibration_reset	校准还原	Restore
+com.android.newsettings	keystone_correction	对焦校准	Keystone Correction
+com.android.newsettings	keystone_correction_txt	调整设备对焦基准以支持最佳对焦效果	Keep front projection and ensure the projection distance is within 1-2 meters
+com.android.newsettings	keystone_txt	梯形校正	Keystone correction
+com.android.newsettings	keystone_txt_title	精准校正	Precise Correction
+com.android.newsettings	keystone_view_boot_txt	*在系统设置-画面校正设置中可关闭自动校正	*在系统设置-画面校正设置中可关闭自动校正
+com.android.newsettings	keystone_view_txt	【OK】选点 【方向键】调整 【菜单键】恢复默认 【返回键】返回	【OK】Confirm/Exit 【Direction】shitf/adjust 【Menu】more settings
+com.android.newsettings	kst_4_menu_view_txt	恢复默认画面	Restore Default Image
+com.android.newsettings	kst_8_view_text	八点校正	
+com.android.newsettings	language	语言/Language	Language
+com.android.newsettings	lboratory	实验室功能	Laboratory function
+com.android.newsettings	ldeBatterytoast	电量过低，该模式不支持	Low battery, this mode is not supported.
+com.android.newsettings	leveltop	陀螺仪水平校准	Gyroscope horizontal correction
+com.android.newsettings	leveltop_reset	已重置陀螺仪	Have reset the Gyroscope
+com.android.newsettings	leveltop_title	若自动梯形校正后画面歪斜，请使用陀螺仪水平校准	If the picture is skewed after an automatic keystone correction is complete, use the "Gyroscope Calibration" feature.
+com.android.newsettings	lift_rear_project	吊装背投	Hoisting and rear projection
+com.android.newsettings	light_mode	亮度模式	Brightness mode
+com.android.newsettings	living_room	客厅	Living room
+com.android.newsettings	machine_bottom_tip	移动设备至正投状态	
+com.android.newsettings	manual_focus	手动对焦	Manual Focusing
+com.android.newsettings	memory_info	内存信息	Memory information
+com.android.newsettings	menu_view_txt	切换功能	Switch Mode
+com.android.newsettings	min_wifi_pass_msg_tip	密码长度应大于等于8个字符	Password length shall be greater than or equal to 8 characters
+com.android.newsettings	min_wifi_pass_msg_tip2	密码长度应大于等于5个字符	Password length shall be greater than or equal to 5 characters
+com.android.newsettings	move_device_bottom_tip	移动设备至正投状态	
+com.android.newsettings	music_control_dialog_des	清除配对后，您的音乐控制器需要重新进行配对	
+com.android.newsettings	music_control_dialog_title	清除音乐控制器配对信息	
+com.android.newsettings	music_control_disconnect_bt	清除配对	
+com.android.newsettings	music_control_the_screen	一碰同屏	
+com.android.newsettings	music_control_the_screen_txt	保持手机和投影在同一局域网，手机轻碰音乐控制器可实现同屏。（仅支持华为NFC手机，且EMUI11及以上版本）	
+com.android.newsettings	music_control_the_sound	一碰传音	
+com.android.newsettings	music_control_the_sound_txt	手机轻碰音乐控制器，可将手机播放的音乐传到投影上。(仅支持安卓NFC手机)	
+com.android.newsettings	music_control_title	音乐控制器	
+com.android.newsettings	my_xgimi	我的	
+com.android.newsettings	my_xgimi_device_name	我的极米	My XGIMI
+com.android.newsettings	nerwork_ip_inputerror	%s输入不合法	Nonconformity of %s input
+com.android.newsettings	nerwork_save_tip_text	当前配置已保存	Current configuration saved
+com.android.newsettings	nerwork_wifi_confirm	连接中	Connecting
+com.android.newsettings	nerwork_wifi_connected	已连接	Connected
+com.android.newsettings	nerwork_wifi_edit_title	请输入 %s 的密码	Please input the password of %s
+com.android.newsettings	nerwork_wifi_forget	忘记该网络	Forget the network
+com.android.newsettings	nerwork_wifi_pwd_error	密码错误，请重新输入密码	Wrong password, please input again
+com.android.newsettings	nerwork_wifi_save	已保存	Saved
+com.android.newsettings	network_ap_close_tip	热点已关闭	Hotspot off
+com.android.newsettings	network_ap_failed_tip	未知异常，请稍后再试	Unknown exception, please try again later
+com.android.newsettings	network_ap_open_tip	成功打开 %s 热点	%s hotspot on successfully
+com.android.newsettings	network_ap_ssid_pwd	密码	Password
+com.android.newsettings	network_ap_status_close	关闭	Off
+com.android.newsettings	network_ap_status_open	打开	On
+com.android.newsettings	network_ap_tip	常规信息	General information
+com.android.newsettings	network_bluetooth_cancel	取消	Cancel
+com.android.newsettings	network_bluetooth_cancel_paired	取消配对	Pairing canceled
+com.android.newsettings	network_bluetooth_clear	清除蓝牙配对信息	Clear Bluetooth pairing information
+com.android.newsettings	network_bluetooth_clear_detail	清除配对后，您的遥控器需要重新进行配对	After clearing the pairing information, your remote controller needs to subject to pairing again.
+com.android.newsettings	network_bluetooth_clear_msg	清除配对后，不再保留该设备信息	After the pairing information is cleared, the equipment information is no longer retained
+com.android.newsettings	network_bluetooth_clear_remote	清除遥控器配对信息	Clear the pairing information of remote controller
+com.android.newsettings	network_bluetooth_connect	连接	Connection
+com.android.newsettings	network_bluetooth_connected_status	已连接	Connected
+com.android.newsettings	network_bluetooth_disconnect	断开连接	Disconnected
+com.android.newsettings	network_bluetooth_find	扫描查找设备	Scan for equipment
+com.android.newsettings	network_bluetooth_find_title	已扫描设备	Scanned equipment
+com.android.newsettings	network_bluetooth_ok	确定	OK
+com.android.newsettings	network_bluetooth_paired	我的设备	My equipment
+com.android.newsettings	network_bluetooth_paired_status	已配对	Paired
+com.android.newsettings	network_bluetooth_remote	遥控器	Remote controller
+com.android.newsettings	network_ip_pair_failure_text	网络修复失败	Network repair failed
+com.android.newsettings	network_ip_pair_over_text	已对网络进行修复	Network repaired
+com.android.newsettings	network_item_status_connect	已连接	Connected
+com.android.newsettings	network_item_status_disconnect	未连接	Not connected
+com.android.newsettings	network_save_ap_tip	当前配置已保存	Current configuration saved
+com.android.newsettings	network_set_ap_text	无线热点	Wireless hotspot
+com.android.newsettings	network_set_blu_per_text	蓝牙	Bluetooth
+com.android.newsettings	network_set_dns1	dns服务器	dns server
+com.android.newsettings	network_set_gateway	默认网关	Default gateway
+com.android.newsettings	network_set_ip	IP地址	IP address
+com.android.newsettings	network_set_ip_reset	IP修复	IP repair
+com.android.newsettings	network_set_ip_tip	IP地址获取	IP address acquisition
+com.android.newsettings	network_set_subnet	子网掩码	Subnet mask
+com.android.newsettings	network_set_way	连接方式	Connection mode
+com.android.newsettings	network_set_way_auto	自动	Automatic
+com.android.newsettings	network_set_way_hand	手动	Manual
+com.android.newsettings	network_set_wifi_info_title	Wi-Fi详情	Details of Wi-Fi
+com.android.newsettings	network_set_wifi_text	Wi-Fi连接	Wi-Fi connection
+com.android.newsettings	network_set_write_text	有线网络	Wired network
+com.android.newsettings	network_signal_source_text	信号源	Signal source
+com.android.newsettings	network_signal_source_usb	USB(%s的U盘)	USB (USB flash disk of %s)
+com.android.newsettings	network_signal_source_usb_cast	USB有线同屏	USB screen mirroring
+com.android.newsettings	network_wifi_ap_type	热点类型	
+com.android.newsettings	network_wifi_con_hide_error_tip	无法连接此网络	Failed to connect to the network
+com.android.newsettings	network_wifi_con_none_error_tip	无法保存网络	Failed to save the network
+com.android.newsettings	network_wifi_show_password	显示密码	Show password
+com.android.newsettings	network_wifiap_inputerror	请输入%s	Please input %s
+com.android.newsettings	network_wifiap_pwdshort	密码至少应包含8个字符	The password must be at least 8 characters
+com.android.newsettings	network_wifiap_pwdshort_f	密码至少应包含5个字符	The password must be at least 5 characters
+com.android.newsettings	new_digital_zoom_top_txt	无损	Lossless
+com.android.newsettings	new_digital_zoom_txt	数码变焦	Digital Zoom
+com.android.newsettings	new_optical_zoom_title	光学变焦	Optical Zoom
+com.android.newsettings	new_optical_zoom_txt	调整画面大小	调整画面大小
+com.android.newsettings	nnknownhostexception	请检查网络是否连接	Check network connection
+com.android.newsettings	no_network	无网络连接	
+com.android.newsettings	no_retention_application	不保留应用	No
+com.android.newsettings	office_room	办公室	Office
+com.android.newsettings	optical_over_digital	无损缩放已完成，继续缩小可能会影响分辨率	Digital zoom will result in lower resolution.
+com.android.newsettings	optical_zoom_title	光学变焦	Optical Zoom
+com.android.newsettings	picture_auto_keystone_text	自动梯形校正	Automatic keystone correction
+com.android.newsettings	picture_color	亮度与色彩	Brightness and Color
+com.android.newsettings	picture_color_text	亮度与色彩模式	Brightness and Color
+com.android.newsettings	picture_focus_text	对焦设置	Focus setting
+com.android.newsettings	picture_light_source_text	亮度	Light source brightness
+com.android.newsettings	picture_manual_keystone_text	手动梯形校正	Manual Picture Correction
+com.android.newsettings	picture_video_set_text	视频设置	Video setting
+com.android.newsettings	portrait_error_tip	请平放设备后重试	
+com.android.newsettings	projection_area_self_adapt_title	画面智能避障	Smart Obstacle Avoidance
+com.android.newsettings	projection_area_self_adapt_txt	自动梯形校正时智能调整画面大小和位置，避开墙面开关等障碍物	Automatically adjust the screen size and position based on automatic keystone correction to avoid switches on the wall and other obstacles.
+com.android.newsettings	projection_settings	投影方式	Projection mode
+com.android.newsettings	quick_setting_text	快速设置	Quick setting
+com.android.newsettings	r	红	Red
+com.android.newsettings	reboot_later	稍后	Later
+com.android.newsettings	reboot_now	立即重启	Yes
+com.android.newsettings	refresh_rate_tip	刷新率	
+com.android.newsettings	reset_button	恢复默认	Restore defaults
+com.android.newsettings	reset_key_stone	恢复默认画面	Restore
+com.android.newsettings	reset_key_stone_txt	恢复画面形状至未做画面校正的状态	Restore the picture shape to the state without keystone correction
+com.android.newsettings	reset_prompt	正在重启...	Restarting ...
+com.android.newsettings	reset_successful	已还原校准	Reset successfully
+com.android.newsettings	reset_tip_text	配置已恢复默认	Configuration restored defaults
+com.android.newsettings	resolution_ratio_no_tip	无损	
+com.android.newsettings	resolution_ratio_tip	分辨率	
+com.android.newsettings	resolution_ratio_yes_tip	有损	
+com.android.newsettings	restore_factory_setting	恢复出厂设置	Restore factory setting
+com.android.newsettings	restory_factory	恢复出厂	Restore factory
+com.android.newsettings	restory_msg	此操作将删除系统设置和数据文件，同时删除已下载的应用，是否继续？	By this operation, the system settings and data files as well as downloaded applications will be deleted. Do you want to continue?
+com.android.newsettings	restory_txt	是否保留已下载的应用？	Do you want to remain the downloaded applications?
+com.android.newsettings	retention_application	保留应用	Yes
+com.android.newsettings	scaling_enlarge_text	放大	Zoom in
+com.android.newsettings	scaling_narrow_text	缩小	Zoom out
+com.android.newsettings	screen_displacement	画面位移	Picture displacement
+com.android.newsettings	screen_displacement_txt	平移画面至最佳位置	平移画面至最佳位置
+com.android.newsettings	screen_save	屏幕保护	Screen saver
+com.android.newsettings	screen_zoom	画面缩放	Picture scaling
+com.android.newsettings	select_network	选取网络	Choose network
+com.android.newsettings	serial_number	机器序列号	SN
+com.android.newsettings	set_more_boot_anim	开机动画	Boot animation
+com.android.newsettings	set_more_boot_anim_title	常规开机时显示开机动画	Display boot animation during regular boot
+com.android.newsettings	settings_auto_theme_not_network	定时切换需要连接网络	
+com.android.newsettings	settings_darknight_auto_theme	暗夜主题	Night
+com.android.newsettings	settings_day_auto_theme	白昼主题	Day
+com.android.newsettings	settings_display_style	主题风格	Theme
+com.android.newsettings	settings_display_style_auto	自动	Auto
+com.android.newsettings	settings_display_style_auto_tip	根据日出日落时间启动切换白昼、暗夜主题；此功能需要连接网络	Automatically switch to the night theme from 7 p.m. to 7 a.m.
+com.android.newsettings	settings_display_style_auto_tip_368	根据日出日落时间启动切换白昼、暗夜主题；此功能需要连接网络	Automatically switch to the night theme from 7 p.m. to 7 a.m.
+com.android.newsettings	settings_more_menu	更多	More
+com.android.newsettings	settings_tixing_menu	更多设置	More settings
+com.android.newsettings	settings_tixing_msg	中央的圆为正圆时屏幕比例符合系统设置	When the circle in the center is a perfect one, the screen scale conforms to the system setting
+com.android.newsettings	settings_tixing_reset	梯形校正复位	Keystone correction reset
+com.android.newsettings	signal_source_setting	信号源设置	Setting of signal source
+com.android.newsettings	signal_source_setting_auto	HDMI即插即播	Universal Plug-n-Play
+com.android.newsettings	signal_source_setting_boot	开机源	Boot source
+com.android.newsettings	signal_source_setting_boot_defeat	默认	Default
+com.android.newsettings	signal_source_setting_hdmi_version	HDMI版本	HDMI version
+com.android.newsettings	smart_curtain	智能幕布	Smart Curtain
+com.android.newsettings	smart_curtain_open_error_tip	打开智能幕布应用失败，请检查是否安装了此应用	Fail to open smart screen application, please check if the app has been installed
+com.android.newsettings	sound_effect_ai_type	AI音效	AI Sound Effect
+com.android.newsettings	sound_effect_auto_type	自动	Auto
+com.android.newsettings	sound_effect_k_song_type	K歌	Karaoke
+com.android.newsettings	sound_effect_mode_title	音效模式	Sound effect mode
+com.android.newsettings	sound_effect_movie_type	观影	Cinema
+com.android.newsettings	sound_effect_music_type	音乐	Music
+com.android.newsettings	sound_effect_news_type	新闻	News
+com.android.newsettings	sound_effect_outdoors_type	户外	Outdoor
+com.android.newsettings	sound_effect_sports_type	体育	Sports
+com.android.newsettings	sound_effect_standard_type	标准	Standard
+com.android.newsettings	sound_effect_title	音效	Sound effect
+com.android.newsettings	sound_out	声音输出	Sound output
+com.android.newsettings	sound_set_boot_music_text	开机音乐	Boot music
+com.android.newsettings	sound_set_input_audio_bluetooth	蓝牙	Bluetooth
+com.android.newsettings	sound_set_input_audio_headset	耳机	Headphone
+com.android.newsettings	sound_set_input_audio_spdif	光纤	Optical fiber
+com.android.newsettings	sound_set_input_audio_speaker	内部扬声器	Internal speaker
+com.android.newsettings	sound_set_input_format_text	声音输出格式	Sound output format
+com.android.newsettings	sound_set_input_text	声音输出	Sound output
+com.android.newsettings	sound_set_keys_text	按键音	Key tone
+com.android.newsettings	sound_set_microphone_mode	麦克风模式	Microphone mode
+com.android.newsettings	sound_set_microphone_mode_k_meeting	会议	Meeting
+com.android.newsettings	sound_set_microphone_mode_k_meeting_tip	优化会议音效，防止误碰麦克风语音键	
+com.android.newsettings	sound_set_microphone_mode_k_song	K歌	Sing online
+com.android.newsettings	sound_set_microphone_mode_k_song_tip	优化K歌音效，麦克风语音键可用	
+com.android.newsettings	sound_set_microphone_title	麦克风	
+com.android.newsettings	sound_set_microphone_volume	麦克风音量	Microphone volume
+com.android.newsettings	sound_set_microphone_volume_title	音量	Volume
+com.android.newsettings	sound_system_title	音响系统	
+com.android.newsettings	sound_system_usb_harman_kardon_title	USB（Harman Kardon低音音响）	
+com.android.newsettings	sound_volume_balance	音量平衡	Sound Check
+com.android.newsettings	speech_diff_retrieval	语音差异化检索	Voice differentiation retrieval
+com.android.newsettings	speech_diff_retrieval_title	语音搜索内容时，系统将根据声音特征进行差异化推荐	The system will recommend differently based on voice characteristics when searching via voice
+com.android.newsettings	start_3d_mode_text	3D模式	
+com.android.newsettings	sys_set_auto_focus_title	开机自动对焦	Automatic focusing after boot
+com.android.newsettings	system_check_fail	系统完成性检测不通过，无法升级	Incomplete system detected, upgrade not available
+com.android.newsettings	system_info	系统信息	System information
+com.android.newsettings	system_storage	系统存储	System memory
+com.android.newsettings	system_update	系统升级	System upgrade
+com.android.newsettings	system_version	系统版本	System version
+com.android.newsettings	tempure	温度	Temperature
+com.android.newsettings	thing_internet	物联网	Internet of Things
+com.android.newsettings	three_d_4k_video_tip	4K视频下不支持3D设置	
+com.android.newsettings	three_d_game_mode_tip	游戏模式下不支持3D设置	
+com.android.newsettings	three_d_hdr_video_tip	HDR视频下不支持3D设置	
+com.android.newsettings	three_d_no_video_tip	请在视频播放下使用3D设置	Only video playing supports 3D mode.
+com.android.newsettings	three_d_not_auto_led	3D模式下不支持环境光自适应	
+com.android.newsettings	three_d_not_iamge_ratio_tip	3D模式下不支持图像比例设置	
+com.android.newsettings	three_d_not_led_tip	3D模式下不支持亮度调整	Brightness cannot be adjusted in 3D mode
+com.android.newsettings	three_hfr_120_title	确认使用3D模式	
+com.android.newsettings	three_hfr_120_txt	3D模式下至臻120Hz暂时无法生效	
+com.android.newsettings	three_not_120	3D播放下不支持画面高帧率	
+com.android.newsettings	tian_mao_txt	天猫精灵	
+com.android.newsettings	time_coming_set	等待时间	Waiting time
+com.android.newsettings	time_out	连接超时，请稍后重试	Connection timeout, try again later
+com.android.newsettings	time_show_set	时间显示	Time display
+com.android.newsettings	title_focus	画面对焦	Focusing
+com.android.newsettings	title_keystone	梯形校正至中心圆为正圆	Correct the image until the center is an appropriate circle
+com.android.newsettings	title_keystone_text	画面校正	Keystone correction
+com.android.newsettings	title_picture_size	画面尺寸	Picture size
+com.android.newsettings	toast_tip_line_casting	正在有线同屏中	In wired screen
+com.android.newsettings	tof_check_end_successful	校准完成	
+com.android.newsettings	tof_distance_far	当前距离过远	Too far the current distance
+com.android.newsettings	tof_distance_near	当前距离过近	Too close the current distance
+com.android.newsettings	tof_distance_ok	当前距离合适	Proper distance
+com.android.newsettings	tof_error	校准失败	
+com.android.newsettings	tof_far	距离过远,校准失败	
+com.android.newsettings	tof_near	距离过近,校准失败	
+com.android.newsettings	top_content_tip	使用时请正投画面	
+com.android.newsettings	turbo_light_dialog_title	确定开启Turbo Light？	
+com.android.newsettings	turbo_light_explain	开启后将智能增强画面亮度。环境光过亮时，会缩放画面以保证最佳亮度。	
+com.android.newsettings	turbo_light_ok	开启	
+com.android.newsettings	turbo_light_title_toast	智能调节投影亮度，同时会调整画面大小	
+com.android.newsettings	uodatecc	电量不足50%，无法升级	Battery lower than 50%, upgrade is disabled
+com.android.newsettings	update_online	在线升级	Online upgrade
+com.android.newsettings	update_usb	U盘升级	USB flash disk upgrade
+com.android.newsettings	usb_bin_update_msg	系统即将更新，更新将会删除你的设置和文件，是否确认该操作？	The system is to be updated. Your settings and files will be deleted after update. Are you sure you want to continue?
+com.android.newsettings	usb_error	请将升级文件存放于FAT32格式的U盘根目录中，插入设备USB2.0接口	Please store the upgrade file in the root directory of the USB flash disk in FAT32 format and insert it into the USB2.0 interface of the equipment
+com.android.newsettings	usb_name_error_str	设备存储	USB
+com.android.newsettings	usb_no_update_file	请将升级文件存放于FAT32格式的U盘根目录中，插入设备USB2.0接口 （包名被修改后将不能被读取）	Please store the upgrade file in the root directory of the USB flash disk in FAT32 format and insert it into the USB2.0 interface of the equipment (the package name will not be read if it is modified)
+com.android.newsettings	usb_update_file	检测到安装包	Installation package detected
+com.android.newsettings	usb_update_msg	系统即将进行更新，更新不会删除你的设置和文件,是否确认该操作?	The system is to be updated. Your settings and files will not be deleted after update. Are you sure you want to continue?
+com.android.newsettings	usb_update_no_file	未检测到安装包	Installation package not detected
+com.android.newsettings	usb_update_no_usb	未检测到U盘	USB flash disk not detected
+com.android.newsettings	usb_update_toast_text	将升级文件存放于FAT32格式的U盘根目录中，并插入设备USB2.0接口(包名被修改将不能被读取)	Store the upgrade file in the root directory of the USB flash disk in FAT32 format and insert it into the USB2.0 interface of the equipment (the package name will not be read if it is modified)
+com.android.newsettings	vertical_auto_key_stone	自动垂直梯形校正	Auto vertical keystone correction
+com.android.newsettings	vertical_scale	垂直缩放	Vertical scaling
+com.android.newsettings	video_not_120	请在视频播放状态下切换至臻120Hz	
+com.android.newsettings	video_ratio	图像比例	Aspect ratio
+com.android.newsettings	video_zomm	画面缩放	Picture scaling
+com.android.newsettings	video_zoom_undamaged	画面缩放	Zoom Screen
+com.android.newsettings	video_zoom_undamaged_toast	通过光学变焦缩放画面，缩放不会影响画质效果	Use optical zooming for zoom-ins and zoom-outs to retain the picture quality.
+com.android.newsettings	voicekey	声纹钥匙	Voiceprint key
+com.android.newsettings	voicekey_title	当系统识别到儿童使用时将自动开启观看管控	When recognizing that it is used by children, the system will automatically turn on the viewing control function
+com.android.newsettings	wifi_add	手动添加网络	Add network manually
+com.android.newsettings	wifi_add_other_ssid_error_tip	请输入ssid	Please input ssid
+com.android.newsettings	wifi_authentication_subtitle	如出现加载异常或无内容显示，按【返回】退出	
+com.android.newsettings	wifi_authentication_title	网络认证	
+com.android.newsettings	wifi_con_hide_error_tip	无法连接此网络	Failed to connect to the network
+com.android.newsettings	wifi_dialog_fast_connect_tip	立即连接	Connect now
+com.android.newsettings	wifi_dialog_network_page_tip	网络设置页	Network setting page
+com.android.newsettings	wifi_off	Wi-Fi未连接	Wi-Fi not connected
+com.android.newsettings	wifi_pass_empty_tip2	请输入密码	Please input the password
+com.android.newsettings	wifi_security	安全性	Security
+com.android.newsettings	wifi_txt	当前连接WIFI:   	
+com.android.newsettings	wired_mac	有线MAC地址	Wired MAC
+com.android.newsettings	wired_network	有线网络	
+com.android.newsettings	xgimi	的	
+com.android.newsettings	xgimi_device_name	的极米	XGIMI
+com.android.newsettings	zoom_end_toast	画面不清晰？按"@"自动对焦	
+com.android.newsettings	zoom_ratio	画面比例	Zoom ratio
+com.xgimi.smartconnect	common_guide_one	扫码下载极米APP	
+com.xgimi.smartconnect	common_guide_two	打开极米APP	
+com.xgimi.smartconnect	connect_net_for_device	为设备连网	
+com.xgimi.smartconnect	guide_title	手机为投影仪快速连网	
+com.xgimi.smartconnect	mx_guide_one	扫码下载极米特别版APP	
+com.xgimi.smartconnect	mx_guide_two	打开极米特别版APP	
+com.xgimi.smartconnect	part_one	步骤 1	
+com.xgimi.smartconnect	part_three	步骤 3	
+com.xgimi.smartconnect	part_two	步骤 2	
+com.xgimi.smartconnect	wifi_connect_fail	连网异常	
+com.xgimi.smartconnect	wifi_connect_fail_phone_tip	请按手机提示操作	
+com.xgimi.smartconnect	wifi_connect_fail_tv_tip	请按手机提示检查后重试	
+com.xgimi.smartconnect	wifi_connect_success	连网成功	
+com.xgimi.smartconnect	wifi_connect_success_phone_tip	可通过手机控制投影	
+com.xgimi.smartconnect	wifi_connecting	正在连网...	
+com.xgimi.windowsystem	progress_wait_fail	网络异常	
+com.xgimi.windowsystem	progress_wait_loading	正在加载中...	
+com.xgimi.xgimiservice	change_effect_to_movie	已切换为影院音效	
+com.xgimi.xgimiservice	change_effect_to_music	已切换为音乐音效	
+com.xgimi.xgimiservice	change_effect_to_ktv	已切换为K歌音效	
+com.xgimi.xgimiservice	hdmi_cancel_switch	HDMI切换已取消	
+com.xgimi.account	activation	激活	
+com.xgimi.account	activation_code_fail	激活码输入错误，您今天还有%s次输错机会	
+com.xgimi.account	activation_code_input_fail_toomany	激活码输入错误次数太多，请24小时后重试	
+com.xgimi.account	activation_code_input_toomany	激活码输入错误次数过多	
+com.xgimi.account	activation_fail	激活失败(%s)	
+com.xgimi.account	activation_fail_hint	客服电话：400-0028-960	
+com.xgimi.account	activation_success	激活成功!	
+com.xgimi.account	activationing	兑换中...	
+com.xgimi.account	active_off	激活码通道	
+com.xgimi.account	already_purchased	您已经购买过此课程	
+com.xgimi.account	app_name	极米服务	
+com.xgimi.account	app_name_changba	唱吧	
+com.xgimi.account	app_name_mg	芒果TV	
+com.xgimi.account	app_name_youku	酷喵	
+com.xgimi.account	beifen_btn_download	立即还原	
+com.xgimi.account	beifen_btn_upload	立即备份	
+com.xgimi.account	beifen_desc	将您的网络设置和已安装应用备份到云端，支持极米设备云端同步	
+com.xgimi.account	beifen_dialog_btn_cancel	取消	
+com.xgimi.account	beifen_dialog_btn_confirm	确定	
+com.xgimi.account	beifen_download_time	最近还原时间：%s	
+com.xgimi.account	beifen_downloading	正在还原中…	
+com.xgimi.account	beifen_restore_confirm_tip	还原将恢复上一次备份的网络设置和已安装应用，此操作不会删除本机已保存的网络和已安装的应用，确定还原吗？	
+com.xgimi.account	beifen_title	云备份	
+com.xgimi.account	beifen_upload_time	最近备份时间：%s	
+com.xgimi.account	beifen_uploading	正在备份中…	
+com.xgimi.account	bottom_tip_customer	联系客服	
+com.xgimi.account	bottom_tip_problem	常见问题	
+com.xgimi.account	bottom_tip_record	交易记录	
+com.xgimi.account	bottom_tip_renew	管理自动续费	
+com.xgimi.account	buy_success	您已成功购买VIP	
+com.xgimi.account	cancel	取消	
+com.xgimi.account	cancel_contract_fail	取消自动续费失败	
+com.xgimi.account	cancel_contract_success	取消自动续费成功	
+com.xgimi.account	complete	完成	
+com.xgimi.account	contact_customer_service	联系客服	
+com.xgimi.account	contracted	已开通自动续费	
+com.xgimi.account	dealing	正在处理中	
+com.xgimi.account	dialog_button_exit_txt	退出账号	
+com.xgimi.account	dialog_cancel_contract_desc	正在处理中，部分续费状态将延迟更新	
+com.xgimi.account	dialog_cancel_contract_title	取消自动续费	
+com.xgimi.account	dialog_loading_desc	正在处理中，请稍后…	
+com.xgimi.account	dialog_loading_title	提示	
+com.xgimi.account	dialog_qr_tip	请用微信扫描二维码	
+com.xgimi.account	dialog_qr_title	编辑账号信息	
+com.xgimi.account	discount_price	抵扣：%s元	
+com.xgimi.account	error	出错了	
+com.xgimi.account	error_code	错误码:%s	
+com.xgimi.account	faq	常见问题	
+com.xgimi.account	fetch_product_failed	获取商品列表中...	
+com.xgimi.account	fetch_qr_code_expired	二维码已失效	
+com.xgimi.account	fetch_qr_code_failed	获取二维码失败	
+com.xgimi.account	fetch_qr_code_loading	获取二维码中	
+com.xgimi.account	goback_try_again	返回重输	
+com.xgimi.account	home_fetch_data_exception	获取数据失败	
+com.xgimi.account	huo_qu_wang_ye_di_zhi_fail	获取协议失败	
+com.xgimi.account	input_activation_code	请输入激活码	
+com.xgimi.account	input_code_error	激活码错误	
+com.xgimi.account	input_code_invalid	激活码无效	
+com.xgimi.account	input_code_used	激活码已使用	
+com.xgimi.account	is_vip	已开通会员	
+com.xgimi.account	load_error	加载出错了	
+com.xgimi.account	loading	加载中...	
+com.xgimi.account	netabnormal	无法连接网络，请检查网络后重试	
+com.xgimi.account	netabnormal_code	网络异常(%s)	
+com.xgimi.account	netdisconnect	网络不可用，请检查网络后重试	
+com.xgimi.account	no_content	没有内容	
+com.xgimi.account	no_contract	未开通自动续费	
+com.xgimi.account	no_login	未登录	
+com.xgimi.account	no_network	无法连接网络，请检查网络后重试	
+com.xgimi.account	no_networlk	网络未连接,请检查网络后重试	
+com.xgimi.account	no_vip	暂未开通会员	
+com.xgimi.account	no_vip2	未开通	
+com.xgimi.account	nologin	未登录	
+com.xgimi.account	not_vip_renew	立即开通，尊享VIP特权	
+com.xgimi.account	onbacking	正在备份/还原中，请稍候…	
+com.xgimi.account	open_money	支付金额：%s元	
+com.xgimi.account	open_money_unit	 元	
+com.xgimi.account	pay_money	支付金额：	
+com.xgimi.account	pay_success	支付成功	
+com.xgimi.account	pay_success_desc	建议关机时选择休眠模式，支持GMAX影片下载	
+com.xgimi.account	pay_success_title	权益发放中...	
+com.xgimi.account	payment_amount	支付金额：	
+com.xgimi.account	payment_method	%s扫码支付	
+com.xgimi.account	present_price	折后：%s元	
+com.xgimi.account	purchase_record	已购影片	
+com.xgimi.account	purchase_success	购买成功	
+com.xgimi.account	purchased	已购买	
+com.xgimi.account	purchased_content	您已购买过此片	
+com.xgimi.account	purchased_knowledge_no_data	暂无已购课程	
+com.xgimi.account	purchased_no_data	无数据	
+com.xgimi.account	purchased_video_no_data	暂无已购影片	
+com.xgimi.account	qrcode_load	二维码加载中	
+com.xgimi.account	record_no_data	暂无交易记录	
+com.xgimi.account	scan_pay	扫码支付	
+com.xgimi.account	sure	确定	
+com.xgimi.account	text_bind_nickname	已绑定账号：%s	
+com.xgimi.account	text_cancel_bind	解除绑定	
+com.xgimi.account	text_cancel_contract	取消自动续费	
+com.xgimi.account	text_cancel_dialog	我再想想	
+com.xgimi.account	text_contract_name	续费产品	
+com.xgimi.account	text_dialog_pay_type	支付方式	
+com.xgimi.account	text_downloaded_title_videos	已下载影片	
+com.xgimi.account	text_next_contract_date	下次续费日期	
+com.xgimi.account	text_next_contract_money	下次续费金额	
+com.xgimi.account	text_order_no	订单号：%s	
+com.xgimi.account	text_pay_type	支付方式：%s	
+com.xgimi.account	text_purchased_title_knowledge	已购买课程	
+com.xgimi.account	text_purchased_title_video	已购买影片	
+com.xgimi.account	text_to_bind	立即绑定	
+com.xgimi.account	text_to_buy_vip	购买会员	
+com.xgimi.account	text_to_rebuy_vip	立即续费	
+com.xgimi.account	text_unbind	未绑定账号	
+com.xgimi.account	text_unbind_mobile	未绑定手机	
+com.xgimi.account	text_vip_endtime	%s到期	
+com.xgimi.account	text_vip_time	会员到期时间：%s	
+com.xgimi.account	title_unbind_title	解除%s账户绑定	
+com.xgimi.account	title_vip_4k	极米4K会员	
+com.xgimi.account	title_vip_cb	唱吧会员	
+com.xgimi.account	title_vip_edu	极米教育会员	
+com.xgimi.account	title_vip_fit	极米健身会员	
+com.xgimi.account	title_vip_youku_fourk	帧酷健身会员	
+com.xgimi.account	title_xgimi_account	极米账号	
+com.xgimi.account	title_xgimi_link	极米联合账号	
+com.xgimi.account	title_xgimi_vip	会员信息	
+com.xgimi.account	unbind_dialog_btn_cancel	再想想	
+com.xgimi.account	unbind_dialog_btn_unbind	解除绑定	
+com.xgimi.account	unbind_dialog_loading_fail	解除失败！请稍后再试…	
+com.xgimi.account	unbind_dialog_loading_success	解除成功！将自动返回…	
+com.xgimi.account	unbind_dialog_loading_tip	解除绑定中…	
+com.xgimi.account	unbind_dialog_tip	解绑后极米将不再自动登录和同步会员权益	
+com.xgimi.account	unlogin	未登录	
+com.xgimi.account	user_know	我知道了	
+com.xgimi.account	video_play_count	%d部 可播放	
+com.xgimi.account	vip_end_time	%s 到期	
+com.xgimi.account	vip_qrcode_load_error	加载失败	
+com.xgimi.account	vip_time	有效期：%s	
+com.xgimi.account	waiting_update_vip_info	正在更新权益，请耐心等待	
+com.xgimi.account	widget_dialog_loading	正在加载中…	
+com.xgimi.account	xbase_error_ConnectException	网络好像有问题，错误码：%s	
+com.xgimi.account	xbase_error_SSLHandshakeException	请查看系统时间日期是否正确，错误码：%s	
+com.xgimi.account	xbase_error_SocketTimeoutException	网络请求超时，错误码：%s	
+com.xgimi.account	xbase_error_TimeoutException	网络连接超时，错误码：%s	
+com.xgimi.account	xbase_error_default	未知异常，错误码：%s	
+com.xgimi.account	xbase_error_no_network	未连接网络，错误码：%s	
+com.xgimi.account	xbase_error_no_space	存储空间不足，错误码：%s	
+com.xgimi.account	xbase_error_service_exception	服务器开小差了，错误码：%s	
+com.xgimi.account	xbase_no_data	暂无数据	
+com.xgimi.account	xbase_progress_wait_fail	出错啦！	
+com.xgimi.account	xbase_to_connect_network	连接网络	
+com.xgimi.account	xbase_to_retry	重试	
+com.xgimi.account	xgimi_service_name	极米服务	
+com.xgimi.account	xgimi_service_title	极米服务	
+com.xgimi.account	xgimi_user_agreement	《极米用户服务协议》	
+com.xgimi.atmosphere	app_name	任意门	
+com.xgimi.atmosphere	brvah_load_end	没有更多数据	No more data
+com.xgimi.atmosphere	brvah_load_failed	加载失败，请点我重试	load more failed
+com.xgimi.atmosphere	brvah_loading	正在加载中...	Loading...
+com.xgimi.atmosphere	continue_meditation	继续冥想	
+com.xgimi.atmosphere	dialog_cancel	取消	
+com.xgimi.atmosphere	dialog_ok	确定	
+com.xgimi.atmosphere	dialog_tip	提示	
+com.xgimi.atmosphere	dialog_update_resource	正在更新资源文件%s/%s	
+com.xgimi.atmosphere	downloading	正在下载中	
+com.xgimi.atmosphere	exit_tip	再按一次退出	
+com.xgimi.atmosphere	has_meditation	你已经冥想	
+com.xgimi.atmosphere	hour	小时	
+com.xgimi.atmosphere	minutes	分钟	
+com.xgimi.atmosphere	msg_update	检测到有新版本，是否更新？	
+com.xgimi.atmosphere	normal_screensaver_name	普通屏保	
+com.xgimi.atmosphere	play_error	播放失败	
+com.xgimi.atmosphere	progress_wait_fail	出错啦！	
+com.xgimi.atmosphere	progress_wait_loading	正在加载中...	
+com.xgimi.atmosphere	start_meditation	开始冥想	
+com.xgimi.atmosphere	stop_meditation	暂停冥想	
+com.xgimi.atmosphere	tip	更新	
+com.xgimi.atmosphere	tip_no_file	文件不存在	
+com.xgimi.atmosphere	tip_no_more	已没有更多	
+com.xgimi.atmosphere	title_history	最近	
+com.xgimi.atmosphere	title_recommond	推荐	
+com.xgimi.config	eye_project_close	关闭检测	
+com.xgimi.config	eye_project_desc	检测到人体活动，已调低投影亮度以减少人眼刺激	
+com.xgimi.config	eye_project_exit	退出	
+com.xgimi.config	eye_project_tip	关闭后，您可在少儿频道的家长设置中开启	
+com.xgimi.config	eye_project_title	儿童防射眼保护	
+com.xgimi.config	mic_effect_minions	小黄人	
+com.xgimi.config	mic_effect_monster	怪兽	
+com.xgimi.config	mic_effect_origin	原声	
+com.xgimi.config	microphone_effect	音效： %s	
+com.xgimi.config	peripheral_bluetooth	手机蓝牙已断开	
+com.xgimi.config	peripheral_connect_success	连接成功	
+com.xgimi.config	peripheral_connecting	连接中	
+com.xgimi.config	peripheral_sound	音响已断开	
+com.xgimi.config	peripheral_tip_curtain	智能幕布已断开	
+com.xgimi.config	peripheral_tip_microphone	麦克风已断开	
+com.xgimi.config	peripheral_tip_music_control	音乐控制器已断开	
+com.xgimi.config	peripheral_tip_phone	手机APP已断开	
+com.xgimi.config	tip	短按麦克风 “开机键” 切换音效	
+com.xgimi.instruction30	down	吐槽	
+com.xgimi.instruction30	experience_immediately	立即体验	
+com.xgimi.instruction30	fetch_play_link_failed	视频出了点问题，先看看其他视频也很精彩哦	
+com.xgimi.instruction30	has_down	已踩	
+com.xgimi.instruction30	has_up	已赞	
+com.xgimi.instruction30	home_fetch_data_exception	获取数据失败	
+com.xgimi.instruction30	instruction	玩机攻略	
+com.xgimi.instruction30	menu	按 img 或 img 选择清晰度和剧集	
+com.xgimi.instruction30	menu_audio	音效模式	
+com.xgimi.instruction30	menu_episode	播放列表	
+com.xgimi.instruction30	menu_hd_play	高清	
+com.xgimi.instruction30	menu_img_football	足球	
+com.xgimi.instruction30	menu_img_mode_bright	明亮	
+com.xgimi.instruction30	menu_img_mode_game	游戏	
+com.xgimi.instruction30	menu_img_mode_light_on	开灯	
+com.xgimi.instruction30	menu_img_mode_natural	自然	
+com.xgimi.instruction30	menu_img_mode_office	办公	
+com.xgimi.instruction30	menu_img_mode_soft	柔和	
+com.xgimi.instruction30	menu_img_mode_standard	标准	
+com.xgimi.instruction30	menu_img_mode_user	自定义	
+com.xgimi.instruction30	menu_picture	图像模式	
+com.xgimi.instruction30	menu_sd_play	标清	
+com.xgimi.instruction30	menu_speed	倍速播放	
+com.xgimi.instruction30	menu_super_play	超清	
+com.xgimi.instruction30	menu_surface	画面比例	
+com.xgimi.instruction30	menu_vision	清晰度	
+com.xgimi.instruction30	network_exception	网络异常，请检查网络后重试	
+com.xgimi.instruction30	online_playaddress_empty	播放地址获取失败	
+com.xgimi.instruction30	play_continue	按OK键，继续播放	
+com.xgimi.instruction30	play_machine_strategy	玩机攻略	
+com.xgimi.instruction30	play_video_error	播放异常	
+com.xgimi.instruction30	play_video_exception	播放异常	
+com.xgimi.instruction30	press_again_finish	再按一次退出	
+com.xgimi.instruction30	progress_wait_fail	出错啦！	
+com.xgimi.instruction30	progress_wait_loading	视频加载中，请稍候...	
+com.xgimi.instruction30	replay	重看	
+com.xgimi.instruction30	scan_to_see_more	扫码查看 详细攻略	
+com.xgimi.instruction30	scanning_report	扫码吐槽	
+com.xgimi.instruction30	start_continue	继续播放中，按OK键重新播放	
+com.xgimi.instruction30	starting	即将播放	
+com.xgimi.instruction30	toast_no_next	已是最后一集	
+com.xgimi.instruction30	toast_no_previous	已是第一集	
+com.xgimi.instruction30	toast_play_complete	播放完毕	
+com.xgimi.instruction30	toast_playing_next	即将播放下一集	
+com.xgimi.instruction30	toast_playing_previous	正在为您播放上一集	
+com.xgimi.instruction30	up	  赞  	
+com.xgimi.instruction30	up_success	点赞成功	
+com.xgimi.instruction30	vip_buy_before_play	请在购买会员后播放	
+com.xgimi.instruction30	widget_dialog_loading	正在加载中…	
+com.xgimi.instruction30	xbase_error_ConnectException	网络好像有问题，错误码：%s	
+com.xgimi.instruction30	xbase_error_SSLHandshakeException	请查看系统时间日期是否正确，错误码：%s	
+com.xgimi.instruction30	xbase_error_SocketTimeoutException	网络请求超时，错误码：%s	
+com.xgimi.instruction30	xbase_error_TimeoutException	网络连接超时，错误码：%s	
+com.xgimi.instruction30	xbase_error_default	未知异常，错误码：%s	
+com.xgimi.instruction30	xbase_error_no_network	未连接网络，错误码：%s	
+com.xgimi.instruction30	xbase_error_no_space	存储空间不足，错误码：%s	
+com.xgimi.instruction30	xbase_error_service_exception	服务器开小差了，错误码：%s	
+com.xgimi.instruction30	xbase_no_data	暂无数据	
+com.xgimi.instruction30	xbase_progress_wait_fail	出错啦！	
+com.xgimi.instruction30	xbase_to_connect_network	连接网络	
+com.xgimi.instruction30	xbase_to_retry	重试	
+com.xgimi.gimiplayer	ak_3d_mode_title	推荐正投画面后进入3D模式	
+com.xgimi.gimiplayer	ak_tips	移动设备至正投状态	
+com.xgimi.gimiplayer	app_name	本地播放器	
+com.xgimi.gimiplayer	auto_led_not_support_3d	请关闭亮度自适应再使用3D设置	
+com.xgimi.gimiplayer	cancel	取消	
+com.xgimi.gimiplayer	cc_4k_no_use_3d	当前分辨率不支持3D设置	
+com.xgimi.gimiplayer	close	关	
+com.xgimi.gimiplayer	ct_mode_no_use_3d	侧投模式下，不支持3D设置	
+com.xgimi.gimiplayer	day_before	天前	
+com.xgimi.gimiplayer	dialog_ak_game_mode_title	推荐正投画面后进入3D模式	
+com.xgimi.gimiplayer	dialog_cancel	取消	
+com.xgimi.gimiplayer	dialog_not_ak_game_mode_title	使用3D模式观看画面	
+com.xgimi.gimiplayer	dialog_start_game_mode_text	3D模式	
+com.xgimi.gimiplayer	error_toast_by_media_player	%s 播放异常	
+com.xgimi.gimiplayer	file_have_no_audio	无音频	
+com.xgimi.gimiplayer	file_have_no_video	文件没有视频	
+com.xgimi.gimiplayer	file_not_exit_chk_network	文件不存在，请检查网络	
+com.xgimi.gimiplayer	hdr_no_use_3d	HDR下，不支持3D设置	
+com.xgimi.gimiplayer	hour_before	小时前	
+com.xgimi.gimiplayer	image_activity_name	图片播放器	
+com.xgimi.gimiplayer	img_4k_can_not_op	当前图片不支持缩放和旋转	
+com.xgimi.gimiplayer	into_title	内嵌字幕	
+com.xgimi.gimiplayer	is_delet_play_record	是否删除所有播放记录?	
+com.xgimi.gimiplayer	keystone_3d_toast	使用3D模式将消除画面校正效果并关闭自动校正	
+com.xgimi.gimiplayer	loading	加载中...	
+com.xgimi.gimiplayer	loading_failed	图片加载失败	
+com.xgimi.gimiplayer	machine_bottom_tip	移动设备至正投状态	
+com.xgimi.gimiplayer	main_get_result_cut_off	主线程等待计算结果，但计算抛出异常！	
+com.xgimi.gimiplayer	main_get_result_time_out	主线程等待计算结果超时，因此中断任务线程！	
+com.xgimi.gimiplayer	main_wait_cut_off	主线程在等待计算结果时被中断	
+com.xgimi.gimiplayer	media_player_error	播放器异常，请重试	
+com.xgimi.gimiplayer	menu0	按	
+com.xgimi.gimiplayer	menu1	【菜单键】	
+com.xgimi.gimiplayer	menu2	设置音轨字幕	
+com.xgimi.gimiplayer	menu_audio	音效模式	
+com.xgimi.gimiplayer	menu_episode	播放列表	
+com.xgimi.gimiplayer	menu_picture	图像模式	
+com.xgimi.gimiplayer	menu_surface	画面比例	
+com.xgimi.gimiplayer	minte_before	分钟前	
+com.xgimi.gimiplayer	mode_no_use_img	3D模式下，画面比例不可用	
+com.xgimi.gimiplayer	no_picture	文件不存在	
+com.xgimi.gimiplayer	no_video	文件不存在	
+com.xgimi.gimiplayer	open	开	
+com.xgimi.gimiplayer	play_continue	按OK键，继续播放	
+com.xgimi.gimiplayer	ppt_pause_promote	幻灯片已暂停，按OK键继续	
+com.xgimi.gimiplayer	ppt_play	幻灯片播放	
+com.xgimi.gimiplayer	ppt_start_promote	幻灯片播放中，按OK键暂停	
+com.xgimi.gimiplayer	ppt_stop_promote	幻灯片播放已停止	
+com.xgimi.gimiplayer	press_to_exit	再按一次退出	
+com.xgimi.gimiplayer	progress_buffering	正在缓冲%s	
+com.xgimi.gimiplayer	progress_wait_fail	出错啦！	
+com.xgimi.gimiplayer	progress_wait_loading	视频加载中，请稍候...	
+com.xgimi.gimiplayer	rotate_left	左旋转	
+com.xgimi.gimiplayer	rotate_right	右旋转	
+com.xgimi.gimiplayer	slide_can_not_op	幻灯片播放时，不支持缩放和旋转	
+com.xgimi.gimiplayer	speed	速度	
+com.xgimi.gimiplayer	start_3d_mode_text	3D模式	
+com.xgimi.gimiplayer	start_continue	继续播放中，按OK键重新播放	
+com.xgimi.gimiplayer	starting	即将播放	
+com.xgimi.gimiplayer	subtitle_adjust	字幕时间轴调整	
+com.xgimi.gimiplayer	subtitle_area	文本字幕位置	
+com.xgimi.gimiplayer	subtitle_color	文本字幕颜色	
+com.xgimi.gimiplayer	subtitle_font	文本字幕字体	
+com.xgimi.gimiplayer	subtitle_font_size	文本字幕大小	
+com.xgimi.gimiplayer	subtitle_frame	文本字幕阴影	
+com.xgimi.gimiplayer	subtitle_in_no	内接字幕编号	
+com.xgimi.gimiplayer	subtitle_language	字幕语言	
+com.xgimi.gimiplayer	subtitle_out_path	外接字幕路径	
+com.xgimi.gimiplayer	subtitle_type	显示字幕类别	
+com.xgimi.gimiplayer	sure	确定	
+com.xgimi.gimiplayer	text_menu_3d	3D设置	
+com.xgimi.gimiplayer	text_menu_3d_2d_to_3d	2D转3D	
+com.xgimi.gimiplayer	text_menu_3d_3d_to_2d_left_right	左右3D转2D	
+com.xgimi.gimiplayer	text_menu_3d_3d_to_2d_up_down	上下3D转2D	
+com.xgimi.gimiplayer	text_menu_3d_auto	自动3D	
+com.xgimi.gimiplayer	text_menu_3d_blue	蓝光3D	
+com.xgimi.gimiplayer	text_menu_3d_close	关闭3D	
+com.xgimi.gimiplayer	text_menu_3d_left_right	左右3D	
+com.xgimi.gimiplayer	text_menu_3d_up_down	上下3D	
+com.xgimi.gimiplayer	text_menu_audio_effect_mode	音效模式	
+com.xgimi.gimiplayer	text_menu_audio_effect_mode_ai	AI模式	
+com.xgimi.gimiplayer	text_menu_audio_effect_mode_auto	自动	
+com.xgimi.gimiplayer	text_menu_audio_effect_mode_cinema	观影	
+com.xgimi.gimiplayer	text_menu_audio_effect_mode_game	游戏	
+com.xgimi.gimiplayer	text_menu_audio_effect_mode_music	音乐	
+com.xgimi.gimiplayer	text_menu_audio_effect_mode_news	新闻	
+com.xgimi.gimiplayer	text_menu_audio_effect_mode_song	K歌	
+com.xgimi.gimiplayer	text_menu_audio_effect_mode_sports	体育	
+com.xgimi.gimiplayer	text_menu_audio_effect_mode_standard	标准	
+com.xgimi.gimiplayer	text_menu_audio_track	音轨	
+com.xgimi.gimiplayer	text_menu_audio_track_title	音轨选择	
+com.xgimi.gimiplayer	text_menu_clear_history	播放记录	
+com.xgimi.gimiplayer	text_menu_clear_history_after	不保存记录	
+com.xgimi.gimiplayer	text_menu_clear_history_not	保存记录	
+com.xgimi.gimiplayer	text_menu_hvs	虚拟环绕声	
+com.xgimi.gimiplayer	text_menu_hvs_off	关	
+com.xgimi.gimiplayer	text_menu_hvs_on	开	
+com.xgimi.gimiplayer	text_menu_no_audio_track	无音轨	
+com.xgimi.gimiplayer	text_menu_play_mode	循环模式	
+com.xgimi.gimiplayer	text_menu_play_mode_close_when_end	不循环	
+com.xgimi.gimiplayer	text_menu_play_mode_list_loop	目录循环	
+com.xgimi.gimiplayer	text_menu_play_mode_single	单个循环	
+com.xgimi.gimiplayer	text_menu_play_setting	播放设置	
+com.xgimi.gimiplayer	text_menu_speed	倍速播放	
+com.xgimi.gimiplayer	text_menu_subtitle	字幕设置	
+com.xgimi.gimiplayer	text_menu_subtitle_ahead	提前%1d秒	
+com.xgimi.gimiplayer	text_menu_subtitle_cancel	取消字幕选择	
+com.xgimi.gimiplayer	text_menu_subtitle_choose	字幕选择	
+com.xgimi.gimiplayer	text_menu_subtitle_delay	延时%1d秒	
+com.xgimi.gimiplayer	text_menu_subtitle_local	字幕选择	
+com.xgimi.gimiplayer	text_menu_subtitle_location	字幕位置	
+com.xgimi.gimiplayer	text_menu_subtitle_more	高级设置	
+com.xgimi.gimiplayer	text_menu_subtitle_more_delay_adjust	延时调整	
+com.xgimi.gimiplayer	text_menu_subtitle_more_position_adjust	字幕位置	
+com.xgimi.gimiplayer	text_menu_subtitle_no_subtitle	无字幕	
+com.xgimi.gimiplayer	text_menu_subtitle_time	字幕同步	
+com.xgimi.gimiplayer	text_menu_video	视频设置	
+com.xgimi.gimiplayer	text_menu_video_img_ai	AI模式	
+com.xgimi.gimiplayer	text_menu_video_img_football	足球	
+com.xgimi.gimiplayer	text_menu_video_img_mode	图像模式	
+com.xgimi.gimiplayer	text_menu_video_img_mode_bright	明亮	
+com.xgimi.gimiplayer	text_menu_video_img_mode_game	游戏	
+com.xgimi.gimiplayer	text_menu_video_img_mode_light_on	开灯	
+com.xgimi.gimiplayer	text_menu_video_img_mode_natural	自然	
+com.xgimi.gimiplayer	text_menu_video_img_mode_office	办公	
+com.xgimi.gimiplayer	text_menu_video_img_mode_soft	柔和	
+com.xgimi.gimiplayer	text_menu_video_img_mode_standard	观影	
+com.xgimi.gimiplayer	text_menu_video_img_mode_user	自定义	
+com.xgimi.gimiplayer	text_menu_video_img_zoom	画面比例	
+com.xgimi.gimiplayer	text_menu_video_img_zoom_full	自动	
+com.xgimi.gimiplayer	text_menu_video_img_zoom_keep_subtitle	留字幕	
+com.xgimi.gimiplayer	text_menu_video_img_zoom_no_black_border	去黑边	
+com.xgimi.gimiplayer	text_menu_video_img_zoom_original	自动	
+com.xgimi.gimiplayer	text_menu_video_img_zoom_point_to_point	原始大小	
+com.xgimi.gimiplayer	text_toast_already_first_video	已是第一集	
+com.xgimi.gimiplayer	text_toast_already_last_video	已是最后一集	
+com.xgimi.gimiplayer	text_toast_current_no_subtitle	当前字幕不支持调节	
+com.xgimi.gimiplayer	text_toast_play_done	播放完毕	
+com.xgimi.gimiplayer	text_toast_play_from_last_time_position	继续播放中，按OK键重新播放	
+com.xgimi.gimiplayer	text_toast_video_cannot_fast_forward	该视频不支持快进	
+com.xgimi.gimiplayer	text_toast_video_cannot_switch_3D	仅在视频播放时有效	
+com.xgimi.gimiplayer	text_toast_video_format_not_support	视频格式不支持	
+com.xgimi.gimiplayer	text_toast_video_music_not_support	音频格式不支持，请在菜单中切换音轨	
+com.xgimi.gimiplayer	text_toast_voice_seek_to_much	跳转太多，请重试	
+com.xgimi.gimiplayer	text_toast_voice_seek_wait	请稍候...	
+com.xgimi.gimiplayer	top_content_tip	使用时请正投画面	
+com.xgimi.gimiplayer	twiceday	前天	
+com.xgimi.gimiplayer	user_timing_no_support_3d	至臻120Hz下不能3D播放	
+com.xgimi.gimiplayer	warn	警告	
+com.xgimi.gimiplayer	yesterday	昨天	
+com.xgimi.msgcenter	all_message	全部消息	
+com.xgimi.msgcenter	already_connected	已连接	
+com.xgimi.msgcenter	app_name	消息中心	
+com.xgimi.msgcenter	app_title	消息通知	
+com.xgimi.msgcenter	blue_tooth	蓝牙	
+com.xgimi.msgcenter	clear_all	全部清空	
+com.xgimi.msgcenter	date_	%1s月%2s日	
+com.xgimi.msgcenter	duoyun	多云	
+com.xgimi.msgcenter	filemanager	资源管理器	
+com.xgimi.msgcenter	fog	雾	
+com.xgimi.msgcenter	login	点击登录	
+com.xgimi.msgcenter	lunar_1s_2s	(农历%1s月%2s)	
+com.xgimi.msgcenter	lunar_1s_2s_	%1s月%2s	
+com.xgimi.msgcenter	lunar_year	%s年	
+com.xgimi.msgcenter	msg_sign	全部标记为已读	
+com.xgimi.msgcenter	no_message	暂无消息通知	
+com.xgimi.msgcenter	notice	通知	
+com.xgimi.msgcenter	post_day_ago	%s天前	
+com.xgimi.msgcenter	post_hour_ago	%s小时前	
+com.xgimi.msgcenter	post_just	刚刚	
+com.xgimi.msgcenter	post_minutes_ago	%s分钟前	
+com.xgimi.msgcenter	preset_storege	内置存储	
+com.xgimi.msgcenter	qing	晴	
+com.xgimi.msgcenter	rain	雨	
+com.xgimi.msgcenter	read_all	全部已读	
+com.xgimi.msgcenter	settings	设置	
+com.xgimi.msgcenter	signal_source	信号源	
+com.xgimi.msgcenter	snow	雪	
+com.xgimi.msgcenter	text_tip	单击【菜单键】或【左键】编辑	
+com.xgimi.msgcenter	the_day_after_tomorrow	后天	
+com.xgimi.msgcenter	tomorrow	明天	
+com.xgimi.msgcenter	trapezoidal_correction	梯形校正	
+com.xgimi.msgcenter	unconnected	未连接	
+com.xgimi.msgcenter	unread_count	(%d条未读)	
+com.xgimi.msgcenter	vip_end_day	Vip到期时间:%s	
+com.xgimi.msgcenter	voice_output	声音输出	
+com.xgimi.msgcenter	weather_to	%s转%s	
+com.xgimi.msgcenter	week_	星期%s	
+com.xgimi.msgcenter	wind	风	
+com.xgimi.msgcenter	xingqi	星期%s	
+com.xgimi.msgcenter	yin	阴	
+com.xgimi.controllerconnection	control_next_bt_txt	“OK键”下一步	
+com.xgimi.controllerconnection	control_page_one_title_txt	长按4s启动音响模式	
+com.xgimi.controllerconnection	control_page_three_title_txt	双击：切换下一首	
+com.xgimi.controllerconnection	control_page_two_title_txt	单击：播放/暂停	
+com.xgimi.controllerconnection	control_xgimi_devices	XGIMI 音乐控制器	
+com.xgimi.controllerconnection	sound_control_connect	GIMI 音乐控制器	
+com.xgimi.controllerconnection	sound_control_error	连接失败，请重试	
+com.xgimi.controllerconnection	sound_control_pair	点击“触控区”配对	
+com.xgimi.controllerconnection	sound_control_success	连接成功，欢迎使用	
+com.xgimi.filemanager	brvah_load_complete	点击加载更多	Click to load more
+com.xgimi.filemanager	brvah_load_end	没有更多数据	No more data
+com.xgimi.filemanager	brvah_load_failed	加载失败，请点我重试	load more failed
+com.xgimi.filemanager	brvah_loading	正在加载中...	Loading...
+com.xgimi.screensaver	app_name	壁纸模式	
+com.xgimi.screensaver	music_pause	单击遥控器“OK”键关闭音乐	
+com.xgimi.screensaver	music_play	单击遥控器“OK”键开启音乐	
+com.xgimi.upgrade	app_force_upgrade_msg	下载完成，是否马上升级？	
+com.xgimi.upgrade	app_name	系统升级	
+com.xgimi.upgrade	app_upgrade_msg	已帮你检测到xxx应用有更新，是否马上升级	
+com.xgimi.upgrade	app_upgrade_tip	app升级提示	
+com.xgimi.upgrade	app_upgrading	应用优化中，请稍等...	
+com.xgimi.upgrade	backgroud_download_hit	已切换后台下载	
+com.xgimi.upgrade	cancle_download	取消下载	
+com.xgimi.upgrade	check_failure	无法连接到服务器，请检查网络后重试	
+com.xgimi.upgrade	check_now	正在	
+com.xgimi.upgrade	checkout_upgrade_msg_hint	亲爱的用户，为您检测到%s有更新啦~~~	
+com.xgimi.upgrade	continue_backgrount	后台下载	
+com.xgimi.upgrade	continue_download	继续下载	
+com.xgimi.upgrade	current_show	当前是最新固件，保持的不错噢	
+com.xgimi.upgrade	current_system_version	当前版本	
+com.xgimi.upgrade	default_next_update	默认下次开机升级	
+com.xgimi.upgrade	dialog_cancel	取消	
+com.xgimi.upgrade	dialog_cancle	取消	
+com.xgimi.upgrade	dialog_confirm	确认	
+com.xgimi.upgrade	dialog_confirm_	我知道了	
+com.xgimi.upgrade	dialog_message	固件正在下载中，返回将取消下载任务,是否确认取消?	
+com.xgimi.upgrade	dialog_title	提示	
+com.xgimi.upgrade	dialog_title_format	版本更新（INUI %s）	
+com.xgimi.upgrade	dialog_update_now	立即更新	
+com.xgimi.upgrade	dialog_update_shutdown	关机更新	
+com.xgimi.upgrade	download_complete_tip	系统升级文件已经下载完成	
+com.xgimi.upgrade	download_error	固件下载出错	
+com.xgimi.upgrade	download_now	立即下载	
+com.xgimi.upgrade	find_new_version	发现更新版本:	
+com.xgimi.upgrade	ignore	忽略此版本	
+com.xgimi.upgrade	insufficient_storage	存储空间不足	
+com.xgimi.upgrade	inui_update_error	应用更新失败	
+com.xgimi.upgrade	inui_update_error_reboot_again	应用更新失败，关机时重试	
+com.xgimi.upgrade	lack_of_electricity	电量不足50%,无法更新	
+com.xgimi.upgrade	latest_version	新版本	
+com.xgimi.upgrade	md5_check	正在进行MD5验证...	
+com.xgimi.upgrade	md5_fail_force	固件验证失败	
+com.xgimi.upgrade	md5_fail_force_toast	固件验证失败，请重新下载	
+com.xgimi.upgrade	new_version	新版本	
+com.xgimi.upgrade	next_boot_update	必要固件已下载完成，下次开机升级^_^	
+com.xgimi.upgrade	no_network	网络不可用，请检查网络后重试	
+com.xgimi.upgrade	ota_down_now	OTA立即升级	
+com.xgimi.upgrade	ota_force_toast	必要固件下载中^_^	
+com.xgimi.upgrade	ota_force_upgrade_msg	ota包已下载完成，是否立即升级？	
+com.xgimi.upgrade	ota_upgrade_msg	检测到服务器有系统版本升级，是否立即升级?	
+com.xgimi.upgrade	ota_upgrade_tip	OTA升级提示	
+com.xgimi.upgrade	pause_download	暂停下载	
+com.xgimi.upgrade	progress_wait_fail	网络异常	
+com.xgimi.upgrade	progress_wait_loading	正在加载中...	
+com.xgimi.upgrade	server_busy	服务器繁忙，请稍后重试	
+com.xgimi.upgrade	system_integry_failure	系统完整性检测失败，无法升级	
+com.xgimi.upgrade	system_update	系统更新	
+com.xgimi.upgrade	system_update_nopower	电量过低，请插入适配器再升级	
+com.xgimi.upgrade	taost_request_busy	操作过于频繁，请稍后重试^_^	
+com.xgimi.upgrade	this_upgrade	本次更新	
+com.xgimi.upgrade	update_check	检测更新	
+com.xgimi.upgrade	update_content	更新内容	
+com.xgimi.upgrade	update_finish	更新完成	
+com.xgimi.upgrade	update_loading	正在检测更新...	
+com.xgimi.upgrade	update_next	下次开机	
+com.xgimi.upgrade	update_next_tip	系统将会在下次开机时自动更新	
+com.xgimi.upgrade	update_now	立即升级	
+com.xgimi.upgrade	update_now_tip	设备将重启开始升级	
+com.xgimi.upgrade	update_title	有重要版本更新	
+com.xgimi.upgrade	upgrade_next	下次开机升级	
+com.xgimi.upgrade	upgrade_now	立即升级	
+com.xgimi.upgrade	upgrade_power_off	关机时升级	
+com.xgimi.vcontrol	android_phone_mirror	手机实时镜像投屏	Live image projection for mobile phones
+com.xgimi.vcontrol	app_download_from_app_store	各大应用商店均可下载	It can be downloaded from any major app store
+com.xgimi.vcontrol	brvah_load_end	没有更多数据	No more data
+com.xgimi.vcontrol	brvah_load_failed	加载失败，请点我重试	load more failed
+com.xgimi.vcontrol	brvah_loading	正在加载中...	Loading...
+com.xgimi.vcontrol	cancel	取消	cancel
+com.xgimi.vcontrol	confirm	确定	confirm
+com.xgimi.vcontrol	connection_failed	连接失败	Connection failed
+com.xgimi.vcontrol	connection_succeeded	连接成功	Connection succeeded
+com.xgimi.vcontrol	device_name	设备名称：	Device name：
+com.xgimi.vcontrol	dialog_tip	提示	
+com.xgimi.vcontrol	download_apk	正在下载必要组件	
+com.xgimi.vcontrol	download_xgimi_app_and_connect	扫一扫下载极米App/连接设备	Scan download XGIMI-App/Connected devices
+com.xgimi.vcontrol	find_much_app	发现海量应用	Discovery mass application
+com.xgimi.vcontrol	i_has_know	我知道了	
+com.xgimi.vcontrol	input_verification_code_on_phone	请在手机端输入以下验证码	
+com.xgimi.vcontrol	invalid_verification_code	验证码错误	Invalid verification code
+com.xgimi.vcontrol	led_3d_hint	3D模式下不支持亮度模式	
+com.xgimi.vcontrol	local_source_send_to_tv	本地资源投屏&推送到TV	Screen local resources&Pushed to the TV
+com.xgimi.vcontrol	newkeystone	侧投模式下不支持3D	
+com.xgimi.vcontrol	no_signsource	未检测到信号源	
+com.xgimi.vcontrol	not_install	您还未安装该应用	
+com.xgimi.vcontrol	not_play_video	当前未播放视频	
+com.xgimi.vcontrol	phone_convert_to_remote	手机变身遥控器	Mobile phones become remote controls
+com.xgimi.vcontrol	play_error_exit_and_enter	播放异常，请退出重新播放	Play exception, please exit and play again
+com.xgimi.vcontrol	rc_code_create_fail	二维码生成失败	Qr code generation fails
+com.xgimi.vcontrol	refuse_connect_by_user	拒绝	
+com.xgimi.vcontrol	remind_reboot	设备即将重启	
+com.xgimi.vcontrol	remind_tv_off	设备即将关闭	
+com.xgimi.vcontrol	request_connect_current_device	请求连接当前设备	
+com.xgimi.vcontrol	request_connect_device	请求连接投影仪	requests to connect to the projector
+com.xgimi.vcontrol	sure	确定	
+com.xgimi.vcontrol	system_app_uninstall	系统应用不支持卸载	
+com.xgimi.vcontrol	uninstall	卸载	
+com.xgimi.vcontrol	uninstall_complete	卸载应用完成	
+com.xgimi.vcontrol	uninstall_hint	是否要卸载	
+com.xgimi.vcontrol	usb_capacityinfo	已用%s/全部%s	
+com.xgimi.vcontrol	verification_code	配对验证码	Verification Code
+com.xgimi.vcontrol	wechat_connect	微信遥控	WeChat remote control
+com.xgimi.vcontrol	wechat_connect_not_need_same_wifi	微信直接遥控，无需同一WIFI	WeChat direct remote control, no need for the same WIFI
+com.xgimi.vcontrol	wechat_connect_to_see_movie	海量影片精选，随时随地搜片	Massive film selection, search anytime and anywhere
+com.xgimi.vcontrol	wechat_unbind_tip	解绑之后微信遥控遥控器就不能控制您的无屏电视	The WeChat remote control will not be able to control your screen-free TV
+com.xgimi.vcontrol	xgimi_app	极米App	XGIMI-App
+com.xgimi.wirelessscreen	android_cast_desc	通过极米App投屏、看电视、投视频、听音乐，轻松实现投影仪与手机互动	
+com.xgimi.wirelessscreen	android_cast_title	安卓设备	
+com.xgimi.wirelessscreen	android_wired_title	安卓设备有线连接	
+com.xgimi.wirelessscreen	app_download	扫一扫下载极米App/连接设备	
+com.xgimi.wirelessscreen	app_name	极米投屏	
+com.xgimi.wirelessscreen	app_projection_desc	请确保移动设备与投屏设备在同一网络下	
+com.xgimi.wirelessscreen	app_projection_title	影音投屏	
+com.xgimi.wirelessscreen	apple_cast_title	苹果设备	
+com.xgimi.wirelessscreen	apple_wired_desc	请将数据线连接投影仪USB接口，另一端连接手机	
+com.xgimi.wirelessscreen	apple_wired_title	苹果设备有线连接	
+com.xgimi.wirelessscreen	desc_line_ios_title	苹果手机	
+com.xgimi.wirelessscreen	desc_line_pc_desc	通过HDMI线连接投影和电脑侧面的HDMI接口，完成同屏	
+com.xgimi.wirelessscreen	desc_line_pc_tip	请将HDMI线连接投影仪接口和电脑接口	
+com.xgimi.wirelessscreen	desc_line_pc_title	PC电脑	
+com.xgimi.wirelessscreen	desc_line_tip	请将数据线连接投影仪USB接口，再将另一端连接手机	
+com.xgimi.wirelessscreen	desc_line_title_android	安卓手机	
+com.xgimi.wirelessscreen	detail_desc_android	注意：请确保手机与投屏设备在同一网络下	
+com.xgimi.wirelessscreen	detail_desc_assitant	扫码体验手机遥控、资源推送、影视投屏等新玩法	
+com.xgimi.wirelessscreen	detail_desc_audio	注意：请确保移动设备与投屏设备在同一网络下	
+com.xgimi.wirelessscreen	detail_desc_mac	注意：请确保苹果电脑与投屏设备在同一网络下	
+com.xgimi.wirelessscreen	detail_desc_pc	注意：请确保电脑与投屏设备在同一网络下	
+com.xgimi.wirelessscreen	device_name_keting	客厅	
+com.xgimi.wirelessscreen	dialog_desc_sound	确定要退出有线同屏？	
+com.xgimi.wirelessscreen	dialog_title_sound	提示	
+com.xgimi.wirelessscreen	home_btn_android	安卓投屏	
+com.xgimi.wirelessscreen	home_btn_assiant	无屏助手	
+com.xgimi.wirelessscreen	home_btn_audio	影音应用	
+com.xgimi.wirelessscreen	home_btn_pc	PC同屏	
+com.xgimi.wirelessscreen	home_topic_android	支持Android4.0以上各品牌安卓手机、平板	
+com.xgimi.wirelessscreen	home_topic_ios	iOS4.2以上iPhone、iPad、macOSX以上的Mac	
+com.xgimi.wirelessscreen	home_topic_pc	支持影音推屏、无屏助手控制投影设备	
+com.xgimi.wirelessscreen	huawei_cast_desc	支持华为EMUI10.0以上版本投屏	
+com.xgimi.wirelessscreen	huawei_cast_encode	加密访问	
+com.xgimi.wirelessscreen	huawei_cast_pwd	密码	
+com.xgimi.wirelessscreen	huawei_cast_tab_title	华为手机	
+com.xgimi.wirelessscreen	huawei_cast_title	华为Cast+	
+com.xgimi.wirelessscreen	line_notice_des_android_1	将数据线连接投影仪和安卓设备后，在安卓设备的弹窗中选择「查看」	
+com.xgimi.wirelessscreen	line_notice_des_android_2	在浏览器弹窗中选择「确定」，下载安装极米App	
+com.xgimi.wirelessscreen	line_notice_des_android_3	安装完成后，请重新插拔数据线，在系统弹窗中确认打开极米App，启动同屏	
+com.xgimi.wirelessscreen	line_notice_des_android_4	（若部分手机无法启用极米音响，请接入其他蓝牙音箱）	
+com.xgimi.wirelessscreen	line_notice_title_android	Android设备有线投屏连接引导	
+com.xgimi.wirelessscreen	line_text	已连接手机，有线同屏准备中	
+com.xgimi.wirelessscreen	miracast_desc	通过符合Miracast标准的设备，实现对本设备的投屏。投屏时会导致本设备的已连接的WiFi断开	
+com.xgimi.wirelessscreen	pc_wired_desc	通过HDMI线连接投影和电脑侧面的HDMI接口，完成同屏	
+com.xgimi.wirelessscreen	pc_wired_title	Windows 电脑	
+com.xgimi.wirelessscreen	pc_wireless_desc	使用PC同屏软件通过无线的方式将电脑画面投屏	
+com.xgimi.wirelessscreen	pc_wireless_tab_title	PC设备	
+com.xgimi.wirelessscreen	pc_wireless_title	PC同屏	
+com.xgimi.wirelessscreen	start_miracast	进入连接	
+com.xgimi.wirelessscreen	tab_title_app	视频投屏	
+com.xgimi.wirelessscreen	tab_title_line	有线同屏	
+com.xgimi.wirelessscreen	tab_title_wireless	无线同屏	
+com.xgimi.wirelessscreen	toast_text_media_player_error	视频加载失败	
+com.xgimi.wirelessscreen	toast_text_usb_connect_error	同屏异常，请重新插拔数据线	
+com.xgimi.wirelessscreen	usb_tip	USB等待连接中…	
+com.xgimi.wirelessscreen	vcontrol_assiant_desc	通过极米App投屏、看电视、投视频、听音乐，轻松实现无屏电视与手机互动	
+com.xgimi.wirelessscreen	vcontrol_assiant_title	极米App	
+com.xgimi.newappmarket	app_detail_info_str	%s%s次下载 | 版本:%s | 大小:%s	
+com.xgimi.newappmarket	app_name	应用市场	
+com.xgimi.newappmarket	button_allupdate_appmanager	一键更新	
+com.xgimi.newappmarket	button_app_update	更新	
+com.xgimi.newappmarket	button_appmanager_autoupdate	自动更新	
+com.xgimi.newappmarket	button_cancelDownload	取消下载	
+com.xgimi.newappmarket	button_cancel_download	取消下载	
+com.xgimi.newappmarket	button_cancel_uninstall_pop	取消	
+com.xgimi.newappmarket	button_cancel_update	取消更新	
+com.xgimi.newappmarket	button_cancelupdate	取消更新	
+com.xgimi.newappmarket	button_clearcache_appmanager	清理数据(%s)	
+com.xgimi.newappmarket	button_confirm_uninstall_pop	卸载	
+com.xgimi.newappmarket	button_download	下载	
+com.xgimi.newappmarket	button_hint_title_uninstall_pop	卸载“%s”?	
+com.xgimi.newappmarket	button_installing	安装中	
+com.xgimi.newappmarket	button_myapp_to_manager	应用管理	
+com.xgimi.newappmarket	button_oninstalling	正在安装	
+com.xgimi.newappmarket	button_open_app	打开	
+com.xgimi.newappmarket	button_re_download	重新下载	
+com.xgimi.newappmarket	button_re_update	重新更新	
+com.xgimi.newappmarket	button_reupdate	重新更新	
+com.xgimi.newappmarket	button_start_download	下载	
+com.xgimi.newappmarket	button_stopapp_appmanager	强行停止	
+com.xgimi.newappmarket	button_uninstall_appmanager	卸载应用	
+com.xgimi.newappmarket	button_update_appmanager	更新	
+com.xgimi.newappmarket	button_warn_uninstall	卸载之后该应用将不可使用	
+com.xgimi.newappmarket	dongle_download_failed	下载失败，请重试	
+com.xgimi.newappmarket	dongle_download_no_network	网络异常，请检查网络后重试	
+com.xgimi.newappmarket	dongle_download_no_space	存储空间不足，请清理系统后重试	
+com.xgimi.newappmarket	guide_install_tip_str	%s内容正在准备中	
+com.xgimi.newappmarket	guide_install_title	欢迎使用%s	
+com.xgimi.newappmarket	guide_install_title_default	极米麦克风	
+com.xgimi.newappmarket	guide_installing	应用正在安装，请稍候…	
+com.xgimi.newappmarket	guide_start_to_song	立即开唱	
+com.xgimi.newappmarket	hint_autoupdate_poweroff	应用自动升级将在关机时进行	
+com.xgimi.newappmarket	hint_longclick_to_sortapp	长按OK键排序	
+com.xgimi.newappmarket	hint_text_search_no_result	暂时没有搜索到内容	
+com.xgimi.newappmarket	inputmaxtip	已达到最大输入限制	
+com.xgimi.newappmarket	keyboard_switch_clear	清除	
+com.xgimi.newappmarket	keyboard_switch_delete	退格	
+com.xgimi.newappmarket	keyboard_switch_full	全键盘	
+com.xgimi.newappmarket	keyboard_switch_nine	九宫格	
+com.xgimi.newappmarket	no_network_tip	出错啦！未连接网络	
+com.xgimi.newappmarket	subtitle_applist_appmanager	所有应用	
+com.xgimi.newappmarket	subtitle_downloadapplist_appmanager	下载应用	
+com.xgimi.newappmarket	subtitle_text_search_recommend_result_activity	热门应用	
+com.xgimi.newappmarket	subtitle_text_search_result_activity	搜索结果	
+com.xgimi.newappmarket	subtitle_updateapplist_appmanager	可更新应用 (%s)	
+com.xgimi.newappmarket	text_appsize_appmanager	大小: %s	
+com.xgimi.newappmarket	text_appversion_appmanager	版本: %s	
+com.xgimi.newappmarket	text_subTitle_introduction	应用介绍	
+com.xgimi.newappmarket	text_subTitle_recommend	相关推荐	
+com.xgimi.newappmarket	title_appmanager	应用管理	
+com.xgimi.newappmarket	title_myapp	我的应用	
+com.xgimi.newappmarket	title_text_search_activity	应用搜索	
+com.xgimi.newappmarket	toast_error_download_def	下载失败，请重试	
+com.xgimi.newappmarket	toast_error_download_install_error	安装失败，请重试	
+com.xgimi.newappmarket	toast_error_download_no_network	网络异常，请检查网络后重试	
+com.xgimi.newappmarket	toast_error_download_no_space	存储空间不足，请清理系统后重试	
+com.xgimi.newappmarket	toast_success_clearcache	清除数据成功	
+com.xgimi.newappmarket	toast_success_stop_apk	程序已停止	
+com.xgimi.newappmarket	toast_uninstall_success_pop	卸载%s成功	
+com.xgimi.newappmarket	unknown_tip_str	未知错误	
+com.xgimi.newappmarket	widget_dialog_loading	正在加载中…	
+com.xgimi.newappmarket	xbase_error_ConnectException	网络好像有问题，错误码：%s	
+com.xgimi.newappmarket	xbase_error_SSLHandshakeException	请查看系统时间日期是否正确，错误码：%s	
+com.xgimi.newappmarket	xbase_error_SocketTimeoutException	网络请求超时，错误码：%s	
+com.xgimi.newappmarket	xbase_error_TimeoutException	网络连接超时，错误码：%s	
+com.xgimi.newappmarket	xbase_error_default	未知异常，错误码：%s	
+com.xgimi.newappmarket	xbase_error_no_network	未连接网络，错误码：%s	
+com.xgimi.newappmarket	xbase_error_no_space	存储空间不足，错误码：%s	
+com.xgimi.newappmarket	xbase_error_service_exception	服务器开小差了，错误码：%s	
+com.xgimi.newappmarket	xbase_progress_wait_fail	出错啦！	
+com.xgimi.newappmarket	xbase_to_connect_network	连接网络	
+com.xgimi.newappmarket	xbase_to_retry	重试	
+com.xgimi.bootwizard	Align	智能辅助校正	
+com.xgimi.bootwizard	Align_desc	如投出的画面变形，可通过智能辅助校正对画面进行调节。	
+com.xgimi.bootwizard	S	跳过此步骤	
+com.xgimi.bootwizard	action_btn_txt	激活	
+com.xgimi.bootwizard	action_fatilue_tip_txt	激活失败，请确保网络正常后重试	
+com.xgimi.bootwizard	adb_state_close	adb已关闭	ADB has been turned off
+com.xgimi.bootwizard	adb_state_open	adb已开启	ADB is on
+com.xgimi.bootwizard	add_internet	添加网络	
+com.xgimi.bootwizard	add_user_net	手动添加网络	
+com.xgimi.bootwizard	agree_protocol	我已阅读并接受此协议	
+com.xgimi.bootwizard	agreement_page_btn	我已经阅读并接受此协议	
+com.xgimi.bootwizard	assisant_wechat	扫码关注微信公众号	
+com.xgimi.bootwizard	assistant_tip_text	扫二维码下载极米无屏助手	
+com.xgimi.bootwizard	assistant_title_text	极米无屏助手	
+com.xgimi.bootwizard	auto_project_adaption_curtain_projection	画幕自动对齐	
+com.xgimi.bootwizard	auto_project_adaption_projection_area	画面智能避障	
+com.xgimi.bootwizard	auto_project_des	移动设备或使用“系统设置-自动梯形校正”，通过自动梯形校正快速调整画面形状。	
+com.xgimi.bootwizard	auto_project_tip	*在“系统设置-校正设置”中可关闭自动梯形校正或画面智能避障	
+com.xgimi.bootwizard	auto_project_tip2	*在“系统设置-校正设置”中可关闭自动梯形校正	
+com.xgimi.bootwizard	auto_project_title	自动梯形校正	
+com.xgimi.bootwizard	back_des	”返回	
+com.xgimi.bootwizard	blu_content_text	音响模式下，随时可用手机蓝牙连接设备播放音	
+com.xgimi.bootwizard	blu_content_text1	乐。按下遥控器 “	
+com.xgimi.bootwizard	blu_content_text2	” 键可刷新蓝牙连接	
+com.xgimi.bootwizard	blu_rem_back_tip	将随机附赠的电池按照所示顺序装入遥控器后，点击	
+com.xgimi.bootwizard	blu_rem_back_tip2	“OK键”确认连接	
+com.xgimi.bootwizard	blu_rem_back_use	遥控器使用	
+com.xgimi.bootwizard	blu_rem_con_note_tip	*首次使用时，请注意检查遥控器已装好电池	
+com.xgimi.bootwizard	blu_rem_con_note_tip_text	*首次使用时，请注意检查电池电量	
+com.xgimi.bootwizard	blu_rem_con_text1_z5	将遥控器靠近设备10cm内，同时长按“	
+com.xgimi.bootwizard	blu_rem_con_text2_z5	”和“	
+com.xgimi.bootwizard	blu_rem_con_text3_z5	”直至	
+com.xgimi.bootwizard	blu_rem_con_tip2_text	遥控器指示灯快速闪烁，进入配对模式。	
+com.xgimi.bootwizard	blu_rems_diantai_z5	音响模式：极米电台	
+com.xgimi.bootwizard	blu_tip	*蓝牙遥控器为选配	
+com.xgimi.bootwizard	blu_title_text	音响模式：蓝牙音响	
+com.xgimi.bootwizard	cc_qmkg_sound_mode_desc1	在关机状态下，长按机身“	
+com.xgimi.bootwizard	cc_qmkg_sound_mode_desc2	”键，进入音响模式，	
+com.xgimi.bootwizard	cc_qmkg_sound_mode_desc3	音响模式下，可通过网络或连接手机蓝牙播放歌曲。	
+com.xgimi.bootwizard	cc_qmkg_sound_mode_desc4	当手机蓝牙播放歌曲时，双击 “	
+com.xgimi.bootwizard	cc_qmkg_sound_mode_desc5	” 键，重置蓝牙连接。	
+com.xgimi.bootwizard	choose_point	选点	
+com.xgimi.bootwizard	con_network_btn_txt	连接网络	
+com.xgimi.bootwizard	connect	连接	
+com.xgimi.bootwizard	connect_to_internet	连接网络	
+com.xgimi.bootwizard	done_text	开启极米视界	
+com.xgimi.bootwizard	dress_cast_text	正装正投	
+com.xgimi.bootwizard	edit_text_passward	密码	
+com.xgimi.bootwizard	exit	下一步	
+com.xgimi.bootwizard	file_check_fail	文件检测出错，错误代码：001	File detection failure, error code: 001
+com.xgimi.bootwizard	focus_manual	画面对焦        	
+com.xgimi.bootwizard	focus_tip_note	*您也可以通过设置>投影画面>对焦进行调节	
+com.xgimi.bootwizard	focus_tip_text	画面对焦	
+com.xgimi.bootwizard	forwar_projection_text	正装背投	
+com.xgimi.bootwizard	gesture_content_text	通过手势对设备进行控制	
+com.xgimi.bootwizard	gesture_play_pause_content_text	音乐播放时，触击XGIMI键	
+com.xgimi.bootwizard	gesture_play_pause_title_text	播放暂停	
+com.xgimi.bootwizard	gesture_set_vol_content_text	手在黑色圆盘内顺逆画圆	
+com.xgimi.bootwizard	gesture_set_vol_title_text	调节音量	
+com.xgimi.bootwizard	gesture_switch_song_title_text	切换歌曲	
+com.xgimi.bootwizard	gesture_title_text	手势控制	
+com.xgimi.bootwizard	guide_page_tip	*您也可以通过“我的应用-玩机攻略”学习更多功能	
+com.xgimi.bootwizard	guide_right_icon_tip	支持光学变焦	
+com.xgimi.bootwizard	h2_sound_mode_desc1	音响模式下，随时可用手机蓝牙连接设备播放音乐	
+com.xgimi.bootwizard	h2_sound_mode_desc2	按“	
+com.xgimi.bootwizard	help_adj	调整	
+com.xgimi.bootwizard	help_back	返回	
+com.xgimi.bootwizard	help_ok	选点	
+com.xgimi.bootwizard	hoist_cats_text	吊装正投	
+com.xgimi.bootwizard	input_pass_connect	连接	
+com.xgimi.bootwizard	input_pass_wifi_connect	请输入Wi-Fi密码	
+com.xgimi.bootwizard	input_pass_wifi_name	WiFi密码	
+com.xgimi.bootwizard	join_error	未知错误，请稍后重试	Unknown error, try again later
+com.xgimi.bootwizard	kst_adjust	调整	
+com.xgimi.bootwizard	kst_again	再次校正	
+com.xgimi.bootwizard	kst_back	返回	
+com.xgimi.bootwizard	kst_choose_point	选点	
+com.xgimi.bootwizard	kst_desc	可在下方选择进入梯形校正页面进行画面调整	
+com.xgimi.bootwizard	kst_done	智能辅助校正已完成	
+com.xgimi.bootwizard	kst_more_setting	更多设置	
+com.xgimi.bootwizard	kst_move_adjust	移动/调整	
+com.xgimi.bootwizard	kst_next	下一步	
+com.xgimi.bootwizard	kst_ok_exit	确认/退出	
+com.xgimi.bootwizard	kst_reset	复位	
+com.xgimi.bootwizard	kst_setting	设置	
+com.xgimi.bootwizard	kst_tip	中央的圆为正圆时屏幕比例符合系统设置	
+com.xgimi.bootwizard	kst_title	梯形校正	
+com.xgimi.bootwizard	list_rear_projection_text	吊装背投	
+com.xgimi.bootwizard	maxinput	已达到最大输入限制	
+com.xgimi.bootwizard	mp_soundmode_tip2	” 键2秒进入音响模式，音响模式下	
+com.xgimi.bootwizard	ms_soundmode_tip2	” 键2秒进入音响模式，音响	
+com.xgimi.bootwizard	network_page_tips	连网激活设备，获得精彩内容，享受无忧质保	
+com.xgimi.bootwizard	network_page_title_txt	联网激活设备	
+com.xgimi.bootwizard	network_succ_page_date2_txt	保修期至：%s	
+com.xgimi.bootwizard	network_succ_page_date_txt	激活日期：%s	
+com.xgimi.bootwizard	network_succ_page_title_txt	您已成功激活设备	
+com.xgimi.bootwizard	next_tip_txt	下一步	
+com.xgimi.bootwizard	nnknownhostexception	请检查网络是否连接	Check network connection
+com.xgimi.bootwizard	onkey_focus_title	梯形校正	
+com.xgimi.bootwizard	page_guide_title	学习画面对焦和校正	
+com.xgimi.bootwizard	page_theme_auto	自动	
+com.xgimi.bootwizard	page_theme_dark	暗夜	
+com.xgimi.bootwizard	page_theme_light	白昼	
+com.xgimi.bootwizard	page_theme_title	选择主题外观	
+com.xgimi.bootwizard	peidui_t1_tip	*遥控器图示及说明仅供参考，实际功能请以实物为准	
+com.xgimi.bootwizard	picture_fine_tuning	手动梯形校正	
+com.xgimi.bootwizard	popup_net_info	请输入网络信息	
+com.xgimi.bootwizard	press_back	按遥控器“	
+com.xgimi.bootwizard	project_type_content	请选择您的投影安装方式	
+com.xgimi.bootwizard	project_type_title	投影方式	
+com.xgimi.bootwizard	pwd_error	密码错误	
+com.xgimi.bootwizard	pwd_not_empty	密码不能为空	
+com.xgimi.bootwizard	pwd_not_less_5	密码长度不能小于5位	
+com.xgimi.bootwizard	pwd_not_less_8	密码长度不能小于8位	
+com.xgimi.bootwizard	r2_sound_mode_tip1	音响模式	
+com.xgimi.bootwizard	r2_sound_mode_tip12	注：可通过长按 “	
+com.xgimi.bootwizard	r2_sound_mode_tip121	” ３秒进入音响模式	
+com.xgimi.bootwizard	r2_sound_mode_tip13	音响模式下可播放WIFI音乐和蓝牙音乐	
+com.xgimi.bootwizard	radio_title_text	音响模式：极米电台	
+com.xgimi.bootwizard	rem_con_tip2_text	遥控器背面指示灯快速闪烁后熄灭，松开按键，配对成功	
+com.xgimi.bootwizard	rem_focus_tip_text1	请使用调焦键调节画面清晰度	
+com.xgimi.bootwizard	remote_adapter	遥控器配对	
+com.xgimi.bootwizard	return_pre_txt	返回上一步	
+com.xgimi.bootwizard	screen_title	自动梯形校正	
+com.xgimi.bootwizard	searched_net	检索到网络...	
+com.xgimi.bootwizard	serachs_wifi	检索到的网络...	
+com.xgimi.bootwizard	settings_scan_wxqr_text	请用极米App/微信扫描二维码登录	
+com.xgimi.bootwizard	settings_wifi_SSID_length	SSID不能为空	
+com.xgimi.bootwizard	settings_wifi_secure	安全性	
+com.xgimi.bootwizard	show_password	显示密码	
+com.xgimi.bootwizard	skip_next	跳过此步骤	
+com.xgimi.bootwizard	sound_mode_desc2	待机状态下，可按机身 “	
+com.xgimi.bootwizard	sound_mode_desc3	” 键进入音响模式	
+com.xgimi.bootwizard	sound_mode_title	音响模式	
+com.xgimi.bootwizard	soundmode_mp_tip1	长按 “	
+com.xgimi.bootwizard	soundmode_mp_tip3	可播放WiFi音乐和蓝牙音乐	
+com.xgimi.bootwizard	soundmode_ms_tip1	可通过长按 “	
+com.xgimi.bootwizard	soundmode_ms_tip3	模式下可播放WiFi音乐和蓝牙音乐	
+com.xgimi.bootwizard	super_app_title_text	极米App	
+com.xgimi.bootwizard	system_check_fail	系统完成性检测不通过，无法升级	Incomplete system detected, upgrade not available
+com.xgimi.bootwizard	theme_page_tip1	您可以稍后前往“主题”中进行自定义更改	
+com.xgimi.bootwizard	theme_page_tip2	自动：默认时间段(21:00~6:00)使用深色主题，其余时段使用浅色主题	
+com.xgimi.bootwizard	time_out	连接超时，请稍后重试	Connection timeout, try again later
+com.xgimi.bootwizard	title_welcome	欢迎使用极米	
+com.xgimi.bootwizard	toast_default_device	该机型没有适配，使用默认配置	
+com.xgimi.bootwizard	user_login_tip	同步多方会员权益，畅享海量影音内容	
+com.xgimi.bootwizard	user_login_title_text	登录极米账号	
+com.xgimi.bootwizard	user_login_wait	二维码加载中	
+com.xgimi.bootwizard	welcome_to_gmui	开启光影世界	
+com.xgimi.bootwizard	wifi_add_net	手动添加网络	
+com.xgimi.bootwizard	wifi_con_hide_error_tip	无法连接此网络	
+com.xgimi.bootwizard	wifi_hot_connection_tips	打开手机热点也可以为设备添加网络	
+com.xgimi.bootwizard	wifi_hot_connection_tips2	*打开手机热点也可以为设备添加网络	
+com.xgimi.bootwizard	wifi_item_conned_tip	已连接	
+com.xgimi.bootwizard	wifi_item_conning_tip	正在连接...	
+com.xgimi.bootwizard	wifi_item_save_tip	已保存	
+com.xgimi.bootwizard	wifi_pwd_error_tip_txt	密码错误,请重新输入	
+com.xgimi.bootwizard	wifi_secure_no	无	
+com.xgimi.bootwizard	window_inout_please	请输入	
+com.xgimi.bootwizard	window_input_please	请输入	
+com.xgimi.bootwizard	window_password	的密码	
+com.xgimi.bootwizard	wupingzhushou_text_4	音响模式下，当WiFi连接就绪	
+com.xgimi.bootwizard	wupingzhushou_text_5	按“	
+com.xgimi.bootwizard	wupingzhushou_text_6	” 键播放极米电台	
+com.xgimi.bootwizard	z5_sound_mode_blu_tip1	音响模式下，随时可用手机蓝牙连接设备	
+com.xgimi.bootwizard	z5_sound_mode_blu_tip2	播放音乐，双击 “	
+com.xgimi.bootwizard	z5_sound_mode_blu_tip3	” 键可刷新蓝牙连接	
+com.xgimi.bootwizard	z5_sound_mode_blu_title	音响模式：蓝牙音响	
+com.xgimi.bootwizard	zoom	画面缩放	
+com.xgimi.home	am	上午	
+com.xgimi.home	app_name	极米桌面	
+com.xgimi.home	brvah_load_complete	点击加载更多	Click to load more
+com.xgimi.home	brvah_load_end	没有更多数据	No more data
+com.xgimi.home	brvah_load_failed	加载失败，请点我重试	load more failed
+com.xgimi.home	brvah_loading	正在加载中...	Loading...
+com.xgimi.home	btn_local_applist_add_dissolution_folder	解散文件夹	
+com.xgimi.home	btn_local_applist_add_to_folder	添加至文件夹	
+com.xgimi.home	btn_local_applist_edit_folder	编辑文件夹	
+com.xgimi.home	btn_local_applist_sort	移动	
+com.xgimi.home	btn_local_applist_uninstall	卸载	
+com.xgimi.home	btn_local_shift_out	已将该应用移出当前文件夹	
+com.xgimi.home	btn_local_shift_out_folder	从文件夹移出	
+com.xgimi.home	btn_release	释放资源	
+com.xgimi.home	btn_to_link_sdk	连接SDK	
+com.xgimi.home	btn_to_play	播放测试	
+com.xgimi.home	button_cancel_uninstall_pop	取消	
+com.xgimi.home	button_confirm_dissolution_folder_pop	解散	
+com.xgimi.home	button_confirm_uninstall_pop	卸载	
+com.xgimi.home	button_hint_title_uninstall_pop	卸载“%s”?	
+com.xgimi.home	button_myapp_to_manager	应用管理	
+com.xgimi.home	button_warn_uninstall	卸载之后该应用将不可使用	
+com.xgimi.home	childmode_answer_questions_unlock	答题解锁	
+com.xgimi.home	childmode_backspace	退格	
+com.xgimi.home	childmode_cancel_time	关闭定时休息	
+com.xgimi.home	childmode_timing_tip	小朋友要关机啦，休息一下吧！	
+com.xgimi.home	childmode_title_project_eye	护眼模式	
+com.xgimi.home	childmode_title_project_eye_shot	防射眼保护	
+com.xgimi.home	childmode_title_timing	定时休息	
+com.xgimi.home	completed	下载完成	
+com.xgimi.home	dialog_hint_title_dissolution_folder_pop	解散当前文件夹	
+com.xgimi.home	dialog_warn_desc_dissolution_folder_pop	解散后，文件夹中的应用将移动至“我的应用”。	
+com.xgimi.home	download_fail	下载失败	
+com.xgimi.home	downloading	下载中...	
+com.xgimi.home	fetch_play_link_failed	视频出了点问题，先看看其他视频也很精彩哦	
+com.xgimi.home	filter_count	%d个筛选结果	
+com.xgimi.home	filter_item_filter	筛选	
+com.xgimi.home	filter_item_search	搜索	
+com.xgimi.home	filter_result_all	全部	
+com.xgimi.home	hint_click_back_to_exit_mode	按返回完成编辑并退出	
+com.xgimi.home	hint_longclick_to_edit_app	长按OK键编辑应用	
+com.xgimi.home	hint_myapp_button_long_edit	长按编辑	
+com.xgimi.home	hint_myapp_button_ok_locat	按确定应用位置	
+com.xgimi.home	hint_myapp_menu_more	按更多功能	
+com.xgimi.home	hint_myapp_save	按完成编辑并退出	
+com.xgimi.home	hint_myapp_sort	按移动排序	
+com.xgimi.home	history_edu_header_tip	按【菜单键】或长按【OK键】删除学习历史	
+com.xgimi.home	history_edu_title	学习历史	
+com.xgimi.home	history_empty_edu_tip	暂无学习记录	
+com.xgimi.home	history_empty_tip	暂无观看记录	
+com.xgimi.home	history_header_button	全部清空	
+com.xgimi.home	history_header_tip	按【菜单键】或长按【OK键】删除历史记录	
+com.xgimi.home	history_list_header_tip1	按	
+com.xgimi.home	history_list_header_tip2	【菜单键】	
+com.xgimi.home	history_list_header_tip3	或长按	
+com.xgimi.home	history_list_header_tip4	【OK键】	
+com.xgimi.home	history_list_header_tip5	删除%s	
+com.xgimi.home	history_recommond_title	猜你喜欢	
+com.xgimi.home	history_title	历史记录	
+com.xgimi.home	history_toast_delete_success	删除成功	
+com.xgimi.home	history_update_process	(第%s集)	
+com.xgimi.home	home_edit_tip_press	按	
+com.xgimi.home	home_edit_tip_save	完成编辑并退出	
+com.xgimi.home	home_edit_title	主页设定	
+com.xgimi.home	home_fetch_data_exception	获取数据失败	
+com.xgimi.home	inputmaxtip	已达到最大输入限制	
+com.xgimi.home	install_failed	安装失败	
+com.xgimi.home	installed	安装完成	
+com.xgimi.home	installing	安装中...	
+com.xgimi.home	keyboard_all	全键盘	
+com.xgimi.home	keyboard_clear	清空	
+com.xgimi.home	keyboard_del	退格	
+com.xgimi.home	keyboard_nine	九宫格	
+com.xgimi.home	keyboard_search_text	请输入搜索内容的首字母	
+com.xgimi.home	keyboard_switch_full	全键盘	
+com.xgimi.home	keyboard_switch_nine	九宫格	
+com.xgimi.home	local_app_title	本地应用	
+com.xgimi.home	menu	按 img 或 img 选择清晰度和剧集	
+com.xgimi.home	menu_audio	音效模式	
+com.xgimi.home	menu_dissolution_folder	解散文件夹	
+com.xgimi.home	menu_edit_folder	编辑文件夹	
+com.xgimi.home	menu_episode	播放列表	
+com.xgimi.home	menu_hd_play	高清	
+com.xgimi.home	menu_img_football	足球	
+com.xgimi.home	menu_img_mode_bright	明亮	
+com.xgimi.home	menu_img_mode_game	游戏	
+com.xgimi.home	menu_img_mode_light_on	开灯	
+com.xgimi.home	menu_img_mode_natural	自然	
+com.xgimi.home	menu_img_mode_office	办公	
+com.xgimi.home	menu_img_mode_soft	柔和	
+com.xgimi.home	menu_img_mode_standard	标准	
+com.xgimi.home	menu_img_mode_user	自定义	
+com.xgimi.home	menu_new_folder	新建文件夹	
+com.xgimi.home	menu_picture	图像模式	
+com.xgimi.home	menu_sd_play	标清	
+com.xgimi.home	menu_sort_app	应用排序	
+com.xgimi.home	menu_speed	倍速播放	
+com.xgimi.home	menu_startAppManager	应用管理	
+com.xgimi.home	menu_super_play	超清	
+com.xgimi.home	menu_surface	画面比例	
+com.xgimi.home	menu_uninstall	应用卸载	
+com.xgimi.home	menu_vision	清晰度	
+com.xgimi.home	mine_app_all	全部应用	
+com.xgimi.home	mine_app_title	我的应用	
+com.xgimi.home	mine_third_vip_is_vip	已开通	
+com.xgimi.home	mine_third_vip_no_vip	未开通	
+com.xgimi.home	mine_third_vip_time	%s到期	
+com.xgimi.home	mine_third_vip_title_cb	唱吧会员	
+com.xgimi.home	mine_third_vip_title_iqiyi	爱奇艺会员	
+com.xgimi.home	mine_third_vip_title_mg	芒果会员	
+com.xgimi.home	mine_third_vip_title_youku	优酷会员	
+com.xgimi.home	mine_txt_all_history	全部历史	
+com.xgimi.home	mine_txt_notice	通知	
+com.xgimi.home	mine_txt_vipcenter	极米会员	
+com.xgimi.home	mine_txt_xgimi_service	极米服务	
+com.xgimi.home	mine_xgimi_user_name	未登录极米账号	
+com.xgimi.home	navigation_edit_dialog_available_channels	添加频道	
+com.xgimi.home	navigation_edit_dialog_mine_channels	我的频道	
+com.xgimi.home	navigation_edit_dialog_remove_fixed_channel	该频道不支持移除	
+com.xgimi.home	navigation_edit_dialog_remove_home_channel	该频道为主页，不可移除	
+com.xgimi.home	navigation_edit_dialog_reset_default	恢复默认	
+com.xgimi.home	navigation_edit_dialog_reset_default_tips	导航栏已恢复至默认状态	
+com.xgimi.home	navigation_edit_tip	OK键选择，左右键移动	
+com.xgimi.home	navigation_tip_add_channel	长按OK键移除导航栏标签	
+com.xgimi.home	navigation_tip_back	按返回键保存并退出	
+com.xgimi.home	navigation_tip_default	恢复默认	
+com.xgimi.home	navigation_tip_exit	完成编辑并退出	
+com.xgimi.home	navigation_tip_long_press	长按	
+com.xgimi.home	navigation_tip_move	长按OK键调整导航栏排序	
+com.xgimi.home	navigation_tip_ok	按OK键确定频道位置	
+com.xgimi.home	navigation_tip_press	按	
+com.xgimi.home	navigation_tip_removable	可移动频道	
+com.xgimi.home	navigation_tip_set_position	确定频道位置	
+com.xgimi.home	network_connect	已连接到%s	
+com.xgimi.home	network_disconnect	网络连接断开	
+com.xgimi.home	network_eth	有线网络	
+com.xgimi.home	network_exception	网络异常，请检查网络后重试	
+com.xgimi.home	network_wifiap	WiFi热点	
+com.xgimi.home	not_find_scenario	更改场景失败	
+com.xgimi.home	online_playaddress_empty	播放地址获取失败	
+com.xgimi.home	page_edu_end_time	将于 %s 到期	
+com.xgimi.home	page_edu_history	学习历史	
+com.xgimi.home	page_edu_no_vip	暂未开通	
+com.xgimi.home	page_edu_vip_renew	还有%d天到期，记得续费哦	
+com.xgimi.home	page_gmax_download_error	下载异常	
+com.xgimi.home	page_gmax_download_finish	已下载完成	
+com.xgimi.home	page_gmax_download_manager	下载管理	
+com.xgimi.home	page_gmax_download_pause	已暂停	
+com.xgimi.home	page_gmax_download_wait	等待下载	
+com.xgimi.home	page_gmax_downloaded	已下载%s%%	
+com.xgimi.home	page_gmax_no_download_record	当前无下载记录	
+com.xgimi.home	page_gmax_vip_endtime	有效期至：%s	
+com.xgimi.home	page_history	全部历史	
+com.xgimi.home	page_is_vip	已开通	
+com.xgimi.home	page_update_process	(第%s集)	
+com.xgimi.home	play_continue	按OK键，继续播放	
+com.xgimi.home	play_video_exception	播放异常	
+com.xgimi.home	pm	下午	
+com.xgimi.home	progress_wait_fail	出错啦！	
+com.xgimi.home	progress_wait_loading	视频加载中，请稍候...	
+com.xgimi.home	project_setting	护眼设置	
+com.xgimi.home	response_open_fail	打开失败	
+com.xgimi.home	response_processing	正在加载中…	
+com.xgimi.home	safe_mode_check_update	检查更新	
+com.xgimi.home	safe_mode_clear_data	清空极米桌面数据	
+com.xgimi.home	safe_mode_error_log	查看完整错误信息	
+com.xgimi.home	safe_mode_open_resource_manager	进入资源管理器	
+com.xgimi.home	safe_mode_open_setting	进入系统设置	
+com.xgimi.home	safe_mode_title	安全模式界面	
+com.xgimi.home	scenario_dialog_atmosphere	“氛围”	
+com.xgimi.home	scenario_dialog_entrance_adjustment	入口调整	
+com.xgimi.home	scenario_dialog_i_know	我知道了	
+com.xgimi.home	scenario_dialog_karaoke	“K歌”	
+com.xgimi.home	scenario_dialog_moved_to	已移至	
+com.xgimi.home	scenario_dialog_moved_to_home_channel	已移至主页频道	
+com.xgimi.home	scenario_dialog_music	“音乐”	
+com.xgimi.home	scenario_dialog_my_app	“我的应用”	
+com.xgimi.home	search_tip_title	如需搜索“极米”	
+com.xgimi.home	setting_project_eye_shot_tips	检测到镜头前有人时，自动降低投影亮度	
+com.xgimi.home	slide_bar_no_data_tips	菜单加载中	
+com.xgimi.home	start_continue	继续播放中，按OK键重新播放	
+com.xgimi.home	starting	即将播放	
+com.xgimi.home	statusbar_bluetooth	蓝牙	
+com.xgimi.home	statusbar_ethernet	有线网络	
+com.xgimi.home	statusbar_music_control	音乐控制器	
+com.xgimi.home	statusbar_none	未连接	
+com.xgimi.home	statusbar_remote_control	遥控器	
+com.xgimi.home	statusbar_search	搜索	
+com.xgimi.home	statusbar_usb	文件	
+com.xgimi.home	statusbar_wifiap	无线热点	
+com.xgimi.home	switch_hdmi	切换HDMI	
+com.xgimi.home	title_myapp	我的应用	
+com.xgimi.home	title_myapp_sort_mode	应用排序	
+com.xgimi.home	title_myapp_uninstall_mode	应用卸载	
+com.xgimi.home	toast_enter_exit_sort_mode	退出排序模式	
+com.xgimi.home	toast_enter_exit_uninstall_mode	退出卸载模式	
+com.xgimi.home	toast_enter_sort_mode	进入排序模式	
+com.xgimi.home	toast_enter_uninstall_mode	进入卸载模式	
+com.xgimi.home	toast_no_app_can_add_folder	暂无可添加应用	
+com.xgimi.home	toast_no_next	已是最后一集	
+com.xgimi.home	toast_no_previous	已是第一集	
+com.xgimi.home	toast_play_complete	播放完毕	
+com.xgimi.home	toast_playing_next	即将播放下一集	
+com.xgimi.home	toast_playing_previous	正在为您播放上一集	
+com.xgimi.home	toast_uninstall_success_pop	卸载%s成功	
+com.xgimi.home	type_c_hdmi_tip	信号源	
+com.xgimi.home	usb_capacityinfo	已用%s/全部%s	
+com.xgimi.home	vip_buy_before_play	请在购买会员后播放	
+com.xgimi.home	widget_dialog_loading	正在加载中…	
+com.xgimi.home	xbase_error_ConnectException	网络好像有问题，错误码：%s	
+com.xgimi.home	xbase_error_SSLHandshakeException	请查看系统时间日期是否正确，错误码：%s	
+com.xgimi.home	xbase_error_SocketTimeoutException	网络请求超时，错误码：%s	
+com.xgimi.home	xbase_error_TimeoutException	网络连接超时，错误码：%s	
+com.xgimi.home	xbase_error_default	未知异常，错误码：%s	
+com.xgimi.home	xbase_error_no_network	未连接网络，错误码：%s	
+com.xgimi.home	xbase_error_no_space	存储空间不足，错误码：%s	
+com.xgimi.home	xbase_error_service_exception	服务器开小差了，错误码：%s	
+com.xgimi.home	xbase_no_data	暂无数据	
+com.xgimi.home	xbase_progress_wait_fail	出错啦！	
+com.xgimi.home	xbase_to_connect_network	连接网络	
+com.xgimi.home	xbase_to_retry	重试	
+com.xgimi.manager	accumulative_cleaning	累计清理	
+com.xgimi.manager	already_allowed	已允许	
+com.xgimi.manager	already_prohibited	已禁止	
+com.xgimi.manager	apk_file	APK文件	
+com.xgimi.manager	app_cache	应用缓存	
+com.xgimi.manager	app_name	投影管家	
+com.xgimi.manager	ban	禁止	
+com.xgimi.manager	boot_start_app	开机自启动应用：	
+com.xgimi.manager	brvah_load_complete	点击加载更多	Click to load more
+com.xgimi.manager	brvah_load_end	没有更多数据	No more data
+com.xgimi.manager	brvah_load_failed	加载失败，请点我重试	load more failed
+com.xgimi.manager	brvah_loading	正在加载中...	Loading...
+com.xgimi.manager	button_cancel	取消	
+com.xgimi.manager	button_to_appmanager	管理空间	
+com.xgimi.manager	cancle	取消	
+com.xgimi.manager	clean_now	立即清理	
+com.xgimi.manager	clean_rublish_now	正在为您清理垃圾	
+com.xgimi.manager	clear_complete	完成清理	
+com.xgimi.manager	clear_now	立即清理	
+com.xgimi.manager	clear_result	本次优化释放了%1$s内存，清理了%2$s存储空间	
+com.xgimi.manager	clear_rubbish	您的系统很干净，请继续保持	
+com.xgimi.manager	complete	完成	
+com.xgimi.manager	confirm	确定	
+com.xgimi.manager	confirm_exam	完成检测	
+com.xgimi.manager	deep_clear	深度清理	
+com.xgimi.manager	deep_clearance	已深度清理垃圾	
+com.xgimi.manager	deep_clearance_hint	系统很干净，无垃圾可清理	
+com.xgimi.manager	delete	删除	
+com.xgimi.manager	detecting_speed	正在为您检测网速	
+com.xgimi.manager	dialog_delete_file_hint	删除后不可撤销	
+com.xgimi.manager	dialog_delete_title_hint	系统提示	
+com.xgimi.manager	doc_file	文档文件	
+com.xgimi.manager	finishOptimize	优化完成	
+com.xgimi.manager	hint_clearing_cache	正在为您清理垃圾	
+com.xgimi.manager	hint_scanning	正在扫描设备中	
+com.xgimi.manager	hint_security_protect	投影管家正在护航	
+com.xgimi.manager	immediate_optimization	一键加速	
+com.xgimi.manager	immediate_unload	立即卸载	
+com.xgimi.manager	inOptimize	优化中	
+com.xgimi.manager	large_file	大文件	
+com.xgimi.manager	large_file_clear	大文件清理	
+com.xgimi.manager	less_rubbish	系统垃圾较少，建议优化	
+com.xgimi.manager	memory_occupancy	内存占用:	
+com.xgimi.manager	memory_space	存储空间	
+com.xgimi.manager	music_file	音频文件	
+com.xgimi.manager	network_disconnect	网络中断，本次测速失败	
+com.xgimi.manager	network_measurement	网络测速	
+com.xgimi.manager	no_bootstart	当前没有自启动应用	
+com.xgimi.manager	no_clean_large_file	没有可清理的大文件	
+com.xgimi.manager	no_sdcard	无SD卡	
+com.xgimi.manager	not_choice_app	未选中应用	
+com.xgimi.manager	not_connected_internet	无法连接至Internet	
+com.xgimi.manager	not_connected_router	无网络连接	
+com.xgimi.manager	not_deal_with	暂不处理	
+com.xgimi.manager	ok	确认	
+com.xgimi.manager	once_touch_ban	一键禁止	
+com.xgimi.manager	once_touch_remove	一键清理	
+com.xgimi.manager	one_touch_optimize	一键优化	
+com.xgimi.manager	onetouch_delete	一键清除	
+com.xgimi.manager	permission	允许	
+com.xgimi.manager	picture_file	图片文件	
+com.xgimi.manager	ram	运行内存	
+com.xgimi.manager	re_exam	重新检测	
+com.xgimi.manager	risk	危险	
+com.xgimi.manager	risk_app_warn	以下应用可能对你机器或者隐私带来危险建议清除	
+com.xgimi.manager	rom	运行内存	
+com.xgimi.manager	rubblish_file	垃圾文件	
+com.xgimi.manager	scan_large_file_fail	扫描错误===>	
+com.xgimi.manager	scan_large_file_finish	扫描完毕 需要删除文件大小为:	
+com.xgimi.manager	scaning	正在扫描:	
+com.xgimi.manager	scanning_large_file	已扫描出大文件:	
+com.xgimi.manager	scanning_size	已为您扫描出%s垃圾	
+com.xgimi.manager	security_complete	完成	
+com.xgimi.manager	security_risk_size	发现%d个应用存在安全风险	
+com.xgimi.manager	security_scan	安全扫描	
+com.xgimi.manager	software_uninstall	软件卸载残留	
+com.xgimi.manager	software_uninstall1	卸载残留	
+com.xgimi.manager	space_occupancy	空间占用:	
+com.xgimi.manager	speed_recommend1	可以观看4K超清视频	
+com.xgimi.manager	speed_recommend2	可以观看1080P或高清视频	
+com.xgimi.manager	speed_recommend3	建议观看720P或标清视频	
+com.xgimi.manager	speed_recommend4	建议选择流畅标准视频观看	
+com.xgimi.manager	speed_result1	当前下载速度%sMb/s，网络非常优秀	
+com.xgimi.manager	speed_result2	当前下载速度%sMb/s，网络比较优秀	
+com.xgimi.manager	speed_result3	当前下载速度%sMb/s，网络通畅	
+com.xgimi.manager	speed_result4	当前下载速度%sMb/s，网络有些拥堵	
+com.xgimi.manager	start_scan	开始扫描	
+com.xgimi.manager	startup_manager	开机启动管理	
+com.xgimi.manager	storage_used	空间使用	
+com.xgimi.manager	storeg_space	存储空间	
+com.xgimi.manager	subtitle_warn_storage_full	存储空间已满，您可以在【投影管家】中管理存储空间	
+com.xgimi.manager	subtitle_warn_storage_low	存储空间几乎已满，您可以在【投影管家】中管理存储空间	
+com.xgimi.manager	system_is_clean	您的系统十分干净，无可清理垃圾	
+com.xgimi.manager	system_lose	系统瘦身	
+com.xgimi.manager	system_rubblish	系统垃圾	
+com.xgimi.manager	system_very_clean	系统非常干净	
+com.xgimi.manager	text1	清理完毕	
+com.xgimi.manager	title_warn_storage_low	存储空间不足	
+com.xgimi.manager	too_much_rubbish	系统垃圾过多，建议立即优化！	
+com.xgimi.manager	txt_file	TXT文件	
+com.xgimi.manager	uninstall_app	应用卸载	
+com.xgimi.manager	unknow_file	未知文件	
+com.xgimi.manager	useless_apk	无效安装包	
+com.xgimi.manager	version	版本	
+com.xgimi.manager	video_file	视频文件	
+com.xgimi.manager	virus_free_prompt	您的电视很健康，请继续保持	
+com.xgimi.manager	zip_file	压缩文件	
+com.xgimi.doubanfm	add_collect	添加收藏	
+com.xgimi.doubanfm	add_complete	已加载完成	
+com.xgimi.doubanfm	add_crrent_song_to_collect	添加当前歌曲	
+com.xgimi.doubanfm	adding_more	正在加载更多...	
+com.xgimi.doubanfm	all	(共	
+com.xgimi.doubanfm	all_	全部	
+com.xgimi.doubanfm	all_album	所有专辑	
+com.xgimi.doubanfm	all_music	全部歌曲	
+com.xgimi.doubanfm	app_name	极米音乐	
+com.xgimi.doubanfm	area_america	欧美	
+com.xgimi.doubanfm	area_inland	内地	
+com.xgimi.doubanfm	area_japan	日本	
+com.xgimi.doubanfm	area_korea	韩国	
+com.xgimi.doubanfm	area_other	其他	
+com.xgimi.doubanfm	area_taiwan	港台	
+com.xgimi.doubanfm	assistant_low_version	请升级无屏助手后重试	
+com.xgimi.doubanfm	auto_activation_fail	自动激活失败，请通过VIP兑换码手动激活	
+com.xgimi.doubanfm	baidu_init_error	百度音乐初始化失败	
+com.xgimi.doubanfm	baidu_right	版权所属 百度音乐	
+com.xgimi.doubanfm	bar_unknown_album	未知专辑	
+com.xgimi.doubanfm	bar_unkown_singer	未知歌手	
+com.xgimi.doubanfm	blue_tooth_device_disconnect	蓝牙设备断开	
+com.xgimi.doubanfm	bluetooth_connect	已连接%s	
+com.xgimi.doubanfm	bluetooth_disable	蓝牙音乐播放时，该功能不可用	
+com.xgimi.doubanfm	bluetooth_disconnect	断开蓝牙	
+com.xgimi.doubanfm	bluetooth_info	已连接%1s	
+com.xgimi.doubanfm	buy_music_vip	开通极米音乐VIP	
+com.xgimi.doubanfm	buy_success	您已成功购买VIP	
+com.xgimi.doubanfm	cancel	取消	
+com.xgimi.doubanfm	cancel_activation	取消	
+com.xgimi.doubanfm	cancel_collect_all	取消全部收藏	
+com.xgimi.doubanfm	cancel_collect_hint	选中单曲点击遥控器左键取消收藏	
+com.xgimi.doubanfm	cancel_gimi_account_login	取消登录极米账户	
+com.xgimi.doubanfm	cannot_collect_local	无法收藏本地音乐	
+com.xgimi.doubanfm	collect_cancel	已取消收藏	
+com.xgimi.doubanfm	collect_failure	收藏失败	
+com.xgimi.doubanfm	collect_list	收藏列表	
+com.xgimi.doubanfm	collect_repeat	重复添加	
+com.xgimi.doubanfm	collect_success	收藏成功	
+com.xgimi.doubanfm	collected	已收藏	
+com.xgimi.doubanfm	combination	组合	
+com.xgimi.doubanfm	conntent_null	内容为空	
+com.xgimi.doubanfm	curmusic_list	当前播放列表	
+com.xgimi.doubanfm	curr_isredioplay	当前为随心听播放模式	
+com.xgimi.doubanfm	delete	删除	
+com.xgimi.doubanfm	dialog_desc_sound	确定要退出音响模式？	
+com.xgimi.doubanfm	dialog_title_sound	提示	
+com.xgimi.doubanfm	dlnaconnect	DLNA已连接，音乐停止播放	
+com.xgimi.doubanfm	empty_list	暂无歌单列表	
+com.xgimi.doubanfm	error	出错了	
+com.xgimi.doubanfm	error_code	错误码:%s	
+com.xgimi.doubanfm	error_tips_7002	您已经是极米音乐VIP用户，请勿重复购买。	
+com.xgimi.doubanfm	exit_blue_tooth_play	退出蓝牙播放	
+com.xgimi.doubanfm	female_singer	女歌手	
+com.xgimi.doubanfm	first_show_tip	“下”键选择音乐主题；“菜单”键选择歌曲	
+com.xgimi.doubanfm	gimi_account_login_fail	极米账户登录失败	
+com.xgimi.doubanfm	gimi_account_login_success	极米账户登录成功	
+com.xgimi.doubanfm	i_list_collect	收藏	
+com.xgimi.doubanfm	i_list_play_all	全部播放	
+com.xgimi.doubanfm	input_mg_code_hint	请输入激活码	
+com.xgimi.doubanfm	inputmaxtip	已达到最大输入限制	
+com.xgimi.doubanfm	keyboard_switch_full	全键盘	
+com.xgimi.doubanfm	keyboard_switch_nine	九宫格	
+com.xgimi.doubanfm	loading_error	加载数据异常	
+com.xgimi.doubanfm	local_music	本地音乐	
+com.xgimi.doubanfm	localmusic_cannotcollect	本地音乐无法收藏	
+com.xgimi.doubanfm	localmusic_isgone	音乐文件不存在	
+com.xgimi.doubanfm	login_now	立即登录	
+com.xgimi.doubanfm	logout_success	退出登录成功	
+com.xgimi.doubanfm	lrc_no_lyric	暂无歌词	
+com.xgimi.doubanfm	lyric_fm_play	蜻蜓FM播放中 ...	
+com.xgimi.doubanfm	lyric_loading	正在努力加载中...	
+com.xgimi.doubanfm	male_singer	男歌手	
+com.xgimi.doubanfm	monitor2_nfc_cast	保持手机和投影在同一局域网，用手机轻碰控制器即可同屏。（仅支持华为NFC手机，且系统为EMUI11及以上版本）	
+com.xgimi.doubanfm	monitor2_nfc_music	手机轻碰控制器即可连接蓝牙，仅支持带有NFC功能的安卓手机（5.1.1及以上版本）	
+com.xgimi.doubanfm	music_info_empty	歌曲信息不存在	
+com.xgimi.doubanfm	music_list	歌单列表	
+com.xgimi.doubanfm	music_recommendation	音乐推荐	
+com.xgimi.doubanfm	music_search	音乐搜索	
+com.xgimi.doubanfm	music_settings	音乐设置	
+com.xgimi.doubanfm	music_settings_playmode	播放设置	
+com.xgimi.doubanfm	music_settings_wifimisic	音乐优先级	
+com.xgimi.doubanfm	my_album	播放列表	
+com.xgimi.doubanfm	my_collect	我的收藏	
+com.xgimi.doubanfm	netcut_tolocal	网络已断开，即将播放本地歌曲	
+com.xgimi.doubanfm	network_error	网络不可用，请检查网络后重试	
+com.xgimi.doubanfm	network_error_play_local	网络未连接，将播放本地歌曲	
+com.xgimi.doubanfm	new_music	新歌	
+com.xgimi.doubanfm	newhome_you_can_say	你可以试着说：	
+com.xgimi.doubanfm	noPermision	资源版权到期，正在争取中...	
+com.xgimi.doubanfm	no_collect_song	您还没有收藏歌曲	
+com.xgimi.doubanfm	no_collect_song_slide_bar	您的收藏列表空空如也	
+com.xgimi.doubanfm	no_local_song	没有本地歌曲	
+com.xgimi.doubanfm	no_login_can_not_get_collect_music_list	未登录极米账户，无法获取收藏列表	
+com.xgimi.doubanfm	no_new_song	暂无新歌曲	
+com.xgimi.doubanfm	no_song	没有歌曲	
+com.xgimi.doubanfm	no_song_play	没有可播放歌曲	
+com.xgimi.doubanfm	no_vip	非VIP会员	
+com.xgimi.doubanfm	nodata	获取数据失败	
+com.xgimi.doubanfm	noplaylist	暂无播放列表	
+com.xgimi.doubanfm	nosearch	没有搜索到相关的内容	
+com.xgimi.doubanfm	order	顺序	
+com.xgimi.doubanfm	original_price	原价：%s元	
+com.xgimi.doubanfm	play	播放	
+com.xgimi.doubanfm	play_all	播放全部	
+com.xgimi.doubanfm	play_error	播放失败	
+com.xgimi.doubanfm	play_error_list_end	当前列表播放结束	
+com.xgimi.doubanfm	play_error_list_top	当前是第一首歌	
+com.xgimi.doubanfm	play_mode_normal	顺序播放	
+com.xgimi.doubanfm	play_mode_single_cycle	单曲循环	
+com.xgimi.doubanfm	play_right_now	即将播放	
+com.xgimi.doubanfm	please_break_bluetooth	请先断开蓝牙播放	
+com.xgimi.doubanfm	please_break_dlna	请先断开移动设备连接	
+com.xgimi.doubanfm	please_select_song	请选择歌曲	
+com.xgimi.doubanfm	please_tologin	请先登录	
+com.xgimi.doubanfm	press_quit	再按一次退出	
+com.xgimi.doubanfm	progress_wait_fail	网络异常	
+com.xgimi.doubanfm	progress_wait_loading	正在加载中...	
+com.xgimi.doubanfm	qq_exit_vip	免费试听结束，自动跳过VIP歌曲	
+com.xgimi.doubanfm	qq_list_no_music	列表无可播放免费歌曲，为您播放其他歌曲	
+com.xgimi.doubanfm	qrcode_load	二维码加载中	
+com.xgimi.doubanfm	qrcode_load_fail	二维码加载失败	
+com.xgimi.doubanfm	radio	电台	
+com.xgimi.doubanfm	radio_station	电台	
+com.xgimi.doubanfm	random	随机	
+com.xgimi.doubanfm	recharge_music_vip	续费极米音乐VIP	
+com.xgimi.doubanfm	removeincurrlist	已移出播放列表	
+com.xgimi.doubanfm	repeat	单曲	
+com.xgimi.doubanfm	retry	重试	
+com.xgimi.doubanfm	search	搜索	
+com.xgimi.doubanfm	search_edit_hint	请输入音乐首字母搜索	
+com.xgimi.doubanfm	search_for_you	为你搜到以下内容	
+com.xgimi.doubanfm	search_hint	输入关键字搜索，比如 刘德华	
+com.xgimi.doubanfm	search_hint0	全拼音输入：如《极米》	
+com.xgimi.doubanfm	search_hint1	拼音 “JIMI”	
+com.xgimi.doubanfm	search_hint2	输入：JIMI	
+com.xgimi.doubanfm	search_hot	热门搜索	
+com.xgimi.doubanfm	search_loading	正在加载中...	
+com.xgimi.doubanfm	search_option1	首拼音输入：如《极米》	
+com.xgimi.doubanfm	search_option2	拼音：	
+com.xgimi.doubanfm	search_option4	输入：	
+com.xgimi.doubanfm	search_recent	最近搜索	
+com.xgimi.doubanfm	search_tip	为你找到以下歌曲	
+com.xgimi.doubanfm	search_tip1	为您推荐以下内容	
+com.xgimi.doubanfm	searching	正在为您搜索	
+com.xgimi.doubanfm	searching_wait	相关内容，请耐心等等	
+com.xgimi.doubanfm	select_all	全选	
+com.xgimi.doubanfm	setting_title	背景设置	
+com.xgimi.doubanfm	shou	首)	
+com.xgimi.doubanfm	singer	歌手	
+com.xgimi.doubanfm	singer_no_album	无专辑	
+com.xgimi.doubanfm	singer_no_song	无歌曲	
+com.xgimi.doubanfm	song_artist	曲:	
+com.xgimi.doubanfm	song_lyricist	词:	
+com.xgimi.doubanfm	song_name_default	音乐随身听	
+com.xgimi.doubanfm	song_sheet	歌单	
+com.xgimi.doubanfm	sound_flac	无损音质	
+com.xgimi.doubanfm	sound_high	高品质 320k	
+com.xgimi.doubanfm	sound_loadname	默认下载音质	
+com.xgimi.doubanfm	sound_mode_collect_add	添加收藏	
+com.xgimi.doubanfm	sound_mode_collect_remove	删除收藏	
+com.xgimi.doubanfm	sound_mode_nologin	如需收藏请先完成音乐账户登录	
+com.xgimi.doubanfm	sound_normal	标准品质 128k	
+com.xgimi.doubanfm	sound_playname	默认播放音质	
+com.xgimi.doubanfm	sound_vip	极米音乐会员专享	
+com.xgimi.doubanfm	start_random_play	开启随心听	
+com.xgimi.doubanfm	sure	确定	
+com.xgimi.doubanfm	sure_activation	激活	
+com.xgimi.doubanfm	sure_delete	确定要删除吗？（同时删除本地文件）	
+com.xgimi.doubanfm	switch_tip	“菜单键”呼出歌单选择	
+com.xgimi.doubanfm	switch_tip2	“方向下”呼出主题选择	
+com.xgimi.doubanfm	switch_tip3	通过蓝牙连接播放您的音乐	
+com.xgimi.doubanfm	toast_no_local	无音乐文件，请联网后重试	
+com.xgimi.doubanfm	top	榜单	
+com.xgimi.doubanfm	topList	榜单	
+com.xgimi.doubanfm	topic	专题	
+com.xgimi.doubanfm	topic_singer	歌手：	
+com.xgimi.doubanfm	toplay_happyply	即将播放其他音频，音乐停止播放	
+com.xgimi.doubanfm	toplaymovie	即将播放视频，音乐将停止播放	
+com.xgimi.doubanfm	un_connect_blue_tooth_device	未连接蓝牙设备	
+com.xgimi.doubanfm	uncollected	未收藏	
+com.xgimi.doubanfm	unknown	未知歌手	
+com.xgimi.doubanfm	usb_is_out	磁盘已移除	
+com.xgimi.doubanfm	user_center	个人中心	
+com.xgimi.doubanfm	user_login	用户登录	
+com.xgimi.doubanfm	validity_time	有效期	
+com.xgimi.doubanfm	vip_active_hint	已有VIP激活码？请按遥控器“OK键”进行激活	
+com.xgimi.doubanfm	voice_hot	流行	
+com.xgimi.doubanfm	wocao	什么榜单呢我们我们我们	
+com.xgimi.doubanfm	youmaylike	你可能喜欢	
+com.xgimi.doubanfm	yuan	元	
+com.xgimi.doubanfm	yysxt	音乐随心听	
+com.xgimi.payview	_qrcode_load_error	加载失败	
+com.xgimi.payview	acivation_success	兑换成功!	
+com.xgimi.payview	activate_hint	已有VIP激活码？点击此处手动激活	
+com.xgimi.payview	activation_code_fail	卡密输入错误，您今天还有%s次输错机会	
+com.xgimi.payview	activation_code_input_fail_toomany	卡密输入错误次数太多，请24小时后重试	
+com.xgimi.payview	activation_code_input_toomany	卡密输入错误次数过多	
+com.xgimi.payview	activation_code_used	请进入芒果TV用户中心内“兑换卡”页面重新尝试	
+com.xgimi.payview	activation_code_used_way	芒果APP-用户中心-兑换卡	
+com.xgimi.payview	activation_fail	兑换失败(%s)	
+com.xgimi.payview	activation_fail_hint	客服电话：400-0028-960	
+com.xgimi.payview	activationing	兑换中...	
+com.xgimi.payview	active_off	激活码通道	
+com.xgimi.payview	auto_activation_fail	自动激活失败，请通过VIP兑换码手动激活	
+com.xgimi.payview	brvah_load_complete	点击加载更多	Click to load more
+com.xgimi.payview	brvah_load_end	没有更多数据	No more data
+com.xgimi.payview	brvah_load_failed	加载失败，请点我重试	load more failed
+com.xgimi.payview	brvah_loading	正在加载中...	Loading...
+com.xgimi.payview	buy_success	您已成功购买VIP	
+com.xgimi.payview	cancel	取消	
+com.xgimi.payview	complete	完成	
+com.xgimi.payview	error	出错了	
+com.xgimi.payview	error_code	错误码:%s	
+com.xgimi.payview	error_tips_7002	您已经是芒果VIP用户，请勿重复购买。	
+com.xgimi.payview	failed_to_load_mangguo_info	获取芒果信息失败	
+com.xgimi.payview	gimi_mangguo_vip_exchange	极米芒果VIP兑换	
+com.xgimi.payview	goback_try_again	返回重输	
+com.xgimi.payview	goto_mangguo	点击进入芒果TV	
+com.xgimi.payview	hint_input_activation_code	请输入兑换卡密码	
+com.xgimi.payview	input_code_error	兑换卡密错误	
+com.xgimi.payview	input_mg_code_hint	请输入芒果VIP会员激活码	
+com.xgimi.payview	is_vip	您已是尊贵的芒果VIP用户	
+com.xgimi.payview	load_error	加载出错了	
+com.xgimi.payview	manual_activation	手动激活	
+com.xgimi.payview	netabnormal	网络异常，请检查网络后重试	
+com.xgimi.payview	netdisconnect	网络不可用，请检查网络后重试	
+com.xgimi.payview	new_play	立即体验	
+com.xgimi.payview	no_network	无法连接网络，请检查网络后重试	
+com.xgimi.payview	no_networlk	网络未连接,请检查网络后重试	
+com.xgimi.payview	not_is_vip	立即开通芒果VIP，震撼视听不等待	
+com.xgimi.payview	not_vip_renew	立即开通，尊享VIP特权	
+com.xgimi.payview	open_money	支付金额：%s元	
+com.xgimi.payview	open_money_unit	元	
+com.xgimi.payview	open_vip	开通服务：	
+com.xgimi.payview	original_price	原价：%s元	
+com.xgimi.payview	pay_money	支付金额：	
+com.xgimi.payview	progress_wait_fail	网络异常	
+com.xgimi.payview	progress_wait_loading	正在加载中...	
+com.xgimi.payview	qrcode_load	二维码加载中	
+com.xgimi.payview	scan_pay	扫码支付	
+com.xgimi.payview	scan_wxqr_vip	支持微信扫码登录	
+com.xgimi.payview	sure	确定	
+com.xgimi.payview	viewing_coupon_count	观影券：%s	
+com.xgimi.payview	vip_12	12个月大屏精彩价:	
+com.xgimi.payview	vip_ad	免广告	
+com.xgimi.payview	vip_code	VIP兑换码:%s	
+com.xgimi.payview	vip_code_save_local	(VIP兑换码已保存在“%s”中)	
+com.xgimi.payview	vip_end_time	有效期:%s	
+com.xgimi.payview	vip_hd	超高清视频	
+com.xgimi.payview	vip_hollywood_movie	好莱坞影院	
+com.xgimi.payview	vip_login_hint1	扫码登录芒果账户 了解芒果影视VIP特权	
+com.xgimi.payview	vip_login_hint2	*微信扫码会自动注册一个芒果账号，若已有账号可通过主页芒果TV进入登陆后返回到此页面享受优惠	
+com.xgimi.payview	vip_newest_movie	最新院线电影	
+com.xgimi.payview	vip_recommond_movie	会员影片推荐	
+com.xgimi.payview	vip_renew	立即续费延长VIP有效期，尊贵特权不清零	
+com.xgimi.payview	vip_scan_hint	支持 微信 和 支付宝 扫码支付	
+com.xgimi.payview	vip_time	有效期：%s	
+com.xgimi.payview	vip_video	会员影片推荐	
+com.xgimi.payview	vip_viewing_coupon	免费观影券	
+com.xgimi.payview	vip_vip_movie	会员专享影视	
+com.xgimi.payview	yuan	 元	
+com.xgimi.skinmanager	app_name	主题商城	
+com.xgimi.stream.media	_scan_pay	%s扫码支付	
+com.xgimi.stream.media	acivation_success	激活成功!	
+com.xgimi.stream.media	activation	激活	
+com.xgimi.stream.media	activation_code_fail	激活码输入错误，您今天还有%s次输错机会	
+com.xgimi.stream.media	activation_code_input_fail_toomany	激活码输入错误次数太多，请24小时后重试	
+com.xgimi.stream.media	activation_code_input_toomany	激活码输入错误次数过多	
+com.xgimi.stream.media	activation_fail	激活失败(%s)	
+com.xgimi.stream.media	activation_fail_hint	客服电话：400-0028-960	
+com.xgimi.stream.media	activation_success	激活成功!	
+com.xgimi.stream.media	activationing	兑换中...	
+com.xgimi.stream.media	active_off	激活码通道	
+com.xgimi.stream.media	actors	演员：%s	
+com.xgimi.stream.media	all_video_and_update_video	(共%1$s课时，已更新至%2$s课)	
+com.xgimi.stream.media	all_video_num	(共%1$s课)	
+com.xgimi.stream.media	already_purchased	您已经购买过此课程	
+com.xgimi.stream.media	biao_qing	标清	
+com.xgimi.stream.media	bo_fang_di_zhi_wu_xiao	播放地址无效	
+com.xgimi.stream.media	bo_fang_shi_bai	播放失败	
+com.xgimi.stream.media	brvah_load_end	没有更多数据	No more data
+com.xgimi.stream.media	brvah_load_failed	加载失败，请点我重试	load more failed
+com.xgimi.stream.media	brvah_loading	正在加载中...	Loading...
+com.xgimi.stream.media	bt_fetch_price_failed	获取价格失败	
+com.xgimi.stream.media	buy_success	您已成功购买VIP	
+com.xgimi.stream.media	cancel	取消	
+com.xgimi.stream.media	category_filter_result	已筛选出 %s 部	
+com.xgimi.stream.media	complete	完成	
+com.xgimi.stream.media	contact_customer_service	联系客服	
+com.xgimi.stream.media	copy_right_from	视频版权来自	
+com.xgimi.stream.media	current_select_ji	选集  （%s）	
+com.xgimi.stream.media	detail_category	类型：%s	
+com.xgimi.stream.media	detail_no_preview	此视频不支持试看	
+com.xgimi.stream.media	di	第	
+com.xgimi.stream.media	dialog_ok	确定	
+com.xgimi.stream.media	directors	导演：%s	
+com.xgimi.stream.media	discount_price	抵扣：%s元	
+com.xgimi.stream.media	error	支付异常，请稍后重试	
+com.xgimi.stream.media	error_tips	若重试后仍有问题，请联系您购买设备的商家或拨打客服电话400-0028-960	
+com.xgimi.stream.media	error_toast_by_media_player	%s 播放异常	
+com.xgimi.stream.media	error_type	暂不支持该播放类型！	
+com.xgimi.stream.media	exit_tip	再按一次返回键退出播放器	
+com.xgimi.stream.media	faq	常见问题	
+com.xgimi.stream.media	fetch_play_link_failed	视频出了点问题，先看看其他视频也很精彩哦	
+com.xgimi.stream.media	fetch_product_failed	获取商品列表中...	
+com.xgimi.stream.media	fetch_qr_code_expired	二维码已失效	
+com.xgimi.stream.media	fetch_qr_code_failed	获取二维码失败	
+com.xgimi.stream.media	fetch_qr_code_loading	获取二维码中	
+com.xgimi.stream.media	fetch_study_record_failed	学习记录获取失败	
+com.xgimi.stream.media	fetch_user_info_failed	获取用户信息失败，请重试	
+com.xgimi.stream.media	fetch_user_info_timeout	获取用户信息超时	
+com.xgimi.stream.media	fitness_vip_input_cdkey_tip	请输入健身VIP激活码	
+com.xgimi.stream.media	free	免费	
+com.xgimi.stream.media	free_vip_already_get	您已领过7天免费VIP,现在续费立享减免哦！	
+com.xgimi.stream.media	free_vip_api_error	查询赠送信息失败,请稍后再试	
+com.xgimi.stream.media	free_vip_system_main_tips	恭喜你获得免费7天会员	
+com.xgimi.stream.media	free_vip_system_sub_tips	学龄前至初中的课程可任意观看哦	
+com.xgimi.stream.media	gao_qing	高清	
+com.xgimi.stream.media	goback_try_again	返回重输	
+com.xgimi.stream.media	has_pay	已购入	
+com.xgimi.stream.media	huo_qu_wang_ye_di_zhi_fail	获取协议失败	
+com.xgimi.stream.media	input_activation_code	请输入激活码	
+com.xgimi.stream.media	input_code_error	激活码错误	
+com.xgimi.stream.media	input_code_invalid	激活码无效	
+com.xgimi.stream.media	input_code_used	激活码已使用	
+com.xgimi.stream.media	ji	集	
+com.xgimi.stream.media	jin	集	
+com.xgimi.stream.media	ke_cheng_jie_shao	课程与讲师介绍	
+com.xgimi.stream.media	load_data_error	数据加载异常	
+com.xgimi.stream.media	load_error	加载出错了	
+com.xgimi.stream.media	loading	加载中...	
+com.xgimi.stream.media	menu0	按	
+com.xgimi.stream.media	menu1	【菜单键】	
+com.xgimi.stream.media	menu2	或	
+com.xgimi.stream.media	menu3	【下键】	
+com.xgimi.stream.media	menu4	选择清晰度和剧集	
+com.xgimi.stream.media	menu_audio	音效模式	
+com.xgimi.stream.media	menu_episode	播放列表	
+com.xgimi.stream.media	menu_hd_play	高清	
+com.xgimi.stream.media	menu_picture	图像模式	
+com.xgimi.stream.media	menu_sd_play	标清	
+com.xgimi.stream.media	menu_speed	倍速播放	
+com.xgimi.stream.media	menu_super_play	超清	
+com.xgimi.stream.media	menu_surface	画面比例	
+com.xgimi.stream.media	menu_vision	清晰度	
+com.xgimi.stream.media	minutes	分钟	
+com.xgimi.stream.media	need_buy_tips	请在购买会员后播放	
+com.xgimi.stream.media	netabnormal	无法连接网络，请检查网络后重试	
+com.xgimi.stream.media	netabnormal_code	网络异常(%s)	
+com.xgimi.stream.media	network_exception	网络异常，请检查网络后重试	
+com.xgimi.stream.media	network_wifiap	WiFi热点	
+com.xgimi.stream.media	no_content	没有内容	
+com.xgimi.stream.media	no_network	无法连接网络，请检查网络后重试	
+com.xgimi.stream.media	no_networlk	网络未连接,请检查网络后重试	
+com.xgimi.stream.media	not_vip_renew	立即开通，尊享VIP特权	
+com.xgimi.stream.media	online_playaddress_empty	播放地址获取失败	
+com.xgimi.stream.media	online_state_buy	立即购买	
+com.xgimi.stream.media	online_state_haltsale	已停售	
+com.xgimi.stream.media	online_state_living	正在直播中	
+com.xgimi.stream.media	online_state_lookback	回看	
+com.xgimi.stream.media	online_state_offline	直播已下线	
+com.xgimi.stream.media	online_state_play	观看	
+com.xgimi.stream.media	online_state_replay	限时回看中	
+com.xgimi.stream.media	online_state_waitting	等待开始	
+com.xgimi.stream.media	online_time	距离%s直播开始还有	
+com.xgimi.stream.media	online_tip_haltsale	抱歉，直播已停售	
+com.xgimi.stream.media	online_tip_living_end	抱歉，直播已结束	
+com.xgimi.stream.media	online_tip_no_start	直播尚未开始，请耐心等待	
+com.xgimi.stream.media	online_tip_offline	抱歉，直播已下线	
+com.xgimi.stream.media	online_tip_transcode	视频正在转码，请稍后再试	
+com.xgimi.stream.media	open_money	支付金额：%s元	
+com.xgimi.stream.media	open_money_unit	 元	
+com.xgimi.stream.media	original_price	原价：%s元	
+com.xgimi.stream.media	pay_money	支付金额：	
+com.xgimi.stream.media	pay_price	支付金额：   	
+com.xgimi.stream.media	pay_success	支付成功	
+com.xgimi.stream.media	payment_amount	支付金额：	
+com.xgimi.stream.media	payment_method	%s扫码支付	
+com.xgimi.stream.media	play_continue	按OK键，继续播放	
+com.xgimi.stream.media	play_next	播放下一集	
+com.xgimi.stream.media	play_url_empty	视频出了点问题，先看看其他视频也很精彩哦	
+com.xgimi.stream.media	play_video_exception	播放异常	
+com.xgimi.stream.media	player_full_tips	按[OK]键全屏	
+com.xgimi.stream.media	player_quit_tips	再按一次退出播放	
+com.xgimi.stream.media	present_price	折后：%s元	
+com.xgimi.stream.media	product_buy	￥%s 单片购买	
+com.xgimi.stream.media	product_discount_tips	%s元特惠	
+com.xgimi.stream.media	product_price_pre_order	￥%s 抢先预购	
+com.xgimi.stream.media	product_price_tips	%s元购买	
+com.xgimi.stream.media	progress_buffering	正在缓冲 %s	
+com.xgimi.stream.media	progress_wait_fail	出错啦！	
+com.xgimi.stream.media	progress_wait_loading	视频加载中，请稍候...	
+com.xgimi.stream.media	purchase_record	已购影片	
+com.xgimi.stream.media	purchase_success	购买成功	
+com.xgimi.stream.media	purchased	已购买	
+com.xgimi.stream.media	purchased_content	您已购买过此片	
+com.xgimi.stream.media	purchased_knowledge_no_data	暂无已购课程	
+com.xgimi.stream.media	purchased_no_data	无数据	
+com.xgimi.stream.media	purchased_video_no_data	暂无已购影片	
+com.xgimi.stream.media	qie_huan_qing_xi_du_shi_bai	切换清晰度失败	
+com.xgimi.stream.media	qrcode_load	二维码加载中	
+com.xgimi.stream.media	qrcode_load_fail	二维码加载失败	
+com.xgimi.stream.media	qrcode_loadding	正在加载二维码	
+com.xgimi.stream.media	recommend_title	看了《%s》也在看这些	
+com.xgimi.stream.media	scan_pay	扫码支付	
+com.xgimi.stream.media	server_error	当前网络异常，请稍后再试	
+com.xgimi.stream.media	start_continue	继续播放中，按OK键重新播放	
+com.xgimi.stream.media	starting	即将播放	
+com.xgimi.stream.media	study_record	学习记录	
+com.xgimi.stream.media	study_record_empty	无学习记录	
+com.xgimi.stream.media	sure	确定	
+com.xgimi.stream.media	tab_default	我的	
+com.xgimi.stream.media	tabedit_default	恢复默认	
+com.xgimi.stream.media	td_detail_actors	演员：	
+com.xgimi.stream.media	td_detail_buy	购买	
+com.xgimi.stream.media	td_detail_buy_vip	购买课程	
+com.xgimi.stream.media	td_detail_buy_vip_cibn	购买会员	
+com.xgimi.stream.media	td_detail_buyed	已购买	
+com.xgimi.stream.media	td_detail_buyed_toast	您已购买，可直接观看	
+com.xgimi.stream.media	td_detail_category	类型：	
+com.xgimi.stream.media	td_detail_description	简介：	
+com.xgimi.stream.media	td_detail_directors	导演：	
+com.xgimi.stream.media	td_detail_get_play_url_fail	播放地址获取失败	
+com.xgimi.stream.media	td_detail_play	播放	
+com.xgimi.stream.media	td_detail_recommd_title	相关推荐	
+com.xgimi.stream.media	td_detail_score	分	
+com.xgimi.stream.media	td_detail_supportmode	支持模式：	
+com.xgimi.stream.media	td_detail_time	时长：%s分钟	
+com.xgimi.stream.media	td_detail_tv	第%s集	
+com.xgimi.stream.media	td_detail_tv_count	集数：%s课	
+com.xgimi.stream.media	td_detail_tv_count_ji	集数：%s集	
+com.xgimi.stream.media	td_detail_variety	第%s期	
+com.xgimi.stream.media	td_preview	试看	
+com.xgimi.stream.media	teacher_introduce	讲师介绍	
+com.xgimi.stream.media	text_menu_audio_effect_ai	AI模式	
+com.xgimi.stream.media	text_menu_audio_effect_auto	自动	
+com.xgimi.stream.media	text_menu_audio_effect_game	游戏	
+com.xgimi.stream.media	text_menu_audio_effect_karaoke	K歌	
+com.xgimi.stream.media	text_menu_audio_effect_movie	观影	
+com.xgimi.stream.media	text_menu_audio_effect_music	音乐	
+com.xgimi.stream.media	text_menu_audio_effect_news	新闻	
+com.xgimi.stream.media	text_menu_audio_effect_normal	标准	
+com.xgimi.stream.media	text_menu_audio_effect_sport	户外	
+com.xgimi.stream.media	text_menu_audio_effect_sports	体育	
+com.xgimi.stream.media	text_menu_video_img_football	足球	
+com.xgimi.stream.media	text_menu_video_img_mode	图像模式	
+com.xgimi.stream.media	text_menu_video_img_mode_ai	AI模式	
+com.xgimi.stream.media	text_menu_video_img_mode_auto	自动	
+com.xgimi.stream.media	text_menu_video_img_mode_bright	明亮	
+com.xgimi.stream.media	text_menu_video_img_mode_game	游戏	
+com.xgimi.stream.media	text_menu_video_img_mode_natural	自然	
+com.xgimi.stream.media	text_menu_video_img_mode_office	办公	
+com.xgimi.stream.media	text_menu_video_img_mode_soft	柔和	
+com.xgimi.stream.media	text_menu_video_img_mode_standard	观影	
+com.xgimi.stream.media	text_menu_video_img_mode_user	自定义	
+com.xgimi.stream.media	text_menu_video_ratio_auto	自动	
+com.xgimi.stream.media	text_menu_video_ratio_justscan	原始大小	
+com.xgimi.stream.media	text_menu_video_ratio_movie	去黑边	
+com.xgimi.stream.media	text_menu_video_ratio_subtitle	留字幕	
+com.xgimi.stream.media	text_purchased_title_knowledge	已购买课程	
+com.xgimi.stream.media	text_purchased_title_video	已购买影片	
+com.xgimi.stream.media	tip	提示	
+com.xgimi.stream.media	tip_apk_uninstall	应用卸载成功	
+com.xgimi.stream.media	tip_checkauthing	正在鉴权，请稍候...	
+com.xgimi.stream.media	tip_clear_temp_fail	清空缓存失败	
+com.xgimi.stream.media	tip_no_install_usercenter	缺少个人中心，请安装或升级系统版本后重试	
+com.xgimi.stream.media	tip_no_install_videoplayer	缺少必要组件，正在尝试下载中，请稍后重试	
+com.xgimi.stream.media	tip_no_network	网络不可用，请检查网络后重试	
+com.xgimi.stream.media	tip_params_error	参数异常	
+com.xgimi.stream.media	tip_usercenter_version_too_low	个人中心版本过低，请升级版本后重试	
+com.xgimi.stream.media	toast_already_1080	画质已为1080P	
+com.xgimi.stream.media	toast_already_4k	画质已为4K	
+com.xgimi.stream.media	toast_already_quality	画质已为%s	
+com.xgimi.stream.media	toast_index_is_playing	正在播放第%s集	
+com.xgimi.stream.media	toast_no_next	已是最后一集	
+com.xgimi.stream.media	toast_no_previous	已是第一集	
+com.xgimi.stream.media	toast_no_wanted_episode	无对应集数	
+com.xgimi.stream.media	toast_play_complete	播放完毕	
+com.xgimi.stream.media	toast_playing_next	即将播放下一集	
+com.xgimi.stream.media	toast_playing_previous	即将播放上一集	
+com.xgimi.stream.media	toast_reset_to_1080	清晰度切换中	
+com.xgimi.stream.media	toast_reset_to_4k	清晰度切换中	
+com.xgimi.stream.media	toast_reset_to_quality	清晰度切换中	
+com.xgimi.stream.media	toast_too_much_to_seek	跳转太多了	
+com.xgimi.stream.media	total_episode	(共%1$s集)	
+com.xgimi.stream.media	total_episode_and_update_video	(共%1$s集，已更新至%2$s集)	
+com.xgimi.stream.media	unknown	未知	
+com.xgimi.stream.media	unlogin	未登录	
+com.xgimi.stream.media	user_info_get_failed	登录失败，请检查网络后重试	
+com.xgimi.stream.media	user_know	我知道了	
+com.xgimi.stream.media	video_author_introduce	讲师介绍	
+com.xgimi.stream.media	video_detail_current_play_ke	第%s课	
+com.xgimi.stream.media	video_detail_recommend_knowledge_xgimi_tv	相关推荐	
+com.xgimi.stream.media	video_introduce	课程介绍	
+com.xgimi.stream.media	video_list	剧集列表  	
+com.xgimi.stream.media	video_list_course	课程列表  	
+com.xgimi.stream.media	vip_buy_before_play	请在购买会员后播放	
+com.xgimi.stream.media	vip_buy_vip_success	您已成功开通极米4K会员服务	
+com.xgimi.stream.media	vip_cannot_vip	未开通4K会员	
+com.xgimi.stream.media	vip_cdkey_cancel	取消激活	
+com.xgimi.stream.media	vip_cdkey_error	激活码无效	
+com.xgimi.stream.media	vip_cdkey_ok	激活	
+com.xgimi.stream.media	vip_cdkey_used	激活码已使用	
+com.xgimi.stream.media	vip_endtime	4K会员有效期：%s	
+com.xgimi.stream.media	vip_error_tip	出错啦	
+com.xgimi.stream.media	vip_input_cdkey_tip	请输入4K极米VIP激活码	
+com.xgimi.stream.media	vip_is_vip_tip	续费延长VIP有效期，尊贵特权不清零	
+com.xgimi.stream.media	vip_no_vip_tip	立即开启4K会员，极清画质丝毫必现	
+com.xgimi.stream.media	vip_ok	已有VIP激活码，请按遥控器“OK键”进行激活	
+com.xgimi.stream.media	vip_online_buyed	您已成功购买	
+com.xgimi.stream.media	vip_pay_error	支付成功，服务器出错，请联系我们人工服务	
+com.xgimi.stream.media	vip_phone	联系电话：400-0028-960	
+com.xgimi.stream.media	vip_qrcode_load_error	加载失败	
+com.xgimi.stream.media	vip_renew	续费会员	
+com.xgimi.stream.media	vip_renew_vip_success	您已成功续费极米4K会员服务	
+com.xgimi.stream.media	vip_time	有效期：%s	
+com.xgimi.stream.media	vip_time_to	有效期至：%s	
+com.xgimi.stream.media	vip_timeout	会员已过期	
+com.xgimi.stream.media	vip_to_cdkey	激活码激活	
+com.xgimi.stream.media	vip_vipinfo_load_fail	获取会员信息失败	
+com.xgimi.stream.media	vip_vipinfo_loadding	正在获取会员信息...	
+com.xgimi.stream.media	waiting_update_vip_info	权益发放中	
+com.xgimi.stream.media	wang_luo_wei_lian_jie	网络未连接	
+com.xgimi.stream.media	widget_dialog_loading	正在加载中…	
+com.xgimi.stream.media	xbase_error_ConnectException	网络好像有问题，错误码：%s	
+com.xgimi.stream.media	xbase_error_SSLHandshakeException	请查看系统时间日期是否正确，错误码：%s	
+com.xgimi.stream.media	xbase_error_SocketTimeoutException	网络请求超时，错误码：%s	
+com.xgimi.stream.media	xbase_error_TimeoutException	网络连接超时，错误码：%s	
+com.xgimi.stream.media	xbase_error_default	未知异常，错误码：%s	
+com.xgimi.stream.media	xbase_error_no_network	未连接网络，错误码：%s	
+com.xgimi.stream.media	xbase_error_no_space	存储空间不足，错误码：%s	
+com.xgimi.stream.media	xbase_error_service_exception	服务器开小差了，错误码：%s	
+com.xgimi.stream.media	xbase_no_data	暂无数据	
+com.xgimi.stream.media	xbase_progress_wait_fail	出错啦！	
+com.xgimi.stream.media	xbase_to_connect_network	连接网络	
+com.xgimi.stream.media	xbase_to_retry	重试	
+com.xgimi.stream.media	xgimi_film_library	极米影片库	
+com.xgimi.stream.media	xgimi_user_agreement	《极米用户服务协议》	
+com.xgimi.stream.media	xiang_guan_zuo_pin	相关作品	
+com.xgimi.stream.media	xu_bo	续播	
+com.xgimi.stream.media	xuan_ji	选集	
+com.xgimi.stream.media	yifang_fetch_grade_failed	获取年级信息失败，请重试	
+com.xgimi.stream.media	yifang_fetch_user_edu_failed	获取用户信息失败，请重试	
+com.xgimi.stream.media	yifang_get_vip_gift	7天教育会员已免费得到	
+com.xgimi.stream.media	yifang_selected_grade_failed	选择年级失败，请重试	
+com.xgimi.stream.media	yifang_selected_grade_success	选择年级成功	
+com.xgimi.user	acivation_success	兑换成功!	
+com.xgimi.user	activate_hint	已有VIP激活码？点击此处手动激活	
+com.xgimi.user	activation_code_fail	卡密输入错误，您今天还有%s次输错机会	
+com.xgimi.user	activation_code_input_fail_toomany	卡密输入错误次数太多，请24小时后重试	
+com.xgimi.user	activation_code_input_toomany	卡密输入错误次数过多	
+com.xgimi.user	activation_code_used	请进入芒果TV用户中心内“兑换卡”页面重新尝试	
+com.xgimi.user	activation_code_used_way	芒果APP-用户中心-兑换卡	
+com.xgimi.user	activation_fail	兑换失败(%s)	
+com.xgimi.user	activation_fail_hint	客服电话：400-0028-960	
+com.xgimi.user	activationing	兑换中...	
+com.xgimi.user	active_off	激活码通道	
+com.xgimi.user	app_name	个人中心	
+com.xgimi.user	auto_activation_fail	自动激活失败，请通过VIP兑换码手动激活	
+com.xgimi.user	autofail	备份失败，请重新备份	
+com.xgimi.user	backup_toast	备份成功	
+com.xgimi.user	bangding	请绑定极米账号	
+com.xgimi.user	beifen	云备份	
+com.xgimi.user	beifen_action_hint	正在备份，请稍候...	
+com.xgimi.user	beifen_hint	云备份可将您的网络设置和已安装应用列表备份至云端可在其他极米设备进行同步	
+com.xgimi.user	beifen_new	立即备份	
+com.xgimi.user	beifennow	正在备份中	
+com.xgimi.user	beifenzhong	正在备份中，请稍后还原	
+com.xgimi.user	brvah_load_end	没有更多数据	No more data
+com.xgimi.user	brvah_load_failed	加载失败，请点我重试	load more failed
+com.xgimi.user	brvah_loading	正在加载中...	Loading...
+com.xgimi.user	buy_success	您已成功购买极米VIP	
+com.xgimi.user	cancel	取消	
+com.xgimi.user	cancel_toast	取消	
+com.xgimi.user	care_for_the_new	质量故障直接换新	
+com.xgimi.user	care_guarantee_increased	维修期增加%s年	
+com.xgimi.user	care_qr_hint	扫描二维码激活进入绑定流程	
+com.xgimi.user	care_title	极米Care+服务计划	
+com.xgimi.user	check_data	检查到网络备份数据，是否还原到本机	
+com.xgimi.user	checking	设备校验中...	
+com.xgimi.user	checking_error	设备校验失败...	
+com.xgimi.user	complete	完成	
+com.xgimi.user	content_has_expired	内容已到期	
+com.xgimi.user	data_backup	数据备份中	
+com.xgimi.user	data_reduction	数据还原中	
+com.xgimi.user	default_user_name	GIMI先生	
+com.xgimi.user	error	出错了	
+com.xgimi.user	error_code	错误码:%s	
+com.xgimi.user	error_tips_7002	您已经是芒果VIP用户，请勿重复购买。	
+com.xgimi.user	exit_login	退出登录	
+com.xgimi.user	failed_to_load_mangguo_info	获取芒果信息失败	
+com.xgimi.user	forum	极友论坛	
+com.xgimi.user	forum_hint1	通过下方链接访问极米论坛，查看相关产品帮助或是发帖寻求帮助	
+com.xgimi.user	gimi_mangguo_vip_exchange	极米芒果VIP兑换	
+com.xgimi.user	goback_try_again	返回重输	
+com.xgimi.user	goto_mangguo	点击进入芒果TV	
+com.xgimi.user	hint_input_activation_code	请输入兑换卡密码	
+com.xgimi.user	huanyuan_action_hint	正在还原，请稍候...	
+com.xgimi.user	huanyuan_new	立即还原	
+com.xgimi.user	huanyuannow	正在还原中....	
+com.xgimi.user	huanyuanzhong	正在还原中，请稍候...	
+com.xgimi.user	input_code_error	输入的兑换卡密错误	
+com.xgimi.user	input_mg_code_hint	请输入芒果VIP会员激活码	
+com.xgimi.user	is_vip	您已是尊贵的极米VIP用户	
+com.xgimi.user	knowledge_pay_record	课程购买记录	
+com.xgimi.user	last_beifen_time	上一次备份时间：%s	
+com.xgimi.user	last_huanyuan_time	上一次还原时间：%s	
+com.xgimi.user	lately_beifen_time	最新备份：%s	
+com.xgimi.user	load_error	加载出错了	
+com.xgimi.user	loading	加载中...	
+com.xgimi.user	login_hint	即刻登录极米账号，享受更多会员服务	
+com.xgimi.user	login_info_overdue	登录信息失效，请重新登录	
+com.xgimi.user	login_success	登录成功	
+com.xgimi.user	login_tishi	云备份需要登录极米账号，是否现在登录	
+com.xgimi.user	logo	请先登录	
+com.xgimi.user	logout_hint	是否确定退出登录?	
+com.xgimi.user	logouting	正在退出...	
+com.xgimi.user	manual_activation	手动激活	
+com.xgimi.user	netabnormal	网络异常，请检查网络后重试	
+com.xgimi.user	netdisconnect	网络不可用，请检查网络后重试	
+com.xgimi.user	network_check	请检查网络连接	
+com.xgimi.user	new_play	立即体验	
+com.xgimi.user	no_login	未登录	
+com.xgimi.user	no_network	无法连接网络，请检查网络后重试	
+com.xgimi.user	no_networlk	网络未连接,请检查网络后重试	
+com.xgimi.user	no_password	无密码	
+com.xgimi.user	no_pay_record	无购买记录	
+com.xgimi.user	no_vip	尚未开通VIP	
+com.xgimi.user	not_is_vip	立即开通极米VIP，震撼视听不等待	
+com.xgimi.user	not_vip_renew	尊享VIP特权	
+com.xgimi.user	onbacking	正在备份/还原中，请稍候...	
+com.xgimi.user	open_money	支付金额：	
+com.xgimi.user	open_money_unit	元	
+com.xgimi.user	open_vip	开通服务：	
+com.xgimi.user	original_price	 原价: 	
+com.xgimi.user	pay_money	支付金额：	
+com.xgimi.user	pay_record	购买记录	
+com.xgimi.user	payment_method	%s扫码支付	
+com.xgimi.user	please_connect_network	请连接网络	
+com.xgimi.user	progress_wait_fail	网络异常	
+com.xgimi.user	progress_wait_loading	正在加载中...	
+com.xgimi.user	qq	QQ交流群	
+com.xgimi.user	qq_hint1	加入极米官方讨论群，与各位极友探讨更多产品功能	
+com.xgimi.user	qq_hint2	极米官方1-4群(已满)	
+com.xgimi.user	qq_hint3	极米官方5群：300396932	
+com.xgimi.user	qq_hint4	极米官方6群：179194074	
+com.xgimi.user	qrcode_load	二维码加载中	
+com.xgimi.user	reduction_toast	还原成功	
+com.xgimi.user	reductionfail	还原失败，请重试	
+com.xgimi.user	scan_pay	扫码支付	
+com.xgimi.user	scan_wxqr_text	请用极米APP/微信扫描二维码登录	
+com.xgimi.user	scan_wxqr_title	登录极米账号	
+com.xgimi.user	scan_wxqr_vip	支持微信扫码登录	
+com.xgimi.user	sdka	请先插入sd卡	
+com.xgimi.user	sure	确定	
+com.xgimi.user	time	上次备份时间	
+com.xgimi.user	time_huanhuan	上次还原时间	
+com.xgimi.user	turn	开	
+com.xgimi.user	turn_off	关	
+com.xgimi.user	unlogin	未登录	
+com.xgimi.user	user_logouted	用户已经退出	
+com.xgimi.user	user_no_backup	当前用户未备份	
+com.xgimi.user	viewing_coupon_count	观影券：%s	
+com.xgimi.user	vip_12	12个月大屏精彩价:	
+com.xgimi.user	vip_12_mouth	VIP12个月	
+com.xgimi.user	vip_ad	免广告	
+com.xgimi.user	vip_code	VIP兑换码:%s	
+com.xgimi.user	vip_code_save_local	(VIP兑换码已保存在“%s”中)	
+com.xgimi.user	vip_end_time	有效期:%s	
+com.xgimi.user	vip_hd	超高清视频	
+com.xgimi.user	vip_hollywood_movie	好莱坞影院	
+com.xgimi.user	vip_login_hint1	扫码登录芒果账户 了解芒果影视VIP特权	
+com.xgimi.user	vip_login_hint2	*微信扫码会自动注册一个芒果账号，若已有账号可通过主页芒果TV进入登录后返回到此页面享受优惠	
+com.xgimi.user	vip_manager	极米VIP管理	
+com.xgimi.user	vip_newest_movie	最新院线电影	
+com.xgimi.user	vip_qrcode_load_error	加载失败	
+com.xgimi.user	vip_recommond_movie	会员影片推荐	
+com.xgimi.user	vip_renew	立即续费延长VIP有效期，尊贵特权不清零	
+com.xgimi.user	vip_scan_hint	支持微信扫码支付	
+com.xgimi.user	vip_time	有效期:%s	
+com.xgimi.user	vip_video	会员影片推荐	
+com.xgimi.user	vip_viewing_coupon	免费观影券	
+com.xgimi.user	vip_vip_movie	会员专享影视	
+com.xgimi.user	weixin	微信公众号	
+com.xgimi.user	weixin_assistant	微信服务顾问	
+com.xgimi.user	weixin_hint	请通过微信扫描二维码关注极米公众号反馈您的建议	
+com.xgimi.user	xgimi_care	极米Care+	
+com.xgimi.user	yuan	 元	
+com.xgimi.user	yunbeifen	云备份设置	

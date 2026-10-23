@@ -1,0 +1,734 @@
+# Bang dich them cho may chieu XGIMI dung firmware IRONMAN (XGIMI_IRONMAN_XJ03D, Android 8.0, MSD848, GMUI 4.3;
+# mot firmware cho nhieu doi may): cac cau tieng Trung chua co trong dich.tsv, dich-cau-dai.tsv, dohko-apps-dich*.tsv,
+# rs10-apps-dich.tsv. Chu Trung<TAB>tieng Viet. Giu nguyen %s, %d, %1$s, \n, @, ngoac kep va khoang trang dau/cuoi
+# (nhieu cau la manh ghep quanh hinh nut bam).
+请在外接音箱上调节音量	Hãy chỉnh âm lượng trên loa ngoài
+HDMI下不支持调节光纤/ARC音量	Không chỉnh được âm lượng cổng quang/ARC khi dùng HDMI
+应用崩溃了，表担心，上报我们，你还可以登录官方论坛(bbs.xgimi.com)进行吐槽	Ứng dụng bị lỗi. Đừng lo, lỗi đã được gửi cho hãng; bạn cũng có thể góp ý trên diễn đàn bbs.xgimi.com
+请关闭环境光自适应再调整	Hãy tắt thích ứng ánh sáng môi trường rồi mới chỉnh
+移动设备至投影距离为1.5-2米	Đặt máy chiếu cách màn chiếu 1,5–2 m
+若自动梯形校正后画面不是矩形，请使用梯形校正校准	Nếu hình không phải hình chữ nhật sau khi chỉnh hình thang tự động, hãy hiệu chuẩn hình thang
+开启后将在稳定版本基础上自动升级轻量组件，使系统保持最佳兼容性和安全性	Khi bật, máy tự cập nhật các thành phần nhỏ trên nền bản ổn định để hệ thống tương thích và an toàn nhất
+开启后系统将自动更新优化组件，让您的设备保持最新软件状态，确认要关闭吗？	Khi bật, hệ thống tự cập nhật các thành phần để máy luôn có phần mềm mới nhất. Tắt thật không?
+可用空间	Dung lượng trống
+卧室	Phòng ngủ
+蓝牙连接失败，请重试	Kết nối Bluetooth thất bại, hãy thử lại
+蓝牙已连接	Đã kết nối Bluetooth
+蓝牙配对失败，请重试	Ghép nối Bluetooth thất bại, hãy thử lại
+蓝牙配对请求	Yêu cầu ghép nối Bluetooth
+蓝牙已配对	Đã ghép nối Bluetooth
+抹除数据和设置	Xoá dữ liệu và cài đặt
+此操作将删除系统设置和数据文件，保留已下载的应用，是否继续？	Thao tác này sẽ xoá cài đặt hệ thống và tệp dữ liệu, giữ lại ứng dụng đã tải. Tiếp tục?
+色彩模式	Chế độ màu
+会议室	Phòng họp
+链接	Kết nối
+校准为当前角度	Hiệu chuẩn theo góc hiện tại
+不支持	Không hỗ trợ
+对焦校正还原	Đặt lại hiệu chỉnh lấy nét
+支持	Hỗ trợ
+延迟	Độ trễ
+请输入设备名称	Nhập tên thiết bị
+设备名称修改后，与其相关的服务要重启后更新，确认立即重启吗？	Đổi tên thiết bị cần khởi động lại để các dịch vụ liên quan cập nhật. Khởi động lại ngay?
+推荐正投画面后进入游戏模式	Nên chiếu thẳng rồi mới vào chế độ trò chơi
+使用游戏模式以降低图像延迟	Dùng chế độ trò chơi để giảm độ trễ hình
+高帧率	Tốc độ khung hình cao
+缩放不会影响分辨率	Thu phóng không làm giảm độ phân giải
+【方向键】调整 【返回键】返回	[Phím mũi tên] chỉnh [Quay lại] trở về
+缩放可能会影响分辨率	Thu phóng có thể làm giảm độ phân giải
+语音	Giọng nói
+女声	Giọng nữ
+男声	Giọng nam
+根据环境光智能调整画面亮度和色彩，以达到最佳效果	Tự điều chỉnh độ sáng và màu hình theo ánh sáng phòng để có hình đẹp nhất
+关闭护眼功能后，设备将无法感应到接近的人或物体，高亮度的光线可能会给您带来损伤。是否确认继续关闭？	Khi tắt bảo vệ mắt, máy sẽ không nhận biết người hoặc vật đến gần, ánh sáng mạnh có thể gây hại cho mắt. Vẫn tắt?
+修改失败，请稍后重试	Thay đổi thất bại, hãy thử lại sau
+对焦校正	Hiệu chỉnh lấy nét
+还原对焦数据	Khôi phục dữ liệu lấy nét
+是否使用游戏模式	Dùng chế độ trò chơi?
+适度降低画面延迟，保证最佳分辨率	Giảm vừa phải độ trễ, giữ độ phân giải tốt nhất
+优先降低画面延迟，提高画面刷新率不支持梯形校正，使用时请正投画面	Ưu tiên giảm độ trễ và tăng tần số quét; không hỗ trợ chỉnh hình thang, hãy chiếu thẳng khi dùng
+提高画面刷新率，适度降低画面延迟	Tăng tần số quét, giảm vừa phải độ trễ
+画面延迟更低，但不支持“手动校正”	Độ trễ thấp hơn nhưng không hỗ trợ "Hiệu chỉnh thủ công"
+“手动梯形校正”与“画面缩放”	"Chỉnh hình thang thủ công" và "Thu phóng hình"
+NFC触碰	Chạm NFC
+一碰就听	Chạm để nghe
+手机轻碰NFC区域即可连接蓝牙，仅支持带有NFC功能的安卓手机（5.1.1及以上版本）	Chạm điện thoại vào vùng NFC để kết nối Bluetooth; chỉ hỗ trợ điện thoại Android có NFC (5.1.1 trở lên)
+一碰就看	Chạm để xem
+省电模式	Chế độ tiết kiệm điện
+投影自动开机	Tự bật máy chiếu
+HDMI设备可控制投影开关机	Thiết bị HDMI có thể bật/tắt máy chiếu
+设备控制	Điều khiển thiết bị
+一键控制HDMI连接的设备（关闭后音频ARC输出将不可用）	Điều khiển thiết bị nối HDMI bằng một nút (tắt thì không dùng được đầu ra âm thanh ARC)
+系统信息	Thông tin hệ thống
+全局缩放	Thu phóng toàn bộ
+HDMI图像比例	Tỉ lệ khung hình HDMI
+视频	Video
+画面	Hình ảnh
+快速开机	Khởi động nhanh
+水平缩放	Thu phóng ngang
+HDMI画面刷新率	Tần số quét HDMI
+智能画质调节	Tự điều chỉnh chất lượng hình
+无极变焦	Thu phóng liên tục
+加入软件公测	Tham gia thử nghiệm phần mềm
+说明：加入公测后我们会将搭载最新功能的软件推送到您的设备，您可以通过论坛发帖将您的使用感受和建议分享，我们会不定期挑选优质回复给予奖励，您的建议会让我们产品做的更好	Ghi chú: khi tham gia thử nghiệm, máy sẽ nhận phần mềm có tính năng mới nhất. Bạn có thể chia sẻ cảm nhận và góp ý trên diễn đàn; hãng sẽ chọn góp ý hay để tặng thưởng
+保持现状	Giữ nguyên
+是否使用3D模式	Dùng chế độ 3D?
+使用3D模式将取消画面校正并关闭自动校正	Chế độ 3D sẽ bỏ hiệu chỉnh hình và tắt hiệu chỉnh tự động
+调整设备对焦基准以支持最佳对焦效果	Chỉnh chuẩn lấy nét của máy để lấy nét tốt nhất
+*在系统设置-画面校正设置中可关闭自动校正	*Có thể tắt hiệu chỉnh tự động trong Cài đặt hệ thống - Hiệu chỉnh hình
+【OK】选点 【方向键】调整 【菜单键】恢复默认 【返回键】返回	[OK] chọn điểm [Mũi tên] chỉnh [Menu] mặc định [Quay lại] trở về
+八点校正	Hiệu chỉnh 8 điểm
+实验室功能	Tính năng thử nghiệm
+若自动梯形校正后画面歪斜，请使用陀螺仪水平校准	Nếu hình bị nghiêng sau khi chỉnh hình thang tự động, hãy hiệu chuẩn cân bằng con quay
+切换功能	Đổi chức năng
+密码长度应大于等于8个字符	Mật khẩu phải có ít nhất 8 ký tự
+清除配对后，您的音乐控制器需要重新进行配对	Sau khi xoá ghép nối, bộ điều khiển nhạc phải ghép nối lại
+我的极米	XGIMI của tôi
+%s输入不合法	%s không hợp lệ
+请输入 %s 的密码	Nhập mật khẩu của %s
+忘记该网络	Quên mạng này
+清除配对后，您的遥控器需要重新进行配对	Sau khi xoá ghép nối, điều khiển phải ghép nối lại
+清除遥控器配对信息	Xoá ghép nối điều khiển
+密码至少应包含8个字符	Mật khẩu phải có ít nhất 8 ký tự
+密码至少应包含5个字符	Mật khẩu phải có ít nhất 5 ký tự
+无损	Không giảm chất lượng
+调整画面大小	Chỉnh kích thước hình
+办公室	Văn phòng
+无损缩放已完成，继续缩小可能会影响分辨率	Đã thu nhỏ hết mức không giảm chất lượng, thu nhỏ tiếp có thể làm giảm độ phân giải
+亮度与色彩模式	Độ sáng và chế độ màu
+快速设置	Cài đặt nhanh
+稍后	Để sau
+刷新率	Tần số quét
+恢复画面形状至未做画面校正的状态	Đưa hình về trạng thái chưa hiệu chỉnh
+分辨率	Độ phân giải
+有损	Giảm chất lượng
+恢复出厂设置	Khôi phục cài đặt gốc
+此操作将删除系统设置和数据文件，同时删除已下载的应用，是否继续？	Thao tác này sẽ xoá cài đặt hệ thống, tệp dữ liệu và cả ứng dụng đã tải. Tiếp tục?
+放大	Phóng to
+缩小	Thu nhỏ
+平移画面至最佳位置	Dịch hình đến vị trí tốt nhất
+选取网络	Chọn mạng
+中央的圆为正圆时屏幕比例符合系统设置	Khi vòng tròn ở giữa tròn đều, tỉ lệ hình đúng với cài đặt
+HDMI版本	Phiên bản HDMI
+户外	Ngoài trời
+声音输出格式	Định dạng đầu ra âm thanh
+语音差异化检索	Tìm kiếm theo giọng nói riêng
+语音搜索内容时，系统将根据声音特征进行差异化推荐	Khi tìm bằng giọng nói, hệ thống gợi ý riêng theo đặc điểm giọng
+确认使用3D模式	Xác nhận dùng chế độ 3D
+3D模式下至臻120Hz暂时无法生效	Chế độ 120 Hz chưa dùng được trong chế độ 3D
+时间显示	Hiện giờ
+画面尺寸	Kích thước hình
+正在有线同屏中	Đang chiếu màn hình qua dây
+确定开启Turbo Light？	Bật Turbo Light?
+开启后将智能增强画面亮度。环境光过亮时，会缩放画面以保证最佳亮度。	Khi bật, máy tự tăng độ sáng hình. Khi phòng quá sáng, hình sẽ thu nhỏ để giữ độ sáng tốt nhất.
+智能调节投影亮度，同时会调整画面大小	Tự chỉnh độ sáng chiếu, kích thước hình cũng thay đổi theo
+电量不足50%，无法升级	Pin dưới 50%, không nâng cấp được
+系统即将更新，更新将会删除你的设置和文件，是否确认该操作？	Hệ thống sắp cập nhật; cập nhật sẽ xoá cài đặt và tệp của bạn. Tiếp tục?
+请将升级文件存放于FAT32格式的U盘根目录中，插入设备USB2.0接口	Hãy chép tệp nâng cấp vào thư mục gốc của USB định dạng FAT32 và cắm vào cổng USB 2.0 của máy
+请将升级文件存放于FAT32格式的U盘根目录中，插入设备USB2.0接口 （包名被修改后将不能被读取）	Hãy chép tệp nâng cấp vào thư mục gốc của USB định dạng FAT32 và cắm vào cổng USB 2.0 của máy (đổi tên tệp sẽ không đọc được)
+系统即将进行更新，更新不会删除你的设置和文件,是否确认该操作?	Hệ thống sắp cập nhật; cập nhật không xoá cài đặt và tệp của bạn. Tiếp tục?
+将升级文件存放于FAT32格式的U盘根目录中，并插入设备USB2.0接口(包名被修改将不能被读取)	Chép tệp nâng cấp vào thư mục gốc của USB định dạng FAT32 và cắm vào cổng USB 2.0 của máy (đổi tên tệp sẽ không đọc được)
+垂直缩放	Thu phóng dọc
+图像比例	Tỉ lệ khung hình
+通过光学变焦缩放画面，缩放不会影响画质效果	Thu phóng bằng ống kính quang học, không làm giảm chất lượng hình
+声纹钥匙	Khoá giọng nói
+当系统识别到儿童使用时将自动开启观看管控	Khi nhận ra trẻ em đang dùng, hệ thống tự bật kiểm soát xem
+网络设置页	Trang cài đặt mạng
+的极米	XGIMI
+画面不清晰？按"@"自动对焦	Hình chưa nét? Bấm "@" để lấy nét tự động
+还原将恢复上一次备份的网络设置和已安装应用，此操作不会删除本机已保存的网络和已安装的应用，确定还原吗？	Khôi phục sẽ đưa lại cài đặt mạng và ứng dụng từ lần sao lưu trước, không xoá mạng và ứng dụng đang có. Khôi phục?
+取消自动续费失败	Huỷ tự gia hạn thất bại
+取消自动续费成功	Đã huỷ tự gia hạn
+正在处理中，部分续费状态将延迟更新	Đang xử lý, một số trạng thái gia hạn sẽ cập nhật sau
+正在处理中，请稍后…	Đang xử lý, vui lòng chờ…
+建议关机时选择休眠模式，支持GMAX影片下载	Nên chọn chế độ ngủ khi tắt máy để vẫn tải được phim GMAX
+我再想想	Để tôi nghĩ lại
+再想想	Nghĩ lại
+解除失败！请稍后再试…	Huỷ liên kết thất bại! Hãy thử lại sau…
+解除成功！将自动返回…	Đã huỷ liên kết! Sẽ tự quay lại…
+正在更新权益，请耐心等待	Đang cập nhật quyền lợi, vui lòng chờ
+继续冥想	Tiếp tục thiền
+正在更新资源文件%s/%s	Đang cập nhật tệp tài nguyên %s/%s
+正在下载中	Đang tải
+你已经冥想	Bạn đã thiền
+小时	giờ
+分钟	phút
+检测到有新版本，是否更新？	Có phiên bản mới, cập nhật?
+开始冥想	Bắt đầu thiền
+暂停冥想	Tạm dừng thiền
+已没有更多	Không còn nữa
+最近	Gần đây
+计算端kstMode【失败】,请按确认键可继续进行该方位测试	kstMode bên tính [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+蓝牙连接中...	Đang kết nối Bluetooth...
+检测到NFC设备靠近	Có thiết bị NFC ở gần
+激活失败，请确保网络正常后重试	Kích hoạt thất bại, hãy kiểm tra mạng rồi thử lại
+添加网络	Thêm mạng
+我已经阅读并接受此协议	Tôi đã đọc và đồng ý điều khoản
+智能辅助校正	Hỗ trợ hiệu chỉnh thông minh
+如投出的画面变形，可通过智能辅助校正对画面进行调节。	Nếu hình bị méo, có thể dùng hỗ trợ hiệu chỉnh thông minh để chỉnh.
+扫码关注微信公众号	Quét mã để theo dõi trang WeChat
+扫二维码下载极米无屏助手	Quét mã QR để tải trợ lý máy chiếu XGIMI
+极米无屏助手	Trợ lý máy chiếu XGIMI
+移动设备或使用“系统设置-自动梯形校正”，通过自动梯形校正快速调整画面形状。	Di chuyển máy hoặc dùng "Cài đặt hệ thống - Chỉnh hình thang tự động" để chỉnh nhanh hình dạng hình.
+*在“系统设置-校正设置”中可关闭自动梯形校正或画面智能避障	*Có thể tắt chỉnh hình thang tự động hoặc tránh vật cản trong "Cài đặt hệ thống - Hiệu chỉnh"
+*在“系统设置-校正设置”中可关闭自动梯形校正	*Có thể tắt chỉnh hình thang tự động trong "Cài đặt hệ thống - Hiệu chỉnh"
+”返回	" để quay lại
+音响模式下，随时可用手机蓝牙连接设备播放音	Ở chế độ loa, có thể dùng Bluetooth điện thoại để kết nối và phát nh
+乐。按下遥控器 “	ạc. Bấm phím "
+” 键可刷新蓝牙连接	" trên điều khiển để làm mới kết nối Bluetooth
+将随机附赠的电池按照所示顺序装入遥控器后，点击	Lắp pin kèm theo vào điều khiển theo hình, rồi bấm
+“OK键”确认连接	"OK" để xác nhận kết nối
+遥控器使用	Dùng điều khiển
+*首次使用时，请注意检查遥控器已装好电池	*Lần đầu dùng, hãy kiểm tra điều khiển đã lắp pin
+*首次使用时，请注意检查电池电量	*Lần đầu dùng, hãy kiểm tra pin
+将遥控器靠近设备10cm内，同时长按“	Đưa điều khiển cách máy dưới 10 cm, giữ cùng lúc "
+”和“	" và "
+”直至	" đến khi
+遥控器指示灯快速闪烁，进入配对模式。	đèn điều khiển nháy nhanh, vào chế độ ghép nối.
+音响模式：极米电台	Chế độ loa: Đài XGIMI
+*蓝牙遥控器为选配	*Điều khiển Bluetooth là phụ kiện mua thêm
+音响模式：蓝牙音响	Chế độ loa: Loa Bluetooth
+在关机状态下，长按机身“	Khi máy tắt, giữ phím "
+”键，进入音响模式，	" trên thân máy để vào chế độ loa,
+音响模式下，可通过网络或连接手机蓝牙播放歌曲。	Ở chế độ loa, có thể phát nhạc qua mạng hoặc Bluetooth điện thoại.
+当手机蓝牙播放歌曲时，双击 “	Khi đang phát nhạc qua Bluetooth điện thoại, bấm đúp "
+” 键，重置蓝牙连接。	" để đặt lại kết nối Bluetooth.
+开启极米视界	Bắt đầu dùng XGIMI
+*您也可以通过设置>投影画面>对焦进行调节	*Bạn cũng có thể chỉnh trong Cài đặt > Hình chiếu > Lấy nét
+通过手势对设备进行控制	Điều khiển máy bằng cử chỉ
+音乐播放时，触击XGIMI键	Khi phát nhạc, chạm phím XGIMI
+播放暂停	Phát/tạm dừng
+手在黑色圆盘内顺逆画圆	Vẽ vòng tròn xuôi/ngược trong vòng đen
+调节音量	Chỉnh âm lượng
+切换歌曲	Chuyển bài
+*您也可以通过“我的应用-玩机攻略”学习更多功能	*Bạn có thể xem thêm tính năng trong "Ứng dụng của tôi - Mẹo dùng máy"
+支持光学变焦	Hỗ trợ thu phóng quang học
+音响模式下，随时可用手机蓝牙连接设备播放音乐	Ở chế độ loa, có thể dùng Bluetooth điện thoại để kết nối và phát nhạc
+按“	Bấm "
+请输入Wi-Fi密码	Nhập mật khẩu Wi-Fi
+WiFi密码	Mật khẩu Wi-Fi
+再次校正	Hiệu chỉnh lại
+可在下方选择进入梯形校正页面进行画面调整	Chọn bên dưới để vào trang chỉnh hình thang
+智能辅助校正已完成	Đã hiệu chỉnh xong
+移动/调整	Di chuyển/chỉnh
+确认/退出	Xác nhận/thoát
+复位	Đặt lại
+” 键2秒进入音响模式，音响模式下	" 2 giây để vào chế độ loa; ở chế độ loa
+” 键2秒进入音响模式，音响	" 2 giây để vào chế độ loa; chế độ loa
+连网激活设备，获得精彩内容，享受无忧质保	Kết nối mạng để kích hoạt máy, nhận nội dung hay và bảo hành
+联网激活设备	Kết nối mạng để kích hoạt máy
+激活日期：%s	Ngày kích hoạt: %s
+保修期至：%s	Bảo hành đến: %s
+您已成功激活设备	Đã kích hoạt máy thành công
+学习画面对焦和校正	Học cách lấy nét và hiệu chỉnh hình
+暗夜	Tối
+白昼	Sáng
+选择主题外观	Chọn giao diện
+*遥控器图示及说明仅供参考，实际功能请以实物为准	*Hình và mô tả điều khiển chỉ để tham khảo, chức năng thực tế theo điều khiển thật
+请输入网络信息	Nhập thông tin mạng
+按遥控器“	Bấm phím "
+请选择您的投影安装方式	Chọn cách đặt máy chiếu
+密码错误	Sai mật khẩu
+密码不能为空	Mật khẩu không được để trống
+密码长度不能小于5位	Mật khẩu phải có ít nhất 5 ký tự
+密码长度不能小于8位	Mật khẩu phải có ít nhất 8 ký tự
+注：可通过长按 “	Lưu ý: giữ "
+” ３秒进入音响模式	" 3 giây để vào chế độ loa
+音响模式下可播放WIFI音乐和蓝牙音乐	Ở chế độ loa có thể phát nhạc qua Wi-Fi và Bluetooth
+遥控器背面指示灯快速闪烁后熄灭，松开按键，配对成功	Đèn sau điều khiển nháy nhanh rồi tắt: thả phím, ghép nối thành công
+请使用调焦键调节画面清晰度	Dùng phím lấy nét để chỉnh độ nét
+遥控器配对	Ghép nối điều khiển
+返回上一步	Quay lại bước trước
+跳过此步骤	Bỏ qua bước này
+检索到网络...	Đã tìm thấy mạng...
+检索到的网络...	Mạng tìm thấy...
+请用极米App/微信扫描二维码登录	Quét mã QR bằng ứng dụng XGIMI/WeChat để đăng nhập
+SSID不能为空	SSID không được để trống
+待机状态下，可按机身 “	Khi máy đang chờ, bấm phím "
+” 键进入音响模式	" trên thân máy để vào chế độ loa
+长按 “	Giữ "
+可播放WiFi音乐和蓝牙音乐	có thể phát nhạc qua Wi-Fi và Bluetooth
+可通过长按 “	Có thể giữ "
+模式下可播放WiFi音乐和蓝牙音乐	có thể phát nhạc qua Wi-Fi và Bluetooth
+您可以稍后前往“主题”中进行自定义更改	Bạn có thể đổi sau trong "Giao diện"
+自动：默认时间段(21:00~6:00)使用深色主题，其余时段使用浅色主题	Tự động: giao diện tối từ 21:00 đến 6:00, giao diện sáng vào giờ còn lại
+欢迎使用极米	Chào mừng bạn đến với XGIMI
+该机型没有适配，使用默认配置	Đời máy này chưa có cấu hình riêng, dùng cấu hình mặc định
+同步多方会员权益，畅享海量影音内容	Đồng bộ quyền lợi thành viên để xem kho phim nhạc
+开启光影世界	Bắt đầu thế giới ánh sáng
+*打开手机热点也可以为设备添加网络	*Có thể bật điểm phát trên điện thoại để máy kết nối mạng
+密码错误,请重新输入	Sai mật khẩu, hãy nhập lại
+请输入	Nhập
+的密码	mật khẩu
+音响模式下，当WiFi连接就绪	Ở chế độ loa, khi Wi-Fi đã kết nối
+” 键播放极米电台	" để phát Đài XGIMI
+音响模式下，随时可用手机蓝牙连接设备	Ở chế độ loa, có thể dùng Bluetooth điện thoại để kết nối
+播放音乐，双击 “	và phát nhạc; bấm đúp "
+关闭检测	Tắt phát hiện
+检测到人体活动，已调低投影亮度以减少人眼刺激	Có người di chuyển trước máy, đã giảm độ sáng để đỡ chói mắt
+关闭后，您可在少儿频道的家长设置中开启	Sau khi tắt, có thể bật lại trong Cài đặt phụ huynh của kênh trẻ em
+儿童防射眼保护	Bảo vệ mắt cho trẻ em
+“OK键”下一步	"OK" để tiếp tục
+长按4s启动音响模式	Giữ 4 giây để vào chế độ loa
+双击：切换下一首	Bấm đúp: bài tiếp theo
+单击：播放/暂停	Bấm một lần: phát/tạm dừng
+XGIMI 音乐控制器	Bộ điều khiển nhạc XGIMI
+GIMI 音乐控制器	Bộ điều khiển nhạc GIMI
+连接失败，请重试	Kết nối thất bại, hãy thử lại
+连接成功，欢迎使用	Kết nối thành công
+添加收藏	Thêm vào yêu thích
+已加载完成	Đã tải xong
+添加当前歌曲	Thêm bài đang phát
+正在加载更多...	Đang tải thêm...
+(共	(tổng
+所有专辑	Tất cả album
+全部歌曲	Tất cả bài hát
+极米音乐	Nhạc XGIMI
+欧美	Âu Mỹ
+内地	Trung Quốc
+日本	Nhật Bản
+韩国	Hàn Quốc
+港台	Hồng Kông - Đài Loan
+百度音乐初始化失败	Khởi tạo Baidu Music thất bại
+版权所属 百度音乐	Bản quyền thuộc Baidu Music
+未知专辑	Album không rõ
+已连接%s	Đã kết nối %s
+断开蓝牙	Ngắt Bluetooth
+已连接%1s	Đã kết nối %1s
+开通极米音乐VIP	Đăng ký VIP Nhạc XGIMI
+取消全部收藏	Bỏ tất cả yêu thích
+选中单曲点击遥控器左键取消收藏	Chọn bài rồi bấm phím Trái để bỏ yêu thích
+取消登录极米账户	Huỷ đăng nhập tài khoản XGIMI
+无法收藏本地音乐	Không thêm nhạc trong máy vào yêu thích được
+已取消收藏	Đã bỏ yêu thích
+收藏失败	Thêm yêu thích thất bại
+收藏列表	Danh sách yêu thích
+重复添加	Đã có trong danh sách
+收藏成功	Đã thêm vào yêu thích
+组合	Nhóm nhạc
+当前播放列表	Danh sách đang phát
+当前为随心听播放模式	Đang ở chế độ phát ngẫu nhiên
+暂无歌单列表	Chưa có danh sách nhạc
+您已经是极米音乐VIP用户，请勿重复购买。	Bạn đã là VIP Nhạc XGIMI, không cần mua lại.
+退出蓝牙播放	Thoát phát qua Bluetooth
+女歌手	Ca sĩ nữ
+极米账户登录失败	Đăng nhập tài khoản XGIMI thất bại
+极米账户登录成功	Đã đăng nhập tài khoản XGIMI
+加载数据异常	Tải dữ liệu bị lỗi
+本地音乐	Nhạc trong máy
+本地音乐无法收藏	Không thêm nhạc trong máy vào yêu thích được
+退出登录成功	Đã đăng xuất
+男歌手	Ca sĩ nam
+歌曲信息不存在	Không có thông tin bài hát
+歌单列表	Danh sách nhạc
+音乐推荐	Nhạc gợi ý
+音乐搜索	Tìm nhạc
+音乐设置	Cài đặt nhạc
+音乐优先级	Ưu tiên nhạc
+网络已断开，即将播放本地歌曲	Mất mạng, sẽ phát nhạc trong máy
+网络未连接，将播放本地歌曲	Chưa có mạng, sẽ phát nhạc trong máy
+新歌	Bài mới
+你可以试着说：	Bạn có thể nói:
+您还没有收藏歌曲	Bạn chưa có bài yêu thích
+您的收藏列表空空如也	Danh sách yêu thích đang trống
+没有本地歌曲	Không có nhạc trong máy
+未登录极米账户，无法获取收藏列表	Chưa đăng nhập tài khoản XGIMI, không lấy được danh sách yêu thích
+暂无新歌曲	Chưa có bài mới
+没有歌曲	Không có bài hát
+没有可播放歌曲	Không có bài phát được
+非VIP会员	Không phải VIP
+没有搜索到相关的内容	Không tìm thấy nội dung liên quan
+顺序	Theo thứ tự
+当前列表播放结束	Đã phát hết danh sách
+当前是第一首歌	Đây là bài đầu tiên
+请选择歌曲	Chọn bài hát
+请先登录	Hãy đăng nhập trước
+免费试听结束，自动跳过VIP歌曲	Hết nghe thử miễn phí, tự bỏ qua bài VIP
+列表无可播放免费歌曲，为您播放其他歌曲	Danh sách không có bài miễn phí, phát bài khác
+二维码加载失败	Không tải được mã QR
+电台	Đài
+续费极米音乐VIP	Gia hạn VIP Nhạc XGIMI
+已移出播放列表	Đã bỏ khỏi danh sách phát
+单曲	Lặp một bài
+请输入音乐首字母搜索	Nhập chữ cái đầu để tìm nhạc
+为你搜到以下内容	Kết quả tìm được
+输入关键字搜索，比如 刘德华	Nhập từ khoá để tìm, ví dụ tên ca sĩ
+全拼音输入：如《极米》	Nhập đầy đủ pinyin: ví dụ 《极米》
+拼音 “JIMI”	pinyin "JIMI"
+输入：JIMI	Nhập: JIMI
+首拼音输入：如《极米》	Nhập chữ đầu pinyin: ví dụ 《极米》
+拼音：	Pinyin:
+输入：	Nhập:
+最近搜索	Tìm gần đây
+为你找到以下歌曲	Bài hát tìm được
+为您推荐以下内容	Gợi ý cho bạn
+正在为您搜索	Đang tìm
+相关内容，请耐心等等	nội dung liên quan, vui lòng chờ
+全选	Chọn tất cả
+背景设置	Cài đặt hình nền
+首)	bài)
+无专辑	Không có album
+无歌曲	Không có bài hát
+曲:	Nhạc:
+词:	Lời:
+音乐随身听	Máy nghe nhạc
+高品质 320k	Chất lượng cao 320k
+默认下载音质	Chất lượng tải mặc định
+删除收藏	Xoá yêu thích
+如需收藏请先完成音乐账户登录	Hãy đăng nhập tài khoản nhạc để thêm yêu thích
+标准品质 128k	Chất lượng chuẩn 128k
+默认播放音质	Chất lượng phát mặc định
+极米音乐会员专享	Dành riêng cho VIP Nhạc XGIMI
+开启随心听	Bật phát ngẫu nhiên
+确定要删除吗？（同时删除本地文件）	Xoá? (xoá luôn tệp trong máy)
+“菜单键”呼出歌单选择	Phím "Menu" để chọn danh sách nhạc
+“方向下”呼出主题选择	Phím "Xuống" để chọn chủ đề
+通过蓝牙连接播放您的音乐	Phát nhạc của bạn qua Bluetooth
+榜单	Bảng xếp hạng
+专题	Chủ đề
+歌手：	Ca sĩ:
+未收藏	Chưa yêu thích
+用户登录	Đăng nhập
+有效期	Hạn dùng
+已有VIP激活码？请按遥控器“OK键”进行激活	Đã có mã kích hoạt VIP? Bấm "OK" trên điều khiển để kích hoạt
+流行	Nhạc pop
+什么榜单呢我们我们我们	Bảng xếp hạng nào
+你可能喜欢	Có thể bạn thích
+HDR下，不支持3D设置	Không hỗ trợ cài đặt 3D với HDR
+已将该应用移出当前文件夹	Đã chuyển ứng dụng ra khỏi thư mục
+解散当前文件夹	Giải tán thư mục này
+解散后，文件夹中的应用将移动至“我的应用”。	Sau khi giải tán, ứng dụng trong thư mục sẽ chuyển về "Ứng dụng của tôi".
+下载中...	Đang tải...
+暂无观看记录	Chưa có lịch sử xem
+安装失败	Cài thất bại
+安装完成	Đã cài xong
+安装中...	Đang cài...
+未登录极米账号	Chưa đăng nhập tài khoản XGIMI
+更改场景失败	Đổi cảnh thất bại
+下载异常	Tải bị lỗi
+已下载完成	Đã tải xong
+下载管理	Quản lý tải về
+等待下载	Đang chờ tải
+已下载%s%%	Đã tải %s%%
+当前无下载记录	Chưa có lịch sử tải
+有效期至：%s	Hạn dùng đến: %s
+累计清理	Tổng đã dọn
+已允许	Đã cho phép
+已禁止	Đã chặn
+APK文件	Tệp APK
+禁止	Chặn
+开机自启动应用：	Ứng dụng tự chạy khi bật máy:
+管理空间	Quản lý bộ nhớ
+本次优化释放了%1$s内存，清理了%2$s存储空间	Lần tối ưu này giải phóng %1$s RAM và dọn %2$s bộ nhớ
+删除后不可撤销	Xoá rồi không khôi phục được
+系统提示	Thông báo hệ thống
+文档文件	Tệp tài liệu
+优化完成	Tối ưu xong
+优化中	Đang tối ưu
+音频文件	Tệp âm thanh
+当前没有自启动应用	Không có ứng dụng tự chạy
+无SD卡	Không có thẻ SD
+无法连接至Internet	Không kết nối được Internet
+暂不处理	Để sau
+一键禁止	Chặn tất cả
+一键优化	Tối ưu một chạm
+图片文件	Tệp ảnh
+扫描错误===>	Lỗi quét ===>
+扫描完毕 需要删除文件大小为:	Quét xong, dung lượng cần xoá:
+正在扫描:	Đang quét:
+软件卸载残留	Phần còn lại của ứng dụng đã gỡ
+当前下载速度%sMb/s，网络非常优秀	Tốc độ tải %s Mb/s, mạng rất tốt
+当前下载速度%sMb/s，网络比较优秀	Tốc độ tải %s Mb/s, mạng khá tốt
+当前下载速度%sMb/s，网络通畅	Tốc độ tải %s Mb/s, mạng ổn định
+当前下载速度%sMb/s，网络有些拥堵	Tốc độ tải %s Mb/s, mạng hơi chậm
+开始扫描	Bắt đầu quét
+开机启动管理	Quản lý ứng dụng tự chạy
+空间使用	Dung lượng đã dùng
+存储空间已满，您可以在【投影管家】中管理存储空间	Bộ nhớ đã đầy, quản lý bộ nhớ trong [Quản lý máy chiếu]
+存储空间几乎已满，您可以在【投影管家】中管理存储空间	Bộ nhớ sắp đầy, quản lý bộ nhớ trong [Quản lý máy chiếu]
+您的系统十分干净，无可清理垃圾	Hệ thống rất sạch, không có gì để dọn
+系统瘦身	Dọn hệ thống
+清理完毕	Đã dọn xong
+TXT文件	Tệp TXT
+未知文件	Tệp không rõ
+视频文件	Tệp video
+压缩文件	Tệp nén
+允许	Cho phép
+“%1$s”想要查看您的消息。要向“%2$s”授予权限吗？	"%1$s" muốn xem tin nhắn của bạn. Cấp quyền cho "%2$s"?
+已连接到地图	Đã kết nối với Bản đồ
+用于地图	Dùng cho Bản đồ
+消息权限申请	Yêu cầu quyền tin nhắn
+消息权限	Quyền tin nhắn
+共享联系人	Chia sẻ danh bạ
+用于共享联系人	Dùng để chia sẻ danh bạ
+京东微联	JD Smart
+系统存储	Bộ nhớ hệ thống
+更新开机动画	Cập nhật hình khởi động
+开机视频	Video khởi động
+蓝牙音响	Loa Bluetooth
+音响音乐优先级	Ưu tiên nhạc của loa
+用户&关于	Người dùng & Giới thiệu
+荣誉榜	Bảng vinh danh
+提示信息	Thông báo
+确认切换分辨率吗？	Đổi độ phân giải?
+仅在音响模式有效	Chỉ dùng được ở chế độ loa
+游戏手柄	Tay cầm chơi game
+音响	Loa
+已配对设备类型	Loại thiết bị đã ghép nối
+请求失败(错误码:%d)	Yêu cầu thất bại (mã lỗi: %d)
+优惠获得	Nhận ưu đãi
+极米VIP会员	Thành viên VIP XGIMI
+当前会员至%s	Thành viên đến %s
+暂无消息通知	Chưa có thông báo
+应用市场	Kho ứng dụng
+清理数据(%s)	Xoá dữ liệu (%s)
+卸载应用	Gỡ ứng dụng
+%s内容正在准备中	Đang chuẩn bị nội dung %s
+极米麦克风	Micro XGIMI
+应用正在安装，请稍候…	Đang cài ứng dụng, vui lòng chờ…
+立即开唱	Hát ngay
+出错啦！未连接网络	Có lỗi! Chưa kết nối mạng
+所有应用	Tất cả ứng dụng
+下载应用	Ứng dụng đang tải
+可更新应用 (%s)	Ứng dụng có bản cập nhật (%s)
+应用介绍	Giới thiệu ứng dụng
+应用搜索	Tìm ứng dụng
+未知错误	Lỗi không xác định
+音乐控制器更新完成	Đã cập nhật xong bộ điều khiển nhạc
+设备未连接，请连接后重试	Thiết bị chưa kết nối, hãy kết nối rồi thử lại
+当前版本:	Phiên bản hiện tại:
+音乐控制器获取电量失败，请稍后重试	Không đọc được pin của bộ điều khiển nhạc, hãy thử lại sau
+点击“触控区”配对	Chạm "vùng cảm ứng" để ghép nối
+连接成功，检查到有固件更新	Kết nối thành công, có bản cập nhật firmware
+音乐控制器电量过低，请更换电池	Bộ điều khiển nhạc sắp hết pin, hãy thay pin
+固件升级失败，请检查设备连接	Nâng cấp firmware thất bại, hãy kiểm tra kết nối
+Dongle状态检测	Kiểm tra trạng thái Dongle
+极米智能幕布dongle已识别	Đã nhận Dongle màn chiếu thông minh XGIMI
+幕布Dongle通信异常，请插拔后重新尝试！	Dongle màn chiếu bị lỗi kết nối, hãy rút ra cắm lại rồi thử lại!
+极米智能幕布dongle已移除	Đã rút Dongle màn chiếu thông minh XGIMI
+Dongle未识别	Chưa nhận Dongle
+请先插入幕布Dongle	Hãy cắm Dongle màn chiếu trước
+Dongle未插入	Chưa cắm Dongle
+Dongle已识别	Đã nhận Dongle
+幕布下降测试	Thử hạ màn chiếu
+结束配对	Kết thúc ghép nối
+1、拔出幕布电源，点击“开始配对”按钮	1. Rút điện màn chiếu, bấm nút "Bắt đầu ghép nối"
+配对测试	Thử ghép nối
+1、确保幕布与dongle已配对	1. Đảm bảo màn chiếu đã ghép nối với Dongle
+2、点击“幕布上升/下降测试”按钮，查看幕布是否升降	2. Bấm nút "Thử nâng/hạ màn chiếu" để xem màn có nâng hạ không
+3、在幕布配对状态蜂鸣器慢响10次结束前，点击“结束配对”，幕布蜂鸣器将快响3次，以提示配对成功	3. Trước khi còi màn chiếu kêu chậm hết 10 lần, bấm "Kết thúc ghép nối"; còi kêu nhanh 3 lần là ghép nối thành công
+2、插上幕布电源，此时幕布蜂鸣器将慢响10次，慢响则表示幕布进入配对状态	2. Cắm điện màn chiếu, còi kêu chậm 10 lần nghĩa là màn đang ở chế độ ghép nối
+开始配对	Bắt đầu ghép nối
+幕布上升测试	Thử nâng màn chiếu
+手机蓝牙已连接，是否进入音响模式？	Đã kết nối Bluetooth điện thoại, vào chế độ loa?
+演员：%s	Diễn viên: %s
+(共%1$s课时，已更新至%2$s课)	(%1$s bài, đã cập nhật đến bài %2$s)
+(共%1$s课)	(%1$s bài)
+播放地址无效	Địa chỉ phát không hợp lệ
+获取价格失败	Không lấy được giá
+已筛选出 %s 部	Đã lọc ra %s phim
+视频版权来自	Bản quyền video thuộc
+选集 （%s）	Chọn tập (%s)
+类型：%s	Thể loại: %s
+此视频不支持试看	Video này không xem thử được
+第	Thứ
+导演：%s	Đạo diễn: %s
+暂不支持该播放类型！	Chưa hỗ trợ kiểu phát này!
+再按一次返回键退出播放器	Bấm Quay lại lần nữa để thoát trình phát
+学习记录获取失败	Không lấy được lịch sử học
+获取用户信息失败，请重试	Không lấy được thông tin người dùng, hãy thử lại
+获取用户信息超时	Lấy thông tin người dùng quá thời gian
+请输入健身VIP激活码	Nhập mã kích hoạt VIP thể dục
+免费	Miễn phí
+您已领过7天免费VIP,现在续费立享减免哦！	Bạn đã nhận 7 ngày VIP miễn phí, gia hạn ngay để được giảm giá!
+查询赠送信息失败,请稍后再试	Không tra được thông tin quà tặng, hãy thử lại sau
+恭喜你获得免费7天会员	Bạn được tặng 7 ngày thành viên miễn phí
+学龄前至初中的课程可任意观看哦	Xem thoải mái các khoá học từ mầm non đến THCS
+已购入	Đã mua
+集	tập
+课程与讲师介绍	Giới thiệu khoá học và giảng viên
+数据加载异常	Tải dữ liệu bị lỗi
+【下键】	[Xuống]
+选择清晰度和剧集	Chọn độ nét và tập
+立即购买	Mua ngay
+已停售	Đã ngừng bán
+正在直播中	Đang phát trực tiếp
+回看	Xem lại
+直播已下线	Phát trực tiếp đã kết thúc
+观看	Xem
+限时回看中	Đang cho xem lại có thời hạn
+等待开始	Chờ bắt đầu
+距离%s直播开始还有	Còn bao lâu nữa đến buổi phát trực tiếp %s
+抱歉，直播已停售	Xin lỗi, buổi phát trực tiếp đã ngừng bán
+抱歉，直播已结束	Xin lỗi, buổi phát trực tiếp đã kết thúc
+直播尚未开始，请耐心等待	Buổi phát trực tiếp chưa bắt đầu, vui lòng chờ
+抱歉，直播已下线	Xin lỗi, buổi phát trực tiếp đã gỡ
+视频正在转码，请稍后再试	Video đang được chuyển mã, hãy thử lại sau
+播放下一集	Phát tập tiếp theo
+按[OK]键全屏	Bấm [OK] để xem toàn màn hình
+再按一次退出播放	Bấm lần nữa để thoát
+￥%s 单片购买	Mua lẻ ￥%s
+%s元特惠	Ưu đãi %s tệ
+￥%s 抢先预购	Đặt trước ￥%s
+%s元购买	Mua với giá %s tệ
+正在缓冲 %s	Đang tải trước %s
+切换清晰度失败	Đổi độ nét thất bại
+正在加载二维码	Đang tải mã QR
+看了《%s》也在看这些	Người xem 《%s》 cũng xem
+当前网络异常，请稍后再试	Mạng đang lỗi, hãy thử lại sau
+无学习记录	Chưa có lịch sử học
+演员：	Diễn viên:
+购买	Mua
+购买课程	Mua khoá học
+您已购买，可直接观看	Bạn đã mua, có thể xem ngay
+类型：	Thể loại:
+简介：	Giới thiệu:
+导演：	Đạo diễn:
+支持模式：	Chế độ hỗ trợ:
+时长：%s分钟	Thời lượng: %s phút
+集数：%s课	Số bài: %s
+集数：%s集	Số tập: %s
+第%s期	Kỳ %s
+试看	Xem thử
+讲师介绍	Giới thiệu giảng viên
+应用卸载成功	Đã gỡ ứng dụng
+正在鉴权，请稍候...	Đang xác thực, vui lòng chờ...
+清空缓存失败	Xoá bộ nhớ đệm thất bại
+缺少个人中心，请安装或升级系统版本后重试	Thiếu Trung tâm cá nhân, hãy cài hoặc nâng cấp hệ thống rồi thử lại
+缺少必要组件，正在尝试下载中，请稍后重试	Thiếu thành phần cần thiết, đang tải về, hãy thử lại sau
+参数异常	Tham số không hợp lệ
+个人中心版本过低，请升级版本后重试	Trung tâm cá nhân quá cũ, hãy nâng cấp rồi thử lại
+画质已为1080P	Đã ở độ nét 1080P
+画质已为4K	Đã ở độ nét 4K
+画质已为%s	Đã ở độ nét %s
+正在播放第%s集	Đang phát tập %s
+无对应集数	Không có tập này
+即将播放上一集	Sắp phát tập trước
+清晰度切换中	Đang đổi độ nét
+跳转太多了	Tua quá nhiều
+(共%1$s集)	(%1$s tập)
+(共%1$s集，已更新至%2$s集)	(%1$s tập, đã cập nhật đến tập %2$s)
+登录失败，请检查网络后重试	Đăng nhập thất bại, hãy kiểm tra mạng rồi thử lại
+第%s课	Bài %s
+课程介绍	Giới thiệu khoá học
+剧集列表	Danh sách tập
+课程列表	Danh sách bài học
+您已成功开通极米4K会员服务	Đã đăng ký thành viên 4K XGIMI
+未开通4K会员	Chưa đăng ký thành viên 4K
+4K会员有效期：%s	Thành viên 4K đến: %s
+出错啦	Có lỗi
+请输入4K极米VIP激活码	Nhập mã kích hoạt VIP 4K XGIMI
+续费延长VIP有效期，尊贵特权不清零	Gia hạn để kéo dài VIP và giữ nguyên quyền lợi
+立即开启4K会员，极清画质丝毫必现	Đăng ký thành viên 4K ngay để xem hình siêu nét
+已有VIP激活码，请按遥控器“OK键”进行激活	Đã có mã kích hoạt VIP, bấm "OK" trên điều khiển để kích hoạt
+您已成功购买	Bạn đã mua thành công
+支付成功，服务器出错，请联系我们人工服务	Thanh toán thành công nhưng máy chủ lỗi, hãy liên hệ bộ phận hỗ trợ
+联系电话：400-0028-960	Điện thoại: 400-0028-960
+您已成功续费极米4K会员服务	Đã gia hạn thành viên 4K XGIMI
+会员已过期	Thành viên đã hết hạn
+激活码激活	Kích hoạt bằng mã
+获取会员信息失败	Không lấy được thông tin thành viên
+正在获取会员信息...	Đang lấy thông tin thành viên...
+极米影片库	Kho phim XGIMI
+相关作品	Nội dung liên quan
+续播	Xem tiếp
+选集	Chọn tập
+获取年级信息失败，请重试	Không lấy được thông tin lớp, hãy thử lại
+7天教育会员已免费得到	Đã nhận 7 ngày thành viên giáo dục miễn phí
+选择年级失败，请重试	Chọn lớp thất bại, hãy thử lại
+选择年级成功	Đã chọn lớp
+adb已关闭	Đã tắt ADB
+adb已开启	Đã bật ADB
+已校准	Đã hiệu chỉnh
+儿童模式	Chế độ trẻ em
+未知错误，请稍后重试	Lỗi không xác định, hãy thử lại sau
+请检查网络是否连接	Hãy kiểm tra kết nối mạng
+电源适配器已插入	Đã cắm bộ sạc
+电量剩10%，请及时充电	Pin còn 10%, hãy sạc ngay
+近期没有任何内容	Không có nội dung gần đây
+按上键可关闭应用	Bấm phím Lên để đóng ứng dụng
+此应用或您所在的单位不允许进行屏幕截图	Ứng dụng này hoặc đơn vị của bạn không cho chụp màn hình
+由于存储空间有限，无法保存屏幕截图。	Không đủ bộ nhớ để lưu ảnh chụp màn hình.
+截屏成功！存储目录：内置存储/Pictures/Screenshots	Đã chụp màn hình! Lưu ở: Bộ nhớ trong/Pictures/Screenshots
+系统完成性检测不通过，无法升级	Kiểm tra toàn vẹn hệ thống không đạt, không nâng cấp được
+连接超时，请稍后重试	Kết nối quá thời gian, hãy thử lại sau
+校正失败	Hiệu chỉnh thất bại
+距离过远,校正失败	Quá xa, hiệu chỉnh thất bại
+距离过近,校正失败	Quá gần, hiệu chỉnh thất bại
+当前画面已达到最亮	Hình đã ở độ sáng tối đa
+设备存储	Bộ nhớ thiết bị
+设备风扇异常，即将关机 %d 秒倒计时	Quạt bị lỗi, máy sẽ tắt sau %d giây
+设备温度过高，即将关机 %d 秒倒计时	Máy quá nóng, sẽ tắt sau %d giây
+应用优化中，请稍等...	Đang tối ưu ứng dụng, vui lòng chờ...
+已切换后台下载	Đã chuyển sang tải ngầm
+立即下载	Tải ngay
+正在进行MD5验证...	Đang kiểm tra MD5...
+必要固件下载中^_^	Đang tải firmware cần thiết
+正在检测更新...	Đang kiểm tra cập nhật...
+下次开机升级	Nâng cấp ở lần bật máy sau
+关机时升级	Nâng cấp khi tắt máy
+备份失败，请重新备份	Sao lưu thất bại, hãy sao lưu lại
+备份成功	Sao lưu thành công
+请绑定极米账号	Hãy liên kết tài khoản XGIMI
+正在备份，请稍候...	Đang sao lưu, vui lòng chờ...
+云备份可将您的网络设置和已安装应用列表备份至云端可在其他极米设备进行同步	Sao lưu đám mây lưu cài đặt mạng và danh sách ứng dụng đã cài lên đám mây để đồng bộ với máy XGIMI khác
+正在备份中	Đang sao lưu
+正在备份中，请稍后还原	Đang sao lưu, hãy khôi phục sau
+您已成功购买极米VIP	Đã mua VIP XGIMI thành công
+质量故障直接换新	Lỗi chất lượng được đổi máy mới
+维修期增加%s年	Thêm %s năm bảo hành
+扫描二维码激活进入绑定流程	Quét mã QR để kích hoạt và liên kết
+极米Care+服务计划	Gói dịch vụ XGIMI Care+
+检查到网络备份数据，是否还原到本机	Có bản sao lưu trên mạng, khôi phục vào máy này?
+设备校验中...	Đang kiểm tra máy...
+设备校验失败...	Kiểm tra máy thất bại...
+内容已到期	Nội dung đã hết hạn
+数据备份中	Đang sao lưu dữ liệu
+数据还原中	Đang khôi phục dữ liệu
+GIMI先生	Ông GIMI
+极友论坛	Diễn đàn XGIMI
+通过下方链接访问极米论坛，查看相关产品帮助或是发帖寻求帮助	Vào diễn đàn XGIMI qua đường dẫn bên dưới để xem trợ giúp hoặc đăng bài hỏi
+正在还原，请稍候...	Đang khôi phục, vui lòng chờ...
+正在还原中....	Đang khôi phục....
+正在还原中，请稍候...	Đang khôi phục, vui lòng chờ...
+输入的兑换卡密错误	Mã thẻ đổi thưởng sai
+您已是尊贵的极米VIP用户	Bạn đang là thành viên VIP XGIMI
+课程购买记录	Lịch sử mua khoá học
+上一次备份时间：%s	Lần sao lưu trước: %s
+上一次还原时间：%s	Lần khôi phục trước: %s
+最新备份：%s	Bản sao lưu mới nhất: %s
+即刻登录极米账号，享受更多会员服务	Đăng nhập tài khoản XGIMI để dùng thêm dịch vụ thành viên
+登录信息失效，请重新登录	Phiên đăng nhập hết hạn, hãy đăng nhập lại
+云备份需要登录极米账号，是否现在登录	Sao lưu đám mây cần tài khoản XGIMI, đăng nhập ngay?
+是否确定退出登录?	Đăng xuất?
+正在退出...	Đang đăng xuất...
+请检查网络连接	Hãy kiểm tra kết nối mạng
+无购买记录	Chưa có lịch sử mua
+立即开通极米VIP，震撼视听不等待	Đăng ký VIP XGIMI ngay để xem không chờ đợi
+尊享VIP特权	Quyền lợi VIP
+正在备份/还原中，请稍候...	Đang sao lưu/khôi phục, vui lòng chờ...
+原价:	Giá gốc:
+购买记录	Lịch sử mua
+请连接网络	Hãy kết nối mạng
+QQ交流群	Nhóm QQ
+加入极米官方讨论群，与各位极友探讨更多产品功能	Tham gia nhóm thảo luận chính thức của XGIMI để trao đổi về tính năng máy
+极米官方1-4群(已满)	Nhóm chính thức XGIMI 1-4 (đã đầy)
+极米官方5群：300396932	Nhóm chính thức XGIMI 5: 300396932
+极米官方6群：179194074	Nhóm chính thức XGIMI 6: 179194074
+还原成功	Khôi phục thành công
+还原失败，请重试	Khôi phục thất bại, hãy thử lại
+请先插入sd卡	Hãy cắm thẻ SD trước
+上次备份时间	Lần sao lưu trước
+上次还原时间	Lần khôi phục trước
+用户已经退出	Đã đăng xuất
+VIP12个月	VIP 12 tháng
+*微信扫码会自动注册一个芒果账号，若已有账号可通过主页芒果TV进入登录后返回到此页面享受优惠	*Quét bằng WeChat sẽ tự tạo tài khoản Mango; nếu đã có tài khoản, hãy đăng nhập trong Mango TV ở màn hình chính rồi quay lại trang này để nhận ưu đãi
+极米VIP管理	Quản lý VIP XGIMI
+支持微信扫码支付	Thanh toán bằng cách quét mã WeChat
+微信公众号	Trang WeChat
+微信服务顾问	Tư vấn qua WeChat
+请通过微信扫描二维码关注极米公众号反馈您的建议	Quét mã QR bằng WeChat để theo dõi trang XGIMI và gửi góp ý
+极米Care+	XGIMI Care+
+云备份设置	Cài đặt sao lưu đám mây
+USB等待连接中…	Đang chờ kết nối USB…
+即将切换至%s，点击 “ @ ” 取消	Sắp chuyển sang %s, bấm " @ " để huỷ
+进入恢复出厂	Vào khôi phục cài đặt gốc

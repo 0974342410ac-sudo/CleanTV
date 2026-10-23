@@ -1,0 +1,17 @@
+# XGIMI projectors on the IRONMAN firmware (device ironman, MStar MSD848, product Product_ms, model "XGIMI TV"),
+# Android 8.0 (SDK 26), GMUI 4.3.2.23 / INUI 1.3.2.23, firmware XGIMI_IRONMAN_XJ03D built 2021-07-05.
+# One image for many XGIMI models: vendor/etc/xgimimodelname/<code>/build.prop sets the model per unit
+# (e.g. R211/R222 "XGIMI A2", AA111 "MOVIN PROJECTOR"). Notes only so far: read from the USB upgrade file, not
+# from a running unit. No removal list yet.
+#
+# Firmware file (2026-10-23): plain MStar USB upgrade bin, same layout as the RS10's (mboot script header,
+# Android sparse ext4 for system (6 pieces) and vendor (8 pieces), footer "12345678" + CRCs).
+# Bundled Chinese third-party apps: WPS Office TV, iQiyi (com.gitvjimi.video), Tencent Video (com.ktcp.tvvideo),
+# Mango TV licence (com.hunantv.license), PPTV Sports, Sogou keyboard. Home is com.xgimi.home.
+#
+# Vietnamese: tools\xgimi-vi\rs10-overlays.ps1 -Device ironman builds 37 overlay APKs (dist\ironman-vi, 2,714
+# strings) from ironman-apps-chuoi.tsv and the Chinese->Vietnamese tables (ironman-apps-dich.tsv adds the 730
+# sentences the others lacked). The general USB updater (USB-CapNhat) installs and enables them on a TV whose
+# ro.product.device is ironman; Restore uninstalls them. Android 8.0 has the overlay manager but no
+# `cmd overlay fabricate`. Not yet tried on a real unit.
+# Not translated: the bundled Chinese apps above, Sogou, factory/burn-in menus, offline voice, string arrays.
