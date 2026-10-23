@@ -11,6 +11,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -2124,6 +2125,130 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         rows.addView(row);
     }
 
+    // ---- app menu (hold OK on a tile) --------------------------------------------------------------
+
+    /**
+     * Uninstall, for apps that can be (installed by the user, or an update over a system app), through the system's
+     * uninstall prompt; and App info where the TV has that screen. The Android 6 XGIMI (.239) has no Android
+     * Settings app, so App info alone, as before, did nothing there.
+     */
+    @Override
+    public void onTileLongPress(AppAdapter.Entry e, View card) {
+        PackageManager pm = getPackageManager();
+        boolean removable = isRemovable(pm, e.pkg);
+        Intent info = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:" + e.pkg))
+                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        boolean hasInfo = info.resolveActivity(pm) != null;
+        if (!removable && !hasInfo) {
+            Toast.makeText(this, getString(R.string.app_cannot_uninstall, e.label), Toast.LENGTH_SHORT).show();
+            return;
+        }
+        View panel = getLayoutInflater().inflate(R.layout.popup_inputs, root, false);
+        LinearLayout rows = panel.findViewById(R.id.rows);
+        PopupWindow popup = glassPopup(panel, (int) (220 * density));
+        if (removable) addSettingsMenuRow(rows, popup, R.string.app_uninstall, () -> uninstall(e.pkg, e.label));
+        if (hasInfo) addSettingsMenuRow(rows, popup, R.string.app_info, () -> startActivity(info));
+        panel.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
+        popup.setWidth(Math.max((int) (220 * density), panel.getMeasuredWidth()));
+        dropIn(popup, panel, card, Gravity.START);
+        rows.getChildAt(0).requestFocus();
+    }
+
+    /** Installed by the user, or an update over a system app (uninstalling that removes the update); never Home itself. */
+    private boolean isRemovable(PackageManager pm, String pkg) {
+        if (pkg.equals(getPackageName())) return false;
+        try {
+            ApplicationInfo ai = pm.getApplicationInfo(pkg, 0);
+            return (ai.flags & ApplicationInfo.FLAG_SYSTEM) == 0 || (ai.flags & ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) != 0;
+        } catch (PackageManager.NameNotFoundException gone) {
+            return false;   // the package receiver reloads the grid
+        }
+    }
+
+    /** The system's own uninstall prompt; the package receiver drops the tile once it is gone. */
+    private void uninstall(String pkg, CharSequence label) {
+        try {
+            startActivity(new Intent(Intent.ACTION_DELETE, Uri.parse("package:" + pkg))
+                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+        } catch (android.content.ActivityNotFoundException ex) {
+            Toast.makeText(this, getString(R.string.app_cannot_uninstall, label), Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    /**
+     * Settings menu > "Gỡ ứng dụng": every launchable app that can be uninstalled (hidden ones and those not on
+     * Home included), with its icon, in a scrolling glass list; picking one opens the uninstall prompt.
+     */
+    private void showUninstallList() {
+        PackageManager pm = getPackageManager();
+        java.util.TreeMap<String, android.content.pm.ResolveInfo> apps = new java.util.TreeMap<>(String.CASE_INSENSITIVE_ORDER);
+        for (String category : new String[]{Intent.CATEGORY_LEANBACK_LAUNCHER, Intent.CATEGORY_LAUNCHER}) {
+            for (android.content.pm.ResolveInfo ri : pm.queryIntentActivities(
+                    new Intent(Intent.ACTION_MAIN).addCategory(category), 0)) {
+                String pkg = ri.activityInfo.packageName;
+                if (!isRemovable(pm, pkg)) continue;
+                String label = String.valueOf(ri.loadLabel(pm));
+                boolean seen = false;
+                for (android.content.pm.ResolveInfo other : apps.values()) {
+                    if (other.activityInfo.packageName.equals(pkg)) { seen = true; break; }
+                }
+                if (!seen) apps.put(label + "\u0000" + pkg, ri);
+            }
+        }
+        if (apps.isEmpty()) {
+            Toast.makeText(this, R.string.app_uninstall_none, Toast.LENGTH_SHORT).show();
+            return;
+        }
+        LinearLayout panel = new LinearLayout(this);
+        panel.setOrientation(LinearLayout.VERTICAL);
+        panel.setBackgroundResource(R.drawable.glass_panel);
+        int pad = (int) (14 * density);
+        panel.setPadding(pad, pad, pad, pad);
+        TextView title = new TextView(this);
+        title.setText(R.string.app_uninstall_pick);
+        title.setTextColor(0xFFFFFFFF);
+        title.setTextSize(18);
+        title.setPadding((int) (10 * density), 0, 0, (int) (10 * density));
+        panel.addView(title);
+        android.widget.ScrollView scroll = new android.widget.ScrollView(this);
+        LinearLayout rows = new LinearLayout(this);
+        rows.setOrientation(LinearLayout.VERTICAL);
+        scroll.addView(rows);
+        Dialog dialog = new Dialog(this);
+        for (android.content.pm.ResolveInfo ri : apps.values()) {
+            String pkg = ri.activityInfo.packageName;
+            CharSequence label = ri.loadLabel(pm);
+            View row = getLayoutInflater().inflate(R.layout.item_input, rows, false);
+            ImageView icon = row.findViewById(R.id.icon);
+            icon.setImageTintList(null);   // the app's own colours, not the menu's tint
+            icon.setImageDrawable(ri.loadIcon(pm));
+            row.findViewById(R.id.dot).setVisibility(View.GONE);
+            row.findViewById(R.id.status).setVisibility(View.GONE);
+            ((TextView) row.findViewById(R.id.title)).setText(label);
+            row.setOnClickListener(v -> {
+                dialog.dismiss();
+                uninstall(pkg, label);
+            });
+            rows.addView(row);
+        }
+        // Up to about 8 rows show at once; more scroll
+        int maxHeight = (int) (getResources().getDisplayMetrics().heightPixels * 0.6f);
+        rows.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
+        panel.addView(scroll, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                Math.min(rows.getMeasuredHeight(), maxHeight)));
+        dialog.requestWindowFeature(android.view.Window.FEATURE_NO_TITLE);
+        dialog.setContentView(panel);
+        android.view.Window w = dialog.getWindow();
+        if (w != null) {
+            w.setBackgroundDrawableResource(android.R.color.transparent);
+            android.view.WindowManager.LayoutParams lp = w.getAttributes();
+            lp.width = (int) (420 * density);
+            w.setAttributes(lp);
+        }
+        dialog.show();
+        rows.getChildAt(0).requestFocus();
+    }
+
     // ---- launcher settings and module cards -------------------------------------------------------
 
     /** Keep a normal Settings click for the TV; the launcher's choices live behind hold OK. */
@@ -2137,6 +2262,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         if (moduleCards) addSettingsMenuRow(rows, popup, R.string.module_cards, this::showModuleCards);
         if (dockRow) addSettingsMenuRow(rows, popup, R.string.dock_edit, this::startDockEdit);
         addSettingsMenuRow(rows, popup, R.string.reorder, this::toggleReorder);
+        addSettingsMenuRow(rows, popup, R.string.app_uninstall, this::showUninstallList);
         panel.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
         popup.setWidth(Math.max((int) (200 * density), panel.getMeasuredWidth()));
         // Hebrew puts Settings at the left of the header: grow the menu inward from it.
