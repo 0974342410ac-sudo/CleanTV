@@ -1,0 +1,1123 @@
+# Bang dich them cho may chieu XGIMI RS10 (firmware XGIMI_PIGCHIVALROUS_XM13M, Android 9, m7642, GMUI 6.4):
+# cac cau tieng Trung chua co trong dich.tsv, dich-cau-dai.tsv, dohko-apps-dich*.tsv. Chu Trung<TAB>tieng Viet.
+# Giu nguyen %s, %d, %1$s, \n, @ va khoang trang dau/cuoi. Khong dich chuoi cau hinh dang [{key:...}] va
+# bieu thuc autofill cua android (a|b|c): rs10-overlays.ps1 bo qua chung.
+要将其关闭吗？	Bạn có muốn đóng ứng dụng này không?
+即将关闭光机，按power键可唤醒光机	Sắp tắt đèn chiếu, bấm nút nguồn để bật lại
+异常提示	Thông báo lỗi
+请通过外接音箱调节音量	Hãy chỉnh âm lượng trên loa ngoài
+您的选择是	Bạn muốn làm gì?
+只支持一个USB输入/出设备	Chỉ hỗ trợ một thiết bị USB vào/ra
+请退出播放器重新播放视频以切换声音输出	Hãy thoát trình phát rồi phát lại video để đổi đầu ra âm thanh
+HDMI下不支持调节光纤音量	Không chỉnh được âm lượng cổng quang khi dùng HDMI
+RAW不支持调节音量，请调节为PCM格式	Định dạng RAW không chỉnh được âm lượng, hãy chuyển sang PCM
+应用正在升级中...	Ứng dụng đang được nâng cấp...
+应用升级	Nâng cấp ứng dụng
+抱歉，出现了一些问题，可前往极米App进行问题反馈，我们将尽快优化产品和服务。	Xin lỗi, đã có lỗi xảy ra. Bạn có thể báo lỗi trong ứng dụng XGIMI để hãng khắc phục.
+报告	Báo cáo
+定时关机	Hẹn giờ tắt máy
+正在重启...	Đang khởi động lại...
+正在关机...	Đang tắt máy...
+将投影仪放置在距墙面/幕布1.5–2米的水平桌面上	Đặt máy chiếu trên mặt bàn phẳng, cách tường/màn chiếu 1,5–2 m
+Boost 亮度档位下不支持色彩调节	Không chỉnh được màu ở mức độ sáng Boost
+3D模式下不支持切换 Boost 亮度档位	Không chuyển được mức độ sáng Boost trong chế độ 3D
+若确认当前投影距离已是1.5-2米，否则将影响校准效果	Hãy chắc chắn khoảng cách chiếu là 1,5–2 m, nếu không kết quả hiệu chỉnh sẽ bị ảnh hưởng
+若确认当前投影距离已是1.5–2米，可能是测距感应器异常，请联系客服	Nếu khoảng cách chiếu đã là 1,5–2 m, có thể cảm biến đo khoảng cách bị lỗi, hãy liên hệ bảo hành
+小京鱼	Tiểu Kinh Ngư
+位移可能造成画面模糊，按"@"手动对焦	Máy bị xê dịch có thể làm hình mờ, bấm "@" để lấy nét thủ công
+充电宝模式	Chế độ pin dự phòng
+关闭充电宝模式	Tắt chế độ pin dự phòng
+关闭充电宝模式？	Tắt chế độ pin dự phòng?
+接入移动电源或非官方电源适配器时，关闭充电宝模式可能会导致耗电量增加或关机	Khi dùng pin dự phòng hoặc bộ sạc không chính hãng, tắt chế độ này có thể làm hao điện hơn hoặc máy tự tắt
+开启充电宝模式	Bật chế độ pin dự phòng
+开启充电宝模式？	Bật chế độ pin dự phòng?
+接入移动电源或非官方适配器时，为提升续航、保护设备，将自动开启充电宝模式	Khi dùng pin dự phòng hoặc bộ sạc không chính hãng, chế độ pin dự phòng tự bật để dùng lâu hơn và bảo vệ máy
+检测到人体后自动息屏，人体离开或按【返回键】恢复屏幕	Tự tắt hình khi phát hiện có người, hình hiện lại khi người rời đi hoặc bấm [Quay lại]
+请关闭游戏模式后重试	Hãy tắt chế độ trò chơi rồi thử lại
+输出更顺滑的播放效果，画面分辨率将对应适配	Phát mượt hơn, độ phân giải sẽ được điều chỉnh tương ứng
+蓝色偏差	Lệch xanh lam
+绿色偏差	Lệch xanh lục
+红色偏差	Lệch đỏ
+观影（小夜灯）	Xem phim (đèn ngủ)
+3D模式下不支持%1$s自适应	Không hỗ trợ %1$s thích ứng trong chế độ 3D
+投影开机时，照明灯将切换至较暗的模式	Khi máy chiếu bật, đèn chiếu sáng sẽ chuyển sang chế độ tối hơn
+请输入" %s "的密码	Nhập mật khẩu của " %s "
+充电宝模式下不支持性能模式	Không dùng được chế độ hiệu năng khi ở chế độ pin dự phòng
+杜比视界幕布设置	Cài đặt màn chiếu Dolby Vision
+请确保“%s"已打开，并重新尝试连接	Hãy chắc chắn "%s" đã bật rồi thử kết nối lại
+搭配专属天空音、3D 环绕音,沉浸观影视听享受	Kết hợp âm thanh bầu trời và vòm 3D cho trải nghiệm xem phim sống động
+请关闭 3D 模式后重试	Hãy tắt chế độ 3D rồi thử lại
+3D模式下不支持墙面颜色适配	Không hỗ trợ thích ứng màu tường trong chế độ 3D
+3D 环绕	Vòm 3D
+天空音效	Âm thanh bầu trời
+选中的内容将显示在主页和屏保	Nội dung đã chọn sẽ hiện trên màn hình chính và màn hình chờ
+安装万象镜后将自动解锁	Tự mở khoá sau khi lắp ống kính Vạn Tượng
+已打开万象镜专属内容	Đã mở nội dung riêng cho ống kính Vạn Tượng
+摄像头异常,请重新开始流程	Camera bị lỗi, hãy làm lại từ đầu
+自动对焦已被打断,请重新开始流程	Lấy nét tự động bị gián đoạn, hãy làm lại từ đầu
+AK初始化失败	Khởi tạo AK thất bại
+计算中……	Đang tính toán……
+计算端AE【失败】,请按确认键可继续进行该方位测试	Bên tính AE [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+下值失败【失败】,请按确认键可继续进行该方位测试	Ghi giá trị [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+计算端初始化【失败】,请按确认键可继续进行该方位测试	Khởi tạo bên tính [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+计算端坐标点【失败】,请按确认键可继续进行该方位测试	Tọa độ bên tính [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+计算端拍照【失败】,请按确认键可继续进行该方位测试	Chụp ảnh bên tính [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+摄像头准备【失败】,请按确认键可继续进行该方位测试	Chuẩn bị camera [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+未校准	Chưa hiệu chỉnh
+摄像头异常	Camera bị lỗi
+测试失败	Kiểm tra thất bại
+测试成功	Kiểm tra thành công
+测试未做	Chưa kiểm tra
+马达步数校验失败,重新开始流程	Kiểm tra bước mô-tơ thất bại, làm lại từ đầu
+测试超标准	Kết quả vượt tiêu chuẩn
+通信库连接失败	Kết nối thư viện truyền thông thất bại
+正在计算中，请勿操作设备	Đang tính toán, đừng thao tác máy
+按确认键进行校正	Bấm OK để hiệu chỉnh
+按确认键进行测试	Bấm OK để kiểm tra
+平台不支持，面TOF不可启用	Nền tảng không hỗ trợ, không bật được TOF mặt
+FOV检测不通过，不能进行等级测试	Kiểm tra FOV không đạt, không kiểm tra cấp được
+平台不支持FOV检测	Nền tảng không hỗ trợ kiểm tra FOV
+获取FOV结果中.....	Đang lấy kết quả FOV.....
+FOV检查结果:%s	Kết quả kiểm tra FOV: %s
+不通过	Không đạt
+获取FOV结果异常	Lấy kết quả FOV bị lỗi
+底层KST【失败】,请按确认键可继续进行该方位测试	KST lớp dưới [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+需先进行校正，才能测试	Cần hiệu chỉnh trước rồi mới kiểm tra được
+标准值获取失败	Lấy giá trị chuẩn thất bại
+等待热机结束:%s秒	Chờ máy nóng xong: %s giây
+已到达标定时间	Đã đến thời gian hiệu chuẩn
+请等待热机时间	Hãy chờ máy nóng
+等级	Cấp
+马达归位失败	Đưa mô-tơ về vị trí thất bại
+正在等待【连接有线】	Đang chờ [kết nối mạng dây]
+拍照失败	Chụp ảnh thất bại
+背景找点【失败】,按确认键可继续进行该方位测试	Tìm điểm nền [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+投射角度过大【失败】,请重新摆放后按确认键可继续进行该方位测试	Góc chiếu quá lớn [thất bại], đặt lại máy rồi bấm OK để tiếp tục kiểm tra hướng này
+设备找点【失败】,按确认键可继续进行该方位测试	Tìm điểm thiết bị [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+未匹配到等级【失败】,按确认键可继续进行该方位测试	Không khớp cấp [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+主方向【失败】,按确认键可继续进行该方位测试	Hướng chính [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+其他问题【失败】,按确认键可继续进行该方位测试	Lỗi khác [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+等级角超范围【失败】,按确认键可继续进行该方位测试	Góc cấp vượt phạm vi [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+投射角度过小【失败】,请重新摆放后按确认键可继续进行该方位测试	Góc chiếu quá nhỏ [thất bại], đặt lại máy rồi bấm OK để tiếp tục kiểm tra hướng này
+测试失败【失败】,请按确认键可继续进行该方位测试	Kiểm tra thất bại [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+测试端等级计算结果不合法【失败】,按确认键可继续进行该方位测试	Kết quả tính cấp không hợp lệ [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+单点位标定失败	Hiệu chuẩn một điểm thất bại
+开始进行总特征值标定	Bắt đầu hiệu chuẩn giá trị đặc trưng tổng
+标定后温度：	Nhiệt độ sau hiệu chuẩn:
+标定前温度：	Nhiệt độ trước hiệu chuẩn:
+左投等级	Cấp chiếu trái
+右投等级	Cấp chiếu phải
+pos_3 不居中	pos_3 không ở giữa
+标定超出结构限制	Hiệu chuẩn vượt giới hạn cơ khí
+pos_2 pos_4角度太大	Góc pos_2 pos_4 quá lớn
+标定结果误差较大	Kết quả hiệu chuẩn sai số lớn
+相机标定异常	Hiệu chuẩn camera bị lỗi
+tof数据不足	Thiếu dữ liệu TOF
+总点位标定失败	Hiệu chuẩn tổng các điểm thất bại
+触发端初始化失败【失败】,请按确认键可继续进行该方位测试	Khởi tạo bên kích hoạt [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+触发端拍照【失败】,请按确认键可继续进行该方位测试	Chụp ảnh bên kích hoạt [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+触发端找点【失败】,请按确认键可继续进行该方位测试	Tìm điểm bên kích hoạt [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+进入STR导致【失败】,请按确认键可继续进行该方位测试	Vào chế độ chờ (STR) gây lỗi [thất bại], bấm OK để tiếp tục kiểm tra hướng này
+底层取值异常	Đọc giá trị lớp dưới bị lỗi
+获取FOV	Lấy FOV
+手动模式	Chế độ thủ công
+复验模式	Chế độ kiểm tra lại
+串口自动模式	Chế độ tự động qua cổng serial
+启用面Tof	Bật TOF mặt
+测试模式	Chế độ kiểm tra
+画面模糊时，可按 @ 自动对焦，或长按使用手动对焦	Khi hình bị mờ, bấm @ để lấy nét tự động, hoặc giữ để lấy nét thủ công
+节律光、阅读、观影（小夜灯）等多种模式自由切换	Chuyển tự do giữa nhiều chế độ: ánh sáng sinh học, đọc sách, xem phim (đèn ngủ)...
+本次允许	Cho phép lần này
+总是允许	Luôn cho phép
+Huawei Cast+ 投屏	Chiếu màn hình Huawei Cast+
+无线投屏	Chiếu màn hình không dây
+设备名称:	Tên thiết bị:
+当前网络:	Mạng hiện tại:
+使用“Huawei Cast+投屏”将您手机上的内容投送到投影大屏上，需要使用华为手机EMUI10.0及以上部分版本	Dùng "Huawei Cast+" để chiếu nội dung trên điện thoại lên máy chiếu; cần điện thoại Huawei EMUI 10.0 trở lên (một số phiên bản)
+修改密码	Đổi mật khẩu
+想要连接你的电视	muốn kết nối với TV của bạn
+加密访问	Truy cập có mật khẩu
+在手机端输入此密码可发起投屏	Nhập mật khẩu này trên điện thoại để bắt đầu chiếu
+密码不可少于6位	Mật khẩu phải có ít nhất 6 ký tự
+Huawei Cast+ 投屏连接码	Mã kết nối Huawei Cast+
+需使用华为手机EMUI10.0及以上部分版本	Cần điện thoại Huawei EMUI 10.0 trở lên (một số phiên bản)
+将手机和投影仪连接到同一WiFi网络下，在手机下拉状态栏中选择 [无线投屏]	Kết nối điện thoại và máy chiếu cùng một mạng Wi-Fi, kéo thanh trạng thái trên điện thoại xuống và chọn [Chiếu màn hình không dây]
+选择搜索到的投影仪，进行投屏	Chọn máy chiếu tìm thấy để bắt đầu chiếu
+长按 @ 查看	Giữ @ để xem
+按 @ 查看	Bấm @ để xem
+电量不足	Pin yếu
+麦克风电量低	Micro sắp hết pin
+手机蓝牙	Bluetooth điện thoại
+手机APP	Ứng dụng điện thoại
+可至“设置 > 视频”管理	Quản lý trong "Cài đặt > Video"
+可至“设置 > 图像”管理	Quản lý trong "Cài đặt > Hình ảnh"
+可至“设置 > 亮度与显示”管理	Quản lý trong "Cài đặt > Độ sáng và hiển thị"
+超分辨率已开启	Đã bật siêu phân giải
+按 @ 前往	Bấm @ để mở
+可至“设置>通用”管理	Quản lý trong "Cài đặt > Chung"
+仍然搜索 "%1$s"	Vẫn tìm "%1$s"
+进程创建到二帧渲染	Từ tạo tiến trình đến khung hình thứ hai
+清除列表信息	Xoá danh sách
+流畅度信息	Độ mượt
+Actiivty的关键数据信息	Dữ liệu chính của Activity
+启动报告	Báo cáo khởi động
+布局层级	Số tầng bố cục
+运行的服务信息	Dịch vụ đang chạy
+线程信息	Luồng
+启动过程中信息	Thông tin quá trình khởi động
+移动设备至正投状态	Đặt máy chiếu thẳng vào màn chiếu
+本地播放器	Trình phát nội bộ
+自动巨幕模式	Chế độ màn hình lớn tự động
+请关闭环境自适应再使用3D设置	Hãy tắt thích ứng môi trường rồi mới dùng cài đặt 3D
+3.1声道	3.1 kênh
+5.1声道	5.1 kênh
+7.1声道	7.1 kênh
+单声道	Đơn kênh
+2.0声道	2.0 kênh
+环绕声	Âm thanh vòm
+请关闭亮度自适应再使用3D设置	Hãy tắt độ sáng thích ứng rồi mới dùng cài đặt 3D
+非蓝光片源不支持该功能	Nguồn không phải Blu-ray không hỗ trợ tính năng này
+第三方插件播放不支持图像模式	Phát bằng plugin bên thứ ba không hỗ trợ chế độ hình ảnh
+该音轨下不支持倍速	Không đổi tốc độ được với rãnh âm thanh này
+该视频不支持倍速	Video này không đổi tốc độ được
+视频无音轨时不支持倍速	Video không có âm thanh nên không đổi tốc độ được
+第三方插件播放不支持倍速	Phát bằng plugin bên thứ ba không đổi tốc độ được
+软解码暂不支持外挂字幕	Giải mã phần mềm chưa hỗ trợ phụ đề rời
+当前模式下不支持切换3D	Không chuyển sang 3D được ở chế độ này
+本地播放不支持3D设置	Phát nội bộ không hỗ trợ cài đặt 3D
+第三方插件播放不支持3D设置	Phát bằng plugin bên thứ ba không hỗ trợ cài đặt 3D
+当前分辨率不支持3D设置	Độ phân giải hiện tại không hỗ trợ cài đặt 3D
+侧投模式下，不支持3D设置	Không hỗ trợ cài đặt 3D khi chiếu từ bên cạnh
+天前	ngày trước
+使用3D模式观看画面	Xem hình ở chế độ 3D
+确定使用第三方插件播放？	Phát bằng plugin bên thứ ba?
+4K片源不支持2倍速,已切换1.5倍速播放	Video 4K không phát được tốc độ 2x, đã chuyển sang 1,5x
+%s 播放异常	Lỗi khi phát %s
+无音频	Không có âm thanh
+文件没有视频	Tệp không có video
+文件不存在，请检查网络	Tệp không tồn tại, hãy kiểm tra mạng
+当前视频为HDR格式，不支持3D模式	Video này là HDR, không hỗ trợ chế độ 3D
+小时前	giờ trước
+图片播放器	Xem ảnh
+当前图片不支持缩放和旋转	Ảnh này không phóng to hay xoay được
+内嵌字幕	Phụ đề trong video
+是否删除所有播放记录?	Xoá toàn bộ lịch sử phát?
+使用3D模式将消除画面校正效果并关闭自动校正	Chế độ 3D sẽ bỏ hiệu chỉnh hình và tắt hiệu chỉnh tự động
+阿非利卡语	Tiếng Afrikaans
+阿尔巴尼亚语	Tiếng Albania
+阿拉伯语	Tiếng Ả Rập
+亚美尼亚语	Tiếng Armenia
+阿萨姆语	Tiếng Assam
+阿塞拜疆语	Tiếng Azerbaijan
+巴斯克语	Tiếng Basque
+巴萨语	Tiếng Basa
+白俄罗斯语	Tiếng Belarus
+保加利亚语	Tiếng Bulgaria
+缅甸语	Tiếng Myanmar
+中文	Tiếng Trung
+克罗地亚语	Tiếng Croatia
+捷克语	Tiếng Séc
+丹麦语	Tiếng Đan Mạch
+荷兰语	Tiếng Hà Lan
+英语	Tiếng Anh
+世界语	Tiếng Esperanto
+爱沙尼亚语	Tiếng Estonia
+斐济语	Tiếng Fiji
+芬兰语	Tiếng Phần Lan
+法语	Tiếng Pháp
+格鲁吉亚语	Tiếng Gruzia
+德语	Tiếng Đức
+爱尔兰语	Tiếng Ireland
+希腊语	Tiếng Hy Lạp
+希伯来语	Tiếng Do Thái
+印地语	Tiếng Hindi
+匈牙利语	Tiếng Hungary
+印尼语	Tiếng Indonesia
+意大利语	Tiếng Ý
+日语	Tiếng Nhật
+哈萨克语	Tiếng Kazakh
+柬埔寨语	Tiếng Khmer
+卢旺达语	Tiếng Kinyarwanda
+刚果语	Tiếng Kongo
+韩语	Tiếng Hàn
+老挝语	Tiếng Lào
+拉丁语	Tiếng Latinh
+拉脱维亚语	Tiếng Latvia
+立陶宛语	Tiếng Litva
+卢干达语	Tiếng Luganda
+马来语	Tiếng Mã Lai
+蒙古语	Tiếng Mông Cổ
+尼泊尔语	Tiếng Nepal
+挪威语	Tiếng Na Uy
+波斯语	Tiếng Ba Tư
+波兰语	Tiếng Ba Lan
+葡萄牙语	Tiếng Bồ Đào Nha
+吉普赛语	Tiếng Romani
+罗马尼亚语	Tiếng Romania
+俄语	Tiếng Nga
+斯洛伐克语	Tiếng Slovakia
+斯洛文尼亚语	Tiếng Slovenia
+西班牙语	Tiếng Tây Ban Nha
+瑞典语	Tiếng Thụy Điển
+泰米尔语	Tiếng Tamil
+泰卢固语	Tiếng Telugu
+泰语	Tiếng Thái
+藏语	Tiếng Tây Tạng
+土耳其语	Tiếng Thổ Nhĩ Kỳ
+乌克兰语	Tiếng Ukraina
+未知语言	Ngôn ngữ không xác định
+越南语	Tiếng Việt
+瑶族语	Tiếng Dao
+图片加载失败	Không tải được ảnh
+主线程等待计算结果，但计算抛出异常！	Luồng chính chờ kết quả nhưng phép tính bị lỗi!
+主线程等待计算结果超时，因此中断任务线程！	Luồng chính chờ kết quả quá lâu nên đã dừng luồng tác vụ!
+主线程在等待计算结果时被中断	Luồng chính bị ngắt khi đang chờ kết quả
+播放器异常，请重试	Trình phát bị lỗi, hãy thử lại
+设置音轨字幕	Âm thanh và phụ đề
+分钟前	phút trước
+3D模式下，画面比例不可用	Không dùng được tỉ lệ khung hình trong chế độ 3D
+文件不存在	Tệp không tồn tại
+第三方字幕可能存在兼容性和被禁用等风险，如选择使用，则表明你已知晓并愿意承担这些风险	Phụ đề bên thứ ba có thể không tương thích hoặc bị chặn. Chọn dùng nghĩa là bạn chấp nhận những rủi ro này
+是否使用第三方字幕？	Dùng phụ đề bên thứ ba?
+字幕下载完成，已切换为第三方字幕	Đã tải xong phụ đề và chuyển sang phụ đề bên thứ ba
+幻灯片已暂停，按OK键继续	Trình chiếu đã tạm dừng, bấm OK để tiếp tục
+幻灯片播放	Trình chiếu ảnh
+幻灯片播放中，按OK键暂停	Đang trình chiếu, bấm OK để tạm dừng
+幻灯片播放已停止	Đã dừng trình chiếu
+正在缓冲%s	Đang tải trước %s
+左旋转	Xoay trái
+右旋转	Xoay phải
+幻灯片播放时，不支持缩放和旋转	Không phóng to hay xoay được khi đang trình chiếu
+速度	Tốc độ
+已切换1.5倍速播放4K视频	Đã chuyển video 4K sang tốc độ 1,5x
+字幕时间轴调整	Chỉnh thời gian phụ đề
+文本字幕位置	Vị trí phụ đề
+字幕切换失败	Đổi phụ đề thất bại
+字幕切换成功	Đã đổi phụ đề
+文本字幕颜色	Màu phụ đề
+文本字幕字体	Phông chữ phụ đề
+文本字幕大小	Cỡ chữ phụ đề
+文本字幕阴影	Bóng chữ phụ đề
+内接字幕编号	Số phụ đề trong video
+英文	Tiếng Anh
+字幕语言	Ngôn ngữ phụ đề
+此片源没有兼容的字幕	Video này không có phụ đề tương thích
+字幕搜索中...	Đang tìm phụ đề...
+字幕保存位置：%s	Nơi lưu phụ đề: %s
+字幕列表	Danh sách phụ đề
+外接字幕路径	Đường dẫn phụ đề rời
+片源路径错误	Đường dẫn video sai
+字幕切换中...	Đang đổi phụ đề...
+请将字幕文件放置在当前视频同级目录下	Hãy đặt tệp phụ đề cùng thư mục với video
+显示字幕类别	Loại phụ đề hiển thị
+可至“设置>视频“管理	Quản lý trong "Cài đặt > Video"
+已开启超分辨率	Đã bật siêu phân giải
+2D转3D	2D sang 3D
+自动3D	3D tự động
+AI模式	Chế độ AI
+音轨	Âm thanh
+音轨选择	Chọn rãnh âm thanh
+播放记录	Lịch sử phát
+不保存记录	Không lưu lịch sử
+保存记录	Lưu lịch sử
+系统播放器	Trình phát hệ thống
+无音轨	Không có âm thanh
+循环模式	Chế độ lặp
+不循环	Không lặp
+目录循环	Lặp cả thư mục
+单个循环	Lặp một video
+播放设置	Cài đặt phát
+第三方插件	Plugin bên thứ ba
+字幕设置	Cài đặt phụ đề
+提前%1d秒	Sớm %1d giây
+取消字幕选择	Bỏ chọn phụ đề
+字幕选择	Chọn phụ đề
+字幕颜色	Màu phụ đề
+灰色	Xám
+延时%1d秒	Trễ %1d giây
+字幕下载	Tải phụ đề
+字幕位置	Vị trí phụ đề
+延时调整	Chỉnh độ trễ
+无字幕	Không phụ đề
+字幕大小	Cỡ phụ đề
+字幕同步	Đồng bộ phụ đề
+播放器	Trình phát
+视频设置	Cài đặt video
+留字幕	Giữ phụ đề
+去黑边	Bỏ viền đen
+原始大小	Kích thước gốc
+音频格式不支持	Định dạng âm thanh không được hỗ trợ
+音轨切换失败，请切换到第三方插件	Đổi rãnh âm thanh thất bại, hãy chuyển sang plugin bên thứ ba
+已自动切换为上下3D播放	Đã tự chuyển sang phát 3D trên-dưới
+当前字幕不支持调节	Phụ đề này không chỉnh được
+当前字幕不支持颜色调节	Phụ đề này không đổi màu được
+当前字幕不支持大小调节	Phụ đề này không đổi cỡ được
+音视频格式不支持	Định dạng âm thanh/video không được hỗ trợ
+该视频不支持快进	Video này không tua nhanh được
+仅在视频播放时有效	Chỉ dùng được khi đang phát video
+视频格式不支持	Định dạng video không được hỗ trợ
+音频格式不支持，请在菜单中切换音轨	Định dạng âm thanh không được hỗ trợ, hãy đổi rãnh âm thanh trong menu
+跳转太多，请重试	Tua quá nhiều, hãy thử lại
+请稍候...	Vui lòng chờ...
+使用时请正投画面	Hãy chiếu thẳng vào màn khi dùng
+前天	Hôm kia
+警告	Cảnh báo
+昨天	Hôm qua
+吐槽	Góp ý
+立即体验	Dùng thử ngay
+已踩	Đã không thích
+已赞	Đã thích
+玩机攻略	Mẹo dùng máy
+重看	Xem lại
+扫码查看 详细攻略	Quét mã để xem hướng dẫn chi tiết
+扫码吐槽	Quét mã để góp ý
+赞	Thích
+点赞成功	Đã thích
+消息中心	Trung tâm tin nhắn
+消息通知	Thông báo
+全部清除	Xoá tất cả
+单击 [菜单键] 或 [向左键] 编辑	Bấm [Menu] hoặc [Trái] để chỉnh sửa
+应用中心	Kho ứng dụng
+一键更新	Cập nhật tất cả
+取消下载	Huỷ tải
+取消更新	Huỷ cập nhật
+清理数据（%s）	Xoá dữ liệu (%s)
+卸载 “%s” ？	Gỡ "%s"?
+安装中	Đang cài
+重新下载	Tải lại
+等待	Đang chờ
+强行停止	Buộc dừng
+应用自动升级将在关机时进行	Ứng dụng sẽ tự cập nhật khi tắt máy
+长按OK键排序	Giữ OK để sắp xếp
+暂时没有搜索到内容	Chưa tìm thấy nội dung nào
+下载应用（%s）	Ứng dụng đang tải (%s)
+热门应用	Ứng dụng phổ biến
+可更新应用（%s）	Ứng dụng có bản cập nhật (%s)
+大小: %s	Dung lượng: %s
+版本: %s	Phiên bản: %s
+应用屏幕截图	Ảnh chụp ứng dụng
+相关推荐	Gợi ý liên quan
+下载失败，请重试	Tải thất bại, hãy thử lại
+安装失败，请重试	Cài thất bại, hãy thử lại
+存储空间不足，请清理系统后重试	Không đủ bộ nhớ, hãy dọn bớt rồi thử lại
+清除数据成功	Đã xoá dữ liệu
+程序已停止	Ứng dụng đã dừng
+设备升级中....	Thiết bị đang nâng cấp....
+再按一次返回键退出升级流程	Bấm Quay lại lần nữa để thoát nâng cấp
+幕布可更新	Màn chiếu có bản cập nhật
+幕布更新失败	Cập nhật màn chiếu thất bại
+幕布更新完成	Đã cập nhật xong màn chiếu
+立即更新	Cập nhật ngay
+连接中断	Mất kết nối
+请确保幕布在通信范围内，并处于连接状态	Hãy chắc chắn màn chiếu ở trong tầm kết nối và đang được kết nối
+发现新版本	Có phiên bản mới
+暂不更新	Để sau
+更新完成	Cập nhật xong
+正在更新	Đang cập nhật
+上次检查时间: %s	Lần kiểm tra trước: %s
+检查更新中	Đang kiểm tra cập nhật
+当前版本	Phiên bản hiện tại
+同屏器已是最新版本	Bộ chiếu HDMI đã là bản mới nhất
+检查更新失败	Kiểm tra cập nhật thất bại
+连接有问题？请试试以下办法：	Kết nối có vấn đề? Hãy thử các cách sau:
+下次提示	Nhắc lần sau
+下次升级	Nâng cấp lần sau
+重新更新	Cập nhật lại
+上次检查时间:%s	Lần kiểm tra trước: %s
+按OK查看详情	Bấm OK để xem chi tiết
+同屏器可升级	Bộ chiếu HDMI có bản nâng cấp
+无线HDMI同屏器升级	Nâng cấp bộ chiếu HDMI không dây
+无线HDMI同屏器升级失败	Nâng cấp bộ chiếu HDMI không dây thất bại
+无线HDMI同屏器连接中断	Mất kết nối bộ chiếu HDMI không dây
+短按无线HDMI同屏器按钮,配对后将继续升级	Bấm nhanh nút trên bộ chiếu HDMI không dây, ghép nối xong sẽ tiếp tục nâng cấp
+无线HDMI同屏器升级完成	Đã nâng cấp xong bộ chiếu HDMI không dây
+立即升级	Nâng cấp ngay
+2.为确保升级成功，将在升级前自动重启设备	2. Để nâng cấp thành công, máy sẽ tự khởi động lại trước khi nâng cấp
+IoT功能可升级	Tính năng IoT có bản nâng cấp
+IoT功能升级	Nâng cấp tính năng IoT
+电量不足，请先更换电池	Pin yếu, hãy thay pin trước
+遥控器可升级	Điều khiển có bản nâng cấp
+遥控器升级失败	Nâng cấp điều khiển thất bại
+遥控器升级完成	Đã nâng cấp xong điều khiển
+遥控器连接中断	Mất kết nối điều khiển
+长按back和Home直至指示灯闪烁，配对后将继续升级	Giữ Quay lại và Home đến khi đèn nhấp nháy, ghép nối xong sẽ tiếp tục nâng cấp
+遥控器升级	Nâng cấp điều khiển
+重新升级	Nâng cấp lại
+遥控器升级中...	Đang nâng cấp điều khiển...
+准备升级	Chuẩn bị nâng cấp
+等待取消…	Đang huỷ…
+已取消	Đã huỷ
+连接设备…	Đang kết nối thiết bị…
+处理错误…	Đang xử lý lỗi…
+搜索设备…	Đang tìm thiết bị…
+正在HandOver…	Đang chuyển giao…
+固件激活成功	Đã kích hoạt firmware
+初始化 …	Đang khởi tạo …
+未知	Không rõ
+初始化	Khởi tạo
+正在发送文件 %1$d/%2$d …	Đang gửi tệp %1$d/%2$d …
+等待激活固件 …	Đang chờ kích hoạt firmware …
+准备升级环境 …	Đang chuẩn bị nâng cấp …
+进入升级模式…	Đang vào chế độ nâng cấp…
+正在搜索副耳设备 …	Đang tìm tai nghe phụ …
+启动中 …	Đang khởi động …
+固件激活中 …	Đang kích hoạt firmware …
+正在升级…	Đang nâng cấp…
+升级成功	Nâng cấp thành công
+XGIMI Sound 可更新	XGIMI Sound có bản cập nhật
+音响更新失败	Cập nhật loa thất bại
+音响更新完成	Đã cập nhật xong loa
+请确保音响在通信范围内，并处于连接状态	Hãy chắc chắn loa ở trong tầm kết nối và đang được kết nối
+取消激活	Huỷ kích hoạt
+无线开关面板激活失败	Kích hoạt công tắc không dây thất bại
+无线开关面板升级	Nâng cấp công tắc không dây
+开关面板正在更新	Công tắc đang cập nhật
+更新过程中面板暂不可使用	Không dùng được công tắc trong khi cập nhật
+重新激活	Kích hoạt lại
+请先更面板换电池	Hãy thay pin công tắc trước
+开关面板电量不足	Công tắc sắp hết pin
+无线开关面板可升级	Công tắc không dây có bản nâng cấp
+无线开关面板升级失败	Nâng cấp công tắc không dây thất bại
+无线开关面板升级完成	Đã nâng cấp xong công tắc không dây
+开关面板更新失败	Cập nhật công tắc thất bại
+无线开关面板连接中断	Mất kết nối công tắc không dây
+开关面板更新成功	Đã cập nhật xong công tắc
+兑换成功!	Đổi mã thành công!
+已有VIP激活码？点击此处手动激活	Đã có mã kích hoạt VIP? Bấm vào đây để kích hoạt
+卡密输入错误，您今天还有%s次输错机会	Mã thẻ sai, hôm nay bạn còn %s lần nhập
+卡密输入错误次数太多，请24小时后重试	Nhập sai mã thẻ quá nhiều lần, hãy thử lại sau 24 giờ
+卡密输入错误次数过多	Nhập sai mã thẻ quá nhiều lần
+请进入芒果TV用户中心内“兑换卡”页面重新尝试	Hãy vào trang "Đổi thẻ" trong trung tâm người dùng Mango TV và thử lại
+芒果APP-用户中心-兑换卡	Ứng dụng Mango - Trung tâm người dùng - Đổi thẻ
+兑换失败(%s)	Đổi mã thất bại (%s)
+自动激活失败，请通过VIP兑换码手动激活	Tự kích hoạt thất bại, hãy nhập mã VIP để kích hoạt
+出错了	Có lỗi xảy ra
+错误码:%s	Mã lỗi: %s
+您已经是芒果VIP用户，请勿重复购买。	Bạn đã là thành viên VIP Mango, không cần mua lại.
+获取芒果信息失败	Không lấy được thông tin Mango
+极米芒果VIP兑换	Đổi VIP Mango của XGIMI
+点击进入芒果TV	Mở Mango TV
+请输入兑换卡密码	Nhập mã thẻ đổi thưởng
+兑换卡密错误	Mã thẻ sai
+请输入芒果VIP会员激活码	Nhập mã kích hoạt VIP Mango
+您已是尊贵的芒果VIP用户	Bạn đang là thành viên VIP Mango
+手动激活	Kích hoạt thủ công
+立即开通芒果VIP，震撼视听不等待	Đăng ký VIP Mango ngay để xem không chờ đợi
+开通服务：	Đăng ký dịch vụ: 
+原价：%s元	Giá gốc: %s tệ
+支持微信扫码登录	Đăng nhập bằng cách quét mã WeChat
+观影券：%s	Vé xem phim: %s
+12个月大屏精彩价:	Giá 12 tháng cho màn hình lớn:
+免广告	Không quảng cáo
+VIP兑换码:%s	Mã đổi VIP: %s
+(VIP兑换码已保存在“%s”中)	(Mã đổi VIP đã lưu trong "%s")
+有效期:%s	Hạn dùng: %s
+超高清视频	Video siêu nét
+好莱坞影院	Rạp Hollywood
+扫码登录芒果账户 了解芒果影视VIP特权	Quét mã để đăng nhập tài khoản Mango và xem quyền lợi VIP
+*微信扫码会自动注册一个芒果账号，若已有账号可通过主页芒果TV进入登陆后返回到此页面享受优惠	*Quét bằng WeChat sẽ tự tạo tài khoản Mango; nếu đã có tài khoản, hãy đăng nhập trong Mango TV ở màn hình chính rồi quay lại trang này để nhận ưu đãi
+最新院线电影	Phim chiếu rạp mới nhất
+会员影片推荐	Phim gợi ý cho thành viên
+立即续费延长VIP有效期，尊贵特权不清零	Gia hạn ngay để kéo dài VIP và giữ nguyên quyền lợi
+支持 微信 和 支付宝 扫码支付	Thanh toán bằng cách quét mã WeChat hoặc Alipay
+免费观影券	Vé xem phim miễn phí
+会员专享影视	Phim dành riêng cho thành viên
+已取消定时关机	Đã huỷ hẹn giờ tắt máy
+按中止定时关机	Bấm để huỷ hẹn giờ tắt máy
+%ds后自动关机	Tự tắt máy sau %d giây
+5分钟后自动关机	Tự tắt máy sau 5 phút
+更新并关机	Cập nhật và tắt máy
+更新过程中请勿切断电源	Đừng rút điện trong khi cập nhật
+缓存影片中，建议使用休眠模式	Đang tải phim về máy, nên dùng chế độ ngủ
+极米 App 可远程缓存 GMAX 影片	Ứng dụng XGIMI có thể tải phim GMAX từ xa
+支持语音、手机蓝牙连接、投屏唤醒	Đánh thức bằng giọng nói, Bluetooth điện thoại hoặc chiếu màn hình
+未连电源，开机需连按2次电源键	Không cắm điện thì phải bấm nút nguồn 2 lần để bật máy
+启用旅行保护，防止误触开机	Bật khoá khi di chuyển, tránh bật máy do bấm nhầm
+取消定时关机	Huỷ hẹn giờ tắt máy
+%d 分钟	%d phút
+%d分钟后关机	Tắt máy sau %d phút
+观影音效搭载专属 “3D 环绕”与“虚拟天空音”，尽享大屏沉浸影音视听	Âm thanh xem phim có "vòm 3D" và "âm thanh bầu trời ảo" cho trải nghiệm sống động trên màn hình lớn
+可连接多个音箱，创建无线家庭影音系统	Kết nối nhiều loa để tạo hệ thống âm thanh không dây trong nhà
+扫码下载极米APP	Quét mã để tải ứng dụng XGIMI
+打开极米APP	Mở ứng dụng XGIMI
+为设备连网	Kết nối mạng cho máy
+手机为投影仪快速连网	Dùng điện thoại để kết nối mạng nhanh cho máy chiếu
+扫码下载极米特别版APP	Quét mã để tải ứng dụng XGIMI bản đặc biệt
+打开极米特别版APP	Mở ứng dụng XGIMI bản đặc biệt
+步骤 1	Bước 1
+步骤 3	Bước 3
+步骤 2	Bước 2
+连网异常	Kết nối mạng bị lỗi
+请按手机提示操作	Hãy làm theo hướng dẫn trên điện thoại
+请按手机提示检查后重试	Hãy kiểm tra theo hướng dẫn trên điện thoại rồi thử lại
+可通过手机控制投影	Có thể điều khiển máy chiếu bằng điện thoại
+正在连网...	Đang kết nối mạng...
+媒资播放器	Trình phát phim
+禁看所选视频？	Chặn video đã chọn?
+禁看失败	Chặn thất bại
+恢复观看？	Cho xem lại?
+恢复后该视频可正常观看	Sau khi cho xem lại, video này sẽ xem được bình thường
+儿童禁看内容管理	Quản lý nội dung chặn với trẻ em
+选择“禁看”后将退出本次播放，且后续也无法观看。可在“家长设置”中恢复。	Chọn "Chặn" sẽ dừng phát ngay và sau này cũng không xem được. Có thể bỏ chặn trong "Cài đặt phụ huynh".
+可在儿童内容详情页添加禁看	Có thể chặn trong trang chi tiết nội dung trẻ em
+禁看	Chặn
+为避免孩子自己恢复观看，建议立即前往“家长设置”开启密码锁	Để trẻ không tự bỏ chặn, nên vào "Cài đặt phụ huynh" bật khoá mật khẩu ngay
+已加入禁看	Đã chặn
+打开家长设置	Mở cài đặt phụ huynh
+消费记录	Lịch sử mua
+恢复观看	Cho xem lại
+已取消加入片单	Đã bỏ khỏi danh sách phim
+收藏	Yêu thích
+暂无优惠券	Chưa có phiếu giảm giá
+暂无缓存影片	Chưa có phim đã tải
+当前未绑定芒果账号，请绑定后再尝试播放。	Chưa liên kết tài khoản Mango, hãy liên kết rồi phát lại.
+开启巨幕模式	Bật chế độ màn hình lớn
+巨幕模式 尽享超宽画幅	Chế độ màn hình lớn, khung hình siêu rộng
+已收藏	Đã yêu thích
+已加入片单	Đã thêm vào danh sách phim
+可至”我的 > 我的片单“查看	Xem trong "Của tôi > Danh sách phim"
+获取用户信息失败，请重试,	Không lấy được thông tin người dùng, hãy thử lại,
+获取产品包失败,请重试	Không lấy được gói dịch vụ, hãy thử lại
+按“返回键”退出	Bấm "Quay lại" để thoát
+认证失败异常	Lỗi xác thực
+客户端异常	Lỗi ứng dụng
+数据解析异常	Lỗi đọc dữ liệu
+服务端异常	Lỗi máy chủ
+网络链接超时	Kết nối mạng quá thời gian
+未知异常	Lỗi không xác định
+侧投观看21:9影片时，巨幕模式将自动生效	Khi chiếu từ bên cạnh và xem phim 21:9, chế độ màn hình lớn sẽ tự bật
+我的资产	Tài sản của tôi
+暂未收藏	Chưa có mục yêu thích
+操作异常，请重试	Thao tác bị lỗi, hãy thử lại
+可订阅更新，影片上线及时提醒	Đăng ký để được nhắc khi phim có tập mới
+订阅成功，可至“我的 > 我的片单”查看	Đăng ký thành công, xem trong "Của tôi > Danh sách phim"
+checkCrsChannel()方法未调用!	Chưa gọi checkCrsChannel()!
+开通会员优惠购买	Đăng ký thành viên để mua giá ưu đãi
+二维码获取失败	Không lấy được mã QR
+会员服务协议	Điều khoản thành viên
+二维码过期	Mã QR đã hết hạn
+二维码过期后自动刷新	Mã QR tự làm mới khi hết hạn
+%1$s元	%1$s tệ
+适用智能电视/智能机顶盒/手机/电脑/平板	Dùng được trên TV thông minh/đầu thu/điện thoại/máy tính/máy tính bảng
+全屏影视会员	Thành viên phim toàn màn hình
+（%1$s元）	(%1$s tệ)
+可减%1$s元	Giảm %1$s tệ
+微信/支付宝扫码支付	Thanh toán bằng cách quét mã WeChat/Alipay
+观看下一部	Xem phim tiếp theo
+按订阅	Bấm để đăng ký
+广告	Quảng cáo
+视频广告格式不支持	Định dạng quảng cáo video không được hỗ trợ
+该内容暂不支持此倍速	Nội dung này chưa hỗ trợ tốc độ này
+优惠券	Phiếu giảm giá
+GMAX缓存	Phim GMAX đã tải
+已购课程	Khoá học đã mua
+可是看前%d分钟	Được xem thử %d phút đầu
+预发布测试版本：%1$s,%2$d,请勿用于对外发布	Bản thử nghiệm: %1$s, %2$d, không dùng để phát hành
+校正失败，请调整投影距离或检查摄像头是否被遮挡	Hiệu chỉnh thất bại, hãy chỉnh khoảng cách chiếu hoặc kiểm tra camera có bị che không
+距离过远，校准失败	Quá xa, hiệu chỉnh thất bại
+距离过近，校准失败	Quá gần, hiệu chỉnh thất bại
+自动对焦初始化失败	Khởi tạo lấy nét tự động thất bại
+校准成功	Hiệu chỉnh thành công
+摄像头初始化失败，请重启系统	Khởi tạo camera thất bại, hãy khởi động lại máy
+按手动位移	Bấm để dịch chuyển thủ công
+对齐完成	Đã căn xong
+正在定位幕布	Đang tìm vị trí màn chiếu
+尝试松手，自动对齐幕布	Thả tay ra để tự căn theo màn chiếu
+向后挪动投影仪，使画面超出幕布四边，实现画幕对齐 %1$ds	Lùi máy chiếu ra sau để hình tràn qua bốn cạnh màn chiếu rồi căn lại %1$ds
+定位完成，按	Đã tìm xong vị trí, bấm
+手动调整	Chỉnh thủ công
+墙面定位失败	Tìm vị trí trên tường thất bại
+墙面扫描已中断	Quét tường bị gián đoạn
+扫描完成，未发现合适投影位置	Quét xong, không tìm thấy chỗ chiếu phù hợp
+过程中请勿移动设备	Đừng di chuyển máy trong khi làm
+正在扫描墙面	Đang quét tường
+已优化到%s模式	Đã tối ưu sang chế độ %s
+AI画质增强	Tăng cường hình ảnh AI
+避障将导致画面过小，请调整投影角度	Tránh vật cản sẽ làm hình quá nhỏ, hãy chỉnh góc chiếu
+去校准	Hiệu chỉnh
+效果OK	Đã ổn
+画面自动校正效果不佳？	Hiệu chỉnh hình tự động chưa tốt?
+正在初始化摄像头，请稍候重试	Đang khởi tạo camera, hãy thử lại sau
+稍后设置	Để sau
+检测投影环境	Kiểm tra môi trường chiếu
+可继续检测投影环境，判断是否有障碍物、幕布，以匹配最佳校正设置	Có thể kiểm tra tiếp môi trường chiếu (vật cản, màn chiếu) để chọn cách hiệu chỉnh tốt nhất
+可继续检测投影环境，判断是否有障碍物、幕布及非白墙，以匹配最佳校正设置	Có thể kiểm tra tiếp môi trường chiếu (vật cản, màn chiếu, tường không trắng) để chọn cách hiệu chỉnh tốt nhất
+校正完成	Hiệu chỉnh xong
+校正完成，按【OK】键手动微调	Hiệu chỉnh xong, bấm [OK] để tinh chỉnh thủ công
+画面调整完成，按【OK键】手动校正	Chỉnh hình xong, bấm [OK] để hiệu chỉnh thủ công
+画面校正完成，按	Hiệu chỉnh hình xong, bấm
+手动校正	Hiệu chỉnh thủ công
+画面校正完成，按 @ 手动校正	Hiệu chỉnh hình xong, bấm @ để hiệu chỉnh thủ công
+画面不清晰？按	Hình chưa nét? Bấm
+校正完成，按	Hiệu chỉnh xong, bấm
+键手动微调	để tinh chỉnh thủ công
+巨幕模式下仅支持手动梯形矫正	Ở chế độ màn hình lớn chỉ chỉnh hình thang thủ công được
+IMAX 片源下暂不支持无感实时校正	Nội dung IMAX chưa hỗ trợ hiệu chỉnh liên tục
+校准失败，请调整投影距离或检查摄像头是否被遮挡	Hiệu chỉnh thất bại, hãy chỉnh khoảng cách chiếu hoặc kiểm tra camera có bị che không
+适配失败，请确保环境光稳定后重试	Thích ứng thất bại, hãy để ánh sáng phòng ổn định rồi thử lại
+投影仪转动到氛围音箱状态下，按【快捷键】可以快速切换灯光颜色和关闭灯光	Khi máy chiếu xoay sang chế độ loa không khí, bấm [Phím tắt] để đổi màu đèn hoặc tắt đèn
+学习切换氛围音箱灯光颜色	Học cách đổi màu đèn loa không khí
+如何使用氛围音箱	Cách dùng loa không khí
+已应用墙面记忆	Đã dùng vị trí tường đã nhớ
+已应用灵动墙面	Đã dùng tường linh hoạt
+ARC设备	Thiết bị ARC
+蓝牙设备	Thiết bị Bluetooth
+低音炮	Loa trầm
+USB设备	Thiết bị USB
+正在自动对焦，请稍后	Đang lấy nét tự động, vui lòng chờ
+正在自动对焦，请稍后 .	Đang lấy nét tự động, vui lòng chờ .
+正在自动对焦，请稍后. . .	Đang lấy nét tự động, vui lòng chờ. . .
+正在自动对焦，请稍后. .	Đang lấy nét tự động, vui lòng chờ. .
+校正失败，请调整投影位置或角度	Hiệu chỉnh thất bại, hãy chỉnh vị trí hoặc góc chiếu
+手动微调	Tinh chỉnh thủ công
+若每次自动校正的效果不佳，请尝试“校准”	Nếu hiệu chỉnh tự động thường chưa tốt, hãy thử "Hiệu chuẩn"
+自动校正已完成，可手动微调	Đã hiệu chỉnh tự động xong, có thể tinh chỉnh thủ công
+梯形校正异常，请重启设备	Chỉnh hình thang bị lỗi, hãy khởi động lại máy
+画面或镜头被遮挡，请检查后重试	Hình hoặc ống kính bị che, hãy kiểm tra rồi thử lại
+梯形校正初始化失败，请联系客服	Khởi tạo chỉnh hình thang thất bại, hãy liên hệ bảo hành
+设备关机中	Máy đang tắt
+投影角度较大，推荐正投获得更佳画质	Góc chiếu lớn, nên chiếu thẳng để hình đẹp hơn
+当前模式下不支持自动梯形校正	Chế độ này không hỗ trợ chỉnh hình thang tự động
+当前模式不支持自动梯形校正	Chế độ này không hỗ trợ chỉnh hình thang tự động
+若自动校正后画面出现旋转，请使用陀螺仪水平校准	Nếu hình bị xoay sau khi hiệu chỉnh tự động, hãy hiệu chuẩn cân bằng con quay
+若自动校正后画面不是矩形，请使用梯形校正校准	Nếu hình không phải hình chữ nhật sau khi hiệu chỉnh tự động, hãy hiệu chuẩn hình thang
+选择校准方式	Chọn cách hiệu chuẩn
+当前墙面环境不支持自动梯形校正	Mặt tường này không hỗ trợ chỉnh hình thang tự động
+高级校准	Hiệu chuẩn nâng cao
+若效果不佳，请尝试”手动微调“或“高级校准”	Nếu chưa tốt, hãy thử "Tinh chỉnh thủ công" hoặc "Hiệu chuẩn nâng cao"
+自动校正已完成	Đã hiệu chỉnh tự động xong
+学习幕布对齐	Học cách căn theo màn chiếu
+移动投影仪，使投影画面超出幕布四边	Di chuyển máy chiếu để hình tràn qua bốn cạnh màn chiếu
+B屏大小	Kích thước màn B
+电量耗尽，即将自动关机 %1$ds	Hết pin, máy sẽ tự tắt sau %1$ds
+退出“Boost 档位”以支持 IMAX Enhanced?	Thoát mức "Boost" để dùng IMAX Enhanced?
+摄像头初始化失败，请重试	Khởi tạo camera thất bại, hãy thử lại
+日光	Ánh sáng ban ngày
+已切换到%s	Đã chuyển sang %s
+已开启充电宝模式	Đã bật chế độ pin dự phòng
+电池支架接入	Đã gắn đế pin
+支架电量低	Đế pin sắp hết
+请插入电源适配器	Hãy cắm bộ sạc
+充电宝/三方适配器接入	Đã cắm pin dự phòng/bộ sạc không chính hãng
+无缝切换供电方式，观影不间断	Chuyển nguồn điện liền mạch, xem phim không gián đoạn
+极米电池支架	Đế pin XGIMI
+电源适配器接入	Đã cắm bộ sạc
+已关闭充电宝模式	Đã tắt chế độ pin dự phòng
+进入露营助手	Mở trợ lý cắm trại
+欢迎使用极米电池支架	Chào mừng bạn dùng đế pin XGIMI
+内存已清空	Đã giải phóng bộ nhớ
+成功取消定时关机	Đã huỷ hẹn giờ tắt máy
+进入墙面记忆（默认）	Mở vị trí tường đã nhớ (mặc định)
+进入灵动墙面（默认）	Mở tường linh hoạt (mặc định)
+进入音响模式（默认）	Mở chế độ loa (mặc định)
+自定义快捷键	Tuỳ chỉnh phím tắt
+可根据偏好将遥控器【快捷键】设为指定功能，一键直达	Có thể gán [Phím tắt] trên điều khiển cho chức năng bạn muốn để mở bằng một lần bấm
+遥控器快捷键	Phím tắt trên điều khiển
+音响模式	Chế độ loa
+可配置遥控器的【快捷键】，快速前往右侧所选功能	Gán [Phím tắt] trên điều khiển để mở nhanh chức năng đã chọn bên phải
+延时关灯	Hẹn giờ tắt đèn
+延时关灯已取消	Đã huỷ hẹn giờ tắt đèn
+%s 分钟后将自动关灯	Đèn sẽ tự tắt sau %s phút
+开始一键画面校正	Bắt đầu hiệu chỉnh hình một chạm
+移动投影仪，确保幕布边框位于灰色区域内，以达到最佳画幕对齐效果	Di chuyển máy chiếu sao cho viền màn chiếu nằm trong vùng xám để căn hình tốt nhất
+画幕对齐调整	Căn hình theo màn chiếu
+请检查机身周围是否有物体遮挡云台，如长期接入外接设备，请前往设置关闭“关机云台复位”	Hãy kiểm tra có vật gì cản chân xoay quanh máy không; nếu thường cắm thiết bị ngoài, hãy vào Cài đặt tắt "Đưa chân xoay về khi tắt máy"
+请检查投影HDMI是否拔出，或机身周围是否有其他物体遮挡云台，移除后请点击重试	Hãy kiểm tra dây HDMI đã rút chưa, hoặc có vật gì cản chân xoay quanh máy không; bỏ ra rồi bấm Thử lại
+重试次数过多	Thử lại quá nhiều lần
+请检查并移除机身周围障碍物，稍后再试	Hãy dọn vật cản quanh máy rồi thử lại sau
+前往设置	Mở Cài đặt
+云台移动受阻，请移除障碍物	Chân xoay bị cản, hãy dọn vật cản
+前往关闭	Đi tắt
+外接设备导致“关机云台复位”受阻，关闭此功能？	Thiết bị ngoài cản "Đưa chân xoay về khi tắt máy", tắt tính năng này?
+旋转过程中请勿移动设备	Đừng di chuyển máy khi đang xoay
+云台旋转中	Chân xoay đang xoay
+对比度增强已关闭	Đã tắt tăng cường tương phản
+对比度增强已生效	Đã bật tăng cường tương phản
+画面调整导致墙面平整适配失效	Chỉnh hình làm mất hiệu chỉnh tường phẳng
+退出“Boost 档位”以支持杜比视界?	Thoát mức "Boost" để dùng Dolby Vision?
+切换，将调整色彩模式等	để chuyển, chế độ màu và các cài đặt khác sẽ được điều chỉnh
+切换至明亮	Chuyển sang Sáng
+切换至杜比视界最佳配置	Chuyển sang cấu hình Dolby Vision tốt nhất
+请恢复TurboLight后重试	Hãy bật lại TurboLight rồi thử lại
+切换亮度模式以达最佳效果	Đổi chế độ độ sáng để có hình tốt nhất
+开启杜比视界绚丽色彩	Bật màu sắc rực rỡ Dolby Vision
+按开启	Bấm để bật
+当前片源支持杜比视界	Nội dung này hỗ trợ Dolby Vision
+已更换	Đã thay
+下次提醒	Nhắc lần sau
+不再提醒	Không nhắc nữa
+如未更换，请及时更换。	Nếu chưa thay, hãy thay sớm.
+扫码获取专属服务	Quét mã để được hỗ trợ riêng
+防尘滤芯的使用时间已达上限，请及时更换。	Lõi lọc bụi đã hết thời gian dùng, hãy thay sớm.
+为保障产品性能，请确认最近2个月防尘滤芯是否完成更换?	Để máy chạy tốt, bạn đã thay lõi lọc bụi trong 2 tháng gần đây chưa?
+如未及时更换，会影响产品使用寿命	Không thay kịp thời sẽ làm giảm tuổi thọ máy
+去开启充电宝模式	Bật chế độ pin dự phòng
+接入充电宝或非官方适配器时，可手动打开充电宝模式以保护设备正常使用，充电宝模式将减弱视觉和听觉效果	Khi dùng pin dự phòng hoặc bộ sạc không chính hãng, có thể bật chế độ pin dự phòng để bảo vệ máy; chế độ này giảm độ sáng và âm thanh
+为确保设备正常使用，接入充电宝或非官方适配器时，开启充电宝模式将会减弱亮度和听觉效果	Để máy hoạt động bình thường khi dùng pin dự phòng hoặc bộ sạc không chính hãng, chế độ pin dự phòng sẽ giảm độ sáng và âm thanh
+接入官方适配器后充电宝模式将自动关闭	Chế độ pin dự phòng tự tắt khi cắm bộ sạc chính hãng
+以后可至“设置 > 通用 > 高级设置 ”管理	Sau này quản lý trong "Cài đặt > Chung > Cài đặt nâng cao"
+充电宝模式已开启	Đã bật chế độ pin dự phòng
+已调至充电宝模式下最高音量	Đã đạt âm lượng tối đa của chế độ pin dự phòng
+将持续根据环境条件，自动调整画面显示	Hình sẽ được tự điều chỉnh liên tục theo môi trường
+%1$s自适应	%1$s thích ứng
+将自动检测障碍物、幕布	Sẽ tự phát hiện vật cản và màn chiếu
+将自动检测障碍物、幕布和墙面颜色	Sẽ tự phát hiện vật cản, màn chiếu và màu tường
+障碍物	Vật cản
+有	Có
+墙面颜色	Màu tường
+需适配	Cần thích ứng
+无需适配	Không cần thích ứng
+正在检测投影环境...	Đang kiểm tra môi trường chiếu...
+巨幕模式开启失败	Bật chế độ màn hình lớn thất bại
+可至"设置>通用"管理	Quản lý trong "Cài đặt > Chung"
+已退出智能防射眼	Đã tắt chống chói mắt thông minh
+关闭“智能防射眼”功能？	Tắt "Chống chói mắt thông minh"?
+关闭功能	Tắt tính năng
+已关闭防射眼保护	Đã tắt bảo vệ chống chói mắt
+关闭“防射眼保护”功能？	Tắt "Bảo vệ chống chói mắt"?
+关闭智能防射眼	Tắt chống chói mắt thông minh
+以后可至 “设置>通用” 更改此设置	Sau này có thể đổi trong "Cài đặt > Chung"
+检测到人体后自动息屏，人体离开或按 @ 恢复屏幕	Tự tắt hình khi phát hiện có người, hình hiện lại khi người rời đi hoặc bấm @
+选择智能防射眼模式	Chọn chế độ chống chói mắt thông minh
+按 @ 退出	Bấm @ để thoát
+检测到镜头前有人/物体移动，已降低亮度，离开后会自动恢复	Có người/vật di chuyển trước ống kính nên đã giảm độ sáng, sẽ tự sáng lại khi rời đi
+使用过程中可按focus%s，或长按focus2%s	Khi dùng, bấm focus%s hoặc giữ focus2%s
+当画面不方正时，可按focus%s，或长按focus2%s	Khi hình bị lệch, bấm focus%s hoặc giữ focus2%s
+显示更多画面对焦与校正功能	Hiện thêm chức năng lấy nét và hiệu chỉnh hình
+系统将于%d秒后关机，请确认机身底部支架是否正常开启	Máy sẽ tắt sau %d giây, hãy kiểm tra chân đế dưới máy đã mở đúng chưa
+调整	Chỉnh
+选点	Chọn điểm
+按开启震撼观影	Bấm để bật trải nghiệm xem phim sống động
+当前片源支持 IMAX Enhanced 模式	Nội dung này hỗ trợ chế độ IMAX Enhanced
+三色激光导致墙面颜色适配失效	Laser ba màu làm mất thích ứng màu tường
+已重置陀螺仪	Đã đặt lại con quay hồi chuyển
+成功释放	Đã giải phóng
+当前可用内存	Bộ nhớ trống
+超出识别范围，请调整投影位置后重试	Ngoài phạm vi nhận diện, hãy chỉnh vị trí chiếu rồi thử lại
+小黄人	Minion
+怪兽	Quái vật
+音效： %s	Hiệu ứng âm thanh: %s
+观影模式	Chế độ xem phim
+自动对焦失败，请重试	Lấy nét tự động thất bại, hãy thử lại
+无音乐	Không có nhạc
+有音乐	Có nhạc
+侧投角过大不支持巨幕模式	Góc chiếu bên quá lớn, không dùng được chế độ màn hình lớn
+幕布下不支持巨幕模式	Không dùng được chế độ màn hình lớn với màn chiếu
+默认画面下不支持巨幕模式	Không dùng được chế độ màn hình lớn với hình mặc định
+吊装下暂不支持巨幕模式	Chưa dùng được chế độ màn hình lớn khi treo trần
+画面旋转下不支持巨幕模式	Không dùng được chế độ màn hình lớn khi xoay hình
+侧投角过小不支持巨幕模式	Góc chiếu bên quá nhỏ, không dùng được chế độ màn hình lớn
+按了解详情	Bấm để xem chi tiết
+已更新墙面设置	Đã cập nhật cài đặt tường
+手机蓝牙已断开	Đã ngắt Bluetooth điện thoại
+音响已断开	Đã ngắt loa
+智能幕布已断开	Đã ngắt màn chiếu thông minh
+麦克风已断开	Đã ngắt micro
+音乐控制器已断开	Đã ngắt bộ điều khiển nhạc
+手机APP已断开	Đã ngắt ứng dụng điện thoại
+请平放设备后重试	Hãy đặt máy nằm ngang rồi thử lại
+电源功率较小，会造成电量消耗	Nguồn điện yếu, pin sẽ bị hao
+电源已接入，开始充电	Đã cắm điện, bắt đầu sạc
+电源已断开	Đã rút điện
+电池电量低	Pin yếu
+请插入适配器使用	Hãy cắm bộ sạc để dùng
+立即关机	Tắt máy ngay
+电池电量过低，即将关机%d 秒倒计时	Pin quá yếu, máy sẽ tắt sau %d giây
+电量低，%ds 后自动关机	Pin yếu, tự tắt máy sau %d giây
+电量剩30%	Pin còn 30%
+关机	Tắt máy
+休眠	Ngủ
+休眠模式耗电低、可快速唤醒、可通过极米App远程缓存GMAX影片	Chế độ ngủ ít tốn điện, bật lại nhanh, vẫn tải phim GMAX từ xa qua ứng dụng XGIMI
+当前有正在缓存的影片，建议选择“休眠”模式继续缓存	Đang có phim được tải về, nên chọn chế độ "Ngủ" để tải tiếp
+待机	Chờ
+旅行关机	Tắt máy khi di chuyển
+未连接电源时连按两次开机键开机，防止旅途中误触开机	Khi không cắm điện phải bấm nút nguồn 2 lần để bật, tránh bật nhầm khi đi đường
+温度过高，已切换至默认模式	Nhiệt độ quá cao, đã chuyển về chế độ mặc định
+温度异常，已切换至默认模式	Nhiệt độ bất thường, đã chuyển về chế độ mặc định
+适配器已拔出	Đã rút bộ sạc
+暂无进行中应用	Không có ứng dụng nào đang chạy
+一键清理	Dọn dẹp
+按$可关闭应用	Bấm $ để đóng ứng dụng
+重启	Khởi động lại
+对齐失败，未发现幕布位置	Căn thất bại, không tìm thấy màn chiếu
+幕布对齐已中断	Căn theo màn chiếu bị gián đoạn
+画面参数已更新	Đã cập nhật thông số hình
+当前应用或你所在的单位不允许截屏	Ứng dụng này hoặc đơn vị của bạn không cho chụp màn hình
+可用空间不足，无法保存截图	Không đủ bộ nhớ để lưu ảnh chụp màn hình
+截屏保存在:内置存储/Pictures/Screenshots	Ảnh chụp màn hình lưu ở: Bộ nhớ trong/Pictures/Screenshots
+设备温度检测异常	Đo nhiệt độ máy bị lỗi
+为保证设备使用，已启动温度保护措施。请联系客服400-002-8960进行解决	Đã bật bảo vệ nhiệt độ để máy hoạt động an toàn. Hãy liên hệ bảo hành để được hỗ trợ
+启动温度保护	Bật bảo vệ nhiệt độ
+中心圆为正圆时画面比例最佳	Hình đúng tỉ lệ khi vòng tròn ở giữa tròn đều
+梯形校正复位	Đặt lại chỉnh hình thang
+关屏	Tắt hình
+%s已接入，按【OK】键切换声音输出	Đã cắm %s, bấm [OK] để đổi đầu ra âm thanh
+%s已接入，按	Đã cắm %s, bấm
+%s已拔出，按【OK】键切换声音输出	Đã rút %s, bấm [OK] để đổi đầu ra âm thanh
+%s已拔出，按	Đã rút %s, bấm
+键切换声音输出	để đổi đầu ra âm thanh
+%s已拔出，已切换至内部扬声器	Đã rút %s, đã chuyển sang loa trong máy
+自定义时长	Tuỳ chọn thời gian
+超出自定义范围	Ngoài phạm vi cho phép
+立即关机(%d)	Tắt máy ngay (%d)
+温度异常	Nhiệt độ bất thường
+%s分钟	%s phút
+%d分钟定时关机设定成功	Đã hẹn tắt máy sau %d phút
+自动关机提醒	Nhắc tự tắt máy
+取消关机	Huỷ tắt máy
+短按麦克风 “开机键” 切换音效	Bấm nhanh "nút nguồn" trên micro để đổi hiệu ứng âm thanh
+画面将缩小以提升亮度	Hình sẽ thu nhỏ để sáng hơn
+Turbo Light 自适应（%1ds）	Turbo Light thích ứng (%1ds)
+至 “高级设置” 开启	Bật trong "Cài đặt nâng cao"
+中止自适应	Dừng thích ứng
+去开启	Bật
+开启Turbo Light智能增强画面亮度，可能会改变画面大小。	Bật Turbo Light để tự tăng độ sáng, kích thước hình có thể thay đổi.
+当前画面不够亮？	Hình chưa đủ sáng?
+Turbo Light 失败	Turbo Light thất bại
+开启后可自动提升画面亮度	Bật để tự tăng độ sáng hình
+当前已为最大亮度	Đã ở độ sáng tối đa
+可至“通用>高级设置”管理	Quản lý trong "Chung > Cài đặt nâng cao"
+Turbo Light已增强画面亮度	Turbo Light đã tăng độ sáng hình
+应用更新中，请勿断电	Đang cập nhật ứng dụng, đừng ngắt điện
+根据设备放置方向，自动转换为吊装模式	Đã tự chuyển sang chế độ treo trần theo hướng đặt máy
+根据设备放置方向，自动转换为正装模式	Đã tự chuyển sang chế độ đặt bàn theo hướng đặt máy
+3D模式下不支持	Không hỗ trợ trong chế độ 3D
+请关闭墙面颜色适配后再进行自动画面调整	Hãy tắt thích ứng màu tường rồi mới tự chỉnh hình
+适配色彩已为当前墙面颜色匹配最佳效果	Màu đã được thích ứng tốt nhất với màu tường hiện tại
+保留本次适配结果？	Giữ kết quả thích ứng này?
+自定义色彩模式下不支持墙面颜色适配	Chế độ màu tuỳ chỉnh không hỗ trợ thích ứng màu tường
+适配失败，请调整投影距离或角度	Thích ứng thất bại, hãy chỉnh khoảng cách hoặc góc chiếu
+适配失败，墙面颜色超出校准范围	Thích ứng thất bại, màu tường ngoài phạm vi hiệu chỉnh
+墙面颜色适配初始化失败，请联系客服	Khởi tạo thích ứng màu tường thất bại, hãy liên hệ bảo hành
+使用适配色彩	Dùng màu đã thích ứng
+使用原始色彩	Dùng màu gốc
+已匹配最佳效果	Đã thích ứng tốt nhất
+当前电源适配器功率低，请及时接入原装电源适配器充电	Bộ sạc đang dùng yếu, hãy cắm bộ sạc chính hãng
+电源功率不足	Nguồn điện không đủ
+建议使用原装电源适配器	Nên dùng bộ sạc chính hãng
+电池电量不足	Pin yếu
+请及时接入原装电源适配器充电	Hãy cắm bộ sạc chính hãng để sạc
+MCU异常，即将关机 %d 秒倒计时	Lỗi MCU, máy sẽ tắt sau %d giây
+风扇异常，即将自动关机 %ss	Quạt bị lỗi, máy sẽ tự tắt sau %s giây
+检测到设备风扇异常，请联系客服 400–002–8960	Quạt của máy bị lỗi, hãy liên hệ bảo hành
+温度异常，即将自动关机 %ss	Nhiệt độ bất thường, máy sẽ tự tắt sau %s giây
+温度过高，即将自动关机 %ss	Nhiệt độ quá cao, máy sẽ tự tắt sau %s giây
+可尝试重启解决，多次出现请联系客服 400–002–8960	Hãy thử khởi động lại; nếu lặp lại nhiều lần, hãy liên hệ bảo hành
+正在后台更新	Đang cập nhật ngầm
+下载完成，是否马上升级？	Đã tải xong, nâng cấp ngay?
+已帮你检测到xxx应用有更新，是否马上升级	Có ứng dụng cần cập nhật, nâng cấp ngay?
+app升级提示	Nhắc nâng cấp ứng dụng
+正在升级应用	Đang nâng cấp ứng dụng
+已完成 %1$d/%2$d	Đã xong %1$d/%2$d
+正在后台下载	Đang tải ngầm
+无法连接到服务器，请检查网络后重试	Không kết nối được máy chủ, hãy kiểm tra mạng rồi thử lại
+正在	Đang
+亲爱的用户，为您检测到%s有更新啦~~~	%s đã có bản cập nhật mới
+继续下载	Tải tiếp
+当前是最新固件，保持的不错噢	Máy đang dùng firmware mới nhất
+默认下次开机升级	Mặc định nâng cấp ở lần bật máy sau
+固件正在下载中，返回将取消下载任务,是否确认取消?	Firmware đang tải, quay lại sẽ huỷ tải. Huỷ thật không?
+版本更新（INUI %s）	Cập nhật phiên bản (INUI %s)
+关机更新	Cập nhật khi tắt máy
+系统升级文件已经下载完成	Đã tải xong tệp nâng cấp hệ thống
+系统升级文件已下载完成，立即升级？	Đã tải xong tệp nâng cấp hệ thống, nâng cấp ngay?
+固件下载出错	Tải firmware bị lỗi
+下载更新	Tải bản cập nhật
+发现更新版本:	Có phiên bản mới:
+发现系统新版本	Có phiên bản hệ thống mới
+忽略此版本	Bỏ qua phiên bản này
+应用更新失败	Cập nhật ứng dụng thất bại
+应用更新失败，关机时重试	Cập nhật ứng dụng thất bại, sẽ thử lại khi tắt máy
+电量不足50%,无法更新	Pin dưới 50%, không cập nhật được
+极米桌面升级中...	Đang nâng cấp màn hình chính XGIMI...
+正在进行MD5验证	Đang kiểm tra MD5
+固件验证失败	Kiểm tra firmware thất bại
+固件验证失败，请重新下载	Kiểm tra firmware thất bại, hãy tải lại
+必要固件已下载完成，下次开机升级^_^	Đã tải xong firmware cần thiết, sẽ nâng cấp ở lần bật máy sau
+OTA立即升级	Nâng cấp OTA ngay
+正在下载重要更新	Đang tải bản cập nhật quan trọng
+ota包已下载完成，是否立即升级？	Đã tải xong gói OTA, nâng cấp ngay?
+检测到服务器有系统版本升级，是否立即升级?	Có phiên bản hệ thống mới, nâng cấp ngay?
+OTA升级提示	Nhắc nâng cấp OTA
+暂停下载	Tạm dừng tải
+服务器繁忙，请稍后重试	Máy chủ đang bận, hãy thử lại sau
+系统完整性检测失败，无法升级	Kiểm tra toàn vẹn hệ thống thất bại, không nâng cấp được
+电量过低，请插入适配器再升级	Pin quá yếu, hãy cắm bộ sạc rồi nâng cấp
+本次更新	Bản cập nhật này
+正在校验	Đang kiểm tra
+下载完成	Đã tải xong
+正在下载	Đang tải
+正在安装	Đang cài
+操作过于频繁，请稍后重试^_^	Thao tác quá nhanh, hãy thử lại sau
+检测更新	Kiểm tra cập nhật
+更新内容	Nội dung cập nhật
+正在检测更新	Đang kiểm tra cập nhật
+下次开机	Lần bật máy sau
+系统将会在下次开机时自动更新	Hệ thống sẽ tự cập nhật ở lần bật máy sau
+更新并重启	Cập nhật và khởi động lại
+设备将重启开始升级	Máy sẽ khởi động lại để nâng cấp
+有重要版本更新	Có bản cập nhật quan trọng
+下载失败	Tải thất bại
+下次开机更新	Cập nhật ở lần bật máy sau
+关机时更新	Cập nhật khi tắt máy
+VControl-单元测试	VControl - kiểm thử
+取消定时关机失败	Huỷ hẹn giờ tắt máy thất bại
+退出音响模式失败	Thoát chế độ loa thất bại
+获取 FeatureList的 3D模式 失败	Lấy chế độ 3D trong FeatureList thất bại
+获取 FeatureList 失败	Lấy FeatureList thất bại
+获取 FeatureList的 图像模式 失败	Lấy chế độ hình ảnh trong FeatureList thất bại
+获取 FeatureList的 蓝色 失败	Lấy màu xanh lam trong FeatureList thất bại
+获取 FeatureList的 亮度模式 失败	Lấy chế độ độ sáng trong FeatureList thất bại
+获取 FeatureList的 绿色 失败	Lấy màu xanh lục trong FeatureList thất bại
+获取 FeatureList的 亮度 失败	Lấy độ sáng trong FeatureList thất bại
+获取 FeatureList的 红色 失败	Lấy màu đỏ trong FeatureList thất bại
+获取 FeatureList的 音效模式 失败	Lấy chế độ âm thanh trong FeatureList thất bại
+极米无屏电视	Máy chiếu XGIMI
+设置自动梯形校正失败	Đặt chỉnh hình thang tự động thất bại
+打开音响模式	Mở chế độ loa
+打开系统升级失败	Mở nâng cấp hệ thống thất bại
+设置 FeatureList的 3D模式(%1$s) 失败	Đặt chế độ 3D (%1$s) trong FeatureList thất bại
+设置 FeatureList的 图像模式(%1$s) 失败	Đặt chế độ hình ảnh (%1$s) trong FeatureList thất bại
+设置 FeatureList的 蓝色(%1$s) 失败	Đặt màu xanh lam (%1$s) trong FeatureList thất bại
+设置 FeatureList的 亮度模式(%1$s) 失败	Đặt chế độ độ sáng (%1$s) trong FeatureList thất bại
+设置 FeatureList的 绿色(%1$s) 失败	Đặt màu xanh lục (%1$s) trong FeatureList thất bại
+设置 FeatureList的 亮度(%1$s) 失败	Đặt độ sáng (%1$s) trong FeatureList thất bại
+设置 FeatureList的 红色(%1$s) 失败	Đặt màu đỏ (%1$s) trong FeatureList thất bại
+设置 FeatureList的 音效模式(%1$s) 失败	Đặt chế độ âm thanh (%1$s) trong FeatureList thất bại
+设置关屏失败	Tắt hình thất bại
+设置开屏失败	Bật hình thất bại
+关闭休眠失败	Tắt chế độ ngủ thất bại
+打开休眠失败	Bật chế độ ngủ thất bại
+设置定时关机失败	Hẹn giờ tắt máy thất bại
+设置音量失败	Đặt âm lượng thất bại
+退出请按两次	Bấm hai lần để thoát
+通过极米App投屏、看电视、投视频、听音乐，轻松实现投影仪与手机互动	Dùng ứng dụng XGIMI để chiếu màn hình, xem TV, chiếu video, nghe nhạc, điều khiển máy chiếu bằng điện thoại
+安卓设备	Thiết bị Android
+安卓设备有线连接	Kết nối dây với Android
+投屏环境检测	Kiểm tra môi trường chiếu màn hình
+投屏网络延时	Độ trễ mạng khi chiếu
+%1$d (最佳延时标准：小于 120ms)	%1$d (tốt nhất: dưới 120 ms)
+使用遥控器菜单键，调整镜像模式，降低镜像分辨率、最大帧率...等	Bấm Menu trên điều khiển để chỉnh chế độ phản chiếu, giảm độ phân giải, tốc độ khung hình tối đa...
+当前连接投屏的 Wi-Fi 不建议同时多设备使用	Không nên dùng nhiều thiết bị cùng lúc trên Wi-Fi đang chiếu màn hình
+确认你的设备内存充足，使用不卡顿	Hãy chắc chắn thiết bị còn đủ bộ nhớ để không bị giật
+建议尝试重启您的路由器	Hãy thử khởi động lại bộ phát Wi-Fi
+检测约 5 秒，过程中请勿操作	Kiểm tra khoảng 5 giây, đừng thao tác trong lúc này
+正在检测	Đang kiểm tra
+运行内存	Bộ nhớ RAM
+当前设备内存运行较高	Bộ nhớ của máy đang dùng nhiều
+定期使用「投影管家」清理内存空间，可卸载不常用的应用软件	Thường xuyên dùng "Quản lý máy chiếu" để dọn bộ nhớ, gỡ bớt ứng dụng ít dùng
+当前设备内存运行良好	Bộ nhớ của máy đang tốt
+反馈问题	Báo lỗi
+镜像能力	Khả năng phản chiếu
+当前设备不支持 60 帧率镜像投屏	Thiết bị này không phản chiếu được 60 khung hình/giây
+使用遥控器按菜单键，选择降低镜像最大帧率	Bấm Menu trên điều khiển, chọn giảm tốc độ khung hình tối đa
+当前设备支持 60 帧率镜像投屏	Thiết bị này phản chiếu được 60 khung hình/giây
+极米投屏	Chiếu màn hình XGIMI
+请确保移动设备与投屏设备在同一网络下	Hãy để điện thoại và máy chiếu cùng một mạng
+影音投屏	Chiếu video và nhạc
+正在重启投屏服务	Đang khởi động lại dịch vụ chiếu màn hình
+重启过程中，请勿操作	Đừng thao tác trong khi khởi động lại
+2.4G 频段	Băng tần 2,4 GHz
+如果你的路由器支持 5G Wi-Fi 频段，请尝试将投屏设备都切换至同一个 5G Wi-Fi	Nếu bộ phát hỗ trợ Wi-Fi 5 GHz, hãy chuyển các thiết bị chiếu sang cùng một mạng 5 GHz
+5G 频段	Băng tần 5 GHz
+若当前已使用 5G Wi-Fi 频段，建议你可尝试调整路由器的摆放位置，路由器与设备间的障碍物 (如墙、柜体等) 易阻挡信号	Nếu đã dùng Wi-Fi 5 GHz, hãy thử đổi chỗ đặt bộ phát; vật cản giữa bộ phát và máy (tường, tủ...) dễ chặn sóng
+Wi-Fi网络	Mạng Wi-Fi
+苹果设备	Thiết bị Apple
+请将数据线连接投影仪USB接口，另一端连接手机	Cắm dây cáp vào cổng USB của máy chiếu, đầu kia cắm vào điện thoại
+苹果设备有线连接	Kết nối dây với Apple
+因当前应用限制的原因，无法获取屏幕信息投屏	Ứng dụng này không cho chiếu màn hình
+客厅	Phòng khách
+（有广告）	(có quảng cáo)
+连接至 XGIMI Sound 时无法使用，请断开后重试	Không dùng được khi đang nối XGIMI Sound, hãy ngắt rồi thử lại
+苹果手机	iPhone
+通过HDMI线连接投影和电脑侧面的HDMI接口，完成同屏	Nối dây HDMI từ máy chiếu vào cổng HDMI của máy tính để chiếu màn hình
+请将HDMI线连接投影仪接口和电脑接口	Nối dây HDMI giữa máy chiếu và máy tính
+PC电脑	Máy tính
+请将数据线连接投影仪USB接口，再将另一端连接手机	Cắm dây cáp vào cổng USB của máy chiếu, rồi cắm đầu kia vào điện thoại
+安卓手机	Điện thoại Android
+注意：请确保手机与投屏设备在同一网络下	Lưu ý: điện thoại và máy chiếu phải cùng một mạng
+扫码体验手机遥控、资源推送、影视投屏等新玩法	Quét mã để điều khiển bằng điện thoại, gửi nội dung, chiếu phim...
+注意：请确保移动设备与投屏设备在同一网络下	Lưu ý: điện thoại và máy chiếu phải cùng một mạng
+注意：请确保苹果电脑与投屏设备在同一网络下	Lưu ý: máy Mac và máy chiếu phải cùng một mạng
+注意：请确保电脑与投屏设备在同一网络下	Lưu ý: máy tính và máy chiếu phải cùng một mạng
+确定要退出有线同屏？	Thoát chiếu màn hình qua dây?
+请退出3d模式再尝试投屏	Hãy thoát chế độ 3D rồi thử chiếu lại
+已连接，但无法投屏	Đã kết nối nhưng không chiếu được
+投屏中断	Chiếu màn hình bị ngắt
+投屏卡顿	Chiếu màn hình bị giật
+搜不到设备	Không tìm thấy thiết bị
+安卓投屏	Chiếu từ Android
+无屏助手	Trợ lý máy chiếu
+影音应用	Ứng dụng video và nhạc
+PC同屏	Chiếu từ máy tính
+支持Android4.0以上各品牌安卓手机、平板	Hỗ trợ điện thoại, máy tính bảng Android 4.0 trở lên
+iOS4.2以上iPhone、iPad、macOSX以上的Mac	iPhone, iPad iOS 4.2 trở lên, máy Mac macOS X trở lên
+支持影音推屏、无屏助手控制投影设备	Hỗ trợ gửi video, nhạc và điều khiển máy chiếu bằng trợ lý
+支持华为EMUI10.0以上版本投屏	Hỗ trợ chiếu từ Huawei EMUI 10.0 trở lên
+华为手机	Điện thoại Huawei
+华为Cast+	Huawei Cast+
+热点投屏	Chiếu qua điểm phát
+更多帮助	Thêm trợ giúp
+重启投屏服务	Khởi động lại dịch vụ chiếu màn hình
+华为 Cast+	Huawei Cast+
+本地资源	Tệp trong máy
+无线镜像	Phản chiếu không dây
+视频 App	Ứng dụng video
+有线镜像	Phản chiếu qua dây
+极米 App 影视资源	Phim trong ứng dụng XGIMI
+将数据线连接投影仪和安卓设备后，在安卓设备的弹窗中选择「查看」	Sau khi nối dây cáp giữa máy chiếu và thiết bị Android, chọn "Xem" trong hộp thoại trên thiết bị Android
+在浏览器弹窗中选择「确定」，下载安装极米App	Chọn "OK" trong hộp thoại trình duyệt để tải và cài ứng dụng XGIMI
+安装完成后，请重新插拔数据线，在系统弹窗中确认打开极米App，启动同屏	Cài xong, rút và cắm lại dây cáp, xác nhận mở ứng dụng XGIMI trong hộp thoại để bắt đầu chiếu
+（若部分手机无法启用极米音响，请接入其他蓝牙音箱）	(Nếu điện thoại không dùng được loa XGIMI, hãy nối loa Bluetooth khác)
+Android设备有线投屏连接引导	Hướng dẫn chiếu màn hình Android qua dây
+已连接手机，有线同屏准备中	Đã nối điện thoại, đang chuẩn bị chiếu qua dây
+安卓手机镜像	Phản chiếu điện thoại Android
+投屏帮助	Trợ giúp chiếu màn hình
+iPhone镜像	Phản chiếu iPhone
+电脑镜像	Phản chiếu máy tính
+视频帧率	Tốc độ khung hình
+播放器选择	Chọn trình phát
+镜像分辨率	Độ phân giải phản chiếu
+倍速	Tốc độ phát
+通过符合Miracast标准的设备，实现对本设备的投屏。投屏时会导致本设备的已连接的WiFi断开	Chiếu màn hình từ thiết bị hỗ trợ Miracast. Khi chiếu, máy sẽ ngắt Wi-Fi đang kết nối
+投屏使用Wifi-5G网络体验会更佳	Chiếu màn hình qua Wi-Fi 5 GHz sẽ mượt hơn
+1. 下载安装极米 App	1. Tải và cài ứng dụng XGIMI
+2. 重新插入数据线	2. Cắm lại dây cáp
+3. 弹窗中确认打开极米 App，并同意隐私政策	3. Xác nhận mở ứng dụng XGIMI trong hộp thoại và đồng ý chính sách quyền riêng tư
+1. 在 iPhone 弹窗中选择“信任”	1. Chọn "Tin cậy" trong hộp thoại trên iPhone
+2. 若 iPhone 存在密码，输入密码后开始同屏	2. Nếu iPhone có mật khẩu, nhập mật khẩu để bắt đầu chiếu
+未搜索到信号，请尝试以下步骤	Không tìm thấy tín hiệu, hãy thử các bước sau
+投屏信号不稳定	Tín hiệu chiếu màn hình không ổn định
+进行投屏环境检测	Kiểm tra môi trường chiếu màn hình
+Windows 电脑	Máy tính Windows
+使用PC同屏软件通过无线的方式将电脑画面投屏	Dùng phần mềm chiếu màn hình để chiếu máy tính qua mạng không dây
+PC设备	Máy tính
+三方播放器	Trình phát bên thứ ba
+投屏服务重启失败，请重试	Khởi động lại dịch vụ chiếu màn hình thất bại, hãy thử lại
+完成重启投屏服务	Đã khởi động lại dịch vụ chiếu màn hình
+* 建议设备连接 5G WiFi，投屏更加稳定	* Nên dùng Wi-Fi 5 GHz để chiếu ổn định hơn
+* 超过 30 分钟未使用投屏，将为你自动关闭	* Không chiếu màn hình quá 30 phút sẽ tự tắt
+* 当前网络异常，请检查你的网络连接是否正常	* Mạng đang lỗi, hãy kiểm tra kết nối mạng
+使用热点投屏，可解决搜索不到设备及投屏稳定性的问题	Chiếu qua điểm phát giúp khắc phục lỗi không tìm thấy thiết bị và chiếu không ổn định
+进入连接	Kết nối
+视频投屏	Chiếu video
+有线同屏	Chiếu qua dây
+无线同屏	Chiếu không dây
+已断开，重新接入可再次连接	Đã ngắt, cắm lại để kết nối lại
+视频加载失败	Không tải được video
+同屏异常，请重新插拔数据线	Chiếu màn hình bị lỗi, hãy rút và cắm lại dây cáp
+长按Enter按键可关显示网速	Giữ Enter để ẩn tốc độ mạng
+长按Enter按键可开显示网速	Giữ Enter để hiện tốc độ mạng
+通过极米App投屏、看电视、投视频、听音乐，轻松实现无屏电视与手机互动	Dùng ứng dụng XGIMI để chiếu màn hình, xem TV, chiếu video, nghe nhạc, điều khiển máy chiếu bằng điện thoại
+安装 "%s" ？	Cài "%s"?
+本地已存在更高版本的"%s"，请卸载后重试	Máy đã có "%s" bản mới hơn, hãy gỡ rồi thử lại
+安装异常，请卸载本地已安装的"%s"后重试	Cài đặt lỗi, hãy gỡ "%s" đang có trên máy rồi thử lại
+正在安装"%s"	Đang cài "%s"
+"%s"安装完成	Đã cài xong "%s"
+3D模式不支持亮度调整	Không chỉnh được độ sáng trong chế độ 3D
+切换模式导致环境自适应失效	Đổi chế độ làm tắt thích ứng môi trường
+切换模式导致环境光自适应失效	Đổi chế độ làm tắt thích ứng ánh sáng môi trường
+切换模式导致亮度自适应失效	Đổi chế độ làm tắt độ sáng thích ứng
+切换已取消	Đã huỷ chuyển
+即将切换至 %s，按 @ 取消	Sắp chuyển sang %s, bấm @ để huỷ
+当前模式不支持切换3D	Chế độ này không chuyển sang 3D được

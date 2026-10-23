@@ -1,0 +1,19 @@
+# XGIMI RS10 projector, China market (device m7642, MediaTek, build tree MTK958C_CODE, product Product_kirinultra),
+# Android 9 (SDK 28, PPR2.180905.006.A1), GMUI/INUI 6.4.200.03, firmware XGIMI_PIGCHIVALROUS_XM13M built 2024-07-02.
+# Notes only so far: read from the USB upgrade file, not from a running unit. No removal list yet.
+#
+# Firmware file (2026-10-23): a plain MStar/MediaTek USB upgrade bin, not encrypted (unlike the DOHKO's
+# XGIMI_HORSEPOPULAR_*.bin). It starts with the mboot script: "# File Partition: <name>" then
+# `filepartload <addr> $(UpgradeImage) <offset> <size>`; system (11 pieces) and vendor (19 pieces) are Android
+# sparse images, ext4 inside, readable with 7-Zip. vbmeta_a is created but never written by the script.
+# Locales: AOSP apps ship without any vi (and mostly without en) resources; XGIMI apps have Chinese as the default
+# text. Switching the system language to Vietnamese changes nothing by itself.
+# Home is com.xgimi.home (vendor/priv-app/XgimiHome_release838); keyboard com.sohu.inputmethod.sogou.tv (Sogou).
+#
+# Vietnamese: tools\xgimi-vi\rs10-overlays.ps1 builds 41 overlay APKs (dist\rs10-vi, 4,914 strings: Settings,
+# home, systemui, player, cast, upgrade, shutdown...) from rs10-apps-chuoi.tsv and the Chinese->Vietnamese tables;
+# tools\xgimi-vi\rs10-install.ps1 -TvHost <ip> installs and enables them (-Remove undoes). Android 9 has no
+# `cmd overlay fabricate`; non-static overlays from /data can still be enabled by the shell there. Not yet tried
+# on a real unit: check that `cmd overlay list` shows [x] and that the Settings text changes.
+# Not translated: Sogou keyboard (use Gboard), factory menus, Chinese TTS, data reporter, string arrays,
+# feature-config JSON strings ([{key:...}]) and Android's autofill patterns.
