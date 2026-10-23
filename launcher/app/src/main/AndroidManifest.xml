@@ -28,7 +28,7 @@
 
     <!-- Voice search pill (VoiceSearch): asked for at runtime, or granted by the install tools. -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <!-- "Gỡ ứng dụng" (hold OK on a tile, or the Settings menu): Android 9+ only shows the system uninstall
+    <!-- "Gỡ ứng dụng" (the Settings menu): Android 9+ only shows the system uninstall
          prompt (ACTION_DELETE) to apps that declare this; the user still confirms every uninstall there. -->
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
 

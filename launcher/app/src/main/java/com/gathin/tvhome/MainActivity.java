@@ -2125,34 +2125,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         rows.addView(row);
     }
 
-    // ---- app menu (hold OK on a tile) --------------------------------------------------------------
-
-    /**
-     * Uninstall, for apps that can be (installed by the user, or an update over a system app), through the system's
-     * uninstall prompt; and App info where the TV has that screen. The Android 6 XGIMI (.239) has no Android
-     * Settings app, so App info alone, as before, did nothing there.
-     */
-    @Override
-    public void onTileLongPress(AppAdapter.Entry e, View card) {
-        PackageManager pm = getPackageManager();
-        boolean removable = isRemovable(pm, e.pkg);
-        Intent info = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:" + e.pkg))
-                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        boolean hasInfo = info.resolveActivity(pm) != null;
-        if (!removable && !hasInfo) {
-            Toast.makeText(this, getString(R.string.app_cannot_uninstall, e.label), Toast.LENGTH_SHORT).show();
-            return;
-        }
-        View panel = getLayoutInflater().inflate(R.layout.popup_inputs, root, false);
-        LinearLayout rows = panel.findViewById(R.id.rows);
-        PopupWindow popup = glassPopup(panel, (int) (220 * density));
-        if (removable) addSettingsMenuRow(rows, popup, R.string.app_uninstall, () -> uninstall(e.pkg, e.label));
-        if (hasInfo) addSettingsMenuRow(rows, popup, R.string.app_info, () -> startActivity(info));
-        panel.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
-        popup.setWidth(Math.max((int) (220 * density), panel.getMeasuredWidth()));
-        dropIn(popup, panel, card, Gravity.START);
-        rows.getChildAt(0).requestFocus();
-    }
+    // ---- uninstalling apps (Settings menu) ----------------------------------------------------------
 
     /** Installed by the user, or an update over a system app (uninstalling that removes the update); never Home itself. */
     private boolean isRemovable(PackageManager pm, String pkg) {

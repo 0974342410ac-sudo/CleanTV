@@ -58,6 +58,6 @@
 # device (the parser has no name for it), so AudioRecord cannot open: "AudioRecord failed to initialize", which
 # the recogniser reports as error 2 (network). No XGIMI voice app on this overseas firmware. Undo the key: copy
 # the .goc file back over the .kl.
-# Since the microphone cannot record, the launcher (VoiceSearch.typeSearch) now opens a typed search box when the
-# recogniser fails before it is ready. The BT remote counts as a hardware keyboard, which hid the on-screen
+# Since the microphone cannot record, a launcher build installed by hand on .239 only (not in the update packages:
+# owner's choice, 2026-10-23) opens a typed search box instead. The BT remote counts as a hardware keyboard, which hid the on-screen
 # keyboard: `settings put secure show_ime_with_hard_keyboard 1` (was null) makes LatinIME show. Undo: set it to 0.
