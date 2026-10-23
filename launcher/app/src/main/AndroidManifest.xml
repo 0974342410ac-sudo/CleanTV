@@ -12,7 +12,7 @@
     <!-- Weather in the greeting line (config.xml weather_city): one small HTTPS request at most every 30 minutes. -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- keep_adb_on (AdbKeeper): switch ADB back on at boot. WRITE_SECURE_SETTINGS is never requested at
-         runtime; the Windows editor grants it with pm grant, and without it AdbKeeper does nothing. -->
+         runtime; the updater (USB or phone) grants it with pm grant, and without it AdbKeeper does nothing. -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <!-- Lets the USB updater (same signing key) ask AdbKeeper to switch ADB on. -->
     <permission

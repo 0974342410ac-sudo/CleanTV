@@ -104,8 +104,8 @@
     <!-- Current weather after the greeting ("HÀ NỘI 28° · MƯA NHẸ"), from Open-Meteo at most every 30 minutes
          while Home is on screen. The name shown, then the place's coordinates. Empty name: no weather and no
          network use. A theme can set "weather_city", "weather_latitude" and "weather_longitude". -->
-    <!-- Switch ADB back on at boot and whenever Home opens (AdbKeeper), so the Windows editor can always connect.
-         Needs `pm grant com.gathin.tvhome android.permission.WRITE_SECURE_SETTINGS` (the editor does it) and a
+    <!-- Switch ADB back on at boot and whenever Home opens (AdbKeeper), so a PC or the phone updater can always connect.
+         Needs `pm grant com.gathin.tvhome android.permission.WRITE_SECURE_SETTINGS` (the updater does it) and a
          fixed network ADB port on the TV. Anyone on the same network can then reach the TV's shell over ADB.
          A theme can set "keep_adb_on". -->
     <bool name="keep_adb_on">false</bool>

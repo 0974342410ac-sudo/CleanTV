@@ -10,7 +10,7 @@ import android.util.Log;
 
 /**
  * keep_adb_on (config.xml or a theme's config.json): switches ADB back on at boot and whenever Home opens, so
- * the Windows editor (LauncherEditor.ps1) can always reach the TV. Needs WRITE_SECURE_SETTINGS, which only
+ * a PC (adb, the tools/ scripts) and the phone updater can always reach the TV. Needs WRITE_SECURE_SETTINGS, which only
  * `pm grant` over ADB can give; without it this does nothing. Network ADB also needs a fixed TCP port
  * (persist.adb.tcp.port, as on XGIMI GMUI); Google TV's Wireless debugging is not switched on here.
  *

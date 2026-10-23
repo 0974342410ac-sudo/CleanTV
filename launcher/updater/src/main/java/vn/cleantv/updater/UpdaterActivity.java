@@ -1037,8 +1037,8 @@ public final class UpdaterActivity extends Activity {
     }
 
     /**
-     * Turns on the launcher's keep_adb_on (AdbKeeper) in its config.json, keeping every other key the editor or a
-     * theme set, so ADB comes back on after each reboot and this app can always connect.
+     * Turns on the launcher's keep_adb_on (AdbKeeper) in its config.json, keeping every other key a theme or the
+     * TV owner set, so ADB comes back on after each reboot and this app can always connect.
      */
     private void keepAdbOn(LocalAdb adb) throws IOException {
         Boolean changed = putLauncherConfig(adb, "keep_adb_on", true);
@@ -1047,7 +1047,7 @@ public final class UpdaterActivity extends Activity {
     }
 
     /**
-     * Sets one key of the launcher's config.json, keeping every other key the editor or a theme set. Returns
+     * Sets one key of the launcher's config.json, keeping every other key a theme or the TV owner set. Returns
      * false when it already had that value, true once written, null when the file is broken or the write failed.
      */
     private Boolean putLauncherConfig(LocalAdb adb, String key, Object value) throws IOException {
