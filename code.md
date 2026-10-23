@@ -6,25 +6,19 @@ Bo cong cu nay da duoc cau hinh hoan chinh de ban co the mang di toi uu hoa cho 
 
 ## 1\. Vi tri luu tru du an
 
-Du an da duoc luu tai 2 vi tri an toan tren may tinh cua ban:
-
-1. Thu muc lam viec hien tai: `c:\\Users\\Admin\\Downloads\\cleanyourtv-main\\`
-2. Thu muc luu tru vinh vien: `C:\\Users\\Admin\\.gemini\\antigravity\\scratch\\cleanyourtv\\`
+1. Thu muc du an tren may tinh: `E:\CleanTV\`
+2. Ban luu tren GitHub: `https://github.com/0974342410ac-sudo/CleanTV`
 
 \---
 
 ## 2\. Cach chay nhanh nhat (Menu 1-Click - Click la chay)
 
-### Tren Windows:
+Chi chay tren Windows. Trong thu muc du an:
 
-1. Mo thu muc `Win`.
-2. Nhap dup chuot vao file: **`JustClick.exe`** (hoac **`JustClick.bat`**).
+1. Nhap dup chuot vao file **`JustClick.exe`** (neu co; file nay khong nam trong Git), hoac
+2. Chay lenh: `powershell -ExecutionPolicy Bypass -File JustClick.ps1`
 
-### Tren macOS:
-
-1. Mo thu muc `Macos`.
-2. Nhap dup chuot vao ung dung: **`JustClick.app`** (hoac **`JustClick.command`**).
-*(Da dong goi san file `JustClick-MacOS.zip` chua day du quyen thuc thi de de dang chuyen sang may Mac bat ky qua AirDrop hoac USB)*.
+Lan dau chay, neu chua co `tools\platform-tools\adb.exe`, cong cu tu tai platform-tools tu Google.
 
 \---
 
@@ -63,13 +57,13 @@ Du an da duoc luu tai 2 vi tri an toan tren may tinh cua ban:
 
 ### Buoc 2: Thao tac tren may tinh
 
-1. Chay **`JustClick.exe`** (Windows) hoac **`JustClick.app`** (macOS).
+1. Chay **`JustClick.exe`** hoac **`JustClick.ps1`** (xem muc 2).
 2. Chon **Phim 1**: Scan tu dong tim TV trong mang hoac nhap dia chi IP cua TV.
 *(Neu tren man hinh TV hien pop-up "Cho phep go loi USB? / Allow USB debugging?", dung remote tick vao "Luon cho phep" va bam OK)*.
 3. Chon **Phim 2**: Sao luu du lieu goc cua TV truoc khi lam bat cu dieu gi (an toan tuyet doi).
 4. Chon **Phim 3**: Don dep ung dung rac (Debloat):
 
-   * Cong cu da co san cac cau hinh mau cho: Sony Bravia, Xiaomi (PatchWall), TCL, hoac hon 80+ dong TV khac nam trong thu muc `examples/`.
+   * Cong cu da co san cac cau hinh mau cho: Sony Bravia, Xiaomi (PatchWall), TCL, hoac hon 100 dong TV khac nam trong thu muc `examples/`.
 5. Chon **Phim 4**: Cai dat Launcher \& Sap xep 4 app o thanh Dock:
 
    * Lua chon 1: Cai dat voi 4 ung dung mac dinh (TV360, YouTube, Netflix, Kodi).

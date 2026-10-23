@@ -4,7 +4,7 @@
 #   - Get-Dock-App-Label: ten hien thi cua cac app trong Dock
 #   - Install-Launcher  : $currentDock (4 app Dock mac dinh) va danh sach app de chon
 #   - Remove-App        : $protected (cac goi he thong khong cho go)
-# Chay: powershell -ExecutionPolicy Bypass -File .\JustClick_readable.ps1
+# Chay: powershell -ExecutionPolicy Bypass -File .\JustClick.ps1
 # ==============================================================================
 # Bo cong cu toi uu & cai dat Apple TV Launcher cho moi Android TV
 # Tuong thich: Sony, Xiaomi, TCL, Hisense, Casper, Coocaa, Chromecast, Onn, v.v.

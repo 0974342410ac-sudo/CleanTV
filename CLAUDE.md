@@ -10,7 +10,8 @@ Vietnamese; user-facing text (launcher, updater, guides) is Vietnamese.
     by `/sdcard/Android/data/com.gathin.tvhome/files/config.json` (see `Config.java`).
   - `updater/` the USB updater: talks to the TV's own adbd on 127.0.0.1:5555 (`LocalAdb.java`). Flavors:
     `chung` (every known TV, `USB-CapNhat`) and `xgimi` (XGIMI DOHKO only, `USB-CapNhat-XGIMI-DOHKO`).
-- `updater/build-usb.ps1` builds the launcher, fills the updater assets and writes both USB folders into `dist/`.
+- `updater/build-usb.ps1` builds the launcher, fills the updater assets and writes `dist/USB-CapNhat`. The XGIMI
+  DOHKO package (`dist/USB-CapNhat-XGIMI-DOHKO`) is rebuilt only with `-XgimiDohko`; otherwise the old one stays.
 - `installer/build-setup.ps1` builds `dist/CaiDat-ChinhSuaLauncher.exe` (Windows editor `LauncherEditor.ps1` + launcher).
 - `tools/xgimi-vi/` Vietnamese translations for XGIMI system apps (Settings, quick panel, power menu, 20 apps) and
   the scripts that apply them. `examples/<device>/debloat.txt` hold each device's removal list and its notes.
@@ -18,7 +19,8 @@ Vietnamese; user-facing text (launcher, updater, guides) is Vietnamese.
   (download Google's platform-tools there), `tools/venv`, and `tools/adbkey` (this PC's ADB key; each PC has its own).
 
 ## Build
-    powershell -ExecutionPolicy Bypass -File updater\build-usb.ps1      # launcher + both USB packages
+    powershell -ExecutionPolicy Bypass -File updater\build-usb.ps1      # launcher + USB-CapNhat
+    powershell -ExecutionPolicy Bypass -File updater\build-usb.ps1 -XgimiDohko  # ... + the XGIMI DOHKO package
     powershell -ExecutionPolicy Bypass -File installer\build-setup.ps1  # Windows installer
 APKs are signed with `%USERPROFILE%\.android\debug.keystore`. Every PC that builds must use the same keystore
 (shared privately, never committed), or the APK will not install over the copy already on the TVs

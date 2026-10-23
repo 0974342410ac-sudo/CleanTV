@@ -94,7 +94,9 @@
     <bool name="shamsi_date">false</bool>
 
     <!-- Show the Vietnamese lunar date (âm lịch), e.g. "Ngày 13/9 âm lịch · Bính Ngọ", above the
-         Gregorian date. When shamsi_date is also on, the Shamsi date wins. -->
+         Gregorian date. When shamsi_date is also on, the Shamsi date wins.
+         config.json "lunar_top_right": true moves it above the top buttons instead, spelled out
+         ("Ngày 13 tháng 9 năm Bính Ngọ (âm lịch)"). -->
     <bool name="lunar_date">false</bool>
 
     <!-- A name after the greeting: "Mr. Trịnh" shows GOOD MORNING, MR. TRỊNH. Empty: the greeting alone. -->

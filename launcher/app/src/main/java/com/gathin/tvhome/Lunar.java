@@ -20,10 +20,28 @@ final class Lunar {
      * short enough for the line beside the clock.
      */
     static String today() {
-        Calendar c = Calendar.getInstance();
-        int[] l = fromSolar(c.get(Calendar.DAY_OF_MONTH), c.get(Calendar.MONTH) + 1, c.get(Calendar.YEAR));
+        int[] l = todayLunar();
         return (l[0] <= 10 ? "Mùng " : "Ngày ") + l[0] + "/" + l[1] + (l[3] == 1 ? " nhuận" : "") + " âm lịch · "
-                + CAN[(l[2] + 6) % 10] + " " + CHI[(l[2] + 8) % 12];
+                + yearName(l);
+    }
+
+    /**
+     * e.g. "Ngày 14 tháng 9 năm Bính Ngọ (âm lịch)", "Mùng 1 tháng 6 nhuận năm Ất Tỵ (âm lịch)": spelled out
+     * for the line above the top buttons (lunar_top_right), which has room for it.
+     */
+    static String todayLong() {
+        int[] l = todayLunar();
+        return (l[0] <= 10 ? "Mùng " : "Ngày ") + l[0] + " tháng " + l[1] + (l[3] == 1 ? " nhuận" : "")
+                + " năm " + yearName(l) + " (âm lịch)";
+    }
+
+    private static int[] todayLunar() {
+        Calendar c = Calendar.getInstance();
+        return fromSolar(c.get(Calendar.DAY_OF_MONTH), c.get(Calendar.MONTH) + 1, c.get(Calendar.YEAR));
+    }
+
+    private static String yearName(int[] l) {
+        return CAN[(l[2] + 6) % 10] + " " + CHI[(l[2] + 8) % 12];
     }
 
     /** Solar day/month/year to {lunarDay, lunarMonth, lunarYear, leap (1 or 0)}. */

@@ -1,6 +1,9 @@
 ﻿# Tao thu muc cap nhat USB: dist\USB-CapNhat\CapNhatMayChieu.apk (+ huong dan).
 # Chep ca thu muc vao goc USB, cam vao may chieu, mo APK bang X-plore de cai, roi bam "Cap nhat".
 # Chay: powershell -ExecutionPolicy Bypass -File updater\build-usb.ps1
+# Goi rieng XGIMI DOHKO (dist\USB-CapNhat-XGIMI-DOHKO) chi dung lai khi them -XgimiDohko;
+# mac dinh goi cu trong dist duoc giu nguyen.
+param([switch]$XgimiDohko)
 $ErrorActionPreference = 'Stop'
 $here = $PSScriptRoot
 $root = Split-Path -Parent $here
@@ -52,8 +55,10 @@ $boot = [IO.File]::ReadAllText((Join-Path $root 'tools\xgimi-vi\dohko-boot.sh'),
 [IO.File]::WriteAllText((Join-Path $assets 'boot.sh'), $boot, (New-Object Text.UTF8Encoding $false))
 
 # 2. Ung dung cap nhat
-# Hai ban: chung (moi may, USB-CapNhat) va xgimi (chi may chieu XGIMI, USB-CapNhat-XGIMI)
-.\gradlew.bat :updater:assembleChungRelease :updater:assembleXgimiRelease -q --console=plain
+# Hai ban: chung (moi may, USB-CapNhat) va xgimi (chi may chieu XGIMI, USB-CapNhat-XGIMI), ban xgimi chi khi -XgimiDohko
+$tasks = @(':updater:assembleChungRelease')
+if ($XgimiDohko) { $tasks += ':updater:assembleXgimiRelease' }
+.\gradlew.bat @tasks -q --console=plain
 $code = $LASTEXITCODE
 Pop-Location
 if ($code -ne 0) { throw 'Build ung dung cap nhat that bai' }
@@ -73,6 +78,10 @@ Compress-Archive -Path $usb -DestinationPath $zip
 Write-Host ("Da tao {0} ({1:N0} KB) va {2}" -f $usb, ((Get-Item (Join-Path $usb 'CapNhatMayChieu.apk')).Length / 1KB), $zip)
 
 # 4. Thu muc USB rieng cho may chieu XGIMI DOHKO (Android 14; khong co phan Android 6)
+if (-not $XgimiDohko) {
+    Write-Host 'Giu nguyen goi XGIMI DOHKO cu (them -XgimiDohko de dung lai)'
+    return
+}
 foreach ($old in 'dist\USB-CapNhat-XGIMI', 'dist\USB-CapNhat-XGIMI.zip') { $o = Join-Path $root $old; if (Test-Path $o) { Remove-Item $o -Recurse -Force } }
 $usbX = Join-Path $root 'dist\USB-CapNhat-XGIMI-DOHKO'
 if (Test-Path $usbX) { Remove-Item $usbX -Recurse -Force }

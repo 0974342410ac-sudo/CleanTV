@@ -137,6 +137,8 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
     private boolean showStats;
     private boolean shamsi;
     private boolean lunar;
+    /** lunar_top_right: the lunar date sits above the top buttons; null when off or the layout has no such line. */
+    private TextView lunarTop;
     /** greeting_name: said after the greeting, which is shown in capitals. */
     private String greetingName = "";
     /** weather_city: its current weather follows the greeting; null weather when the name is empty. */
@@ -316,12 +318,14 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         showStats = cfg.showStats;
         shamsi = cfg.shamsiDate;
         lunar = cfg.lunarDate && !shamsi;
+        lunarTop = lunar && cfg.lunarTopRight ? findViewById(R.id.lunarTop) : null;
+        if (lunarTop != null) lunarTop.setVisibility(View.VISIBLE);
         greetingName = cfg.greetingName;
         weatherCity = cfg.weatherCity;
         if (!weatherCity.isEmpty()) weather = new Weather(this, cfg.weatherLatitude, cfg.weatherLongitude);
         keepAdbOn = cfg.keepAdbOn;
-        // The Shamsi or the lunar date takes the line above the date
-        if (shamsi || lunar) {
+        // The Shamsi or the lunar date takes the line above the date, unless lunar_top_right moves it up
+        if (shamsi || (lunar && lunarTop == null)) {
             shamsiDate.setVisibility(View.VISIBLE);
             TextView date = findViewById(R.id.date);
             date.setTextSize(11f);
@@ -1674,6 +1678,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         }
         greeting.setText(text);
         if (shamsi) shamsiDate.setText(Shamsi.today());
+        else if (lunarTop != null) lunarTop.setText(Lunar.todayLong());
         else if (lunar) shamsiDate.setText(Lunar.today());
     }
 
