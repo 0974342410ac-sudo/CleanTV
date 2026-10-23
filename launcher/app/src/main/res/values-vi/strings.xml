@@ -73,6 +73,8 @@
     <string name="voice_error">Tìm kiếm giọng nói lỗi (mã %1$d)</string>
     <string name="voice_opening">Đang mở %1$s</string>
     <string name="voice_searching">Đang tìm “%1$s” trên YouTube</string>
+    <string name="voice_type_title">Không thu được tiếng từ micro. Gõ để tìm</string>
+    <string name="voice_type_hint">Tên ứng dụng, hoặc nội dung cần tìm trên YouTube</string>
     <string name="ui_section">Giao diện</string>
     <string name="ui_greeting">Tên lời chào: %1$s</string>
     <string name="ui_greeting_none">(không có)</string>

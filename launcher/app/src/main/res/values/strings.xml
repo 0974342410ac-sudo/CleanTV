@@ -78,6 +78,8 @@
     <string name="voice_error">Voice search failed (code %1$d)</string>
     <string name="voice_opening">Opening %1$s</string>
     <string name="voice_searching">Searching YouTube for “%1$s”</string>
+    <string name="voice_type_title">The microphone gave no sound. Type to search</string>
+    <string name="voice_type_hint">App name or what to look for on YouTube</string>
     <string name="ui_section">Appearance</string>
     <string name="ui_greeting">Greeting name: %1$s</string>
     <string name="ui_greeting_none">(none)</string>

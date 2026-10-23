@@ -47,3 +47,17 @@
 #
 # Undo: settings put secure enabled_accessibility_services ''   (stock home is Home again at once)
 #       rm /sdcard/Android/data/com.gathin.tvhome/files/config.json; pm uninstall com.gathin.tvhome
+#
+# Voice key (2026-10-23, on .239): the BT remote ("BLuetooth 4.0 RC", 000d:3838) sends its mic button as KEY_F5
+# (scan 63), but /system/usr/keylayout/Vendor_000d_Product_3838.kl had no line for it, so Android saw keycode 0.
+# Added `key 63    SEARCH` (adb root, remount /system; original in /data/local/tmp/Vendor_000d_Product_3838.kl.goc
+# and backup\239\ on the PC; the file has no final newline, so append with a leading \n). Reloaded by switching
+# Bluetooth off/on (service call bluetooth_manager 8, then 6). The launcher now opens voice search on the button.
+# Recognition still fails: Katniss (the only recogniser) records with VOICE_RECOGNITION, the audio policy engine
+# picks the remote's "MtkRc MIC" (device 0x80100000), and no module in /system/etc/audio_policy.conf declares that
+# device (the parser has no name for it), so AudioRecord cannot open: "AudioRecord failed to initialize", which
+# the recogniser reports as error 2 (network). No XGIMI voice app on this overseas firmware. Undo the key: copy
+# the .goc file back over the .kl.
+# Since the microphone cannot record, the launcher (VoiceSearch.typeSearch) now opens a typed search box when the
+# recogniser fails before it is ready. The BT remote counts as a hardware keyboard, which hid the on-screen
+# keyboard: `settings put secure show_ime_with_hard_keyboard 1` (was null) makes LatinIME show. Undo: set it to 0.

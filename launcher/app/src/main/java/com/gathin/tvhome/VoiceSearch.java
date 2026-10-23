@@ -46,7 +46,7 @@ final class VoiceSearch {
 
     void start() {
         if (!SpeechRecognizer.isRecognitionAvailable(activity)) {
-            toast(activity.getString(R.string.voice_unavailable));
+            typeSearch(R.string.voice_unavailable);
             return;
         }
         if (Build.VERSION.SDK_INT >= 23
@@ -95,6 +95,7 @@ final class VoiceSearch {
                 .putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS, 2000L)
                 .putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, activity.getPackageName());
         followUpSession = followUp;
+        if (!followUp) micOpened = false;
         loudest = -100;
         recognizer.startListening(intent);
         android.util.Log.i(TAG, "listen followUp=" + followUp + " heard=\"" + said + "\"");
@@ -103,6 +104,12 @@ final class VoiceSearch {
     private static final String TAG = "TvHome.Voice";
     /** Loudest microphone level of this session, for the log. */
     private float loudest;
+    /**
+     * The recogniser got as far as listening (onReadyForSpeech). On the Android 6 XGIMI (.239) the remote's
+     * microphone cannot be opened (no audio policy profile for it): the recogniser then fails at once, with
+     * ERROR_NETWORK, before ever being ready, and typing is offered instead (typeSearch).
+     */
+    private boolean micOpened;
 
     /** The session listens on after speech: MORE_MS of silence from when the microphone is ready ends the listen. */
     private boolean followUpSession;
@@ -248,6 +255,7 @@ final class VoiceSearch {
     private final RecognitionListener listener = new RecognitionListener() {
         @Override public void onReadyForSpeech(Bundle params) {
             android.util.Log.i(TAG, "ready");
+            micOpened = true;
             if (followUpSession) handler.postDelayed(noMoreSpeech, MORE_MS);
         }
         @Override public void onBeginningOfSpeech() {
@@ -301,6 +309,13 @@ final class VoiceSearch {
                 return;
             }
             stop();
+            // The microphone never opened (the recogniser reports that as a network, audio or client error): no
+            // amount of retrying helps, so offer the keyboard instead
+            if (!micOpened && said.length() == 0 && (error == SpeechRecognizer.ERROR_NETWORK
+                    || error == SpeechRecognizer.ERROR_AUDIO || error == SpeechRecognizer.ERROR_CLIENT)) {
+                typeSearch(R.string.voice_type_title);
+                return;
+            }
             int msg;
             switch (error) {
                 case SpeechRecognizer.ERROR_NO_MATCH:
@@ -318,6 +333,60 @@ final class VoiceSearch {
             toast(activity.getString(msg));
         }
     };
+
+    /**
+     * Search by keyboard, for a TV whose microphone cannot be used: the same glass panel with a text field, and
+     * what is typed goes the same way as speech (an app's name opens it, anything else is searched on YouTube).
+     */
+    private void typeSearch(int titleRes) {
+        float dp = activity.getResources().getDisplayMetrics().density;
+        LinearLayout panel = new LinearLayout(activity);
+        panel.setOrientation(LinearLayout.VERTICAL);
+        panel.setBackgroundResource(R.drawable.glass_panel);
+        int pad = (int) (24 * dp);
+        panel.setPadding(pad, pad, pad, pad);
+        TextView title = new TextView(activity);
+        title.setText(titleRes);
+        title.setTextColor(0xFFFFFFFF);
+        title.setTextSize(18);
+        panel.addView(title);
+        android.widget.EditText field = new android.widget.EditText(activity);
+        field.setHint(R.string.voice_type_hint);
+        field.setHintTextColor(0xFF8A96A3);
+        field.setTextColor(0xFFFFFFFF);
+        field.setTextSize(22);
+        field.setSingleLine(true);
+        field.setImeOptions(android.view.inputmethod.EditorInfo.IME_ACTION_SEARCH);
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+        lp.topMargin = (int) (14 * dp);
+        panel.addView(field, lp);
+
+        Dialog typing = new Dialog(activity);
+        typing.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        typing.setContentView(panel);
+        field.setOnEditorActionListener((v, action, event) -> {
+            String text = v.getText().toString().trim();
+            if (text.isEmpty()) return true;
+            typing.dismiss();
+            List<String> candidates = new ArrayList<>();
+            candidates.add(text);
+            act(candidates);
+            return true;
+        });
+        Window w = typing.getWindow();
+        if (w != null) {
+            w.setBackgroundDrawableResource(android.R.color.transparent);
+            w.setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL);
+            WindowManager.LayoutParams wl = w.getAttributes();
+            wl.y = (int) (90 * dp);
+            wl.width = (int) (560 * dp);
+            w.setAttributes(wl);
+            w.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+        }
+        typing.show();
+        field.requestFocus();
+    }
 
     /** Opens the app whose name was said, else searches YouTube for what was heard. */
     private void act(List<String> candidates) {
