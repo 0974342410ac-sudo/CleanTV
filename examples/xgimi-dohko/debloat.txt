@@ -92,3 +92,6 @@ com.xgimi.duertts                      # 极米语音 assistant + mic key monito
 # XGIMI chooser's "始终" (preferred activity, mAlways=true). `cmd package resolve-activity ... -c HOME` (any
 # check of "what does Home open") rewrites that preference to mAlways=false, and the chooser is back on the next
 # Home. Check it read-only instead: dumpsys package preferred-activities | grep -A1 com.gathin.tvhome | grep mAlways
+# RS 20 Ultra Max (2026-10-23): its firmware XGIMI_HORSEPOPULAR_XR09A.bin (V1.6.52) is encrypted like the XR07A
+# files, so nothing can be read from it. Same platform name (HORSEPOPULAR), so the owner uses the XGIMI DOHKO
+# USB package (it accepts any ro.product.device horse_popular) for it as is. Not yet run on a real Ultra Max.

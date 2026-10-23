@@ -1,7 +1,9 @@
 CẬP NHẬT MÁY CHIẾU XGIMI DOHKO BẰNG USB (BẢN RIÊNG CHO DOHKO)
 ==============================================================
 
-Bản này chỉ dành cho máy chiếu XGIMI DOHKO (RS 20 Pro Max, Android 14, GMUI), như máy .12.
+Bản này chỉ dành cho máy chiếu XGIMI DOHKO (RS 20 Pro Max, Android 14, GMUI), như máy .12, và các máy
+cùng nền tảng "horse_popular" như RS 20 Ultra Max (chưa thử trên máy thật; chữ chỉ có trên bản Ultra Max
+có thể còn tiếng Trung).
 Cắm vào máy khác (XGIMI đời cũ Android 6, onn, TV box…), ứng dụng báo "chỉ dành cho máy chiếu XGIMI
 DOHKO" và không thay đổi gì. Máy khác: dùng gói USB-CapNhat chung.
 
