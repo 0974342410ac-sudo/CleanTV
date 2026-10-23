@@ -26,6 +26,12 @@ Copy-Item (Join-Path $root 'examples\onn-4k-streaming-box-2023\debloat.txt') (Jo
 & powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $root 'tools\xgimi-vi\build-synsepalum-overlay.ps1')
 if ($LASTEXITCODE -ne 0) { Pop-Location; throw 'Dung ban dich Cai dat XGIMI Android 6 that bai' }
 Copy-Item (Join-Path $root 'dist\XgimiSettingsVi-overlay.apk') (Join-Path $assetsChung 'xgimi-settings-vi-a6.apk') -Force
+# Ban dich cho XGIMI RS10 (Android 9): overlay cai nhu ung dung (tools\xgimi-vi\rs10-overlays.ps1), assets/rs10-vi
+& powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $root 'tools\xgimi-vi\rs10-overlays.ps1')
+if ($LASTEXITCODE -ne 0) { Pop-Location; throw 'Dung ban dich XGIMI RS10 that bai' }
+$rs10 = Join-Path $assetsChung 'rs10-vi'
+if (Test-Path $rs10) { Remove-Item $rs10 -Recurse -Force }
+Copy-Item (Join-Path $root 'dist\rs10-vi') $rs10 -Recurse
 $dict = @{}
 $lines = foreach ($f in 'dich.tsv', 'dich-cau-dai.tsv') { [IO.File]::ReadAllLines((Join-Path $root "tools\xgimi-vi\$f"), [Text.Encoding]::UTF8) }
 foreach ($line in $lines) {

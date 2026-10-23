@@ -266,20 +266,33 @@ public final class UpdaterActivity extends Activity {
         final boolean xgimi, voiceKeyService;
         /** The Android 6 MStar XGIMI: no `cmd`, a stock home ADB cannot disable, Settings text by static overlay. */
         final boolean legacyXgimi;
+        /** Assets folder of ready-built translation overlays (VietHoa-<target package>.apk), installed in step 3. */
+        final String overlays;
 
         Device(String label, String debloat, String stockHome, boolean xgimi, boolean voiceKeyService) {
             this(label, debloat, stockHome, xgimi, voiceKeyService, false);
         }
 
         Device(String label, String debloat, String stockHome, boolean xgimi, boolean voiceKeyService, boolean legacyXgimi) {
+            this(label, debloat, stockHome, xgimi, voiceKeyService, legacyXgimi, null);
+        }
+
+        Device(String label, String debloat, String stockHome, boolean xgimi, boolean voiceKeyService, boolean legacyXgimi,
+               String overlays) {
             this.label = label;
             this.debloat = debloat;
             this.stockHome = stockHome;
             this.xgimi = xgimi;
             this.voiceKeyService = voiceKeyService;
             this.legacyXgimi = legacyXgimi;
+            this.overlays = overlays;
         }
     }
+
+    /** XGIMI RS10 (China market, Android 9, m7642): its translation overlays (tools\xgimi-vi\rs10-overlays.ps1). */
+    private static final String RS10_DEVICE = "m7642";
+    private static final String RS10_OVERLAYS = "rs10-vi";
+    private static final String RS10_OVERLAY_PREFIX = "vn.cleantv.overlay.rs10.";
 
     private static final String SETUP_WIZARD = "com.google.android.tungsten.setupwraith";
     /** Android 6 MStar XGIMI (synsepalum_YN): its stock home, and where the Settings translation overlay goes. */
@@ -316,6 +329,11 @@ public final class UpdaterActivity extends Activity {
         if (!adb.shell("pm path " + STOCK_HOME).isEmpty() && "horse_popular".equals(adb.shell("getprop ro.product.device"))) {
             // XGIMI's own voice assistant is off there; the launcher's key service takes the mic button
             return new Device("máy chiếu XGIMI", "debloat.txt", STOCK_HOME, true, true);
+        }
+        if (RS10_DEVICE.equals(adb.shell("getprop ro.product.device")) && !adb.shell("pm path " + STOCK_HOME).isEmpty()) {
+            // No removal list yet and XGIMI's home stays; Android 9 has no fabricated overlays, so the Vietnamese
+            // text comes as installed overlay APKs
+            return new Device("máy chiếu XGIMI RS10 (Android 9)", null, null, false, false, false, RS10_OVERLAYS);
         }
         if ("onn".equalsIgnoreCase(adb.shell("getprop ro.product.manufacturer"))
                 || "YOC".equals(adb.shell("getprop ro.product.device"))) {
@@ -559,7 +577,9 @@ public final class UpdaterActivity extends Activity {
 
         say("");
         say("== 3/3  Việt hoá Cài đặt XGIMI");
-        if (!device.xgimi) {
+        if (device.overlays != null) {
+            installOverlays(adb, device.overlays);
+        } else if (!device.xgimi) {
             say("   bỏ qua: chỉ dành cho máy chiếu XGIMI");
         } else if (!"0".equals(adb.shell("id -u"))) {
             say("   !!  ADB không có quyền root: bỏ qua bước này.");
@@ -583,6 +603,42 @@ public final class UpdaterActivity extends Activity {
         closeHomeChooser(adb);
         say("");
         say("Xong. Bấm \"Trở về\" (hoặc Home) để về màn hình chính mới.");
+    }
+
+    /**
+     * Android 9 has no `cmd overlay fabricate`, but overlays installed like apps can be enabled by the shell there:
+     * installs each assets/<dir>/VietHoa-<target>.apk whose target is on this TV, enables it and restarts the
+     * apps on screen most. Installed overlays survive reboots; Restore uninstalls them.
+     */
+    private void installOverlays(LocalAdb adb, String dir) throws IOException {
+        String[] apks = getAssets().list(dir);
+        if (apks == null || apks.length == 0) {
+            say("   !!  bản cập nhật này không có file dịch cho máy này");
+            return;
+        }
+        int ok = 0, present = 0;
+        for (String apk : apks) {
+            if (!apk.startsWith("VietHoa-") || !apk.endsWith(".apk")) continue;
+            String target = apk.substring("VietHoa-".length(), apk.length() - ".apk".length());
+            if (adb.shell("pm path " + target).isEmpty()) continue;
+            present++;
+            String pkg = RS10_OVERLAY_PREFIX + target.substring(target.lastIndexOf('.') + 1);
+            long size = getAssets().openFd(dir + "/" + apk).getLength();
+            String out;
+            try (InputStream in = getAssets().open(dir + "/" + apk)) {
+                out = adb.exec("cmd package install -r -S " + size, in);
+            }
+            if (!out.contains("Success")) {
+                say("   !!  " + target + ": " + firstLine(out));
+                continue;
+            }
+            adb.shell("cmd overlay enable --user 0 " + pkg);
+            if (adb.shell("cmd overlay list " + target).contains("[x] " + pkg)) ok++;
+            else say("   !!  " + target + ": đã cài nhưng chưa bật được");
+        }
+        for (String p : new String[]{SETTINGS, STOCK_HOME, "com.xgimi.shutdown"}) adb.shell("am force-stop " + p);
+        say(ok == present && ok > 0 ? "   OK  đã Việt hoá " + ok + " ứng dụng XGIMI (Cài đặt, màn hình chính, thanh hệ thống…)"
+                : "   !!  mới Việt hoá được " + ok + "/" + present + " ứng dụng");
     }
 
     /**
@@ -792,6 +848,18 @@ public final class UpdaterActivity extends Activity {
             if (stock.startsWith(device.stockHome + "/")) adb.shell("cmd package set-home-activity --user 0 " + stock);
         }
         say("   OK  nút Home mở: " + homeNow(adb));
+        if (device.overlays != null) {
+            say("== Bỏ Việt hoá");
+            int n = 0;
+            for (String line : adb.shell("pm list packages " + RS10_OVERLAY_PREFIX).split("\n")) {
+                String pkg = line.trim().replace("package:", "");
+                if (pkg.isEmpty()) continue;
+                adb.shell("pm uninstall " + pkg);
+                n++;
+            }
+            for (String p : new String[]{SETTINGS, STOCK_HOME, "com.xgimi.shutdown"}) adb.shell("am force-stop " + p);
+            say("   OK  đã gỡ " + n + " file dịch");
+        }
         if (device.xgimi) {
             say("== Bỏ Việt hoá Cài đặt");
             adb.shell("cmd overlay disable --user 0 " + OVERLAY);
