@@ -418,7 +418,8 @@ public final class UpdaterActivity extends Activity {
         android.util.Log.i("CapNhat", line);   // the same log in logcat, for checking a TV from a PC
         ui.post(() -> {
             log.append(line + "\n");
-            scroll.post(() -> scroll.fullScroll(View.FOCUS_DOWN));
+            // scrollTo, not fullScroll: fullScroll also moves focus into the log, away from "Trở về"
+            scroll.post(() -> scroll.scrollTo(0, Math.max(0, log.getHeight() - scroll.getHeight())));
         });
     }
 
@@ -450,7 +451,8 @@ public final class UpdaterActivity extends Activity {
         } else {
             say("   OK  launcher trên máy đã là bản mới nhất (không cài lại)");
         }
-        adb.shell("cmd package set-home-activity --user 0 " + LAUNCHER + "/.MainActivity");
+        // Not on XGIMI: there set-home-activity can replace the chooser's "始终" preference (step 2 keeps that one)
+        if (!device.xgimi) adb.shell("cmd package set-home-activity --user 0 " + LAUNCHER + "/.MainActivity");
         adb.shell("pm grant " + LAUNCHER + " android.permission.ACCESS_FINE_LOCATION");
         adb.shell("pm grant " + LAUNCHER + " android.permission.RECORD_AUDIO");   // voice search pill
         // Lets the launcher switch ADB back on later (keep_adb_on, and this app's request when ADB is off)
@@ -519,7 +521,7 @@ public final class UpdaterActivity extends Activity {
             say(n > 0 ? "   OK  đã tắt thêm " + n + " gói" : "   OK  các gói đã tắt từ trước");
         }
         // XGIMI's home stays enabled (XGIMI features call it; disabling it caused errors): earlier updates turned
-        // it off, so turn it back on. The new launcher still takes Home through set-home-activity below.
+        // it off, so turn it back on. The new launcher still takes Home (below: the "始终" preference).
         if (device.xgimi && device.stockHome != null
                 && (adb.shell("pm list packages -d") + "\n").contains("package:" + device.stockHome + "\n")) {
             adb.shell("pm enable --user 0 " + device.stockHome);
@@ -543,6 +545,7 @@ public final class UpdaterActivity extends Activity {
             // XGIMI's home stays enabled. On this firmware set-home-activity writes a Home preference without
             // "always", which replaces the one the chooser's "始终" made, and Home then shows the chooser
             // again: keep an "always" preference, or make one through the chooser itself
+            // No homeNow() here: its `cmd package resolve-activity` turns that preference back to "not always"
             if (homeAlways(adb) || chooseHomeAlways(adb)) {
                 say("   OK  nút Home mở thẳng launcher mới (không hiện hộp chọn)");
             } else {
@@ -550,9 +553,9 @@ public final class UpdaterActivity extends Activity {
             }
         } else {
             adb.shell("cmd package set-home-activity --user 0 " + LAUNCHER + "/.MainActivity");
+            String home = homeNow(adb);
+            say(home.contains(LAUNCHER) ? "   OK  nút Home mở launcher mới" : "   !!  nút Home đang mở: " + home);
         }
-        String home = homeNow(adb);
-        say(home.contains(LAUNCHER) ? "   OK  nút Home mở launcher mới" : "   !!  nút Home đang mở: " + home);
 
         say("");
         say("== 3/3  Việt hoá Cài đặt XGIMI");

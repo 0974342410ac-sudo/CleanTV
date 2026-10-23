@@ -88,4 +88,7 @@ com.xgimi.duertts                      # 极米语音 assistant + mic key monito
 # firmware (seen 2026-10-22: overlays.xml loses their entries, /data/resource-cache loses the .frro). Kept by
 # tools/xgimi-vi/dohko-boot-vi.ps1: files + boot.sh in /data/local/tmp/cleantv (root-owned), and config.json
 # "boot_script": true, so the launcher (BootScript.java) runs boot.sh through the TV's own adbd after each boot.
-# Checked across a reboot. Undo: dohko-boot-vi.ps1 -Remove. The quick panel triggers (DB) survive reboots as is.
+# Checked across a reboot. Undo: dohko-boot-vi.ps1 -Remove. The quick panel triggers (DB) survive reboots as is.# Home chooser (2026-10-23): with com.xgimi.home kept, Home goes straight to the launcher only through the
+# XGIMI chooser's "始终" (preferred activity, mAlways=true). `cmd package resolve-activity ... -c HOME` (any
+# check of "what does Home open") rewrites that preference to mAlways=false, and the chooser is back on the next
+# Home. Check it read-only instead: dumpsys package preferred-activities | grep -A1 com.gathin.tvhome | grep mAlways
