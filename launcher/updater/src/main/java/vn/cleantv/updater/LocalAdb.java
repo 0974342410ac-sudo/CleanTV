@@ -11,7 +11,8 @@ import java.nio.ByteOrder;
 import java.nio.charset.StandardCharsets;
 
 /**
- * Minimal ADB client for the TV's own adbd on 127.0.0.1:5555, enough to run shell commands. Where adbd needs no
+ * Minimal ADB client for the TV's own adbd on 127.0.0.1:5555 (or a TV's network ADB, from the phone build), enough
+ * to run shell commands. Where adbd needs no
  * key (ro.adb.secure=0, the XGIMI DOHKO) it connects at once; where it asks for one (the onn 4K box) it signs
  * with {@link AdbKey}, and the first time offers the public key so the TV shows "Allow USB debugging?".
  */
@@ -45,8 +46,13 @@ final class LocalAdb implements AutoCloseable {
     }
 
     LocalAdb(int port, AdbKey key, Prompt prompt) throws IOException {
+        this("127.0.0.1", port, key, prompt);
+    }
+
+    /** Another device's network ADB (the phone build): same protocol, the TV's address instead of loopback. */
+    LocalAdb(String host, int port, AdbKey key, Prompt prompt) throws IOException {
         socket = new Socket();
-        socket.connect(new InetSocketAddress("127.0.0.1", port), 3000);
+        socket.connect(new InetSocketAddress(host, port), 3000);
         socket.setSoTimeout(120_000);
         in = new DataInputStream(socket.getInputStream());
         out = socket.getOutputStream();

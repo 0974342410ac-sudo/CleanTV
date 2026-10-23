@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Phone build: reaches the TV's network ADB and checks GitHub for a newer build of itself (Updates). -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application>
+        <!-- A phone holds it upright; singleTop so PackageInstaller's status comes back to the same screen -->
+        <activity
+            android:name=".UpdaterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="adjustResize"
+            tools:replace="android:screenOrientation" />
+    </application>
+</manifest>

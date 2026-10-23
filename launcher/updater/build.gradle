@@ -31,16 +31,37 @@ android {
         buildConfig true
     }
     flavorDimensions 'target'
+    // dienthoai: the same app on an Android phone, talking to a TV's network ADB by IP (updater\build-phone.ps1);
+    // it looks for newer builds at UPDATE_URL (version.json on the latest GitHub Release). Its version comes from
+    // -PphoneVersionCode / -PphoneVersionName so each release is newer than the last.
     productFlavors {
         chung {
             dimension 'target'
             buildConfigField 'boolean', 'XGIMI_ONLY', 'false'
+            buildConfigField 'boolean', 'REMOTE', 'false'
+            buildConfigField 'String', 'UPDATE_URL', '""'
         }
         xgimi {
             dimension 'target'
             applicationIdSuffix '.xgimi'
             buildConfigField 'boolean', 'XGIMI_ONLY', 'true'
+            buildConfigField 'boolean', 'REMOTE', 'false'
+            buildConfigField 'String', 'UPDATE_URL', '""'
         }
+        dienthoai {
+            dimension 'target'
+            applicationIdSuffix '.phone'
+            versionCode((project.findProperty('phoneVersionCode') ?: '1') as int)
+            versionName(project.findProperty('phoneVersionName') ?: '1.0')
+            buildConfigField 'boolean', 'XGIMI_ONLY', 'false'
+            buildConfigField 'boolean', 'REMOTE', 'true'
+            buildConfigField 'String', 'UPDATE_URL',
+                    '"https://github.com/0974342410ac-sudo/CleanTV/releases/latest/download/version.json"'
+        }
+    }
+    // The phone build serves every TV the general one does: same Android 6, onn and overlay assets
+    sourceSets {
+        dienthoai.assets.srcDirs += 'src/chung/assets'
     }
 
     compileOptions {

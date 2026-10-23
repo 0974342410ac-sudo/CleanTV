@@ -41,12 +41,18 @@ public final class UpdaterActivity extends Activity {
     private static final String SETTINGS = "com.android.newsettings";
     private static final String OVERLAY = "com.android.shell:VietHoa";
     private static final String ENABLE_ADB = "com.gathin.tvhome.action.ENABLE_ADB";
+    /** Phone build: where files for the TV's shell land (stage()). */
+    private static final String STAGE_DIR = "/data/local/tmp/cleantv-stage";
 
     private final Handler ui = new Handler(Looper.getMainLooper());
     private TextView log;
     private ScrollView scroll;
     private Button update, restore, enableAdb, back;
     private volatile boolean busy;
+    /** The TV's ADB: this device itself, or (phone build) the address typed in hostField. */
+    private volatile String tvHost = "127.0.0.1";
+    private android.widget.EditText hostField;
+    private Button newVersion;
 
     @Override
     protected void onCreate(Bundle state) {
@@ -71,10 +77,15 @@ public final class UpdaterActivity extends Activity {
                         + "máy cần bật Gỡ lỗi mạng (ADB)."
                 : "Cài launcher mới nhất, tắt quảng cáo và ứng dụng thừa (máy chiếu XGIMI, XGIMI Android 6, onn 4K Box), Việt hoá "
                         + "Cài đặt XGIMI. Không cần máy tính; máy cần bật Gỡ lỗi mạng (ADB).");
+        if (BuildConfig.REMOTE) {
+            sub.setText("Cập nhật TV, máy chiếu từ điện thoại qua Wi-Fi: cài launcher mới nhất, tắt quảng cáo, Việt hoá "
+                    + "giao diện XGIMI. Điện thoại và TV cùng mạng Wi-Fi; TV cần bật Gỡ lỗi mạng (ADB).");
+        }
         sub.setTextColor(0xFFAAB4BE);
         sub.setTextSize(15);
         sub.setPadding(0, (int) (6 * dp), 0, (int) (18 * dp));
         root.addView(sub);
+        if (BuildConfig.REMOTE) addPhoneControls(root, dp);
 
         LinearLayout row = new LinearLayout(this);
         row.setOrientation(LinearLayout.HORIZONTAL);
@@ -107,6 +118,124 @@ public final class UpdaterActivity extends Activity {
         enableAdb.setOnClickListener(v -> run(this::doEnableAdb));
         back.setOnClickListener(v -> goBack());
         update.requestFocus();
+        if (BuildConfig.REMOTE) {
+            // "Trở về" leaves this app on the TV itself; from a phone there is nothing to go back to
+            back.setVisibility(View.GONE);
+            Updates.check(this, info -> ui.post(() -> {
+                newVersion.setText("Có bản mới " + info.name + ": bấm để tải và cài");
+                newVersion.setVisibility(View.VISIBLE);
+                newVersion.setOnClickListener(v -> {
+                    newVersion.setEnabled(false);
+                    newVersion.setText("Đang tải bản " + info.name + "…");
+                    Updates.install(this, info, error -> ui.post(() -> {
+                        newVersion.setEnabled(true);
+                        newVersion.setText("Tải bản mới thất bại (" + error + "): bấm để thử lại");
+                    }));
+                });
+            }));
+        }
+    }
+
+    /** PackageInstaller reports on the phone build's self-update (Updates.install). */
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        if (!Updates.ACTION_INSTALL_STATUS.equals(intent.getAction())) return;
+        String line = Updates.onStatus(this, intent);
+        if (line != null) {
+            say(line);
+            if (newVersion != null) newVersion.setEnabled(true);
+        }
+    }
+
+    /** Phone build: the TV's address (remembered), a LAN scan for it, and the new-version bar. */
+    private void addPhoneControls(LinearLayout root, float dp) {
+        newVersion = button("", dp);
+        newVersion.setVisibility(View.GONE);
+        LinearLayout.LayoutParams nv = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+        nv.bottomMargin = (int) (12 * dp);
+        root.addView(newVersion, nv);
+
+        LinearLayout row = new LinearLayout(this);
+        row.setOrientation(LinearLayout.HORIZONTAL);
+        row.setGravity(Gravity.CENTER_VERTICAL);
+        hostField = new android.widget.EditText(this);
+        hostField.setHint("IP của TV, ví dụ 192.168.1.20");
+        hostField.setHintTextColor(0xFF6B7684);
+        hostField.setTextColor(Color.WHITE);
+        hostField.setTextSize(18);
+        hostField.setSingleLine(true);
+        hostField.setInputType(android.text.InputType.TYPE_CLASS_TEXT | android.text.InputType.TYPE_TEXT_VARIATION_URI);
+        hostField.setText(getPreferences(MODE_PRIVATE).getString("tv_host", ""));
+        row.addView(hostField, new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f));
+        Button find = button("Tìm TV", dp);
+        LinearLayout.LayoutParams fp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+        fp.leftMargin = (int) (12 * dp);
+        row.addView(find, fp);
+        find.setOnClickListener(v -> findTvs(find));
+        LinearLayout.LayoutParams rp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+        rp.bottomMargin = (int) (16 * dp);
+        root.addView(row, rp);
+    }
+
+    /** Looks for open network ADB (port 5555) on this phone's Wi-Fi subnet and fills in the first one found. */
+    private void findTvs(Button find) {
+        find.setEnabled(false);
+        log.setText("");
+        new Thread(() -> {
+            String self = null;
+            try {
+                for (java.net.NetworkInterface ni : java.util.Collections.list(java.net.NetworkInterface.getNetworkInterfaces())) {
+                    if (!ni.isUp() || ni.isLoopback()) continue;
+                    for (java.net.InetAddress a : java.util.Collections.list(ni.getInetAddresses())) {
+                        if (a instanceof java.net.Inet4Address && a.isSiteLocalAddress()) self = a.getHostAddress();
+                    }
+                    if (self != null && ni.getName().startsWith("wlan")) break;
+                }
+            } catch (java.net.SocketException ignored) {
+                // no network
+            }
+            if (self == null) {
+                say("!! Điện thoại chưa kết nối Wi-Fi.");
+                ui.post(() -> find.setEnabled(true));
+                return;
+            }
+            String prefix = self.substring(0, self.lastIndexOf('.') + 1);
+            say("Đang tìm TV trong mạng " + prefix + "x …");
+            List<String> found = java.util.Collections.synchronizedList(new ArrayList<>());
+            java.util.concurrent.ExecutorService pool = java.util.concurrent.Executors.newFixedThreadPool(48);
+            for (int i = 1; i < 255; i++) {
+                String ip = prefix + i;
+                if (ip.equals(self)) continue;
+                pool.execute(() -> {
+                    try (java.net.Socket s = new java.net.Socket()) {
+                        s.connect(new java.net.InetSocketAddress(ip, 5555), 400);
+                        found.add(ip);
+                    } catch (IOException ignored) {
+                        // nothing there
+                    }
+                });
+            }
+            pool.shutdown();
+            try {
+                pool.awaitTermination(30, java.util.concurrent.TimeUnit.SECONDS);
+            } catch (InterruptedException ignored) {
+                // show what was found so far
+            }
+            java.util.Collections.sort(found, (a, b) -> Integer.compare(
+                    Integer.parseInt(a.substring(a.lastIndexOf('.') + 1)), Integer.parseInt(b.substring(b.lastIndexOf('.') + 1))));
+            if (found.isEmpty()) {
+                say("!! Không thấy TV nào mở ADB (cổng 5555). Bật Gỡ lỗi mạng trên TV, hoặc nhập IP của TV.");
+            } else {
+                say("Tìm thấy: " + android.text.TextUtils.join(", ", found));
+                if (found.size() > 1) say("   (đã điền máy đầu tiên; sửa lại IP nếu cần)");
+                ui.post(() -> hostField.setText(found.get(0)));
+            }
+            ui.post(() -> find.setEnabled(true));
+        }, "find-tv").start();
     }
 
     /**
@@ -150,6 +279,15 @@ public final class UpdaterActivity extends Activity {
 
     private void run(Job job) {
         if (busy) return;
+        if (BuildConfig.REMOTE) {
+            String host = hostField.getText().toString().trim();
+            if (host.isEmpty()) {
+                log.setText("Nhập IP của TV (xem trong Cài đặt > Mạng trên TV) hoặc bấm \"Tìm TV\".");
+                return;
+            }
+            tvHost = host;
+            getPreferences(MODE_PRIVATE).edit().putString("tv_host", host).apply();
+        }
         busy = true;
         update.setEnabled(false);
         restore.setEnabled(false);
@@ -166,6 +304,9 @@ public final class UpdaterActivity extends Activity {
                 say("   Bấm lại nút, rồi trên hộp \"Cho phép gỡ lỗi USB?\" chọn \"Luôn cho phép\" và bấm Cho phép.");
             } catch (IOException e) {
                 say("!! Không kết nối được ADB của máy chiếu (" + e.getMessage() + ").");
+                if (BuildConfig.REMOTE) {
+                    say("   Kiểm tra IP " + tvHost + ", điện thoại và TV cùng mạng Wi-Fi, TV đang bật.");
+                }
                 say("   Launcher không bật lại được ADB (máy chưa có launcher mới, hoặc launcher chưa được cấp quyền).");
                 say("   Bật Gỡ lỗi mạng (ADB) trong Tuỳ chọn nhà phát triển rồi thử lại.");
                 // Android 6 adbd names every network connection "host" and silently drops a second one
@@ -202,6 +343,8 @@ public final class UpdaterActivity extends Activity {
         } catch (LocalAdb.AuthRequired e) {
             throw e;
         } catch (IOException first) {
+            // From a phone there is no launcher here to ask
+            if (BuildConfig.REMOTE) throw first;
             say("ADB đang tắt: nhờ launcher bật lại…");
             sendBroadcast(new Intent(ENABLE_ADB).setPackage(LAUNCHER));
             for (int i = 0; i < 15; i++) {
@@ -253,7 +396,7 @@ public final class UpdaterActivity extends Activity {
         } catch (java.security.GeneralSecurityException e) {
             throw new IOException("không tạo được khoá ADB", e);
         }
-        return new LocalAdb(5555, key, () -> {
+        return new LocalAdb(tvHost, 5555, key, () -> {
             say("Trên TV đang hiện hộp \"Cho phép gỡ lỗi USB?\":");
             say("   chọn \"Luôn cho phép từ máy tính này\" rồi bấm Cho phép (chỉ cần một lần).");
         });
@@ -370,7 +513,10 @@ public final class UpdaterActivity extends Activity {
      * launcher, then "始终" (always), with remote keys. Brings this app back to the front afterwards.
      */
     private boolean chooseHomeAlways(LocalAdb adb) throws Exception {
-        String label = getPackageManager().getApplicationLabel(getPackageManager().getApplicationInfo(LAUNCHER, 0)).toString();
+        // The launcher's name as the chooser shows it; a phone does not have the launcher, so its known names
+        List<String> labels = BuildConfig.REMOTE ? java.util.Arrays.asList("Màn hình chính", "Home")
+                : java.util.Collections.singletonList(getPackageManager().getApplicationLabel(
+                        getPackageManager().getApplicationInfo(LAUNCHER, 0)).toString());
         adb.shell("am start -a android.intent.action.MAIN -c android.intent.category.HOME");
         Thread.sleep(2500);
         try {
@@ -380,7 +526,7 @@ public final class UpdaterActivity extends Activity {
             java.util.regex.Matcher m = java.util.regex.Pattern
                     .compile("text=\"([^\"]*)\" resource-id=\"com\\.xgimi\\.xgimiframeworkui:id/text\"").matcher(ui);
             int index = -1;
-            for (int i = 0; m.find(); i++) if (m.group(1).equals(label)) { index = i; break; }
+            for (int i = 0; m.find(); i++) if (labels.contains(m.group(1))) { index = i; break; }
             if (index < 0) return false;
             for (int i = 0; i <= index; i++) adb.shell("input keyevent KEYCODE_DPAD_RIGHT; sleep 0.5");
             adb.shell("input keyevent KEYCODE_DPAD_CENTER; sleep 1");
@@ -394,8 +540,8 @@ public final class UpdaterActivity extends Activity {
             Thread.sleep(1500);
             return homeAlways(adb);
         } finally {
-            // Back to this app's log, above the launcher the choice has just opened
-            adb.shell("am start -f 0x20000 -n " + getPackageName() + "/" + UpdaterActivity.class.getName());
+            // Back to this app's log, above the launcher the choice has just opened (on the TV build only)
+            if (!BuildConfig.REMOTE) adb.shell("am start -f 0x20000 -n " + getPackageName() + "/" + UpdaterActivity.class.getName());
         }
     }
 
@@ -459,10 +605,8 @@ public final class UpdaterActivity extends Activity {
         Device device = detect(adb);
         say("Máy: " + adb.shell("getprop ro.product.model") + "  (firmware " + adb.shell("getprop ro.build.version.incremental")
                 + ")  —  " + device.label);
-        File dir = getExternalFilesDir(null);
-        if (dir == null) throw new IOException("không có bộ nhớ trong");
         if (device.legacyXgimi) {
-            doUpdateLegacy(adb, dir);
+            doUpdateLegacy(adb);
             return;
         }
 
@@ -597,25 +741,26 @@ public final class UpdaterActivity extends Activity {
         } else if (!"0".equals(adb.shell("id -u"))) {
             say("   !!  ADB không có quyền root: bỏ qua bước này.");
         } else {
-            File xml = copyAsset("vi.xml", new File(dir, "vi.xml"));
+            String xml = stage(adb, "vi.xml", "vi.xml");
             // system_server opens the file for fabricate and cannot see this app's folder: hand it over via /data/local/tmp
             String tmp = "/data/local/tmp/xgimi-vi.xml";
-            adb.shell("cp " + xml.getAbsolutePath() + " " + tmp);
+            adb.shell("cp " + xml + " " + tmp);
             if (adb.shell("cmd overlay list " + SETTINGS).contains(OVERLAY)) adb.shell("cmd overlay disable --user 0 " + OVERLAY);
             out = adb.shell("cmd overlay fabricate --target " + SETTINGS + " --name VietHoa --file " + tmp);
             adb.shell("rm -f " + tmp);
-            xml.delete();
+            unstage(adb, xml);
             if (!out.isEmpty()) say("   " + out);
             adb.shell("cmd overlay enable --user 0 " + OVERLAY);
             adb.shell("am force-stop " + SETTINGS);
             // Proof that the new text is live: look one string up through the overlay
             String net = adb.shell("cmd overlay lookup " + SETTINGS + " " + SETTINGS + ":string/head_network_setting_text");
             say(out.isEmpty() && net.contains("Mạng") ? "   OK  đã Việt hoá" : "   !!  Việt hoá chưa áp dụng được (" + net + ")");
-            keepVietnameseAfterBoot(adb, dir);
+            keepVietnameseAfterBoot(adb);
         }
         closeHomeChooser(adb);
         say("");
-        say("Xong. Bấm \"Trở về\" (hoặc Home) để về màn hình chính mới.");
+        say(BuildConfig.REMOTE ? "Xong. Bấm Home trên remote của TV để về màn hình chính mới."
+                : "Xong. Bấm \"Trở về\" (hoặc Home) để về màn hình chính mới.");
     }
 
     /**
@@ -659,7 +804,7 @@ public final class UpdaterActivity extends Activity {
      * tools/xgimi-vi/dohko-boot.sh go to /data/local/tmp/cleantv, owned by root, and boot_script tells the
      * launcher to run boot.sh through the TV's adbd after each boot (BootScript); run once here for the power menu.
      */
-    private void keepVietnameseAfterBoot(LocalAdb adb, File dir) throws IOException {
+    private void keepVietnameseAfterBoot(LocalAdb adb) throws IOException {
         String target = "/data/local/tmp/cleantv";
         adb.shell("rm -rf " + target + "; mkdir -p " + target);
         java.util.List<String[]> files = new java.util.ArrayList<>(java.util.Arrays.asList(new String[][]{
@@ -668,9 +813,9 @@ public final class UpdaterActivity extends Activity {
         String[] apps = getAssets().list("apps");
         if (apps != null) for (String a : apps) files.add(new String[]{"apps/" + a, a});
         for (String[] f : files) {
-            File local = copyAsset(f[0], new File(dir, f[1]));
-            adb.shell("cp " + local.getAbsolutePath() + " " + target + "/" + f[1]);
-            local.delete();
+            String staged = stage(adb, f[0], f[1]);
+            adb.shell("cp " + staged + " " + target + "/" + f[1]);
+            unstage(adb, staged);
         }
         int expected = 2 + (apps == null ? 0 : apps.length);
         // Root-owned so apps cannot change what the boot script runs; system_server reads the translations
@@ -693,14 +838,14 @@ public final class UpdaterActivity extends Activity {
      * (home_redirect_package), and Settings gets its Vietnamese text from a static overlay that needs root, which
      * this userdebug firmware gives adbd. Both the overlay and the language take a reboot, done at the end.
      */
-    private void doUpdateLegacy(LocalAdb adb, File dir) throws Exception {
+    private void doUpdateLegacy(LocalAdb adb) throws Exception {
         say("");
         say("== 1/3  Cài launcher mới nhất");
         // Android 6 pm has no -S (stdin): it installs from a path, and the shell user (group sdcard_rw) can read
         // this app's external folder there
-        File launcherApk = copyAsset("tvhome.apk", new File(dir, "tvhome.apk"));
-        String out = adb.shell("pm install -r " + launcherApk.getAbsolutePath());
-        launcherApk.delete();
+        String launcherApk = stage(adb, "tvhome.apk", "tvhome.apk");
+        String out = adb.shell("pm install -r " + launcherApk);
+        unstage(adb, launcherApk);
         if (!out.contains("Success")) throw new IllegalStateException("cài launcher thất bại: " + firstLine(out));
         adb.shell("pm grant " + LAUNCHER + " android.permission.ACCESS_FINE_LOCATION");
         adb.shell("pm grant " + LAUNCHER + " android.permission.RECORD_AUDIO");
@@ -747,8 +892,8 @@ public final class UpdaterActivity extends Activity {
         }
         try {
             boolean reboot = false;
-            File apk = copyAsset("xgimi-settings-vi-a6.apk", new File(dir, "xgimi-settings-vi-a6.apk"));
-            String sums = root.shell("md5sum " + apk.getAbsolutePath() + " " + LEGACY_OVERLAY + " 2>/dev/null");
+            String apk = stage(root, "xgimi-settings-vi-a6.apk", "xgimi-settings-vi-a6.apk");
+            String sums = root.shell("md5sum " + apk + " " + LEGACY_OVERLAY + " 2>/dev/null");
             String[] lines = sums.split("\n");
             boolean same = lines.length == 2 && lines[0].split(" ")[0].equals(lines[1].split(" ")[0]);
             if (same) {
@@ -756,14 +901,14 @@ public final class UpdaterActivity extends Activity {
             } else {
                 root.shell("mount -o rw,remount /system");
                 root.shell("mkdir -p /system/vendor/overlay; chmod 755 /system/vendor/overlay");
-                root.shell("cp " + apk.getAbsolutePath() + " " + LEGACY_OVERLAY);
+                root.shell("cp " + apk + " " + LEGACY_OVERLAY);
                 root.shell("chmod 644 " + LEGACY_OVERLAY + "; chown root:root " + LEGACY_OVERLAY + "; sync");
                 root.shell("mount -o ro,remount /system");
                 boolean ok = root.shell("ls " + LEGACY_OVERLAY).contains(LEGACY_OVERLAY);
                 say(ok ? "   OK  đã chép bản dịch Cài đặt" : "   !!  không chép được bản dịch Cài đặt");
                 reboot = ok;
             }
-            apk.delete();
+            unstage(root, apk);
             // "vi" or "vi-VN" (set by another app, e.g. HomeTV DinhLap on 192.168.31.150): both are Vietnamese already
             if (!root.shell("getprop persist.sys.locale").startsWith("vi")) {
                 root.shell("setprop persist.sys.locale vi");
@@ -916,27 +1061,59 @@ public final class UpdaterActivity extends Activity {
         } catch (JSONException e) {
             return null;
         }
-        File local = new File(getExternalFilesDir(null), "config.json");
-        try (OutputStream o = new FileOutputStream(local)) {
-            o.write(cfg.toString(2).getBytes(StandardCharsets.UTF_8));
+        byte[] json;
+        try {
+            json = cfg.toString(2).getBytes(StandardCharsets.UTF_8);
         } catch (JSONException e) {
             throw new IOException(e);
         }
-        local.setReadable(true, false);
+        String staged = stage(adb, new java.io.ByteArrayInputStream(json), "config.json");
         adb.shell("mkdir -p " + dir);
-        adb.shell("cp " + local.getAbsolutePath() + " " + dir + "/config.json");
+        adb.shell("cp " + staged + " " + dir + "/config.json");
         adb.shell("chmod 644 " + dir + "/config.json");
-        local.delete();
+        unstage(adb, staged);
         return "1".equals(adb.shell("grep -c '\"" + key + "\"' " + dir + "/config.json")) ? Boolean.TRUE : null;
     }
 
-    private File copyAsset(String name, File dest) throws IOException {
-        try (InputStream in = getAssets().open(name); OutputStream o = new FileOutputStream(dest)) {
+    /**
+     * Puts an asset where the TV's shell can read it and returns that path: this app's external folder when it
+     * runs on the TV, or (phone build) /data/local/tmp on the TV, streamed through ADB.
+     */
+    private String stage(LocalAdb adb, String asset, String name) throws IOException {
+        try (InputStream in = getAssets().open(asset)) {
+            return stage(adb, in, name);
+        }
+    }
+
+    private String stage(LocalAdb adb, InputStream in, String name) throws IOException {
+        if (BuildConfig.REMOTE) {
+            // The exec stream only closes when the command ends, so the command must know the size (as pm install -S)
+            java.io.ByteArrayOutputStream bytes = new java.io.ByteArrayOutputStream();
+            byte[] buf = new byte[64 * 1024];
+            for (int r; (r = in.read(buf)) > 0; ) bytes.write(buf, 0, r);
+            String path = STAGE_DIR + "/" + name;
+            adb.shell("mkdir -p " + STAGE_DIR);
+            adb.exec("head -c " + bytes.size() + " > " + path, new java.io.ByteArrayInputStream(bytes.toByteArray()));
+            adb.shell("chmod 644 " + path);
+            if (!String.valueOf(bytes.size()).equals(adb.shell("wc -c < " + path).trim())) {
+                throw new IOException("chép " + name + " sang TV không trọn vẹn");
+            }
+            return path;
+        }
+        File dir = getExternalFilesDir(null);
+        if (dir == null) throw new IOException("không có bộ nhớ trong");
+        File dest = new File(dir, name);
+        try (OutputStream o = new FileOutputStream(dest)) {
             byte[] buf = new byte[64 * 1024];
             for (int r; (r = in.read(buf)) > 0; ) o.write(buf, 0, r);
         }
         dest.setReadable(true, false);
-        return dest;
+        return dest.getAbsolutePath();
+    }
+
+    private void unstage(LocalAdb adb, String path) throws IOException {
+        if (BuildConfig.REMOTE) adb.shell("rm -f " + path);
+        else new File(path).delete();
     }
 
     private List<String> readList(String asset) throws IOException {

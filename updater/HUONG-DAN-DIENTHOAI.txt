@@ -1,0 +1,25 @@
+CẬP NHẬT TV / MÁY CHIẾU QUA ĐIỆN THOẠI
+======================================
+
+Dùng điện thoại Android thay cho USB. Làm được mọi việc như gói USB-CapNhat: cài launcher mới nhất, tắt quảng
+cáo, Việt hoá giao diện XGIMI (DOHKO, RS10, H6, IRONMAN), Khôi phục, Bật ADB.
+
+CÀI ĐẶT (một lần)
+1. Chép CapNhatTV-DienThoai.apk sang điện thoại (Zalo, Drive, cáp...) rồi mở để cài. Điện thoại hỏi cho phép
+   cài ứng dụng không rõ nguồn: chọn Cho phép.
+2. Trên TV: bật Gỡ lỗi mạng (ADB). TV đã cập nhật bằng gói USB thì ADB tự bật sẵn.
+
+CÁCH DÙNG
+1. Điện thoại và TV cùng một mạng Wi-Fi.
+2. Mở "Cập nhật TV qua điện thoại". Nhập IP của TV (Cài đặt > Mạng trên TV) hoặc bấm "Tìm TV".
+3. Bấm "Cập nhật". Nếu TV hiện hộp "Cho phép gỡ lỗi?": chọn "Luôn cho phép" rồi bấm Cho phép.
+4. Đợi đến dòng "Xong". Ứng dụng nhớ IP cho lần sau.
+- Trong lúc cập nhật, TV có thể tự mở hộp chọn màn hình chính rồi tự chọn "始终": đừng bấm remote lúc đó.
+
+TỰ CẬP NHẬT
+- Mỗi lần mở, ứng dụng xem trên mạng có bản mới không. Có thì hiện nút "Có bản mới ...": bấm để tải và cài
+  đè (điện thoại hỏi xác nhận cài). Bản mới mang theo launcher và bản dịch mới nhất.
+
+LƯU Ý
+- ADB mạng mở thì mọi thiết bị cùng Wi-Fi điều khiển được TV. Chỉ dùng trong mạng nhà.
+- iPhone không dùng được ứng dụng này.
