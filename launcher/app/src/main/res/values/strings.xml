@@ -81,6 +81,9 @@
     <string name="app_uninstall">Uninstall</string>
     <string name="app_uninstall_pick">Choose an app to uninstall</string>
     <string name="app_uninstall_none">No app here can be uninstalled</string>
+    <string name="web_remote">Phone remote</string>
+    <string name="web_remote_info">On a phone (iPhone too) on the same Wi-Fi, open in the browser:\n\n%1$s\n\nPIN: %2$s\n\nOn iPhone: Share, then Add to Home Screen.</string>
+    <string name="web_remote_no_network">The TV is not connected to a network.</string>
     <string name="app_cannot_uninstall">%1$s is part of the system and cannot be uninstalled</string>
     <string name="ui_section">Appearance</string>
     <string name="ui_greeting">Greeting name: %1$s</string>

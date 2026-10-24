@@ -76,6 +76,9 @@
     <string name="app_uninstall">Gỡ ứng dụng</string>
     <string name="app_uninstall_pick">Chọn ứng dụng để gỡ</string>
     <string name="app_uninstall_none">Không có ứng dụng nào gỡ được</string>
+    <string name="web_remote">Remote điện thoại</string>
+    <string name="web_remote_info">Trên điện thoại (cả iPhone) cùng mạng Wi-Fi, mở trình duyệt và vào:\n\n%1$s\n\nMã PIN: %2$s\n\nTrên iPhone: bấm Chia sẻ rồi Thêm vào MH chính.</string>
+    <string name="web_remote_no_network">TV chưa kết nối mạng.</string>
     <string name="app_cannot_uninstall">%1$s là ứng dụng hệ thống, không gỡ được</string>
     <string name="reorder">Sắp xếp ứng dụng</string>
     <string name="ui_section">Giao diện</string>

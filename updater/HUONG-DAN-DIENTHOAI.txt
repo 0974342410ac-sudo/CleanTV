@@ -30,4 +30,13 @@ TỰ CẬP NHẬT
 
 LƯU Ý
 - ADB mạng mở thì mọi thiết bị cùng Wi-Fi điều khiển được TV. Chỉ dùng trong mạng nhà.
-- iPhone không dùng được ứng dụng này.
+- iPhone không cài được ứng dụng này, nhưng dùng được remote trên trình duyệt (xem dưới).
+
+REMOTE TRÊN TRÌNH DUYỆT (CẢ IPHONE)
+- TV đã cập nhật launcher mới thì có sẵn trang remote, không cần cài gì trên điện thoại.
+- Trên TV: giữ OK trên nút Cài đặt (góc trên bên phải), chọn "Remote điện thoại": TV hiện địa chỉ
+  (vd. http://192.168.31.12:8686) và mã PIN 4 số.
+- Trên điện thoại cùng Wi-Fi: mở Safari/Chrome, gõ địa chỉ đó, nhập mã PIN. Lần sau mở lại không cần mã.
+- iPhone: bấm nút Chia sẻ rồi "Thêm vào MH chính" để có biểu tượng Remote TV như một ứng dụng.
+- Lần đầu bấm phím, TV có thể hỏi "Cho phép gỡ lỗi?": chọn "Luôn cho phép" rồi bấm Cho phép.
+- Cần ADB mạng của TV đang bật (TV đã cập nhật thì tự bật).

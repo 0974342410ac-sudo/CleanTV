@@ -52,6 +52,10 @@ TÌM KIẾM GIỌNG NÓI
 - Giữ phím micro trên remote trong lúc nói, nói xong thả ra là tìm (micro nằm trong remote, chỉ thu
   âm khi giữ phím). Nói tên ứng dụng để mở nó; nói nội dung khác thì tìm trên YouTube.
 
+REMOTE ĐIỆN THOẠI (CẢ IPHONE)
+- Giữ OK trên nút Cài đặt của màn hình chính, chọn "Remote điện thoại": TV hiện địa chỉ và mã PIN.
+  Trên điện thoại cùng Wi-Fi, mở trình duyệt, vào địa chỉ đó, nhập mã PIN là bấm được như remote.
+
 BẬT ADB
 - Mở "Cập nhật máy chiếu", bấm "Bật ADB". Nếu ADB đang tắt, ứng dụng nhờ launcher bật lại (máy cần
   đã được "Cập nhật" ít nhất một lần). Sau đó ADB tự bật lại mỗi lần máy khởi động.

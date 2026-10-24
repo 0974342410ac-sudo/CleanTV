@@ -62,6 +62,14 @@ final class Config {
      * (config.xml app_look_like "package=source", or a config.json object of the same name), e.g. TizenTube
      * shown as YouTube. Nothing is copied: the source app's own artwork is read through PackageManager.
      */
+    /** web_remote: the phone remote page on port 8686 (WebRemote); config.json "web_remote": false turns it off. */
+    static boolean webRemote(Context ctx) {
+        boolean on = ctx.getResources().getBoolean(R.bool.web_remote);
+        File dir = dir(ctx);
+        JSONObject json = read(dir != null ? new File(dir, FILE_NAME) : null);
+        return json != null ? json.optBoolean("web_remote", on) : on;
+    }
+
     static Map<String, String> lookLike(Context ctx) {
         Map<String, String> map = new HashMap<>();
         for (String item : ctx.getResources().getStringArray(R.array.app_look_like)) {

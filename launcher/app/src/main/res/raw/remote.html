@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Remote TV">
+<meta name="theme-color" content="#0E1116">
+<link rel="apple-touch-icon" href="/icon.png">
+<link rel="manifest" href="/manifest.json">
+<title>Remote TV</title>
+<style>
+  :root { --bg:#0E1116; --key:#262C36; --keyon:#3A4250; --accent:#2F7DF6; --text:#FFFFFF; --muted:#AAB4BE; }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; -webkit-user-select:none; user-select:none; -webkit-touch-callout:none; }
+  html, body { margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  body { padding:max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom)); }
+  .wrap { max-width:420px; margin:0 auto; }
+  h1 { font-size:24px; font-weight:600; margin:4px 0 2px; }
+  #status { color:var(--muted); font-size:14px; min-height:20px; margin-bottom:14px; }
+  .row { display:flex; gap:8px; margin:8px 0; }
+  .row > button { flex:1; }
+  button { height:56px; border:0; border-radius:22px; background:var(--key); color:var(--text);
+    font-size:17px; font-family:inherit; touch-action:manipulation; }
+  button:active, button.on { background:var(--keyon); }
+  .pad { display:grid; grid-template-columns:repeat(3, 92px); grid-template-rows:repeat(3, 92px);
+    gap:8px; justify-content:center; margin:18px 0; }
+  .pad button { height:92px; font-size:26px; border-radius:24px; }
+  .pad .ok { background:var(--accent); border-radius:46px; font-size:22px; }
+  .pad .ok:active { background:#1F63CF; }
+  input { flex:1; min-width:0; height:56px; border-radius:16px; border:1px solid #333B47; background:#151A21;
+    color:var(--text); font-size:17px; padding:0 14px; -webkit-user-select:text; user-select:text; }
+  #pinView { display:none; text-align:center; margin-top:40px; }
+  #pinView p { color:var(--muted); line-height:1.5; }
+  #pin { width:180px; text-align:center; font-size:32px; letter-spacing:10px; flex:none; margin:12px auto; display:block; }
+  #pinView button { width:180px; background:var(--accent); }
+  .hint { color:var(--muted); font-size:13px; text-align:center; margin-top:16px; line-height:1.5; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Điều khiển TV</h1>
+  <div id="status"></div>
+
+  <div id="pinView">
+    <p>Nhập mã 4 số đang hiện trên màn hình TV.<br>(Mã cũng có trong nút Cài đặt &gt; Remote điện thoại.)</p>
+    <input id="pin" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="off">
+    <button id="pinGo">Kết nối</button>
+  </div>
+
+  <div id="remote" style="display:none">
+    <div class="row">
+      <button data-key="KEYCODE_POWER">Nguồn</button>
+      <button data-key="KEYCODE_HOME">Home</button>
+      <button data-key="KEYCODE_BACK">Quay lại</button>
+      <button data-key="KEYCODE_MENU">Menu</button>
+    </div>
+    <div class="pad">
+      <span></span><button data-key="KEYCODE_DPAD_UP" data-repeat>▲</button><span></span>
+      <button data-key="KEYCODE_DPAD_LEFT" data-repeat>◀</button>
+      <button class="ok" data-key="KEYCODE_DPAD_CENTER" data-hold>OK</button>
+      <button data-key="KEYCODE_DPAD_RIGHT" data-repeat>▶</button>
+      <span></span><button data-key="KEYCODE_DPAD_DOWN" data-repeat>▼</button><span></span>
+    </div>
+    <div class="row">
+      <button data-key="KEYCODE_VOLUME_DOWN" data-repeat>🔉 −</button>
+      <button data-key="KEYCODE_VOLUME_MUTE">🔇</button>
+      <button data-key="KEYCODE_VOLUME_UP" data-repeat>🔊 +</button>
+    </div>
+    <div class="row">
+      <button data-key="KEYCODE_MEDIA_REWIND" data-repeat>⏪</button>
+      <button data-key="KEYCODE_MEDIA_PLAY_PAUSE">⏯</button>
+      <button data-key="KEYCODE_MEDIA_FAST_FORWARD" data-repeat>⏩</button>
+      <button data-key="KEYCODE_SEARCH">🔍</button>
+    </div>
+    <div class="row" style="margin-top:14px">
+      <input id="text" placeholder="Gõ chữ gửi sang TV (không dấu)" enterkeyhint="send" autocomplete="off">
+      <button id="sendText" style="flex:none; width:80px">Gửi</button>
+    </div>
+    <div class="row">
+      <button data-key="KEYCODE_DEL" data-repeat>⌫ Xoá</button>
+      <button data-key="KEYCODE_ENTER">↵ Enter</button>
+    </div>
+    <div class="hint">iPhone: bấm nút Chia sẻ rồi "Thêm vào MH chính" để có biểu tượng Remote TV như một ứng dụng.<br>Giữ OK = bấm giữ trên remote.</div>
+  </div>
+</div>
+<script>
+(function () {
+  var TOKEN_KEY = 'remote-token-' + location.host;
+  var token = '';
+  try { token = localStorage.getItem(TOKEN_KEY) || ''; } catch (e) {}
+  var statusEl = document.getElementById('status');
+
+  function setStatus(t) { statusEl.textContent = t; }
+
+  function post(path, data) {
+    var body = Object.keys(data || {}).map(function (k) {
+      return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]);
+    }).join('&');
+    return fetch(path, { method: 'POST', body: body,
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'X-Token': token } })
+      .then(function (r) {
+        if (r.status === 401) { showPin(); throw new Error('pin'); }
+        return r.json();
+      });
+  }
+
+  function showPin() {
+    document.getElementById('remote').style.display = 'none';
+    document.getElementById('pinView').style.display = 'block';
+    setStatus('Chưa kết nối');
+    post('/api/showpin').catch(function () {});
+  }
+
+  function showRemote(name) {
+    document.getElementById('pinView').style.display = 'none';
+    document.getElementById('remote').style.display = 'block';
+    setStatus('Đã kết nối ' + (name || location.hostname));
+  }
+
+  document.getElementById('pinGo').addEventListener('click', function () {
+    var pin = document.getElementById('pin').value.trim();
+    post('/api/pin', { pin: pin }).then(function (r) {
+      if (r.ok) {
+        token = r.token;
+        try { localStorage.setItem(TOKEN_KEY, token); } catch (e) {}
+        hello();
+      } else if (r.error === 'locked') {
+        setStatus('Sai mã nhiều lần, thử lại sau ' + r.seconds + ' giây');
+      } else {
+        setStatus('Sai mã, xem lại mã trên TV');
+      }
+    }).catch(function () { setStatus('Không kết nối được TV'); });
+  });
+
+  function hello() {
+    post('/api/hello').then(function (r) { showRemote(r.name); }).catch(function (e) {
+      if (e.message !== 'pin') setStatus('Không kết nối được TV');
+    });
+  }
+
+  function send(code, long) {
+    return post('/api/key', long ? { code: code, long: '1' } : { code: code }).then(function (r) {
+      if (!r.ok) setStatus('TV chưa nhận phím (ADB của TV đang tắt?)');
+    }).catch(function (e) { if (e.message !== 'pin') setStatus('Mất kết nối TV'); });
+  }
+
+  // Buttons: tap sends once; data-repeat keeps sending while held; data-hold sends a long press when held
+  Array.prototype.forEach.call(document.querySelectorAll('button[data-key]'), function (b) {
+    var code = b.getAttribute('data-key');
+    var repeat = b.hasAttribute('data-repeat'), hold = b.hasAttribute('data-hold');
+    var timer = null, held = false;
+    function down(ev) {
+      ev.preventDefault();
+      if (b.classList.contains('on')) return;
+      b.classList.add('on');
+      held = false;
+      if (repeat) {
+        send(code);
+        timer = setTimeout(function tick() { send(code); timer = setTimeout(tick, 200); }, 450);
+      } else if (hold) {
+        timer = setTimeout(function () { held = true; send(code, true); }, 600);
+      }
+    }
+    function up(ev) {
+      ev.preventDefault();
+      if (!b.classList.contains('on')) return;
+      b.classList.remove('on');
+      clearTimeout(timer);
+      if (!repeat && !held) send(code);
+    }
+    function cancel() { b.classList.remove('on'); clearTimeout(timer); }
+    // Pointer events cover touch and mouse alike (iOS 13+); touch events are the fallback for older Safari
+    if (window.PointerEvent) {
+      b.addEventListener('pointerdown', down);
+      b.addEventListener('pointerup', up);
+      b.addEventListener('pointercancel', cancel);
+      b.addEventListener('pointerleave', cancel);
+    } else {
+      b.addEventListener('touchstart', down, { passive: false });
+      b.addEventListener('touchend', up, { passive: false });
+      b.addEventListener('touchcancel', cancel);
+    }
+    b.addEventListener('contextmenu', function (ev) { ev.preventDefault(); });
+  });
+
+  function sendText() {
+    var t = document.getElementById('text');
+    if (!t.value) return;
+    post('/api/text', { text: t.value }).catch(function () {});
+    t.value = '';
+  }
+  document.getElementById('sendText').addEventListener('click', sendText);
+  document.getElementById('text').addEventListener('keydown', function (ev) {
+    if (ev.key === 'Enter') { ev.preventDefault(); sendText(); }
+  });
+
+  if (token) hello(); else showPin();
+})();
+</script>
+</body>
+</html>

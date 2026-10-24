@@ -7,7 +7,9 @@ Vietnamese; user-facing text (launcher, updater, guides) is Vietnamese.
 ## Layout
 - `launcher/` Gradle project (JDK 17: `E:\buildtools\jdk\jdk-17.0.20.1+1`, SDK: `E:\buildtools\android-sdk`).
   - `app/` the launcher `com.gathin.tvhome` (Java, minSdk 23). Options in `res/values/config.xml`, overridden per TV
-    by `/sdcard/Android/data/com.gathin.tvhome/files/config.json` (see `Config.java`).
+    by `/sdcard/Android/data/com.gathin.tvhome/files/config.json` (see `Config.java`). `WebRemote.java` serves a
+    phone/iPhone remote page (`res/raw/remote.html`) on port 8686 behind a PIN and injects keys through the TV's
+    own adbd (copies of the updater's `LocalAdb`/`AdbKey`; the connection closes after 20 s idle).
   - `updater/` the updater app: talks to the TV's own adbd on 127.0.0.1:5555 (`LocalAdb.java`). Flavors:
     `chung` (every known TV, `USB-CapNhat`), `xgimi` (XGIMI DOHKO only, `USB-CapNhat-XGIMI-DOHKO`) and
     `dienthoai` (`BuildConfig.REMOTE`: runs on an Android phone, reaches the TV's network ADB by IP, streams files

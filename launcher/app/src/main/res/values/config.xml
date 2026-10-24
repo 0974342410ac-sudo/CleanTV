@@ -109,6 +109,10 @@
          fixed network ADB port on the TV. Anyone on the same network can then reach the TV's shell over ADB.
          A theme can set "keep_adb_on". -->
     <bool name="keep_adb_on">false</bool>
+    <!-- Remote control page for phones (iPhone too) at http://<TV address>:8686 on the home network (WebRemote),
+         behind a 4-digit PIN the TV shows (Settings button menu > Remote điện thoại). Keys go through the TV's own
+         ADB, so it needs network ADB on (keep_adb_on). A theme can set "web_remote": false. -->
+    <bool name="web_remote">true</bool>
     <!-- A stock home that ADB can neither disable nor hide (system uid on Android 6) and that the firmware opens
          for Home without a chooser, e.g. com.xgimi.overseashome on the MStar Android 6 XGIMI. With HomeKeyService
          enabled, Home opens this launcher and it goes over that home whenever it comes up. Empty: off.

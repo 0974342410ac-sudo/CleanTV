@@ -20,6 +20,10 @@ CÁCH DÙNG
        khởi động lại (máy này tự xoá bản dịch khi khởi động; launcher tạo lại sau khoảng 1 phút).
 4. Xong thì bấm "Trở về" (hoặc Home) để về màn hình chính mới. Có thể rút USB.
 
+REMOTE ĐIỆN THOẠI (CẢ IPHONE)
+- Giữ OK trên nút Cài đặt của màn hình chính, chọn "Remote điện thoại": máy chiếu hiện địa chỉ và mã PIN.
+  Trên điện thoại cùng Wi-Fi, mở trình duyệt, vào địa chỉ đó, nhập mã PIN là bấm được như remote.
+
 BẬT ADB
 - Mở "Cập nhật XGIMI DOHKO", bấm "Bật ADB". Nếu ADB đang tắt, ứng dụng nhờ launcher bật lại (máy cần
   đã được "Cập nhật" ít nhất một lần). Sau đó ADB tự bật lại mỗi lần máy khởi động.

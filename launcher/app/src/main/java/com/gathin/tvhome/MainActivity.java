@@ -278,6 +278,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         clockZone = TimeZone.getDefault().getID();
         voiceKeycodes = Config.voiceKeycodes(this);
         voicePending = getIntent() != null && ACTION_VOICE_SEARCH.equals(getIntent().getAction());
+        if (Config.webRemote(this)) WebRemote.start(this);
         setContentView(R.layout.activity_main);
         density = getResources().getDisplayMetrics().density;
         // config.xml, overlaid by config.json from a pushed theme (see Config and tools/theme.sh).
@@ -2127,6 +2128,17 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
 
     // ---- uninstalling apps (Settings menu) ----------------------------------------------------------
 
+    /** Settings menu > "Remote điện thoại": where a phone's browser finds the remote, and the PIN it asks for. */
+    private void showWebRemote() {
+        String address = WebRemote.address();
+        new android.app.AlertDialog.Builder(this)
+                .setTitle(R.string.web_remote)
+                .setMessage(address == null ? getString(R.string.web_remote_no_network)
+                        : getString(R.string.web_remote_info, address, WebRemote.pin(this)))
+                .setPositiveButton(android.R.string.ok, null)
+                .show();
+    }
+
     /** Installed by the user, or an update over a system app (uninstalling that removes the update); never Home itself. */
     private boolean isRemovable(PackageManager pm, String pkg) {
         if (pkg.equals(getPackageName())) return false;
@@ -2236,6 +2248,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         if (dockRow) addSettingsMenuRow(rows, popup, R.string.dock_edit, this::startDockEdit);
         addSettingsMenuRow(rows, popup, R.string.reorder, this::toggleReorder);
         addSettingsMenuRow(rows, popup, R.string.app_uninstall, this::showUninstallList);
+        if (Config.webRemote(this)) addSettingsMenuRow(rows, popup, R.string.web_remote, this::showWebRemote);
         panel.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
         popup.setWidth(Math.max((int) (200 * density), panel.getMeasuredWidth()));
         // Hebrew puts Settings at the left of the header: grow the menu inward from it.
