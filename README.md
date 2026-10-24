@@ -13,6 +13,7 @@ khôi phục (`tools/restore.ps1`, nút "Khôi phục" trong ứng dụng cập 
 | Launcher `com.gathin.tvhome` | `launcher/app/` | Màn hình chính kiểu Apple TV: dock 4 ứng dụng, lời chào, hình nền đổi theo giờ, ẩn ứng dụng |
 | Ứng dụng cập nhật bằng USB | `launcher/updater/`, `updater/` | Cập nhật máy chiếu / TV box không cần máy tính: cài launcher, tắt ứng dụng thừa, Việt hoá |
 | Cập nhật từ máy tính | `updater/CapNhat.ps1`, `updater/build-updater.ps1` | Cùng việc đó từ máy tính Windows qua Wi-Fi: cài ứng dụng cập nhật của gói USB lên TV và cho nó tự chạy |
+| Chỉnh sửa Launcher (Windows) | `LauncherEditor.ps1`, `installer/` | Đổi dock, giao diện, hình nền, ngày âm lịch, remote điện thoại trên TV từ máy tính; bộ cài `CaiDat-ChinhSuaLauncher.exe` |
 | Cập nhật qua điện thoại | `launcher/updater/` (bản `dienthoai`), `updater/build-phone.ps1` | Cùng việc đó từ điện thoại Android qua Wi-Fi, tự tải bản mới từ GitHub Releases |
 | Công cụ dòng lệnh (Windows) | `tools/`, `launcher/build-and-install.ps1` | Debloat, khôi phục, cài launcher, đẩy giao diện (theme) qua ADB |
 | Danh sách debloat theo máy | `examples/` | Hơn 100 dòng TV (Sony, Xiaomi, TCL, Hisense, Philips, XGIMI, onn...), mỗi máy một `debloat.txt` có ghi chú |

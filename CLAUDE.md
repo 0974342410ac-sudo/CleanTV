@@ -19,6 +19,9 @@ Vietnamese; user-facing text (launcher, updater, guides) is Vietnamese.
   It then runs `updater/build-updater.ps1`, which writes `dist/PC-CapNhat` (the PC updater): `CapNhat.ps1` finds the
   TV, installs the USB updater APK on it, starts it with `--es job update|restore` (wakes a sleeping TV first: Android
   blocks a sleeping TV's app sockets, loopback too) and prints its `CapNhat` logcat lines until "== KET THUC ==".
+- `LauncherEditor.ps1` (Windows editor: dock, look, wallpaper, lunar date, web remote; writes config.json over ADB)
+  and `installer/build-setup.ps1`, which packs it with the launcher APK into `dist/CaiDat-ChinhSuaLauncher.exe` and
+  `dist/ChinhSuaLauncher.zip`. On the XGIMI DOHKO its install button only replaces the APK (Home stays the updater's).
 - `updater/build-phone.ps1` builds `dist/DienThoai` (phone APK + version.json); `-Publish` makes the GitHub Release
   the phones update from (public repo 0974342410ac-sudo/CleanTV).
 - `tools/` command-line tools for a PC: `disable.ps1` / `restore.ps1` (debloat lists), `theme.ps1`, `tv.py`;
@@ -33,6 +36,7 @@ Vietnamese; user-facing text (launcher, updater, guides) is Vietnamese.
     powershell -ExecutionPolicy Bypass -File updater\build-usb.ps1      # launcher + USB-CapNhat
     powershell -ExecutionPolicy Bypass -File updater\build-usb.ps1 -XgimiDohko  # ... + the XGIMI DOHKO package
     powershell -ExecutionPolicy Bypass -File updater\build-phone.ps1    # phone app (-Publish: GitHub Release)
+    powershell -ExecutionPolicy Bypass -File installer\build-setup.ps1  # Windows editor installer (after a launcher build)
 APKs are signed with `%USERPROFILE%\.android\debug.keystore`. Every PC that builds must use the same keystore
 (shared privately, never committed), or the APK will not install over the copy already on the TVs
 ("signatures do not match").
