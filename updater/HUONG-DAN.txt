@@ -1,22 +1,31 @@
-CẬP NHẬT MÁY CHIẾU XGIMI (một chạm)
-==================================
+﻿CẬP NHẬT TV / MÁY CHIẾU TỪ MÁY TÍNH (Windows)
+=============================================
 
-Dành cho máy chiếu XGIMI DOHKO (RS 20 Pro Max, Android 14). Không cần cài gì trên máy tính.
+Làm giống hệt gói USB-CapNhat, nhưng qua Wi-Fi, không cần cắm USB vào TV: cài launcher mới nhất, tắt quảng cáo,
+Việt hoá giao diện XGIMI (DOHKO, RS10, H6, IRONMAN), Khôi phục. Dùng cho mọi máy gói USB hỗ trợ: XGIMI DOHKO
+(RS 20 Pro Max / Ultra Max), XGIMI RS10 / H6 / IRONMAN, XGIMI Android 6, onn 4K box và các Android TV khác.
+Không cần cài gì trên máy tính.
 
 CÁCH DÙNG
 1. Giải nén toàn bộ file zip vào một thư mục.
-2. Bật máy chiếu, để máy tính và máy chiếu cùng mạng Wi-Fi.
-3. Nhấp đúp CapNhat.cmd. Chương trình tự tìm máy chiếu rồi làm 3 bước:
-   1/3 Tắt quảng cáo và ứng dụng thừa (không gỡ, bật lại được)
-   2/3 Cài launcher mới nhất, đặt làm màn hình chính
-   3/3 Việt hoá Cài đặt XGIMI
-   Không tìm thấy máy chiếu thì nhập IP (xem trong Cài đặt > Mạng trên máy chiếu).
-4. Chạy lại bất cứ lúc nào để cập nhật lên bản mới hơn; bước đã làm sẽ được bỏ qua.
+2. Bật TV, để máy tính và TV cùng mạng Wi-Fi. TV cần bật Gỡ lỗi mạng (ADB); TV đã cập nhật một lần thì
+   ADB tự bật sẵn.
+3. Nhấp đúp CapNhat.cmd. Chương trình tự tìm TV trên Wi-Fi:
+   - Thấy một TV: làm luôn. Thấy nhiều TV: gõ số thứ tự (hoặc IP) của TV cần làm rồi Enter.
+   - Không thấy: nhập IP của TV (xem trong Cài đặt > Mạng trên TV).
+4. TV có thể hỏi "Cho phép gỡ lỗi?" (một lần cho máy tính, một lần cho ứng dụng cập nhật trên TV):
+   chọn "Luôn cho phép" rồi bấm Cho phép.
+5. Chương trình cài ứng dụng cập nhật lên TV và cho nó tự chạy; tiến trình hiện cả trên TV lẫn máy tính.
+   Đợi đến khi máy tính báo xong. Trong lúc đó đừng bấm remote.
+- Chạy lại bất cứ lúc nào để cập nhật lên bản mới hơn; bước đã làm sẽ được bỏ qua.
+- Nếu TV đang mở một ứng dụng khác (có thể có người đang xem), chương trình hỏi trước khi làm.
 
 KHÔI PHỤC
-- Nhấp đúp KhoiPhuc.cmd: bật lại các ứng dụng đã tắt, trả màn hình chính XGIMI, bỏ Việt hoá.
+- Nhấp đúp KhoiPhuc.cmd: bật lại các ứng dụng đã tắt, trả màn hình chính gốc, bỏ Việt hoá. Launcher mới
+  vẫn được giữ lại.
 
 LƯU Ý
-- Máy chiếu cần bật Gỡ lỗi mạng (ADB, cổng 5555).
-- Danh sách gói đã tắt trước mỗi lần cập nhật được lưu trong thư mục nhat-ky.
+- Máy chiếu XGIMI Android 6 chỉ nhận một kết nối ADB một lúc: máy tính tự ngắt để ứng dụng trên máy chiếu
+  làm việc, nên tiến trình trên máy tính hiện chậm hơn (xem trực tiếp trên máy chiếu).
+- ADB mạng mở thì mọi thiết bị cùng Wi-Fi điều khiển được TV. Chỉ dùng trong mạng nhà.
 - Windows có thể cảnh báo khi chạy lần đầu: chọn "More info" > "Run anyway".

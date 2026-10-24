@@ -133,6 +133,12 @@ public final class UpdaterActivity extends Activity {
                     }));
                 });
             }));
+        } else {
+            // Started by the PC updater (CapNhat.ps1): `am start ... --es job update|restore` presses the button.
+            // A short wait lets the PC drop its own ADB connection first (Android 6 adbd serves one at a time).
+            String job = getIntent().getStringExtra("job");
+            if ("update".equals(job)) ui.postDelayed(() -> run(this::doUpdate), 3000);
+            else if ("restore".equals(job)) ui.postDelayed(() -> run(this::doRestore), 3000);
         }
     }
 
@@ -337,6 +343,7 @@ public final class UpdaterActivity extends Activity {
                     adb.close();
                 }
             }
+            android.util.Log.i("CapNhat", "== KET THUC ==");   // the PC updater stops reading the log here
             ui.post(() -> {
                 busy = false;
                 update.setEnabled(true);

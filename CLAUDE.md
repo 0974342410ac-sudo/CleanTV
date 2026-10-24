@@ -16,6 +16,9 @@ Vietnamese; user-facing text (launcher, updater, guides) is Vietnamese.
     into /data/local/tmp, self-updates from the latest GitHub Release, `Updates.java`).
 - `updater/build-usb.ps1` builds the launcher, fills the updater assets and writes `dist/USB-CapNhat`. The XGIMI
   DOHKO package (`dist/USB-CapNhat-XGIMI-DOHKO`) is rebuilt only with `-XgimiDohko`; otherwise the old one stays.
+  It then runs `updater/build-updater.ps1`, which writes `dist/PC-CapNhat` (the PC updater): `CapNhat.ps1` finds the
+  TV, installs the USB updater APK on it, starts it with `--es job update|restore` (wakes a sleeping TV first: Android
+  blocks a sleeping TV's app sockets, loopback too) and prints its `CapNhat` logcat lines until "== KET THUC ==".
 - `updater/build-phone.ps1` builds `dist/DienThoai` (phone APK + version.json); `-Publish` makes the GitHub Release
   the phones update from (public repo 0974342410ac-sudo/CleanTV).
 - `tools/` command-line tools for a PC: `disable.ps1` / `restore.ps1` (debloat lists), `theme.ps1`, `tv.py`;

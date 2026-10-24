@@ -89,8 +89,7 @@ Write-Host ("Da tao {0} ({1:N0} KB) va {2}" -f $usb, ((Get-Item (Join-Path $usb 
 # 4. Thu muc USB rieng cho may chieu XGIMI DOHKO (Android 14; khong co phan Android 6)
 if (-not $XgimiDohko) {
     Write-Host 'Giu nguyen goi XGIMI DOHKO cu (them -XgimiDohko de dung lai)'
-    return
-}
+} else {
 foreach ($old in 'dist\USB-CapNhat-XGIMI', 'dist\USB-CapNhat-XGIMI.zip') { $o = Join-Path $root $old; if (Test-Path $o) { Remove-Item $o -Recurse -Force } }
 $usbX = Join-Path $root 'dist\USB-CapNhat-XGIMI-DOHKO'
 if (Test-Path $usbX) { Remove-Item $usbX -Recurse -Force }
@@ -102,3 +101,8 @@ $zipX = Join-Path $root 'dist\USB-CapNhat-XGIMI-DOHKO.zip'
 if (Test-Path $zipX) { Remove-Item $zipX }
 Compress-Archive -Path $usbX -DestinationPath $zipX
 Write-Host ("Da tao {0} ({1:N0} KB) va {2}" -f $usbX, ((Get-Item (Join-Path $usbX 'CapNhatXGIMI-DOHKO.apk')).Length / 1KB), $zipX)
+}
+
+# 5. Ban cap nhat tren may tinh (dist\PC-CapNhat): cai cac ung dung cap nhat tren len TV qua Wi-Fi
+& powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $here 'build-updater.ps1')
+if ($LASTEXITCODE -ne 0) { throw 'Dong goi ban PC that bai' }

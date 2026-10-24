@@ -1,37 +1,33 @@
-﻿# Dong goi dist\CapNhatMayChieu.zip: CapNhat.cmd (cap nhat 1 cham), KhoiPhuc.cmd, launcher moi nhat,
-# danh sach debloat cua XGIMI DOHKO, ban Viet hoa Cai dat va adb.
-# Chay: powershell -ExecutionPolicy Bypass -File updater\build-updater.ps1
+﻿# Dong goi dist\PC-CapNhat (+ .zip): ban cap nhat chay tren may tinh Windows. CapNhat.cmd tim TV qua Wi-Fi, cai
+# ung dung cap nhat cua goi USB len TV va cho no tu chay, nen moi may lam giong het goi USB. KhoiPhuc.cmd hoan tac.
+# build-usb.ps1 goi script nay sau khi dung xong cac goi USB (can dist\USB-CapNhat va dist\USB-CapNhat-XGIMI-DOHKO).
 $ErrorActionPreference = 'Stop'
 $here = $PSScriptRoot
 $root = Split-Path -Parent $here
-$stage = Join-Path $env:TEMP 'CapNhatMayChieu'
-if (Test-Path $stage) { Remove-Item $stage -Recurse -Force }
-New-Item -ItemType Directory -Force "$stage\tools\platform-tools", "$stage\tools\xgimi-vi" | Out-Null
+$out = Join-Path $root 'dist\PC-CapNhat'
+foreach ($old in $out, (Join-Path $root 'dist\CapNhatMayChieu.zip')) { if (Test-Path $old) { Remove-Item $old -Recurse -Force } }
+New-Item -ItemType Directory -Force "$out\tools\platform-tools" | Out-Null
 
 function Copy-Bom([string]$src, [string]$dst) {
     $t = [IO.File]::ReadAllText($src, [Text.Encoding]::UTF8)
     [IO.File]::WriteAllText($dst, $t, (New-Object Text.UTF8Encoding $true))
 }
-Copy-Bom "$here\CapNhat.ps1" "$stage\CapNhat.ps1"
-Copy-Bom "$here\KhoiPhuc.ps1" "$stage\KhoiPhuc.ps1"
-Copy-Bom "$here\HUONG-DAN.txt" "$stage\HUONG-DAN.txt"
+Copy-Bom "$here\CapNhat.ps1" "$out\CapNhat.ps1"
+Copy-Bom "$here\KhoiPhuc.ps1" "$out\KhoiPhuc.ps1"
+Copy-Bom "$here\HUONG-DAN.txt" "$out\HUONG-DAN.txt"
 foreach ($c in 'CapNhat', 'KhoiPhuc') {
     "@echo off`r`npowershell -NoProfile -ExecutionPolicy Bypass -File `"%~dp0$c.ps1`" %*`r`n" |
-        Set-Content "$stage\$c.cmd" -Encoding ascii -NoNewline
+        Set-Content "$out\$c.cmd" -Encoding ascii -NoNewline
 }
-Copy-Item "$root\examples\xgimi-dohko\debloat.txt" "$stage\debloat.txt"
-$apk = "$root\launcher\app\build\outputs\apk\release\app-release.apk"
-if (-not (Test-Path $apk)) { throw "Chua co APK launcher: $apk" }
-Copy-Item $apk "$stage\tvhome.apk"
-Copy-Bom "$root\tools\xgimi-vi\apply.ps1" "$stage\tools\xgimi-vi\apply.ps1"
-Copy-Bom "$root\tools\xgimi-vi\dich.tsv" "$stage\tools\xgimi-vi\dich.tsv"
-Copy-Bom "$root\tools\xgimi-vi\dich-cau-dai.tsv" "$stage\tools\xgimi-vi\dich-cau-dai.tsv"
-Copy-Item "$root\tools\xgimi-vi\chuoi-goc.csv" "$stage\tools\xgimi-vi\"
+foreach ($apk in 'USB-CapNhat\CapNhatMayChieu.apk', 'USB-CapNhat-XGIMI-DOHKO\CapNhatXGIMI-DOHKO.apk') {
+    $src = Join-Path $root "dist\$apk"
+    if (-not (Test-Path $src)) { throw "Chua co $src (chay build-usb.ps1, them -XgimiDohko cho ban DOHKO)" }
+    Copy-Item $src $out
+}
 foreach ($f in 'adb.exe', 'AdbWinApi.dll', 'AdbWinUsbApi.dll', 'libwinpthread-1.dll', 'NOTICE.txt', 'source.properties') {
-    Copy-Item "$root\tools\platform-tools\$f" "$stage\tools\platform-tools\"
+    Copy-Item "$root\tools\platform-tools\$f" "$out\tools\platform-tools\"
 }
-$zip = Join-Path $root 'dist\CapNhatMayChieu.zip'
+$zip = "$out.zip"
 if (Test-Path $zip) { Remove-Item $zip }
-Compress-Archive -Path "$stage\*" -DestinationPath $zip
-Remove-Item $stage -Recurse -Force
-Write-Host ("Da tao {0} ({1:N0} KB)" -f $zip, ((Get-Item $zip).Length / 1KB))
+Compress-Archive -Path $out -DestinationPath $zip
+Write-Host ("Da tao {0} va {1} ({2:N0} KB)" -f $out, $zip, ((Get-Item $zip).Length / 1KB))

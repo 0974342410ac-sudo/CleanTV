@@ -12,6 +12,7 @@ khôi phục (`tools/restore.ps1`, nút "Khôi phục" trong ứng dụng cập 
 |---|---|---|
 | Launcher `com.gathin.tvhome` | `launcher/app/` | Màn hình chính kiểu Apple TV: dock 4 ứng dụng, lời chào, hình nền đổi theo giờ, ẩn ứng dụng |
 | Ứng dụng cập nhật bằng USB | `launcher/updater/`, `updater/` | Cập nhật máy chiếu / TV box không cần máy tính: cài launcher, tắt ứng dụng thừa, Việt hoá |
+| Cập nhật từ máy tính | `updater/CapNhat.ps1`, `updater/build-updater.ps1` | Cùng việc đó từ máy tính Windows qua Wi-Fi: cài ứng dụng cập nhật của gói USB lên TV và cho nó tự chạy |
 | Cập nhật qua điện thoại | `launcher/updater/` (bản `dienthoai`), `updater/build-phone.ps1` | Cùng việc đó từ điện thoại Android qua Wi-Fi, tự tải bản mới từ GitHub Releases |
 | Công cụ dòng lệnh (Windows) | `tools/`, `launcher/build-and-install.ps1` | Debloat, khôi phục, cài launcher, đẩy giao diện (theme) qua ADB |
 | Danh sách debloat theo máy | `examples/` | Hơn 100 dòng TV (Sony, Xiaomi, TCL, Hisense, Philips, XGIMI, onn...), mỗi máy một `debloat.txt` có ghi chú |
@@ -38,6 +39,10 @@ khôi phục (`tools/restore.ps1`, nút "Khôi phục" trong ứng dụng cập 
 **Không có máy tính (máy chiếu XGIMI, onn 4K box):** chép thư mục `USB-CapNhat` vào USB, cài
 `CapNhatMayChieu.apk` trên máy rồi bấm "Cập nhật". Xem [updater/HUONG-DAN-USB.txt](updater/HUONG-DAN-USB.txt)
 và [updater/HUONG-DAN-USB-XGIMI.txt](updater/HUONG-DAN-USB-XGIMI.txt).
+
+**Từ máy tính, không cắm USB vào TV:** giải nén `PC-CapNhat.zip`, nhấp đúp `CapNhat.cmd` (hoặc `KhoiPhuc.cmd`):
+chương trình tìm TV trên Wi-Fi, cài ứng dụng cập nhật của gói USB lên TV và cho nó tự chạy, nên kết quả giống hệt
+gói USB. Xem [updater/HUONG-DAN.txt](updater/HUONG-DAN.txt).
 
 **Từ điện thoại Android:** cài `CapNhatTV-DienThoai.apk` (GitHub Releases), nhập IP của TV hoặc bấm "Tìm TV",
 rồi bấm "Cập nhật". Xem [updater/HUONG-DAN-DIENTHOAI.txt](updater/HUONG-DAN-DIENTHOAI.txt).
