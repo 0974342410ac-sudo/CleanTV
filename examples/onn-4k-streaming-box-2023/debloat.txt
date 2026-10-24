@@ -45,3 +45,6 @@ com.google.android.tungsten.setupwraith  # setup wizard; its RecoveryActivity ot
 # TizenTube tile as YouTube (2026-10-23, .147): config.xml's app_look_like borrows com.google.android.youtube.tv,
 # which has no leanback entry point on this box, so nothing changed. The YouTube here is com.cobalt.youtube.tv:
 # config.json "app_look_like": {"io.gh.reisxd.tizentube.cobalt": "com.cobalt.youtube.tv"} (old file in backup\147).
+# .23 "Phong ngu" (2026-10-24): same box on Google TV 12 (SGZ3.231226.096.A1). feedback, feedbackconsent, play.games
+# and videos are not installed there. Its Wi-Fi belongs to setupwraith, so setupwraith and launcherx stay on;
+# set-home-activity alone makes Home open the new launcher. Launcher config.json copied from .147.
