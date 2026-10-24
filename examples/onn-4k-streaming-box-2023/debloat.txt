@@ -42,3 +42,6 @@ com.google.android.apps.tv.dreamx
 # so it stays in the list for restore.sh to bring back.
 # com.google.android.apps.tv.launcherx
 com.google.android.tungsten.setupwraith  # setup wizard; its RecoveryActivity otherwise takes over Home
+# TizenTube tile as YouTube (2026-10-23, .147): config.xml's app_look_like borrows com.google.android.youtube.tv,
+# which has no leanback entry point on this box, so nothing changed. The YouTube here is com.cobalt.youtube.tv:
+# config.json "app_look_like": {"io.gh.reisxd.tizentube.cobalt": "com.cobalt.youtube.tv"} (old file in backup\147).

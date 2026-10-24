@@ -16,6 +16,14 @@ CÁCH DÙNG
 4. Đợi đến dòng "Xong". Ứng dụng nhớ IP cho lần sau.
 - Trong lúc cập nhật, TV có thể tự mở hộp chọn màn hình chính rồi tự chọn "始终": đừng bấm remote lúc đó.
 
+ĐIỀU KHIỂN TV (REMOTE)
+- Bấm "Điều khiển TV (remote)" (sau khi nhập IP hoặc "Tìm TV"): điện thoại thành remote của TV.
+- Có: Nguồn, Home, Quay lại, Menu, 4 phím mũi tên và OK (giữ OK = bấm giữ trên remote), âm lượng, tắt
+  tiếng, tua, phát/tạm dừng, tìm kiếm. Giữ phím mũi tên, âm lượng hoặc tua để bấm liên tục.
+- Gõ chữ: nhập vào ô "Gõ chữ gửi sang TV" rồi bấm Gửi, chữ vào ô đang chọn trên TV. Chỉ gõ được chữ không dấu.
+- Máy chiếu XGIMI Android 6 (.239, .150) chỉ nhận một kết nối ADB một lúc: đóng remote trước khi dùng
+  máy tính hoặc ứng dụng khác để kết nối.
+
 TỰ CẬP NHẬT
 - Mỗi lần mở, ứng dụng xem trên mạng có bản mới không. Có thì hiện nút "Có bản mới ...": bấm để tải và cài
   đè (điện thoại hỏi xác nhận cài). Bản mới mang theo launcher và bản dịch mới nhất.

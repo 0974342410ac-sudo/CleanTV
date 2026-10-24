@@ -4,6 +4,8 @@
 
     <!-- Phone build: reaches the TV's network ADB and checks GitHub for a newer build of itself (Updates). -->
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- A short buzz on each remote button (RemoteActivity). -->
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application>
         <!-- A phone holds it upright; singleTop so PackageInstaller's status comes back to the same screen -->
@@ -13,5 +15,12 @@
             android:screenOrientation="unspecified"
             android:windowSoftInputMode="adjustResize"
             tools:replace="android:screenOrientation" />
+        <!-- The remote control, opened from the main screen with the TV's address -->
+        <activity
+            android:name=".RemoteActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" />
     </application>
 </manifest>

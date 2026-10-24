@@ -179,6 +179,22 @@ public final class UpdaterActivity extends Activity {
                 LinearLayout.LayoutParams.WRAP_CONTENT);
         rp.bottomMargin = (int) (16 * dp);
         root.addView(row, rp);
+
+        // The remote control screen (RemoteActivity, phone build only: named, not referenced, so TV builds compile)
+        Button remote = button("Điều khiển TV (remote)", dp);
+        remote.setOnClickListener(v -> {
+            String host = hostField.getText().toString().trim();
+            if (host.isEmpty()) {
+                log.setText("Nhập IP của TV (xem trong Cài đặt > Mạng trên TV) hoặc bấm \"Tìm TV\".");
+                return;
+            }
+            getPreferences(MODE_PRIVATE).edit().putString("tv_host", host).apply();
+            startActivity(new Intent().setClassName(this, "vn.cleantv.updater.RemoteActivity").putExtra("host", host));
+        });
+        LinearLayout.LayoutParams mp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+        mp.bottomMargin = (int) (16 * dp);
+        root.addView(remote, mp);
     }
 
     /** Looks for open network ADB (port 5555) on this phone's Wi-Fi subnet and fills in the first one found. */
