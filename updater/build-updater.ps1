@@ -14,7 +14,9 @@ function Copy-Bom([string]$src, [string]$dst) {
 }
 Copy-Bom "$here\CapNhat.ps1" "$out\CapNhat.ps1"
 Copy-Bom "$here\KhoiPhuc.ps1" "$out\KhoiPhuc.ps1"
-Copy-Bom "$here\HUONG-DAN.txt" "$out\HUONG-DAN.txt"
+$guide = [IO.File]::ReadAllText("$here\HUONG-DAN.txt", [Text.Encoding]::UTF8) +
+    [IO.File]::ReadAllText("$here\HUONG-DAN-BAT-ADB.txt", [Text.Encoding]::UTF8)
+[IO.File]::WriteAllText("$out\HUONG-DAN.txt", $guide, (New-Object Text.UTF8Encoding $true))
 foreach ($c in 'CapNhat', 'KhoiPhuc') {
     "@echo off`r`npowershell -NoProfile -ExecutionPolicy Bypass -File `"%~dp0$c.ps1`" %*`r`n" |
         Set-Content "$out\$c.cmd" -Encoding ascii -NoNewline

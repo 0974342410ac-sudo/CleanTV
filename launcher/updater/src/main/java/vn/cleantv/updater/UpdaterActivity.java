@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.StateListDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -48,6 +49,8 @@ public final class UpdaterActivity extends Activity {
     private TextView log;
     private ScrollView scroll;
     private Button update, restore, enableAdb, back;
+    /** Shown once this TV's ADB could not be reached: opens the screen where ADB is switched on (openAdbSettings). */
+    private Button adbSettings;
     private volatile boolean busy;
     /** The TV's ADB: this device itself, or (phone build) the address typed in hostField. */
     private volatile String tvHost = "127.0.0.1";
@@ -98,6 +101,9 @@ public final class UpdaterActivity extends Activity {
         lp.leftMargin = (int) (16 * dp);
         row.addView(restore, lp);
         row.addView(enableAdb, new LinearLayout.LayoutParams(lp));
+        adbSettings = button("Mở cài đặt ADB", dp);
+        adbSettings.setVisibility(View.GONE);
+        row.addView(adbSettings, new LinearLayout.LayoutParams(lp));
         back = button("Trở về", dp);
         row.addView(back, new LinearLayout.LayoutParams(lp));
         root.addView(row);
@@ -117,6 +123,7 @@ public final class UpdaterActivity extends Activity {
         restore.setOnClickListener(v -> run(this::doRestore));
         enableAdb.setOnClickListener(v -> run(this::doEnableAdb));
         back.setOnClickListener(v -> goBack());
+        adbSettings.setOnClickListener(v -> openAdbSettings());
         update.requestFocus();
         if (BuildConfig.REMOTE) {
             // "Trở về" leaves this app on the TV itself; from a phone there is nothing to go back to
@@ -333,6 +340,7 @@ public final class UpdaterActivity extends Activity {
                 say("   Bật Gỡ lỗi mạng (ADB) trong Tuỳ chọn nhà phát triển rồi thử lại.");
                 // Android 6 adbd names every network connection "host" and silently drops a second one
                 say("   Nếu máy tính đang kết nối ADB tới máy chiếu, ngắt kết nối đó (adb disconnect) rồi thử lại.");
+                if (!BuildConfig.REMOTE) adbHelp();
             }
             if (adb != null) {
                 try {
@@ -350,8 +358,9 @@ public final class UpdaterActivity extends Activity {
                 restore.setEnabled(true);
                 enableAdb.setEnabled(true);
                 back.setEnabled(true);
-                // Done: the next press is "Trở về", never "Khôi phục" by accident
-                back.requestFocus();
+                // Done: the next press is "Trở về", never "Khôi phục" by accident ("Mở cài đặt ADB" when ADB was off)
+                if (adbSettings.getVisibility() == View.VISIBLE) adbSettings.requestFocus();
+                else back.requestFocus();
             });
         }, "updater").start();
     }
@@ -412,6 +421,55 @@ public final class UpdaterActivity extends Activity {
     }
 
     /** One connection to the TV's adbd, with this app's key for TVs that ask for one. */
+    /**
+     * This TV's ADB is off and the launcher could not switch it back on: how to switch it on by hand on this model
+     * (Build.DEVICE, as the app runs on the TV itself), and the "Mở cài đặt ADB" button.
+     */
+    private void adbHelp() {
+        say("");
+        say("== Cách bật ADB trên máy này");
+        switch (Build.DEVICE) {
+            case "horse_popular":
+                say("   XGIMI DOHKO: ADB qua mạng bật sẵn từ nhà máy (cổng 5555), máy không có mục Tuỳ chọn nhà phát triển.");
+                say("   Nếu ADB đã bị tắt: chỉ khôi phục cài đặt gốc mới bật lại được.");
+                break;
+            case "m7642":
+            case "ironman":
+                // Read from firmware XM13M / XJ03D: adbd starts only on persist.sys.usb.config=adb, nothing in the UI sets it
+                say("   Firmware XGIMI này (RS10 / H6 / IRONMAN) không có mục bật ADB cho người dùng: máy chỉ bật ADB");
+                say("   khi XGIMI hỗ trợ từ xa. Nếu máy đã từng bật ADB, thử khởi động lại máy rồi bấm Cập nhật lần nữa.");
+                break;
+            case "synsepalum_YN":
+                say("   XGIMI Android 6: bấm \"Mở cài đặt ADB\", bật Gỡ lỗi USB / ADB mạng. Máy này tự tắt ADB mỗi lần");
+                say("   khởi động: sau lần Cập nhật đầu tiên, launcher mới sẽ tự bật lại.");
+                break;
+            default:
+                say("   Bấm \"Mở cài đặt ADB\". Nếu mở ra trang Giới thiệu: bấm OK 7 lần vào dòng Bản dựng (Build) cho");
+                say("   đến khi máy báo đã là nhà phát triển, quay lại, vào Tuỳ chọn nhà phát triển, bật Gỡ lỗi USB");
+                say("   (và Gỡ lỗi mạng / ADB qua mạng nếu có). Rồi bấm Cập nhật lần nữa.");
+        }
+        ui.post(() -> adbSettings.setVisibility(View.VISIBLE));
+    }
+
+    /** Developer options when they are already unlocked, else the About page (tap Build 7 times), else Settings. */
+    private void openAdbSettings() {
+        boolean unlocked = android.provider.Settings.Global.getInt(getContentResolver(),
+                android.provider.Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 0) == 1;
+        String dev = android.provider.Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS;
+        String about = android.provider.Settings.ACTION_DEVICE_INFO_SETTINGS;
+        String[] order = unlocked ? new String[]{dev, about, android.provider.Settings.ACTION_SETTINGS}
+                : new String[]{about, dev, android.provider.Settings.ACTION_SETTINGS};
+        for (String action : order) {
+            try {
+                startActivity(new Intent(action).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+                return;
+            } catch (android.content.ActivityNotFoundException | SecurityException ignored) {
+                // this firmware has no such screen: try the next one
+            }
+        }
+        say("!! Máy này không có màn hình cài đặt nào mở được từ đây.");
+    }
+
     private LocalAdb open() throws IOException {
         AdbKey key;
         try {

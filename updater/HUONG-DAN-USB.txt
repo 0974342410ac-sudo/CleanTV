@@ -60,7 +60,7 @@ BẬT ADB
 - Mở "Cập nhật máy chiếu", bấm "Bật ADB". Nếu ADB đang tắt, ứng dụng nhờ launcher bật lại (máy cần
   đã được "Cập nhật" ít nhất một lần). Sau đó ADB tự bật lại mỗi lần máy khởi động.
 - Máy chưa từng cập nhật mà ADB đang tắt: không ứng dụng nào tự bật được; phải bật Gỡ lỗi mạng (ADB)
-  bằng tay một lần.
+  bằng tay một lần: xem "BẬT ADB LẦN ĐẦU" ở cuối file này.
 
 KHÔI PHỤC
 - Mở "Cập nhật máy chiếu", bấm "Khôi phục": bật lại các ứng dụng đã tắt, trả màn hình chính gốc

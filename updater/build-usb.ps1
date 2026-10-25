@@ -79,7 +79,9 @@ New-Item -ItemType Directory -Force $usb | Out-Null
 Copy-Item (Join-Path $root 'launcher\updater\build\outputs\apk\chung\release\updater-chung-release.apk') (Join-Path $usb 'CapNhatMayChieu.apk')
 # May XGIMI Android 6: ung dung cap nhat khong dung duoc ADB noi bo o do; cai thang launcher bang trinh quan ly file
 Copy-Item (Join-Path $assets 'tvhome.apk') (Join-Path $usb 'ManHinhChinh-Launcher.apk')
-$guide = [IO.File]::ReadAllText((Join-Path $here 'HUONG-DAN-USB.txt'), [Text.Encoding]::UTF8)
+# The per-model "turn ADB on" section is shared by every package guide
+$adbGuide = [IO.File]::ReadAllText((Join-Path $here 'HUONG-DAN-BAT-ADB.txt'), [Text.Encoding]::UTF8)
+$guide = [IO.File]::ReadAllText((Join-Path $here 'HUONG-DAN-USB.txt'), [Text.Encoding]::UTF8) + $adbGuide
 [IO.File]::WriteAllText((Join-Path $usb 'HUONG-DAN.txt'), $guide, (New-Object Text.UTF8Encoding $true))
 $zip = Join-Path $root 'dist\USB-CapNhat.zip'
 if (Test-Path $zip) { Remove-Item $zip }
@@ -95,7 +97,7 @@ $usbX = Join-Path $root 'dist\USB-CapNhat-XGIMI-DOHKO'
 if (Test-Path $usbX) { Remove-Item $usbX -Recurse -Force }
 New-Item -ItemType Directory -Force $usbX | Out-Null
 Copy-Item (Join-Path $root 'launcher\updater\build\outputs\apk\xgimi\release\updater-xgimi-release.apk') (Join-Path $usbX 'CapNhatXGIMI-DOHKO.apk')
-$guideX = [IO.File]::ReadAllText((Join-Path $here 'HUONG-DAN-USB-XGIMI.txt'), [Text.Encoding]::UTF8)
+$guideX = [IO.File]::ReadAllText((Join-Path $here 'HUONG-DAN-USB-XGIMI.txt'), [Text.Encoding]::UTF8) + $adbGuide
 [IO.File]::WriteAllText((Join-Path $usbX 'HUONG-DAN.txt'), $guideX, (New-Object Text.UTF8Encoding $true))
 $zipX = Join-Path $root 'dist\USB-CapNhat-XGIMI-DOHKO.zip'
 if (Test-Path $zipX) { Remove-Item $zipX }

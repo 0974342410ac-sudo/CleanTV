@@ -39,7 +39,7 @@ $json = [ordered]@{
     notes       = $Notes
 } | ConvertTo-Json
 [IO.File]::WriteAllText((Join-Path $out 'version.json'), $json, (New-Object Text.UTF8Encoding $false))
-$guide = [IO.File]::ReadAllText((Join-Path $here 'HUONG-DAN-DIENTHOAI.txt'), [Text.Encoding]::UTF8)
+$guide = [IO.File]::ReadAllText((Join-Path $here 'HUONG-DAN-DIENTHOAI.txt'), [Text.Encoding]::UTF8) + [IO.File]::ReadAllText((Join-Path $here 'HUONG-DAN-BAT-ADB.txt'), [Text.Encoding]::UTF8)
 [IO.File]::WriteAllText((Join-Path $out 'HUONG-DAN.txt'), $guide, (New-Object Text.UTF8Encoding $true))
 Write-Host ("Da tao {0} ({1:N0} KB), phien ban {2} ({3})" -f $apk, ((Get-Item $apk).Length / 1KB), $name, $code)
 
