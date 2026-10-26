@@ -436,7 +436,7 @@ public final class UpdaterActivity extends Activity {
             case "m7642":
             case "ironman":
                 // Read from firmware XM13M / XJ03D: adbd starts only on persist.sys.usb.config=adb, nothing in the UI sets it
-                say("   Firmware XGIMI này (RS10 / RS10 Plus / H6 / Z6X / IRONMAN) không có mục bật ADB cho người dùng: máy chỉ bật ADB");
+                say("   Firmware XGIMI này (RS10 / RS10 Plus / H6 / Z6X / Z6X Pro / IRONMAN) không có mục bật ADB cho người dùng: máy chỉ bật ADB");
                 say("   khi XGIMI hỗ trợ từ xa. Nếu máy đã từng bật ADB, thử khởi động lại máy rồi bấm Cập nhật lần nữa.");
                 break;
             case "synsepalum_YN":
@@ -566,7 +566,7 @@ public final class UpdaterActivity extends Activity {
         if (RS10_DEVICE.equals(adb.shell("getprop ro.product.device")) && !adb.shell("pm path " + STOCK_HOME).isEmpty()) {
             // No removal list yet and XGIMI's home stays; Android 9 has no fabricated overlays, so the Vietnamese
             // text comes as installed overlay APKs
-            return new Device("máy chiếu XGIMI RS10 / RS10 Plus / H6 / Z6X (Android 9)", null, null, false, false, false, RS10_OVERLAYS);
+            return new Device("máy chiếu XGIMI RS10 / RS10 Plus / H6 / Z6X / Z6X Pro (Android 9)", null, null, false, false, false, RS10_OVERLAYS);
         }
         if (IRONMAN_DEVICE.equals(adb.shell("getprop ro.product.device")) && !adb.shell("pm path " + STOCK_HOME).isEmpty()) {
             // One firmware for many XGIMI models (vendor/etc/xgimimodelname); same approach as the RS10

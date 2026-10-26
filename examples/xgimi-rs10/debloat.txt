@@ -38,7 +38,7 @@
 # So on this firmware ADB comes only from XGIMI (remote support) or from a changed vendor/build.prop
 # (persist.sys.usb.config=adb) flashed with the USB upgrade.
 #
-# Z6X (2026-10-26): firmware XGIMI_PIGCHIVALROUS_XM03R.bin, device m7642, Android 9, incremental v6.8.4 (same
+# Z6X and Z6X Pro (2026-10-26): same firmware XGIMI_PIGCHIVALROUS_XM03R.bin (byte-identical bin for both), device m7642, Android 9, incremental v6.8.4 (same
 # version and build day 2024-02-29 as the H6 XM03D). Firmware readable (plain MTK bin). Extracted its system/vendor
 # and dumped every XGIMI app's Chinese strings: all 6,232 Chinese resource names are a subset of H6's 11,148, and
 # every shared string has identical text (0 names new, 0 text differences). So the existing rs10-vi overlay set
