@@ -95,3 +95,11 @@ com.xgimi.duertts                      # 极米语音 assistant + mic key monito
 # RS 20 Ultra Max (2026-10-23): its firmware XGIMI_HORSEPOPULAR_XR09A.bin (V1.6.52) is encrypted like the XR07A
 # files, so nothing can be read from it. Same platform name (HORSEPOPULAR), so the owner uses the XGIMI DOHKO
 # USB package (it accepts any ro.product.device horse_popular) for it as is. Not yet run on a real Ultra Max.
+# RS 30 Ultra (2026-10-25): firmware XGIMI_TIGERSENSITIVE_XM03N.bin (2.1 GB, MTK, header "REE_OFFSET_START = 0x1000")
+# is encrypted after its first 4 KB (8.0 bits/byte throughout, no ext4/sparse/boot/dex signature), like HORSEPOPULAR:
+# nothing about ADB can be read from it. If its ro.product.device is not horse_popular the DOHKO package refuses it and
+# the general USB package only installs the launcher. ADB state and device name have to be read from a running unit.
+# RS 30 Pro (2026-10-25): firmware XGIMI_HORSEPOPULAR_XR08C.bin (v1.1.47, 2.4 GB) is fully encrypted (entropy
+# 8.000 bits/byte end to end, no ANDROID!/build.prop/dex/ro.product.device), same HORSEPOPULAR family as the DOHKO.
+# So ADB is read from a running unit, not the file; on this family network ADB is on by default (port 5555,
+# ro.adb.secure=0, no Developer-options screen), as seen on .12. The DOHKO USB package fits it (device horse_popular).

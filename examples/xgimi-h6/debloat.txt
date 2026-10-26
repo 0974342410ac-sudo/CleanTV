@@ -1,0 +1,40 @@
+# XGIMI H6 projector, China market (device m7642 / codename pig_chivalrous, MediaTek, build tree MTK958C_CODE),
+# Android 9 (SDK 28, PPR2.180905.006.A1), GMUI 6.0, firmware XGIMI_PIGCHIVALROUS_XM03D built 2024-02-29.
+# Notes only so far: read from the USB upgrade file (E:\xgimi h6\XGIMI_PIGCHIVALROUS_XM03D.bin), not from a
+# running unit. No removal list yet.
+#
+# Firmware file (2026-10-25): a plain MStar/MediaTek USB upgrade bin, NOT encrypted (unlike the RS3
+# XGIMI_TIGERSENSITIVE_* and the DOHKO XGIMI_HORSEPOPULAR_*, which are MediaTek REE-wrapped encrypted images).
+# It starts with the mboot upgrade script ("#-------------USB Upgrade Bin Info----------------", device m7642)
+# then `# File Partition: <name>` + `filepartload 0x55000000 $(UpgradeImage) <offset> <size>` per partition:
+# tvcertificate, tvconfig, mboot, recovery, boot, optee, armfw, RT_PM, dtb, frc/frc4k, cm4, mbootbak,
+# linux_rootfs_a, 3rd_a, 3rd_rw, system (10 sparse pieces), cache, vendor (~12 sparse pieces from 0x4c596000).
+# system/vendor are Android sparse images, ext4 inside, readable with 7-Zip. The .bin is a shared build tree:
+# it also carries pig_chivalrous (this H6), tiger_sensitive (RS3) and rat_charm / Aladdin product strings.
+# Home is com.xgimi.home (vendor/priv-app/XgimiHome_release838); keyboard com.sohu.inputmethod.sogou.tv (Sogou).
+# Same platform as the RS10 (examples/xgimi-rs10): the rs10-overlays.ps1 -Device rs10 Vietnamese overlay set and
+# the USB updater's m7642 profile are meant to cover both; not yet tried on a real H6.
+#
+# How ADB gets switched on, read from firmware XGIMI_PIGCHIVALROUS_XM03D.bin (m7642, Android 9), 2026-10-25
+# (identical to the RS10 XM13M findings):
+# - build.prop has service.adb.tcp.port=5555, persist.adb.tcp.port=5555, ro.adb.secure=0 (no RSA key prompt:
+#   once adbd runs, any device on the LAN connects), but persist.sys.usb.config defaults to mtp, and adbd only
+#   starts when sys.usb.config contains adb. (ro.debuggable appears as both 1 and 0 across the shared tree.)
+# - init usb.rc: "on property:persist.sys.usb.config=mtp,adb" runs `setprop sys.usb.config mtp`, undoing Android's
+#   USB debugging switch (which sets mtp,adb); "on property:persist.sys.usb.config=*" copies the value into
+#   sys.usb.config, so ONLY a plain "adb" value starts adbd. Nothing in the firmware writes that value by itself.
+# - Settings has no Developer/ADB screen reachable by the user (android.settings.APPLICATION_DEVELOPMENT_SETTINGS
+#   string is in the framework, but XGIMI's settings expose no activity for it).
+# - Factory menu com.xgimi.minitvfactory (action com.xgimi.action.factoryMenu): in XGIMI Settings, on the device
+#   info page, hold the remote's Up key until it repeats ~20 times. Its ADB on/off item lives in SecondMenuActivity.
+# - Also present: AdbSwitch / "adbservice" (Baidu tvsafe, off by default) and com.xgimi.remote (remote-support sshd).
+#
+# So to enable ADB on the H6 (device you own):
+#   1) Factory menu (Up x20 on the device-info page) -> SecondMenuActivity -> set "adb" = 开 (on).  Most reliable.
+#   2) Once a shell is available, keep it on with: setprop persist.sys.usb.config adb ; setprop sys.usb.config adb ;
+#      setprop service.adb.tcp.port 5555   (then `adb connect <h6-ip>:5555` from a PC on the same LAN; no key prompt).
+#   3) The Settings "USB debugging" toggle alone is usually NOT enough (usb.rc resets mtp,adb back to mtp).
+# Port 5555 is plaintext and ro.adb.secure=0, so turn it off after use: `settings put global adb_enabled 0`.
+#
+# No packages disabled yet (read from firmware only). When applying on a real unit, follow the RS10 DO-NOT-DISABLE
+# set for the m7642 platform and keep each change reversible.
