@@ -1151,3 +1151,18 @@ PC设备	Máy tính
 感应区域内检测到人体移动，已调低投影亮度以减少人眼刺激	Có người di chuyển trong vùng cảm biến, đã giảm độ sáng để đỡ chói mắt
 选择“禁看”后将退出本次播放，且后续也无法观看。可在“设置-通用-家长设置”中恢复。	Chọn "Chặn" sẽ dừng phát ngay và sau này cũng không xem được. Có thể bỏ chặn trong "Cài đặt - Chung - Cài đặt phụ huynh".
 环境自适应导致墙面颜色适配失效	Thích ứng môi trường làm mất thích ứng màu tường
+# RS10 Plus (XGIMI_PIGCHIVALROUS_XM08M, v6.8.40, 2024-11-14): chuoi moi so voi H6+RS10 (do do mang them vao do do chieu cao va goi video).
+30天过去了，看看%1$s有没有长高	Đã 30 ngày rồi, xem %1$s có cao lên chưa
+记得测量%1$s等%2$s人的最新身高	Nhớ đo chiều cao mới nhất của %1$s và %2$s người
+按 @ 去量身高	Bấm @ để đo chiều cao
+停止删除	Dừng xoá
+正在删除	Đang xoá
+删除（%s）	Xoá (%s)
+已用 %s/%s	Đã dùng %s/%s
+接听	Nghe máy
+拒接	Từ chối
+挂断	Cúp máy
+来电	Cuộc gọi đến
+正在通话	Đang gọi
+视频通话	Gọi video
+正在过滤来电	Đang lọc cuộc gọi đến

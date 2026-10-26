@@ -8,7 +8,7 @@ XGIMI DOHKO (RS 20 Pro Max / Ultra Max, Android 14)
 - ADB qua mạng bật sẵn từ nhà máy (cổng 5555), không hỏi cho phép. Máy không có mục Tuỳ chọn nhà phát triển.
 - Nếu ADB đã bị tắt (ví dụ bằng lệnh adb_enabled 0): chỉ khôi phục cài đặt gốc mới bật lại được.
 
-XGIMI RS10 / H6 / Z6X (Android 9) và XGIMI IRONMAN (Android 8)
+XGIMI RS10 / RS10 Plus / H6 / Z6X (Android 9) và XGIMI IRONMAN (Android 8)
 - Đã kiểm tra trong firmware: máy không có mục bật ADB cho người dùng. Firmware chặn Gỡ lỗi USB của Android, chỉ
   chạy ADB khi XGIMI hỗ trợ từ xa. Menu nhà máy (Cài đặt > trang Thông tin thiết bị, giữ phím Lên khoảng 2 giây)
   cũng không có mục ADB dùng được.

@@ -44,3 +44,12 @@
 # every shared string has identical text (0 names new, 0 text differences). So the existing rs10-vi overlay set
 # (built from H6 + RS10) Vietnamizes Z6X in full with nothing to add. The updater already installs rs10-vi on any
 # m7642 device, so Z6X needs only the normal update (USB / PC / phone). Not yet run on a real Z6X.
+#
+# RS10 Plus (2026-10-26): firmware XGIMI_PIGCHIVALROUS_XM08M.bin, device m7642, Android 9, incremental v6.8.40
+# (newer, built 2024-11-14). Readable. Extracted system/vendor and diffed its 11,271 Chinese strings against
+# H6 + RS10 (same parser): 120 names new, but 83 are Material/AndroidX library strings bundled in the factory app
+# (not XGIMI UI, and minitvfactory is in rs10-overlays.ps1's skip list), and 12 are com.xgimi.duertts (voice, also
+# skipped). Of the rest, 14 unique Chinese strings were not yet in the dict (height-measure reminders + the video
+# call notifications): translated and added to rs10-apps-dich.tsv, and the new (pkg,name,cn) triples to
+# plus-apps-chuoi.tsv (now read by rs10-overlays.ps1 -Device rs10). So RS10 Plus is Vietnamized in full; it is
+# m7642 so the updater already targets it. Not yet run on a real RS10 Plus.

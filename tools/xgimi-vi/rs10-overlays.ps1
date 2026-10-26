@@ -14,7 +14,7 @@ $bt = 'E:\buildtools\android-sdk\build-tools\34.0.0'
 $androidJar = 'E:\buildtools\android-sdk\platforms\android-34\android.jar'
 if (-not $env:JAVA_HOME) { $env:JAVA_HOME = 'E:\buildtools\jdk\jdk-17.0.20.1+1' }   # apksigner
 $dev = @{
-    rs10    = @{ Strings = 'rs10-apps-chuoi.tsv', 'h6-apps-chuoi.tsv'; Sdk = 28 }
+    rs10    = @{ Strings = 'rs10-apps-chuoi.tsv', 'h6-apps-chuoi.tsv', 'plus-apps-chuoi.tsv'; Sdk = 28 }
     ironman = @{ Strings = 'ironman-apps-chuoi.tsv'; Sdk = 26 }
 }[$Device]
 $outDir = Join-Path $root "dist\$Device-vi"
