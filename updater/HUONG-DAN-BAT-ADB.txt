@@ -8,7 +8,7 @@ XGIMI DOHKO (RS 20 Pro Max / Ultra Max, Android 14)
 - ADB qua mạng bật sẵn từ nhà máy (cổng 5555), không hỏi cho phép. Máy không có mục Tuỳ chọn nhà phát triển.
 - Nếu ADB đã bị tắt (ví dụ bằng lệnh adb_enabled 0): chỉ khôi phục cài đặt gốc mới bật lại được.
 
-XGIMI RS10 / H6 / X6X (Android 9) và XGIMI IRONMAN (Android 8)
+XGIMI RS10 / H6 / Z6X (Android 9) và XGIMI IRONMAN (Android 8)
 - Đã kiểm tra trong firmware: máy không có mục bật ADB cho người dùng. Firmware chặn Gỡ lỗi USB của Android, chỉ
   chạy ADB khi XGIMI hỗ trợ từ xa. Menu nhà máy (Cài đặt > trang Thông tin thiết bị, giữ phím Lên khoảng 2 giây)
   cũng không có mục ADB dùng được.
@@ -26,7 +26,7 @@ ONN 4K BOX, GOOGLE TV, ANDROID TV (Sony, TCL, Xiaomi…)
 3. Quay lại > Tuỳ chọn nhà phát triển > bật "Gỡ lỗi USB" (và "Gỡ lỗi mạng" / "ADB qua mạng" nếu có).
 4. Lần đầu kết nối, TV hỏi "Cho phép gỡ lỗi USB?": chọn "Luôn cho phép" rồi bấm Cho phép.
 
-XGIMI KHÁC (Z6X, Play X, Halo…; GMUI bản Trung Quốc)
+XGIMI KHÁC (Play X, Halo…; GMUI bản Trung Quốc)
 - Cài đặt (设置) > Chung (通用) > Giới thiệu (关于): bấm OK nhiều lần vào số phiên bản (版本号) đến khi máy báo
   đã bật chế độ nhà phát triển (开发者模式), rồi vào 开发者选项 bật USB调试 / 网络调试. Mỗi firmware một khác;
   chưa thử trên máy thật.
