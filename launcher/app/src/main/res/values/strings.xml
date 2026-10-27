@@ -110,6 +110,8 @@
     <string name="weather_theme">from theme (%1$s)</string>
     <string name="weather_choose_off">No weather</string>
     <string name="weather_choose_theme">Use the theme\'s setting</string>
+    <string name="weather_choose_auto">By location (auto)</string>
+    <string name="weather_auto_state">by location</string>
     <string name="clock_zone_state">Clock time zone: %1$s</string>
     <string name="clock_zone_system">Follow the TV (%1$s)</string>
     <string name="clock_zone_hint">Changes the launcher\'s clock, date, greeting and time-based wallpaper only. The TV\'s own time zone stays as set in its settings.</string>

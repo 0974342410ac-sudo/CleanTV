@@ -26,18 +26,45 @@ final class Weather {
     private static final long MAX_AGE_MS = 3 * 3600_000L;
     private static final long RETRY_MS = 2 * 60_000L;
 
+    /** How long a place found from the TV's IP is kept before it is looked up again. */
+    private static final long LOCATION_MAX_AGE_MS = 12 * 3600_000L;
+
     private final Context ctx;
-    private final String place;
-    private final String url;
+    /** Auto mode: the place is found from the TV's IP (ipwho.is) instead of fixed coordinates. */
+    private final boolean byLocation;
+    private String place;
+    private String url;
+    /** The place name found from the IP, shown instead of the config city; null until known. */
+    private volatile String city;
     private final SharedPreferences prefs;
     private volatile boolean busy;
 
     Weather(Context ctx, double latitude, double longitude) {
+        this(ctx, false, latitude, longitude);
+    }
+
+    Weather(Context ctx, boolean byLocation, double latitude, double longitude) {
         this.ctx = ctx.getApplicationContext();
+        this.byLocation = byLocation;
+        prefs = this.ctx.getSharedPreferences("weather", Context.MODE_PRIVATE);
+        if (byLocation && prefs.contains("auto_lat")) {
+            // Start from the last place found from the IP, so weather shows at once after a restart.
+            setCoords(prefs.getFloat("auto_lat", (float) latitude), prefs.getFloat("auto_lon", (float) longitude));
+            city = prefs.getString("auto_city", null);
+        } else {
+            setCoords(latitude, longitude);
+        }
+    }
+
+    private void setCoords(double latitude, double longitude) {
         place = String.format(Locale.US, "%.4f,%.4f", latitude, longitude);
         url = String.format(Locale.US, "https://api.open-meteo.com/v1/forecast?latitude=%.4f&longitude=%.4f"
                 + "&current=temperature_2m,weather_code,is_day", latitude, longitude);
-        prefs = ctx.getSharedPreferences("weather", Context.MODE_PRIVATE);
+    }
+
+    /** The place name found from the IP in auto mode, or null (the caller then uses the config city). */
+    String city() {
+        return city;
     }
 
     /** "28° · Light rain, take an umbrella", or "" when nothing recent is known for this place. */
@@ -65,6 +92,7 @@ final class Weather {
         prefs.edit().putLong("tried", now).putString("triedPlace", place).apply();
         new Thread(() -> {
             try {
+                if (byLocation) resolveLocation();
                 JSONObject current = new JSONObject(get(url)).getJSONObject("current");
                 prefs.edit()
                         .putLong("at@" + place, System.currentTimeMillis())
@@ -81,6 +109,26 @@ final class Weather {
                 busy = false;
             }
         }, "weather").start();
+    }
+
+    /**
+     * Finds the TV's place from its public IP (ipwho.is, free, no key) and points the weather at it. Done at most
+     * every 12 hours; on failure the previous place (or the config fallback) stays. Runs on the weather thread.
+     */
+    private void resolveLocation() {
+        if (System.currentTimeMillis() - prefs.getLong("auto_at", 0) < LOCATION_MAX_AGE_MS && city != null) return;
+        try {
+            JSONObject o = new JSONObject(get("https://ipwho.is/?fields=success,latitude,longitude,city"));
+            if (!o.optBoolean("success", false)) return;
+            double lat = o.getDouble("latitude"), lon = o.getDouble("longitude");
+            String found = o.optString("city", "");
+            setCoords(lat, lon);
+            city = found.isEmpty() ? null : found;
+            prefs.edit().putFloat("auto_lat", (float) lat).putFloat("auto_lon", (float) lon)
+                    .putString("auto_city", city).putLong("auto_at", System.currentTimeMillis()).apply();
+        } catch (Exception e) {
+            Log.w(TAG, "location not found from IP: " + e);
+        }
     }
 
     private static String get(String address) throws Exception {

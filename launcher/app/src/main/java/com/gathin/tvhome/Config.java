@@ -191,6 +191,8 @@ final class Config {
     final String greetingName;
     /** Place whose weather follows the greeting (config.xml weather_city); empty: no weather. */
     final String weatherCity;
+    /** tv_weather="auto": resolve the place from the TV's IP instead of a fixed city; Weather does the lookup. */
+    final boolean weatherByLocation;
     final double weatherLatitude;
     final double weatherLongitude;
     final boolean moduleCards;
@@ -247,7 +249,7 @@ final class Config {
                    int[] settingsKeycodes, boolean settingsKeyPanel, boolean wallpaperEnabled, File wallpaper, List<File> wallpapers,
                    int wallpaperRotationMinutes, int wallpaperDim, boolean overlayApplied,
                    Festival festival, int[] inputKeycodes, List<String> appKeys,
-                   String weatherCity, double weatherLatitude, double weatherLongitude, boolean wallpaperByTime,
+                   String weatherCity, double weatherLatitude, double weatherLongitude, boolean weatherByLocation, boolean wallpaperByTime,
                    boolean keepAdbOn, boolean lunarDate, boolean lunarTopRight, boolean bootScript, File wallpaperVideo) {
         this.lunarDate = lunarDate;
         this.lunarTopRight = lunarTopRight;
@@ -255,6 +257,7 @@ final class Config {
         this.wallpaperByTime = wallpaperByTime;
         this.keepAdbOn = keepAdbOn;
         this.weatherCity = weatherCity;
+        this.weatherByLocation = weatherByLocation;
         this.weatherLatitude = weatherLatitude;
         this.weatherLongitude = weatherLongitude;
         this.inputKeycodes = inputKeycodes;
@@ -401,8 +404,12 @@ final class Config {
         showStats = choices.getBoolean(UI_STATS, showStats);
         reducedMotion = choices.getBoolean(UI_REDUCED_MOTION, reducedMotion);
         String tvWeather = choices.getString(TV_WEATHER_KEY, "");
+        boolean weatherByLocation = false;
         if ("off".equals(tvWeather)) {
             weatherCity = "";
+        } else if ("auto".equals(tvWeather)) {
+            // The place is resolved from the TV's IP at runtime; keep the config city/coords as the fallback.
+            weatherByLocation = true;
         } else if (!tvWeather.isEmpty()) {
             String[] p = tvWeather.split("\\|");
             if (p.length == 3) {
@@ -456,7 +463,7 @@ final class Config {
                 Math.max(0, Math.min(100, skyIntensity)), settingsKeycodes, settingsKeyPanel, wallpaperEnabled, wallpaper,
                 wallpapers, rotationMinutes, wallpaperDim, applied,
                 festival, inputKeycodes, appKeys,
-                Double.isNaN(weatherLat) || Double.isNaN(weatherLon) ? "" : weatherCity, weatherLat, weatherLon,
+                Double.isNaN(weatherLat) || Double.isNaN(weatherLon) ? "" : weatherCity, weatherLat, weatherLon, weatherByLocation,
                 byTime, keepAdbOn, lunar, lunarTopRight, bootScript, wallpaperVideo);
     }
 

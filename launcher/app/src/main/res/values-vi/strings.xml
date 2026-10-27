@@ -106,6 +106,8 @@
     <string name="weather_theme">theo chủ đề (%1$s)</string>
     <string name="weather_choose_off">Tắt thời tiết</string>
     <string name="weather_choose_theme">Dùng cài đặt của chủ đề</string>
+    <string name="weather_choose_auto">Tự dò theo vị trí</string>
+    <string name="weather_auto_state">theo vị trí</string>
     <string name="clock_zone_state">Múi giờ đồng hồ: %1$s</string>
     <string name="clock_zone_system">Theo TV (%1$s)</string>
     <string name="clock_zone_hint">Chỉ đổi đồng hồ, ngày, lời chào và hình nền theo giờ của launcher. Múi giờ hệ thống của TV giữ nguyên như trong Cài đặt.</string>

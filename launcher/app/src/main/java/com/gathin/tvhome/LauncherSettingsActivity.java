@@ -155,6 +155,7 @@ public final class LauncherSettingsActivity extends Activity {
         String tvWeather = choices.getString(Config.TV_WEATHER_KEY, "");
         String city = Config.load(this).weatherCity;
         String shown = city.isEmpty() ? getString(R.string.weather_off) : city;
+        if ("auto".equals(tvWeather)) shown = getString(R.string.weather_auto_state);
         weatherChoice.setText(getString(R.string.weather_state,
                 tvWeather.isEmpty() ? getString(R.string.weather_theme, shown) : shown));
         String zone = choices.getString(Config.CLOCK_ZONE_KEY, "");
@@ -417,24 +418,30 @@ public final class LauncherSettingsActivity extends Activity {
 
     private void chooseWeather() {
         String current = choices.getString(Config.TV_WEATHER_KEY, "");
-        String[] labels = new String[WEATHER_PLACES.length + 2];
+        // Order: auto (by IP location), then the fixed places, then off and follow-theme.
+        int auto = 0, first = 1, off = WEATHER_PLACES.length + 1, theme = WEATHER_PLACES.length + 2;
+        String[] labels = new String[WEATHER_PLACES.length + 3];
+        labels[auto] = getString(R.string.weather_choose_auto);
         int checked = -1;
         for (int i = 0; i < WEATHER_PLACES.length; i++) {
-            labels[i] = WEATHER_PLACES[i][0];
-            if (current.startsWith(WEATHER_PLACES[i][0] + "|")) checked = i;
+            labels[first + i] = WEATHER_PLACES[i][0];
+            if (current.startsWith(WEATHER_PLACES[i][0] + "|")) checked = first + i;
         }
-        labels[WEATHER_PLACES.length] = getString(R.string.weather_choose_off);
-        labels[WEATHER_PLACES.length + 1] = getString(R.string.weather_choose_theme);
-        if ("off".equals(current)) checked = WEATHER_PLACES.length;
-        else if (current.isEmpty()) checked = WEATHER_PLACES.length + 1;
+        labels[off] = getString(R.string.weather_choose_off);
+        labels[theme] = getString(R.string.weather_choose_theme);
+        if ("auto".equals(current)) checked = auto;
+        else if ("off".equals(current)) checked = off;
+        else if (current.isEmpty()) checked = theme;
         new AlertDialog.Builder(this)
                 .setTitle(getString(R.string.weather_state, "").replaceAll("[:：]\\s*$", ""))
                 .setSingleChoiceItems(labels, checked, (dialog, which) -> {
                     SharedPreferences.Editor e = choices.edit();
-                    if (which < WEATHER_PLACES.length) {
-                        String[] p = WEATHER_PLACES[which];
+                    if (which == auto) {
+                        e.putString(Config.TV_WEATHER_KEY, "auto");
+                    } else if (which >= first && which < off) {
+                        String[] p = WEATHER_PLACES[which - first];
                         e.putString(Config.TV_WEATHER_KEY, p[0] + "|" + p[1] + "|" + p[2]);
-                    } else if (which == WEATHER_PLACES.length) {
+                    } else if (which == off) {
                         e.putString(Config.TV_WEATHER_KEY, "off");
                     } else {
                         e.remove(Config.TV_WEATHER_KEY);

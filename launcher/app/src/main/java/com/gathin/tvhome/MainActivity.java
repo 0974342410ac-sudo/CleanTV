@@ -324,7 +324,9 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         if (lunarTop != null) lunarTop.setVisibility(View.VISIBLE);
         greetingName = cfg.greetingName;
         weatherCity = cfg.weatherCity;
-        if (!weatherCity.isEmpty()) weather = new Weather(this, cfg.weatherLatitude, cfg.weatherLongitude);
+        if (!weatherCity.isEmpty() || cfg.weatherByLocation) {
+            weather = new Weather(this, cfg.weatherByLocation, cfg.weatherLatitude, cfg.weatherLongitude);
+        }
         keepAdbOn = cfg.keepAdbOn;
         // The Shamsi or the lunar date takes the line above the date, unless lunar_top_right moves it up
         if (shamsi || (lunar && lunarTop == null)) {
@@ -1666,7 +1668,9 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         String weatherText = "";
         if (weather != null) {
             String now = weather.summary();
-            if (!now.isEmpty()) weatherText = weatherCity + " " + now;
+            // In auto mode show the place found from the IP; otherwise the chosen city.
+            String place = weather.city() != null ? weather.city() : weatherCity;
+            if (!now.isEmpty()) weatherText = (place.isEmpty() ? "" : place + " ") + now;
             // Called every minute while Home is on screen; Weather itself fetches at most every 30 minutes.
             weather.refresh(handler, this::updateGreeting);
         }
