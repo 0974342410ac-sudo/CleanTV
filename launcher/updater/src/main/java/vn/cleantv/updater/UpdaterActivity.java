@@ -530,36 +530,6 @@ public final class UpdaterActivity extends Activity {
         return model.isEmpty() || "m7642".equals(model) ? "XGIMI" : model;
     }
 
-    /**
-     * The m7642 models all report device "m7642"; the firmware name is in ro.product.name (read from each firmware's
-     * build.prop): Product_xiaobai = H6, Product_yh01 = Z6X, Product_kirinultra = RS10 (v6.8.25) or RS10 Plus (v6.8.40).
-     * An unknown name keeps the full list. The Vietnamese overlay set is the same (rs10-vi) for all.
-     */
-    private static String xgimiModelName(LocalAdb adb) throws IOException {
-        String name = adb.shell("getprop ro.product.name").trim();
-        switch (name) {
-            case "Product_xiaobai": return "H6";
-            case "Product_yh01":
-                // Product_yh01 covers the Z6X (v6.8.x) and the v6.12 XGIMI TV; tell them apart by firmware version.
-                // The label is "máy chiếu XGIMI " + this, so return "TV" to read "máy chiếu XGIMI TV".
-                return fwMinor(adb) >= 12 ? "TV" : "Z6X / Z6X Pro";
-            case "Product_kirinultra":
-                // RS10 is v6.8.25, RS10 Plus v6.8.40; both minor 8, so compare the patch too.
-                return adb.shell("getprop ro.build.version.incremental").trim().compareTo("v6.8.40") >= 0
-                        && fwMinor(adb) == 8 ? "RS10 Plus" : "RS10";
-            default: return "RS10 / RS10 Plus / H6 / Z6X";
-        }
-    }
-
-    /** The minor number of ro.build.version.incremental ("v6.12.61" -> 12), or 0 when it cannot be read. */
-    private static int fwMinor(LocalAdb adb) throws IOException {
-        String[] p = adb.shell("getprop ro.build.version.incremental").trim().replaceFirst("^v", "").split("\\.");
-        try {
-            return p.length > 1 ? Integer.parseInt(p[1]) : 0;
-        } catch (NumberFormatException e) {
-            return 0;
-        }
-    }
     private static final String IRONMAN_DEVICE = "ironman";
     private static final String IRONMAN_OVERLAYS = "ironman-vi";
 
@@ -605,10 +575,14 @@ public final class UpdaterActivity extends Activity {
             // Name the exact unit from ro.product.model (e.g. "XGIMI TV DOHKO"), since the firmware is encrypted.
             return new Device("máy chiếu " + dohkoModelName(adb), "debloat.txt", STOCK_HOME, true, true);
         }
-        if (RS10_DEVICE.equals(adb.shell("getprop ro.product.device")) && !adb.shell("pm path " + STOCK_HOME).isEmpty()) {
-            // No removal list yet and XGIMI's home stays; Android 9 has no fabricated overlays, so the Vietnamese
-            // text comes as installed overlay APKs. The models share device m7642 but differ by ro.product.name.
-            return new Device("máy chiếu XGIMI " + xgimiModelName(adb) + " (Android 9)", null, null, false, false, false, RS10_OVERLAYS);
+        // XGIMI GMUI on Android 9 (RS10 / RS10 Plus / H6 / Z6X / Z7X / "XGIMI TV"): one GMUI app set, so the
+        // rs10-vi overlays apply by platform (firmware), not by the exact model name or which home the unit uses.
+        // Matched by device m7642 OR by the XGIMI Settings + SystemUI packages, so a unit whose Home is
+        // com.xgimi.xgimiframeworkui (no com.xgimi.home) is still recognised and Vietnamized.
+        boolean xgimiGmui9 = sdk == 28 && !adb.shell("pm path " + SETTINGS).isEmpty()
+                && !adb.shell("pm path com.xgimi.systemui").isEmpty();
+        if (RS10_DEVICE.equals(adb.shell("getprop ro.product.device")) || xgimiGmui9) {
+            return new Device("máy chiếu XGIMI TV (Android 9)", null, null, false, false, false, RS10_OVERLAYS);
         }
         if (IRONMAN_DEVICE.equals(adb.shell("getprop ro.product.device")) && !adb.shell("pm path " + STOCK_HOME).isEmpty()) {
             // One firmware for many XGIMI models (vendor/etc/xgimimodelname); same approach as the RS10
