@@ -103,3 +103,9 @@ com.xgimi.duertts                      # 极米语音 assistant + mic key monito
 # 8.000 bits/byte end to end, no ANDROID!/build.prop/dex/ro.product.device), same HORSEPOPULAR family as the DOHKO.
 # So ADB is read from a running unit, not the file; on this family network ADB is on by default (port 5555,
 # ro.adb.secure=0, no Developer-options screen), as seen on .12. The DOHKO USB package fits it (device horse_popular).
+# Z6X 5th gen (2026-10-26): firmware XGIMI_DRAGONHEALTHY_WK03C02.bin (1.95 GB) is a NEW MediaTek platform
+# (DRAGONHEALTHY, not the readable PIGCHIVALROUS m7642 of the older Z6X) and is REE-encrypted (header
+# "REE_OFFSET_START = 0x1000"; whole-file scan finds no ANDROID!/build.prop/ro.product.device/app signatures).
+# Nothing can be read from it. Device name and app set must come from a running unit; the existing m7642 overlays
+# may or may not fit until confirmed. ADB state unknown (encrypted platforms like HORSEPOPULAR ship it on by
+# default, but DRAGONHEALTHY is unverified).
