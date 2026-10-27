@@ -17,7 +17,9 @@ Remove-Item (Join-Path $assets 'debloat-onn.txt'), (Join-Path $assets 'xgimi-set
 # 1. Assets: launcher moi nhat, danh sach debloat, ban dich Cai dat XGIMI (dang XML cua cmd overlay fabricate)
 $env:JAVA_HOME = if ($env:JAVA_HOME) { $env:JAVA_HOME } else { 'E:\buildtools\jdk\jdk-17.0.20.1+1' }
 Push-Location (Join-Path $root 'launcher')
-.\gradlew.bat :app:assembleRelease -q --console=plain
+# Clean the app first: an incremental build has served a stale APK (old weather list) when source and
+# resources changed without a versionCode bump, so the USB packages shipped the wrong launcher.
+.\gradlew.bat :app:clean :app:assembleRelease -q --console=plain
 if ($LASTEXITCODE -ne 0) { Pop-Location; throw 'Build launcher that bai' }
 Copy-Item 'app\build\outputs\apk\release\app-release.apk' (Join-Path $assets 'tvhome.apk') -Force
 Copy-Item (Join-Path $root 'examples\xgimi-dohko\debloat.txt') (Join-Path $assets 'debloat.txt') -Force
