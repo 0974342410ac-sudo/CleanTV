@@ -52,10 +52,13 @@
     <string name="wallpaper_picked">ảnh chọn trên TV</string>
     <string name="wallpaper_none">không có</string>
     <string name="wallpaper_pick">Chọn ảnh…</string>
+    <string name="wallpaper_video_pick">Video làm màn hình nền…</string>
+    <string name="wallpaper_video_state">video chọn trên TV</string>
     <string name="wallpaper_remove">Bỏ hình nền</string>
     <string name="wallpaper_follow_theme">Dùng hình nền của chủ đề</string>
     <string name="wallpaper_saving">Đang đặt hình nền…</string>
     <string name="wallpaper_failed">Không mở được ảnh này</string>
+    <string name="wallpaper_video_failed">Không dùng được video này (quá lớn hoặc không hỗ trợ)</string>
     <string name="voice_search">Tìm kiếm</string>
     <string name="voice_listening">Đang nghe… giữ phím micro trong lúc nói, thả ra để tìm</string>
     <string name="voice_hold_hint">Giữ phím micro trong lúc nói, thả ra để tìm</string>

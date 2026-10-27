@@ -57,10 +57,13 @@
     <string name="wallpaper_picked">picture from this TV</string>
     <string name="wallpaper_none">none</string>
     <string name="wallpaper_pick">Pick a picture…</string>
+    <string name="wallpaper_video_pick">Video wallpaper…</string>
+    <string name="wallpaper_video_state">video from this TV</string>
     <string name="wallpaper_remove">No wallpaper</string>
     <string name="wallpaper_follow_theme">Use the theme\'s wallpaper</string>
     <string name="wallpaper_saving">Setting wallpaper…</string>
     <string name="wallpaper_failed">Could not open this picture</string>
+    <string name="wallpaper_video_failed">Could not use this video (too large or unsupported)</string>
     <string name="voice_search">Search</string>
     <string name="voice_listening">Listening… hold the mic button while you speak, release to search</string>
     <string name="voice_hold_hint">Hold the mic button while you speak, release to search</string>

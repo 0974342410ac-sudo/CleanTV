@@ -41,6 +41,8 @@ final class Config {
     static final String TV_WALLPAPER_KEY = "tv_wallpaper";
     /** The picture picked on the TV, kept apart from the theme's wallpaper.jpg so the theme's comes back. */
     static final String TV_WALLPAPER_NAME = "tv_wallpaper.jpg";
+    /** A video picked on the TV to play as the Home background, kept beside the picture. */
+    static final String TV_WALLPAPER_VIDEO_NAME = "tv_wallpaper.mp4";
     /** Time zone for the launcher's clock, date, greeting and time-based wallpaper; empty follows the TV. */
     static final String CLOCK_ZONE_KEY = "clock_timezone";
     /** Weather place chosen on the TV: "off" or "city|latitude|longitude"; empty follows the theme. */
@@ -222,6 +224,8 @@ final class Config {
     final boolean wallpaperEnabled;
     /** Full-screen picture behind the launcher, or null for the plain colour. */
     final File wallpaper;
+    /** A looping video to play as the Home background instead of a picture, or null. */
+    final File wallpaperVideo;
     /** Rotating theme images, or the single wallpaper when no collection is configured. */
     final List<File> wallpapers;
     final int wallpaperRotationMinutes;
@@ -244,7 +248,7 @@ final class Config {
                    int wallpaperRotationMinutes, int wallpaperDim, boolean overlayApplied,
                    Festival festival, int[] inputKeycodes, List<String> appKeys,
                    String weatherCity, double weatherLatitude, double weatherLongitude, boolean wallpaperByTime,
-                   boolean keepAdbOn, boolean lunarDate, boolean lunarTopRight, boolean bootScript) {
+                   boolean keepAdbOn, boolean lunarDate, boolean lunarTopRight, boolean bootScript, File wallpaperVideo) {
         this.lunarDate = lunarDate;
         this.lunarTopRight = lunarTopRight;
         this.bootScript = bootScript;
@@ -284,6 +288,7 @@ final class Config {
         this.settingsKeyPanel = settingsKeyPanel;
         this.wallpaperEnabled = wallpaperEnabled;
         this.wallpaper = wallpaper;
+        this.wallpaperVideo = wallpaperVideo;
         this.wallpapers = Collections.unmodifiableList(wallpapers);
         this.wallpaperRotationMinutes = wallpaperRotationMinutes;
         this.wallpaperDim = wallpaperDim;
@@ -412,6 +417,16 @@ final class Config {
         boolean wallpaperEnabled = json == null || bool(json, "wallpaper", true);
         // A wallpaper picked (or removed) on the TV wins over the theme's until the next theme push.
         String tvWallpaper = choices.getString(TV_WALLPAPER_KEY, "");
+        File wallpaperVideo = null;
+        // A video picked on the TV plays as the Home background; it wins over any picture.
+        if ("video".equals(tvWallpaper) && dir != null) {
+            File vid = new File(dir, TV_WALLPAPER_VIDEO_NAME);
+            if (vid.isFile() && vid.length() > 0) {
+                wallpaperVideo = vid;
+                wallpaperEnabled = true;
+                wallpaper = null;
+            }
+        }
         if ("picked".equals(tvWallpaper) && dir != null) {
             File picked = new File(dir, TV_WALLPAPER_NAME);
             if (picked.isFile() && picked.length() > 0) {
@@ -442,7 +457,7 @@ final class Config {
                 wallpapers, rotationMinutes, wallpaperDim, applied,
                 festival, inputKeycodes, appKeys,
                 Double.isNaN(weatherLat) || Double.isNaN(weatherLon) ? "" : weatherCity, weatherLat, weatherLon,
-                byTime, keepAdbOn, lunar, lunarTopRight, bootScript);
+                byTime, keepAdbOn, lunar, lunarTopRight, bootScript, wallpaperVideo);
     }
 
     private static void syncThemeChoices(SharedPreferences choices, File dir, File config) {

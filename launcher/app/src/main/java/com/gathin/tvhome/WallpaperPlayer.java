@@ -4,9 +4,14 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
+import android.graphics.SurfaceTexture;
+import android.media.MediaPlayer;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
+import android.view.Surface;
+import android.view.TextureView;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -35,9 +40,15 @@ final class WallpaperPlayer {
     private boolean closed;
     private boolean loading;
     private String displayed = "";
+    /** Set when a video is the background (config.wallpaperVideo); the image path is then unused. */
+    private final File videoFile;
+    private TextureView texture;
+    private MediaPlayer player;
+    private boolean videoReady;
 
     WallpaperPlayer(Context context, FrameLayout root, Config config) {
         this.root = root;
+        videoFile = config.wallpaperEnabled ? config.wallpaperVideo : null;
         files = new ArrayList<>(config.wallpapers);
         interval = config.wallpaperRotationMinutes * 60_000L;
         byTime = config.wallpaperByTime;
@@ -48,6 +59,10 @@ final class WallpaperPlayer {
         image = new ImageView(context);
         image.setScaleType(ImageView.ScaleType.CENTER_CROP);
         image.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO);
+        if (videoFile != null) {
+            setUpVideo(context, config.wallpaperDim);
+            return;
+        }
         if (config.wallpaperEnabled && !files.isEmpty()) {
             root.addView(image, 0, new FrameLayout.LayoutParams(
                     ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
@@ -90,16 +105,19 @@ final class WallpaperPlayer {
 
     void start() {
         active = true;
+        if (videoFile != null) { if (videoReady && player != null) player.start(); return; }
         update();
     }
 
     void stop() {
         active = false;
+        if (player != null) { try { player.pause(); } catch (IllegalStateException ignored) {} }
     }
 
     void close() {
         active = false;
         closed = true;
+        if (player != null) { try { player.release(); } catch (Exception ignored) {} player = null; }
         decoder.shutdownNow();
     }
 
@@ -146,6 +164,76 @@ final class WallpaperPlayer {
 
     private static int hour() {
         return java.util.Calendar.getInstance().get(java.util.Calendar.HOUR_OF_DAY);
+    }
+
+    // ---------- Video background (config.wallpaperVideo) ----------
+
+    /** Plays the picked video on a TextureView under the Home views: looping, muted, cropped to fill. */
+    private void setUpVideo(Context context, int dim) {
+        texture = new TextureView(context);
+        texture.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO);
+        texture.setOpaque(true);
+        root.addView(texture, 0, new FrameLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+        if (dim > 0) {
+            View shade = new View(context);
+            shade.setBackgroundColor((dim * 255 / 100) << 24);
+            shade.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO);
+            root.addView(shade, 1, new FrameLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+        }
+        texture.setSurfaceTextureListener(new TextureView.SurfaceTextureListener() {
+            @Override public void onSurfaceTextureAvailable(SurfaceTexture st, int w, int h) {
+                openPlayer(new Surface(st));
+            }
+            @Override public void onSurfaceTextureSizeChanged(SurfaceTexture st, int w, int h) { cropToFill(); }
+            @Override public boolean onSurfaceTextureDestroyed(SurfaceTexture st) {
+                if (player != null) { try { player.release(); } catch (Exception ignored) {} player = null; }
+                videoReady = false;
+                return true;
+            }
+            @Override public void onSurfaceTextureUpdated(SurfaceTexture st) {}
+        });
+    }
+
+    private void openPlayer(Surface surface) {
+        try {
+            player = new MediaPlayer();
+            player.setSurface(surface);
+            player.setDataSource(videoFile.getPath());
+            player.setLooping(true);
+            player.setVolume(0f, 0f);   // a wallpaper is silent
+            player.setOnVideoSizeChangedListener((mp, w, h) -> cropToFill());
+            player.setOnPreparedListener(mp -> {
+                videoReady = true;
+                cropToFill();
+                if (active && !closed) mp.start();
+            });
+            // A bad file must not crash Home; just leave the plain background.
+            player.setOnErrorListener((mp, what, extra) -> {
+                Log.w("TvHome.Wallpaper", "Video wallpaper error " + what + "/" + extra);
+                return true;
+            });
+            player.prepareAsync();
+        } catch (Exception failure) {
+            Log.w("TvHome.Wallpaper", "Cannot play video wallpaper: " + failure);
+            if (player != null) { try { player.release(); } catch (Exception ignored) {} player = null; }
+        }
+    }
+
+    /** Center-crops the (aspect-stretched) TextureView so the video fills the screen without bars. */
+    private void cropToFill() {
+        if (player == null || texture == null) return;
+        int vw = texture.getWidth(), vh = texture.getHeight();
+        int mw = player.getVideoWidth(), mh = player.getVideoHeight();
+        if (vw <= 0 || vh <= 0 || mw <= 0 || mh <= 0) return;
+        float viewAspect = (float) vw / vh, videoAspect = (float) mw / mh;
+        float scaleX = 1f, scaleY = 1f;
+        if (videoAspect > viewAspect) scaleX = videoAspect / viewAspect;
+        else scaleY = viewAspect / videoAspect;
+        Matrix matrix = new Matrix();
+        matrix.setScale(scaleX, scaleY, vw / 2f, vh / 2f);
+        texture.setTransform(matrix);
     }
 
     private Bitmap decode(File file) {

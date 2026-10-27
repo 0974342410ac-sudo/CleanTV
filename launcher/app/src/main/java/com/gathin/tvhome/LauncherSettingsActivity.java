@@ -45,6 +45,7 @@ public final class LauncherSettingsActivity extends Activity {
             {"Buôn Ma Thuột", "12.6667", "108.0500"}, {"Vũng Tàu", "10.3460", "107.0843"},
             {"Thái Nguyên", "21.5942", "105.8482"}, {"Nam Định", "20.4388", "106.1621"}};
     private static final int PICK_WALLPAPER = 1;
+    private static final int PICK_VIDEO = 2;
     private int columns;
     private boolean animations;
     private boolean advancedEffects;
@@ -148,6 +149,7 @@ public final class LauncherSettingsActivity extends Activity {
         String wall = choices.getString(Config.TV_WALLPAPER_KEY, "");
         wallpaperChoice.setText(getString(R.string.wallpaper_state, getString(
                 "picked".equals(wall) ? R.string.wallpaper_picked
+                        : "video".equals(wall) ? R.string.wallpaper_video_state
                         : "none".equals(wall) ? R.string.wallpaper_none : R.string.wallpaper_theme)));
         refreshAppearance();
         String tvWeather = choices.getString(Config.TV_WEATHER_KEY, "");
@@ -169,35 +171,39 @@ public final class LauncherSettingsActivity extends Activity {
     }
 
     private void chooseWallpaper() {
-        String[] items = {getString(R.string.wallpaper_pick), getString(R.string.wallpaper_remove),
-                getString(R.string.wallpaper_follow_theme)};
+        String[] items = {getString(R.string.wallpaper_pick), getString(R.string.wallpaper_video_pick),
+                getString(R.string.wallpaper_remove), getString(R.string.wallpaper_follow_theme)};
         new AlertDialog.Builder(this)
                 .setTitle(getString(R.string.wallpaper_state, "").replaceAll("[:：]\\s*$", ""))
                 .setItems(items, (dialog, which) -> {
-                    if (which == 0) {
-                        Intent pick = new Intent(Intent.ACTION_GET_CONTENT).setType("image/*")
+                    if (which == 0 || which == 1) {
+                        Intent pick = new Intent(Intent.ACTION_GET_CONTENT)
+                                .setType(which == 0 ? "image/*" : "video/*")
                                 .addCategory(Intent.CATEGORY_OPENABLE);
                         try {
-                            startActivityForResult(pick, PICK_WALLPAPER);
+                            startActivityForResult(pick, which == 0 ? PICK_WALLPAPER : PICK_VIDEO);
                         } catch (ActivityNotFoundException e) {
                             Toast.makeText(this, R.string.not_available, Toast.LENGTH_LONG).show();
                         }
                     } else {
                         SharedPreferences.Editor e = choices.edit();
-                        if (which == 1) e.putString(Config.TV_WALLPAPER_KEY, "none");
+                        if (which == 2) e.putString(Config.TV_WALLPAPER_KEY, "none");
                         else e.remove(Config.TV_WALLPAPER_KEY);
                         e.apply();
                         setResult(RESULT_OK);
                         refresh();
                     }
                 })
+
                 .show();
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode != PICK_WALLPAPER || resultCode != RESULT_OK || data == null || data.getData() == null) return;
+        if (resultCode != RESULT_OK || data == null || data.getData() == null) return;
+        if (requestCode == PICK_VIDEO) { saveVideoWallpaper(data.getData()); return; }
+        if (requestCode != PICK_WALLPAPER) return;
         final Uri uri = data.getData();
         final File dir = Config.dir(this);
         if (dir == null) {
@@ -249,6 +255,48 @@ public final class LauncherSettingsActivity extends Activity {
             out.recycle();
             return tmp.renameTo(dest) || (dest.delete() && tmp.renameTo(dest));
         } catch (Exception | OutOfMemoryError e) {
+            return false;
+        }
+    }
+
+    /** Copies the picked video into the theme folder (no re-encode) and makes it the Home background. */
+    private void saveVideoWallpaper(Uri uri) {
+        final File dir = Config.dir(this);
+        if (dir == null) { Toast.makeText(this, R.string.not_available, Toast.LENGTH_LONG).show(); return; }
+        Toast.makeText(this, R.string.wallpaper_saving, Toast.LENGTH_SHORT).show();
+        new Thread(() -> {
+            boolean ok = copyVideo(uri, new File(dir, Config.TV_WALLPAPER_VIDEO_NAME));
+            runOnUiThread(() -> {
+                if (isFinishing()) return;
+                if (ok) {
+                    choices.edit().putString(Config.TV_WALLPAPER_KEY, "video").apply();
+                    setResult(RESULT_OK);
+                    refresh();
+                } else {
+                    Toast.makeText(this, R.string.wallpaper_video_failed, Toast.LENGTH_LONG).show();
+                }
+            });
+        }, "wallpaper-video").start();
+    }
+
+    /** Streams the video to dest, refusing files over 200 MB so a 1 GB TV is not filled. */
+    private boolean copyVideo(Uri uri, File dest) {
+        File tmp = new File(dest.getParentFile(), dest.getName() + ".tmp");
+        try (InputStream in = getContentResolver().openInputStream(uri);
+             FileOutputStream out = new FileOutputStream(tmp)) {
+            if (in == null) return false;
+            byte[] buf = new byte[256 * 1024];
+            long total = 0;
+            int n;
+            while ((n = in.read(buf)) > 0) {
+                total += n;
+                if (total > 200L * 1024 * 1024) { tmp.delete(); return false; }
+                out.write(buf, 0, n);
+            }
+            if (total == 0) { tmp.delete(); return false; }
+            return tmp.renameTo(dest) || (dest.delete() && tmp.renameTo(dest));
+        } catch (Exception e) {
+            tmp.delete();
             return false;
         }
     }
