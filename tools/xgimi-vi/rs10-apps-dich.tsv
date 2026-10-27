@@ -1166,3 +1166,81 @@ PC设备	Máy tính
 正在通话	Đang gọi
 视频通话	Gọi video
 正在过滤来电	Đang lọc cuộc gọi đến
+# Z7X (XGIMI_PIGCHIVALROUS_XM13R1, v6.12.61, Product_yh01): chuoi moi so voi H6+RS10+Plus.
+%1$s – 结束日期	%1$s – Ngày kết thúc
+%1$s 分	%1$s phút
+%1$s 点	%1$s giờ
+%s正在更新，请稍后重试	%s đang cập nhật, vui lòng thử lại sau
+1. 将同屏器接入电脑、电视盒子、游戏机等信号源      2. 长按同屏器按钮以配对投影设备	1. Cắm bộ phát cùng màn hình vào máy tính, TV box, máy chơi game…      2. Giữ nút trên bộ phát để ghép nối với máy chiếu
+1、请尝试重新插拔或更换HDMI接口       2、若要播放4k片源，请确认是否使用的是HDMI2.0或HDMI2.1线材       3、建议HDMI的传输距离保持在5米以内       若尝试以上办法后依然无法连接成功，请联系客服：%s	1. Thử rút cắm lại hoặc đổi cổng HDMI       2. Để phát 4K, hãy dùng cáp HDMI 2.0 hoặc HDMI 2.1       3. Nên giữ khoảng cách HDMI dưới 5 mét       Nếu vẫn không được, hãy liên hệ CSKH: %s
+上次关机时滑门未正常关闭	Lần tắt máy trước, cửa trượt chưa đóng đúng
+不在允许的范围内：%1$s	Không nằm trong phạm vi cho phép: %1$s
+使用：%1$s	Dùng: %1$s
+全景声	Âm thanh vòm
+内存不足解码失败	Không đủ bộ nhớ, giải mã thất bại
+内置电池供电	Dùng pin tích hợp
+切换到文字输入模式来输入时间。	Chuyển sang nhập bằng chữ để nhập giờ.
+切换到文本字段输入模式	Chuyển sang chế độ nhập bằng ô văn bản
+切换到日历输入模式	Chuyển sang chế độ nhập bằng lịch
+切换到时钟模式来输入时间。	Chuyển sang chế độ đồng hồ để nhập giờ.
+卸载新版本极米投屏      (恢复出厂时的极米投屏版本)	Gỡ bản mới của XGIMI Chiếu màn hình      (trả về bản lúc xuất xưởng)
+对焦完成，长按对焦键微调	Đã lấy nét xong, giữ phím lấy nét để tinh chỉnh
+对话框图标	Biểu tượng hộp thoại
+展开到一半高度	Mở ra nửa chiều cao
+已是最新版本	Đã là bản mới nhất
+已经是最后一张！	Đã là ảnh cuối!
+已经是第一张！	Đã là ảnh đầu!
+开始扫描设备	Bắt đầu quét thiết bị
+开始日期	Ngày bắt đầu
+开始日期 - 结束日期	Ngày bắt đầu - Ngày kết thúc
+开始日期 – %1$s	Ngày bắt đầu – %1$s
+当前片源支持 HDR Vivid 模式	Nguồn hiện tại hỗ trợ chế độ HDR Vivid
+当前的选择是：%1$s	Lựa chọn hiện tại: %1$s
+扫描设备完成	Quét thiết bị xong
+扫码下载极米 App，使用极米 App “爱机 > 墙面平整” 进行      智能适配	Quét mã tải app XGIMI, dùng "Máy của tôi > Căn phẳng tường" trong app      để tự căn chỉnh
+按开启菁彩观影	Bấm để bật chế độ xem phim rực rỡ
+按查看详情	Bấm để xem chi tiết
+支架电量剩余10%	Chân đế còn 10% pin
+支架电量剩余30%	Chân đế còn 30% pin
+文件格式不支持	Không hỗ trợ định dạng tệp
+新通知	Thông báo mới
+日期	Ngày
+显示下拉菜单	Hiện menu thả xuống
+有 %1$d 条以上的新通知	Có hơn %1$d thông báo mới
+未检测到信号，按 # 查看帮助	Không nhận được tín hiệu, bấm # để xem trợ giúp
+标签页	Thẻ
+格式无效。	Định dạng không hợp lệ.
+检查设备是否已正确连接或尝试重新配对	Kiểm tra thiết bị đã kết nối đúng chưa hoặc thử ghép nối lại
+正在更新，当前暂不可用	Đang cập nhật, tạm thời chưa dùng được
+正在进入游戏模式...	Đang vào chế độ chơi game...
+清空极米投屏数据      (退出安全模式)	Xoá dữ liệu XGIMI Chiếu màn hình      (thoát chế độ an toàn)
+清除文字	Xoá chữ
+点按即可切换到选择某天	Bấm để chuyển sang chọn ngày
+点按即可切换到选择某年	Bấm để chuyển sang chọn năm
+由于检测到极米投屏多次崩溃，已自动进入安全模式界面      您可以尝试点击下面的 “清空极米投屏数据”等按钮，再重新进入极米投屏，看是否能正常使用,如果还是有问题请联系客服	Do XGIMI Chiếu màn hình nhiều lần gặp sự cố, đã tự vào chế độ an toàn.      Bạn có thể bấm nút "Xoá dữ liệu XGIMI Chiếu màn hình" bên dưới rồi mở lại; nếu vẫn lỗi hãy liên hệ CSKH
+电量剩余10%	Còn 10% pin
+电量剩余30%	Còn 30% pin
+示例：%1$s	Ví dụ: %1$s
+移除%1$s	Gỡ %1$s
+结束日期	Ngày kết thúc
+范围无效。	Phạm vi không hợp lệ.
+表示周几的列：%1$s	Cột chỉ thứ trong tuần: %1$s
+解码失败	Giải mã thất bại
+请检查滑门前方或滑轨是否有异物阻挡，检查时建议关闭投      影以避免射眼	Hãy kiểm tra có vật cản trước cửa trượt hoặc trên ray không; khi kiểm tra nên tắt      chiếu để tránh chói mắt
+请短按同屏器按键重新连接	Bấm nhanh nút trên bộ phát để kết nối lại
+请选择日期	Hãy chọn ngày
+请选择范围	Hãy chọn phạm vi
+超出字符数限制（共 %1$d 个，上限为 %2$d 个）	Vượt quá giới hạn ký tự (tổng %1$d, tối đa %2$d)
+超高清免费观看时长已用完	Đã hết thời lượng xem siêu nét miễn phí
+转到 %1$s 年	Đến năm %1$s
+转到上个月	Đến tháng trước
+转到下个月	Đến tháng sau
+输入了 %1$d 个字符（上限为 %2$d 个）	Đã nhập %1$d ký tự (tối đa %2$d)
+进入节能模式	Vào chế độ tiết kiệm điện
+连接有问题？请试试以下      办法：	Kết nối có vấn đề? Hãy thử các cách sau:
+选定的日期	Ngày đã chọn
+选择上午或下午	Chọn sáng hoặc chiều
+选择分钟	Chọn phút
+选择小时	Chọn giờ
+选择时间	Chọn giờ
+错误	Lỗi

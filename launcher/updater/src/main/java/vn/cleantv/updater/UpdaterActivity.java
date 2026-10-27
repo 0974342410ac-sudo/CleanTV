@@ -436,7 +436,7 @@ public final class UpdaterActivity extends Activity {
             case "m7642":
             case "ironman":
                 // Read from firmware XM13M / XJ03D: adbd starts only on persist.sys.usb.config=adb, nothing in the UI sets it
-                say("   Firmware XGIMI này (RS10 / RS10 Plus / H6 / Z6X / Z6X Pro / IRONMAN) không có mục bật ADB cho người dùng: máy chỉ bật ADB");
+                say("   Firmware XGIMI này (RS10 / RS10 Plus / H6 / Z6X / Z6X Pro / Z7X / IRONMAN) không có mục bật ADB cho người dùng: máy chỉ bật ADB");
                 say("   khi XGIMI hỗ trợ từ xa. Nếu máy đã từng bật ADB, thử khởi động lại máy rồi bấm Cập nhật lần nữa.");
                 break;
             case "synsepalum_YN":
@@ -539,11 +539,24 @@ public final class UpdaterActivity extends Activity {
         String name = adb.shell("getprop ro.product.name").trim();
         switch (name) {
             case "Product_xiaobai": return "H6";
-            case "Product_yh01": return "Z6X / Z6X Pro";
+            case "Product_yh01":
+                // Z6X (firmware v6.8.x) and Z7X (v6.12+) share this product name; tell them apart by version.
+                return fwMinor(adb) >= 12 ? "Z7X" : "Z6X / Z6X Pro";
             case "Product_kirinultra":
-                String ver = adb.shell("getprop ro.build.version.incremental").trim();
-                return ver.compareTo("v6.8.40") >= 0 ? "RS10 Plus" : "RS10";
+                // RS10 is v6.8.25, RS10 Plus v6.8.40; both minor 8, so compare the patch too.
+                return adb.shell("getprop ro.build.version.incremental").trim().compareTo("v6.8.40") >= 0
+                        && fwMinor(adb) == 8 ? "RS10 Plus" : "RS10";
             default: return "RS10 / RS10 Plus / H6 / Z6X";
+        }
+    }
+
+    /** The minor number of ro.build.version.incremental ("v6.12.61" -> 12), or 0 when it cannot be read. */
+    private static int fwMinor(LocalAdb adb) throws IOException {
+        String[] p = adb.shell("getprop ro.build.version.incremental").trim().replaceFirst("^v", "").split("\\.");
+        try {
+            return p.length > 1 ? Integer.parseInt(p[1]) : 0;
+        } catch (NumberFormatException e) {
+            return 0;
         }
     }
     private static final String IRONMAN_DEVICE = "ironman";

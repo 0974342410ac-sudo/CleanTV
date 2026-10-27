@@ -1,0 +1,249 @@
+# Chuoi tieng Trung MOI cua Z7X (XGIMI_PIGCHIVALROUS_XM13R1, v6.12.61) so voi H6+RS10+Plus.
+com.xgimi.bluetoothservice	bluetooth_dualaudio_exit	音频共享已断开	
+com.xgimi.filemanager	call_notification_answer_action	接听	
+com.xgimi.filemanager	call_notification_answer_video_action	视频通话	
+com.xgimi.filemanager	call_notification_decline_action	拒接	
+com.xgimi.filemanager	call_notification_hang_up_action	挂断	
+com.xgimi.filemanager	call_notification_incoming_text	来电	
+com.xgimi.filemanager	call_notification_ongoing_text	正在通话	
+com.xgimi.filemanager	call_notification_screening_text	正在过滤来电	
+com.xgimi.filemanager	scan_device_complete	扫描设备完成	
+com.xgimi.filemanager	start_scan_device	开始扫描设备	
+com.xgimi.stream.video	sdkplayer_bitstream_change_fail_top_def_timeout	超高清免费观看时长已用完	
+com.xgimi.stream.video	sdkplayer_bitstream_panoramic_sound	全景声	
+com.xgimi.stream.video	try_view	试看	
+com.xgimi.systemui	ambient_setting_data	[{"key":"XGIMI_SYSTEMUI_AMBIENT_SETTING_DATA","pkg":"com.xgimi.systemui","name":"氛围灯光设置可用值","valueType":"1","value":"{\"colors\":[\"orange\",\"blue\",\"yellow\",\"green\",\"pink\",\"purple\",\"colorful\",\"none\"],\"mode\":[\"standard\",\"always\",\"rhythm\"]}"}]	
+com.xgimi.systemui	battery_low_power_10_des	电量剩余10%	
+com.xgimi.systemui	battery_low_power_30_des	电量剩余30%	
+com.xgimi.systemui	door_abnormality_dialog_desc	请检查滑门前方或滑轨是否有异物阻挡，检查时建议关闭投      影以避免射眼	
+com.xgimi.systemui	door_abnormality_dialog_title	上次关机时滑门未正常关闭	
+com.xgimi.systemui	external_battery_low_power_10_des	支架电量剩余10%	
+com.xgimi.systemui	external_battery_low_power_30_des	支架电量剩余30%	
+com.xgimi.systemui	hall_focus_success	对焦完成，长按对焦键微调	
+com.xgimi.systemui	hdr_vivid_switch_guide_action	按开启菁彩观影	
+com.xgimi.systemui	hdr_vivid_switch_guide_title	当前片源支持 HDR Vivid 模式	
+com.xgimi.systemui	inner_battery_desc	进入节能模式	
+com.xgimi.systemui	inner_battery_title	内置电池供电	
+com.xgimi.systemui	inner_charger_lower_battery	电池电量低	
+com.xgimi.home	btn_local_applist_delete	删除	
+com.xgimi.home	btn_local_applist_download	下载	
+com.xgimi.home	button_hint_title_delete_pop	删除“%s”?	
+com.xgimi.home	toast_app_installing	应用安装中	
+com.xgimi.home	toast_delete_success_pop	已删除%s	
+com.xgimi.ota.accessories	check_version_btn_ok	我知道了	
+com.xgimi.ota.accessories	check_version_view_btn_check	检查更新	
+com.xgimi.ota.accessories	check_version_view_btn_done	完成	
+com.xgimi.ota.accessories	check_version_view_title	当前版本	
+com.xgimi.ota.accessories	check_version_view_title_latest	已是最新版本	
+com.xgimi.ota.accessories	common_upgrade_complete_desc_label	欢迎使用%s	
+com.xgimi.ota.accessories	common_upgrade_failed_desc_label	检查设备是否已正确连接或尝试重新配对	
+com.xgimi.ota.accessories	force_update_desc	正在更新，当前暂不可用	
+com.xgimi.ota.accessories	hdmi_check_view_btn_check	检查更新	
+com.xgimi.ota.accessories	hdmi_check_view_btn_done	完成	
+com.xgimi.ota.accessories	hdmi_check_view_title	当前版本	
+com.xgimi.ota.accessories	hdmi_screen_player_sub_upgrade_desc_label	请短按同屏器按键重新连接	
+com.xgimi.ota.accessories	hdmi_screen_player_sub_upgrade_failed_desc_label	1. 将同屏器接入电脑、电视盒子、游戏机等信号源      2. 长按同屏器按钮以配对投影设备	
+com.xgimi.ota.accessories	last_check_time	上次检查时间: %s	
+com.xgimi.ota.accessories	notice_update_desc	发现新版本	
+com.xgimi.ota.accessories	notice_update_tips	按查看详情	
+com.xgimi.ota.accessories	notice_upgrade_fail	更新失败	
+com.xgimi.ota.accessories	notice_upgrade_interrupt	连接中断	
+com.xgimi.ota.accessories	notice_upgrade_success	更新完成	
+com.xgimi.ota.accessories	title_upgrade_cancel	取消	
+com.xgimi.ota.accessories	title_upgrade_next_time	暂不更新	
+com.xgimi.ota.accessories	title_upgrade_now	立即更新	
+com.xgimi.ota.accessories	title_upgrade_retry	重试	
+com.xgimi.ota.accessories	title_upgrading	正在更新	
+com.xgimi.ota.accessories	toast_device_updating	%s正在更新，请稍后重试	
+com.xgimi.ota.accessories	update_device_curtain	极米智能光子幕布	
+com.xgimi.ota.accessories	update_device_curtain_desc	幕布	
+com.xgimi.ota.accessories	update_device_hdmi	无线同屏器	
+com.xgimi.ota.accessories	update_device_rc	极米遥控器	
+com.xgimi.ota.accessories	update_device_rc_desc	遥控器	
+com.xgimi.ota.accessories	update_device_switch_panel	开关面板	
+com.xgimi.bootwizard	arbitrary_gate_feature_laser_desc	全新场景屏保，更多妙趣氛围	
+com.xgimi.bootwizard	arbitrary_gate_feature_laser_title	任意门	
+com.xgimi.bootwizard	automatic_curtain_alignment	画幕自动对齐	
+com.xgimi.bootwizard	automatic_picture_correction	自动画面校正	
+com.xgimi.bootwizard	auxiliary_curtain_alignment	辅助幕布对齐	
+com.xgimi.bootwizard	auxiliary_curtain_alignment_btn1	调整后 按	
+com.xgimi.bootwizard	auxiliary_curtain_alignment_btn2	开始对齐	
+com.xgimi.bootwizard	auxiliary_curtain_alignment_desc	移动投影仪，使投影画面四边超出幕布边框	
+com.xgimi.bootwizard	auxiliary_curtain_alignment_tips	已安装幕布时，自动调整投影画面对齐幕布边框	
+com.xgimi.bootwizard	default_pic_adjustment_page_desc	调整画面，使画面清晰方正，达到最佳观看状态	
+com.xgimi.bootwizard	default_pic_adjustment_page_title	画面校正	
+com.xgimi.gimiplayer	already_first	已经是第一张！	
+com.xgimi.gimiplayer	already_last	已经是最后一张！	
+com.xgimi.gimiplayer	decode_failed	解码失败	
+com.xgimi.gimiplayer	file_not_support	文件格式不支持	
+com.xgimi.gimiplayer	imax_enhanced_mutex_tips	IMAX Enhanced专属图像模式生效中	
+com.xgimi.gimiplayer	no_enough_memory	内存不足解码失败	
+com.xgimi.gimiplayer	text_menu_video_img_mode_movie	观影	
+com.android.newsettings	al_name_str_ambient	环境	
+com.android.newsettings	al_name_str_ambient_light	环境光	
+com.android.newsettings	al_name_str_brightness	亮度	
+com.android.newsettings	automatic_keystone_correction	自动梯形校正	
+com.android.newsettings	color_style	色彩风格	
+com.android.newsettings	eye_project_tips_screen_off	检测到镜头前有人时，自动关闭屏幕	
+com.android.newsettings	flatwall_guide_content_txt	扫码下载极米 App，使用极米 App “爱机 > 墙面平整” 进行      智能适配	
+com.android.newsettings	flatwall_guide_title	墙面平整适配	
+com.android.newsettings	flatwall_tips_not_support_hoisting	*此功能吊装下不支持	
+com.android.newsettings	hdr_vivid_mutex_tips	HDR Vivid图像模式生效中	
+com.android.newsettings	image_mode	图像模式	
+com.android.newsettings	image_set_image_mode_hdr_vivid_auto_tip	识别到支持的片源时，自动切换到HDR Vivid模式	
+com.android.newsettings	image_set_mode_hdr_vivid_auto	自动	
+com.android.newsettings	image_set_mode_hdr_vivid_close	关闭	
+com.android.newsettings	image_set_mode_standard_text	标准	
+com.android.newsettings	image_style	图像风格	
+com.android.newsettings	mutex_turbo_light_dialog_bt	关闭 Turbo Light	
+com.android.newsettings	mutex_turbo_light_dialog_desc	Turbo light 是通过光学变焦缩小画面以提升亮度。关闭后可能出现画面大小和亮度变化。	
+com.android.newsettings	mutex_turbo_light_dialog_title	请关闭“Turbo Light”后再试	
+com.android.newsettings	one_click_screen_correction	一键画面校正	
+com.android.newsettings	picture_ai_contrast	AI对比度	
+com.android.newsettings	pre_title_my_bluetooth_devices	我的蓝牙设备:	
+com.android.newsettings	signal_enhance_tips_2_1	HDMI 2.1 支持全色彩范围的 4K 60Hz	
+com.android.newsettings	sound_mode_huawei_histen_soundtrack_text	鸿鹄音效	
+com.android.newsettings	tips_ai_contrast	根据视频画面内容，AI实时调整对比度，仅在SDR视频下生效	
+com.android.newsettings	toast_no_history	暂无历史版本	
+com.xgimi.xhplayer	dialog_game_anim_des	正在进入游戏模式...	
+com.xgimi.xhplayer	dialog_unconnected_des	1、请尝试重新插拔或更换HDMI接口       2、若要播放4k片源，请确认是否使用的是HDMI2.0或HDMI2.1线材       3、建议HDMI的传输距离保持在5米以内       若尝试以上办法后依然无法连接成功，请联系客服：%s	
+com.xgimi.xhplayer	dialog_unconnected_sure	我知道了	
+com.xgimi.xhplayer	dialog_unconnected_title	连接有问题？请试试以下      办法：	
+com.xgimi.xhplayer	text_unconnected_tips	未检测到信号，按 # 查看帮助	
+com.xgimi.vcontrol	download_background	后台下载	
+com.xgimi.vcontrol	install_background	后台安装	
+com.xgimi.vcontrol	keyboard_switch_full	全键盘	
+com.xgimi.vcontrol	keyboard_switch_nine	九宫格	
+com.xgimi.vcontrol	pause_text	暂停	
+com.xgimi.vcontrol	play_control_song	播放	
+com.xgimi.vcontrol	play_control_song_vip	试听VIP	
+com.xgimi.vcontrol	play_control_song_vip_user	播放VIP	
+com.xgimi.vcontrol	play_text	播放	
+com.xgimi.vcontrol	playlist_title	播放列表	
+com.xgimi.vcontrol	switch_lyric_tips	切换悬浮歌词	
+com.xgimi.vcontrol	the_app_will_open_automatically	应用即将自动打开，正在下载	
+com.xgimi.vcontrol	widget_dialog_loading	正在加载中…	
+com.xgimi.vcontrol	widget_dialog_loading2	正在加载中	
+com.xgimi.vcontrol	xbase_error_ConnectException	网络好像有问题，错误码：%s	
+com.xgimi.vcontrol	xbase_error_SSLHandshakeException	请查看系统时间日期是否正确，错误码：%s	
+com.xgimi.vcontrol	xbase_error_SocketTimeoutException	网络请求超时，错误码：%s	
+com.xgimi.vcontrol	xbase_error_TimeoutException	网络连接超时，错误码：%s	
+com.xgimi.vcontrol	xbase_error_default	未知异常，错误码：%s	
+com.xgimi.vcontrol	xbase_error_no_network	未连接网络，错误码：%s	
+com.xgimi.vcontrol	xbase_error_no_space	存储空间不足，错误码：%s	
+com.xgimi.vcontrol	xbase_error_service_exception	服务器开小差了，错误码：%s	
+com.xgimi.vcontrol	xbase_no_data	暂无数据	
+com.xgimi.vcontrol	xbase_progress_wait_fail	出错啦！	
+com.xgimi.vcontrol	xbase_to_connect_network	连接网络	
+com.xgimi.vcontrol	xbase_to_retry	重试	
+com.xgimi.wirelessscreen	safe_mode_check_update	检查更新	
+com.xgimi.wirelessscreen	safe_mode_clear_data	清空极米投屏数据      (退出安全模式)	
+com.xgimi.wirelessscreen	safe_mode_error_log	查看完整错误信息	
+com.xgimi.wirelessscreen	safe_mode_no_error_log	暂无错误日志	
+com.xgimi.wirelessscreen	safe_mode_open_resource_manager	进入资源管理器	
+com.xgimi.wirelessscreen	safe_mode_open_setting	进入系统设置	
+com.xgimi.wirelessscreen	safe_mode_tips	由于检测到极米投屏多次崩溃，已自动进入安全模式界面      您可以尝试点击下面的 “清空极米投屏数据”等按钮，再重新进入极米投屏，看是否能正常使用,如果还是有问题请联系客服	
+com.xgimi.wirelessscreen	safe_mode_title	安全模式界面	
+com.xgimi.wirelessscreen	safe_mode_uninstall	卸载新版本极米投屏      (恢复出厂时的极米投屏版本)	
+com.xgimi.payview	activation	激活	
+com.xgimi.payview	activation_success	激活成功!	
+com.xgimi.payview	already_purchased	您已经购买过此课程	
+com.xgimi.payview	bottomsheet_action_expand_halfway	展开到一半高度	
+com.xgimi.payview	character_counter_content_description	输入了 %1$d 个字符（上限为 %2$d 个）	
+com.xgimi.payview	character_counter_overflowed_content_description	超出字符数限制（共 %1$d 个，上限为 %2$d 个）	
+com.xgimi.payview	clear_text_end_icon_content_description	清除文字	
+com.xgimi.payview	contact_customer_service	联系客服	
+com.xgimi.payview	coupon_invalid	不符合活动参与规则	
+com.xgimi.payview	coupon_tips	折	
+com.xgimi.payview	date_amount_of_next_duration	下次扣费日期/金额：%s/%s	
+com.xgimi.payview	discount_price	抵扣：%s元	
+com.xgimi.payview	error_icon_content_description	错误	
+com.xgimi.payview	exposed_dropdown_menu_content_description	显示下拉菜单	
+com.xgimi.payview	faq	常见问题	
+com.xgimi.payview	fetch_product_failed	获取商品列表中...	
+com.xgimi.payview	fetch_qr_code_expired	二维码已失效	
+com.xgimi.payview	fetch_qr_code_failed	获取二维码失败	
+com.xgimi.payview	fetch_qr_code_loading	加载中...	
+com.xgimi.payview	huo_qu_wang_ye_di_zhi_fail	获取协议失败	
+com.xgimi.payview	icon_content_description	对话框图标	
+com.xgimi.payview	input_activation_code	请输入激活码	
+com.xgimi.payview	input_code_invalid	激活码无效	
+com.xgimi.payview	input_code_used	激活码已使用	
+com.xgimi.payview	item_view_role_description	标签页	
+com.xgimi.payview	loading	加载中...	
+com.xgimi.payview	login_account	登录账号	
+com.xgimi.payview	login_account_right_now	立即登录	
+com.xgimi.payview	material_clock_toggle_content_description	选择上午或下午	
+com.xgimi.payview	material_hour_selection	选择小时	
+com.xgimi.payview	material_hour_suffix	%1$s 点	
+com.xgimi.payview	material_minute_selection	选择分钟	
+com.xgimi.payview	material_minute_suffix	%1$s 分	
+com.xgimi.payview	material_timepicker_am	上午	
+com.xgimi.payview	material_timepicker_clock_mode_description	切换到时钟模式来输入时间。	
+com.xgimi.payview	material_timepicker_hour	小时	
+com.xgimi.payview	material_timepicker_minute	分钟	
+com.xgimi.payview	material_timepicker_pm	下午	
+com.xgimi.payview	material_timepicker_select_time	选择时间	
+com.xgimi.payview	material_timepicker_text_input_mode_description	切换到文字输入模式来输入时间。	
+com.xgimi.payview	member_rights_will_expire	会员权益有效期至	
+com.xgimi.payview	mtrl_badge_numberless_content_description	新通知	
+com.xgimi.payview	mtrl_chip_close_icon_content_description	移除%1$s	
+com.xgimi.payview	mtrl_exceed_max_badge_number_content_description	有 %1$d 条以上的新通知	
+com.xgimi.payview	mtrl_picker_a11y_next_month	转到下个月	
+com.xgimi.payview	mtrl_picker_a11y_prev_month	转到上个月	
+com.xgimi.payview	mtrl_picker_announce_current_selection	当前的选择是：%1$s	
+com.xgimi.payview	mtrl_picker_date_header_title	请选择日期	
+com.xgimi.payview	mtrl_picker_date_header_unselected	选定的日期	
+com.xgimi.payview	mtrl_picker_day_of_week_column_header	表示周几的列：%1$s	
+com.xgimi.payview	mtrl_picker_invalid_format	格式无效。	
+com.xgimi.payview	mtrl_picker_invalid_format_example	示例：%1$s	
+com.xgimi.payview	mtrl_picker_invalid_format_use	使用：%1$s	
+com.xgimi.payview	mtrl_picker_invalid_range	范围无效。	
+com.xgimi.payview	mtrl_picker_navigate_to_year_description	转到 %1$s 年	
+com.xgimi.payview	mtrl_picker_out_of_range	不在允许的范围内：%1$s	
+com.xgimi.payview	mtrl_picker_range_header_only_end_selected	开始日期 – %1$s	
+com.xgimi.payview	mtrl_picker_range_header_only_start_selected	%1$s – 结束日期	
+com.xgimi.payview	mtrl_picker_range_header_title	请选择范围	
+com.xgimi.payview	mtrl_picker_range_header_unselected	开始日期 - 结束日期	
+com.xgimi.payview	mtrl_picker_save	保存	
+com.xgimi.payview	mtrl_picker_text_input_date_hint	日期	
+com.xgimi.payview	mtrl_picker_text_input_date_range_end_hint	结束日期	
+com.xgimi.payview	mtrl_picker_text_input_date_range_start_hint	开始日期	
+com.xgimi.payview	mtrl_picker_toggle_to_calendar_input_mode	切换到日历输入模式	
+com.xgimi.payview	mtrl_picker_toggle_to_day_selection	点按即可切换到选择某天	
+com.xgimi.payview	mtrl_picker_toggle_to_text_input_mode	切换到文本字段输入模式	
+com.xgimi.payview	mtrl_picker_toggle_to_year_selection	点按即可切换到选择某年	
+com.xgimi.payview	netabnormal_code	网络异常(%s)	
+com.xgimi.payview	no_content	没有内容	
+com.xgimi.payview	password_toggle_content_description	显示密码	
+com.xgimi.payview	pay_success	支付成功	
+com.xgimi.payview	payment_amount	支付金额：	
+com.xgimi.payview	payment_method	%s扫码支付	
+com.xgimi.payview	present_price	折后：%s元	
+com.xgimi.payview	purchase_record	已购影片	
+com.xgimi.payview	purchase_success	购买成功	
+com.xgimi.payview	purchased	已购买	
+com.xgimi.payview	purchased_content	您已购买过此片	
+com.xgimi.payview	response_open_app_fail	应用打开失败，请稍后重试	
+com.xgimi.payview	response_open_fail	打开失败	
+com.xgimi.payview	response_processing	正在加载中…	
+com.xgimi.payview	tips_loading	正在加载	
+com.xgimi.payview	unlogin	未登录	
+com.xgimi.payview	update_vip_info_timeout	权益发放存在延迟现象，将在稍后生效	
+com.xgimi.payview	user_know	我知道了	
+com.xgimi.payview	vip_qrcode_load_error	加载失败	
+com.xgimi.payview	waiting_update_vip_info	权益发放中	
+com.xgimi.payview	widget_dialog_loading	正在加载中…	
+com.xgimi.payview	xbase_error_ConnectException	网络好像有问题，错误码：%s	
+com.xgimi.payview	xbase_error_SSLHandshakeException	请查看系统时间日期是否正确，错误码：%s	
+com.xgimi.payview	xbase_error_SocketTimeoutException	网络请求超时，错误码：%s	
+com.xgimi.payview	xbase_error_TimeoutException	网络连接超时，错误码：%s	
+com.xgimi.payview	xbase_error_default	未知异常，错误码：%s	
+com.xgimi.payview	xbase_error_no_network	未连接网络，错误码：%s	
+com.xgimi.payview	xbase_error_no_space	存储空间不足，错误码：%s	
+com.xgimi.payview	xbase_error_service_exception	服务器开小差了，错误码：%s	
+com.xgimi.payview	xbase_no_data	暂无数据	
+com.xgimi.payview	xbase_progress_wait_fail	出错啦！	
+com.xgimi.payview	xbase_to_connect_network	连接网络	
+com.xgimi.payview	xbase_to_retry	重试	
+com.xgimi.payview	xgimi_user_agreement	《极米用户服务协议》	

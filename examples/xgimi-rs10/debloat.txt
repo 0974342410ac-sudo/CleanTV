@@ -59,3 +59,11 @@
 # RS10 (incremental v6.8.25) or RS10 Plus (v6.8.40). ro.xgimi.multi.model is model_h5pro on all, so it is useless.
 # The updater's xgimiModelName() reads ro.product.name (+ incremental for kirinultra) to show the right name;
 # the rs10-vi overlay set stays shared since it is the superset of every m7642 firmware's strings.
+#
+# Z7X (2026-10-27): firmware XGIMI_PIGCHIVALROUS_XM13R1.bin, device m7642, Android 9, incremental v6.12.61 (newest,
+# built 2025-01-06). ro.product.name=Product_yh01, the SAME as the Z6X, so the updater tells them apart by version:
+# fwMinor >= 12 (v6.12+) = Z7X, else Z6X. Readable firmware. Of its 11,521 Chinese strings, 78 names were new vs
+# H6+RS10+Plus; dropping the factory/voice apps and the config JSON left 77 unique new strings (payview membership,
+# HDMI/accessory/battery, the Material date/time picker, screen-mirror safe mode). Translated into rs10-apps-dich.tsv
+# with the triples in z7-apps-chuoi.tsv (now read by rs10-overlays.ps1). So Z7X is Vietnamized in full; m7642 means
+# the updater already targets it. Not yet run on a real Z7X.
