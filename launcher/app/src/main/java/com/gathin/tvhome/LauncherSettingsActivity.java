@@ -190,6 +190,9 @@ public final class LauncherSettingsActivity extends Activity {
                         if (which == 2) e.putString(Config.TV_WALLPAPER_KEY, "none");
                         else e.remove(Config.TV_WALLPAPER_KEY);
                         e.apply();
+                        // Leaving a picture/video behind would keep wasting space and could come back; drop both.
+                        deleteWallpaperFile(Config.TV_WALLPAPER_NAME);
+                        deleteWallpaperFile(Config.TV_WALLPAPER_VIDEO_NAME);
                         setResult(RESULT_OK);
                         refresh();
                     }
@@ -220,6 +223,7 @@ public final class LauncherSettingsActivity extends Activity {
                 if (isFinishing()) return;
                 if (ok) {
                     choices.edit().putString(Config.TV_WALLPAPER_KEY, "picked").apply();
+                    deleteWallpaperFile(Config.TV_WALLPAPER_VIDEO_NAME);
                     setResult(RESULT_OK);
                     refresh();
                 } else {
@@ -260,6 +264,14 @@ public final class LauncherSettingsActivity extends Activity {
     }
 
     /** Copies the picked video into the theme folder (no re-encode) and makes it the Home background. */
+    /** Removes a leftover wallpaper file (the other kind) from the theme folder so it does not linger. */
+    private void deleteWallpaperFile(String name) {
+        File dir = Config.dir(this);
+        if (dir == null) return;
+        File f = new File(dir, name);
+        if (f.isFile()) f.delete();
+    }
+
     private void saveVideoWallpaper(Uri uri) {
         final File dir = Config.dir(this);
         if (dir == null) { Toast.makeText(this, R.string.not_available, Toast.LENGTH_LONG).show(); return; }
@@ -270,6 +282,7 @@ public final class LauncherSettingsActivity extends Activity {
                 if (isFinishing()) return;
                 if (ok) {
                     choices.edit().putString(Config.TV_WALLPAPER_KEY, "video").apply();
+                    deleteWallpaperFile(Config.TV_WALLPAPER_NAME);
                     setResult(RESULT_OK);
                     refresh();
                 } else {
