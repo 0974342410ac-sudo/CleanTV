@@ -569,8 +569,10 @@ public final class UpdaterActivity extends Activity {
                     + " và chưa có hồ sơ riêng trong ứng dụng này. Không thay đổi gì trên máy này");
         }
         String model = adb.shell("getprop ro.product.model");
-        // The XGIMI removal list was checked on the DOHKO (GMUI, Android 14) only; other XGIMI models just get the launcher
-        if (!adb.shell("pm path " + STOCK_HOME).isEmpty() && "horse_popular".equals(adb.shell("getprop ro.product.device"))) {
+        String device = adb.shell("getprop ro.product.device");
+        // The XGIMI removal list was checked on the DOHKO (GMUI, Android 14) only; other XGIMI models just get the
+        // launcher. Matched by device alone, so the unit is recognised whichever Home it currently runs.
+        if ("horse_popular".equals(device)) {
             // XGIMI's own voice assistant is off there; the launcher's key service takes the mic button.
             // Name the exact unit from ro.product.model (e.g. "XGIMI TV DOHKO"), since the firmware is encrypted.
             return new Device("máy chiếu " + dohkoModelName(adb), "debloat.txt", STOCK_HOME, true, true);
@@ -581,15 +583,16 @@ public final class UpdaterActivity extends Activity {
         // com.xgimi.xgimiframeworkui (no com.xgimi.home) is still recognised and Vietnamized.
         boolean xgimiGmui9 = sdk == 28 && !adb.shell("pm path " + SETTINGS).isEmpty()
                 && !adb.shell("pm path com.xgimi.systemui").isEmpty();
-        if (RS10_DEVICE.equals(adb.shell("getprop ro.product.device")) || xgimiGmui9) {
+        if (RS10_DEVICE.equals(device) || xgimiGmui9) {
             return new Device("máy chiếu XGIMI TV (Android 9)", null, null, false, false, false, RS10_OVERLAYS);
         }
-        if (IRONMAN_DEVICE.equals(adb.shell("getprop ro.product.device")) && !adb.shell("pm path " + STOCK_HOME).isEmpty()) {
-            // One firmware for many XGIMI models (vendor/etc/xgimimodelname); same approach as the RS10
+        // One firmware for many XGIMI models (vendor/etc/xgimimodelname); matched by device alone, same as the RS10,
+        // so the ironman-vi overlays apply by platform whichever Home the unit runs.
+        if (IRONMAN_DEVICE.equals(device)) {
             return new Device("máy chiếu XGIMI (firmware IRONMAN, Android 8)", null, null, false, false, false, IRONMAN_OVERLAYS);
         }
         if ("onn".equalsIgnoreCase(adb.shell("getprop ro.product.manufacturer"))
-                || "YOC".equals(adb.shell("getprop ro.product.device"))) {
+                || "YOC".equals(device)) {
             // com.gretzky.GlobalKey keeps the remote's mic (Google Assistant) and app buttons: no key service
             return new Device("onn 4K Streaming Box", "debloat-onn.txt",
                     "com.google.android.apps.tv.launcherx", false, false);
