@@ -248,11 +248,16 @@ public final class LauncherSettingsActivity extends Activity {
         final int w = Math.max(m.widthPixels, m.heightPixels), h = Math.min(m.widthPixels, m.heightPixels);
         new Thread(() -> {
             boolean ok = saveWallpaper(uri, new File(dir, Config.TV_WALLPAPER_NAME), w, h);
+            if (ok) {
+                // Set it and tell Home to reload even if Settings was left while the picture was being saved.
+                choices.edit().putString(Config.TV_WALLPAPER_KEY, "picked").apply();
+                deleteWallpaperFile(Config.TV_WALLPAPER_VIDEO_NAME);
+                getApplicationContext().sendBroadcast(new Intent(MainActivity.ACTION_WALLPAPER_CHANGED)
+                        .setPackage(getPackageName()));
+            }
             runOnUiThread(() -> {
                 if (isFinishing()) return;
                 if (ok) {
-                    choices.edit().putString(Config.TV_WALLPAPER_KEY, "picked").apply();
-                    deleteWallpaperFile(Config.TV_WALLPAPER_VIDEO_NAME);
                     setResult(RESULT_OK);
                     refresh();
                 } else {
@@ -307,11 +312,17 @@ public final class LauncherSettingsActivity extends Activity {
         Toast.makeText(this, R.string.wallpaper_saving, Toast.LENGTH_SHORT).show();
         new Thread(() -> {
             boolean ok = copyVideo(uri, new File(dir, Config.TV_WALLPAPER_VIDEO_NAME));
+            if (ok) {
+                // Set the choice even if the user already left Settings while the copy ran, and tell Home to
+                // reload so the video shows at once instead of only on the next Home launch.
+                choices.edit().putString(Config.TV_WALLPAPER_KEY, "video").apply();
+                deleteWallpaperFile(Config.TV_WALLPAPER_NAME);
+                getApplicationContext().sendBroadcast(new Intent(MainActivity.ACTION_WALLPAPER_CHANGED)
+                        .setPackage(getPackageName()));
+            }
             runOnUiThread(() -> {
                 if (isFinishing()) return;
                 if (ok) {
-                    choices.edit().putString(Config.TV_WALLPAPER_KEY, "video").apply();
-                    deleteWallpaperFile(Config.TV_WALLPAPER_NAME);
                     setResult(RESULT_OK);
                     refresh();
                 } else {

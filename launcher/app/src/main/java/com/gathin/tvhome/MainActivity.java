@@ -259,6 +259,16 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             if (appLibrary != null) appLibrary.refresh();
         }
     };
+    /** Settings sends this once a picked wallpaper (a large video is copied in the background) is ready. */
+    static final String ACTION_WALLPAPER_CHANGED = "com.gathin.tvhome.action.WALLPAPER_CHANGED";
+    private final IntentFilter wallpaperFilter = new IntentFilter(ACTION_WALLPAPER_CHANGED);
+    private final BroadcastReceiver wallpaperReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            // Rebuild Home so the new wallpaper shows at once, even if Settings was left before the copy finished.
+            recreate();
+        }
+    };
     private final Runnable minuteTick = new Runnable() {
         @Override
         public void run() {
@@ -596,8 +606,10 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         super.onStart();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             registerReceiver(packageReceiver, packageFilter, Context.RECEIVER_NOT_EXPORTED);
+            registerReceiver(wallpaperReceiver, wallpaperFilter, Context.RECEIVER_NOT_EXPORTED);
         } else {
             registerReceiver(packageReceiver, packageFilter);
+            registerReceiver(wallpaperReceiver, wallpaperFilter);
         }
     }
 
@@ -761,6 +773,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
     protected void onStop() {
         super.onStop();
         unregisterReceiver(packageReceiver);
+        unregisterReceiver(wallpaperReceiver);
         rebuildOnResume = true;
     }
 
