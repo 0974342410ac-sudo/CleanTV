@@ -521,6 +521,16 @@ public final class UpdaterActivity extends Activity {
     private static final String RS10_OVERLAYS = "rs10-vi";
 
     /**
+     * HORSEPOPULAR models (device "horse_popular": DOHKO / RS 20 Pro Max / Ultra Max) carry a readable model in
+     * ro.product.model, e.g. "XGIMI TV DOHKO" (ro.product.name Product_athenamasterhl = the Pro Max high-light
+     * firmware the DOHKO runs). Their firmware is encrypted, so the name is read from the running unit, not the file.
+     */
+    private static String dohkoModelName(LocalAdb adb) throws IOException {
+        String model = adb.shell("getprop ro.product.model").trim();
+        return model.isEmpty() || "m7642".equals(model) ? "XGIMI" : model;
+    }
+
+    /**
      * The m7642 models all report device "m7642"; the firmware name is in ro.product.name (read from each firmware's
      * build.prop): Product_xiaobai = H6, Product_yh01 = Z6X, Product_kirinultra = RS10 (v6.8.25) or RS10 Plus (v6.8.40).
      * An unknown name keeps the full list. The Vietnamese overlay set is the same (rs10-vi) for all.
@@ -577,8 +587,9 @@ public final class UpdaterActivity extends Activity {
         String model = adb.shell("getprop ro.product.model");
         // The XGIMI removal list was checked on the DOHKO (GMUI, Android 14) only; other XGIMI models just get the launcher
         if (!adb.shell("pm path " + STOCK_HOME).isEmpty() && "horse_popular".equals(adb.shell("getprop ro.product.device"))) {
-            // XGIMI's own voice assistant is off there; the launcher's key service takes the mic button
-            return new Device("máy chiếu XGIMI", "debloat.txt", STOCK_HOME, true, true);
+            // XGIMI's own voice assistant is off there; the launcher's key service takes the mic button.
+            // Name the exact unit from ro.product.model (e.g. "XGIMI TV DOHKO"), since the firmware is encrypted.
+            return new Device("máy chiếu " + dohkoModelName(adb), "debloat.txt", STOCK_HOME, true, true);
         }
         if (RS10_DEVICE.equals(adb.shell("getprop ro.product.device")) && !adb.shell("pm path " + STOCK_HOME).isEmpty()) {
             // No removal list yet and XGIMI's home stays; Android 9 has no fabricated overlays, so the Vietnamese

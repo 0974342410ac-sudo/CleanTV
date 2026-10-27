@@ -109,3 +109,9 @@ com.xgimi.duertts                      # 极米语音 assistant + mic key monito
 # Nothing can be read from it. Device name and app set must come from a running unit; the existing m7642 overlays
 # may or may not fit until confirmed. ADB state unknown (encrypted platforms like HORSEPOPULAR ship it on by
 # default, but DRAGONHEALTHY is unverified).
+#
+# Naming HORSEPOPULAR units (2026-10-27): the firmware is encrypted, but a running unit carries a readable
+# ro.product.model ("XGIMI TV DOHKO" on .12) and ro.product.name (Product_athenamasterhl = the Pro Max high-light
+# firmware). The updater now shows "máy chiếu <ro.product.model>" for horse_popular instead of a generic label.
+# The RS 20 Pro V1.4.8 (Pro Max 高亮版) file XGIMI_HORSEPOPULAR_XR07A2.bin is encrypted like the others (no readable
+# Android content), so its exact name must be read from the device; it is horse_popular, so the DOHKO package fits.
