@@ -436,7 +436,7 @@ public final class UpdaterActivity extends Activity {
             case "m7642":
             case "ironman":
                 // Read from firmware XM13M / XJ03D: adbd starts only on persist.sys.usb.config=adb, nothing in the UI sets it
-                say("   Firmware XGIMI này (RS10 / RS10 Plus / H6 / Z6X / Z6X Pro / Z7X / IRONMAN) không có mục bật ADB cho người dùng: máy chỉ bật ADB");
+                say("   Firmware XGIMI này (RS10 / RS10 Plus / H6 / Z6X / Z6X Pro / XGIMI TV / IRONMAN) không có mục bật ADB cho người dùng: máy chỉ bật ADB");
                 say("   khi XGIMI hỗ trợ từ xa. Nếu máy đã từng bật ADB, thử khởi động lại máy rồi bấm Cập nhật lần nữa.");
                 break;
             case "synsepalum_YN":
@@ -540,8 +540,9 @@ public final class UpdaterActivity extends Activity {
         switch (name) {
             case "Product_xiaobai": return "H6";
             case "Product_yh01":
-                // Z6X (firmware v6.8.x) and Z7X (v6.12+) share this product name; tell them apart by version.
-                return fwMinor(adb) >= 12 ? "Z7X" : "Z6X / Z6X Pro";
+                // Product_yh01 covers the Z6X (v6.8.x) and the v6.12 XGIMI TV; tell them apart by firmware version.
+                // The label is "máy chiếu XGIMI " + this, so return "TV" to read "máy chiếu XGIMI TV".
+                return fwMinor(adb) >= 12 ? "TV" : "Z6X / Z6X Pro";
             case "Product_kirinultra":
                 // RS10 is v6.8.25, RS10 Plus v6.8.40; both minor 8, so compare the patch too.
                 return adb.shell("getprop ro.build.version.incremental").trim().compareTo("v6.8.40") >= 0
