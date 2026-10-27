@@ -519,6 +519,23 @@ public final class UpdaterActivity extends Activity {
      */
     private static final String RS10_DEVICE = "m7642";
     private static final String RS10_OVERLAYS = "rs10-vi";
+
+    /**
+     * The m7642 models all report device "m7642"; the firmware name is in ro.product.name (read from each firmware's
+     * build.prop): Product_xiaobai = H6, Product_yh01 = Z6X, Product_kirinultra = RS10 (v6.8.25) or RS10 Plus (v6.8.40).
+     * An unknown name keeps the full list. The Vietnamese overlay set is the same (rs10-vi) for all.
+     */
+    private static String xgimiModelName(LocalAdb adb) throws IOException {
+        String name = adb.shell("getprop ro.product.name").trim();
+        switch (name) {
+            case "Product_xiaobai": return "H6";
+            case "Product_yh01": return "Z6X / Z6X Pro";
+            case "Product_kirinultra":
+                String ver = adb.shell("getprop ro.build.version.incremental").trim();
+                return ver.compareTo("v6.8.40") >= 0 ? "RS10 Plus" : "RS10";
+            default: return "RS10 / RS10 Plus / H6 / Z6X";
+        }
+    }
     private static final String IRONMAN_DEVICE = "ironman";
     private static final String IRONMAN_OVERLAYS = "ironman-vi";
 
@@ -565,8 +582,8 @@ public final class UpdaterActivity extends Activity {
         }
         if (RS10_DEVICE.equals(adb.shell("getprop ro.product.device")) && !adb.shell("pm path " + STOCK_HOME).isEmpty()) {
             // No removal list yet and XGIMI's home stays; Android 9 has no fabricated overlays, so the Vietnamese
-            // text comes as installed overlay APKs
-            return new Device("máy chiếu XGIMI RS10 / RS10 Plus / H6 / Z6X / Z6X Pro (Android 9)", null, null, false, false, false, RS10_OVERLAYS);
+            // text comes as installed overlay APKs. The models share device m7642 but differ by ro.product.name.
+            return new Device("máy chiếu XGIMI " + xgimiModelName(adb) + " (Android 9)", null, null, false, false, false, RS10_OVERLAYS);
         }
         if (IRONMAN_DEVICE.equals(adb.shell("getprop ro.product.device")) && !adb.shell("pm path " + STOCK_HOME).isEmpty()) {
             // One firmware for many XGIMI models (vendor/etc/xgimimodelname); same approach as the RS10

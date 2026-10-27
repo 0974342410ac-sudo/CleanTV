@@ -53,3 +53,9 @@
 # call notifications): translated and added to rs10-apps-dich.tsv, and the new (pkg,name,cn) triples to
 # plus-apps-chuoi.tsv (now read by rs10-overlays.ps1 -Device rs10). So RS10 Plus is Vietnamized in full; it is
 # m7642 so the updater already targets it. Not yet run on a real RS10 Plus.
+#
+# Telling the m7642 models apart (2026-10-27): they all report ro.product.device=m7642, but ro.product.name in
+# build.prop differs: Product_xiaobai = H6, Product_yh01 = Z6X (and Z6X Pro, same XM03R), Product_kirinultra =
+# RS10 (incremental v6.8.25) or RS10 Plus (v6.8.40). ro.xgimi.multi.model is model_h5pro on all, so it is useless.
+# The updater's xgimiModelName() reads ro.product.name (+ incremental for kirinultra) to show the right name;
+# the rs10-vi overlay set stays shared since it is the superset of every m7642 firmware's strings.
