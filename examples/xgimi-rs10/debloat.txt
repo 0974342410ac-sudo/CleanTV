@@ -67,3 +67,18 @@
 # HDMI/accessory/battery, the Material date/time picker, screen-mirror safe mode). Translated into rs10-apps-dich.tsv
 # with the triples in z7-apps-chuoi.tsv (now read by rs10-overlays.ps1). So Z7X is Vietnamized in full; m7642 means
 # the updater already targets it. Not yet run on a real Z7X.
+#
+# REAL-DEVICE TEST (2026-10-28, v6.8.x m7642, screen recording): the installed-overlay method does NOT work on a
+# stock retail unit. Every rs10-vi overlay fails at install with
+#   Failure [INSTALL_FAILED_INTERNAL_ERROR: ... Overlay vn.cleantv.overlay.rs10.<app> must be signed with the
+#   platform certificate.]
+# Android 9 refuses to install an RRO that targets a system/XGIMI app unless the overlay APK is signed with the
+# device's platform key (or the target app's key); ours is debug-signed and non-static, so 0/41 install. This
+# retracts the earlier guess ("non-static overlays from /data can still be enabled by the shell there") -- it is
+# false on retail builds. The firmware is a user build (no adb root, id -u = 2000), so the overlays also cannot be
+# pushed to a trusted overlay partition (/vendor|/product/overlay) nor fabricated (no `cmd overlay fabricate` on
+# Android 9). Launcher/Home replacement and debloat still work; only "3/3 Viet hoa Cai dat XGIMI" is impossible
+# over ADB. The updater now detects this one cause and prints a single plain Vietnamese line instead of ~41 red
+# INSTALL_FAILED lines (installOverlays, UpdaterActivity). Full system Vietnamese needs the overlays baked into the
+# firmware image as static overlays in /product/overlay, flashed with the USB upgrade -- to be built and flash-
+# tested when a real m7642 unit is available (none online at the time of this test).

@@ -864,9 +864,16 @@ public final class UpdaterActivity extends Activity {
     }
 
     /**
-     * Android 8 and 9 have no `cmd overlay fabricate`, but overlays installed like apps can be enabled by the shell there:
-     * installs each assets/<dir>/VietHoa-<target>.apk whose target is on this TV, enables it and restarts the
-     * apps on screen most. Installed overlays survive reboots; Restore uninstalls them.
+     * Android 8 and 9 have no `cmd overlay fabricate`; this installs each assets/<dir>/VietHoa-<target>.apk whose
+     * target is on this TV as an overlay app, enables it and restarts the apps on screen most. Installed overlays
+     * survive reboots; Restore uninstalls them.
+     *
+     * Retail XGIMI firmware (user build, no adb root) refuses to install an overlay that targets a system/XGIMI app
+     * unless the overlay is signed with the device's platform key: "INSTALL_FAILED_INTERNAL_ERROR: ... must be
+     * signed with the platform certificate". The debug-signed overlays cannot pass that, and without root they also
+     * cannot be dropped into a trusted overlay partition, so on such a unit none install. Detect that one cause and
+     * say it once, plainly, instead of one red INSTALL_FAILED line per package; full Vietnamese then needs the
+     * overlays baked into the firmware image.
      */
     private void installOverlays(LocalAdb adb, String dir) throws IOException {
         String[] apks = getAssets().list(dir);
@@ -875,6 +882,7 @@ public final class UpdaterActivity extends Activity {
             return;
         }
         int ok = 0, present = 0;
+        boolean platformCertBlocked = false;
         for (String apk : apks) {
             if (!apk.startsWith("VietHoa-") || !apk.endsWith(".apk")) continue;
             String target = apk.substring("VietHoa-".length(), apk.length() - ".apk".length());
@@ -887,6 +895,8 @@ public final class UpdaterActivity extends Activity {
                 out = adb.exec("cmd package install -r -S " + size, in);
             }
             if (!out.contains("Success")) {
+                // Every overlay here hits the same wall, so stop after the first and report it once below.
+                if (out.contains("must be signed with the platform certificate")) { platformCertBlocked = true; break; }
                 say("   !!  " + target + ": " + firstLine(out));
                 continue;
             }
@@ -895,8 +905,15 @@ public final class UpdaterActivity extends Activity {
             else say("   !!  " + target + ": đã cài nhưng chưa bật được");
         }
         for (String p : new String[]{SETTINGS, STOCK_HOME, "com.xgimi.shutdown"}) adb.shell("am force-stop " + p);
-        say(ok == present && ok > 0 ? "   OK  đã Việt hoá " + ok + " ứng dụng XGIMI (Cài đặt, màn hình chính, thanh hệ thống…)"
-                : "   !!  mới Việt hoá được " + ok + "/" + present + " ứng dụng");
+        if (ok == present && ok > 0) {
+            say("   OK  đã Việt hoá " + ok + " ứng dụng XGIMI (Cài đặt, màn hình chính, thanh hệ thống…)");
+        } else if (platformCertBlocked && ok == 0) {
+            say("   !!  Firmware gốc của máy này khoá cài bản dịch cho ứng dụng hệ thống (phải ký bằng");
+            say("       chứng chỉ gốc của hãng). Màn hình chính và gỡ ứng dụng đã xong; riêng Cài đặt");
+            say("       XGIMI tạm thời vẫn tiếng Trung. Việt hoá đầy đủ cần nhúng sẵn vào firmware.");
+        } else {
+            say("   !!  mới Việt hoá được " + ok + "/" + present + " ứng dụng");
+        }
     }
 
     /**
