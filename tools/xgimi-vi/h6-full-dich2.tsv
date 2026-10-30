@@ -1,0 +1,562 @@
+# Bang dich phan loi Android (framework, trinh cai dat, tep, in, Bluetooth...) cua firmware XGIMI_PIGCHIVALROUS_XM03D, 2026-10-30.
+%1$.2f  毫米	%1$.2f mm
+%1$d x %2$d - %3$,.1f 百万像素	%1$d x %2$d - %3$,.1f MP
+%1$d 个应用正在消耗电量	%1$d ứng dụng đang tiêu thụ pin
+%1$d 项已停用	Đã tắt %1$d mục
+%1$s 图片	Ảnh %1$s
+%1$s 字节/%2$s 个数据包	%1$s byte/%2$s gói
+%1$s 归档文件	Tệp lưu trữ %1$s
+%1$s 文件	Tệp %1$s
+%1$s 视频	Video %1$s
+%1$s 音频	Âm thanh %1$s
+%1$s。%3$d的微件%2$d。	%1$s. Tiện ích %2$d trên %3$d.
+%1$s不支持工作资料	%1$s không hỗ trợ hồ sơ công việc
+%1$s不支持当前的显示大小设置，因此可能无法正常显示。	%1$s không hỗ trợ cỡ hiển thị hiện tại nên có thể hiện không đúng.
+%1$s中没有任何相符项	Không có kết quả nào trong %1$s
+%1$s凭据已添加到 WLAN 已保存的网络。	Đã thêm thông tin đăng nhập %1$s vào mạng Wi-Fi đã lưu.
+%1$s占用的内存已超出限制	%1$s đã dùng quá giới hạn bộ nhớ
+%1$s发送完成。	Đã gửi xong %1$s.
+%1$s将会在不保存的情况下关闭	%1$s sẽ đóng mà không lưu
+%1$s属于以下应用：	%1$s thuộc ứng dụng sau:
+%1$s屡次停止运行	%1$s liên tục dừng
+%1$s已停止运行	%1$s đã dừng
+%1$s已准备好发送%2$s	%1$s đã sẵn sàng gửi %2$s
+%1$s已启动。	%1$s đã khởi động.
+%1$s已更新。要向%1$s授予以下权限吗？	%1$s đã cập nhật. Cấp các quyền sau cho %1$s?
+%1$s已设为始终保持连接状态，但目前无法连接。您将无法连接到网络，直到您能够重新连接该 VPN。	%1$s được đặt luôn kết nối nhưng hiện không kết nối được. Bạn sẽ không có mạng cho đến khi kết nối lại VPN này.
+%1$s已设为始终保持连接状态，但目前无法连接。您的手机将使用公共网络，直到能够重新连接到%1$s。	%1$s được đặt luôn kết nối nhưng hiện không kết nối được. Thiết bị sẽ dùng mạng công cộng cho đến khi kết nối lại %1$s.
+%1$s微件。	Tiện ích %1$s.
+%1$s想要启用“触摸浏览”。“触摸浏览”启用后，您可以听到或看到所触摸内容的说明，还可以通过手势操作与手机互动。	%1$s muốn bật “Khám phá bằng cách chạm”. Khi bật, bạn sẽ nghe hoặc thấy mô tả của nội dung được chạm và có thể tương tác bằng cử chỉ.
+%1$s接收完成。	Đã nhận xong %1$s.
+%1$s是专为不兼容的 Android 操作系统版本所打造的应用，因此可能会出现意外行为。您可以使用该应用的更新版本。	%1$s được tạo cho phiên bản Android không tương thích nên có thể hoạt động bất thường. Có thể đã có phiên bản cập nhật của ứng dụng.
+%1$s权限	Quyền %1$s
+%1$s正在将某些音效设为静音	%1$s đang tắt một số âm thanh
+%1$s正在消耗电量	%1$s đang tiêu thụ pin
+%1$s正在运行	%1$s đang chạy
+%1$s没有响应	%1$s không phản hồi
+%1$s目前无法使用。该应用是由%2$s所管理。	Hiện không dùng được %1$s. Ứng dụng do %2$s quản lý.
+%1$s目前正在运行。	%1$s đang chạy.
+%1$s进程占用的内存已超出限制 (%2$s)。您可以将收集的堆转储数据共享给相应的开发者。请注意：此数据中可能包含该应用有权存取的您的个人信息。	Tiến trình %1$s đã dùng quá giới hạn bộ nhớ (%2$s). Bạn có thể chia sẻ dữ liệu heap dump với nhà phát triển. Lưu ý: dữ liệu này có thể chứa thông tin cá nhân mà ứng dụng được phép truy cập.
+%1$s页	%1$s trang
+%2$s没有响应	%2$s không phản hồi
+%Y 年 %-m 月 %-e 日	%-e/%-m/%Y
+%Y 年 %-m 月 %-e 日%p %I:%M:%S	%-e/%-m/%Y %I:%M:%S %p
+%d个CA证书	%d chứng chỉ CA
+%d秒后重试。	Thử lại sau %d giây.
+%s SD 卡	Thẻ SD %s
+%s U 盘	USB %s
+%s 触摸并按住。	%s chạm và giữ.
+%s\n\n您确定要离开此页面吗？	%s\n\nRời khỏi trang này?
+%s不受支持	Không hỗ trợ %s
+%s使用的数据流量比平时多	%s dùng nhiều dữ liệu hơn bình thường
+%s出现问题	%s gặp sự cố
+%s已意外移除	%s đã bị rút đột ngột
+%s已损坏。选择即可进行修正。	%s bị hỏng. Chọn để sửa.
+%s已激活VPN	%s đã kích hoạt VPN
+%s已被移除	Đã gỡ %s
+%s的详细信息	Chi tiết của %s
+1 个月前	1 tháng trước
+16开	16K
+1个CA证书	1 chứng chỉ CA
+8开	8K
+<b>%1$s</b>在发送大量短信。是否允许该应用继续发送短信？	<b>%1$s</b> đang gửi nhiều tin nhắn. Cho phép ứng dụng tiếp tục gửi?
+<b>%1$s</b>已更新。请选择要向此应用授予哪些权限。	<b>%1$s</b> đã cập nhật. Hãy chọn các quyền cấp cho ứng dụng này.
+<b>%1$s</b>想要向 <b>%2$s</b> 发送一条短信。	<b>%1$s</b> muốn gửi một tin nhắn đến <b>%2$s</b>.
+<未命名>	<Không tên>
+Ack记录	Bản ghi Ack
+Android USB 外设端口	Cổng phụ kiện USB Android
+Android 应用	Ứng dụng Android
+Android 核心应用	Ứng dụng lõi Android
+Android 系统	Hệ thống Android
+Android 系统更新	Cập nhật hệ thống Android
+Android键盘	Bàn phím Android
+Enter 键	Phím Enter
+Excel 电子表格	Bảng tính Excel
+Google 地图	Google Maps
+Google 文档	Google Docs
+Google 演示文稿	Google Slides
+Google 电子表格	Google Sheets
+Google 绘图	Google Drawings
+Google 网站	Google Sites
+Google 表单	Google Forms
+Google 表格	Google Tables
+HDMI 屏幕	Màn hình HDMI
+HTML 文档	Tài liệu HTML
+HTML 查看程序	Trình xem HTML
+ISO 等效感光度	Độ nhạy ISO
+MMI 码已完成。	Đã hoàn tất mã MMI.
+OBEX身份验证请求	Yêu cầu xác thực OBEX
+PDF 文档	Tài liệu PDF
+PIN 码：	Mã PIN:
+PIN码不匹配	Mã PIN không khớp
+PIN码不符，请重试。	Mã PIN không khớp, hãy thử lại.
+PIN码太短，至少应包含4位数字。	Mã PIN quá ngắn, cần ít nhất 4 chữ số.
+PIN码更改	Đổi mã PIN
+PIN码有误	Mã PIN sai
+PIN码有误。	Mã PIN sai.
+PIN码解锁。	Mở khóa bằng mã PIN.
+PKCS12 密钥库中的证书。	Chứng chỉ trong kho khóa PKCS12.
+PUK码	Mã PUK
+PUK码应包含8位数字。	Mã PUK cần có 8 chữ số.
+PowerPoint 演示文稿	Bản trình chiếu PowerPoint
+SD卡	Thẻ SD
+SD卡不存在。	Không có thẻ SD.
+SD卡存储空间不足，无法保存来自“%1$s”的文件	Thẻ SD không đủ dung lượng để lưu tệp từ “%1$s”
+SHA-1 指纹：	Dấu vân SHA-1:
+SHA-256 指纹：	Dấu vân SHA-256:
+SIM 卡 %d 已由运营商暂时关闭	SIM %d đã bị nhà mạng tạm tắt
+SIM 卡 PIN 码解锁。	Mở khóa bằng mã PIN của SIM.
+SIM 卡 PUK 码解锁。	Mở khóa bằng mã PUK của SIM.
+SIM 卡不支持语音	SIM không hỗ trợ thoại
+SIM 卡已用 PUK 码锁定。	SIM đã khóa bằng mã PUK.
+SIM 卡已被锁定。	SIM đã bị khóa.
+SIM 卡状态	Trạng thái SIM
+SIM卡已被停用，需要输入PUK码才能继续使用。有关详情，请联系您的运营商。	SIM đã bị vô hiệu hóa, cần nhập mã PUK để tiếp tục. Hãy liên hệ nhà mạng để biết chi tiết.
+SIM卡无法使用。	Không dùng được SIM.
+SIM卡缺失或无法读取。请插入SIM卡。	Thiếu SIM hoặc không đọc được. Hãy lắp SIM.
+SS 请求已更改为 USSD 请求	Yêu cầu SS đã đổi thành yêu cầu USSD
+SS 请求已更改为普通通话	Yêu cầu SS đã đổi thành cuộc gọi thường
+SS 请求已更改为视频通话	Yêu cầu SS đã đổi thành cuộc gọi video
+U 盘	USB
+USB 外设端口	Cổng phụ kiện USB
+USB 连接	Kết nối USB
+USB 配件已连接	Đã kết nối phụ kiện USB
+USB存储器	Bộ nhớ USB
+USSD 请求已更改为 SS 请求	Yêu cầu USSD đã đổi thành yêu cầu SS
+USSD 请求已更改为普通通话	Yêu cầu USSD đã đổi thành cuộc gọi thường
+USSD 请求已更改为视频通话	Yêu cầu USSD đã đổi thành cuộc gọi video
+VPN 状态	Trạng thái VPN
+VR 监听器	Trình nghe VR
+WLAN 将自动开启	Wi-Fi sẽ tự bật
+WLAN 直连	Wi-Fi Direct
+WLAN 通话	Gọi qua Wi-Fi
+WLAN 配置文件	Hồ sơ Wi-Fi
+Wear 不支持安装/卸载操作。	Wear không hỗ trợ cài đặt/gỡ cài đặt.
+Word 文档	Tài liệu Word
+“%1$s”应用想要连接到 WLAN 网络“%2$s”	Ứng dụng “%1$s” muốn kết nối mạng Wi-Fi “%2$s”
+“%1$s”应用（%2$s 进程）违反了自我强制执行的严格模式 (StrictMode) 政策。	Ứng dụng “%1$s” (tiến trình %2$s) đã vi phạm chính sách StrictMode tự áp dụng.
+“%1$s”想要显示“%2$s”图块	“%1$s” muốn hiện ô “%2$s”
+“%1$s”是此设备的一个位置信息服务提供程序。您可以在位置信息设置中修改位置信息使用权。	“%1$s” là nhà cung cấp dịch vụ vị trí của thiết bị. Có thể đổi quyền dùng vị trí trong cài đặt vị trí.
+“%1$s”正在运行	“%1$s” đang chạy
+“%s”已停用打印功能。	“%s” đã tắt chức năng in.
+“%s”想要设置一个 VPN 连接，以便监控网络流量。除非您信任该来源，否则请勿接受此请求。<br /> <br />启用 VPN 后，屏幕顶部会出现一个 <img src=vpn_icon /> 图标。	“%s” muốn thiết lập kết nối VPN để giám sát lưu lượng mạng. Chỉ chấp nhận nếu bạn tin cậy nguồn này.<br /> <br />Khi VPN bật, biểu tượng <img src=vpn_icon /> sẽ hiện ở đầu màn hình.
+“%s”正在其他应用的上层显示内容	“%s” đang hiện trên các ứng dụng khác
+“勿扰”模式使用权限	Quyền dùng “Không làm phiền”
+“勿扰”设置有变更	Cài đặt “Không làm phiền” đã thay đổi
+“展开”/“收起”按钮	Nút “Mở rộng”/“Thu gọn”
+一个用户密钥	Một khóa người dùng
+一个用户证书	Một chứng chỉ người dùng
+一体化位置信息	Vị trí tích hợp
+一律显示	Luôn hiện
+一款应用	Một ứng dụng
+三方通话	Gọi ba bên
+上一曲	Bài trước
+上一条结果	Kết quả trước
+上一页	Trang trước
+上个月	Tháng trước
+下一曲	Bài tiếp theo
+下一条结果	Kết quả tiếp theo
+下个月	Tháng sau
+下载%1$s应用即可激活您的新 SIM 卡	Tải ứng dụng %1$s để kích hoạt SIM mới
+下载中：%s	Đang tải: %s
+下载内容	Nội dung tải xuống
+下载失败。	Tải xuống thất bại.
+下载已完成。	Đã tải xong.
+下载的文件存在问题，无法安装。请确保您是从正确的来源下载文件。	Tệp tải về có vấn đề, không cài được. Hãy tải từ nguồn đúng.
+下载运营商应用即可激活您的新 SIM 卡	Tải ứng dụng của nhà mạng để kích hoạt SIM mới
+不允许使用 SIM 卡 %d	Không được dùng SIM %d
+不再显示	Không hiện lại
+不再询问	Không hỏi lại
+不在附近	Không ở gần
+不支持文件操作。	Không hỗ trợ thao tác tệp.
+不支持此内容。	Không hỗ trợ nội dung này.
+不支持此网站身份验证方案。	Không hỗ trợ cách xác thực của trang web này.
+不支持该协议。	Không hỗ trợ giao thức này.
+不要使用此网络	Không dùng mạng này
+不要重新开启	Không bật lại
+不需要任何权限	Không cần quyền nào
+与服务器的连接超时。	Kết nối máy chủ quá thời gian.
+与电话服务交互	Tương tác với dịch vụ điện thoại
+与蓝牙设备配对	Ghép nối với thiết bị Bluetooth
+与通话屏幕互动	Tương tác với màn hình cuộc gọi
+中午	Trưa
+为USB设备选择一个应用	Chọn ứng dụng cho thiết bị USB
+为了减少流量消耗，流量节省程序会阻止某些应用在后台收发数据。您当前使用的应用可以收发数据，但频率可能会降低。举例而言，这可能意味着图片只有在您点按之后才会显示。	Để giảm dùng dữ liệu, Trình tiết kiệm dữ liệu chặn một số ứng dụng gửi nhận dữ liệu ở nền. Ứng dụng đang dùng vẫn gửi nhận được nhưng có thể ít hơn. Ví dụ, ảnh có thể chỉ hiện khi bạn nhấn vào.
+为了延长电池续航时间，省电模式会关闭部分设备功能并限制应用。	Để kéo dài thời lượng pin, chế độ tiết kiệm pin tắt một số chức năng và hạn chế ứng dụng.
+为了延长电池续航时间，省电模式会关闭部分设备功能并限制应用。了解详情	Để kéo dài thời lượng pin, chế độ tiết kiệm pin tắt một số chức năng và hạn chế ứng dụng. Tìm hiểu thêm
+为了提升性能，一次只能打开其中一个游戏。	Để máy chạy tốt hơn, mỗi lần chỉ mở được một trò chơi.
+为证书命名	Đặt tên chứng chỉ
+主叫号码传送	Gửi số gọi đến
+之后，您可以在“设置”>“应用”中更改此设置	Sau này có thể đổi trong “Cài đặt” > “Ứng dụng”
+互动式报告	Báo cáo tương tác
+互联网连接状况不佳。	Kết nối Internet kém.
+亲属	Người thân
+人脸解锁。	Mở khóa bằng khuôn mặt.
+仅检测到部分指纹，请重试。	Chỉ nhận được một phần vân tay, hãy thử lại.
+仅此一次	Chỉ lần này
+仅限 WLAN	Chỉ Wi-Fi
+介绍人	Người giới thiệu
+仍然打开	Vẫn mở
+仍然拒绝	Vẫn từ chối
+仍然通过浏览器继续操作	Vẫn tiếp tục trên trình duyệt
+从 %s 提取	Trích từ %s
+从列表中清除	Xóa khỏi danh sách
+以下一个或多个应用请求获得相应权限，以便在当前和以后访问您的帐号。	Một hoặc nhiều ứng dụng sau yêu cầu quyền truy cập tài khoản của bạn, bây giờ và sau này.
+以纯文本形式粘贴	Dán dạng văn bản thuần
+份数	Số bản
+份数：	Số bản:
+休息时间	Giờ nghỉ
+会话密钥	Khóa phiên
+会话：	Phiên:
+传入	Đến
+传出	Đi
+传真	Fax
+位置	Vị trí
+位置信息	Thông tin vị trí
+位置信息设置	Cài đặt vị trí
+作曲家	Nhà soạn nhạc
+使用%1$s分享	Chia sẻ bằng %1$s
+使用%1$s完成操作	Hoàn tất bằng %1$s
+使用%1$s截图	Chụp màn hình bằng %1$s
+使用%1$s打开	Mở bằng %1$s
+使用%1$s编辑	Sửa bằng %1$s
+使用%s分享	Chia sẻ bằng %s
+使用下载管理器。	Dùng trình quản lý tải xuống.
+使用以下应用截图	Chụp màn hình bằng ứng dụng sau
+使用以下应用打开这类文件：	Mở loại tệp này bằng ứng dụng sau:
+使用其他应用	Dùng ứng dụng khác
+使用即时通讯通话服务	Dùng dịch vụ gọi qua tin nhắn nhanh
+使用快捷方式	Dùng lối tắt
+使用指纹硬件	Dùng phần cứng vân tay
+使用生物特征硬件	Dùng phần cứng sinh trắc học
+使用蓝牙时的通话音量	Âm lượng cuộc gọi khi dùng Bluetooth
+例如，登录页面可能并不属于页面上显示的单位。	Ví dụ, trang đăng nhập có thể không thuộc tổ chức hiện trên trang.
+例如：1-5、8、11-13	Ví dụ: 1-5, 8, 11-13
+依据政策强制执行	Bắt buộc theo chính sách
+俄语，Mac 风格	Tiếng Nga, kiểu Mac
+保存为 PDF	Lưu thành PDF
+保存为PDF格式	Lưu định dạng PDF
+保存文档	Lưu tài liệu
+保留下载缓存中的空间	Giữ chỗ trong bộ đệm tải xuống
+信任证书：\n%s\n	Tin cậy chứng chỉ:\n%s\n
+信息	Tin nhắn
+修改	Sửa
+修改“浏览器”地理位置的权限	Sửa quyền vị trí của “Trình duyệt”
+修改您的通讯录	Sửa danh bạ
+修改或删除您的SD卡中的内容	Sửa hoặc xóa nội dung trên thẻ SD
+修改系统设置	Sửa cài đặt hệ thống
+修改网络使用情况记录方式	Sửa cách ghi nhận sử dụng mạng
+停止	Dừng
+停用屏幕锁定	Tắt khóa màn hình
+停用屏幕锁定的部分功能	Tắt một số chức năng khóa màn hình
+停用或修改状态栏	Tắt hoặc sửa thanh trạng thái
+停用相机	Tắt camera
+允许%1$s使用 %2$s 创建新用户吗？	Cho phép %1$s tạo người dùng mới bằng %2$s?
+允许%1$s使用 %2$s（目前已有用户使用此帐号）创建新用户吗？	Cho phép %1$s tạo người dùng mới bằng %2$s (tài khoản này đang có người dùng)?
+允许<b>%1$s</b>发送和查看短信吗？	Cho phép <b>%1$s</b> gửi và xem tin nhắn?
+允许<b>%1$s</b>录音吗？	Cho phép <b>%1$s</b> ghi âm?
+允许<b>%1$s</b>拍摄照片和录制视频吗？	Cho phép <b>%1$s</b> chụp ảnh và quay video?
+允许<b>%1$s</b>拨打电话和管理通话吗？	Cho phép <b>%1$s</b> gọi điện và quản lý cuộc gọi?
+允许<b>%1$s</b>获取此设备的位置信息吗？	Cho phép <b>%1$s</b> truy cập vị trí của thiết bị?
+允许<b>%1$s</b>访问与您的生命体征相关的传感器数据吗？	Cho phép <b>%1$s</b> truy cập dữ liệu cảm biến về dấu hiệu sinh tồn của bạn?
+允许<b>%1$s</b>访问您的手机通话记录吗？	Cho phép <b>%1$s</b> truy cập nhật ký cuộc gọi?
+允许<b>%1$s</b>访问您的日历吗？	Cho phép <b>%1$s</b> truy cập lịch?
+允许<b>%1$s</b>访问您的通讯录吗？	Cho phép <b>%1$s</b> truy cập danh bạ?
+允许<b>%1$s</b>访问您设备上的照片、媒体内容和文件吗？	Cho phép <b>%1$s</b> truy cập ảnh, nội dung đa phương tiện và tệp trên thiết bị?
+允许以状态栏形式显示应用。	Cho phép ứng dụng hiện dạng thanh trạng thái.
+允许应用与近距离无线通信(NFC)标签、卡和读取器通信。	Cho phép ứng dụng giao tiếp với thẻ, tem và đầu đọc NFC.
+允许应用使用多播地址接收发送到 WLAN 网络中所有设备（而不仅仅是您的电视）的数据包。该操作的耗电量比非多播模式要大。	Cho phép ứng dụng nhận gói gửi đến mọi thiết bị trong mạng Wi-Fi bằng địa chỉ đa hướng, không chỉ thiết bị này. Việc này tốn điện hơn chế độ thường.
+允许应用使用电视的红外线发射器。	Cho phép ứng dụng dùng bộ phát hồng ngoại của thiết bị.
+允许应用修改“浏览器”的地理位置权限。恶意应用可能借此向任意网站发送位置信息。	Cho phép ứng dụng sửa quyền vị trí của “Trình duyệt”. Ứng dụng độc hại có thể dùng để gửi vị trí đến bất kỳ trang web nào.
+允许应用修改您的电视上存储的浏览器历史记录或书签。此权限可让应用清除或修改浏览器数据。请注意：此权限可能不适用于第三方浏览器或具备网页浏览功能的其他应用。	Cho phép ứng dụng sửa lịch sử duyệt web hoặc dấu trang lưu trên thiết bị, kể cả xóa dữ liệu trình duyệt. Lưu ý: có thể không áp dụng với trình duyệt bên thứ ba hoặc ứng dụng duyệt web khác.
+允许应用修改您的电视上存储的联系人相关数据，包括您与特定联系人通话、发送电子邮件或通过其他方式进行通信的频率。此权限可让应用删除联系人数据。	Cho phép ứng dụng sửa dữ liệu danh bạ trên thiết bị, gồm tần suất bạn gọi, gửi email hoặc liên lạc với từng người. Quyền này cho phép xóa dữ liệu danh bạ.
+允许应用修改电视的通话记录，包括有关来电和外拨电话的数据。恶意应用可能会借此清除或修改您的通话记录。	Cho phép ứng dụng sửa nhật ký cuộc gọi, gồm dữ liệu cuộc gọi đến và đi. Ứng dụng độc hại có thể xóa hoặc sửa nhật ký này.
+允许应用修改系统的设置数据。恶意应用可能会破坏您的系统配置。	Cho phép ứng dụng sửa dữ liệu cài đặt hệ thống. Ứng dụng độc hại có thể phá hỏng cấu hình hệ thống.
+允许应用修改触摸屏的校准参数。普通应用绝不需要此权限。	Cho phép ứng dụng sửa thông số hiệu chuẩn màn hình cảm ứng. Ứng dụng thường không cần quyền này.
+允许应用停用状态栏或者增删系统图标。	Cho phép ứng dụng tắt thanh trạng thái hoặc thêm bớt biểu tượng hệ thống.
+允许应用写入SD卡。	Cho phép ứng dụng ghi vào thẻ SD.
+允许应用发送持久广播消息，此类消息在广播结束后仍会保留。过度使用可能会导致电视使用过多内存，从而降低其速度或稳定性。	Cho phép ứng dụng gửi thông điệp quảng bá lưu lại sau khi kết thúc. Dùng quá nhiều có thể tốn bộ nhớ, làm máy chậm hoặc kém ổn định.
+允许应用向SIM卡发送命令（此权限具有很高的危险性）。	Cho phép ứng dụng gửi lệnh đến SIM (quyền này rất nguy hiểm).
+允许应用向用户提供通话体验。	Cho phép ứng dụng cung cấp trải nghiệm cuộc gọi cho người dùng.
+允许应用启用车载模式。	Cho phép ứng dụng bật chế độ trên xe.
+允许应用在内存中持续保留其自身的部分组件。此权限可能会限制其他应用可用的内存，从而减缓电视运行速度。	Cho phép ứng dụng giữ một phần của nó luôn trong bộ nhớ. Việc này có thể giảm bộ nhớ cho ứng dụng khác và làm máy chậm.
+允许应用在已安装的闹钟应用中设置闹钟。有些闹钟应用可能无法实现此功能。	Cho phép ứng dụng đặt báo thức trong ứng dụng báo thức đã cài. Một số ứng dụng báo thức có thể không hỗ trợ.
+允许应用在您的语音信箱中留言。	Cho phép ứng dụng để lại tin nhắn trong hộp thư thoại.
+允许应用在拨出电话时查看拨打的电话号码，并选择改为拨打其他号码或完全中止通话。	Cho phép ứng dụng xem số đang gọi đi và chọn gọi số khác hoặc hủy cuộc gọi.
+允许应用在系统启动完毕后立即自行启动。此权限可能会延长电视的启动时间，而且会因为系统一直运行该应用而导致电视的整体运行速度变慢。	Cho phép ứng dụng tự chạy ngay khi hệ thống khởi động xong. Việc này có thể làm khởi động lâu hơn và máy chậm hơn do ứng dụng luôn chạy.
+允许应用展开或收起状态栏。	Cho phép ứng dụng mở rộng hoặc thu gọn thanh trạng thái.
+允许应用建立和断开电视与 WiMAX 网络之间的连接。	Cho phép ứng dụng kết nối và ngắt kết nối thiết bị với mạng WiMAX.
+允许应用控制振动器。	Cho phép ứng dụng điều khiển bộ rung.
+允许应用控制用户看到通话屏幕的时机和方式。	Cho phép ứng dụng quyết định thời điểm và cách hiện màn hình cuộc gọi.
+允许应用更改电视的时区。	Cho phép ứng dụng đổi múi giờ của thiết bị.
+允许应用更改绑定网络连接的状态。	Cho phép ứng dụng đổi trạng thái kết nối mạng chia sẻ.
+允许应用更改网络连接的状态。	Cho phép ứng dụng đổi trạng thái kết nối mạng.
+允许应用查看电视上的蓝牙配置，以及与配对设备建立连接或接受其连接请求。	Cho phép ứng dụng xem cấu hình Bluetooth, kết nối với thiết bị đã ghép hoặc nhận yêu cầu kết nối từ chúng.
+允许应用检索其代码、数据和缓存大小	Cho phép ứng dụng lấy kích thước mã, dữ liệu và bộ đệm của nó
+允许应用监听网络状况的观测信息。普通应用绝不需要此权限。	Cho phép ứng dụng nghe thông tin quan sát tình trạng mạng. Ứng dụng thường không cần quyền này.
+允许应用移除DRM证书。普通应用绝不需要此权限。	Cho phép ứng dụng gỡ chứng chỉ DRM. Ứng dụng thường không cần quyền này.
+允许应用管理网络规范和定义专门针对应用的规则。	Cho phép ứng dụng quản lý chính sách mạng và đặt quy tắc riêng cho ứng dụng.
+允许应用绑定到互动屏保服务的顶级接口。普通应用绝不需要此权限。	Cho phép ứng dụng liên kết với giao diện cấp cao của dịch vụ bảo vệ màn hình tương tác. Ứng dụng thường không cần quyền này.
+允许应用绑定到条件提供程序服务的顶级接口。普通应用绝不需要此权限。	Cho phép ứng dụng liên kết với giao diện cấp cao của dịch vụ cung cấp điều kiện. Ứng dụng thường không cần quyền này.
+允许应用绑定到运营商服务。普通应用绝不需要此权限。	Cho phép ứng dụng liên kết với dịch vụ nhà mạng. Ứng dụng thường không cần quyền này.
+允许应用绑定到运营商消息传递服务的顶级接口。普通应用绝不需要此权限。	Cho phép ứng dụng liên kết với giao diện cấp cao của dịch vụ nhắn tin nhà mạng. Ứng dụng thường không cần quyền này.
+允许应用绑定到通知侦听器服务的顶级接口（普通应用绝不需要此权限）。	Cho phép ứng dụng liên kết với giao diện cấp cao của dịch vụ nghe thông báo (ứng dụng thường không cần quyền này).
+允许应用自行使用即时通讯服务拨打电话。	Cho phép ứng dụng tự gọi điện qua dịch vụ nhắn tin nhanh.
+允许应用自行删除主屏幕快捷方式。	Cho phép ứng dụng tự xóa lối tắt trên màn hình chính.
+允许应用自行添加主屏幕快捷方式。	Cho phép ứng dụng tự thêm lối tắt vào màn hình chính.
+允许应用获取有关当前同步的 Feed 的详情。	Cho phép ứng dụng lấy chi tiết về nguồn cấp đang đồng bộ.
+允许应用获取电视已知的帐号列表，其中可能包括由已安装的应用创建的所有帐号。	Cho phép ứng dụng lấy danh sách tài khoản thiết bị đã biết, có thể gồm mọi tài khoản do ứng dụng đã cài tạo ra.
+允许应用设置个人资料所有者和设备所有者。	Cho phép ứng dụng đặt chủ hồ sơ và chủ thiết bị.
+允许应用设置有关系统壁纸大小的提示。	Cho phép ứng dụng đặt gợi ý kích thước hình nền hệ thống.
+允许应用设置系统壁纸。	Cho phép ứng dụng đặt hình nền hệ thống.
+允许应用访问蓝牙共享 (BluetoothShare) 管理器并将其用于传输文件。	Cho phép ứng dụng dùng trình quản lý chia sẻ Bluetooth để truyền tệp.
+允许应用请求删除文件包。	Cho phép ứng dụng yêu cầu xóa gói.
+允许应用请求安装文件包。	Cho phép ứng dụng yêu cầu cài gói.
+允许应用请求相应的权限，以便忽略针对该应用的电池优化。	Cho phép ứng dụng xin quyền bỏ qua tối ưu pin cho nó.
+允许应用读取安装会话。这样，应用将可以查看有关当前软件包安装的详情。	Cho phép ứng dụng đọc phiên cài đặt để xem chi tiết các gói đang cài.
+允许应用读取您SD卡的内容。	Cho phép ứng dụng đọc nội dung thẻ SD.
+允许应用读取您的电视上存储的联系人相关数据，包括您与特定联系人通话、发送电子邮件或通过其他方式进行通信的频率。此权限可让应用保存您的联系人数据，而且恶意应用可能会在您不知情的情况下分享联系人数据。	Cho phép ứng dụng đọc dữ liệu danh bạ trên thiết bị, gồm tần suất bạn gọi, gửi email hoặc liên lạc với từng người. Ứng dụng có thể lưu dữ liệu danh bạ, và ứng dụng độc hại có thể chia sẻ mà bạn không biết.
+允许应用读取您的设备收到的小区广播消息。小区广播消息是在某些地区发送的、用于发布紧急情况警告的提醒信息。恶意应用可能会在您收到小区紧急广播时干扰您设备的性能或操作。	Cho phép ứng dụng đọc tin quảng bá di động thiết bị nhận được, loại tin cảnh báo khẩn cấp ở một số khu vực. Ứng dụng độc hại có thể gây ảnh hưởng hoạt động của thiết bị khi nhận tin khẩn cấp.
+允许应用读取特定网络和应用的网络使用情况历史记录。	Cho phép ứng dụng đọc lịch sử dùng mạng của từng mạng và ứng dụng.
+允许应用调用运营商提供的配置应用。普通应用绝不需要此权限。	Cho phép ứng dụng gọi ứng dụng cấu hình của nhà mạng. Ứng dụng thường không cần quyền này.
+允许应用配置和使用DRM证书。普通应用绝不需要此权限。	Cho phép ứng dụng cấu hình và dùng chứng chỉ DRM. Ứng dụng thường không cần quyền này.
+允许应用配置本地蓝牙电视，并允许其查找远程设备且与之配对。	Cho phép ứng dụng cấu hình Bluetooth của thiết bị, tìm và ghép nối với thiết bị từ xa.
+允许应用阻止电视进入休眠状态。	Cho phép ứng dụng ngăn thiết bị vào chế độ ngủ.
+允许接收WLAN多播	Cho phép nhận đa hướng Wi-Fi
+允许此应用接收Android Beam当前传输内容的相关信息	Cho phép ứng dụng nhận thông tin về nội dung Android Beam đang truyền
+允许此应用获取：	Cho phép ứng dụng này truy cập:
+允许此应用读取和写入“勿扰”模式配置。	Cho phép ứng dụng đọc và ghi cấu hình “Không làm phiền”.
+允许该应用与WLAN接入点建立和断开连接，以及更改WLAN网络的设备配置。	Cho phép ứng dụng kết nối, ngắt kết nối với điểm truy cập Wi-Fi và đổi cấu hình mạng Wi-Fi.
+允许该应用与电话服务交互以便接打电话。	Cho phép ứng dụng tương tác với dịch vụ điện thoại để gọi và nghe.
+允许该应用使用下载管理器并通过它下载文件。恶意应用可能会借此中断下载并访问私人信息。	Cho phép ứng dụng dùng trình quản lý tải xuống để tải tệp. Ứng dụng độc hại có thể làm gián đoạn tải xuống và truy cập thông tin riêng tư.
+允许该应用使用下载管理器的高级功能。恶意应用可能会借此中断下载并访问私人信息。	Cho phép ứng dụng dùng chức năng nâng cao của trình quản lý tải xuống. Ứng dụng độc hại có thể làm gián đoạn tải xuống và truy cập thông tin riêng tư.
+允许该应用使用其他的位置信息提供程序命令。此权限使该应用可以干扰GPS或其他位置信息源的运作。	Cho phép ứng dụng dùng lệnh bổ sung của nhà cung cấp vị trí, có thể ảnh hưởng hoạt động của GPS hoặc nguồn vị trí khác.
+允许该应用使用前台服务。	Cho phép ứng dụng dùng dịch vụ tiền cảnh.
+允许该应用使用指纹硬件进行身份验证	Cho phép ứng dụng xác thực bằng phần cứng vân tay
+允许该应用使用生物特征硬件进行身份验证	Cho phép ứng dụng xác thực bằng phần cứng sinh trắc học
+允许该应用修改全局音频设置，例如音量和用于输出的扬声器。	Cho phép ứng dụng sửa cài đặt âm thanh chung như âm lượng và loa đầu ra.
+允许该应用修改对于各应用的网络使用情况的统计方式。普通应用不应使用此权限。	Cho phép ứng dụng sửa cách thống kê dùng mạng của từng ứng dụng. Ứng dụng thường không nên dùng quyền này.
+允许该应用修改某个帐号的同步设置。例如，此权限可用于在“联系人”应用与某个帐号之间启用同步。	Cho phép ứng dụng sửa cài đặt đồng bộ của tài khoản, ví dụ bật đồng bộ giữa “Danh bạ” và một tài khoản.
+允许该应用停用键锁以及任何关联的密码安全措施。例如，让手机在接听来电时停用键锁，在通话结束后重新启用键锁。	Cho phép ứng dụng tắt khóa phím và mật khẩu đi kèm, ví dụ tắt khóa khi có cuộc gọi đến rồi bật lại khi cuộc gọi kết thúc.
+允许该应用创建网络套接字和使用自定义网络协议。浏览器和其他某些应用提供了向互联网发送数据的途径，因此应用无需该权限即可向互联网发送数据。	Cho phép ứng dụng tạo socket mạng và dùng giao thức mạng tùy chỉnh. Trình duyệt và một số ứng dụng khác có cách gửi dữ liệu lên Internet nên không cần quyền này vẫn gửi được.
+允许该应用发送下载已完成的通知。恶意应用可能借此伪装成其他下载文件的应用。	Cho phép ứng dụng gửi thông báo đã tải xong. Ứng dụng độc hại có thể giả mạo ứng dụng tải tệp khác.
+允许该应用发送短信。此权限可能会导致意外收费。恶意应用可能会未经您的确认而发送短信，由此产生相关费用。	Cho phép ứng dụng gửi tin nhắn, có thể phát sinh phí ngoài ý muốn. Ứng dụng độc hại có thể gửi tin mà không hỏi bạn.
+允许该应用在不向用户显示任何通知的情况下通过下载管理器下载文件。	Cho phép ứng dụng tải tệp qua trình quản lý tải xuống mà không thông báo.
+允许该应用在您未执行操作的情况下拨打电话号码。此权限可能会导致意外收费或呼叫。请注意，此权限不允许该应用拨打紧急电话号码。恶意应用可通过拨打电话产生相关费用，而无需您的确认。	Cho phép ứng dụng tự gọi số điện thoại, có thể phát sinh phí hoặc cuộc gọi ngoài ý muốn. Quyền này không cho gọi số khẩn cấp. Ứng dụng độc hại có thể gọi điện gây tốn phí mà không hỏi bạn.
+允许该应用存取监测您身体状况的传感器所收集的数据，例如您的心率。	Cho phép ứng dụng truy cập dữ liệu từ cảm biến theo dõi cơ thể, như nhịp tim.
+允许该应用将任务移动到前台和后台。该应用可能不经您的命令自行执行此操作。	Cho phép ứng dụng chuyển tác vụ ra tiền cảnh và nền, có thể tự làm mà không cần lệnh của bạn.
+允许该应用将媒体输出线路更改到其他外部设备。	Cho phép ứng dụng chuyển đầu ra đa phương tiện sang thiết bị ngoài khác.
+允许该应用将文件下载到下载缓存中（系统不会因下载管理器需要更多空间而自动删除下载缓存中的内容）。	Cho phép ứng dụng tải tệp vào bộ đệm tải xuống (không bị tự xóa khi trình quản lý tải xuống cần thêm chỗ).
+允许该应用拨打和接听SIP电话。	Cho phép ứng dụng gọi và nhận cuộc gọi SIP.
+允许该应用接听来电。	Cho phép ứng dụng nghe cuộc gọi đến.
+允许该应用接收和处理 WAP 消息。此权限包括监视发送给您的消息或删除发送给您的消息而不向您显示的功能。	Cho phép ứng dụng nhận và xử lý tin WAP, gồm cả theo dõi hoặc xóa tin gửi cho bạn mà không hiện ra.
+允许该应用接收和处理彩信。这就意味着，该应用可能会监视发送到您设备的彩信，或删除发送到您设备的彩信而不向您显示。	Cho phép ứng dụng nhận và xử lý MMS, có thể theo dõi hoặc xóa MMS gửi đến thiết bị mà không hiện ra.
+允许该应用接收和处理短信。这就意味着，该应用可能会监视发送到您设备的短信，或删除发送到您设备的短信而不向您显示。	Cho phép ứng dụng nhận và xử lý tin nhắn, có thể theo dõi hoặc xóa tin gửi đến thiết bị mà không hiện ra.
+允许该应用暂时将某个蓝牙设备列入白名单，从而允许该设备在不经过用户确认的情况下，将文件发送到本设备。	Cho phép ứng dụng tạm đưa thiết bị Bluetooth vào danh sách cho phép để gửi tệp đến máy này mà không cần xác nhận.
+允许该应用查看WLAN网络的相关信息，例如是否启用了WLAN以及连接的WLAN设备的名称。	Cho phép ứng dụng xem thông tin Wi-Fi, như Wi-Fi có bật không và tên thiết bị đã kết nối.
+允许该应用查看和修改系统上的任意应用下载的所有内容。	Cho phép ứng dụng xem và sửa mọi nội dung do ứng dụng bất kỳ tải về.
+允许该应用查看所有下载到SD卡上的内容（无论这些内容是由哪个应用下载的）。	Cho phép ứng dụng xem mọi nội dung tải về thẻ SD (bất kể ứng dụng nào tải).
+允许该应用查看网络连接的相关信息，例如存在和连接的网络。	Cho phép ứng dụng xem thông tin kết nối mạng, như mạng hiện có và đang kết nối.
+允许该应用检索、检查并清除通知，包括其他应用发布的通知。	Cho phép ứng dụng lấy, kiểm tra và xóa thông báo, kể cả của ứng dụng khác.
+允许该应用检索近期运行的和当前正在运行的任务的相关信息。此权限可让该应用了解设备上使用了哪些应用。	Cho phép ứng dụng lấy thông tin tác vụ gần đây và đang chạy, từ đó biết ứng dụng nào được dùng trên thiết bị.
+允许该应用注册新的电信 SIM 卡连接。	Cho phép ứng dụng đăng ký kết nối SIM viễn thông mới.
+允许该应用注册新的电信网络连接。	Cho phép ứng dụng đăng ký kết nối viễn thông mới.
+允许该应用确定是否启用了 WiMAX 以及连接的任何 WiMAX 网络的相关信息。	Cho phép ứng dụng biết WiMAX có bật không và thông tin mạng WiMAX đã kết nối.
+允许该应用管理电信网络连接。	Cho phép ứng dụng quản lý kết nối viễn thông.
+允许该应用结束其他应用的后台进程。此权限可导致其他应用停止运行。	Cho phép ứng dụng kết thúc tiến trình nền của ứng dụng khác, có thể làm chúng dừng chạy.
+允许该应用继续进行在其他应用中发起的通话。	Cho phép ứng dụng tiếp tục cuộc gọi bắt đầu từ ứng dụng khác.
+允许该应用访问设备上的电话号码。	Cho phép ứng dụng truy cập số điện thoại trên thiết bị.
+允许该应用访问设备的电话功能。此权限可让该应用确定本机号码和设备 ID、是否正处于通话状态以及拨打的号码。	Cho phép ứng dụng truy cập chức năng điện thoại, biết số máy, ID thiết bị, trạng thái gọi và số đang gọi.
+允许该应用读取某个帐号的同步统计信息，包括同步活动历史记录和同步数据量。	Cho phép ứng dụng đọc thống kê đồng bộ của tài khoản, gồm lịch sử và lượng dữ liệu đồng bộ.
+允许该应用读取某个帐号的同步设置。例如，此权限可确定“联系人”应用是否与某个帐号同步。	Cho phép ứng dụng đọc cài đặt đồng bộ của tài khoản, ví dụ “Danh bạ” có đồng bộ với tài khoản đó không.
+允许该应用读取浏览器访问过的所有网址记录以及浏览器的所有书签。请注意：此权限可能不适用于第三方浏览器或具备网页浏览功能的其他应用。	Cho phép ứng dụng đọc mọi địa chỉ đã truy cập và dấu trang của trình duyệt. Lưu ý: có thể không áp dụng với trình duyệt bên thứ ba hoặc ứng dụng duyệt web khác.
+允许该应用调用方法来添加和删除可用的指纹模板。	Cho phép ứng dụng thêm và xóa mẫu vân tay.
+允许该应用通过系统转接来电，以改善通话体验。	Cho phép ứng dụng chuyển cuộc gọi đến qua hệ thống để cải thiện trải nghiệm.
+兄弟	Anh em trai
+光圈	Khẩu độ
+全部%1$s页	Tất cả %1$s trang
+全部已停用	Đã tắt tất cả
+公司	Công ty
+公司总机	Tổng đài công ty
+关闭其他应用	Đóng ứng dụng khác
+关闭声音	Tắt âm thanh
+关闭工具栏溢出	Đóng menu tràn của thanh công cụ
+关闭应用	Đóng ứng dụng
+关闭快捷方式	Tắt lối tắt
+关闭无线电	Tắt radio
+其他传真	Fax khác
+其他应用功能	Chức năng ứng dụng khác
+其他权限	Quyền khác
+内容下载管理器	Trình quản lý tải nội dung
+内容转移操作已完成	Đã chuyển nội dung xong
+内置屏幕	Màn hình tích hợp
+内部共享存储空间	Bộ nhớ chia sẻ trong
+内部存储空间	Bộ nhớ trong
+写入内容时出错	Lỗi khi ghi nội dung
+写入网络书签和历史记录	Ghi dấu trang và lịch sử web
+冰岛语	Tiếng Iceland
+减小	Giảm
+减小分钟值	Giảm phút
+减小小时值	Giảm giờ
+减小年份值	Giảm năm
+减小日期值	Giảm ngày
+减小月份值	Giảm tháng
+凭据用途：	Mục đích chứng danh:
+出于安全考虑，已禁止您的电视安装来自此来源的未知应用。	Vì lý do an toàn, thiết bị đã chặn cài ứng dụng không rõ nguồn gốc từ nguồn này.
+出厂测试失败	Kiểm tra xuất xưởng thất bại
+出现连接问题或 MMI 码无效。	Lỗi kết nối hoặc mã MMI không hợp lệ.
+出现连接问题或功能代码无效。	Lỗi kết nối hoặc mã chức năng không hợp lệ.
+分享	Chia sẻ
+分享方式	Chia sẻ qua
+分享错误报告	Chia sẻ báo cáo lỗi
+分钟转盘	Vòng chọn phút
+切换到个人资料	Chuyển sang hồ sơ cá nhân
+切换到工作资料	Chuyển sang hồ sơ công việc
+切换展开模式	Chuyển chế độ mở rộng
+列表视图	Dạng danh sách
+创建电话号码为\n%s 的联系人	Tạo liên hệ có số\n%s
+删除所有记录	Xóa mọi lịch sử
+删除记录	Xóa lịch sử
+删除这些内容	Xóa các nội dung này
+到%1$s	Đến %1$s
+剩余时间：%s	Thời gian còn lại: %s
+剩余空档数：	Số chỗ còn lại:
+剪切	Cắt
+剪裁壁纸	Cắt hình nền
+功能代码已拨完。	Đã gọi xong mã chức năng.
+助手应用	Ứng dụng trợ lý
+助理	Trợ lý
+勿扰	Không làm phiền
+包	Gói
+包含个人数据，例如信用卡号和密码。	Chứa dữ liệu cá nhân như số thẻ tín dụng và mật khẩu.
+区域偏好设置	Tùy chọn khu vực
+升序	Tăng dần
+午夜	Nửa đêm
+单位寻呼机	Máy nhắn tin cơ quan
+单位手机	Điện thoại cơ quan
+即将完成启动。	Sắp khởi động xong.
+即将显示预览…	Sắp hiện bản xem trước…
+卸载%1$s失败。	Gỡ %1$s thất bại.
+卸载失败。	Gỡ cài đặt thất bại.
+卸载完成。	Đã gỡ cài đặt.
+卸载快捷方式	Gỡ lối tắt
+压缩	Nén
+原因：%1$s	Lý do: %1$s
+原始元数据：%1$s	Siêu dữ liệu gốc: %1$s
+原始大小（字节）	Kích thước gốc (byte)
+双击可以进行缩放控制	Nhấn đúp để điều khiển thu phóng
+双面	Hai mặt
+发件人：	Người gửi:
+发射红外线	Phát hồng ngoại
+发生了网络错误。	Đã xảy ra lỗi mạng.
+发短信	Nhắn tin
+发给：“%1$s”	Gửi đến: “%1$s”
+发送	Gửi
+发送下载通知。	Gửi thông báo tải xuống.
+发送和查看短信	Gửi và xem tin nhắn
+发送持久广播	Gửi quảng bá lưu lại
+发送短信	Gửi tin nhắn
+取消保存打印机	Bỏ lưu máy in
+取消固定	Bỏ ghim
+取消时要求绘制解锁图案	Yêu cầu vẽ hình mở khóa khi bỏ ghim
+取消时要求输入PIN码	Yêu cầu mã PIN khi bỏ ghim
+取消时要求输入密码	Yêu cầu mật khẩu khi bỏ ghim
+受到 %s 监控	Được %s giám sát
+受到不明第三方的监控	Bị bên thứ ba không rõ giám sát
+叠加视图 #%1$d	Khung phủ #%1$d
+只有安装在/system/app中的软件包支持FACTORY_TEST操作。	Chỉ gói cài trong /system/app mới hỗ trợ FACTORY_TEST.
+只有设备的机主才能安装证书。	Chỉ chủ thiết bị mới cài được chứng chỉ.
+只能对固定拨号号码执行此类操作。	Thao tác này chỉ dùng được với số quay cố định.
+只能拨打紧急呼救电话	Chỉ gọi được số khẩn cấp
+只读	Chỉ đọc
+可以捕获在设备指纹传感器上执行的手势。	Có thể ghi nhận cử chỉ trên cảm biến vân tay.
+可执行点按、滑动、双指张合等手势。	Có thể nhấn, vuốt, chụm mở hai ngón và các cử chỉ khác.
+可用于传输照片和媒体文件	Dùng để truyền ảnh và tệp đa phương tiện
+可用空间：%1$s	Dung lượng trống: %1$s
+可连接	Kết nối được
+合作伙伴	Đối tác
+同居伴侣	Bạn đời
+同步	Đồng bộ
+名称：%1$s\nFQDN：%2$s\nRoaming Consortiums：%3$s\nRealm：%4$s\n身份验证方式：EAP-%5$s\n	Tên: %1$s\nFQDN: %2$s\nRoaming Consortiums: %3$s\nRealm: %4$s\nCách xác thực: EAP-%5$s\n
+后台流量受限制	Hạn chế dữ liệu nền
+向 SIM 卡发送命令	Gửi lệnh đến SIM
+向上导航	Điều hướng lên
+向上滑动可增大数值，向下滑动可减小数值。	Vuốt lên để tăng, vuốt xuống để giảm.
+向用户提供通话体验	Cung cấp trải nghiệm cuộc gọi
+否	Không
+启动TCP服务器	Khởi động máy chủ TCP
+启动WLAN直连。此操作将会关闭WLAN客户端/热点。	Bật Wi-Fi Direct. Thao tác này sẽ tắt Wi-Fi khách/điểm phát.
+启用和停用同步	Bật và tắt đồng bộ
+启用漫游指示符	Bật chỉ báo chuyển vùng
+启用漫游横幅	Bật biểu ngữ chuyển vùng
+启用触摸浏览	Bật khám phá bằng cách chạm
+启用车载模式	Bật chế độ trên xe
+周	Tuần
+周一至周五夜间	Đêm thứ Hai đến thứ Sáu
+周年纪念日	Ngày kỷ niệm
+周末	Cuối tuần
+回复	Trả lời
+回拨号码	Số gọi lại
+固定	Ghim
+图案区域。	Vùng hình mở khóa.
+图案尝试次数过多	Thử hình mở khóa quá nhiều lần
+图案已清除	Đã xóa hình mở khóa
+图案绘制完成	Đã vẽ xong hình mở khóa
+图案解锁。	Mở khóa bằng hình.
+图案错误	Sai hình mở khóa
+在SD卡上找不到证书文件。	Không thấy tệp chứng chỉ trên thẻ SD.
+在“%1$s”中查看	Xem trong “%1$s”
+在“系统设置”>“应用”>“已下载”中清除默认设置。	Xóa mặc định trong “Cài đặt hệ thống” > “Ứng dụng” > “Đã tải xuống”.
+在“系统设置”>“应用”>“已下载”中重新启用此模式。	Bật lại chế độ này trong “Cài đặt hệ thống” > “Ứng dụng” > “Đã tải xuống”.
+在后台使用数据	Dùng dữ liệu ở nền
+在后台运行	Chạy ở nền
+在大多数情况下，建议您使用此选项，以便追踪报告的生成进度，输入与相应问题相关的更多详细信息，以及截取屏幕截图。系统可能会省略掉一些不常用的区段，从而缩短生成报告的时间。	Nên dùng trong đa số trường hợp để theo dõi tiến trình tạo báo cáo, nhập thêm chi tiết về sự cố và chụp màn hình. Hệ thống có thể bỏ một số mục ít dùng để tạo báo cáo nhanh hơn.
+在提供程序中显示	Hiện trong nhà cung cấp
+在新窗口中打开	Mở trong cửa sổ mới
+在日历中查看所选时间	Xem thời gian đã chọn trong lịch
+在网页上查找	Tìm trên trang web
+地图	Bản đồ
+地图和导航	Bản đồ và điều hướng
+均未停用	Chưa tắt mục nào
+坐标	Tọa độ
+基座扬声器	Loa đế
+增大	Tăng
+增大分钟值	Tăng phút
+增大小时值	Tăng giờ
+增大年份值	Tăng năm
+增大日期值	Tăng ngày
+增大月份值	Tăng tháng
+壁纸	Hình nền
+声音已关闭	Đã tắt âm thanh
+声音已开启	Đã bật âm thanh
+复制	Sao chép
+复制到…	Sao chép đến…
+复制网址	Sao chép địa chỉ
+复制通讯录数据库	Sao chép cơ sở dữ liệu danh bạ
+外部存储设备	Thiết bị lưu trữ ngoài
+大8开	8K lớn
+大小	Kích thước
+天	Ngày
+失败的卸载操作	Gỡ cài đặt thất bại
+失败的打印作业	Lệnh in thất bại
+失败，请开启 SIM/RUIM 卡锁定设置。	Thất bại, hãy bật khóa SIM/RUIM.
+如果您不想让“%s”使用此功能，请点按以打开设置，然后关闭此功能。	Nếu không muốn “%s” dùng chức năng này, hãy nhấn để mở cài đặt rồi tắt đi.
+如果您拒绝此权限，您设备的基本功能可能会无法正常使用。	Nếu từ chối quyền này, các chức năng cơ bản của thiết bị có thể không hoạt động đúng.
+如果您的设备无响应或运行速度缓慢，或者您需要查看所有区段的报告信息，则建议您使用此选项将系统干扰程度降到最低。系统不支持您输入更多详细信息，也不会截取其他屏幕截图。	Nên dùng khi thiết bị không phản hồi hoặc chậm, hoặc khi cần báo cáo đầy đủ mọi mục, để giảm ảnh hưởng đến hệ thống. Không nhập thêm chi tiết được và không chụp thêm màn hình.
+始终	Luôn luôn
+始终开启的 VPN 已断开连接	VPN luôn bật đã ngắt kết nối
+始终显示	Luôn hiện
+姐妹	Chị em gái
+媒体存储设备	Thiết bị lưu đa phương tiện
+媒体控制	Điều khiển đa phương tiện
+媒体详情	Chi tiết đa phương tiện
+媒体音量	Âm lượng đa phương tiện
+子女	Con cái
+字	Chữ
+字符	Ký tự
+存储服务	Dịch vụ lưu trữ
+存储设置	Cài đặt bộ nhớ
+存储问题。	Lỗi bộ nhớ.
+安全模式	Chế độ an toàn
+安全证书	Chứng chỉ bảo mật
+安装 PDF 查看器以便预览	Cài trình xem PDF để xem trước

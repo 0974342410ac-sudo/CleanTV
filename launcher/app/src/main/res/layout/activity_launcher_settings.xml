@@ -88,6 +88,7 @@
         <TextView android:id="@+id/uiRows" style="@style/SettingsRow" android:layout_marginTop="10dp" />
         <TextView android:id="@+id/uiDockTitle" style="@style/SettingsRow" android:layout_marginTop="10dp" />
         <TextView android:id="@+id/uiStats" style="@style/SettingsRow" android:layout_marginTop="10dp" />
+        <TextView android:id="@+id/uiLunar" style="@style/SettingsRow" android:layout_marginTop="10dp" />
         <TextView android:id="@+id/uiReduced" style="@style/SettingsRow" android:layout_marginTop="10dp" />
 
         <TextView

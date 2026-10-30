@@ -8,7 +8,7 @@ Cắm vào máy khác (XGIMI đời cũ Android 6, onn, TV box…), ứng dụng
 DOHKO" và không thay đổi gì. Máy khác: dùng gói USB-CapNhat chung.
 
 CÁCH DÙNG
-1. Chép thư mục USB-CapNhat-XGIMI-DOHKO vào USB.
+1. Chép thư mục gói này (USB-CapNhat-XGIMI-DOHKO hoặc USB-CapNhat-RS20) vào USB.
 2. Cắm USB vào máy chiếu. Mở X-plore (hoặc trình quản lý file), vào USB, chọn CapNhatXGIMI-DOHKO.apk và
    cài đặt. Nếu máy hỏi cho phép cài ứng dụng không rõ nguồn: chọn Cho phép.
 3. Mở ứng dụng "Cập nhật XGIMI DOHKO" (trong danh sách ứng dụng), bấm "Cập nhật". Ứng dụng tự:
@@ -18,7 +18,22 @@ CÁCH DÙNG
    3/3 Việt hoá Cài đặt XGIMI, menu tắt máy (nút nguồn) và 20 ứng dụng XGIMI (HDMI, thanh hệ thống,
        cài ứng dụng, lấy nét, Cửa thần kỳ, nhạc, karaoke, tài khoản…), và giữ tiếng Việt sau mỗi lần
        khởi động lại (máy này tự xoá bản dịch khi khởi động; launcher tạo lại sau khoảng 1 phút).
+       Việt hoá cả tên các ô trong menu cài đặt nhanh (phím cài đặt nhanh trên remote). Nếu ứng dụng báo
+       "chưa có dữ liệu menu cài đặt nhanh": bấm phím đó một lần cho menu hiện ra, rồi bấm "Cập nhật" lại.
+       Cài bộ nhận dạng giọng nói của Google nếu máy chưa có: giữ phím micro trên remote, nói tiếng Việt, thả ra
+       để tìm (cần mạng). Trợ lý giọng nói tiếng Trung của XGIMI được tắt và tự tắt lại sau mỗi lần khởi động.
 4. Xong thì bấm "Trở về" (hoặc Home) để về màn hình chính mới. Có thể rút USB.
+
+Nếu máy báo không cài được vì trùng hoặc khác chữ ký: gỡ ứng dụng "Cập nhật XGIMI DOHKO" cũ rồi cài lại. Gỡ ứng
+dụng này không làm mất launcher hay bản dịch đã áp dụng.
+
+CÓ THỂ CÒN TIẾNG TRUNG
+- Firmware máy này bị mã hoá nên bản dịch dựa trên chữ của RS 20 Pro Max bản v1.6.50. Chữ chỉ có trên đời máy hoặc
+  bản firmware khác, và ô mới trong menu cài đặt nhanh (tên do máy chủ XGIMI gửi về) có thể còn tiếng Trung.
+- Danh sách chọn dạng mảng (như chế độ màu) và chữ viết cứng trong code không đổi được bằng cách này.
+- Ứng dụng bị tắt khi cập nhật (quảng cáo, kho ứng dụng, truyền màn hình...) không được dịch thêm.
+- Viết cứng trong code nên giữ tiếng Trung: dòng ngày tháng ở menu cài đặt nhanh, chữ "设置" sau HDMI 1 / HDMI 2 ở
+  mục Nguồn vào, chữ "自动" ở mục Giao diện.
 
 REMOTE ĐIỆN THOẠI (CẢ IPHONE)
 - Giữ OK trên nút Cài đặt của màn hình chính, chọn "Remote điện thoại": máy chiếu hiện địa chỉ và mã PIN.
@@ -30,7 +45,8 @@ BẬT ADB
 
 KHÔI PHỤC
 - Mở "Cập nhật XGIMI DOHKO", bấm "Khôi phục": bật lại các ứng dụng đã tắt, trả màn hình chính XGIMI,
-  bỏ Việt hoá Cài đặt, menu tắt máy và các ứng dụng XGIMI, bỏ tự Việt hoá sau khởi động.
+  bỏ Việt hoá Cài đặt, menu tắt máy và các ứng dụng XGIMI, bỏ tự Việt hoá sau khởi động, trả lại dữ liệu
+  menu cài đặt nhanh ban đầu, gỡ bộ nhận dạng giọng nói nếu do ứng dụng này cài.
 
 YÊU CẦU
 - Máy chiếu bật Gỡ lỗi mạng (ADB) cho lần cập nhật đầu tiên.

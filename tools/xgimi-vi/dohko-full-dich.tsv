@@ -1,0 +1,153 @@
+# Bang dich them cho XGIMI DOHKO / RS 20 (v1.6.50), tu lan quet ung dung tren may .12, 2026-10-30.
+ 元	 đồng
+FPGA升级成功, 请按返回键退出	Nâng cấp FPGA thành công, nhấn Quay lại để thoát
+《极米用户服务协议》	“Thỏa thuận dịch vụ người dùng XGIMI”
+正在缓冲%s	Đang tải đệm %s
+请拔出网线后再连接Wi-Fi	Hãy rút cáp mạng rồi mới kết nối Wi-Fi
+重试	Thử lại
+%1$s 寸	%1$s inch
+%s 分钟	%s phút
+%s 小时	%s giờ
+%s 已预约	%s đã đặt trước
+1.升级过程中遥控器暂不可使用\n2.请保持遥控器靠近投影仪，处于连接状态\n3.请勿关闭设备或切断电源	1. Trong lúc nâng cấp, tạm thời không dùng được điều khiển\n2. Giữ điều khiển gần máy chiếu và ở trạng thái kết nối\n3. Không tắt thiết bị hoặc ngắt nguồn điện
+AMD FreeSync生效时无法关闭高帧率模式	Không tắt được chế độ tốc độ khung hình cao khi AMD FreeSync đang hoạt động
+FPGA升级中，请勿拔出U盘或断电!!!，升级状态：%1$d，进度：%2$d%%	Đang nâng cấp FPGA, không rút USB hoặc ngắt điện!!! Trạng thái: %1$d, tiến độ: %2$d%%
+FPGA升级失败，升级状态：%1$d，进度：%2$d%%	Nâng cấp FPGA thất bại, trạng thái: %1$d, tiến độ: %2$d%%
+FPGA升级成功, 倒计时%1$d秒自动退出，或返回键退出	Nâng cấp FPGA thành công, tự thoát sau %1$d giây hoặc nhấn Quay lại để thoát
+HiLCOS升级中，请勿拔出U盘或断电!!!，升级状态：%1$d，进度：%2$d%%	Đang nâng cấp HiLCOS, không rút USB hoặc ngắt điện!!! Trạng thái: %1$d, tiến độ: %2$d%%
+HiLCOS升级失败，升级状态：%1$d，进度：%2$d%%	Nâng cấp HiLCOS thất bại, trạng thái: %1$d, tiến độ: %2$d%%
+HiLCOS升级完成, 升级状态：%1$d，进度：%2$d%%，请返回键退出	Đã nâng cấp HiLCOS xong, trạng thái: %1$d, tiến độ: %2$d%%, nhấn Quay lại để thoát
+OSD已禁用	Đã tắt OSD
+RGBD模组升级中，请勿断电!!!	Đang nâng cấp mô-đun RGBD, không ngắt điện!!!
+RGBD模组升级失败，重启投影可继续升级或返回键退出	Nâng cấp mô-đun RGBD thất bại, khởi động lại máy để tiếp tục hoặc nhấn Quay lại để thoát
+RGBD模组升级完成，请返回键退出	Đã nâng cấp mô-đun RGBD xong, nhấn Quay lại để thoát
+Super Vibrant HDR导致墙面颜色适配失效	Super Vibrant HDR làm thích ứng màu tường mất tác dụng
+VRR生效时无法关闭高帧率模式	Không tắt được chế độ tốc độ khung hình cao khi VRR đang hoạt động
+· 露营与家庭，随时随地享受电影\n· 无缝切换供电方式，走到哪里，看到哪里\n· 智能省电，娱乐更持久	· Cắm trại hay ở nhà, xem phim mọi lúc mọi nơi\n· Chuyển nguồn điện liền mạch, đi đâu xem đó\n· Tiết kiệm điện thông minh, giải trí lâu hơn
+·更新过程中无线同屏器暂不可使用\n·请保持无线同屏器靠近投影仪，处于连接状态\n·请勿关闭设备或切断电源	· Trong lúc cập nhật, tạm thời không dùng được bộ truyền không dây\n· Giữ bộ truyền không dây gần máy chiếu và ở trạng thái kết nối\n· Không tắt thiết bị hoặc ngắt nguồn điện
+【刷新率】根据【源设备输出帧率】实时调整提升游戏响应和流畅度，需源设备也支持VRR，推荐在极速模式下开启。	【Tần số quét】 chỉnh theo 【tốc độ khung hình của thiết bị nguồn】 để game phản hồi nhanh và mượt hơn, thiết bị nguồn cũng cần hỗ trợ VRR, nên bật ở chế độ siêu tốc.
+三方软解码时，不可使用超分辨率	Không dùng được siêu phân giải khi giải mã phần mềm bên thứ ba
+上线后将在大屏通知您	Khi phát hành sẽ thông báo trên màn hình lớn
+专家模式下不支持巨幕模式	Chế độ chuyên gia không hỗ trợ màn hình lớn
+为确保设备正常使用，接入充电宝或非官方适配器时，开启节能模式将会减弱亮度和听觉效果	Để thiết bị hoạt động bình thường, khi dùng sạc dự phòng hoặc bộ nguồn không chính hãng, chế độ tiết kiệm điện sẽ giảm độ sáng và âm thanh
+亮度调节-boost模式	Chỉnh độ sáng - chế độ Boost
+仅在21:9或32:9画面比例下支持位移	Chỉ hỗ trợ dịch hình ở tỷ lệ 21:9 hoặc 32:9
+仅在21:9画面比例下支持位移	Chỉ hỗ trợ dịch hình ở tỷ lệ 21:9
+以后可至“设置 > 通用”管理	Sau này có thể quản lý trong “Cài đặt > Chung”
+侧边动作条	Thanh thao tác bên cạnh
+关闭智能防射眼功能？	Tắt chức năng chống chói mắt thông minh?
+内存清理完成	Đã dọn bộ nhớ xong
+准星已复位	Đã đặt lại tâm ngắm
+切换图像模式-性能导致墙面颜色适配失效	Chuyển chế độ hình - Hiệu năng làm thích ứng màu tường mất tác dụng
+切换图像风格-自定义导致墙面颜色适配失效	Chuyển kiểu hình - Tùy chỉnh làm thích ứng màu tường mất tác dụng
+切换形状	Đổi hình dạng
+切换色彩风格-自定义导致墙面颜色适配失效	Chuyển kiểu màu - Tùy chỉnh làm thích ứng màu tường mất tác dụng
+切换颜色	Đổi màu
+删除后，可在“任意门”重新下载	Sau khi xóa có thể tải lại trong “Cửa thần kỳ”
+删除选中屏保？	Xóa hình chờ đã chọn?
+剩余空间不足，无法下载	Không đủ dung lượng, không tải được
+卸载新版本极米投屏\n(恢复出厂时的极米投屏版本)	Gỡ bản mới của Truyền màn hình XGIMI\n(về bản xuất xưởng)
+去开启节能模式	Bật chế độ tiết kiệm điện
+可至“任意门”下载更多屏保	Có thể tải thêm hình chờ trong “Cửa thần kỳ”
+可至屏保详情添加	Có thể thêm trong chi tiết hình chờ
+可选择“屏保管理”删除不常用屏保	Có thể chọn “Quản lý hình chờ” để xóa hình chờ ít dùng
+后台服务已启动	Dịch vụ nền đã khởi động
+启动外设弹窗	Mở hộp thoại thiết bị ngoại vi
+启动外设断开提示	Mở thông báo ngắt thiết bị ngoại vi
+启动播放器动画	Mở hiệu ứng trình phát
+启动防射眼弹窗	Mở hộp thoại chống chói mắt
+吸附特殊镜头，以创造出宽广而独特的视觉效果	Gắn ống kính đặc biệt để tạo hiệu ứng hình rộng và độc đáo
+均衡	Cân bằng
+导致Super Vibrant HDR失效	làm Super Vibrant HDR mất tác dụng
+将任意门设置为默认屏保程序？	Đặt Cửa thần kỳ làm chương trình hình chờ mặc định?
+尝试靠近湖边，触发互动	Thử đến gần hồ để kích hoạt tương tác
+居中	Giữa
+屏保管理	Quản lý hình chờ
+屏保轮播	Trình chiếu hình chờ
+屏幕位移	Dịch màn hình
+展开底部动作条	Mở rộng thanh thao tác dưới
+已关闭节能模式	Đã tắt chế độ tiết kiệm điện
+已开启节能模式	Đã bật chế độ tiết kiệm điện
+已经是第一条视频	Đây đã là video đầu tiên
+已调至节能模式下最高音量	Đã chỉnh âm lượng cao nhất của chế độ tiết kiệm điện
+帧率优先，可能会降低分辨率	Ưu tiên tốc độ khung hình, có thể giảm độ phân giải
+帧率浮窗	Cửa sổ nổi tốc độ khung hình
+延后%.1f秒	Chậm %.1f giây
+开关面板电量不足，请及时更换电池	Pin bảng công tắc yếu, hãy thay pin sớm
+当前片源不支持	Nguồn phim này không hỗ trợ
+当前片源不支持弹幕	Nguồn phim này không hỗ trợ bình luận chạy
+当前风速：%1$s	Tốc độ quạt hiện tại: %1$s
+当贝遥控器	Điều khiển Dangbei
+性能模式导致静音模式失效	Chế độ hiệu năng làm chế độ yên tĩnh mất tác dụng
+性能模式导致高海拔模式失效	Chế độ hiệu năng làm chế độ vùng cao mất tác dụng
+投影距离较近，已自动降低亮度	Khoảng cách chiếu gần, đã tự giảm độ sáng
+抱歉，Android相机出现问题。您可能需要重启设备。	Rất tiếc, camera Android gặp sự cố. Có thể cần khởi động lại thiết bị.
+拖动手柄	Tay nắm kéo
+拖动手柄被点按两次	Tay nắm kéo được nhấn hai lần
+按前往修改亮度	Nhấn để đổi độ sáng
+接入充电宝或非官方适配器时，可手动打开节能模式以保护设备正常使用，节能模式将减弱视觉和听觉效果	Khi dùng sạc dự phòng hoặc bộ nguồn không chính hãng, có thể bật chế độ tiết kiệm điện để bảo vệ thiết bị; chế độ này giảm hình ảnh và âm thanh
+接入官方适配器后节能模式将自动关闭	Chế độ tiết kiệm điện tự tắt khi cắm bộ nguồn chính hãng
+提前%.1f秒	Sớm %.1f giây
+收起底部动作条	Thu gọn thanh thao tác dưới
+故事	Câu chuyện
+无更多视频	Không còn video
+星辰流转	Sao trời xoay vần
+暗部增强	Tăng cường vùng tối
+条码扫描器	Trình quét mã vạch
+检测到人体后自动息屏或全屏遮罩，人体离开或按 @ 恢复屏幕	Tự tắt hình hoặc che toàn màn hình khi phát hiện có người; hình trở lại khi người rời đi hoặc nhấn @
+正在准备FPGA升级...	Đang chuẩn bị nâng cấp FPGA...
+正在准备HiLCOS升级...	Đang chuẩn bị nâng cấp HiLCOS...
+正在准备RGBD模组升级...	Đang chuẩn bị nâng cấp mô-đun RGBD...
+每次启用任意门时，将在选中的内容中轮播	Mỗi lần mở Cửa thần kỳ sẽ trình chiếu các nội dung đã chọn
+清晰	Rõ nét
+清空极米投屏数据\n(退出安全模式)	Xóa dữ liệu Truyền màn hình XGIMI\n(thoát chế độ an toàn)
+游戏增强模式下，长按%s可快速呼出下方增强菜单	Ở chế độ tăng cường game, giữ %s để mở nhanh menu tăng cường bên dưới
+游戏超解析	Siêu phân giải game
+游戏音效	Âm thanh game
+环绕	Vòm
+由于检测到极米投屏多次崩溃，已自动进入安全模式界面\n您可以尝试点击下面的 “清空极米投屏数据”等按钮，再重新进入极米投屏，看是否能正常使用,如果还是有问题请联系客服	Truyền màn hình XGIMI bị lỗi nhiều lần nên đã vào chế độ an toàn\nHãy thử nút “Xóa dữ liệu Truyền màn hình XGIMI” bên dưới rồi mở lại; nếu vẫn lỗi hãy liên hệ bộ phận hỗ trợ
+画质优先，不支持120/240hz的信号源输入	Ưu tiên chất lượng hình, không hỗ trợ tín hiệu vào 120/240 Hz
+画面延迟更低，但不支持【画面校正】	Độ trễ hình thấp hơn nhưng không hỗ trợ 【Hiệu chỉnh hình】
+画面比例调整	Chỉnh tỷ lệ hình
+看正片	Xem phim chính
+系统关键组件缺失，会造成系统功能缺失以及崩溃等问题。\n\n请通过极米官网下载对应固件进行刷机。	Thiếu thành phần hệ thống quan trọng, có thể mất chức năng hoặc bị lỗi.\n\nHãy tải firmware phù hợp từ trang XGIMI để cài lại.
+继续观看	Xem tiếp
+继续长按关机	Tiếp tục giữ để tắt máy
+背景声音	Âm thanh nền
+艺术	Nghệ thuật
+艺术融于生活，名画触手可及。	Nghệ thuật trong đời sống, tranh nổi tiếng trong tầm tay.
+节能模式已关闭	Đã tắt chế độ tiết kiệm điện
+节能模式已开启	Đã bật chế độ tiết kiệm điện
+菜单主题	Chủ đề menu
+虚拟准星	Tâm ngắm ảo
+解限机	Phá giới hạn
+设备名	Tên thiết bị
+设置准星样式	Đặt kiểu tâm ngắm
+设置后，投影闲置时将出现任意门内容。稍后可在“设备偏好设置>屏保”处更改	Khi đặt, máy chiếu sẽ hiện nội dung Cửa thần kỳ lúc rảnh. Có thể đổi sau trong “Tùy chọn thiết bị > Hình chờ”
+请在提示的环境温度下使用	Hãy dùng ở nhiệt độ môi trường được khuyến nghị
+请将条码置于取景框内扫描。	Hãy đặt mã vạch trong khung để quét.
+请将画面比例调整为16:9后重试	Hãy chỉnh tỷ lệ hình về 16:9 rồi thử lại
+请检查滑门前方或滑轨是否有异物阻挡，检查时建议关闭投\n影以避免射眼	Hãy kiểm tra có vật cản trước cửa trượt hoặc ray trượt không; nên tắt máy\nkhi kiểm tra để tránh chói mắt
+请确保无线同屏器在通信范围内，并处于连接状态	Hãy đảm bảo bộ truyền không dây trong tầm liên lạc và đang kết nối
+调整位置	Chỉnh vị trí
+调整形状颜色	Chỉnh hình dạng và màu
+调整黑暗部分的亮度，使其更明显	Chỉnh độ sáng vùng tối để rõ hơn
+轮播内容	Nội dung trình chiếu
+轮播间隔时间	Thời gian giữa các hình
+轮播顺序	Thứ tự trình chiếu
+透明度	Độ trong suốt
+配对成功	Đã ghép nối
+错误：无效	Lỗi: không hợp lệ
+长按 @ 关闭功能	Giữ @ để tắt chức năng
+长按 back 和 Home 直至指示灯闪烁，配对后将继续升级	Giữ Back và Home đến khi đèn nháy, sau khi ghép nối sẽ tiếp tục nâng cấp
+随机循环	Lặp ngẫu nhiên
+需将输入设备的分辨率设置为3840 x 2160	Cần đặt độ phân giải thiết bị vào là 3840 x 2160
+静音模式导致性能模式失效	Chế độ yên tĩnh làm chế độ hiệu năng mất tác dụng
+静音模式导致高海拔模式失效	Chế độ yên tĩnh làm chế độ vùng cao mất tác dụng
+音效： 原生	Âm thanh: Gốc
+顺序循环	Lặp theo thứ tự
+风速控制	Điều khiển tốc độ quạt
+高帧率模式	Chế độ tốc độ khung hình cao
+高海拔模式导致性能模式失效	Chế độ vùng cao làm chế độ hiệu năng mất tác dụng
+高海拔模式导致静音模式失效	Chế độ vùng cao làm chế độ yên tĩnh mất tác dụng
+默认时间	Thời gian mặc định

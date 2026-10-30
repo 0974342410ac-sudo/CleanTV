@@ -151,7 +151,7 @@ public final class LauncherSettingsActivity extends Activity {
             open(new Intent(Settings.ACTION_HOME_SETTINGS));
         });
         findViewById(R.id.tvSettingsChoice).setOnClickListener(v ->
-                open(new Intent(Settings.ACTION_SETTINGS)));
+                SystemSettings.open(this, Settings.ACTION_SETTINGS));
         refresh();
         columnChoices[Math.max(0, Math.min(columns - 4, 3))].requestFocus();
     }
@@ -402,6 +402,10 @@ public final class LauncherSettingsActivity extends Activity {
             choices.edit().putBoolean(Config.UI_STATS, !Config.load(this).showStats).apply();
             changed();
         });
+        findViewById(R.id.uiLunar).setOnClickListener(v -> {
+            choices.edit().putBoolean(Config.UI_LUNAR, !Config.load(this).lunarDate).apply();
+            changed();
+        });
         findViewById(R.id.uiReduced).setOnClickListener(v -> {
             choices.edit().putBoolean(Config.UI_REDUCED_MOTION, !Config.load(this).reducedMotion).apply();
             changed();
@@ -420,6 +424,7 @@ public final class LauncherSettingsActivity extends Activity {
         setRow(R.id.uiRows, R.string.ui_rows, String.valueOf(c.rowsBelowDock));
         setRow(R.id.uiDockTitle, R.string.ui_dock_title, getString(c.dockTitle ? R.string.on : R.string.off));
         setRow(R.id.uiStats, R.string.ui_stats, getString(c.showStats ? R.string.on : R.string.off));
+        setRow(R.id.uiLunar, R.string.ui_lunar, getString(c.lunarDate ? R.string.on : R.string.off));
         setRow(R.id.uiReduced, R.string.ui_reduced, getString(c.reducedMotion ? R.string.on : R.string.off));
     }
 

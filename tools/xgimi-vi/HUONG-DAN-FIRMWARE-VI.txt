@@ -1,0 +1,49 @@
+FIRMWARE TIẾNG VIỆT CHO XGIMI H6 (m7642, ANDROID 9)
+
+CHƯA TỪNG FLASH THỬ TRÊN MÁY THẬT. Hãy thử trước trên một máy bạn chấp nhận được rủi ro hỏng.
+
+File: XGIMI_PIGCHIVALROUS_XM03D.bin hoặc XGIMI_PIGCHIVALROUS_XM13F.bin (bản đã thêm tiếng Việt).
+Hai file gốc của hãng giống hệt nhau từng byte, chỉ khác tên (Product_xiaobai, v6.8.4, GMUI 6.0.400.07).
+Hãy dùng đúng tên mà hãng cấp cho máy của bạn.
+
+CHỈ DÙNG CHO MÁY MÀ FILE GỐC NÀY ĐÚNG LÀ FIRMWARE CỦA NÓ
+- Máy đang chạy v6.8.4 và ứng dụng cập nhật hiện tên "H6", hoặc hãng cấp đúng file đó cho máy.
+- KHÔNG flash lên RS10, RS10 Plus, Z6X, Z7X hay máy khác cùng nền tảng m7642: firmware của chúng khác nhau.
+
+FLASH SẼ LÀM GÌ
+- Xoá toàn bộ dữ liệu trên máy: ứng dụng đã cài, tài khoản, Wi-Fi, cài đặt. Hãy ghi lại những gì cần giữ trước khi làm.
+- Ghi lại toàn bộ firmware như một lần nâng cấp USB chính hãng, kèm các file tiếng Việt trong /vendor/overlay.
+- Đặt mặc định tiếng Việt và giờ Việt Nam.
+- Tuyệt đối không rút điện trong lúc flash.
+
+CÁCH FLASH
+1. Giữ sẵn file firmware gốc của hãng trên một USB khác (xem phần Cứu máy) trước khi bắt đầu.
+2. USB định dạng FAT32 hoặc đúng định dạng máy từng nhận. Chép file vào thư mục gốc của USB.
+3. GIỮ NGUYÊN TÊN FILE: mboot có kiểm tra tên file, đổi tên thì máy có thể không nhận.
+4. Làm đúng theo cách nâng cấp bằng USB của hãng cho máy này, như khi dùng file gốc.
+5. Chờ đến khi máy tự khởi động lại. Lần đầu khởi động có thể lâu hơn bình thường.
+
+SAU KHI FLASH, KIỂM TRA
+- Mở Cài đặt, màn hình chính XGIMI, bảng điều khiển nhanh, các menu chọn: chữ phải là tiếng Việt.
+- Chạy vài ứng dụng XGIMI và xem có ứng dụng nào tự thoát hoặc menu nào chọn sai không.
+- Nếu một ứng dụng chạy lạ khi để tiếng Việt, thử đổi ngôn ngữ hệ thống trong Cài đặt để so sánh.
+- Máy vẫn không có ADB, vì firmware này không đổi phần đó.
+
+VẪN CÓ THỂ CÒN CHỮ KHÔNG PHẢI TIẾNG VIỆT
+- Tên các ô trong menu cài đặt nhanh: máy tải từ máy chủ XGIMI nên có thể vẫn là tiếng Trung.
+- Một ít nhãn viết cứng trong code: 关机并升级, 已开启, 未开启, 更多网络设置, 去更改.
+- Tiếng Trung: bàn phím Sogou, menu nhà máy, giọng đọc, chữ viết cứng trong code hoặc trong hình ảnh, nội dung tải từ Internet.
+- Tiếng Anh: khoảng 1.800 chuỗi của phần lõi Android (hộp thoại hệ thống, trình cài APK, tệp, in, Bluetooth).
+
+CỨU MÁY NẾU KHÔNG VÀO ĐƯỢC ANDROID
+Bản này không sửa mboot, boot hay recovery, nên chế độ nâng cấp USB thường vẫn còn.
+1. Chép file gốc của hãng vào USB (không dùng bản tiếng Việt).
+2. Làm lại đúng cách nâng cấp USB của hãng.
+Điều này chưa được thử thực tế. Nếu màn hình đen và USB cũng không chạy, máy có thể cần trung tâm sửa chữa.
+
+SHA-256 CỦA FILE GỐC
+1D96C5AB9291DF5A72BCE9390E4AB28BC31C85B7270AED1AF25E38B07581C4DF
+Mã của bản tiếng Việt nằm trong SHA256.txt; dựng lại sẽ ra mã khác vì thời gian ghi file đổi.
+
+DỰNG LẠI
+powershell -ExecutionPolicy Bypass -File tools\xgimi-vi\build-firmware-vi.ps1 -Bin "E:\xgimi h6\XGIMI_PIGCHIVALROUS_XM03D.bin"

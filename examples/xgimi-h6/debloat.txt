@@ -3,6 +3,34 @@
 # Notes only so far: read from the USB upgrade file (E:\xgimi h6\XGIMI_PIGCHIVALROUS_XM03D.bin), not from a
 # running unit. No removal list yet.
 #
+# XGIMI_PIGCHIVALROUS_XM13F.bin (2026-10-30) is byte-identical to XM03D (same SHA-256 for the whole file), so
+# everything here applies to it, including its strings already being in the rs10-vi tables. The updater shows it as H6
+# (ro.product.name=Product_xiaobai, v6.8.4).
+#
+# Vietnamese firmware (2026-10-30, tools\xgimi-vi\build-firmware-vi.ps1, output dist\firmware-vi): built from XM13F, NOT
+# FLASH-TESTED, no m7642 unit online. 58 static overlays (android:isStatic, 6,957 strings, 202 arrays/plurals) in
+# /vendor/overlay; services.jar scans that path and plat_file_contexts labels it vendor_overlay_file. build.prop defaults
+# changed to vi-VN and Asia/Ho_Chi_Minh (stock: persist.sys.language=zh, vendor ro.product.locale=zh-CN, system en-US).
+# A scan of all 88 APKs (aapt2 dump resources) found what the older tables missed: multi-line strings, strings that exist
+# only in values-zh (default English), and arrays; those are h6-full-chuoi.tsv, h6-full-mang.tsv, h6-full-dich.tsv.
+# XGIMI apps are done; about 1,800 AOSP strings have no Vietnamese and show English with the vi-VN default.
+# Settings (com.android.newsettings, menus come from resource names), power menu (com.xgimi.shutdown) and systemui have
+# every resource string translated. Quick panel: like the DOHKO, com.xgimi.misckey reads tile names from
+# misckey_config.db (MisckeyConfigFuncDB, MisckeyManager.fetchConfigData from XGIMI's server), so overlays do not reach
+# them, and the firmware has no sqlite3 or su for the DOHKO's trigger method; a root init helper would be needed.
+# Also hard-coded in dex, so unchanged: a few labels such as 关机并升级, 已开启, 未开启, 更多网络设置, 去更改.
+# Found while building:
+# - No dm-verity to get past: the last 64 KB of system and vendor are zeros (no verity footer), the dtb fstab has no
+#   verify flag (the Android fstab's "verify,recoveryonly" applies in recovery only), the script sets
+#   androidboot.selinux permissive and `verify n`.
+# - Footer (32 bytes at the end): "12345678", CRC32 of the 0x4000-byte script, CRC32 of the file from 0 through the first
+#   CRC, then the file's first 16 bytes. Both CRCs reproduce on the stock bin. mboot has check_script_crc and
+#   check_full_usb_crc, and Xgimi_check_usb_update_modelname / _force_update_name, so the output keeps the bin's name.
+# - sparse_write applies piece by piece, so one added sparse piece (same format as the originals) after a partition's
+#   pieces changes it while all stock data stays byte for byte; the script gains 2 lines for each of system and vendor.
+# - Left as they are: autofill patterns and feature-config JSON (not screen text, translating could break them).
+# Still Chinese on purpose: Sogou, factory menus, TTS. Text hard-coded in code or images cannot be overlaid.
+#
 # Firmware file (2026-10-25): a plain MStar/MediaTek USB upgrade bin, NOT encrypted (unlike the RS3
 # XGIMI_TIGERSENSITIVE_* and the DOHKO XGIMI_HORSEPOPULAR_*, which are MediaTek REE-wrapped encrypted images).
 # It starts with the mboot upgrade script ("#-------------USB Upgrade Bin Info----------------", device m7642)

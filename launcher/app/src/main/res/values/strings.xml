@@ -101,6 +101,7 @@
     <string name="ui_rows">Rows under the dock: %1$s</string>
     <string name="ui_dock_title">App name above the dock: %1$s</string>
     <string name="ui_stats">CPU / memory under the clock: %1$s</string>
+    <string name="ui_lunar">Vietnamese lunar date: %1$s</string>
     <string name="ui_reduced">Reduced motion: %1$s</string>
     <string name="color_black">Black</string>
     <string name="color_navy">Night blue</string>

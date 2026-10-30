@@ -1,0 +1,203 @@
+# Mang va so nhieu co chu Trung cua firmware XM03D (= XM13F), 2026-10-30: goi<TAB>array|plurals<TAB>ten<TAB>cac muc nhu aapt2 in.
+com.android.bluetooth	plurals	noti_caption_success	\n        one="%1$d 个文件传输成功，%2$s"\n        other="%1$d 个文件传输成功，%2$s"
+com.android.bluetooth	plurals	noti_caption_unsuccessful	\n        one="%1$d 个文件传输失败。"\n        other="%1$d 个文件传输失败。"
+com.android.certinstaller	array	credential_usage	\n        ["VPN和应用", "WLAN"]
+com.android.printspooler	array	color_mode_labels	\n        ["黑白", "彩色"]
+com.android.printspooler	array	duplex_mode_labels	\n        ["无", "长边", "短边"]
+com.android.printspooler	array	orientation_labels	\n        ["纵向", "横向"]
+com.android.printspooler	plurals	print_search_result_count_utterance	\n        one="找到 %1$s 台打印机"\n        other="找到 %1$s 台打印机"
+com.android.printspooler	plurals	print_services_recommendation_subtitle	\n        one="安装即可找到 %1$s 台打印机"\n        other="安装即可找到 %1$s 台打印机"
+com.android.wallpaperpicker	plurals	number_of_items_selected	\n        zero="已选择%1$d项"\n        one="已选择%1$d项"\n        other="已选择%1$d项"
+android	array	emailAddressTypes	\n        ["个人", "工作", "其他", "自定义"]
+android	array	imProtocols	\n        ["AIM", "Windows Live", "中国雅虎", "Skype", \n         "QQ", "Google Talk", "ICQ", "Jabber"]
+android	array	organizationTypes	\n        ["单位", "其他", "自定义"]
+android	array	phoneTypes	\n        ["住宅", "手机", "单位", "单位传真", \n         "住宅传真", "寻呼机", "其他", "自定义"]
+android	array	postalAddressTypes	\n        ["住宅", "单位", "其他", "自定义"]
+android	array	imAddressTypes	\n        ["住宅", "工作", "其他", "自定义"]
+android	array	network_switch_type_name	\n        ["移动数据", "WLAN", "蓝牙", "以太网", \n         "VPN"]
+android	array	special_locale_names	\n        ["العربية", "中文 (简体)", "中文 (繁體)"]
+android	array	wfcOperatorErrorAlertMessages	\n        ["要通过 WLAN 打电话和发信息，请先让您的运营商开通此服务，然后再到“设置”中重新开启 WLAN 通话功能（错误代码：%1$s）。"]
+android	array	wfcOperatorErrorNotificationMessages	\n        ["向您的运营商注册 WLAN 通话时遇到问题：%1$s"]
+android	array	wfcSpnFormats	\n        ["%s", "%s WLAN 通话功能"]
+android	array	xgimi_power_array	\n        ["关机", "重启", "关光机", "定时关机"]
+android	array	xgimi_poweroff_time_array	\n        ["取消", "15分钟", "30分钟", "1小时", \n         "2小时", "3小时"]
+android	plurals	bugreport_countdown	\n        one="系统将在 %d 秒后对错误报告进行截屏。"\n        other="系统将在 %d 秒后对错误报告进行截屏。"
+android	plurals	duration_days_relative	\n        one="%d 天前"\n        other="%d 天前"
+android	plurals	duration_days_relative_future	\n        one="%d 天后"\n        other="%d 天后"
+android	plurals	duration_days_shortest	\n        one="%d 天"\n        other="%d 天"
+android	plurals	duration_days_shortest_future	\n        one="%d 天后"\n        other="%d 天后"
+android	plurals	duration_hours_relative	\n        one="%d 小时前"\n        other="%d 小时前"
+android	plurals	duration_hours_relative_future	\n        one="%d 小时后"\n        other="%d 小时后"
+android	plurals	duration_hours_shortest	\n        one="%d 小时"\n        other="%d 小时"
+android	plurals	duration_hours_shortest_future	\n        one="%d 小时后"\n        other="%d 小时后"
+android	plurals	duration_minutes_relative	\n        one="%d 分钟前"\n        other="%d 分钟前"
+android	plurals	duration_minutes_relative_future	\n        one="%d 分钟后"\n        other="%d 分钟后"
+android	plurals	duration_minutes_shortest	\n        one="%d 分钟"\n        other="%d 分钟"
+android	plurals	duration_minutes_shortest_future	\n        one="%d 分钟后"\n        other="%d 分钟后"
+android	plurals	duration_years_relative	\n        one="%d 年前"\n        other="%d 年前"
+android	plurals	duration_years_relative_future	\n        one="%d 年后"\n        other="%d 年后"
+android	plurals	duration_years_shortest	\n        one="%d 年"\n        other="%d 年"
+android	plurals	duration_years_shortest_future	\n        one="%d 年后"\n        other="%d 年后"
+android	plurals	kg_too_many_failed_attempts_countdown	\n        one="请在 1 秒后重试。"\n        other="请在 %d 秒后重试。"
+android	plurals	last_num_days	\n        one="过去 %d 天"\n        other="过去 %d 天"
+android	plurals	matches_found	\n        one="1 条结果"\n        other="第 %d 条结果（共 %d 条）"
+android	plurals	pinpuk_attempts	\n        one="您还可尝试 %d 次。如果仍不正确，SIM 卡将被锁定。"\n        other="您还可尝试 %d 次。如果仍不正确，SIM 卡将被锁定。"
+android	plurals	restr_pin_countdown	\n        one="1 秒后重试"\n        other="%d 秒后重试"
+android	plurals	selected_count	\n        one="已选择 %1$d 项"\n        other="已选择 %1$d 项"
+android	plurals	ssl_ca_cert_warning	\n        one="已安装证书授权中心"\n        other="已安装证书授权中心"
+android	plurals	wifi_available	\n        one="有可用的 WLAN 网络"\n        other="有可用的 WLAN 网络"
+android	plurals	wifi_available_detailed	\n        one="有可用的开放 WLAN 网络"\n        other="有可用的开放 WLAN 网络"
+android	plurals	zen_mode_duration_hours	\n        one="1 小时"\n        other="%d 小时"
+android	plurals	zen_mode_duration_hours_short	\n        one="1 小时"\n        other="%d 小时"
+android	plurals	zen_mode_duration_hours_summary	\n        one="1 小时（直到%2$s）"\n        other="%1$d 小时（直到%2$s）"
+android	plurals	zen_mode_duration_hours_summary_short	\n        one="1 小时（到%2$s）"\n        other="%1$d 小时（到%2$s）"
+android	plurals	zen_mode_duration_minutes	\n        one="1 分钟"\n        other="%d 分钟"
+android	plurals	zen_mode_duration_minutes_short	\n        one="1 分钟"\n        other="%d 分钟"
+android	plurals	zen_mode_duration_minutes_summary	\n        one="1 分钟（到%2$s）"\n        other="%1$d 分钟（到%2$s）"
+android	plurals	zen_mode_duration_minutes_summary_short	\n        one="1 分钟（到%2$s）"\n        other="%1$d 分钟（到%2$s)）"
+com.xgimi.bluetoothservice	array	animator_duration_scale_entries	\n        ["关闭动画", "动画缩放 0.5x", "动画缩放 1x", "动画缩放 1.5x", \n         "动画缩放 2x", "动画缩放 5x", "动画缩放 10x"]
+com.xgimi.bluetoothservice	array	app_process_limit_entries	\n        ["标准限制", "不允许后台进程", "不得超过1个进程", "不得超过2个进程", \n         "不得超过3个进程", "不得超过4个进程"]
+com.xgimi.bluetoothservice	array	bluetooth_a2dp_codec_bits_per_sample_summaries	\n        ["使用系统选择（默认）", "16 位/样本", "24 位/样本", "32 位/样本"]
+com.xgimi.bluetoothservice	array	bluetooth_a2dp_codec_bits_per_sample_titles	\n        ["使用系统选择（默认）", "16 位/样本", "24 位/样本", "32 位/样本"]
+com.xgimi.bluetoothservice	array	bluetooth_a2dp_codec_channel_mode_summaries	\n        ["使用系统选择（默认）", "单声道", "立体声"]
+com.xgimi.bluetoothservice	array	bluetooth_a2dp_codec_channel_mode_titles	\n        ["使用系统选择（默认）", "单声道", "立体声"]
+com.xgimi.bluetoothservice	array	bluetooth_a2dp_codec_ldac_playback_quality_summaries	\n        ["偏重音频质量", "兼顾音频和连接质量", "偏重连接质量", "尽可能提供更佳音质（自适应比特率）"]
+com.xgimi.bluetoothservice	array	bluetooth_a2dp_codec_ldac_playback_quality_titles	\n        ["偏重音频质量 (990kbps/909kbps)", "兼顾音频和连接质量 (660kbps/606kbps)", "偏重连接质量 (330kbps/303kbps)", "尽可能提供更佳音质（自适应比特率）"]
+com.xgimi.bluetoothservice	array	bluetooth_a2dp_codec_sample_rate_summaries	\n        ["使用系统选择（默认）", "44.1 kHz", "48.0 kHz", "88.2 kHz", \n         "96.0 kHz"]
+com.xgimi.bluetoothservice	array	bluetooth_a2dp_codec_sample_rate_titles	\n        ["使用系统选择（默认）", "44.1 kHz", "48.0 kHz", "88.2 kHz", \n         "96.0 kHz"]
+com.xgimi.bluetoothservice	array	bluetooth_a2dp_codec_summaries	\n        ["使用系统选择（默认）", "SBC", "AAC", "Qualcomm® aptX™ 音频", \n         "Qualcomm® aptX™ HD 音频", "LDAC", "启用可选编解码器", "停用可选编解码器"]
+com.xgimi.bluetoothservice	array	bluetooth_a2dp_codec_titles	\n        ["使用系统选择（默认）", "SBC", "AAC", "Qualcomm® aptX™ 音频", \n         "Qualcomm® aptX™ HD 音频", "LDAC", "启用可选编解码器", "停用可选编解码器"]
+com.xgimi.bluetoothservice	array	bluetooth_audio_active_device_summaries	\n        ["", "，使用中", "，使用中（媒体）", "，使用中（手机）"]
+com.xgimi.bluetoothservice	array	bluetooth_avrcp_versions	\n        ["AVRCP 1.4（默认）", "AVRCP 1.3", "AVRCP 1.5", "AVRCP 1.6"]
+com.xgimi.bluetoothservice	array	color_mode_descriptions	\n        ["增强的颜色", "肉眼所看到的自然颜色", "针对数字内容优化的颜色"]
+com.xgimi.bluetoothservice	array	color_mode_names	\n        ["鲜亮（默认）", "自然", "标准"]
+com.xgimi.bluetoothservice	array	debug_hw_overdraw_entries	\n        ["关闭", "显示过度绘制区域", "显示适合绿色弱视患者查看的区域"]
+com.xgimi.bluetoothservice	array	enable_opengl_traces_entries	\n        ["无", "Logcat", "Systrace（图形）", "glGetError 上的调用堆栈"]
+com.xgimi.bluetoothservice	array	hdcp_checking_summaries	\n        ["一律不使用 HDCP 检查", "仅使用 HDCP 检查 DRM 内容", "始终使用 HDCP 检查"]
+com.xgimi.bluetoothservice	array	hdcp_checking_titles	\n        ["永不检查", "仅检查 DRM 内容", "总是检查"]
+com.xgimi.bluetoothservice	array	overlay_display_devices_entries	\n        ["无", "480p", "480p（安全）", "720p", \n         "720p（安全）", "1080p", "1080p（安全）", "4K", \n         "4K（安全）", "4K（画质提升）", "4K（画质提升、安全）", "720p，1080p（双屏）"]
+com.xgimi.bluetoothservice	array	select_logd_size_lowram_titles	\n        ["关闭", "64K", "256K", "1M"]
+com.xgimi.bluetoothservice	array	select_logd_size_summaries	\n        ["关闭", "每个日志缓冲区 64K", "每个日志缓冲区 256K", "每个日志缓冲区 1M", \n         "每个日志缓冲区 4M", "每个日志缓冲区 16M"]
+com.xgimi.bluetoothservice	array	select_logd_size_titles	\n        ["关闭", "64K", "256K", "1M", \n         "4M", "16M"]
+com.xgimi.bluetoothservice	array	select_logpersist_summaries	\n        ["关闭", "所有日志缓冲区", "所有非无线电日志缓冲区", "仅限内核日志缓冲区"]
+com.xgimi.bluetoothservice	array	select_logpersist_titles	\n        ["关闭", "全部", "所有非无线电", "仅限内核"]
+com.xgimi.bluetoothservice	array	show_non_rect_clip_entries	\n        ["关闭", "以蓝色填充非矩形剪裁区域", "以绿色突出显示测试绘制命令"]
+com.xgimi.bluetoothservice	array	track_frame_time_entries	\n        ["关闭", "在屏幕上显示为条形图", "在 adb shell dumpsys gfxinfo 中"]
+com.xgimi.bluetoothservice	array	transition_animation_scale_entries	\n        ["关闭动画", "动画缩放 0.5x", "动画缩放 1x", "动画缩放 1.5x", \n         "动画缩放 2x", "动画缩放 5x", "动画缩放 10x"]
+com.xgimi.bluetoothservice	array	tts_rate_entries	\n        ["很慢", "慢", "正常", "快", \n         "较快", "非常快", "超快", "极快", \n         "最快"]
+com.xgimi.bluetoothservice	array	usb_configuration_titles	\n        ["充电", "MTP（媒体传输协议）", "PTP（图片传输协议）", "RNDIS（USB 以太网）", \n         "音频来源", "MIDI"]
+com.xgimi.bluetoothservice	array	wifi_status	\n        ["", "正在扫描...", "正在连接...", "正在验证身份…", \n         "正在获取IP地址...", "已连接", "已暂停", "正在断开连接...", \n         "已断开连接", "失败", "已停用", "暂时关闭（网络状况不佳）"]
+com.xgimi.bluetoothservice	array	wifi_status_with_ssid	\n        ["", "正在扫描...", "正在连接到 %1$s...", "正在通过 %1$s 进行身份验证...", \n         "正在从%1$s获取IP地址...", "已连接到 %1$s", "已暂停", "正在断开与 %1$s 的连接...", \n         "已断开连接", "失败", "已停用", "暂时关闭（网络状况不佳）"]
+com.xgimi.bluetoothservice	array	window_animation_scale_entries	\n        ["关闭动画", "动画缩放 0.5x", "动画缩放 1x", "动画缩放 1.5x", \n         "动画缩放 2x", "动画缩放 5x", "动画缩放 10x"]
+com.xgimi.bluetoothservice	plurals	wifi_tether_connected_summary	\n        one="已连接 %1$d 个设备"\n        other="已连接 %1$d 个设备"
+com.android.documentsui	plurals	clipboard_files_clipped	\n        one="已将 %1$d 个文件复制到剪贴板。"\n        other="已将 %1$d 个文件复制到剪贴板。"
+com.android.documentsui	plurals	compress_begin	\n        one="正在压缩 %1$d 个文件。"\n        other="正在压缩 %1$d 个文件。"
+com.android.documentsui	plurals	compress_error_notification_title	\n        one="无法压缩 %1$d 个文件"\n        other="无法压缩 %1$d 个文件"
+com.android.documentsui	plurals	compress_failure_alert_content	\n        one="无法压缩以下文件：%1$s"\n        other="无法压缩以下文件：%1$s"
+com.android.documentsui	plurals	copy_begin	\n        one="正在复制 %1$d 项。"\n        other="正在复制 %1$d 项。"
+com.android.documentsui	plurals	copy_converted_warning_content	\n        one="已将以下文件转换成其他格式：%1$s"\n        other="已将以下文件转换成其他格式：%1$s"
+com.android.documentsui	plurals	copy_error_notification_title	\n        one="无法复制 %1$d 个文件"\n        other="无法复制 %1$d 个文件"
+com.android.documentsui	plurals	copy_failure_alert_content	\n        one="无法复制以下文件：%1$s"\n        other="无法复制以下文件：%1$s"
+com.android.documentsui	plurals	delete_error_notification_title	\n        one="无法删除 %1$d 个文件"\n        other="无法删除 %1$d 个文件"
+com.android.documentsui	plurals	delete_failure_alert_content	\n        one="无法删除以下文件：%1$s"\n        other="无法删除以下文件：%1$s"
+com.android.documentsui	plurals	delete_files_confirmation_message	\n        one="要删除 %1$d 个文件吗？"\n        other="要删除 %1$d 个文件吗？"
+com.android.documentsui	plurals	delete_folders_confirmation_message	\n        one="要删除 %1$d 个文件夹及其中的内容吗？"\n        other="要删除 %1$d 个文件夹及其中的内容吗？"
+com.android.documentsui	plurals	delete_items_confirmation_message	\n        one="要删除 %1$d 项吗？"\n        other="要删除 %1$d 项吗？"
+com.android.documentsui	plurals	deleting	\n        one="正在删除 %1$d 项。"\n        other="正在删除 %1$d 项。"
+com.android.documentsui	plurals	elements_dragged	\n        one="%1$d 项"\n        other="%1$d 项"
+com.android.documentsui	plurals	elements_selected	\n        one="已选择 %1$d 项"\n        other="已选择 %1$d 项"
+com.android.documentsui	plurals	extract_begin	\n        one="正在解压 %1$d 个文件。"\n        other="正在解压 %1$d 个文件。"
+com.android.documentsui	plurals	extract_failure_alert_content	\n        one="无法解压以下文件：%1$s"\n        other="无法解压以下文件：%1$s"
+com.android.documentsui	plurals	move_begin	\n        one="正在移动 %1$d 项。"\n        other="正在移动 %1$d 项。"
+com.android.documentsui	plurals	move_error_notification_title	\n        one="无法移动 %1$d 个文件"\n        other="无法移动 %1$d 个文件"
+com.android.documentsui	plurals	move_failure_alert_content	\n        one="无法移动以下文件：%1$s"\n        other="无法移动以下文件：%1$s"
+com.android.providers.downloads	plurals	notif_summary_active	\n        one="正在下载 1 个文件"\n        other="正在下载 %d 个文件"
+com.android.providers.downloads	plurals	notif_summary_waiting	\n        one="正在等待下载 1 个文件"\n        other="正在等待下载 %d 个文件"
+com.android.packageinstaller	array	animator_duration_scale_entries	\n        ["关闭动画", "动画缩放 0.5x", "动画缩放 1x", "动画缩放 1.5x", \n         "动画缩放 2x", "动画缩放 5x", "动画缩放 10x"]
+com.android.packageinstaller	array	app_process_limit_entries	\n        ["标准限制", "不允许后台进程", "不得超过1个进程", "不得超过2个进程", \n         "不得超过3个进程", "不得超过4个进程"]
+com.android.packageinstaller	array	bluetooth_a2dp_codec_bits_per_sample_summaries	\n        ["使用系统选择（默认）", "16 位/样本", "24 位/样本", "32 位/样本"]
+com.android.packageinstaller	array	bluetooth_a2dp_codec_bits_per_sample_titles	\n        ["使用系统选择（默认）", "16 位/样本", "24 位/样本", "32 位/样本"]
+com.android.packageinstaller	array	bluetooth_a2dp_codec_channel_mode_summaries	\n        ["使用系统选择（默认）", "单声道", "立体声"]
+com.android.packageinstaller	array	bluetooth_a2dp_codec_channel_mode_titles	\n        ["使用系统选择（默认）", "单声道", "立体声"]
+com.android.packageinstaller	array	bluetooth_a2dp_codec_ldac_playback_quality_summaries	\n        ["偏重音频质量", "兼顾音频和连接质量", "偏重连接质量", "尽可能提供更佳音质（自适应比特率）"]
+com.android.packageinstaller	array	bluetooth_a2dp_codec_ldac_playback_quality_titles	\n        ["偏重音频质量 (990kbps/909kbps)", "兼顾音频和连接质量 (660kbps/606kbps)", "偏重连接质量 (330kbps/303kbps)", "尽可能提供更佳音质（自适应比特率）"]
+com.android.packageinstaller	array	bluetooth_a2dp_codec_sample_rate_summaries	\n        ["使用系统选择（默认）", "44.1 kHz", "48.0 kHz", "88.2 kHz", \n         "96.0 kHz"]
+com.android.packageinstaller	array	bluetooth_a2dp_codec_sample_rate_titles	\n        ["使用系统选择（默认）", "44.1 kHz", "48.0 kHz", "88.2 kHz", \n         "96.0 kHz"]
+com.android.packageinstaller	array	bluetooth_a2dp_codec_summaries	\n        ["使用系统选择（默认）", "SBC", "AAC", "Qualcomm® aptX™ 音频", \n         "Qualcomm® aptX™ HD 音频", "LDAC", "启用可选编解码器", "停用可选编解码器"]
+com.android.packageinstaller	array	bluetooth_a2dp_codec_titles	\n        ["使用系统选择（默认）", "SBC", "AAC", "Qualcomm® aptX™ 音频", \n         "Qualcomm® aptX™ HD 音频", "LDAC", "启用可选编解码器", "停用可选编解码器"]
+com.android.packageinstaller	array	bluetooth_audio_active_device_summaries	\n        ["", "，使用中", "，使用中（媒体）", "，使用中（手机）"]
+com.android.packageinstaller	array	bluetooth_avrcp_versions	\n        ["AVRCP 1.4（默认）", "AVRCP 1.3", "AVRCP 1.5", "AVRCP 1.6"]
+com.android.packageinstaller	array	color_mode_descriptions	\n        ["增强的颜色", "肉眼所看到的自然颜色", "针对数字内容优化的颜色"]
+com.android.packageinstaller	array	color_mode_names	\n        ["鲜亮（默认）", "自然", "标准"]
+com.android.packageinstaller	array	debug_hw_overdraw_entries	\n        ["关闭", "显示过度绘制区域", "显示适合绿色弱视患者查看的区域"]
+com.android.packageinstaller	array	enable_opengl_traces_entries	\n        ["无", "Logcat", "Systrace（图形）", "glGetError 上的调用堆栈"]
+com.android.packageinstaller	array	hdcp_checking_summaries	\n        ["一律不使用 HDCP 检查", "仅使用 HDCP 检查 DRM 内容", "始终使用 HDCP 检查"]
+com.android.packageinstaller	array	hdcp_checking_titles	\n        ["永不检查", "仅检查 DRM 内容", "总是检查"]
+com.android.packageinstaller	array	overlay_display_devices_entries	\n        ["无", "480p", "480p（安全）", "720p", \n         "720p（安全）", "1080p", "1080p（安全）", "4K", \n         "4K（安全）", "4K（画质提升）", "4K（画质提升、安全）", "720p，1080p（双屏）"]
+com.android.packageinstaller	array	select_logd_size_lowram_titles	\n        ["关闭", "64K", "256K", "1M"]
+com.android.packageinstaller	array	select_logd_size_summaries	\n        ["关闭", "每个日志缓冲区 64K", "每个日志缓冲区 256K", "每个日志缓冲区 1M", \n         "每个日志缓冲区 4M", "每个日志缓冲区 16M"]
+com.android.packageinstaller	array	select_logd_size_titles	\n        ["关闭", "64K", "256K", "1M", \n         "4M", "16M"]
+com.android.packageinstaller	array	select_logpersist_summaries	\n        ["关闭", "所有日志缓冲区", "所有非无线电日志缓冲区", "仅限内核日志缓冲区"]
+com.android.packageinstaller	array	select_logpersist_titles	\n        ["关闭", "全部", "所有非无线电", "仅限内核"]
+com.android.packageinstaller	array	show_non_rect_clip_entries	\n        ["关闭", "以蓝色填充非矩形剪裁区域", "以绿色突出显示测试绘制命令"]
+com.android.packageinstaller	array	track_frame_time_entries	\n        ["关闭", "在屏幕上显示为条形图", "在 adb shell dumpsys gfxinfo 中"]
+com.android.packageinstaller	array	transition_animation_scale_entries	\n        ["关闭动画", "动画缩放 0.5x", "动画缩放 1x", "动画缩放 1.5x", \n         "动画缩放 2x", "动画缩放 5x", "动画缩放 10x"]
+com.android.packageinstaller	array	tts_rate_entries	\n        ["很慢", "慢", "正常", "快", \n         "较快", "非常快", "超快", "极快", \n         "最快"]
+com.android.packageinstaller	array	usb_configuration_titles	\n        ["充电", "MTP（媒体传输协议）", "PTP（图片传输协议）", "RNDIS（USB 以太网）", \n         "音频来源", "MIDI"]
+com.android.packageinstaller	array	wifi_status	\n        ["", "正在扫描...", "正在连接...", "正在验证身份…", \n         "正在获取IP地址...", "已连接", "已暂停", "正在断开连接...", \n         "已断开连接", "失败", "已停用", "暂时关闭（网络状况不佳）"]
+com.android.packageinstaller	array	wifi_status_with_ssid	\n        ["", "正在扫描...", "正在连接到 %1$s...", "正在通过 %1$s 进行身份验证...", \n         "正在从%1$s获取IP地址...", "已连接到 %1$s", "已暂停", "正在断开与 %1$s 的连接...", \n         "已断开连接", "失败", "已停用", "暂时关闭（网络状况不佳）"]
+com.android.packageinstaller	array	window_animation_scale_entries	\n        ["关闭动画", "动画缩放 0.5x", "动画缩放 1x", "动画缩放 1.5x", \n         "动画缩放 2x", "动画缩放 5x", "动画缩放 10x"]
+com.android.packageinstaller	plurals	additional_permissions_more	\n        one="另外 %1$d 项"\n        other="另外 %1$d 项"
+com.android.packageinstaller	plurals	wifi_tether_connected_summary	\n        one="已连接 %1$d 个设备"\n        other="已连接 %1$d 个设备"
+com.android.newsettings	array	color_mode9	\n        ["标准", "冷色", "护眼", "自定义"]
+com.android.newsettings	array	sound_system	\n        ["内部扬声器+低音炮", "内部扬声器"]\n  type attr id=04 entryCount=922
+com.xgimi.castscreen	array	switch_manual_auto	\n        ["手动", "自动"]
+com.xgimi.castscreen	array	switch_on_off	\n        ["关闭", "打开"]
+com.xgimi.castscreen	array	switch_wind_speed	\n        ["自动", "全速"]
+com.xgimi.atmosphere	array	week	\n        ["星期日", "星期一", "星期二", "星期三", \n         "星期四", "星期五", "星期六"]\n  type attr id=04 entryCount=1368
+com.xgimi.instruction30	array	audio_mode	\n        ["自动", "影院", "音乐"]
+com.xgimi.instruction30	array	image_mode	\n        ["标准", "柔和", "明亮", "办公", \n         "游戏", "足球", "自定义"]
+com.xgimi.instruction30	array	image_zoom	\n        ["全屏", "16 : 9", "4 : 3", "原始大小"]
+com.xgimi.wirelessscreen	array	adsetting	\n        ["设备发现", "AirPlay镜像", "画面质量", "连接密码", \n         "版本更新"]
+com.xgimi.wirelessscreen	array	cast_android_desc	\n        ["通过极米 App 实现设备与手机互动，实时同步手机全部画面", "华为手机专属增强投屏功能", "通过数据线连接设备降低延迟，实时同步手机全部画面", "兼容多种安卓设备"]
+com.xgimi.wirelessscreen	array	cast_android_miracast_tips	\n        ["打开安卓手机的设置 > 更多连接 > 无线投屏/投屏", "在弹窗中选择投屏设备："]
+com.xgimi.wirelessscreen	array	cast_android_mirror_wired_tips	\n        ["扫码下载安装极米 App", "用数据线连接安卓手机与投影设备", "弹窗中确认打开极米 App，并同意隐私政策等"]
+com.xgimi.wirelessscreen	array	cast_android_mirror_wireless_tips	\n        ["将手机Wi-Fi连接至网络：", "下载/打开极米 App，添加投影设备：", "依次点击：遥控器 > 快捷工具及应用 > 投屏"]
+com.xgimi.wirelessscreen	array	cast_help_desc	\n        ["当投屏搜索不到设备时，可尝试重启投屏服务自动为你修复", "使用热点投屏，可解决搜索不到设备及投屏稳定性的问题", "极米服务为你提供投屏问题相关帮助"]
+com.xgimi.wirelessscreen	array	cast_ios_desc	\n        ["支持 Airplay 投屏，实时同步手机全部画面", "通过数据线连接设备降低延迟，实时同步手机全部画面"]
+com.xgimi.wirelessscreen	array	cast_ios_mirror_wired_tips	\n        ["用数据线连接iPhone与投影设备", "在iPhone弹窗中选择\n        “信任”", "若iPhone存在密码，输入密码后开始同屏"]
+com.xgimi.wirelessscreen	array	cast_ios_mirror_wireless_tips	\n        ["将手机Wi-Fi连接至网络：", "在iPhone控制中心点击 “屏幕镜像 ”", "在弹窗中选择投屏设备："]
+com.xgimi.wirelessscreen	array	cast_local_video_detail_tips	\n        ["将手机Wi-Fi连接至网络：", "下载/打开极米 App，添加投影设备：", "依次点击：遥控器 > 快捷工具及应用 > 本地资源"]
+com.xgimi.wirelessscreen	array	cast_mac_wireless_tips	\n        ["将电脑Wi-Fi连接至网络：", "打开 Mac “系统偏好设置”，选择“显示器”", "在“隔空播放”显示器中选择投屏设备："]
+com.xgimi.wirelessscreen	array	cast_pc_desc	\n        ["支持 Airplay 屏幕镜像投屏，实时同步电脑全部画面", "通过乐播投屏实现电脑镜像，实时同步电脑全部画面"]
+com.xgimi.wirelessscreen	array	cast_video_desc	\n        ["支持主流视频 App 投屏，不会实时同步手机画面", "畅享极米 App 精选影视资源，不会实时同步手机画面", "支持大屏查看手机本地图片、视频等，不会实时同步手机画面"]
+com.xgimi.wirelessscreen	array	cast_video_detail_tips	\n        ["将手机Wi-Fi连接至网络：", "打开手机视频应用播放页面，点击投屏图标", "在页面中选择投屏设备："]
+com.xgimi.wirelessscreen	array	cast_windows_wireless_tips	\n        ["电脑访问网址并下载安装乐播投屏电脑版", "将电脑Wi-Fi连接至网络：", "在乐播中选择投屏设备："]
+com.xgimi.wirelessscreen	array	cast_xgimi_app_detail_tips	\n        ["将手机Wi-Fi连接至网络：", "下载/打开极米 App，添加投影设备：", "极米 App 中点击“影视”并选择影片播放"]
+com.xgimi.wirelessscreen	array	commonsetting	\n        ["版本更新"]
+com.xgimi.wirelessscreen	array	newadsetting	\n        ["分辨率", "防骚扰", "防骚扰管理"]
+com.xgimi.wirelessscreen	array	passwardswitcher	\n        ["关闭", "开启"]
+com.xgimi.wirelessscreen	array	settingheader	\n        ["Airplay/DLNA设置", "通用设置"]
+com.xgimi.wirelessscreen	array	switch_manual_auto	\n        ["手动", "自动"]
+com.xgimi.wirelessscreen	array	switch_on_off	\n        ["关闭", "打开"]
+com.xgimi.wirelessscreen	array	switch_wind_speed	\n        ["自动", "全速"]
+com.xgimi.wirelessscreen	array	wifi_p2p_status	\n        ["已连接", "已邀请", "失败", "可用", \n         "超出范围"]\n  type attr id=04 entryCount=1284
+com.xgimi.home	array	audio_mode	\n        ["自动", "影院", "音乐"]
+com.xgimi.home	array	childmode_chinese_numbers	\n        ["零", "壹", "贰", "叁", \n         "肆", "伍", "陆", "柒", \n         "捌", "玖"]
+com.xgimi.home	array	childmode_project_eye_txt	\n        ["关闭", "开启"]
+com.xgimi.home	array	childmode_question_list	\n        ["肆 × 玖 = ？", "拾陆 - 柒 = ？", "捌 ÷ 贰 = ？", "伍 × 柒 = ？", \n         "拾壹 - 肆 = ？", "捌 × 叁 = ？", "陆 × 贰 = ？", "玖 × 伍 = ？", \n         "拾贰 - 肆 = ？", "叁 × 陆 = ？"]
+com.xgimi.home	array	childmode_random_voice	\n        ["小朋友，想好看什么了吗", "小朋友，有没有想看的动画片呢"]
+com.xgimi.home	array	childmode_shutdown_voice	\n        ["小朋友，我要去上学了，你呢", "小朋友，我要去吃饭了，你呢", "小朋友，我要去吃饭了，你呢", "小朋友，我要去吃饭了，你呢", \n         "小朋友，我要去做作业了，你呢", "小朋友，我要去休息了，你也该去休息了", "小朋友，我要去吃饭了，你呢"]
+com.xgimi.home	array	childmode_timing_global_text	\n        ["不限制", "30分钟", "45分钟", "60分钟", \n         "90分钟", "120分钟"]
+com.xgimi.home	array	childmode_timing_once_text	\n        ["不限制", "10分钟", "20分钟", "30分钟", \n         "40分钟", "50分钟", "60分钟"]
+com.xgimi.home	array	childmode_timing_txt	\n        ["关闭", "20分钟", "30分钟", "40分钟", \n         "50分钟", "60分钟"]
+com.xgimi.home	array	childmode_welcome_voice	\n        ["小朋友，见到你，我好高兴啊", "小朋友，快来一起看动画学习吧", "小朋友，今天想要看些什么呢"]
+com.xgimi.home	array	image_mode	\n        ["标准", "柔和", "明亮", "办公", \n         "游戏", "足球", "自定义"]
+com.xgimi.home	array	image_zoom	\n        ["全屏", "16 : 9", "4 : 3", "原始大小"]
+com.xgimi.doubanfm	array	ktv_record_success_level_a	\n        ["不要赞美我，低调低调", "偶尔你们也可以膜拜一下我"]
+com.xgimi.doubanfm	array	ktv_record_success_level_b	\n        ["总有一天，我也会是歌神", "离歌神只差那么一丢丢了"]
+com.xgimi.doubanfm	array	ktv_record_success_level_c	\n        ["加油！勇于挑战，才能超越自我。", "坚持练习，坚持就是胜利！"]
+com.xgimi.doubanfm	array	ktv_record_success_level_s	\n        ["我真的不是原唱！", "简直是百灵鸟一般的歌声"]
+com.xgimi.doubanfm	array	ktv_record_success_level_ss	\n        ["简直如歌神一般的存在！", "此曲只应天上有"]
+com.xgimi.doubanfm	array	ktv_record_success_score_copy	\n        ["我在酷狗唱唱中获得了%1$s，简直碉堡了！快来听听我的《%2$s》", "是谁让导师们纷纷转身？是谁让歌手们潸然泪下？来听听这首评分%1$s的《%2$s》就知道了", "听完这首歌，世界都有了色彩，评分%1$s的歌曲《%2$s》不容错过。"]
+com.xgimi.doubanfm	array	monitor2_title	\n        ["返回", "专辑封面", "动感频谱", "艺术歌词", \n         "关屏", "关机"]

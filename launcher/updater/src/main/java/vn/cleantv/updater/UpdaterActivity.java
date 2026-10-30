@@ -41,6 +41,12 @@ public final class UpdaterActivity extends Activity {
     private static final String STOCK_HOME_ACTIVITY = "com.xgimi.home/com.xgimi.module.cellview.home.ui.HomeActivity";
     private static final String SETTINGS = "com.android.newsettings";
     private static final String OVERLAY = "com.android.shell:VietHoa";
+    private static final String QUICK_DB = "/data/data/com.android.newsettings/databases/misckey_config.db";
+    private static final String QUICK_BACKUP = "/sdcard/misckey_config.db.bak";
+    private static final String SPEECH = "com.google.android.tts";
+    private static final String SPEECH_SERVICE = SPEECH + "/com.google.android.apps.speech.tts.googletts.service.GoogleTTSRecognitionService";
+    /** Left when this app installed the speech app: Restore removes that copy and leaves one the owner put there. */
+    private static final String SPEECH_MARK = "/data/local/tmp/cleantv-speech-installed";
     private static final String ENABLE_ADB = "com.gathin.tvhome.action.ENABLE_ADB";
     /** Phone build: where files for the TV's shell land (stage()). */
     private static final String STAGE_DIR = "/data/local/tmp/cleantv-stage";
@@ -856,11 +862,50 @@ public final class UpdaterActivity extends Activity {
             String net = adb.shell("cmd overlay lookup " + SETTINGS + " " + SETTINGS + ":string/head_network_setting_text");
             say(out.isEmpty() && net.contains("Mạng") ? "   OK  đã Việt hoá" : "   !!  Việt hoá chưa áp dụng được (" + net + ")");
             keepVietnameseAfterBoot(adb);
+            quickPanelVi(adb);
+            speechEngine(adb);
         }
         closeHomeChooser(adb);
         say("");
         say(BuildConfig.REMOTE ? "Xong. Bấm Home trên remote của TV để về màn hình chính mới."
                 : "Xong. Bấm \"Trở về\" (hoặc Home) để về màn hình chính mới.");
+    }
+
+    /**
+     * The launcher's voice search needs a speech recogniser that knows Vietnamese. XGIMI's own (com.xgimi.duertts) is
+     * Chinese and stays off, so a new unit has none: install Google's from assets/speech.apk (xgimi flavor only, 40 MB)
+     * unless it is already there, and make it the system's recogniser. Failing here leaves the rest of the update done.
+     */
+    private void speechEngine(LocalAdb adb) {
+        try {
+            if (!adb.shell("pm path " + SPEECH).contains("package:")) {
+                long size;
+                try {
+                    size = getAssets().openFd("speech.apk").getLength();
+                } catch (IOException e) {
+                    say("   !!  giọng nói: máy chưa có bộ nhận dạng và gói này không kèm (dùng gói USB XGIMI)");
+                    return;
+                }
+                say("   đang cài bộ nhận dạng giọng nói…");
+                String out;
+                try (InputStream in = getAssets().open("speech.apk")) {
+                    out = adb.exec("cmd package install -r -S " + size, in);
+                }
+                if (!out.contains("Success")) {
+                    say("   !!  giọng nói: cài bộ nhận dạng thất bại: " + firstLine(out));
+                    return;
+                }
+                adb.shell("touch " + SPEECH_MARK);
+            }
+            adb.shell("pm enable --user 0 " + SPEECH);
+            adb.shell("pm grant " + SPEECH + " android.permission.RECORD_AUDIO");
+            adb.shell("settings put secure voice_recognition_service " + SPEECH_SERVICE);
+            boolean ok = SPEECH_SERVICE.equals(adb.shell("settings get secure voice_recognition_service").trim());
+            say(ok ? "   OK  giọng nói: giữ phím micro trên remote để tìm bằng tiếng Việt (cần mạng)"
+                    : "   !!  giọng nói: chưa đặt được bộ nhận dạng");
+        } catch (IOException e) {
+            say("   !!  giọng nói: " + e.getMessage());
+        }
     }
 
     /**
@@ -947,6 +992,95 @@ public final class UpdaterActivity extends Activity {
         }
         say(set != null && String.valueOf(expected).equals(count) ? "   OK  giữ tiếng Việt sau mỗi lần khởi động lại"
                 : "   !!  chưa đặt được tự Việt hoá sau khởi động (" + count + ")");
+    }
+
+    /**
+     * The quick settings panel's tile names are in newsettings' database, written back in Chinese from XGIMI's server,
+     * so no overlay reaches them (examples/xgimi-dohko). As tools/xgimi-vi/dohko-quick-panel-vi.ps1 does from a PC:
+     * copy the database out, add triggers that rename each tile as it is written, put it back if it is sound. The TV
+     * has no sqlite3, so this app does the editing. Failing here leaves the database as it was.
+     */
+    private void quickPanelVi(LocalAdb adb) {
+        if (BuildConfig.REMOTE) {
+            say("   --  menu cài đặt nhanh: cần chạy ứng dụng cập nhật ngay trên máy chiếu (gói USB)");
+            return;
+        }
+        File work = new File(getCacheDir(), "quick");
+        try {
+            if (!"0".equals(adb.shell("id -u").trim())) {
+                say("   !!  menu cài đặt nhanh: cần ADB root, máy này không có");
+                return;
+            }
+            if (!adb.shell("[ -f " + QUICK_DB + " ] && echo yes").contains("yes")) {
+                say("   !!  chưa có dữ liệu menu cài đặt nhanh: bấm phím cài đặt nhanh trên remote một lần, rồi bấm Cập nhật lại");
+                return;
+            }
+            adb.shell("[ -f " + QUICK_BACKUP + " ] || cp " + QUICK_DB + " " + QUICK_BACKUP);
+            adb.shell("am force-stop " + SETTINGS + "; sleep 1");
+            deleteFiles(work);
+            if (!work.mkdirs()) throw new IOException("không tạo được thư mục tạm");
+            File local = new File(work, "misckey_config.db");
+            copyOut(adb, QUICK_DB, local);
+            // The newest rows may still be in the write-ahead log
+            for (String part : new String[]{"-wal", "-shm"}) {
+                if (adb.shell("[ -f " + QUICK_DB + part + " ] && echo yes").contains("yes")) {
+                    copyOut(adb, QUICK_DB + part, new File(work, local.getName() + part));
+                }
+            }
+            String script;
+            try (InputStream in = getAssets().open("quick-panel-vi.sql")) {
+                java.io.ByteArrayOutputStream bytes = new java.io.ByteArrayOutputStream();
+                byte[] buf = new byte[8192];
+                for (int r; (r = in.read(buf)) > 0; ) bytes.write(buf, 0, r);
+                script = bytes.toString("UTF-8");
+            }
+            int tiles;
+            try (android.database.sqlite.SQLiteDatabase db = android.database.sqlite.SQLiteDatabase.openDatabase(
+                    local.getPath(), null, android.database.sqlite.SQLiteDatabase.OPEN_READWRITE)) {
+                for (String statement : SqlScript.statements(script)) db.execSQL(statement);
+                if (!"ok".equals(oneValue(db, "PRAGMA integrity_check"))) throw new IOException("dữ liệu sau khi sửa bị lỗi");
+                if (!"2".equals(oneValue(db, "SELECT count(*) FROM sqlite_master WHERE type='trigger' AND name LIKE 'vi_func_name_%'"))) {
+                    throw new IOException("không đặt được bản dịch");
+                }
+                tiles = Integer.parseInt(oneValue(db, "SELECT count(*) FROM MisckeyConfigFuncDB"));
+                oneValue(db, "PRAGMA wal_checkpoint(TRUNCATE)");
+            }
+            String staged;
+            try (InputStream in = new java.io.FileInputStream(local)) {
+                staged = stage(adb, in, "misckey_config-new.db");
+            }
+            adb.shell("am force-stop " + SETTINGS + "; cp " + staged + " " + QUICK_DB + "; rm -f " + QUICK_DB + "-wal " + QUICK_DB + "-shm; "
+                    + "chown system:system " + QUICK_DB + "; chmod 660 " + QUICK_DB + "; restorecon " + QUICK_DB);
+            unstage(adb, staged);
+            say("   OK  menu cài đặt nhanh: đã đặt bản dịch (" + tiles + " ô)");
+        } catch (IOException | RuntimeException e) {
+            say("   !!  menu cài đặt nhanh chưa Việt hoá được: " + e.getMessage());
+        } finally {
+            deleteFiles(work);
+        }
+    }
+
+    /** A file only root can read, through the shell: base64, since the shell's output is text. */
+    private static void copyOut(LocalAdb adb, String path, File to) throws IOException {
+        byte[] data = android.util.Base64.decode(adb.shell("base64 " + path), android.util.Base64.DEFAULT);
+        if (!String.valueOf(data.length).equals(adb.shell("wc -c < " + path).trim())) {
+            throw new IOException("đọc " + path + " không trọn vẹn");
+        }
+        try (OutputStream o = new FileOutputStream(to)) {
+            o.write(data);
+        }
+    }
+
+    private static String oneValue(android.database.sqlite.SQLiteDatabase db, String sql) {
+        try (android.database.Cursor c = db.rawQuery(sql, null)) {
+            return c.moveToFirst() ? c.getString(0) : "";
+        }
+    }
+
+    private static void deleteFiles(File dir) {
+        File[] files = dir.listFiles();
+        if (files != null) for (File f : files) f.delete();
+        dir.delete();
     }
 
     /**
@@ -1141,12 +1275,17 @@ public final class UpdaterActivity extends Activity {
             adb.shell("cmd overlay disable --user 0 com.android.shell:VietHoaTatMay");
             // the other XGIMI apps' translations (VietHoa_<app>)
             adb.shell("for o in $(cmd overlay list | grep -o 'com.android.shell:VietHoa_[A-Za-z0-9_]*'); do cmd overlay disable --user 0 $o; done");
+            // The speech app, only if this app installed it (speechEngine)
+            adb.shell("[ -f " + SPEECH_MARK + " ] && { settings delete secure voice_recognition_service; pm uninstall " + SPEECH + "; rm -f " + SPEECH_MARK + "; }");
             // and the boot script that would bring both back (keepVietnameseAfterBoot)
             adb.shell("rm -rf /data/local/tmp/cleantv");
             putLauncherConfig(adb, "boot_script", false);
             adb.shell("rm -f /data/resource-cache/*VietHoa*");
             adb.shell("am force-stop " + SETTINGS);
             adb.shell("am force-stop com.xgimi.shutdown");
+            // The quick settings panel's database as it was before quickPanelVi
+            adb.shell("[ -f " + QUICK_BACKUP + " ] && { cp " + QUICK_BACKUP + " " + QUICK_DB + "; rm -f " + QUICK_DB + "-wal " + QUICK_DB + "-shm; "
+                    + "chown system:system " + QUICK_DB + "; chmod 660 " + QUICK_DB + "; restorecon " + QUICK_DB + "; }");
             say("   OK");
         }
         say("");

@@ -5,8 +5,10 @@
 # enable` (rs10-install.ps1), khong can root. Ban dich nam o values/ va values-zh-rCN (may de tieng Trung).
 # -Device ironman: cung cach cho cac may XGIMI dung firmware IRONMAN (XGIMI_IRONMAN_XJ03D, Android 8.0), tu
 # ironman-apps-chuoi.tsv, ra dist\ironman-vi.
-# Chay: powershell -ExecutionPolicy Bypass -File tools\xgimi-vi\rs10-overlays.ps1 [-Device rs10|ironman]
-param([ValidateSet('rs10', 'ironman')][string]$Device = 'rs10')
+# -Static: overlay tinh (android:isStatic) de dua vao firmware /vendor/overlay, ra dist\<may>-vi-static (build-firmware-vi.ps1).
+# Chuoi co %s/%d khac voi ban goc bi bo qua, de nguyen tieng Trung: sai dinh dang lam ung dung hong khi chay.
+# Chay: powershell -ExecutionPolicy Bypass -File tools\xgimi-vi\rs10-overlays.ps1 [-Device rs10|ironman] [-Static]
+param([ValidateSet('rs10', 'ironman')][string]$Device = 'rs10', [switch]$Static)
 $ErrorActionPreference = 'Stop'
 $here = $PSScriptRoot
 $root = Split-Path -Parent (Split-Path -Parent $here)
@@ -14,10 +16,10 @@ $bt = 'E:\buildtools\android-sdk\build-tools\34.0.0'
 $androidJar = 'E:\buildtools\android-sdk\platforms\android-34\android.jar'
 if (-not $env:JAVA_HOME) { $env:JAVA_HOME = 'E:\buildtools\jdk\jdk-17.0.20.1+1' }   # apksigner
 $dev = @{
-    rs10    = @{ Strings = 'rs10-apps-chuoi.tsv', 'h6-apps-chuoi.tsv', 'plus-apps-chuoi.tsv', 'z7-apps-chuoi.tsv'; Sdk = 28 }
+    rs10    = @{ Strings = 'rs10-apps-chuoi.tsv', 'h6-apps-chuoi.tsv', 'plus-apps-chuoi.tsv', 'z7-apps-chuoi.tsv', 'h6-full-chuoi.tsv'; Arrays = 'h6-full-mang.tsv'; Sdk = 28 }
     ironman = @{ Strings = 'ironman-apps-chuoi.tsv'; Sdk = 26 }
 }[$Device]
-$outDir = Join-Path $root "dist\$Device-vi"
+$outDir = Join-Path $root "dist\$Device-vi$(if ($Static) { '-static' })"
 
 # Khong dich: ban phim Sogou (dung Gboard), menu nha may, giong doc, thu thap du lieu, quang cao, dich vu ben thu ba
 $skip = 'com.sohu.inputmethod.sogou.tv', 'com.xgimi.minitvfactory', 'mediatek.factorymenu.ui', 'com.xgimi.duertts',
@@ -32,8 +34,14 @@ function Escape([string]$s) {
     $s
 }
 
+# Cac dau dinh dang trong mot chuoi (%s, %1$d, %.2f, %%), sap xep de so sanh ban goc voi ban dich
+function FormatTokens([string]$s) {
+    # No space or comma among the flags: "10% pin" in Vietnamese is a plain percent sign, not a format
+    (([regex]::Matches($s, '%(\d+\$)?[-#+0(]*\d*(\.\d+)?[a-zA-Z%]') | ForEach-Object { $_.Value }) | Sort-Object) -join ' '
+}
+
 $dict = @{}
-foreach ($f in 'dich.tsv', 'dich-cau-dai.tsv', 'dohko-apps-dich.tsv', 'dohko-apps-dich-them.tsv', 'rs10-apps-dich.tsv', 'ironman-apps-dich.tsv') {
+foreach ($f in 'dich.tsv', 'dich-cau-dai.tsv', 'dohko-apps-dich.tsv', 'dohko-apps-dich-them.tsv', 'rs10-apps-dich.tsv', 'ironman-apps-dich.tsv', 'h6-full-dich.tsv') {
     foreach ($line in [IO.File]::ReadAllLines((Join-Path $here $f), [Text.Encoding]::UTF8)) {
         if (-not $line -or $line.StartsWith('#')) { continue }
         $p = $line.Split("`t")
@@ -49,16 +57,68 @@ foreach ($line in ($dev.Strings | ForEach-Object { [IO.File]::ReadAllLines((Join
     if ($p.Count -lt 3 -or $skip -contains $p[0]) { continue }
     $vi = $dict[($p[2] -replace '\s+', ' ').Trim()]
     if (-not $vi) { continue }
+    if ((FormatTokens $p[2]) -ne (FormatTokens $vi)) {
+        Write-Host "Bo qua (sai dinh dang) $($p[0]) $($p[1]): [$(FormatTokens $p[2])] / [$(FormatTokens $vi)]"
+        continue
+    }
     if (-not $byPkg.Contains($p[0])) { $byPkg[$p[0]] = New-Object System.Collections.Generic.List[object] }
     $byPkg[$p[0]].Add(@($p[1], $vi))
+}
+
+# Mang va so nhieu: giu du so muc va thu tu; muc chua co ban dich, hoac sai %s/%d, de nguyen chu goc
+function ItemText([string]$cn) {
+    $raw = $cn.Replace('\"', '"')
+    if ($raw -notmatch '\p{IsCJKUnifiedIdeographs}') { return $raw }
+    $vi = $dict[($raw -replace '\s+', ' ').Trim()]
+    if ($vi -and (FormatTokens $raw) -eq (FormatTokens $vi)) { return Positional $vi }
+    Positional $raw
+}
+
+# aapt refuses two plain %d in one plural; %1$d %2$d in the same order formats the same
+function Positional([string]$s) {
+    $plain = '%(?![\d]+\$|%)[-#+0(]*\d*(\.\d+)?[a-zA-Z]'
+    if ([regex]::Matches($s, $plain).Count -lt 2) { return $s }
+    $script:argNo = 0
+    [regex]::Replace($s, $plain, { param($m) $script:argNo++; '%' + $script:argNo + '$' + $m.Value.Substring(1) })
+}
+$arrayXml = @{}
+$arrayCount = 0
+foreach ($file in @($dev.Arrays | Where-Object { $_ })) {
+    foreach ($line in [IO.File]::ReadAllLines((Join-Path $here $file), [Text.Encoding]::UTF8)) {
+        if (-not $line -or $line.StartsWith('#')) { continue }
+        $p = $line.Split("`t")
+        if ($p.Count -lt 4 -or $skip -contains $p[0]) { continue }
+        $sb = New-Object System.Text.StringBuilder
+        if ($p[1] -eq 'plurals') {
+            [void]$sb.AppendLine("    <plurals name=`"$($p[2])`">")
+            foreach ($m in [regex]::Matches($p[3], '(\w+)="((?:[^"\\]|\\.)*)"')) {
+                [void]$sb.AppendLine("        <item quantity=`"$($m.Groups[1].Value)`" formatted=`"false`">$(Escape (ItemText $m.Groups[2].Value))</item>")
+            }
+            [void]$sb.AppendLine('    </plurals>')
+        } else {
+            [void]$sb.AppendLine("    <string-array name=`"$($p[2])`">")
+            foreach ($m in [regex]::Matches($p[3], '"((?:[^"\\]|\\.)*)"')) {
+                [void]$sb.AppendLine("        <item formatted=`"false`">$(Escape (ItemText $m.Groups[1].Value))</item>")
+            }
+            [void]$sb.AppendLine('    </string-array>')
+        }
+        if (-not $arrayXml.ContainsKey($p[0])) { $arrayXml[$p[0]] = New-Object System.Text.StringBuilder }
+        [void]$arrayXml[$p[0]].Append($sb.ToString())
+        $arrayCount++
+        if (-not $byPkg.Contains($p[0])) { $byPkg[$p[0]] = New-Object System.Collections.Generic.List[object] }
+    }
 }
 
 if (Test-Path $outDir) { Remove-Item $outDir -Recurse -Force }
 New-Item -ItemType Directory -Force $outDir | Out-Null
 $utf8 = New-Object Text.UTF8Encoding $false
 $total = 0
+$shortNames = @{}
 foreach ($target in $byPkg.Keys) {
     $short = ($target -split '\.')[-1]
+    # Hai goi trung ten cuoi (providers.settings, ...): dung ten day du de ten overlay khong trung
+    if ($shortNames.ContainsKey($short)) { $short = $target.Replace('.', '_') }
+    $shortNames[$short] = $true
     $package = "vn.cleantv.overlay.$Device.$short"
     $work = Join-Path $env:TEMP "$Device-overlay-$short"
     if (Test-Path $work) { Remove-Item $work -Recurse -Force }
@@ -69,6 +129,7 @@ foreach ($target in $byPkg.Keys) {
         $seen[$e[0]] = $true
         [void]$sb.AppendLine("    <string name=`"$($e[0])`" formatted=`"false`">$(Escape $e[1])</string>")
     }
+    if ($arrayXml.ContainsKey($target)) { [void]$sb.Append($arrayXml[$target].ToString()) }
     $xml = "<?xml version=`"1.0`" encoding=`"utf-8`"?>`n<resources>`n$sb</resources>`n"
     foreach ($v in 'values', 'values-zh-rCN') {
         New-Item -ItemType Directory -Force "$work\res\$v" | Out-Null
@@ -81,7 +142,7 @@ foreach ($target in $byPkg.Keys) {
     android:versionCode="1"
     android:versionName="1.0">
     <uses-sdk android:minSdkVersion="$($dev.Sdk)" android:targetSdkVersion="$($dev.Sdk)" />
-    <overlay android:targetPackage="$target" android:priority="1" />
+    <overlay android:targetPackage="$target" android:priority="1"$(if ($Static) { ' android:isStatic="true"' }) />
     <application android:hasCode="false" android:label="VietHoa $short" />
 </manifest>
 "@
@@ -97,4 +158,4 @@ foreach ($target in $byPkg.Keys) {
     $total += $seen.Count
     Write-Host ("{0,-32} {1,5} chuoi" -f $target, $seen.Count)
 }
-Write-Host ("Da tao {0} file dich trong {1} ({2} chuoi)" -f $byPkg.Count, $outDir, $total)
+Write-Host ("Da tao {0} file dich trong {1} ({2} chuoi, {3} mang)" -f $byPkg.Count, $outDir, $total, $arrayCount)

@@ -1,0 +1,3468 @@
+# Chuoi co chu Trung cua firmware XM03D (= XM13F) nam ngoai cac bang kia, 2026-10-30: goi<TAB>ten chuoi<TAB>chu goc.
+com.android.bluetooth	ErrorTooManyRequests	正在处理的请求太多。请稍后重试。
+com.android.bluetooth	a2dp_sink_mbs_label	蓝牙音频
+com.android.bluetooth	ack_record	Ack记录
+com.android.bluetooth	airplane_error_msg	飞行模式中不能使用蓝牙。
+com.android.bluetooth	airplane_error_title	飞行模式
+com.android.bluetooth	app_name	蓝牙
+com.android.bluetooth	auth_notif_message	输入%1$s的会话密钥
+com.android.bluetooth	auth_notif_ticker	OBEX身份验证请求
+com.android.bluetooth	auth_notif_title	会话密钥
+com.android.bluetooth	bluetooth_connected	蓝牙音频已连接
+com.android.bluetooth	bluetooth_disconnected	蓝牙音频已断开连接
+com.android.bluetooth	bluetooth_map_settings_app_icon	应用图标
+com.android.bluetooth	bluetooth_map_settings_cancel	取消
+com.android.bluetooth	bluetooth_map_settings_count	剩余空档数：
+com.android.bluetooth	bluetooth_map_settings_intro	选择您要通过蓝牙共享的帐号。连接时，您仍必须接受所有帐号访问请求。
+com.android.bluetooth	bluetooth_map_settings_no_account_slots_left	无法选择帐号，目前没有任何空档
+com.android.bluetooth	bluetooth_map_settings_save	保存
+com.android.bluetooth	bluetooth_map_settings_title	蓝牙消息共享设置
+com.android.bluetooth	bluetooth_opp_file_limit_exceeded	无法传输 4GB 以上的文件
+com.android.bluetooth	bluetooth_sap_notif_disconnect_button	断开连接
+com.android.bluetooth	bluetooth_sap_notif_disconnecting	正在等待客户端断开连接
+com.android.bluetooth	bluetooth_sap_notif_force_disconnect_button	强制断开连接
+com.android.bluetooth	bluetooth_sap_notif_message	要请求客户端断开连接吗？
+com.android.bluetooth	bluetooth_sap_notif_ticker	蓝牙 SIM 卡存取
+com.android.bluetooth	bluetooth_sap_notif_title	蓝牙 SIM 卡存取
+com.android.bluetooth	bt_enable_cancel	取消
+com.android.bluetooth	bt_enable_line1	要使用蓝牙服务，您需要先开启蓝牙。
+com.android.bluetooth	bt_enable_line2	要现在开启蓝牙吗？
+com.android.bluetooth	bt_enable_ok	开启
+com.android.bluetooth	bt_error_btn_ok	确定
+com.android.bluetooth	bt_share_picker_label	蓝牙
+com.android.bluetooth	bt_sm_2_1	SD卡存储空间不足，无法保存来自“%1$s”的文件
+com.android.bluetooth	bt_sm_2_2	所需空间：%1$s
+com.android.bluetooth	bt_toast_1	系统将会接收该文件。请在通知面板中检查进度。
+com.android.bluetooth	bt_toast_2	无法接收该文件。
+com.android.bluetooth	bt_toast_3	已停止接收来自“%1$s”的文件
+com.android.bluetooth	bt_toast_4	正在向“%1$s”发送文件
+com.android.bluetooth	bt_toast_5	正在向“%2$s”发送%1$s个文件
+com.android.bluetooth	bt_toast_6	已停止向“%1$s”发送文件
+com.android.bluetooth	btopp_live_folder	通过蓝牙接收的文件
+com.android.bluetooth	deleteAll_record	删除所有记录
+com.android.bluetooth	delete_record	删除记录
+com.android.bluetooth	download_cancel	停止
+com.android.bluetooth	download_fail_line1	未收到文件
+com.android.bluetooth	download_fail_line2	文件：%1$s
+com.android.bluetooth	download_fail_line3	原因：%1$s
+com.android.bluetooth	download_fail_ok	确定
+com.android.bluetooth	download_line1	来自：“%1$s”
+com.android.bluetooth	download_line2	文件：%1$s
+com.android.bluetooth	download_line3	文件大小：%1$s
+com.android.bluetooth	download_line5	正在接收文件...
+com.android.bluetooth	download_ok	隐藏
+com.android.bluetooth	download_succ_line5	已接收文件
+com.android.bluetooth	download_succ_ok	打开
+com.android.bluetooth	download_success	%1$s接收完成。
+com.android.bluetooth	download_title	文件传输
+com.android.bluetooth	enabling_progress_content	正在打开蓝牙...
+com.android.bluetooth	enabling_progress_title	请稍候...
+com.android.bluetooth	inbound_history_title	传入
+com.android.bluetooth	inbound_noti_title	蓝牙共享：已接收文件
+com.android.bluetooth	incoming_file_confirm_Notification_content	%1$s已准备好发送%2$s
+com.android.bluetooth	incoming_file_confirm_Notification_title	有人发送文件给您
+com.android.bluetooth	incoming_file_confirm_cancel	拒绝
+com.android.bluetooth	incoming_file_confirm_content	要接受传入的文件吗？
+com.android.bluetooth	incoming_file_confirm_ok	接受
+com.android.bluetooth	incoming_file_confirm_timeout_content	接受来自“%1$s”的文件时发生超时
+com.android.bluetooth	incoming_file_confirm_timeout_ok	确定
+com.android.bluetooth	incoming_file_confirm_title	文件传输
+com.android.bluetooth	incoming_line1	来自
+com.android.bluetooth	incoming_line2	文件名
+com.android.bluetooth	incoming_line3	大小
+com.android.bluetooth	insert_record	插入记录
+com.android.bluetooth	localPhoneName	我的名字
+com.android.bluetooth	no_transfers	没有传输历史记录。
+com.android.bluetooth	not_exist_file	没有文件
+com.android.bluetooth	not_exist_file_desc	该文件不存在。\n
+com.android.bluetooth	notification_received	蓝牙共享：已接收“%1$s”
+com.android.bluetooth	notification_received_fail	蓝牙共享：未收到文件“%1$s”
+com.android.bluetooth	notification_receiving	蓝牙共享：正在接收“%1$s”
+com.android.bluetooth	notification_sending	蓝牙共享：正在发送“%1$s”
+com.android.bluetooth	notification_sent	蓝牙共享：已发送“%1$s”
+com.android.bluetooth	notification_sent_complete	已完成100%
+com.android.bluetooth	notification_sent_fail	蓝牙共享：未发送文件“%1$s”
+com.android.bluetooth	notify_server	通知TCP服务器
+com.android.bluetooth	ok_button	确定
+com.android.bluetooth	opp_notification_group	蓝牙共享
+com.android.bluetooth	outbound_history_title	传出
+com.android.bluetooth	outbound_noti_title	蓝牙共享：已发送文件
+com.android.bluetooth	pbap_acceptance_timeout_message	接受与%1$s的连接时出现超时
+com.android.bluetooth	pbap_authentication_timeout_message	输入%1$s的会话密钥时出现超时
+com.android.bluetooth	pbap_notification_group	通过蓝牙分享联系人
+com.android.bluetooth	pbap_session_key_dialog_header	需要提供蓝牙会话密钥
+com.android.bluetooth	pbap_session_key_dialog_title	输入%1$s的会话密钥
+com.android.bluetooth	permdesc_bluetoothShareManager	允许应用访问蓝牙共享 (BluetoothShare) 管理器并将其用于传输文件。
+com.android.bluetooth	permdesc_bluetoothWhitelist	允许该应用暂时将某个蓝牙设备列入白名单，从而允许该设备在不经过用户确认的情况下，将文件发送到本设备。
+com.android.bluetooth	permlab_bluetoothShareManager	使用下载管理器。
+com.android.bluetooth	permlab_bluetoothWhitelist	将蓝牙设备列入访问权限白名单。
+com.android.bluetooth	remote_adapter_sucess	遥控器配对成功
+com.android.bluetooth	remove_other_rc	新遥控器已配对成功
+com.android.bluetooth	start_server	启动TCP服务器
+com.android.bluetooth	status_canceled	用户取消了传输。
+com.android.bluetooth	status_connection_error	连接失败。
+com.android.bluetooth	status_file_error	存储问题。
+com.android.bluetooth	status_forbidden	目标设备禁止进行传输。
+com.android.bluetooth	status_no_sd_card	无SD卡。请插入SD卡保存传输的文件。
+com.android.bluetooth	status_not_accept	不支持此内容。
+com.android.bluetooth	status_pending	尚未开始传输文件。
+com.android.bluetooth	status_protocol_error	无法正确处理请求。
+com.android.bluetooth	status_running	正在传输文件。
+com.android.bluetooth	status_success	已成功完成文件传输。
+com.android.bluetooth	status_unknown_error	未知错误。
+com.android.bluetooth	transfer_clear_dlg_msg	所有内容都将从列表中清除。
+com.android.bluetooth	transfer_clear_dlg_title	清除
+com.android.bluetooth	transfer_menu_clear	从列表中清除
+com.android.bluetooth	transfer_menu_clear_all	清除列表
+com.android.bluetooth	transfer_menu_open	打开
+com.android.bluetooth	unknownName	未知名称
+com.android.bluetooth	unknownNumber	未知号码
+com.android.bluetooth	unknown_device	未知设备
+com.android.bluetooth	unknown_file	未知文件
+com.android.bluetooth	unknown_file_desc	没有可处理此类文件的应用。\n
+com.android.bluetooth	update_record	确认记录
+com.android.bluetooth	upload_fail_cancel	关闭
+com.android.bluetooth	upload_fail_line1	文件未发送至“%1$s”。
+com.android.bluetooth	upload_fail_line1_2	文件：%1$s
+com.android.bluetooth	upload_fail_ok	请重试
+com.android.bluetooth	upload_line1	发给：“%1$s”
+com.android.bluetooth	upload_line3	文件类型：%1$s (%2$s)
+com.android.bluetooth	upload_line5	正在发送文件...
+com.android.bluetooth	upload_succ_line5	已发送文件
+com.android.bluetooth	upload_succ_ok	确定
+com.android.bluetooth	upload_success	%1$s发送完成。
+com.android.captiveportallogin	action_use_network	直接使用此网络
+com.android.captiveportallogin	action_do_not_use_network	不要使用此网络
+com.android.captiveportallogin	action_bar_label	登录到网络
+com.android.captiveportallogin	action_bar_title	登录%1$s
+com.android.captiveportallogin	ssl_error_warning	您尝试加入的网络存在安全问题。
+com.android.captiveportallogin	ssl_error_example	例如，登录页面可能并不属于页面上显示的单位。
+com.android.captiveportallogin	ssl_error_continue	仍然通过浏览器继续操作
+com.android.certinstaller	app_name	证书安装程序
+com.android.certinstaller	pick_file_title	选择证书
+com.android.certinstaller	pkcs12_password_dialog_title	提取证书
+com.android.certinstaller	extracting_pkcs12	正在提取...
+com.android.certinstaller	pkcs12_file_password_dialog_title	从 %s 提取
+com.android.certinstaller	name_credential_dialog_title	为证书命名
+com.android.certinstaller	credential_name	证书名称：
+com.android.certinstaller	credential_password	键入密码以提取证书。
+com.android.certinstaller	credential_info	该数据包包含：
+com.android.certinstaller	p12_description	PKCS12 密钥库中的证书。
+com.android.certinstaller	one_userkey	一个用户密钥
+com.android.certinstaller	one_usercrt	一个用户证书
+com.android.certinstaller	one_cacrt	1个CA证书
+com.android.certinstaller	n_cacrts	%d个CA证书
+com.android.certinstaller	password_error	键入正确的密码。
+com.android.certinstaller	password_empty_error	键入密码。
+com.android.certinstaller	name_empty_error	键入名称。
+com.android.certinstaller	name_char_error	键入仅包含字母和数字的名称。
+com.android.certinstaller	unable_to_save_cert	无法保存该证书。未启用或未正确初始化凭据存储。
+com.android.certinstaller	cert_not_saved	未安装该证书。
+com.android.certinstaller	no_cert_to_saved	没有可安装的证书。
+com.android.certinstaller	invalid_cert	该证书无效。
+com.android.certinstaller	cert_is_added	已安装 %s。
+com.android.certinstaller	cert_too_large_error	无法安装该证书，因为证书尺寸过大。
+com.android.certinstaller	cert_missing_error	无法安装该证书，因为找不到证书文件。
+com.android.certinstaller	cert_read_error	无法安装该证书，因为无法读取证书文件。
+com.android.certinstaller	no_cert_file_found	在SD卡上找不到证书文件。
+com.android.certinstaller	sdcard_not_present	SD卡不存在。
+com.android.certinstaller	only_primary_user_allowed	只有设备的机主才能安装证书。
+com.android.certinstaller	credential_usage_label	凭据用途：
+com.android.certinstaller	certificate_capabilities_warning	注：此证书的颁发者可能会检查进出设备的所有流量。
+com.android.certinstaller	wifi_title	WLAN 配置文件
+com.android.certinstaller	wifi_detail_title	%s的详细信息
+com.android.certinstaller	wifi_detail_label	详细信息
+com.android.certinstaller	wifi_install_label	安装
+com.android.certinstaller	wifi_installing_label	正在安装
+com.android.certinstaller	wifi_cancel_label	取消
+com.android.certinstaller	wifi_dismiss_label	关闭
+com.android.certinstaller	wifi_no_config	无
+com.android.certinstaller	wifi_config_text	名称：%1$s\nFQDN：%2$s\nRoaming Consortiums：%3$s\nRealm：%4$s\n身份验证方式：EAP-%5$s\n
+com.android.certinstaller	wifi_ttls_config_text	用户名：%s\n
+com.android.certinstaller	wifi_tls_config_text	客户端证书：\n%1$s\n密钥：%2$s\n
+com.android.certinstaller	wifi_trust_config_text	信任证书：\n%s\n
+com.android.certinstaller	install_done_title	已安装凭据
+com.android.certinstaller	install_done	%1$s凭据已添加到 WLAN 已保存的网络。
+com.android.certinstaller	done_label	完成
+com.android.certinstaller	wifi_installer_detail	安装 WLAN 凭据即可通过%1$s连接到可用网络。
+com.android.certinstaller	wifi_installer_download_error	下载的文件存在问题，无法安装。请确保您是从正确的来源下载文件。
+com.android.certinstaller	wifi_installer_fail	无法安装 WLAN 凭据。请尝试重新下载文件。
+com.android.certinstaller	wifi_installer_fail_no_wifi_title	安装已取消
+com.android.certinstaller	wifi_installer_fail_title	无法安装
+com.android.certinstaller	wifi_installer_fail_no_wifi	请开启 WLAN，然后重试。
+com.android.htmlviewer	app_label	HTML 查看程序
+com.android.keychain	app_name	密钥链
+com.android.keychain	title_no_certs	找不到任何证书
+com.android.keychain	title_select_cert	选择证书
+com.android.keychain	requesting_application	应用“%s”请求使用证书。选择一个证书可让该应用现在和将来对服务器使用此身份凭证。
+com.android.keychain	requesting_server	该应用已将请求服务器标识为“%s”，您只应向信任的应用授予使用证书的权限。
+com.android.keychain	install_new_cert_message	您可以安装PKCS#12文件（位于外部存储设备中且扩展名为%1$s或%2$s）中的证书。
+com.android.keychain	install_new_cert_button_label	安装证书
+com.android.keychain	allow_button	选择
+com.android.keychain	deny_button	拒绝
+com.android.printspooler	add_print_service_label	添加服务
+com.android.printspooler	all_printers	所有打印机…
+com.android.printspooler	all_printers_label	所有打印机
+com.android.printspooler	all_services_title	所有服务
+com.android.printspooler	app_label	打印处理服务
+com.android.printspooler	blocked_notification_title_template	打印机拒绝打印“%1$s”
+com.android.printspooler	cancel	取消
+com.android.printspooler	cancelling_notification_title_template	正在取消打印“%1$s”
+com.android.printspooler	cannot_add_printer	无法添加打印机
+com.android.printspooler	collapse_handle	收起手柄
+com.android.printspooler	could_not_create_file	无法创建文件
+com.android.printspooler	destination_default_text	选择打印机
+com.android.printspooler	disabled_services_title	已停用的服务
+com.android.printspooler	enable_print_service	选择即可启用
+com.android.printspooler	enabled_services_title	已启用的服务
+com.android.printspooler	expand_handle	展开手柄
+com.android.printspooler	failed_notification_title_template	打印机在打印“%1$s”时出错
+com.android.printspooler	generating_print_job	正在生成打印作业
+com.android.printspooler	install_for_print_preview	安装 PDF 查看器以便预览
+com.android.printspooler	label_color	颜色
+com.android.printspooler	label_copies	份数
+com.android.printspooler	label_copies_summary	份数：
+com.android.printspooler	label_destination	目的地
+com.android.printspooler	label_duplex	双面
+com.android.printspooler	label_orientation	方向
+com.android.printspooler	label_pages	页数
+com.android.printspooler	label_paper_size	纸张尺寸
+com.android.printspooler	label_paper_size_summary	纸张尺寸：
+com.android.printspooler	more_options_button	更多选项
+com.android.printspooler	no_connection_to_printer	未与打印机建立连接
+com.android.printspooler	notification_channel_failure	失败的打印作业
+com.android.printspooler	notification_channel_progress	进行中的打印作业
+com.android.printspooler	page_description_template	第%1$d页，共%2$d页
+com.android.printspooler	pages_range_example	例如：1-5、8、11-13
+com.android.printspooler	print_add_printer	添加打印机
+com.android.printspooler	print_button	打印
+com.android.printspooler	print_cannot_load_page	无法显示预览
+com.android.printspooler	print_dialog	打印对话框
+com.android.printspooler	print_error_default_message	抱歉，操作失败。请重试。
+com.android.printspooler	print_error_printer_unavailable	该打印机目前无法使用。
+com.android.printspooler	print_error_retry	重试
+com.android.printspooler	print_forget_printer	取消保存打印机
+com.android.printspooler	print_no_print_services	未启用任何打印服务
+com.android.printspooler	print_no_printers	找不到打印机
+com.android.printspooler	print_options_collapsed	已收起打印选项
+com.android.printspooler	print_options_expanded	已展开打印选项
+com.android.printspooler	print_preparing_preview	即将显示预览…
+com.android.printspooler	print_preview	打印预览
+com.android.printspooler	print_search_box_hidden_utterance	搜索框已隐藏
+com.android.printspooler	print_search_box_shown_utterance	搜索框已显示
+com.android.printspooler	print_searching_for_printers	正在搜索打印机
+com.android.printspooler	print_select_printer	选择打印机
+com.android.printspooler	print_service_security_warning_summary	您的文档可能会通过一个或多个服务器发送至打印机。
+com.android.printspooler	print_service_security_warning_title	要使用“%1$s”吗？
+com.android.printspooler	print_services_disabled_toast	部分打印服务已停用
+com.android.printspooler	print_write_error_message	无法写入文件
+com.android.printspooler	printer_info_desc	此打印机的详细信息
+com.android.printspooler	printing_app_crashed	打印应用崩溃了
+com.android.printspooler	printing_notification_title_template	正在打印“%1$s”
+com.android.printspooler	reason_unknown	未知
+com.android.printspooler	recommended_services_title	推荐的服务
+com.android.printspooler	restart	重新开始
+com.android.printspooler	save_as_pdf	保存为 PDF
+com.android.printspooler	savetopdf_button	保存为PDF格式
+com.android.printspooler	search	搜索
+com.android.printspooler	select_to_add_printers	选择即可添加打印机
+com.android.printspooler	summary_template	摘要，%1$s份，纸张尺寸为%2$s
+com.android.printspooler	template_all_pages	全部%1$s页
+com.android.printspooler	template_page_range	%1$s页
+com.android.wallpaperpicker	wallpaper_instructions	设置壁纸
+com.android.wallpaperpicker	image_load_fail	无法加载图片
+com.android.wallpaperpicker	wallpaper_load_fail	无法加载要设为壁纸的图片
+com.android.wallpaperpicker	wallpaper_set_fail	无法将图片设为壁纸
+com.android.wallpaperpicker	wallpaper_accessibility_name	第%1$d张壁纸，共%2$d张
+com.android.wallpaperpicker	announce_selection	已选择%1$s
+com.android.wallpaperpicker	wallpaper_delete	删除
+com.android.wallpaperpicker	pick_image	我的照片
+com.android.wallpaperpicker	pick_wallpaper	壁纸
+com.android.wallpaperpicker	crop_wallpaper	剪裁壁纸
+android	cancel	取消
+android	copy	复制
+android	copyUrl	复制网址
+android	cut	剪切
+android	defaultVoiceMailAlphaTag	语音信箱
+android	emptyPhoneNumber	（无电话号码）
+android	httpErrorBadUrl	无法打开网页，因为该网址是无效的。
+android	httpErrorUnsupportedScheme	不支持该协议。
+android	no	取消
+android	ok	确定
+android	paste	粘贴
+android	search_go	搜索
+android	selectAll	全选
+android	unknownName	未知
+android	untitled	<未命名>
+android	VideoView_error_button	确定
+android	VideoView_error_text_unknown	无法播放此视频。
+android	VideoView_error_title	视频问题
+android	yes	确定
+android	dialog_alert_title	注意
+android	VideoView_error_text_invalid_progressive_playback	抱歉，该视频不适合在此设备上播放。
+android	selectTextMode	选择文字
+android	fingerprint_icon_content_description	指纹图标
+android	paste_as_plain_text	以纯文本形式粘贴
+android	autofill	自动填充
+android	BaMmi	通话限制
+android	CLIRDefaultOffNextCallOff	默认显示本机号码，在下一次通话中也显示
+android	CLIRDefaultOffNextCallOn	默认显示本机号码，但在下一次通话中不显示
+android	CLIRDefaultOnNextCallOff	默认不显示本机号码，但在下一次通话中显示
+android	CLIRDefaultOnNextCallOn	默认不显示本机号码，在下一次通话中也不显示
+android	CLIRPermanent	您无法更改来电显示设置。
+android	CfMmi	来电转接
+android	ClipMmi	来电显示
+android	ClirMmi	本机号码
+android	CndMmi	主叫号码传送
+android	CnipMmi	显示号码
+android	CnirMmi	来电显示受限制
+android	ColpMmi	连接的线路ID
+android	ColrMmi	连接的线路ID限制
+android	CwMmi	来电等待
+android	DndMmi	勿扰
+android	EmergencyCallWarningSummary	无法通过 WLAN 拨打紧急呼救电话
+android	EmergencyCallWarningTitle	无法使用紧急呼救服务
+android	Midnight	午夜
+android	NetworkPreferenceSwitchSummary	请尝试更改首选网络。点按即可更改。
+android	NetworkPreferenceSwitchTitle	无法连接到移动网络
+android	Noon	中午
+android	PinMmi	PIN码更改
+android	PwdMmi	密码更改
+android	RestrictedOnAllVoiceTitle	无法使用语音服务或紧急呼救服务
+android	RestrictedOnDataTitle	无法使用移动数据服务
+android	RestrictedOnEmergencyTitle	无法使用紧急呼救服务
+android	RestrictedOnNormalTitle	无法使用语音通话服务
+android	RestrictedStateContent	已由运营商暂时关闭
+android	RestrictedStateContentMsimTemplate	SIM 卡 %d 已由运营商暂时关闭
+android	RuacMmi	拒绝不想接听的骚扰电话
+android	SetupCallDefault	要接听电话吗？
+android	ThreeWCMmi	三方通话
+android	accept	接受
+android	accessibility_binding_label	无障碍
+android	accessibility_button_instructional_text	要更改指定的功能，请触摸并按住“无障碍”按钮。
+android	accessibility_button_prompt_text	选择按下“无障碍”按钮时要使用的功能：
+android	accessibility_magnification_chooser_text	放大功能
+android	accessibility_shortcut_disabling_service	无障碍快捷方式已关闭%1$s
+android	accessibility_shortcut_enabling_service	无障碍快捷方式已开启%1$s
+android	accessibility_shortcut_toogle_warning	开启这项快捷方式后，同时按下返回和向下按钮 3 秒钟即可启动无障碍功能。\n\n当前的无障碍功能：\n%1$s\n\n要更改设置的功能，请依次转到“设置”>“无障碍”。
+android	accessibility_shortcut_warning_dialog_title	要使用无障碍快捷方式吗？
+android	action_bar_home_description	导航首页
+android	action_bar_up_description	向上导航
+android	action_menu_overflow_description	更多选项
+android	action_mode_done	完成
+android	activity_chooser_view_dialog_title_default	选择活动
+android	activity_chooser_view_see_all	查看全部
+android	activity_list_empty	未找到匹配的活动。
+android	activity_resolver_use_always	始终
+android	activity_resolver_use_once	仅此一次
+android	activity_resolver_work_profiles_support	%1$s不支持工作资料
+android	activitychooserview_choose_application	选择应用
+android	activitychooserview_choose_application_error	无法启动“%s”
+android	adb_active_notification_message	选择即可停用 USB 调试功能。
+android	adb_active_notification_title	已连接到 USB 调试
+android	adb_debugging_notification_channel_tv	USB 调试
+android	addToDictionary	添加到字典
+android	add_account_button_label	添加帐号
+android	add_account_label	添加帐号
+android	add_calendar_event	排定时间
+android	add_calendar_event_desc	将活动安排在所选时间
+android	add_contact	添加
+android	add_contact_desc	添加到通讯录
+android	aerr_application	%1$s已停止运行
+android	aerr_application_repeated	%1$s屡次停止运行
+android	aerr_close	关闭
+android	aerr_close_app	关闭应用
+android	aerr_mute	忽略（直到设备重启）
+android	aerr_process	%1$s已停止运行
+android	aerr_process_repeated	%1$s屡次停止运行
+android	aerr_report	好的
+android	aerr_restart	重新打开应用
+android	aerr_wait	等待
+android	alert_windows_notification_channel_group_name	显示在其他应用的上层
+android	alert_windows_notification_channel_name	“%s”正在其他应用的上层显示内容
+android	alert_windows_notification_message	如果您不想让“%s”使用此功能，请点按以打开设置，然后关闭此功能。
+android	alert_windows_notification_title	“%s”正在其他应用的上层显示内容
+android	alert_windows_notification_turn_off_action	关闭
+android	allow	允许
+android	alwaysUse	设为默认选项。
+android	android_preparing_apk	正在准备升级%1$s。
+android	android_start_title	手机正在启动…
+android	android_system_label	Android 系统
+android	android_upgrading_apk	正在优化第%1$d个应用（共%2$d个）。
+android	android_upgrading_complete	即将完成启动。
+android	android_upgrading_fstrim	正在优化存储空间。
+android	android_upgrading_notification_title	正在完成系统更新…
+android	android_upgrading_starting_apps	正在启动应用。
+android	android_upgrading_title	手机正在更新…
+android	anr_activity_application	%2$s没有响应
+android	anr_activity_process	%1$s没有响应
+android	anr_application_process	%1$s没有响应
+android	anr_process	进程“%1$s”没有响应
+android	app_category_audio	音乐和音频
+android	app_category_game	游戏
+android	app_category_image	照片和图片
+android	app_category_maps	地图和导航
+android	app_category_news	新闻和杂志
+android	app_category_productivity	办公
+android	app_category_social	社交和通信
+android	app_category_video	电影和视频
+android	app_info	应用信息
+android	app_not_found	找不到可处理此操作的应用
+android	app_running_notification_text	点按即可了解详情或停止应用。
+android	app_running_notification_title	“%1$s”正在运行
+android	app_suspended_default_message	%1$s目前无法使用。该应用是由%2$s所管理。
+android	app_suspended_more_details	了解详情
+android	app_suspended_title	应用无法使用
+android	app_upgrading_toast	正在升级%1$s…
+android	back_button_label	上一步
+android	badPin	您输入的旧PIN码不正确。
+android	badPuk	您输入的PUK码不正确。
+android	battery_saver_description	为了延长电池续航时间，省电模式会关闭部分设备功能并限制应用。
+android	battery_saver_description_with_learn_more	为了延长电池续航时间，省电模式会关闭部分设备功能并限制应用。了解详情
+android	beforeOneMonthDurationPast	1 个月前
+android	bluetooth_a2dp_audio_route_name	蓝牙音频
+android	browse	打开
+android	browse_desc	打开所选网址
+android	bugreport_message	这会收集有关当前设备状态的信息，并以电子邮件的形式进行发送。从开始生成错误报告到准备好发送需要一点时间，请耐心等待。
+android	bugreport_option_full_summary	如果您的设备无响应或运行速度缓慢，或者您需要查看所有区段的报告信息，则建议您使用此选项将系统干扰程度降到最低。系统不支持您输入更多详细信息，也不会截取其他屏幕截图。
+android	bugreport_option_full_title	完整报告
+android	bugreport_option_interactive_summary	在大多数情况下，建议您使用此选项，以便追踪报告的生成进度，输入与相应问题相关的更多详细信息，以及截取屏幕截图。系统可能会省略掉一些不常用的区段，从而缩短生成报告的时间。
+android	bugreport_option_interactive_title	互动式报告
+android	bugreport_title	提交错误报告
+android	capability_desc_canCaptureFingerprintGestures	可以捕获在设备指纹传感器上执行的手势。
+android	capability_desc_canControlMagnification	控制显示内容的缩放级别和位置。
+android	capability_desc_canPerformGestures	可执行点按、滑动、双指张合等手势。
+android	capability_desc_canRequestFilterKeyEvents	包含个人数据，例如信用卡号和密码。
+android	capability_desc_canRequestTouchExploration	设备将大声读出您点按的内容，同时您可以通过手势来浏览屏幕。
+android	capability_desc_canRetrieveWindowContent	检测您正访问的窗口的内容。
+android	capability_title_canCaptureFingerprintGestures	指纹手势
+android	capability_title_canControlMagnification	控制显示内容放大功能
+android	capability_title_canPerformGestures	执行手势
+android	capability_title_canRequestFilterKeyEvents	监测您输入的文字
+android	capability_title_canRequestTouchExploration	启用触摸浏览
+android	capability_title_canRetrieveWindowContent	检索窗口内容
+android	capital_off	关闭
+android	capital_on	开启
+android	car_loading_profile	正在加载
+android	car_mode_disable_notification_message	点按即可退出驾驶应用。
+android	car_mode_disable_notification_title	驾驶应用正在运行
+android	carrier_app_notification_text	点按即可进行设置
+android	carrier_app_notification_title	已插入新 SIM 卡
+android	chooseActivity	选择操作
+android	chooseUsbActivity	为USB设备选择一个应用
+android	choose_account_label	选择帐号
+android	chooser_wallpaper	更改壁纸
+android	clearDefaultHintMsg	在“系统设置”>“应用”>“已下载”中清除默认设置。
+android	close_button_text	关闭
+android	color_correction_feature_name	色彩校正
+android	color_inversion_feature_name	颜色反转
+android	common_name	常用名称：
+android	condition_provider_service_binding_label	条件提供程序
+android	conference_call	电话会议
+android	contentServiceSync	同步
+android	contentServiceSyncNotificationTitle	无法同步
+android	contentServiceTooManyDeletesNotificationDesc	尝试删除的%s数量太多。
+android	content_description_sliding_handle	滑动手柄。触摸并按住。
+android	country_selection_title	区域偏好设置
+android	create_contact_using	创建电话号码为\n%s 的联系人
+android	data_saver_description	为了减少流量消耗，流量节省程序会阻止某些应用在后台收发数据。您当前使用的应用可以收发数据，但频率可能会降低。举例而言，这可能意味着图片只有在您点按之后才会显示。
+android	data_saver_enable_button	开启
+android	data_saver_enable_title	要开启流量节省程序吗？
+android	data_usage_limit_body	已暂停使用数据网络连接，直到这个周期结束为止
+android	data_usage_limit_snoozed_body	您已使用 %s，超出所设上限
+android	data_usage_mobile_limit_snoozed_title	已超出移动数据流量上限
+android	data_usage_mobile_limit_title	已达到移动数据流量上限
+android	data_usage_rapid_app_body	%s使用的数据流量比平时多
+android	data_usage_rapid_body	您的应用使用的数据流量比平时多
+android	data_usage_rapid_title	移动数据用量较多
+android	data_usage_restricted_body	点按即可取消限制。
+android	data_usage_restricted_title	后台流量受限制
+android	data_usage_warning_body	您已使用 %s 的数据流量
+android	data_usage_warning_title	数据流量警告
+android	data_usage_wifi_limit_snoozed_title	已超出 WLAN 数据流量上限
+android	data_usage_wifi_limit_title	已达到 WLAN 流量上限
+android	date_and_time	%Y 年 %-m 月 %-e 日%p %I:%M:%S
+android	date_picker_decrement_day_button	减小日期值
+android	date_picker_decrement_month_button	减小月份值
+android	date_picker_decrement_year_button	减小年份值
+android	date_picker_dialog_title	设置日期
+android	date_picker_increment_day_button	增大日期值
+android	date_picker_increment_month_button	增大月份值
+android	date_picker_increment_year_button	增大年份值
+android	date_picker_next_month_button	下个月
+android	date_picker_prev_month_button	上个月
+android	date_time_done	完成
+android	date_time_set	设置
+android	day	天
+android	days	天
+android	decline	拒绝
+android	decline_remote_bugreport_action	拒绝
+android	default_audio_route_category_name	系统
+android	default_audio_route_name	电视
+android	default_audio_route_name_dock_speakers	基座扬声器
+android	default_audio_route_name_headphones	耳机
+android	default_notification_channel_label	未分类
+android	delete	删除
+android	deleteText	删除
+android	deleted_key	已删除%1$s
+android	demo_restarting_message	正在重置设备…
+android	demo_starting_message	正在启动演示模式…
+android	deny	拒绝
+android	deprecated_target_sdk_app_store	检查更新
+android	deprecated_target_sdk_message	此应用专为旧版 Android 打造，因此可能无法正常运行。请尝试检查更新或与开发者联系。
+android	description_target_unlock_tablet	滑动解锁。
+android	device_storage_monitor_notification_channel	设备存储空间
+android	dial	拨打电话
+android	dial_desc	拨打所选电话号码
+android	dial_number_using	拨打电话\n%s
+android	disable_accessibility_shortcut	关闭快捷方式
+android	disable_tether_notification_message	请与您的管理员联系以了解详情
+android	disable_tether_notification_title	网络共享已停用
+android	display_manager_built_in_display_name	内置屏幕
+android	display_manager_hdmi_display_name	HDMI 屏幕
+android	display_manager_overlay_display_name	叠加视图 #%1$d
+android	display_manager_overlay_display_secure_suffix	，安全
+android	dlg_ok	确定
+android	done_label	完成
+android	double_tap_toast	提示：点按两次可放大或缩小。
+android	dump_heap_notification	%1$s占用的内存已超出限制
+android	dump_heap_notification_detail	已收集堆转储数据。点按即可分享。
+android	dump_heap_text	%1$s进程占用的内存已超出限制 (%2$s)。您可以将收集的堆转储数据共享给相应的开发者。请注意：此数据中可能包含该应用有权存取的您的个人信息。
+android	dump_heap_title	要共享堆转储数据吗？
+android	editTextMenuTitle	文字操作
+android	email	电子邮件
+android	emailTypeCustom	自定义
+android	emailTypeHome	个人
+android	emailTypeMobile	手机
+android	emailTypeOther	其他
+android	emailTypeWork	工作
+android	email_desc	将电子邮件发送至所选地址
+android	emergency_call_dialog_number_for_display	急救或报警电话
+android	emergency_calls_only	只能拨打紧急呼救电话
+android	enablePin	失败，请开启 SIM/RUIM 卡锁定设置。
+android	enable_explore_by_touch_warning_message	%1$s想要启用“触摸浏览”。“触摸浏览”启用后，您可以听到或看到所触摸内容的说明，还可以通过手势操作与手机互动。
+android	enable_explore_by_touch_warning_title	是否启用“触摸浏览”？
+android	error_message_change_not_allowed	您的管理员不允许进行这项更改
+android	error_message_title	错误
+android	etws_primary_default_message_earthquake	请保持冷静，并寻找附近的避难地点。
+android	etws_primary_default_message_earthquake_and_tsunami	请保持冷静，并寻找附近的避难地点。
+android	etws_primary_default_message_test	紧急消息测试
+android	etws_primary_default_message_tsunami	请立即从沿海和河滨区域撤离到高地等较安全的地方。
+android	eventTypeAnniversary	周年纪念日
+android	eventTypeBirthday	生日
+android	eventTypeCustom	自定义
+android	eventTypeOther	其他
+android	expand_action_accessibility	切换展开模式
+android	expand_button_content_description_collapsed	展开
+android	expand_button_content_description_expanded	收起
+android	expires_on	有效期至：
+android	ext_media_badremoval_notification_message	请先弹出媒体，再将其移除，以防内容丢失
+android	ext_media_badremoval_notification_title	%s已意外移除
+android	ext_media_browse_action	浏览
+android	ext_media_checking_notification_message	正在检查当前内容
+android	ext_media_checking_notification_title	正在检查%s…
+android	ext_media_init_action	设置
+android	ext_media_missing_message	请再次插入设备
+android	ext_media_missing_title	缺少%s
+android	ext_media_move_failure_message	请再次尝试移动内容
+android	ext_media_move_failure_title	无法移动内容
+android	ext_media_move_specific_title	正在移动%s
+android	ext_media_move_success_message	已将内容移至%s
+android	ext_media_move_success_title	内容转移操作已完成
+android	ext_media_move_title	正在移动数据
+android	ext_media_new_notification_message	点按即可进行设置
+android	ext_media_new_notification_title	新的%s
+android	ext_media_nomedia_notification_message	部分功能可能无法正常运行。请插入新的存储设备。
+android	ext_media_nomedia_notification_title	%s已被移除
+android	ext_media_ready_notification_message	可用于传输照片和媒体文件
+android	ext_media_status_bad_removal	未安全移除
+android	ext_media_status_checking	正在检查…
+android	ext_media_status_ejecting	正在弹出…
+android	ext_media_status_formatting	正在格式化…
+android	ext_media_status_missing	未插入
+android	ext_media_status_mounted	就绪
+android	ext_media_status_mounted_ro	只读
+android	ext_media_status_removed	已移除
+android	ext_media_status_unmountable	已损坏
+android	ext_media_status_unmounted	已弹出
+android	ext_media_status_unsupported	不支持
+android	ext_media_unmount_action	弹出
+android	ext_media_unmountable_notification_message	%s已损坏。选择即可进行修正。
+android	ext_media_unmountable_notification_title	%s出现问题
+android	ext_media_unmounting_notification_message	请勿移除
+android	ext_media_unmounting_notification_title	正在弹出%s
+android	ext_media_unsupported_notification_message	此设备不支持该%s。选择即可使用支持的格式进行设置。
+android	ext_media_unsupported_notification_title	%s不受支持
+android	extract_edit_menu_button	修改
+android	faceunlock_multiple_failures	已超过“人脸解锁”尝试次数上限
+android	factory_reset_message	无法使用管理应用，系统现在将清空您的设备。\n\n如有疑问，请与您所在单位的管理员联系。
+android	factory_reset_warning	系统将清空您的设备
+android	factorytest_failed	出厂测试失败
+android	factorytest_no_action	找不到提供FACTORY_TEST操作的软件包。
+android	factorytest_not_system	只有安装在/system/app中的软件包支持FACTORY_TEST操作。
+android	factorytest_reboot	重新启动
+android	failed_to_copy_to_clipboard	无法复制到剪贴板
+android	fcComplete	功能代码已拨完。
+android	fcError	出现连接问题或功能代码无效。
+android	find	查找
+android	find_next	下一条结果
+android	find_on_page	在网页上查找
+android	find_previous	上一条结果
+android	fingerprint_acquired_imager_dirty	指纹传感器有脏污。请擦拭干净，然后重试。
+android	fingerprint_acquired_insufficient	无法处理指纹，请重试。
+android	fingerprint_acquired_partial	仅检测到部分指纹，请重试。
+android	fingerprint_acquired_too_fast	手指移动太快，请重试。
+android	fingerprint_acquired_too_slow	手指移动太慢，请重试。
+android	fingerprint_authenticated	已验证指纹
+android	fingerprint_error_canceled	指纹操作已取消。
+android	fingerprint_error_hw_not_available	指纹硬件无法使用。
+android	fingerprint_error_hw_not_present	此设备没有指纹传感器
+android	fingerprint_error_lockout	尝试次数过多，请稍后重试。
+android	fingerprint_error_lockout_permanent	尝试次数过多。指纹传感器已停用。
+android	fingerprint_error_no_fingerprints	未注册任何指纹。
+android	fingerprint_error_no_space	无法存储指纹。请移除一个现有的指纹。
+android	fingerprint_error_timeout	指纹录入操作超时，请重试。
+android	fingerprint_error_unable_to_process	请重试。
+android	fingerprint_error_user_canceled	用户取消了指纹操作。
+android	fingerprint_name_template	手指 %d
+android	fingerprint_not_recognized	无法识别
+android	fingerprints	指纹：
+android	floating_toolbar_close_overflow_description	关闭工具栏溢出
+android	floating_toolbar_open_overflow_description	更多选项
+android	force_close	确定
+android	foreground_service_app_in_background	%1$s正在消耗电量
+android	foreground_service_apps_in_background	%1$d 个应用正在消耗电量
+android	foreground_service_tap_for_details	点按即可详细了解电量和流量消耗情况
+android	forward_intent_to_owner	您目前是在工作资料之外使用此应用
+android	forward_intent_to_work	您目前是在工作资料内使用此应用
+android	gadget_host_error_inflating	无法添加微件。
+android	global_action_assist	助手应用
+android	global_action_battery_saver_off_status	省电模式已开启
+android	global_action_battery_saver_on_status	省电模式已关闭
+android	global_action_bug_report	错误报告
+android	global_action_emergency	紧急呼救
+android	global_action_lock	屏幕锁定
+android	global_action_lockdown	锁定
+android	global_action_logout	结束会话
+android	global_action_power_off	关机
+android	global_action_screenshot	屏幕截图
+android	global_action_settings	设置
+android	global_action_silent_mode_off_status	声音已开启
+android	global_action_silent_mode_on_status	声音已关闭
+android	global_action_toggle_battery_saver	省电模式
+android	global_action_toggle_silent_mode	静音模式
+android	global_action_voice_assist	语音助理
+android	global_actions	电视选项
+android	global_actions_airplane_mode_off_status	未开启飞行模式
+android	global_actions_airplane_mode_on_status	已开启飞行模式
+android	global_actions_toggle_airplane_mode	飞行模式
+android	gpsNotifMessage	请求人：%1$s（%2$s）
+android	gpsNotifTicker	来自%s的定位请求
+android	gpsNotifTitle	定位请求
+android	gpsVerifNo	否
+android	gpsVerifYes	是
+android	grant_credentials_permission_message_footer	您是否同意此请求？
+android	grant_credentials_permission_message_header	以下一个或多个应用请求获得相应权限，以便在当前和以后访问您的帐号。
+android	grant_permissions_header_text	访问权限请求
+android	granularity_label_character	字符
+android	granularity_label_line	行
+android	granularity_label_link	链接
+android	granularity_label_word	字
+android	hardware	显示虚拟键盘
+android	harmful_app_warning_open_anyway	仍然打开
+android	harmful_app_warning_title	检测到有害应用
+android	harmful_app_warning_uninstall	卸载
+android	heavy_weight_notification	%1$s正在运行
+android	heavy_weight_notification_detail	点按即可返回游戏
+android	heavy_weight_switcher_text	为了提升性能，一次只能打开其中一个游戏。
+android	heavy_weight_switcher_title	选择游戏
+android	hour	点
+android	hour_picker_description	小时转盘
+android	hours	小时
+android	httpError	发生了网络错误。
+android	httpErrorAuth	无法通过身份验证。
+android	httpErrorConnect	无法连接到服务器。
+android	httpErrorFailedSslHandshake	无法建立安全连接。
+android	httpErrorFile	无法使用该文件。
+android	httpErrorFileNotFound	找不到请求的文件。
+android	httpErrorIO	无法与服务器进行通信，请稍后再试。
+android	httpErrorLookup	找不到该网址。
+android	httpErrorOk	确定
+android	httpErrorProxyAuth	通过代理服务器进行身份验证失败。
+android	httpErrorRedirectLoop	该页面包含太多服务器重定向。
+android	httpErrorTimeout	与服务器的连接超时。
+android	httpErrorTooManyRequests	正在处理的请求太多，请稍后重试。
+android	httpErrorUnsupportedAuthScheme	不支持此网站身份验证方案。
+android	imProtocolCustom	自定义
+android	imProtocolGoogleTalk	环聊
+android	imProtocolYahoo	雅虎
+android	imTypeCustom	自定义
+android	imTypeHome	住宅
+android	imTypeOther	其他
+android	imTypeWork	工作
+android	ime_action_default	执行
+android	ime_action_done	完成
+android	ime_action_go	开始
+android	ime_action_next	下一步
+android	ime_action_previous	上一页
+android	ime_action_search	搜索
+android	ime_action_send	发送
+android	immersive_cling_description	要退出，请从顶部向下滑动。
+android	immersive_cling_positive	知道了
+android	immersive_cling_title	目前处于全屏模式
+android	importance_from_person	这条通知涉及特定的人，因此被归为重要通知。
+android	importance_from_user	这些通知的重要程度由您来设置。
+android	inputMethod	输入法
+android	input_method_binding_label	输入法
+android	install_carrier_app_notification_button	下载应用
+android	install_carrier_app_notification_text	下载运营商应用即可激活您的新 SIM 卡
+android	install_carrier_app_notification_text_app_name	下载%1$s应用即可激活您的新 SIM 卡
+android	install_carrier_app_notification_title	激活移动网络服务
+android	invalidPin	输入一个4至8位数的PIN码。
+android	invalidPuk	请输入至少8位数字的PUK码。
+android	issued_by	颁发者：
+android	issued_on	颁发时间：
+android	issued_to	颁发给：
+android	js_dialog_before_unload	%s\n\n您确定要离开此页面吗？
+android	js_dialog_before_unload_negative_button	留在此页
+android	js_dialog_before_unload_positive_button	离开此页
+android	js_dialog_before_unload_title	确认离开
+android	js_dialog_title	网址为“%s”的网页显示：
+android	keyboardview_keycode_cancel	取消
+android	keyboardview_keycode_done	完成
+android	keyboardview_keycode_mode_change	模式更改
+android	keygaurd_accessibility_media_controls	媒体控制
+android	keyguard_accessibility_add_widget	添加微件。
+android	keyguard_accessibility_camera	相机
+android	keyguard_accessibility_expand_lock_area	展开解锁区域。
+android	keyguard_accessibility_face_unlock	人脸解锁。
+android	keyguard_accessibility_password_unlock	密码解锁。
+android	keyguard_accessibility_pattern_area	图案区域。
+android	keyguard_accessibility_pattern_unlock	图案解锁。
+android	keyguard_accessibility_pin_unlock	PIN码解锁。
+android	keyguard_accessibility_sim_pin_unlock	SIM 卡 PIN 码解锁。
+android	keyguard_accessibility_sim_puk_unlock	SIM 卡 PUK 码解锁。
+android	keyguard_accessibility_slide_area	滑动区域。
+android	keyguard_accessibility_slide_unlock	滑动解锁。
+android	keyguard_accessibility_status	状态
+android	keyguard_accessibility_unlock_area_collapsed	已收起解锁区域。
+android	keyguard_accessibility_unlock_area_expanded	已展开解锁区域。
+android	keyguard_accessibility_user_selector	用户选择器
+android	keyguard_accessibility_widget	%1$s微件。
+android	keyguard_accessibility_widget_changed	%1$s。%3$d的微件%2$d。
+android	keyguard_accessibility_widget_deleted	已删除微件%1$s。
+android	keyguard_accessibility_widget_empty_slot	空白
+android	keyguard_accessibility_widget_reorder_end	已完成微件重新排序。
+android	keyguard_accessibility_widget_reorder_start	已开始将微件重新排序。
+android	keyguard_label_text	要解锁，请先按 MENU 再按 0。
+android	keyguard_password_enter_password_code	输入密码以解锁
+android	keyguard_password_enter_pin_code	输入PIN码
+android	keyguard_password_enter_pin_password_code	输入PIN码进行解锁
+android	keyguard_password_enter_pin_prompt	新的PIN码
+android	keyguard_password_enter_puk_code	请输入PUK码和新的PIN码
+android	keyguard_password_enter_puk_prompt	PUK码
+android	keyguard_password_entry_touch_hint	点按即可输入密码
+android	keyguard_password_wrong_pin_code	PIN码有误。
+android	kg_enter_confirm_pin_hint	请确认所需的PIN码
+android	kg_failed_attempts_almost_at_login	您已连续 %1$d 次画错解锁图案。如果再尝试 %2$d 次后仍不成功，系统就会要求您使用电子邮件帐号解锁电视。\n\n请在 %3$d 秒后重试。
+android	kg_failed_attempts_almost_at_wipe	您已经 %1$d 次错误地尝试解锁电视。如果再尝试 %2$d 次后仍不成功，电视将恢复为出厂默认设置，所有用户数据都会丢失。
+android	kg_failed_attempts_now_wiping	您已经 %d 次错误地尝试解锁电视。电视现在将恢复为出厂默认设置。
+android	kg_forgot_pattern_button_text	忘记了图案
+android	kg_invalid_confirm_pin_hint	PIN码不匹配
+android	kg_invalid_puk	请重新输入正确的PUK码。如果尝试错误次数过多，SIM卡将永久停用。
+android	kg_invalid_sim_pin_hint	请输入4至8位数的PIN码。
+android	kg_invalid_sim_puk_hint	PUK码应包含8位数字。
+android	kg_login_account_recovery_hint	忘记了用户名或密码？\n请访问 google.com/accounts/recovery。
+android	kg_login_checking_password	正在检查帐号…
+android	kg_login_instructions	要解锁，请登录您的Google帐号。
+android	kg_login_invalid_input	用户名或密码无效。
+android	kg_login_password_hint	密码
+android	kg_login_submit_button	登录
+android	kg_login_too_many_attempts	图案尝试次数过多
+android	kg_login_username_hint	用户名（电子邮件地址）
+android	kg_password_instructions	输入密码
+android	kg_password_wrong_pin_code	PIN码有误。
+android	kg_pattern_instructions	绘制您的图案
+android	kg_pin_instructions	输入PIN码
+android	kg_puk_enter_pin_hint	请输入所需的PIN码
+android	kg_puk_enter_puk_hint	SIM卡已被停用，需要输入PUK码才能继续使用。有关详情，请联系您的运营商。
+android	kg_reordering_delete_drop_target_text	删除
+android	kg_sim_pin_instructions	输入 SIM 卡 PIN 码
+android	kg_sim_unlock_progress_dialog_message	正在解锁SIM卡...
+android	kg_too_many_failed_password_attempts_dialog_message	您已连续 %1$d 次输错密码。\n\n请在 %2$d 秒后重试。
+android	kg_too_many_failed_pattern_attempts_dialog_message	您已连续 %1$d 次画错解锁图案。\n\n请在 %2$d 秒后重试。
+android	kg_too_many_failed_pin_attempts_dialog_message	您已经%1$d次输错了PIN码。\n\n请在%2$d秒后重试。
+android	kg_wrong_password	密码错误
+android	kg_wrong_pattern	图案错误
+android	kg_wrong_pin	PIN码有误
+android	language_picker_section_all	所有语言
+android	language_picker_section_suggested	建议语言
+android	language_selection_title	添加语言
+android	last_month	上个月
+android	launchBrowserDefault	要启动浏览器吗？
+android	launch_warning_original	%1$s已启动。
+android	launch_warning_replace	%1$s目前正在运行。
+android	launch_warning_title	应用已重定向
+android	leave_accessibility_shortcut_on	使用快捷方式
+android	loading	正在加载...
+android	locale_search_menu	搜索
+android	lock_to_app_unlock_password	取消时要求输入密码
+android	lock_to_app_unlock_pattern	取消时要求绘制解锁图案
+android	lock_to_app_unlock_pin	取消时要求输入PIN码
+android	lockscreen_access_pattern_area	图案区域。
+android	lockscreen_access_pattern_cell_added	已添加单元格
+android	lockscreen_access_pattern_cell_added_verbose	已添加圆点 %1$s
+android	lockscreen_access_pattern_cleared	图案已清除
+android	lockscreen_access_pattern_detected	图案绘制完成
+android	lockscreen_access_pattern_start	开始绘制图案
+android	lockscreen_carrier_default	没有服务
+android	lockscreen_emergency_call	紧急呼救
+android	lockscreen_failed_attempts_almost_at_wipe	您已经 %1$d 次错误地尝试解锁电视。如果再尝试 %2$d 次后仍不成功，电视将恢复为出厂默认设置，所有用户数据都会丢失。
+android	lockscreen_failed_attempts_almost_glogin	您已连续 %1$d 次画错解锁图案。如果再尝试 %2$d 次后仍不成功，系统就会要求您使用自己的 Google 登录信息解锁电视。\n\n请在 %3$d 秒后重试。
+android	lockscreen_failed_attempts_now_wiping	您已经 %d 次错误地尝试解锁电视。电视现在将恢复为出厂默认设置。
+android	lockscreen_forgot_pattern_button_text	忘记了图案？
+android	lockscreen_glogin_account_recovery_hint	忘记了用户名或密码？\n请访问google.com/accounts/recovery。
+android	lockscreen_glogin_checking_password	正在检查...
+android	lockscreen_glogin_forgot_pattern	帐号解锁
+android	lockscreen_glogin_instructions	要解除锁定，请使用您的Google帐号登录。
+android	lockscreen_glogin_invalid_input	用户名或密码无效。
+android	lockscreen_glogin_password_hint	密码
+android	lockscreen_glogin_submit_button	登录
+android	lockscreen_glogin_too_many_attempts	图案尝试次数过多
+android	lockscreen_glogin_username_hint	用户名（电子邮件）
+android	lockscreen_instructions_when_pattern_disabled	按 MENU 解锁。
+android	lockscreen_instructions_when_pattern_enabled	按 Menu 解锁或进行紧急呼救。
+android	lockscreen_missing_sim_instructions	请插入SIM卡
+android	lockscreen_missing_sim_instructions_long	SIM卡缺失或无法读取。请插入SIM卡。
+android	lockscreen_missing_sim_message	电视中没有 SIM 卡。
+android	lockscreen_missing_sim_message_short	没有 SIM 卡
+android	lockscreen_network_locked_message	网络已锁定
+android	lockscreen_password_wrong	重试
+android	lockscreen_pattern_correct	正确！
+android	lockscreen_pattern_instructions	绘制解锁图案
+android	lockscreen_pattern_wrong	重试
+android	lockscreen_permanent_disabled_sim_instructions	您的SIM卡已永久停用。\n请与您的无线服务提供商联系，以便重新获取一张SIM卡。
+android	lockscreen_permanent_disabled_sim_message_short	SIM卡无法使用。
+android	lockscreen_return_to_call	返回通话
+android	lockscreen_screen_locked	屏幕已锁定。
+android	lockscreen_sim_locked_message	SIM 卡已被锁定。
+android	lockscreen_sim_puk_locked_instructions	请参阅《用户指南》或与客服人员联系。
+android	lockscreen_sim_puk_locked_message	SIM 卡已用 PUK 码锁定。
+android	lockscreen_sim_unlock_progress_dialog_message	正在解锁SIM卡...
+android	lockscreen_sound_off_label	关闭声音
+android	lockscreen_sound_on_label	打开声音
+android	lockscreen_storage_locked	解锁即可使用所有功能和数据
+android	lockscreen_too_many_failed_attempts_countdown	%d秒后重试。
+android	lockscreen_too_many_failed_attempts_dialog_message	您已连续 %1$d 次画错解锁图案。\n\n请在 %2$d 秒后重试。
+android	lockscreen_too_many_failed_password_attempts_dialog_message	您已连续 %1$d 次输错密码。\n\n请在 %2$d 秒后重试。
+android	lockscreen_too_many_failed_pin_attempts_dialog_message	您已经%1$d次输错了PIN码。\n\n请在%2$d秒后重试。
+android	lockscreen_transport_ffw_description	快进
+android	lockscreen_transport_next_description	下一曲
+android	lockscreen_transport_pause_description	暂停
+android	lockscreen_transport_play_description	播放
+android	lockscreen_transport_prev_description	上一曲
+android	lockscreen_transport_rew_description	快退
+android	lockscreen_transport_stop_description	停止
+android	lockscreen_unlock_label	解锁
+android	low_internal_storage_view_text	某些系统功能可能无法正常使用
+android	low_internal_storage_view_text_no_boot	系统存储空间不足。请确保您有250MB的可用空间，然后重新启动。
+android	low_internal_storage_view_title	存储空间不足
+android	low_memory	电视存储空间已满。请删除一些文件以腾出空间。
+android	managed_profile_label	切换到工作资料
+android	managed_profile_label_badge	工作%1$s
+android	managed_profile_label_badge_2	第二个工作%1$s
+android	managed_profile_label_badge_3	第三个工作%1$s
+android	map	地图
+android	map_desc	找到所选地址
+android	maximize_button_text	最大化
+android	me	我
+android	media_route_button_content_description	投射
+android	media_route_chooser_extended_settings	设置
+android	media_route_chooser_searching	正在搜索设备…
+android	media_route_chooser_title	连接到设备
+android	media_route_chooser_title_for_remote_display	将屏幕投射到设备上
+android	media_route_controller_disconnect	断开连接
+android	media_route_status_available	可连接
+android	media_route_status_connecting	正在连接...
+android	media_route_status_in_use	正在使用
+android	media_route_status_not_available	无法连接
+android	media_route_status_scanning	正在扫描...
+android	mediasize_chinese_om_dai_pa_kai	大8开
+android	mediasize_chinese_om_jurro_ku_kai	16开
+android	mediasize_chinese_om_pa_kai	8开
+android	mediasize_unknown_landscape	未知（横向）
+android	mediasize_unknown_portrait	未知（纵向）
+android	menu_delete_shortcut_label	删除
+android	menu_enter_shortcut_label	Enter 键
+android	menu_space_shortcut_label	空格
+android	minute	分钟
+android	minute_picker_description	分钟转盘
+android	minutes	分钟
+android	mismatchPin	您输入的PIN码不一致。
+android	mmcc_authentication_reject	SIM 卡不支持语音
+android	mmcc_authentication_reject_msim_template	不允许使用 SIM 卡 %d
+android	mmcc_illegal_me	手机不支持语音
+android	mmcc_illegal_me_msim_template	不允许使用 SIM 卡 %d
+android	mmcc_illegal_ms	SIM 卡不支持语音
+android	mmcc_illegal_ms_msim_template	不允许使用 SIM 卡 %d
+android	mmcc_imsi_unknown_in_hlr	未配置支持语音的 SIM 卡
+android	mmcc_imsi_unknown_in_hlr_msim_template	未配置 SIM 卡 %d
+android	mmiComplete	MMI 码已完成。
+android	mmiError	出现连接问题或 MMI 码无效。
+android	mmiErrorWhileRoaming	漫游时无法通过您的手机来更改来电转接设置。
+android	mmiFdnError	只能对固定拨号号码执行此类操作。
+android	month_day_year	%Y 年 %-m 月 %-e 日
+android	more_item_label	更多
+android	muted_by	%1$s正在将某些音效设为静音
+android	needPuk	您的 SIM 卡已用 PUK 码锁定。请输入 PUK 码将其解锁。
+android	needPuk2	输入PUK2码以解锁SIM卡。
+android	network_available_sign_in	登录到网络
+android	network_logging_notification_text	贵单位会管理该设备，且可能会监控网络流量。点按即可了解详情。
+android	network_logging_notification_title	设备为受管理设备
+android	network_switch_metered	已切换至%1$s
+android	network_switch_metered_detail	设备会在%2$s无法访问互联网时使用%1$s（可能需要支付相应的费用）。
+android	network_switch_metered_toast	已从%1$s切换至%2$s
+android	network_switch_type_name_unknown	未知网络类型
+android	new_app_action	打开%1$s
+android	new_app_description	%1$s将会在不保存的情况下关闭
+android	new_sms_notification_content	打开短信应用查看
+android	new_sms_notification_title	您有新消息
+android	next_button_label	下一步
+android	noApplications	没有应用可执行此操作。
+android	no_file_chosen	未选定任何文件
+android	no_matches	无匹配项
+android	no_permissions	不需要任何权限
+android	no_recent_tasks	最近没有运行任何应用
+android	notification_app_name_settings	设置
+android	notification_app_name_system	系统
+android	notification_appops_camera_active	相机
+android	notification_appops_microphone_active	麦克风
+android	notification_appops_overlay_active	显示在屏幕上其他应用的上层
+android	notification_channel_account	帐号状态
+android	notification_channel_alerts	提醒
+android	notification_channel_call_forward	来电转接
+android	notification_channel_car_mode	车载模式
+android	notification_channel_developer	开发者消息
+android	notification_channel_device_admin	设备管理
+android	notification_channel_do_not_disturb	勿扰
+android	notification_channel_emergency_callback	紧急回拨模式
+android	notification_channel_foreground_service	消耗电量的应用
+android	notification_channel_heavy_weight_app	应用正在运行中
+android	notification_channel_mobile_data_status	移动数据状态
+android	notification_channel_network_alert	提醒
+android	notification_channel_network_alerts	网络提醒
+android	notification_channel_network_available	有可用的网络
+android	notification_channel_network_status	网络状态
+android	notification_channel_physical_keyboard	实体键盘
+android	notification_channel_retail_mode	零售演示模式
+android	notification_channel_security	安全性
+android	notification_channel_sim	SIM 卡状态
+android	notification_channel_sms	短信
+android	notification_channel_system_changes	系统变更
+android	notification_channel_updates	更新
+android	notification_channel_usb	USB 连接
+android	notification_channel_virtual_keyboard	虚拟键盘
+android	notification_channel_voice_mail	语音邮件
+android	notification_channel_vpn	VPN 状态
+android	notification_channel_wfc	WLAN 通话
+android	notification_hidden_text	新通知
+android	notification_listener_binding_label	通知侦听器
+android	notification_ranker_binding_label	通知重要程度排序服务
+android	notification_reply_button_accessibility	回复
+android	notification_title	登录 %1$s 时出错
+android	notification_work_profile_content_description	工作资料
+android	now_string_shortest	现在
+android	number_picker_decrement_button	减小
+android	number_picker_increment_button	增大
+android	number_picker_increment_scroll_action	向上滑动可增大数值，向下滑动可减小数值。
+android	number_picker_increment_scroll_mode	%s 触摸并按住。
+android	old_app_action	返回%1$s
+android	older	往前
+android	oneMonthDurationPast	1 个月前
+android	open_permission_deny	您无权打开此网页。
+android	orgTypeCustom	自定义
+android	orgTypeOther	其他
+android	orgTypeWork	公司
+android	org_name	组织：
+android	org_unit	组织单位：
+android	owner_name	机主
+android	package_deleted_device_owner	已由您的管理员删除
+android	package_installed_device_owner	已由您的管理员安装
+android	package_updated_device_owner	已由您的管理员更新
+android	passwordIncorrect	密码不正确。
+android	peerTtyModeFull	对方请求使用“TTY 完整”模式
+android	peerTtyModeHco	对方请求使用“TTY HCO”模式
+android	peerTtyModeOff	对方请求使用“TTY 关闭”模式
+android	peerTtyModeVco	对方请求使用“TTY VCO”模式
+android	perm_costs_money	这可能会产生费用
+android	permdesc_acceptHandovers	允许该应用继续进行在其他应用中发起的通话。
+android	permdesc_accessCoarseLocation	此应用可根据网络来源（例如基站和 WLAN 网络）获取您的位置信息。您的电视必须支持并开启这些位置信息服务，此应用才能使用这些服务。
+android	permdesc_accessDrmCertificates	允许应用配置和使用DRM证书。普通应用绝不需要此权限。
+android	permdesc_accessFineLocation	此应用可根据 GPS 或网络来源（例如基站和 WLAN 网络）获取您的位置信息。您的手机必须支持并开启这些位置信息服务，此应用才能使用这些服务。这可能会增加耗电量。
+android	permdesc_accessImsCallService	允许应用自行使用即时通讯服务拨打电话。
+android	permdesc_accessLocationExtraCommands	允许该应用使用其他的位置信息提供程序命令。此权限使该应用可以干扰GPS或其他位置信息源的运作。
+android	permdesc_accessNetworkConditions	允许应用监听网络状况的观测信息。普通应用绝不需要此权限。
+android	permdesc_accessNetworkState	允许该应用查看网络连接的相关信息，例如存在和连接的网络。
+android	permdesc_accessNotifications	允许该应用检索、检查并清除通知，包括其他应用发布的通知。
+android	permdesc_accessWifiState	允许该应用查看WLAN网络的相关信息，例如是否启用了WLAN以及连接的WLAN设备的名称。
+android	permdesc_accessWimaxState	允许该应用确定是否启用了 WiMAX 以及连接的任何 WiMAX 网络的相关信息。
+android	permdesc_access_notification_policy	允许此应用读取和写入“勿扰”模式配置。
+android	permdesc_addVoicemail	允许应用在您的语音信箱中留言。
+android	permdesc_answerPhoneCalls	允许该应用接听来电。
+android	permdesc_bindCarrierMessagingService	允许应用绑定到运营商消息传递服务的顶级接口。普通应用绝不需要此权限。
+android	permdesc_bindCarrierServices	允许应用绑定到运营商服务。普通应用绝不需要此权限。
+android	permdesc_bindConditionProviderService	允许应用绑定到条件提供程序服务的顶级接口。普通应用绝不需要此权限。
+android	permdesc_bindDreamService	允许应用绑定到互动屏保服务的顶级接口。普通应用绝不需要此权限。
+android	permdesc_bindNotificationListenerService	允许应用绑定到通知侦听器服务的顶级接口（普通应用绝不需要此权限）。
+android	permdesc_bind_connection_service	允许该应用与电话服务交互以便接打电话。
+android	permdesc_bind_incall_service	允许应用控制用户看到通话屏幕的时机和方式。
+android	permdesc_bluetooth	允许应用查看电视上的蓝牙配置，以及与配对设备建立连接或接受其连接请求。
+android	permdesc_bluetoothAdmin	允许应用配置本地蓝牙电视，并允许其查找远程设备且与之配对。
+android	permdesc_bodySensors	允许该应用存取监测您身体状况的传感器所收集的数据，例如您的心率。
+android	permdesc_broadcastSticky	允许应用发送持久广播消息，此类消息在广播结束后仍会保留。过度使用可能会导致电视使用过多内存，从而降低其速度或稳定性。
+android	permdesc_callPhone	允许该应用在您未执行操作的情况下拨打电话号码。此权限可能会导致意外收费或呼叫。请注意，此权限不允许该应用拨打紧急电话号码。恶意应用可通过拨打电话产生相关费用，而无需您的确认。
+android	permdesc_camera	此应用可随时使用相机拍摄照片和录制视频。
+android	permdesc_changeNetworkState	允许应用更改网络连接的状态。
+android	permdesc_changeTetherState	允许应用更改绑定网络连接的状态。
+android	permdesc_changeWifiMulticastState	允许应用使用多播地址接收发送到 WLAN 网络中所有设备（而不仅仅是您的电视）的数据包。该操作的耗电量比非多播模式要大。
+android	permdesc_changeWifiState	允许该应用与WLAN接入点建立和断开连接，以及更改WLAN网络的设备配置。
+android	permdesc_changeWimaxState	允许应用建立和断开电视与 WiMAX 网络之间的连接。
+android	permdesc_connection_manager	允许该应用管理电信网络连接。
+android	permdesc_control_incall_experience	允许应用向用户提供通话体验。
+android	permdesc_createNetworkSockets	允许该应用创建网络套接字和使用自定义网络协议。浏览器和其他某些应用提供了向互联网发送数据的途径，因此应用无需该权限即可向互联网发送数据。
+android	permdesc_disableKeyguard	允许该应用停用键锁以及任何关联的密码安全措施。例如，让手机在接听来电时停用键锁，在通话结束后重新启用键锁。
+android	permdesc_enableCarMode	允许应用启用车载模式。
+android	permdesc_expandStatusBar	允许应用展开或收起状态栏。
+android	permdesc_foregroundService	允许该应用使用前台服务。
+android	permdesc_getAccounts	允许应用获取电视已知的帐号列表，其中可能包括由已安装的应用创建的所有帐号。
+android	permdesc_getPackageSize	允许应用检索其代码、数据和缓存大小
+android	permdesc_getTasks	允许该应用检索近期运行的和当前正在运行的任务的相关信息。此权限可让该应用了解设备上使用了哪些应用。
+android	permdesc_handoverStatus	允许此应用接收Android Beam当前传输内容的相关信息
+android	permdesc_install_shortcut	允许应用自行添加主屏幕快捷方式。
+android	permdesc_invokeCarrierSetup	允许应用调用运营商提供的配置应用。普通应用绝不需要此权限。
+android	permdesc_killBackgroundProcesses	允许该应用结束其他应用的后台进程。此权限可导致其他应用停止运行。
+android	permdesc_manageFingerprint	允许该应用调用方法来添加和删除可用的指纹模板。
+android	permdesc_manageNetworkPolicy	允许应用管理网络规范和定义专门针对应用的规则。
+android	permdesc_manageOwnCalls	允许该应用通过系统转接来电，以改善通话体验。
+android	permdesc_manageProfileAndDeviceOwners	允许应用设置个人资料所有者和设备所有者。
+android	permdesc_modifyAudioSettings	允许该应用修改全局音频设置，例如音量和用于输出的扬声器。
+android	permdesc_modifyNetworkAccounting	允许该应用修改对于各应用的网络使用情况的统计方式。普通应用不应使用此权限。
+android	permdesc_nfc	允许应用与近距离无线通信(NFC)标签、卡和读取器通信。
+android	permdesc_persistentActivity	允许应用在内存中持续保留其自身的部分组件。此权限可能会限制其他应用可用的内存，从而减缓电视运行速度。
+android	permdesc_processOutgoingCalls	允许应用在拨出电话时查看拨打的电话号码，并选择改为拨打其他号码或完全中止通话。
+android	permdesc_readCalendar	此应用可读取您电视上存储的所有日历活动，并分享或保存您的日历数据。
+android	permdesc_readCallLog	此应用可读取您的通话记录。
+android	permdesc_readCellBroadcasts	允许应用读取您的设备收到的小区广播消息。小区广播消息是在某些地区发送的、用于发布紧急情况警告的提醒信息。恶意应用可能会在您收到小区紧急广播时干扰您设备的性能或操作。
+android	permdesc_readContacts	允许应用读取您的电视上存储的联系人相关数据，包括您与特定联系人通话、发送电子邮件或通过其他方式进行通信的频率。此权限可让应用保存您的联系人数据，而且恶意应用可能会在您不知情的情况下分享联系人数据。
+android	permdesc_readHistoryBookmarks	允许该应用读取浏览器访问过的所有网址记录以及浏览器的所有书签。请注意：此权限可能不适用于第三方浏览器或具备网页浏览功能的其他应用。
+android	permdesc_readInstallSessions	允许应用读取安装会话。这样，应用将可以查看有关当前软件包安装的详情。
+android	permdesc_readNetworkUsageHistory	允许应用读取特定网络和应用的网络使用情况历史记录。
+android	permdesc_readPhoneNumbers	允许该应用访问设备上的电话号码。
+android	permdesc_readPhoneState	允许该应用访问设备的电话功能。此权限可让该应用确定本机号码和设备 ID、是否正处于通话状态以及拨打的号码。
+android	permdesc_readSms	此应用可读取您电视上存储的所有短信。
+android	permdesc_readSyncSettings	允许该应用读取某个帐号的同步设置。例如，此权限可确定“联系人”应用是否与某个帐号同步。
+android	permdesc_readSyncStats	允许该应用读取某个帐号的同步统计信息，包括同步活动历史记录和同步数据量。
+android	permdesc_receiveBootCompleted	允许应用在系统启动完毕后立即自行启动。此权限可能会延长电视的启动时间，而且会因为系统一直运行该应用而导致电视的整体运行速度变慢。
+android	permdesc_receiveMms	允许该应用接收和处理彩信。这就意味着，该应用可能会监视发送到您设备的彩信，或删除发送到您设备的彩信而不向您显示。
+android	permdesc_receiveSms	允许该应用接收和处理短信。这就意味着，该应用可能会监视发送到您设备的短信，或删除发送到您设备的短信而不向您显示。
+android	permdesc_receiveWapPush	允许该应用接收和处理 WAP 消息。此权限包括监视发送给您的消息或删除发送给您的消息而不向您显示的功能。
+android	permdesc_recordAudio	此应用可随时使用麦克风进行录音。
+android	permdesc_register_call_provider	允许该应用注册新的电信网络连接。
+android	permdesc_register_sim_subscription	允许该应用注册新的电信 SIM 卡连接。
+android	permdesc_removeDrmCertificates	允许应用移除DRM证书。普通应用绝不需要此权限。
+android	permdesc_reorderTasks	允许该应用将任务移动到前台和后台。该应用可能不经您的命令自行执行此操作。
+android	permdesc_requestDeletePackages	允许应用请求删除文件包。
+android	permdesc_requestIgnoreBatteryOptimizations	允许应用请求相应的权限，以便忽略针对该应用的电池优化。
+android	permdesc_requestInstallPackages	允许应用请求安装文件包。
+android	permdesc_route_media_output	允许该应用将媒体输出线路更改到其他外部设备。
+android	permdesc_runInBackground	此应用可在后台运行，这样可能会加快耗电速度。
+android	permdesc_sdcardRead	允许应用读取您SD卡的内容。
+android	permdesc_sdcardWrite	允许应用写入SD卡。
+android	permdesc_sendSms	允许该应用发送短信。此权限可能会导致意外收费。恶意应用可能会未经您的确认而发送短信，由此产生相关费用。
+android	permdesc_setAlarm	允许应用在已安装的闹钟应用中设置闹钟。有些闹钟应用可能无法实现此功能。
+android	permdesc_setInputCalibration	允许应用修改触摸屏的校准参数。普通应用绝不需要此权限。
+android	permdesc_setTimeZone	允许应用更改电视的时区。
+android	permdesc_setWallpaper	允许应用设置系统壁纸。
+android	permdesc_setWallpaperHints	允许应用设置有关系统壁纸大小的提示。
+android	permdesc_sim_communication	允许应用向SIM卡发送命令（此权限具有很高的危险性）。
+android	permdesc_statusBar	允许应用停用状态栏或者增删系统图标。
+android	permdesc_statusBarService	允许以状态栏形式显示应用。
+android	permdesc_subscribedFeedsRead	允许应用获取有关当前同步的 Feed 的详情。
+android	permdesc_systemAlertWindow	此应用可显示在其他应用上方或屏幕的其他部分。这可能会妨碍您正常地使用应用，且其他应用的显示方式可能会受到影响。
+android	permdesc_transmitIr	允许应用使用电视的红外线发射器。
+android	permdesc_uninstall_shortcut	允许应用自行删除主屏幕快捷方式。
+android	permdesc_useBiometric	允许该应用使用生物特征硬件进行身份验证
+android	permdesc_useDataInBackground	此应用可在后台使用数据，这样可能会增加流量消耗。
+android	permdesc_useFingerprint	允许该应用使用指纹硬件进行身份验证
+android	permdesc_use_sip	允许该应用拨打和接听SIP电话。
+android	permdesc_vibrate	允许应用控制振动器。
+android	permdesc_wakeLock	允许应用阻止电视进入休眠状态。
+android	permdesc_writeCalendar	此应用可在电视上添加、移除或更改日历活动。此应用可能会以日历所有者的身份发送消息，或在不通知所有者的情况下更改活动。
+android	permdesc_writeCallLog	允许应用修改电视的通话记录，包括有关来电和外拨电话的数据。恶意应用可能会借此清除或修改您的通话记录。
+android	permdesc_writeContacts	允许应用修改您的电视上存储的联系人相关数据，包括您与特定联系人通话、发送电子邮件或通过其他方式进行通信的频率。此权限可让应用删除联系人数据。
+android	permdesc_writeGeolocationPermissions	允许应用修改“浏览器”的地理位置权限。恶意应用可能借此向任意网站发送位置信息。
+android	permdesc_writeHistoryBookmarks	允许应用修改您的电视上存储的浏览器历史记录或书签。此权限可让应用清除或修改浏览器数据。请注意：此权限可能不适用于第三方浏览器或具备网页浏览功能的其他应用。
+android	permdesc_writeSettings	允许应用修改系统的设置数据。恶意应用可能会破坏您的系统配置。
+android	permdesc_writeSyncSettings	允许该应用修改某个帐号的同步设置。例如，此权限可用于在“联系人”应用与某个帐号之间启用同步。
+android	permgroupdesc_calendar	访问您的日历
+android	permgroupdesc_calllog	读取和写入手机通话记录
+android	permgroupdesc_camera	拍摄照片和录制视频
+android	permgroupdesc_contacts	访问您的通讯录
+android	permgroupdesc_location	获取此设备的位置信息
+android	permgroupdesc_microphone	录制音频
+android	permgroupdesc_phone	拨打电话和管理通话
+android	permgroupdesc_sensors	访问与您的生命体征相关的传感器数据
+android	permgroupdesc_sms	发送和查看短信
+android	permgroupdesc_storage	访问您设备上的照片、媒体内容和文件
+android	permgrouplab_calendar	日历
+android	permgrouplab_calllog	通话记录
+android	permgrouplab_camera	相机
+android	permgrouplab_contacts	通讯录
+android	permgrouplab_location	位置信息
+android	permgrouplab_microphone	麦克风
+android	permgrouplab_phone	电话
+android	permgrouplab_sensors	身体传感器
+android	permgrouplab_sms	短信
+android	permgrouplab_storage	存储空间
+android	permgrouprequest_calendar	允许<b>%1$s</b>访问您的日历吗？
+android	permgrouprequest_calllog	允许<b>%1$s</b>访问您的手机通话记录吗？
+android	permgrouprequest_camera	允许<b>%1$s</b>拍摄照片和录制视频吗？
+android	permgrouprequest_contacts	允许<b>%1$s</b>访问您的通讯录吗？
+android	permgrouprequest_location	允许<b>%1$s</b>获取此设备的位置信息吗？
+android	permgrouprequest_microphone	允许<b>%1$s</b>录音吗？
+android	permgrouprequest_phone	允许<b>%1$s</b>拨打电话和管理通话吗？
+android	permgrouprequest_sensors	允许<b>%1$s</b>访问与您的生命体征相关的传感器数据吗？
+android	permgrouprequest_sms	允许<b>%1$s</b>发送和查看短信吗？
+android	permgrouprequest_storage	允许<b>%1$s</b>访问您设备上的照片、媒体内容和文件吗？
+android	permission_request_notification_title	权限请求
+android	permission_request_notification_with_subtitle	应用对帐号 %s\n提出权限请求。
+android	permlab_acceptHandover	继续进行来自其他应用的通话
+android	permlab_accessCoarseLocation	访问大致位置信息（以网络为依据）
+android	permlab_accessDrmCertificates	访问DRM证书
+android	permlab_accessFineLocation	访问确切位置信息（以 GPS 和网络为依据）
+android	permlab_accessImsCallService	使用即时通讯通话服务
+android	permlab_accessLocationExtraCommands	获取额外的位置信息提供程序命令
+android	permlab_accessNetworkConditions	监听网络状况的观测信息
+android	permlab_accessNetworkState	查看网络连接
+android	permlab_accessNotifications	访问通知
+android	permlab_accessWifiState	查看WLAN连接
+android	permlab_accessWimaxState	建立或中断 WiMAX 网络连接
+android	permlab_access_notification_policy	“勿扰”模式使用权限
+android	permlab_addVoicemail	添加语音邮件
+android	permlab_answerPhoneCalls	接听来电
+android	permlab_bindCarrierMessagingService	绑定到运营商消息传递服务
+android	permlab_bindCarrierServices	绑定到运营商服务
+android	permlab_bindConditionProviderService	绑定到条件提供程序服务
+android	permlab_bindDreamService	绑定到互动屏保服务
+android	permlab_bindNotificationListenerService	绑定到通知侦听器服务
+android	permlab_bind_connection_service	与电话服务交互
+android	permlab_bind_incall_service	与通话屏幕互动
+android	permlab_bluetooth	与蓝牙设备配对
+android	permlab_bluetoothAdmin	访问蓝牙设置
+android	permlab_bodySensors	访问身体传感器（如心率监测器）
+android	permlab_broadcastSticky	发送持久广播
+android	permlab_callPhone	拨打电话
+android	permlab_camera	拍摄照片和视频
+android	permlab_changeNetworkState	更改网络连接性
+android	permlab_changeTetherState	更改网络共享连接
+android	permlab_changeWifiMulticastState	允许接收WLAN多播
+android	permlab_changeWifiState	连接WLAN网络和断开连接
+android	permlab_changeWimaxState	更改 WiMAX 状态
+android	permlab_connection_manager	管理电信网络连接
+android	permlab_control_incall_experience	向用户提供通话体验
+android	permlab_createNetworkSockets	拥有完全的网络访问权限
+android	permlab_disableKeyguard	停用屏幕锁定
+android	permlab_enableCarMode	启用车载模式
+android	permlab_expandStatusBar	展开/收拢状态栏
+android	permlab_foregroundService	运行前台服务
+android	permlab_getAccounts	查找设备上的帐号
+android	permlab_getPackageSize	计算应用存储空间
+android	permlab_getTasks	检索正在运行的应用
+android	permlab_handoverStatus	接收 Android Beam 的传输状态
+android	permlab_install_shortcut	安装快捷方式
+android	permlab_invokeCarrierSetup	调用运营商提供的配置应用
+android	permlab_killBackgroundProcesses	关闭其他应用
+android	permlab_manageFingerprint	管理指纹硬件
+android	permlab_manageNetworkPolicy	管理网络政策
+android	permlab_manageOwnCalls	通过系统转接来电
+android	permlab_manageProfileAndDeviceOwners	管理个人资料和设备所有者
+android	permlab_modifyAudioSettings	更改您的音频设置
+android	permlab_modifyNetworkAccounting	修改网络使用情况记录方式
+android	permlab_nfc	控制近距离通信
+android	permlab_persistentActivity	让应用始终运行
+android	permlab_processOutgoingCalls	重新设置外拨电话的路径
+android	permlab_readCalendar	读取日历活动和详情
+android	permlab_readCallLog	读取通话记录
+android	permlab_readCellBroadcasts	读取小区广播消息
+android	permlab_readContacts	读取联系人
+android	permlab_readHistoryBookmarks	读取您的网络书签和历史记录
+android	permlab_readInstallSessions	读取安装会话
+android	permlab_readNetworkUsageHistory	读取网络使用情况历史记录
+android	permlab_readPhoneNumbers	读取电话号码
+android	permlab_readPhoneState	读取手机状态和身份
+android	permlab_readSms	读取短信
+android	permlab_readSyncSettings	读取同步设置
+android	permlab_readSyncStats	读取同步统计信息
+android	permlab_receiveBootCompleted	开机启动
+android	permlab_receiveMms	接收讯息（彩信）
+android	permlab_receiveSms	接收讯息（短信）
+android	permlab_receiveWapPush	接收讯息 (WAP)
+android	permlab_recordAudio	录音
+android	permlab_register_call_provider	注册新的电信网络连接
+android	permlab_register_sim_subscription	注册新的电信 SIM 卡连接
+android	permlab_removeDrmCertificates	移除DRM证书
+android	permlab_reorderTasks	对正在运行的应用重新排序
+android	permlab_requestDeletePackages	请求删除文件包
+android	permlab_requestIgnoreBatteryOptimizations	请求忽略电池优化
+android	permlab_requestInstallPackages	请求安装文件包
+android	permlab_route_media_output	更改媒体输出线路
+android	permlab_runInBackground	在后台运行
+android	permlab_sdcardRead	读取您的SD卡中的内容
+android	permlab_sdcardWrite	修改或删除您的SD卡中的内容
+android	permlab_sendSms	发送短信
+android	permlab_setAlarm	设置闹钟
+android	permlab_setInputCalibration	更改输入设备校准设置
+android	permlab_setTimeZone	设置时区
+android	permlab_setWallpaper	设置壁纸
+android	permlab_setWallpaperHints	调整您的壁纸大小
+android	permlab_sim_communication	向 SIM 卡发送命令
+android	permlab_statusBar	停用或修改状态栏
+android	permlab_statusBarService	用作状态栏
+android	permlab_subscribedFeedsRead	读取订阅的供稿
+android	permlab_systemAlertWindow	此应用可显示在其他应用上方
+android	permlab_transmitIr	发射红外线
+android	permlab_uninstall_shortcut	卸载快捷方式
+android	permlab_useBiometric	使用生物特征硬件
+android	permlab_useDataInBackground	在后台使用数据
+android	permlab_useFingerprint	使用指纹硬件
+android	permlab_use_sip	拨打/接听SIP电话
+android	permlab_vibrate	控制振动
+android	permlab_wakeLock	阻止电视进入休眠状态
+android	permlab_writeCalendar	添加或修改日历活动，并在所有者不知情的情况下向邀请对象发送电子邮件
+android	permlab_writeCallLog	新建/修改/删除通话记录
+android	permlab_writeContacts	修改您的通讯录
+android	permlab_writeGeolocationPermissions	修改“浏览器”地理位置的权限
+android	permlab_writeHistoryBookmarks	写入网络书签和历史记录
+android	permlab_writeSettings	修改系统设置
+android	permlab_writeSyncSettings	启用和停用同步
+android	perms_description_app	由“%1$s”提供。
+android	perms_new_perm_prefix	新增：
+android	phoneTypeAssistant	助理
+android	phoneTypeCallback	回拨号码
+android	phoneTypeCar	车载电话
+android	phoneTypeCompanyMain	公司总机
+android	phoneTypeCustom	自定义
+android	phoneTypeFaxHome	住宅传真
+android	phoneTypeFaxWork	单位传真
+android	phoneTypeHome	住宅
+android	phoneTypeMain	总机
+android	phoneTypeMms	彩信
+android	phoneTypeMobile	手机
+android	phoneTypeOther	其他
+android	phoneTypeOtherFax	其他传真
+android	phoneTypePager	寻呼机
+android	phoneTypeRadio	无线装置
+android	phoneTypeTelex	电报
+android	phoneTypeWork	单位
+android	phoneTypeWorkMobile	单位手机
+android	phoneTypeWorkPager	单位寻呼机
+android	pin_target	固定
+android	pm_checkapps_error_tip	系统关键组件缺失，会造成系统功能缺失以及崩溃等问题。\n\n请通过极米官网下载对应固件进行刷机。
+android	policydesc_disableCamera	禁止使用所有设备摄像头。
+android	policydesc_disableKeyguardFeatures	禁止使用屏幕锁定的部分功能。
+android	policydesc_encryptedStorage	要求对存储的应用数据进行加密。
+android	policydesc_expirePassword	调整系统强制用户更改锁屏密码、PIN 码或解锁图案的频率。
+android	policydesc_forceLock	控制屏幕锁定的方式和时间。
+android	policydesc_limitPassword	控制锁屏密码和 PIN 码所允许的长度和字符。
+android	policydesc_resetPassword	更改锁屏密码。
+android	policydesc_setGlobalProxy	设置在规范启用时要使用的设备全局代理。只有设备所有者才能设置全局代理。
+android	policydesc_watchLogin	监视在解锁屏幕时输错密码的次数，如果输错次数过多，则锁定手机或清除其所有数据。
+android	policydesc_watchLogin_secondaryUser	监控在解锁屏幕时输错密码的次数，并在输错次数过多时锁定手机或清空此用户的所有数据。
+android	policydesc_wipeData	恢复出厂设置时，不发出警告就直接清除电视上的数据。
+android	policydesc_wipeData_secondaryUser	清空此用户在这台电视上的数据，而不事先发出警告。
+android	policylab_disableCamera	停用相机
+android	policylab_disableKeyguardFeatures	停用屏幕锁定的部分功能
+android	policylab_encryptedStorage	设置存储设备加密
+android	policylab_expirePassword	设置锁屏密码的有效期
+android	policylab_forceLock	锁定屏幕
+android	policylab_limitPassword	设置密码规则
+android	policylab_resetPassword	更改锁屏密码
+android	policylab_setGlobalProxy	设置设备全局代理
+android	policylab_watchLogin	监控屏幕解锁尝试次数
+android	policylab_wipeData	清除所有数据
+android	policylab_wipeData_secondaryUser	清空用户数据
+android	popup_window_default_title	弹出式窗口
+android	postalTypeCustom	自定义
+android	postalTypeHome	住宅
+android	postalTypeOther	其他
+android	postalTypeWork	单位
+android	power_dialog	电视选项
+android	power_off	关机
+android	preposition_for_year	年份：%s
+android	print_service_installed_message	点按即可启用
+android	print_service_installed_title	已安装“%s”服务
+android	printing_disabled_by	“%s”已停用打印功能。
+android	profile_encrypted_detail	工作资料已锁定
+android	profile_encrypted_message	点按即可解锁工作资料
+android	progress_erasing	正在清除SD卡的数据...
+android	quick_contacts_not_available	找不到可用来查看此联系人的应用。
+android	reason_service_unavailable	未启用打印服务
+android	reason_unknown	未知
+android	reboot_safemode_confirm	您要重新启动并进入安全模式吗？这样会停用您已安装的所有第三方应用。再次重新启动将恢复这些应用。
+android	reboot_safemode_title	重新启动并进入安全模式
+android	reboot_to_reset_message	正在重新启动…
+android	reboot_to_reset_title	恢复出厂设置
+android	reboot_to_update_package	正在处理更新软件包…
+android	reboot_to_update_prepare	正在准备更新…
+android	reboot_to_update_reboot	正在重新启动…
+android	reboot_to_update_title	Android 系统更新
+android	recent_tasks_title	近期任务
+android	redo	重做
+android	region_picker_section_all	所有国家/地区
+android	relationTypeAssistant	助理
+android	relationTypeBrother	兄弟
+android	relationTypeChild	子女
+android	relationTypeCustom	自定义
+android	relationTypeDomesticPartner	同居伴侣
+android	relationTypeFather	父亲
+android	relationTypeFriend	朋友
+android	relationTypeManager	经理
+android	relationTypeMother	母亲
+android	relationTypeParent	父母
+android	relationTypePartner	合作伙伴
+android	relationTypeReferredBy	介绍人
+android	relationTypeRelative	亲属
+android	relationTypeSister	姐妹
+android	relationTypeSpouse	配偶
+android	replace	替换...
+android	report	报告
+android	reset	重置
+android	restr_pin_confirm_pin	确认新PIN码
+android	restr_pin_create_pin	设置PIN码，防止他人修改限制条件
+android	restr_pin_enter_admin_pin	请输入管理员 PIN 码
+android	restr_pin_enter_new_pin	新PIN码
+android	restr_pin_enter_old_pin	当前PIN码
+android	restr_pin_enter_pin	输入PIN码
+android	restr_pin_error_doesnt_match	PIN码不符，请重试。
+android	restr_pin_error_too_short	PIN码太短，至少应包含4位数字。
+android	restr_pin_incorrect	错误
+android	restr_pin_try_later	稍后重试
+android	revoke	撤消
+android	ringtone_default	默认铃声
+android	ringtone_default_with_actual	默认铃声（%1$s）
+android	ringtone_picker_title	铃声
+android	ringtone_picker_title_alarm	闹钟提示音
+android	ringtone_picker_title_notification	通知提示音
+android	ringtone_silent	无
+android	ringtone_unknown	未知
+android	roamingText0	启用漫游指示符
+android	roamingText1	禁用漫游指示符
+android	roamingText10	漫游 - 服务功能不全
+android	roamingText11	启用漫游横幅
+android	roamingText12	禁用漫游横幅
+android	roamingText2	漫游指示符正在闪烁
+android	roamingText3	不在附近
+android	roamingText4	室外
+android	roamingText5	漫游 - 首选系统
+android	roamingText6	漫游 - 可用系统
+android	roamingText7	漫游 - 联盟合作伙伴
+android	roamingText8	漫游 - 高级合作伙伴
+android	roamingText9	漫游 - 全部服务功能
+android	roamingTextSearching	正在搜索服务
+android	safeMode	安全模式
+android	safe_media_volume_warning	要将音量调高到建议的音量以上吗？\n\n长时间保持高音量可能会损伤听力。
+android	save_password_label	确认
+android	save_password_message	是否希望浏览器记住此密码？
+android	save_password_never	永不
+android	save_password_notnow	暂不保存
+android	save_password_remember	记住
+android	screen_compat_mode_hint	在“系统设置”>“应用”>“已下载”中重新启用此模式。
+android	screen_compat_mode_scale	缩放
+android	screen_compat_mode_show	始终显示
+android	screen_lock	屏幕锁定
+android	screenshot_edit	编辑
+android	search_hint	搜索…
+android	search_language_hint	输入语言名称
+android	searchview_description_clear	清除查询
+android	searchview_description_query	搜索查询
+android	searchview_description_search	搜索
+android	searchview_description_submit	提交查询
+android	searchview_description_voice	语音搜索
+android	second	秒
+android	seconds	秒
+android	select_character	插入字符
+android	select_day	选择月份和日期
+android	select_hours	选择小时
+android	select_input_method	更改键盘
+android	select_keyboard_layout_notification_message	点按即可选择语言和布局
+android	select_keyboard_layout_notification_title	配置实体键盘
+android	select_minutes	选择分钟
+android	select_year	选择年份
+android	sendText	选择要对文字执行的操作
+android	sending	正在发送...
+android	serial_number	序列号：
+android	serviceClassData	数据
+android	serviceClassDataAsync	异步
+android	serviceClassDataSync	同步
+android	serviceClassFAX	传真
+android	serviceClassPacket	包
+android	serviceClassSMS	短信
+android	serviceClassVoice	语音
+android	serviceDisabled	已停用服务。
+android	serviceEnabled	已启用服务。
+android	serviceEnabledFor	已针对以下内容启用了服务：
+android	serviceErased	清除成功。
+android	serviceNotProvisioned	未提供服务。
+android	serviceRegistered	注册成功。
+android	setup_autofill	设置自动填充
+android	sha1_fingerprint	SHA-1 指纹：
+android	sha256_fingerprint	SHA-256 指纹：
+android	share	分享
+android	share_action_provider_share_with	分享方式
+android	share_remote_bugreport_action	分享
+android	share_remote_bugreport_notification_message_finished	您的管理员希望获取错误报告，以便排查此设备的问题。报告可能会透露您设备上的应用和数据。
+android	share_remote_bugreport_notification_title	要分享错误报告吗？
+android	shareactionprovider_share_with	分享方式
+android	shareactionprovider_share_with_application	使用%s分享
+android	sharing_remote_bugreport_notification_title	正在分享错误报告…
+android	shortcut_disabled_reason_unknown	快捷方式已停用
+android	shortcut_restore_not_supported	无法恢复快捷方式，因为应用不支持备份和恢复功能
+android	shortcut_restore_signature_mismatch	无法恢复快捷方式，因为应用签名不相符
+android	shortcut_restore_unknown_issue	无法恢复快捷方式
+android	shortcut_restored_on_lower_version	应用版本已降级或与此快捷方式不兼容
+android	show_ime	开启后，连接到实体键盘时，它会一直显示在屏幕上
+android	shutdown_confirm	您的电视即将关闭。
+android	shutdown_confirm_question	您要关机吗？
+android	shutdown_progress	正在关机...
+android	silent_mode	静音模式
+android	silent_mode_ring	振铃器开启
+android	silent_mode_silent	振铃器关闭
+android	silent_mode_vibrate	振铃器振动
+android	sim_added_message	请重新启动您的设备，以便访问移动网络。
+android	sim_added_title	已添加SIM卡
+android	sim_done_button	完成
+android	sim_removed_message	移动网络不可用。请插入有效的SIM卡并重新启动。
+android	sim_removed_title	已移除SIM卡
+android	sim_restart_button	重新启动
+android	sipAddressTypeCustom	自定义
+android	sipAddressTypeHome	住宅
+android	sipAddressTypeOther	其他
+android	sipAddressTypeWork	单位
+android	skip_button_label	跳过
+android	slices_permission_request	“%1$s”想要显示“%2$s”图块
+android	sms	发短信
+android	sms_control_message	<b>%1$s</b>在发送大量短信。是否允许该应用继续发送短信？
+android	sms_control_no	拒绝
+android	sms_control_title	正在发送短信
+android	sms_control_yes	允许
+android	sms_desc	将短信发送至所选电话号码
+android	sms_premium_short_code_details	这会导致您的手机号产生费用。
+android	sms_short_code_confirm_allow	发送
+android	sms_short_code_confirm_always_allow	始终允许
+android	sms_short_code_confirm_deny	取消
+android	sms_short_code_confirm_message	<b>%1$s</b>想要向 <b>%2$s</b> 发送一条短信。
+android	sms_short_code_confirm_never_allow	永不允许
+android	sms_short_code_details	这可能会导致您的手机号产生费用。
+android	sms_short_code_remember_choice	记住我的选择
+android	sms_short_code_remember_undo_instruction	之后，您可以在“设置”>“应用”中更改此设置
+android	smv_application	“%1$s”应用（%2$s 进程）违反了自我强制执行的严格模式 (StrictMode) 政策。
+android	smv_process	进程 %1$s 违反了自我强制执行的严格模式 (StrictMode) 政策。
+android	ssl_ca_cert_noti_by_administrator	由您的工作资料管理员监控
+android	ssl_ca_cert_noti_by_unknown	受到不明第三方的监控
+android	ssl_ca_cert_noti_managed	受到 %s 监控
+android	ssl_certificate	安全证书
+android	ssl_certificate_is_valid	该证书有效。
+android	stk_cc_ss_to_dial	SS 请求已更改为普通通话
+android	stk_cc_ss_to_dial_video	SS 请求已更改为视频通话
+android	stk_cc_ss_to_ss	已更改为新的 SS 请求
+android	stk_cc_ss_to_ussd	SS 请求已更改为 USSD 请求
+android	stk_cc_ussd_to_dial	USSD 请求已更改为普通通话
+android	stk_cc_ussd_to_dial_video	USSD 请求已更改为视频通话
+android	stk_cc_ussd_to_ss	USSD 请求已更改为 SS 请求
+android	stk_cc_ussd_to_ussd	已更改为新的 USSD 请求
+android	storage_internal	内部共享存储空间
+android	storage_sd_card	SD卡
+android	storage_sd_card_label	%s SD 卡
+android	storage_usb	USB存储器
+android	storage_usb_drive	U 盘
+android	storage_usb_drive_label	%s U 盘
+android	submit	提交
+android	suspended_widget_accessibility	已停用的%1$s
+android	sync_binding_label	同步
+android	sync_do_nothing	目前不进行任何操作
+android	sync_really_delete	删除这些内容
+android	sync_too_many_deletes	超出删除限制
+android	sync_too_many_deletes_desc	帐号 %3$s 在进行“%2$s”同步时删除了 %1$d 项内容。您要如何处理这些删除的内容？
+android	sync_undo_deletes	撤消删除
+android	system_error_manufacturer	您的设备内部出现了问题。请联系您的设备制造商了解详情。
+android	system_error_wipe_data	您的设备内部出现了问题。如果不将设备恢复出厂设置，设备运行可能会不稳定。
+android	taking_remote_bugreport_notification_title	正在生成错误报告…
+android	tethered_notification_message	点按即可进行设置。
+android	tethered_notification_title	网络共享或热点已启用
+android	textSelectionCABTitle	文字选择
+android	text_copied	文本已复制到剪贴板。
+android	time_picker_decrement_hour_button	减小小时值
+android	time_picker_decrement_minute_button	减小分钟值
+android	time_picker_decrement_set_am_button	设置上午时间
+android	time_picker_dialog_title	设置时间
+android	time_picker_header_text	设置时间
+android	time_picker_hour_label	点
+android	time_picker_increment_hour_button	增大小时值
+android	time_picker_increment_minute_button	增大分钟值
+android	time_picker_increment_set_pm_button	设置下午时间
+android	time_picker_input_error	请输入有效的时间
+android	time_picker_minute_label	分
+android	time_picker_prompt_label	请输入时间
+android	time_picker_radial_mode_description	切换到时钟模式来输入时间。
+android	time_picker_text_input_mode_description	切换到文字输入模式来输入时间。
+android	toolbar_collapse_description	收起
+android	tooltip_popup_title	提示
+android	turn_off_radio	关闭无线电
+android	turn_on_radio	打开无线电
+android	tutorial_double_tap_to_zoom_message_short	双击可以进行缩放控制
+android	undo	撤消
+android	unpin_target	取消固定
+android	unsupported_compile_sdk_check_update	检查更新
+android	unsupported_compile_sdk_message	%1$s是专为不兼容的 Android 操作系统版本所打造的应用，因此可能会出现意外行为。您可以使用该应用的更新版本。
+android	unsupported_compile_sdk_show	一律显示
+android	unsupported_display_size_message	%1$s不支持当前的显示大小设置，因此可能无法正常显示。
+android	unsupported_display_size_show	一律显示
+android	upload_file	选择文件
+android	usb_accessory_notification_title	USB 配件已连接
+android	usb_charging_notification_title	正在通过 USB 为此设备充电
+android	usb_midi_notification_title	已开启 USB MIDI 模式
+android	usb_midi_peripheral_name	Android USB 外设端口
+android	usb_midi_peripheral_product_name	USB 外设端口
+android	usb_mtp_launch_notification_description	点按即可查看文件
+android	usb_mtp_launch_notification_title	已连接到%1$s
+android	usb_mtp_notification_title	已开启 USB 文件传输模式
+android	usb_notification_message	点按即可查看更多选项。
+android	usb_power_notification_message	正在为连接的设备充电。点按即可查看更多选项。
+android	usb_ptp_notification_title	已开启 USB PTP 模式
+android	usb_supplying_notification_title	正在通过 USB 为连接的设备充电
+android	usb_tether_notification_title	已开启 USB 网络共享模式
+android	usb_unsupported_audio_accessory_message	连接的设备与此手机不兼容。点按即可了解详情。
+android	usb_unsupported_audio_accessory_title	检测到模拟音频配件
+android	use_a_different_app	使用其他应用
+android	user_creation_account_exists	允许%1$s使用 %2$s 创建新用户吗？
+android	user_creation_adding	允许%1$s使用 %2$s（目前已有用户使用此帐号）创建新用户吗？
+android	user_encrypted_detail	用户数据已锁定
+android	user_encrypted_message	点按即可解锁
+android	user_encrypted_title	部分功能可能会受到限制
+android	user_logging_out_message	正在将%1$s退出帐号…
+android	user_owner_label	切换到个人资料
+android	user_switched	当前用户是%1$s。
+android	user_switching_message	正在切换为%1$s…
+android	validity_period	有效期：
+android	view_calendar	查看
+android	view_calendar_desc	在日历中查看所选时间
+android	view_flight	跟踪
+android	view_flight_desc	跟踪所选航班
+android	volume_alarm	闹钟音量
+android	volume_bluetooth_call	使用蓝牙时的通话音量
+android	volume_call	通话音量
+android	volume_dialog_ringer_guidance_silent	有来电和通知时会静音
+android	volume_dialog_ringer_guidance_vibrate	有来电和通知时会振动
+android	volume_icon_description_bluetooth	蓝牙音量
+android	volume_icon_description_incall	通话音量
+android	volume_icon_description_media	媒体音量
+android	volume_icon_description_notification	通知音量
+android	volume_icon_description_ringer	铃声音量
+android	volume_music	媒体音量
+android	volume_music_hint_playing_through_bluetooth	正通过蓝牙播放
+android	volume_music_hint_silent_ringtone_selected	已设置静音铃声
+android	volume_notification	通知音量
+android	volume_ringtone	铃声音量
+android	volume_unknown	音量
+android	vpn_lockdown_config	更改网络或 VPN 设置
+android	vpn_lockdown_connected	已连接到始终开启的 VPN
+android	vpn_lockdown_connecting	正在连接到始终开启的 VPN…
+android	vpn_lockdown_disconnected	始终开启的 VPN 已断开连接
+android	vpn_lockdown_error	无法连接到始终开启的 VPN
+android	vpn_text	点按即可管理网络。
+android	vpn_text_long	已连接到%s。点按即可管理网络。
+android	vpn_title	已激活VPN
+android	vpn_title_long	%s已激活VPN
+android	vr_listener_binding_label	VR 监听器
+android	wait	等待
+android	wallpaper_binding_label	壁纸
+android	webpage_unresponsive	该网页无响应。\n\n要将其关闭吗？
+android	websearch	网页搜索
+android	week	周
+android	weeks	周
+android	wfcRegErrorTitle	无法设置 WLAN 通话
+android	wfc_mode_cellular_preferred_summary	首选移动数据网络
+android	wfc_mode_wifi_only_summary	仅限 WLAN
+android	wfc_mode_wifi_preferred_summary	首选 WLAN
+android	whichApplication	选择要使用的应用：
+android	whichApplicationLabel	完成操作
+android	whichApplicationNamed	使用%1$s完成操作
+android	whichEditApplication	编辑方式
+android	whichEditApplicationLabel	编辑
+android	whichEditApplicationNamed	使用%1$s编辑
+android	whichHomeApplication	选择主屏幕应用
+android	whichHomeApplicationLabel	截图
+android	whichHomeApplicationNamed	将“%1$s”设为主屏幕应用
+android	whichImageCaptureApplication	使用以下应用截图
+android	whichImageCaptureApplicationLabel	截图
+android	whichImageCaptureApplicationNamed	使用%1$s截图
+android	whichSendApplication	分享方式
+android	whichSendApplicationLabel	分享
+android	whichSendApplicationNamed	使用%1$s分享
+android	whichSendToApplication	通过以下应用发送
+android	whichSendToApplicationLabel	发送
+android	whichSendToApplicationNamed	通过%1$s发送
+android	whichViewApplication	打开方式
+android	whichViewApplicationLabel	打开
+android	whichViewApplicationNamed	使用%1$s打开
+android	wifi_available_action_all_networks	所有网络
+android	wifi_available_action_connect	连接
+android	wifi_available_carrier_network_title	连接到运营商 WLAN 网络
+android	wifi_available_content_failed_to_connect	点按即可查看所有网络
+android	wifi_available_sign_in	登录到WLAN网络
+android	wifi_available_title	连接到开放的 WLAN 网络
+android	wifi_available_title_connected	已连接到 WLAN 网络
+android	wifi_available_title_connecting	正在连接到 WLAN 网络
+android	wifi_available_title_failed_to_connect	无法连接到 WLAN 网络
+android	wifi_calling_off_summary	关闭
+android	wifi_connect_alert_message	“%1$s”应用想要连接到 WLAN 网络“%2$s”
+android	wifi_connect_alert_title	要允许连接吗？
+android	wifi_connect_default_application	一款应用
+android	wifi_no_internet	此 WLAN 网络无法访问互联网
+android	wifi_no_internet_detailed	点按即可查看相关选项
+android	wifi_p2p_dialog_title	WLAN 直连
+android	wifi_p2p_enabled_notification_message	点按即可查看相关设置
+android	wifi_p2p_enabled_notification_title	已启用WLAN直连
+android	wifi_p2p_enter_pin_message	输入所需的PIN码：
+android	wifi_p2p_failed_message	无法启动WLAN直连。
+android	wifi_p2p_frequency_conflict_message	电视连接到%1$s时会暂时断开与 WLAN 的连接
+android	wifi_p2p_from_message	发件人：
+android	wifi_p2p_invitation_sent_title	已发出邀请
+android	wifi_p2p_invitation_to_connect_title	连接邀请
+android	wifi_p2p_show_pin_message	PIN 码：
+android	wifi_p2p_to_message	收件人：
+android	wifi_p2p_turnon_message	启动WLAN直连。此操作将会关闭WLAN客户端/热点。
+android	wifi_wakeup_enabled_content	您位于已保存的网络 (%1$s) 信号范围内
+android	wifi_wakeup_enabled_title	已自动开启 WLAN 网络
+android	wifi_wakeup_onboarding_action_disable	不要重新开启
+android	wifi_wakeup_onboarding_subtext	当您位于已保存的高品质网络信号范围内时
+android	wifi_wakeup_onboarding_title	WLAN 将自动开启
+android	wifi_watchdog_network_disabled	无法连接到WLAN
+android	wifi_watchdog_network_disabled_detailed	互联网连接状况不佳。
+android	wireless_display_route_description	无线显示
+android	work_mode_off_message	您的工作应用、通知、数据及其他工作资料功能将会开启
+android	work_mode_off_title	要开启工作资料吗？
+android	work_mode_turn_on	开启
+android	work_profile_deleted	工作资料已删除
+android	work_profile_deleted_description_dpm_wipe	您的工作资料已不在此设备上
+android	work_profile_deleted_details	工作资料管理应用缺失或损坏，因此系统已删除您的工作资料及相关数据。如需帮助，请与您的管理员联系。
+android	work_profile_deleted_reason_maximum_password_failure	密码尝试次数过多
+android	write_fail_reason_cancelled	已取消
+android	write_fail_reason_cannot_write	写入内容时出错
+android	year	年
+android	years	年
+android	zen_mode_alarm	直到%1$s（闹钟下次响铃时）
+android	zen_mode_default_events_name	活动
+android	zen_mode_default_every_night_name	睡眠
+android	zen_mode_default_weekends_name	周末
+android	zen_mode_default_weeknights_name	周一至周五夜间
+android	zen_mode_downtime_feature_name	休息时间
+android	zen_mode_feature_name	勿扰
+android	zen_mode_forever	直到您将其关闭
+android	zen_mode_forever_dnd	直到您关闭“勿扰”模式
+android	zen_mode_until	到%1$s
+android	zen_upgrade_notification_content	点按即可查看屏蔽内容。
+android	zen_upgrade_notification_title	“勿扰”设置有变更
+android	zen_upgrade_notification_visd_content	点按即可了解详情以及进行更改。
+android	zen_upgrade_notification_visd_title	新功能：勿扰模式目前可隐藏通知
+com.xgimi.bluetoothservice	accessibility_display_daltonizer_preference_subtitle	这是实验性功能，性能可能不稳定。
+com.xgimi.bluetoothservice	accessibility_display_daltonizer_preference_title	色彩校正
+com.xgimi.bluetoothservice	accessibility_manual_zen_less_time	减少时间。
+com.xgimi.bluetoothservice	accessibility_manual_zen_more_time	增加时间。
+com.xgimi.bluetoothservice	accessibility_no_wifi	WLAN 连接已断开。
+com.xgimi.bluetoothservice	accessibility_wifi_off	WLAN 已关闭。
+com.xgimi.bluetoothservice	accessibility_wifi_one_bar	WLAN 信号强度为一格。
+com.xgimi.bluetoothservice	accessibility_wifi_security_type_none	开放网络
+com.xgimi.bluetoothservice	accessibility_wifi_security_type_secured	安全网络
+com.xgimi.bluetoothservice	accessibility_wifi_signal_full	WLAN 信号满格。
+com.xgimi.bluetoothservice	accessibility_wifi_three_bars	WLAN 信号强度为三格。
+com.xgimi.bluetoothservice	accessibility_wifi_two_bars	WLAN 信号强度为两格。
+com.xgimi.bluetoothservice	active_input_method_subtypes	有效的输入法
+com.xgimi.bluetoothservice	adb_keys_warning_message	是否针对您之前授权的所有计算机撤消 USB 调试的访问权限？
+com.xgimi.bluetoothservice	adb_warning_message	USB 调试仅用于开发目的。该功能可用于在您的计算机和设备之间复制数据、在您的设备上安装应用（事先不发通知）以及读取日志数据。
+com.xgimi.bluetoothservice	adb_warning_title	是否允许 USB 调试？
+com.xgimi.bluetoothservice	alarm_template	时间：%1$s
+com.xgimi.bluetoothservice	alarm_template_far	时间：%1$s
+com.xgimi.bluetoothservice	allow_mock_location	允许模拟位置
+com.xgimi.bluetoothservice	allow_mock_location_summary	允许模拟位置
+com.xgimi.bluetoothservice	animator_duration_scale_title	Animator 时长缩放
+com.xgimi.bluetoothservice	apn_settings_not_available	此用户无权修改接入点名称设置
+com.xgimi.bluetoothservice	app_process_limit_title	后台进程限制
+com.xgimi.bluetoothservice	available_via_carrier	可通过%1$s连接
+com.xgimi.bluetoothservice	available_via_passpoint	可通过%1$s连接
+com.xgimi.bluetoothservice	battery_info_status_charging	正在充电
+com.xgimi.bluetoothservice	battery_info_status_charging_lower	正在充电
+com.xgimi.bluetoothservice	battery_info_status_discharging	未在充电
+com.xgimi.bluetoothservice	battery_info_status_full	电量充足
+com.xgimi.bluetoothservice	battery_info_status_not_charging	已插入电源，但是现在无法充电
+com.xgimi.bluetoothservice	battery_info_status_unknown	未知
+com.xgimi.bluetoothservice	bluetooth_a2dp_profile_summary_connected	已连接到媒体音频
+com.xgimi.bluetoothservice	bluetooth_a2dp_profile_summary_use_for	用于媒体音频
+com.xgimi.bluetoothservice	bluetooth_active_battery_level	使用中，电池电量：%1$s
+com.xgimi.bluetoothservice	bluetooth_active_no_battery_level	使用中
+com.xgimi.bluetoothservice	bluetooth_battery_level	电池电量：%1$s
+com.xgimi.bluetoothservice	bluetooth_connected	已连接%1$s
+com.xgimi.bluetoothservice	bluetooth_connected_battery_level	已连接，电量为 %1$s %2$s
+com.xgimi.bluetoothservice	bluetooth_connected_no_a2dp	已连接（无媒体信号）%1$s
+com.xgimi.bluetoothservice	bluetooth_connected_no_a2dp_battery_level	已连接（无媒体信号），电量为 %1$s %2$s
+com.xgimi.bluetoothservice	bluetooth_connected_no_headset	已连接（无手机信号）%1$s
+com.xgimi.bluetoothservice	bluetooth_connected_no_headset_battery_level	已连接（无手机信号），电量为 %1$s %2$s
+com.xgimi.bluetoothservice	bluetooth_connected_no_headset_no_a2dp	已连接（无手机或媒体信号）%1$s
+com.xgimi.bluetoothservice	bluetooth_connected_no_headset_no_a2dp_battery_level	已连接（无手机或媒体信号），电量为 %1$s %2$s
+com.xgimi.bluetoothservice	bluetooth_connected_no_map	已连接（无消息访问权限）%1$s
+com.xgimi.bluetoothservice	bluetooth_connecting	正在连接...
+com.xgimi.bluetoothservice	bluetooth_disable_absolute_volume	停用绝对音量功能
+com.xgimi.bluetoothservice	bluetooth_disable_absolute_volume_summary	停用蓝牙绝对音量功能，即可避免在连接到远程设备时出现音量问题（例如音量高得让人无法接受或无法控制音量等）。
+com.xgimi.bluetoothservice	bluetooth_disconnected	已断开连接
+com.xgimi.bluetoothservice	bluetooth_disconnecting	正在断开连接...
+com.xgimi.bluetoothservice	bluetooth_headset_profile_summary_connected	已连接到手机音频
+com.xgimi.bluetoothservice	bluetooth_headset_profile_summary_use_for	用于手机音频
+com.xgimi.bluetoothservice	bluetooth_hearing_aid_profile_summary_connected	已连接到助听器
+com.xgimi.bluetoothservice	bluetooth_hearing_aid_profile_summary_use_for	用于助听器
+com.xgimi.bluetoothservice	bluetooth_hearingaid_left_battery_level	左侧 - 电池电量：%1$s
+com.xgimi.bluetoothservice	bluetooth_hearingaid_left_pairing_message	正在配对左侧助听器…
+com.xgimi.bluetoothservice	bluetooth_hearingaid_right_battery_level	右侧 - 电池电量：%1$s
+com.xgimi.bluetoothservice	bluetooth_hearingaid_right_pairing_message	正在配对右侧助听器…
+com.xgimi.bluetoothservice	bluetooth_hid_profile_summary_connected	已连接到输入设备
+com.xgimi.bluetoothservice	bluetooth_hid_profile_summary_use_for	用于输入
+com.xgimi.bluetoothservice	bluetooth_map_profile_summary_connected	已连接到地图
+com.xgimi.bluetoothservice	bluetooth_map_profile_summary_use_for	用于地图
+com.xgimi.bluetoothservice	bluetooth_music_control_name	极米音乐遥控器
+com.xgimi.bluetoothservice	bluetooth_opp_profile_summary_connected	已连接到文件传输服务器
+com.xgimi.bluetoothservice	bluetooth_opp_profile_summary_not_connected	未连接到文件传输服务器
+com.xgimi.bluetoothservice	bluetooth_opp_profile_summary_use_for	用于文件传输
+com.xgimi.bluetoothservice	bluetooth_pairing	正在配对...
+com.xgimi.bluetoothservice	bluetooth_pairing_accept	配对
+com.xgimi.bluetoothservice	bluetooth_pairing_accept_all_caps	配对
+com.xgimi.bluetoothservice	bluetooth_pairing_decline	取消
+com.xgimi.bluetoothservice	bluetooth_pairing_device_down_error_message	无法与“%1$s”进行通信。
+com.xgimi.bluetoothservice	bluetooth_pairing_error_message	无法与“%1$s”进行配对。
+com.xgimi.bluetoothservice	bluetooth_pairing_pin_error_message	PIN码或配对密钥不正确，无法与%1$s配对。
+com.xgimi.bluetoothservice	bluetooth_pairing_rejected_error_message	%1$s 已拒绝配对。
+com.xgimi.bluetoothservice	bluetooth_pairing_will_share_phonebook	配对之后，所配对的设备将可以在建立连接后访问您的通讯录和通话记录。
+com.xgimi.bluetoothservice	bluetooth_pan_nap_profile_summary_connected	与其他设备共享该设备的互联网连接
+com.xgimi.bluetoothservice	bluetooth_pan_profile_summary_use_for	用于访问互联网
+com.xgimi.bluetoothservice	bluetooth_pan_user_profile_summary_connected	经由其他设备连接到互联网
+com.xgimi.bluetoothservice	bluetooth_profile_a2dp	媒体音频
+com.xgimi.bluetoothservice	bluetooth_profile_a2dp_high_quality	HD 音频：%1$s
+com.xgimi.bluetoothservice	bluetooth_profile_a2dp_high_quality_unknown_codec	HD 音频
+com.xgimi.bluetoothservice	bluetooth_profile_headset	通话
+com.xgimi.bluetoothservice	bluetooth_profile_hearing_aid	助听器
+com.xgimi.bluetoothservice	bluetooth_profile_hid	输入设备
+com.xgimi.bluetoothservice	bluetooth_profile_map	短信
+com.xgimi.bluetoothservice	bluetooth_profile_opp	文件传输
+com.xgimi.bluetoothservice	bluetooth_profile_pan	互联网连接
+com.xgimi.bluetoothservice	bluetooth_profile_pan_nap	共享互联网连接
+com.xgimi.bluetoothservice	bluetooth_profile_pbap	共享联系人
+com.xgimi.bluetoothservice	bluetooth_profile_pbap_summary	用于共享联系人
+com.xgimi.bluetoothservice	bluetooth_profile_sap	SIM 卡存取权限
+com.xgimi.bluetoothservice	bluetooth_remote_control_battery_low_toast	遥控器电量不足，请及时更换电池
+com.xgimi.bluetoothservice	bluetooth_remote_control_name	极米遥控器
+com.xgimi.bluetoothservice	bluetooth_sap_profile_summary_connected	已连接到 SAP
+com.xgimi.bluetoothservice	bluetooth_sap_profile_summary_use_for	用于存取 SIM 卡
+com.xgimi.bluetoothservice	bluetooth_select_a2dp_codec_bits_per_sample	蓝牙音频每样本位数
+com.xgimi.bluetoothservice	bluetooth_select_a2dp_codec_bits_per_sample_dialog_title	触发蓝牙音频编解码器\n选择：每样本位数
+com.xgimi.bluetoothservice	bluetooth_select_a2dp_codec_channel_mode	蓝牙音频声道模式
+com.xgimi.bluetoothservice	bluetooth_select_a2dp_codec_channel_mode_dialog_title	触发蓝牙音频编解码器\n选择：声道模式
+com.xgimi.bluetoothservice	bluetooth_select_a2dp_codec_ldac_playback_quality	蓝牙音频 LDAC 编解码器：播放质量
+com.xgimi.bluetoothservice	bluetooth_select_a2dp_codec_ldac_playback_quality_dialog_title	触发蓝牙音频 LDAC\n编解码器选择：播放质量
+com.xgimi.bluetoothservice	bluetooth_select_a2dp_codec_sample_rate	蓝牙音频采样率
+com.xgimi.bluetoothservice	bluetooth_select_a2dp_codec_sample_rate_dialog_title	触发蓝牙音频编解码器\n选择：采样率
+com.xgimi.bluetoothservice	bluetooth_select_a2dp_codec_streaming_label	正在流式传输：%1$s
+com.xgimi.bluetoothservice	bluetooth_select_a2dp_codec_type	蓝牙音频编解码器
+com.xgimi.bluetoothservice	bluetooth_select_a2dp_codec_type_dialog_title	触发蓝牙音频编解码器\n选择
+com.xgimi.bluetoothservice	bluetooth_select_avrcp_version_dialog_title	选择蓝牙 AVRCP 版本
+com.xgimi.bluetoothservice	bluetooth_select_avrcp_version_string	蓝牙 AVRCP 版本
+com.xgimi.bluetoothservice	bluetooth_show_devices_without_names	显示没有名称的蓝牙设备
+com.xgimi.bluetoothservice	bluetooth_show_devices_without_names_summary	系统将显示没有名称（只有 MAC 地址）的蓝牙设备
+com.xgimi.bluetoothservice	bluetooth_smart_curtain_name	极米智能光子幕布
+com.xgimi.bluetoothservice	bluetooth_talkback_bluetooth	蓝牙
+com.xgimi.bluetoothservice	bluetooth_talkback_computer	计算机
+com.xgimi.bluetoothservice	bluetooth_talkback_headphone	耳机
+com.xgimi.bluetoothservice	bluetooth_talkback_headset	耳麦
+com.xgimi.bluetoothservice	bluetooth_talkback_imaging	成像设备
+com.xgimi.bluetoothservice	bluetooth_talkback_input_peripheral	外围输入设备
+com.xgimi.bluetoothservice	bluetooth_talkback_phone	手机
+com.xgimi.bluetoothservice	bt_hci_snoop_log	启用蓝牙 HCI 信息收集日志
+com.xgimi.bluetoothservice	bt_hci_snoop_log_summary	捕获单个文件中的所有蓝牙 HCI 包（更改此设置之后切换蓝牙开关）
+com.xgimi.bluetoothservice	bugreport_in_power	错误报告快捷方式
+com.xgimi.bluetoothservice	bugreport_in_power_summary	在电源菜单中显示用于提交错误报告的按钮
+com.xgimi.bluetoothservice	button_convert_fbe	清除并转换…
+com.xgimi.bluetoothservice	cancel	取消
+com.xgimi.bluetoothservice	category_personal	个人
+com.xgimi.bluetoothservice	category_work	工作
+com.xgimi.bluetoothservice	charge_length_format	%1$s前
+com.xgimi.bluetoothservice	choose_profile	选择个人资料
+com.xgimi.bluetoothservice	clear_adb_keys	撤消 USB 调试授权
+com.xgimi.bluetoothservice	confirm_enable_oem_unlock_text	警告：如果开启此设置，此设备上的设备保护功能将无法使用。
+com.xgimi.bluetoothservice	confirm_enable_oem_unlock_title	要允许 OEM 解锁吗？
+com.xgimi.bluetoothservice	connected_via_carrier	已通过%1$s连接
+com.xgimi.bluetoothservice	connected_via_network_scorer	已通过%1$s自动连接
+com.xgimi.bluetoothservice	connected_via_network_scorer_default	已自动连接（通过网络评分服务提供方）
+com.xgimi.bluetoothservice	connected_via_passpoint	已通过%1$s连接
+com.xgimi.bluetoothservice	content_description_menu_button	菜单
+com.xgimi.bluetoothservice	convert_to_fbe_warning	将数据分区转换为文件加密。\n！！警告！！此操作将会清除您所有的数据。\n此功能为 Alpha 版功能，可能无法正常运行。\n要继续操作，请按“清除并转换…”。
+com.xgimi.bluetoothservice	convert_to_file_encryption	转换为文件加密
+com.xgimi.bluetoothservice	convert_to_file_encryption_done	文件已加密
+com.xgimi.bluetoothservice	convert_to_file_encryption_enabled	转换…
+com.xgimi.bluetoothservice	daltonizer_mode_deuteranomaly	绿色弱视（红绿不分）
+com.xgimi.bluetoothservice	daltonizer_mode_disabled	已停用
+com.xgimi.bluetoothservice	daltonizer_mode_monochromacy	全色盲
+com.xgimi.bluetoothservice	daltonizer_mode_protanomaly	红色弱视（红绿不分）
+com.xgimi.bluetoothservice	daltonizer_mode_tritanomaly	蓝色弱视（蓝黄不分）
+com.xgimi.bluetoothservice	daltonizer_type_overridden	已被“%1$s”覆盖
+com.xgimi.bluetoothservice	data_usage_uninstalled_apps	已删除的应用
+com.xgimi.bluetoothservice	data_usage_uninstalled_apps_users	已删除的应用和用户
+com.xgimi.bluetoothservice	debug_app	选择调试应用
+com.xgimi.bluetoothservice	debug_app_not_set	未设置任何调试应用
+com.xgimi.bluetoothservice	debug_app_set	调试应用：%1$s
+com.xgimi.bluetoothservice	debug_applications_category	应用
+com.xgimi.bluetoothservice	debug_debugging_category	调试
+com.xgimi.bluetoothservice	debug_drawing_category	绘图
+com.xgimi.bluetoothservice	debug_hw_drawing_category	硬件加速渲染
+com.xgimi.bluetoothservice	debug_hw_overdraw	调试 GPU 过度绘制
+com.xgimi.bluetoothservice	debug_input_category	输入
+com.xgimi.bluetoothservice	debug_layout	显示布局边界
+com.xgimi.bluetoothservice	debug_layout_summary	显示剪辑边界、边距等。
+com.xgimi.bluetoothservice	debug_monitoring_category	监控
+com.xgimi.bluetoothservice	debug_networking_category	网络
+com.xgimi.bluetoothservice	debug_view_attributes	启用视图属性检查功能
+com.xgimi.bluetoothservice	dev_logpersist_clear_warning_message	当我们不再使用永久日志记录器进行监控时，我们需要清除保存在您设备上的日志记录器数据。
+com.xgimi.bluetoothservice	dev_logpersist_clear_warning_title	要清除永久存储的日志记录器数据吗？
+com.xgimi.bluetoothservice	dev_settings_warning_message	这些设置仅适用于开发工作。一旦启用，会导致您的设备以及设备上的应用崩溃或出现异常。
+com.xgimi.bluetoothservice	dev_settings_warning_title	允许开发设置？
+com.xgimi.bluetoothservice	development_settings_enable	启用开发者选项
+com.xgimi.bluetoothservice	development_settings_not_available	此用户无法使用开发者选项
+com.xgimi.bluetoothservice	development_settings_summary	设置应用开发选项
+com.xgimi.bluetoothservice	development_settings_title	开发者选项
+com.xgimi.bluetoothservice	direct_boot_unaware_dialog_message	注意：重新启动后，您必须将手机解锁才能运行此应用
+com.xgimi.bluetoothservice	disable_overlays	停用 HW 叠加层
+com.xgimi.bluetoothservice	disable_overlays_summary	始终使用 GPU 进行屏幕合成
+com.xgimi.bluetoothservice	disabled	已停用
+com.xgimi.bluetoothservice	disabled_by_admin	已被管理员停用
+com.xgimi.bluetoothservice	disabled_by_admin_summary_text	由管理员控制
+com.xgimi.bluetoothservice	enable_adb	USB 调试
+com.xgimi.bluetoothservice	enable_adb_summary	连接 USB 后启用调试模式
+com.xgimi.bluetoothservice	enable_freeform_support	启用可自由调整的窗口
+com.xgimi.bluetoothservice	enable_freeform_support_summary	启用可自由调整的窗口这一实验性功能。
+com.xgimi.bluetoothservice	enable_gpu_debug_layers	启用 GPU 调试层
+com.xgimi.bluetoothservice	enable_gpu_debug_layers_summary	允许为调试应用加载 GPU 调试层
+com.xgimi.bluetoothservice	enable_opengl_traces_title	启用 OpenGL 跟踪
+com.xgimi.bluetoothservice	enable_terminal_summary	启用终端应用，以便在本地访问 Shell
+com.xgimi.bluetoothservice	enable_terminal_title	本地终端
+com.xgimi.bluetoothservice	enabled_by_admin	已被管理员启用
+com.xgimi.bluetoothservice	expand_button_title	高级
+com.xgimi.bluetoothservice	external_source_trusted	允许
+com.xgimi.bluetoothservice	external_source_untrusted	不允许
+com.xgimi.bluetoothservice	failed_to_open_app_settings_toast	无法打开 %1$s 的设置
+com.xgimi.bluetoothservice	force_allow_on_external	强制允许将应用写入外部存储设备
+com.xgimi.bluetoothservice	force_allow_on_external_summary	允许将任何应用写入外部存储设备（无论清单值是什么）
+com.xgimi.bluetoothservice	force_hw_ui	强制进行 GPU 渲染
+com.xgimi.bluetoothservice	force_hw_ui_summary	强制使用 GPU 进行 2D 绘图
+com.xgimi.bluetoothservice	force_msaa	强制启用 4x MSAA
+com.xgimi.bluetoothservice	force_msaa_summary	在 OpenGL ES 2.0 应用中启用 4x MSAA
+com.xgimi.bluetoothservice	force_resizable_activities	强制将活动设为可调整大小
+com.xgimi.bluetoothservice	force_resizable_activities_summary	将所有 Activity 设为可配合多窗口环境调整大小（忽略清单值）。
+com.xgimi.bluetoothservice	force_rtl_layout_all_locales	强制使用从右到左的布局方向
+com.xgimi.bluetoothservice	force_rtl_layout_all_locales_summary	强制将所有语言区域的屏幕布局方向改为从右到左
+com.xgimi.bluetoothservice	hdcp_checking_dialog_title	设置 HDCP 检查行为
+com.xgimi.bluetoothservice	hdcp_checking_title	HDCP 检查
+com.xgimi.bluetoothservice	help_feedback_label	帮助和反馈
+com.xgimi.bluetoothservice	home	设置主屏幕
+com.xgimi.bluetoothservice	ime_security_warning	此输入法可能会收集您输入的所有内容，包括密码和信用卡号等个人数据。它来自“%1$s”应用。要使用此输入法吗？
+com.xgimi.bluetoothservice	immediately_destroy_activities	不保留活动
+com.xgimi.bluetoothservice	immediately_destroy_activities_summary	用户离开后即销毁每个活动
+com.xgimi.bluetoothservice	ims_reg_status_not_registered	未注册
+com.xgimi.bluetoothservice	ims_reg_status_registered	已注册
+com.xgimi.bluetoothservice	ims_reg_title	IMS 注册状态
+com.xgimi.bluetoothservice	inactive_app_active_summary	已启用。点按即可切换。
+com.xgimi.bluetoothservice	inactive_app_inactive_summary	未启用。点按即可切换。
+com.xgimi.bluetoothservice	inactive_apps_title	待机应用
+com.xgimi.bluetoothservice	install_other_apps	安装未知应用
+com.xgimi.bluetoothservice	keep_screen_on	不锁定屏幕
+com.xgimi.bluetoothservice	keep_screen_on_summary	充电时屏幕不会休眠
+com.xgimi.bluetoothservice	launch_defaults_none	没有默认操作
+com.xgimi.bluetoothservice	launch_defaults_some	已设置部分默认选项
+com.xgimi.bluetoothservice	local_backup_password_summary_change	点按即可更改或移除用于保护桌面完整备份的密码
+com.xgimi.bluetoothservice	local_backup_password_summary_none	桌面完整备份当前未设置密码保护
+com.xgimi.bluetoothservice	local_backup_password_title	桌面备份密码
+com.xgimi.bluetoothservice	local_backup_password_toast_confirmation_mismatch	新密码和确认密码不一致
+com.xgimi.bluetoothservice	local_backup_password_toast_success	已设置了新的备份密码
+com.xgimi.bluetoothservice	local_backup_password_toast_validation_failure	设置备份密码失败
+com.xgimi.bluetoothservice	managed_user_title	所有工作应用
+com.xgimi.bluetoothservice	media_category	媒体
+com.xgimi.bluetoothservice	mobile_data_always_on	始终开启移动数据网络
+com.xgimi.bluetoothservice	mobile_data_always_on_summary	始终开启移动数据网络，即使 WLAN 网络已开启（便于快速切换网络）。
+com.xgimi.bluetoothservice	mock_location_app	选择模拟位置信息应用
+com.xgimi.bluetoothservice	mock_location_app_not_set	尚未设置模拟位置信息应用
+com.xgimi.bluetoothservice	mock_location_app_set	模拟位置信息应用：%1$s
+com.xgimi.bluetoothservice	no_application	无
+com.xgimi.bluetoothservice	oem_unlock_enable	OEM 解锁
+com.xgimi.bluetoothservice	oem_unlock_enable_summary	允许解锁引导加载程序
+com.xgimi.bluetoothservice	okay	确定
+com.xgimi.bluetoothservice	overlay_display_devices_title	模拟辅助显示设备
+com.xgimi.bluetoothservice	pointer_location	指针位置
+com.xgimi.bluetoothservice	pointer_location_summary	屏幕叠加层显示当前触摸数据
+com.xgimi.bluetoothservice	power_charging_duration	%1$s - 还需 %2$s充满
+com.xgimi.bluetoothservice	power_discharge_by	目前电量为 %2$s，估计大约还能用到%1$s
+com.xgimi.bluetoothservice	power_discharge_by_enhanced	根据您的使用情况，估计大约还能用到%1$s（目前电量为 %2$s）
+com.xgimi.bluetoothservice	power_discharge_by_only	估计大约还能用到%1$s
+com.xgimi.bluetoothservice	power_discharge_by_only_enhanced	根据您的使用情况，估计大约还能用到%1$s
+com.xgimi.bluetoothservice	power_discharging_duration	大约还可使用 %1$s (%2$s)
+com.xgimi.bluetoothservice	power_discharging_duration_enhanced	根据您的使用情况，大约还可使用 %1$s (%2$s)
+com.xgimi.bluetoothservice	power_remaining_charging_duration_only	还需 %1$s充满电
+com.xgimi.bluetoothservice	power_remaining_duration_only	大约还可使用 %1$s
+com.xgimi.bluetoothservice	power_remaining_duration_only_enhanced	根据您的使用情况，大约还可使用 %1$s
+com.xgimi.bluetoothservice	power_remaining_duration_only_short	还可使用 %1$s
+com.xgimi.bluetoothservice	power_remaining_duration_only_shutdown_imminent	手机可能即将关机
+com.xgimi.bluetoothservice	power_remaining_duration_shutdown_imminent	手机可能即将关机 (%1$s)
+com.xgimi.bluetoothservice	power_remaining_less_than_duration	电量剩余使用时间不到 %1$s (%2$s)
+com.xgimi.bluetoothservice	power_remaining_less_than_duration_only	剩余电池续航时间不到 %1$s
+com.xgimi.bluetoothservice	power_remaining_more_than_subtext	电量剩余使用时间超过 %1$s (%2$s)
+com.xgimi.bluetoothservice	power_remaining_only_more_than_subtext	电量剩余使用时间超过 %1$s
+com.xgimi.bluetoothservice	private_dns_mode_off	关闭
+com.xgimi.bluetoothservice	private_dns_mode_opportunistic	自动
+com.xgimi.bluetoothservice	private_dns_mode_provider	私人 DNS 提供商主机名
+com.xgimi.bluetoothservice	private_dns_mode_provider_failure	无法连接
+com.xgimi.bluetoothservice	private_dns_mode_provider_hostname_hint	输入 DNS 提供商的主机名
+com.xgimi.bluetoothservice	process_kernel_label	Android 操作系统
+com.xgimi.bluetoothservice	remaining_length_format	还剩 %1$s
+com.xgimi.bluetoothservice	retail_demo_reset_message	输入密码即可在演示模式下恢复出厂设置
+com.xgimi.bluetoothservice	retail_demo_reset_next	下一步
+com.xgimi.bluetoothservice	retail_demo_reset_title	需要输入密码
+com.xgimi.bluetoothservice	running_process_item_user_label	用户：%1$s
+com.xgimi.bluetoothservice	runningservices_settings_summary	查看和控制当前正在运行的服务
+com.xgimi.bluetoothservice	runningservices_settings_title	正在运行的服务
+com.xgimi.bluetoothservice	saved_network	由“%1$s”保存
+com.xgimi.bluetoothservice	screen_zoom_summary_custom	自定义 (%d)
+com.xgimi.bluetoothservice	screen_zoom_summary_default	默认
+com.xgimi.bluetoothservice	screen_zoom_summary_extremely_large	最大
+com.xgimi.bluetoothservice	screen_zoom_summary_large	大
+com.xgimi.bluetoothservice	screen_zoom_summary_small	小
+com.xgimi.bluetoothservice	screen_zoom_summary_very_large	较大
+com.xgimi.bluetoothservice	select_application	选择应用
+com.xgimi.bluetoothservice	select_logd_size_dialog_title	选择每个日志缓冲区的日志记录器大小
+com.xgimi.bluetoothservice	select_logd_size_title	日志记录器缓冲区大小
+com.xgimi.bluetoothservice	select_logpersist_dialog_title	选择要在设备上永久存储的日志缓冲区
+com.xgimi.bluetoothservice	select_logpersist_title	在设备上永久存储日志记录器数据
+com.xgimi.bluetoothservice	select_private_dns_configuration_dialog_title	选择私人 DNS 模式
+com.xgimi.bluetoothservice	select_private_dns_configuration_title	私人 DNS
+com.xgimi.bluetoothservice	select_usb_configuration_dialog_title	选择USB配置
+com.xgimi.bluetoothservice	select_usb_configuration_title	选择USB配置
+com.xgimi.bluetoothservice	select_webview_provider_dialog_title	设置 WebView 实现
+com.xgimi.bluetoothservice	select_webview_provider_title	WebView 实现
+com.xgimi.bluetoothservice	select_webview_provider_toast_text	此选项已失效，请重试。
+com.xgimi.bluetoothservice	show_all_anrs	显示后台 ANR
+com.xgimi.bluetoothservice	show_all_anrs_summary	为后台应用显示“应用无响应”对话框
+com.xgimi.bluetoothservice	show_hw_layers_updates	显示硬件层更新
+com.xgimi.bluetoothservice	show_hw_layers_updates_summary	Flash 硬件层在进行更新时会显示为绿色
+com.xgimi.bluetoothservice	show_hw_screen_updates	显示 GPU 视图更新
+com.xgimi.bluetoothservice	show_hw_screen_updates_summary	使用 GPU 进行绘图时闪烁显示窗口中的视图
+com.xgimi.bluetoothservice	show_non_rect_clip	调试非矩形剪裁操作
+com.xgimi.bluetoothservice	show_notification_channel_warnings	显示通知渠道警告
+com.xgimi.bluetoothservice	show_notification_channel_warnings_summary	当应用未经有效渠道发布通知时，在屏幕上显示警告
+com.xgimi.bluetoothservice	show_screen_updates	显示面 (surface) 更新
+com.xgimi.bluetoothservice	show_screen_updates_summary	窗口中的面 (surface) 更新时全部闪烁
+com.xgimi.bluetoothservice	show_touches	显示点按操作反馈
+com.xgimi.bluetoothservice	show_touches_summary	显示点按操作的视觉反馈
+com.xgimi.bluetoothservice	simulate_color_space	模拟颜色空间
+com.xgimi.bluetoothservice	speed_label_fast	快
+com.xgimi.bluetoothservice	speed_label_medium	适中
+com.xgimi.bluetoothservice	speed_label_okay	良好
+com.xgimi.bluetoothservice	speed_label_slow	慢
+com.xgimi.bluetoothservice	speed_label_very_fast	很快
+com.xgimi.bluetoothservice	speed_label_very_slow	很慢
+com.xgimi.bluetoothservice	standby_bucket_summary	应用待机状态： %s
+com.xgimi.bluetoothservice	status_unavailable	无法获取
+com.xgimi.bluetoothservice	strict_mode	启用严格模式
+com.xgimi.bluetoothservice	strict_mode_summary	应用在主线程上执行长时间操作时闪烁屏幕
+com.xgimi.bluetoothservice	summary_collapsed_preference_list	当前显示了 %1$s 项（已添加 %2$s 项）
+com.xgimi.bluetoothservice	tether_settings_title_all	网络共享与便携式热点
+com.xgimi.bluetoothservice	tether_settings_title_bluetooth	蓝牙网络共享
+com.xgimi.bluetoothservice	tether_settings_title_usb	USB 网络共享
+com.xgimi.bluetoothservice	tether_settings_title_usb_bluetooth	网络共享
+com.xgimi.bluetoothservice	tether_settings_title_wifi	便携式热点
+com.xgimi.bluetoothservice	tethering_hardware_offload	网络共享硬件加速
+com.xgimi.bluetoothservice	tethering_hardware_offload_summary	使用网络共享硬件加速功能（如果可用）
+com.xgimi.bluetoothservice	tethering_settings_not_available	此用户无权修改网络共享设置
+com.xgimi.bluetoothservice	time_unit_just_now	刚刚
+com.xgimi.bluetoothservice	title_convert_fbe	正在转换为文件加密
+com.xgimi.bluetoothservice	track_frame_time	GPU 渲染模式分析
+com.xgimi.bluetoothservice	transition_animation_scale_title	过渡动画缩放
+com.xgimi.bluetoothservice	tts_default_lang_summary	设置文字转语音功能要使用的语言
+com.xgimi.bluetoothservice	tts_default_lang_title	语言
+com.xgimi.bluetoothservice	tts_default_pitch_summary	会影响合成语音的音调
+com.xgimi.bluetoothservice	tts_default_pitch_title	音高
+com.xgimi.bluetoothservice	tts_default_rate_summary	文字转换成语音后的播放速度
+com.xgimi.bluetoothservice	tts_default_rate_title	语速
+com.xgimi.bluetoothservice	tts_default_sample_string	这是语音合成示例
+com.xgimi.bluetoothservice	tts_engine_network_required	您必须连接到网络才能使用文字转语音功能输出这种语言。
+com.xgimi.bluetoothservice	tts_engine_preference_section_title	首选引擎
+com.xgimi.bluetoothservice	tts_engine_security_warning	此语音合成引擎能够收集语音中出现的所有信息，包括密码和信用卡号码之类的个人数据。此功能由 %s 引擎提供。是否启用此语音合成引擎？
+com.xgimi.bluetoothservice	tts_engine_settings_button	进行引擎设置
+com.xgimi.bluetoothservice	tts_engine_settings_title	“%s”的设置
+com.xgimi.bluetoothservice	tts_general_section_title	常规
+com.xgimi.bluetoothservice	tts_install_data_summary	安装语音合成所需的数据包
+com.xgimi.bluetoothservice	tts_install_data_title	安装语音数据包
+com.xgimi.bluetoothservice	tts_lang_not_selected	未选择语言
+com.xgimi.bluetoothservice	tts_lang_use_system	使用系统语言
+com.xgimi.bluetoothservice	tts_play_example_summary	播放简短的语音合成示例
+com.xgimi.bluetoothservice	tts_play_example_title	收听示例
+com.xgimi.bluetoothservice	tts_reset_speech_pitch_summary	将文字的读出音调重置为默认值。
+com.xgimi.bluetoothservice	tts_reset_speech_pitch_title	重置语音音调
+com.xgimi.bluetoothservice	tts_settings	文字转语音设置
+com.xgimi.bluetoothservice	tts_settings_title	文字转语音 (TTS) 输出
+com.xgimi.bluetoothservice	tts_status_checking	正在检查…
+com.xgimi.bluetoothservice	tts_status_not_supported	不支持%1$s
+com.xgimi.bluetoothservice	tts_status_ok	完全支持%1$s
+com.xgimi.bluetoothservice	tts_status_requires_network	只有在连接到网络的情况下，才支持%1$s
+com.xgimi.bluetoothservice	tts_status_title	默认语言状态
+com.xgimi.bluetoothservice	unknown	未知
+com.xgimi.bluetoothservice	usb_audio_disable_routing	关闭 USB 音频转接
+com.xgimi.bluetoothservice	usb_audio_disable_routing_summary	关闭自动转接至 USB 音频外围设备的功能
+com.xgimi.bluetoothservice	use_system_language_to_select_input_method_subtypes	使用系统语言
+com.xgimi.bluetoothservice	user_guest	访客
+com.xgimi.bluetoothservice	v7_preference_off	关闭
+com.xgimi.bluetoothservice	v7_preference_on	开启
+com.xgimi.bluetoothservice	verify_apps_over_usb_summary	通过 ADB/ADT 检查安装的应用是否存在有害行为。
+com.xgimi.bluetoothservice	verify_apps_over_usb_title	通过USB验证应用
+com.xgimi.bluetoothservice	vpn_settings_not_available	此用户无权修改VPN设置
+com.xgimi.bluetoothservice	wait_for_debugger	等待调试程序
+com.xgimi.bluetoothservice	wait_for_debugger_summary	调试应用会在执行前等待附加调试器
+com.xgimi.bluetoothservice	wifi_ap_unable_to_handle_new_sta	接入点暂时满载
+com.xgimi.bluetoothservice	wifi_cant_connect	无法连接
+com.xgimi.bluetoothservice	wifi_cant_connect_to_ap	无法连接到“%1$s”
+com.xgimi.bluetoothservice	wifi_check_password_try_again	请检查密码，然后重试
+com.xgimi.bluetoothservice	wifi_connected_mac_randomization	连接时随机选择 MAC 网址
+com.xgimi.bluetoothservice	wifi_connected_mac_randomization_summary	连接到 WLAN 网络时随机选择 MAC 地址
+com.xgimi.bluetoothservice	wifi_connected_no_internet	已连接，但无法访问互联网
+com.xgimi.bluetoothservice	wifi_disabled_by_recommendation_provider	网络质量较差，因此未连接
+com.xgimi.bluetoothservice	wifi_disabled_generic	已停用
+com.xgimi.bluetoothservice	wifi_disabled_network_failure	IP 配置失败
+com.xgimi.bluetoothservice	wifi_disabled_password_failure	身份验证出现问题
+com.xgimi.bluetoothservice	wifi_disabled_wifi_failure	WLAN 连接失败
+com.xgimi.bluetoothservice	wifi_display_certification	无线显示认证
+com.xgimi.bluetoothservice	wifi_display_certification_summary	显示无线显示认证选项
+com.xgimi.bluetoothservice	wifi_fail_to_scan	无法扫描网络
+com.xgimi.bluetoothservice	wifi_metered_label	按流量计费
+com.xgimi.bluetoothservice	wifi_no_internet	无法访问互联网
+com.xgimi.bluetoothservice	wifi_no_internet_no_reconnect	无法自动连接
+com.xgimi.bluetoothservice	wifi_not_in_range	不在范围内
+com.xgimi.bluetoothservice	wifi_remembered	已保存
+com.xgimi.bluetoothservice	wifi_security_none	无
+com.xgimi.bluetoothservice	wifi_status_mac_randomized	MAC 已随机化
+com.xgimi.bluetoothservice	wifi_status_no_internet	无法访问互联网
+com.xgimi.bluetoothservice	wifi_status_sign_in_required	必须登录
+com.xgimi.bluetoothservice	wifi_unmetered_label	不按流量计费
+com.xgimi.bluetoothservice	wifi_verbose_logging	启用 WLAN 详细日志记录功能
+com.xgimi.bluetoothservice	wifi_verbose_logging_summary	提升 WLAN 日志记录级别（在 WLAN 选择器中显示每个 SSID 的 RSSI）
+com.xgimi.bluetoothservice	window_animation_scale_title	窗口动画缩放
+com.xgimi.bluetoothservice	zen_alarm_warning	您将不会听到下一个%1$s 的闹钟响铃
+com.xgimi.bluetoothservice	zen_alarm_warning_indef	您将不会听到下一个%1$s 的闹钟响铃，除非您在该时间之前关闭这项功能
+com.xgimi.bluetoothservice	zen_interruption_level_priority	仅限优先事项
+com.xgimi.bluetoothservice	zen_mode_duration_always_prompt_title	每次都询问
+com.xgimi.bluetoothservice	zen_mode_duration_settings_title	持续时间
+com.xgimi.bluetoothservice	zen_mode_enable_dialog_turn_on	开启
+com.xgimi.bluetoothservice	zen_mode_settings_summary_off	永不
+com.xgimi.bluetoothservice	zen_mode_settings_turn_on_dialog_title	开启“勿扰”模式
+com.android.providers.calendar	calendar_storage	日历存储
+com.android.providers.calendar	calendar_default_name	默认日历
+com.android.providers.calendar	calendar_info	日历信息
+com.android.providers.calendar	calendar_info_error	错误
+com.android.providers.calendar	calendar_info_no_calendars	没有日历
+com.android.providers.calendar	calendar_info_events	活动：%1$d项
+com.android.providers.calendar	calendar_info_events_dirty	活动数：%1$d。未保存的活动数：%2$d
+com.android.providers.calendar	provider_label	日历
+com.android.providers.calendar	debug_tool_delete_button	立即删除
+com.android.providers.calendar	debug_tool_start_button	开始
+com.android.providers.calendar	debug_tool_message	您需要执行以下操作：1) 在任意应用都可读取的 SD 卡/USB 存储设备中，创建日历数据库的副本；2) 通过电子邮件发送该副本。在成功从设备中复制该副本或开发者收到相关电子邮件后，请务必将该副本及时删除。
+com.android.providers.calendar	debug_tool_email_sender_picker	选择用于发送文件的程序
+com.android.providers.calendar	debug_tool_email_subject	日历调试工具已附加
+com.android.providers.calendar	debug_tool_email_body	附件是我的日历数据库，其中包含我的全部约会和个人信息，因此请谨慎处理。
+com.android.providers.contacts	sharedUserLabel	Android 核心应用
+com.android.providers.contacts	app_label	联系人存储
+com.android.providers.contacts	provider_label	通讯录
+com.android.providers.contacts	upgrade_out_of_memory_notification_ticker	联系人升级需要更多的存储空间。
+com.android.providers.contacts	upgrade_out_of_memory_notification_title	正在升级存储器以容纳更多联系人
+com.android.providers.contacts	upgrade_out_of_memory_notification_text	点按即可完成升级。
+com.android.providers.contacts	default_directory	通讯录
+com.android.providers.contacts	local_invisible_directory	其他
+com.android.providers.contacts	voicemail_from_column	语音邮件发件人
+com.android.providers.contacts	debug_dump_title	复制通讯录数据库
+com.android.providers.contacts	debug_dump_database_message	您将要执行以下操作：1) 在内部存储设备中，创建包括通讯录相关信息和所有通话记录的数据库的副本；2) 通过电子邮件发送该副本。从设备中成功复制该副本或在电子邮件送达之后，请务必及时删除该副本。
+com.android.providers.contacts	debug_dump_delete_button	立即删除
+com.android.providers.contacts	debug_dump_start_button	开始
+com.android.providers.contacts	debug_dump_email_sender_picker	选择用于发送文件的程序
+com.android.providers.contacts	debug_dump_email_subject	随附通讯录数据库
+com.android.providers.contacts	debug_dump_email_body	附件是我的通讯录数据库，其中包含我所有的联系人信息，因此请谨慎处理。
+com.android.defcontainer	service_name	软件包权限帮助程序
+com.android.documentsui	allow	允许
+com.android.documentsui	apk_file_type	Android 应用
+com.android.documentsui	archive_file_type	%1$s 归档文件
+com.android.documentsui	archive_loading_failed	无法打开归档文件以进行浏览。文件已损坏或所采用的格式不受支持。
+com.android.documentsui	audio_extension_file_type	%1$s 音频
+com.android.documentsui	audio_file_type	音频
+com.android.documentsui	authentication_required	要查看此目录，请登录%1$s
+com.android.documentsui	button_clear	清除
+com.android.documentsui	button_compress	压缩
+com.android.documentsui	button_copy	复制
+com.android.documentsui	button_dismiss	关闭
+com.android.documentsui	button_extract	解压
+com.android.documentsui	button_move	移动
+com.android.documentsui	button_retry	重试
+com.android.documentsui	button_select	选择
+com.android.documentsui	button_show_provider	在提供程序中显示
+com.android.documentsui	cant_display_content	无法显示内容
+com.android.documentsui	close	关闭
+com.android.documentsui	compress_notification_title	正在压缩文件
+com.android.documentsui	compress_preparing	正在准备…
+com.android.documentsui	continue_in_background	继续在后台执行
+com.android.documentsui	copy_notification_title	正在复制文件
+com.android.documentsui	copy_preparing	正在准备…
+com.android.documentsui	copy_remaining	剩余时间：%s
+com.android.documentsui	create_error	无法创建文件夹
+com.android.documentsui	debug_raw_size	原始大小（字节）
+com.android.documentsui	debug_stream_types	流式传输类型
+com.android.documentsui	delete_filename_confirmation_message	要删除“%1$s”吗？
+com.android.documentsui	delete_foldername_confirmation_message	要删除文件夹“%1$s”及其中的内容吗？
+com.android.documentsui	delete_notification_title	正在删除文件
+com.android.documentsui	delete_preparing	正在准备…
+com.android.documentsui	deny	拒绝
+com.android.documentsui	directory_items	项数
+com.android.documentsui	directory_type	文件夹
+com.android.documentsui	downloads_label	下载
+com.android.documentsui	drawer_close	隐藏根目录
+com.android.documentsui	drawer_open	显示根目录
+com.android.documentsui	empty	无任何文件
+com.android.documentsui	excel_file_type	Excel 电子表格
+com.android.documentsui	extract_notification_title	正在解压缩文件
+com.android.documentsui	extract_preparing	正在准备…
+com.android.documentsui	file_operation_error	文件操作失败。
+com.android.documentsui	file_operation_rejected	不支持文件操作。
+com.android.documentsui	files_label	文件
+com.android.documentsui	gdoc_file_type	Google 文档
+com.android.documentsui	gdraw_file_type	Google 绘图
+com.android.documentsui	generic_extention_file_type	%1$s 文件
+com.android.documentsui	generic_file_type	文件
+com.android.documentsui	gform_file_type	Google 表单
+com.android.documentsui	gmap_file_type	Google 地图
+com.android.documentsui	gsheet_file_type	Google 电子表格
+com.android.documentsui	gsite_file_type	Google 网站
+com.android.documentsui	gslides_file_type	Google 演示文稿
+com.android.documentsui	gtable_file_type	Google 表格
+com.android.documentsui	handler_app_belongs_to	此文件的提供方：
+com.android.documentsui	handler_app_file_opens_with	使用以下应用打开这类文件：
+com.android.documentsui	handler_app_not_selected	未选择
+com.android.documentsui	handler_app_unknown	未知
+com.android.documentsui	html_file_type	HTML 文档
+com.android.documentsui	image_extension_file_type	%1$s 图片
+com.android.documentsui	image_file_type	图片
+com.android.documentsui	images_shortcut_label	图片
+com.android.documentsui	inspector_debug_metadata_section	原始元数据：%1$s
+com.android.documentsui	inspector_debug_section	调试信息（仅限开发者）
+com.android.documentsui	inspector_load_error	无法加载文件信息
+com.android.documentsui	inspector_metadata_section	媒体详情
+com.android.documentsui	inspector_title	信息
+com.android.documentsui	menu_advanced_hide	隐藏内部存储空间
+com.android.documentsui	menu_advanced_show	显示内部存储空间
+com.android.documentsui	menu_compress	压缩
+com.android.documentsui	menu_copy	复制到…
+com.android.documentsui	menu_copy_to_clipboard	复制
+com.android.documentsui	menu_create_dir	新建文件夹
+com.android.documentsui	menu_cut_to_clipboard	剪切
+com.android.documentsui	menu_delete	删除
+com.android.documentsui	menu_eject_root	退出
+com.android.documentsui	menu_extract	解压到…
+com.android.documentsui	menu_grid	网格视图
+com.android.documentsui	menu_inspect	获取信息
+com.android.documentsui	menu_list	列表视图
+com.android.documentsui	menu_move	移动到…
+com.android.documentsui	menu_new_window	新建窗口
+com.android.documentsui	menu_open	打开
+com.android.documentsui	menu_open_in_new_window	在新窗口中打开
+com.android.documentsui	menu_open_with	打开方式
+com.android.documentsui	menu_paste_from_clipboard	粘贴
+com.android.documentsui	menu_paste_into_folder	粘贴到文件夹中
+com.android.documentsui	menu_rename	重命名
+com.android.documentsui	menu_save	保存
+com.android.documentsui	menu_search	搜索
+com.android.documentsui	menu_select_all	全选
+com.android.documentsui	menu_settings	存储设置
+com.android.documentsui	menu_share	分享
+com.android.documentsui	menu_view_in_owner	在“%1$s”中查看
+com.android.documentsui	metadata_address	位置
+com.android.documentsui	metadata_album	专辑
+com.android.documentsui	metadata_altitude	海拔
+com.android.documentsui	metadata_aperture	光圈
+com.android.documentsui	metadata_artist	音乐人
+com.android.documentsui	metadata_camera	相机
+com.android.documentsui	metadata_composer	作曲家
+com.android.documentsui	metadata_coordinates	坐标
+com.android.documentsui	metadata_date_time	拍摄时间
+com.android.documentsui	metadata_dimensions	尺寸
+com.android.documentsui	metadata_dimensions_format	%1$d x %2$d - %3$,.1f 百万像素
+com.android.documentsui	metadata_duration	时长
+com.android.documentsui	metadata_focal_format	%1$.2f  毫米
+com.android.documentsui	metadata_focal_length	焦距
+com.android.documentsui	metadata_iso_speed_ratings	ISO 等效感光度
+com.android.documentsui	metadata_shutter_speed	快门速度
+com.android.documentsui	move_notification_title	正在移动文件
+com.android.documentsui	move_preparing	正在准备…
+com.android.documentsui	name_conflict	已存在同名文件。
+com.android.documentsui	never_ask_again	不再询问
+com.android.documentsui	new_archive_file_name	归档%s
+com.android.documentsui	no_results	%1$s中没有任何相符项
+com.android.documentsui	not_sorted	未排序
+com.android.documentsui	notification_copy_files_converted_title	部分文件已转换成其他格式
+com.android.documentsui	notification_touch_for_details	点按即可查看详情
+com.android.documentsui	open_external_dialog_request	要授权^1访问^3上的“^2”目录吗？
+com.android.documentsui	open_external_dialog_request_primary_volume	要授权^1访问“^2”目录吗？
+com.android.documentsui	open_external_dialog_root_request	要授权^1访问您^2上的数据（包括照片和视频）吗？
+com.android.documentsui	overwrite_file_confirmation_message	要覆盖 %1$s 吗？
+com.android.documentsui	pdf_file_type	PDF 文档
+com.android.documentsui	ppt_file_type	PowerPoint 演示文稿
+com.android.documentsui	query_error	暂时无法加载内容
+com.android.documentsui	rename_error	无法重命名文档
+com.android.documentsui	root_available_bytes	可用空间：%1$s
+com.android.documentsui	root_recent	最近
+com.android.documentsui	root_type_apps	更多应用
+com.android.documentsui	root_type_device	设备
+com.android.documentsui	root_type_service	存储服务
+com.android.documentsui	root_type_shortcut	快捷方式
+com.android.documentsui	save_error	无法保存文档
+com.android.documentsui	share_via	分享方式
+com.android.documentsui	sign_in	登录
+com.android.documentsui	sort_dimension_date	上次修改时间
+com.android.documentsui	sort_dimension_file_type	类型
+com.android.documentsui	sort_dimension_name	名称
+com.android.documentsui	sort_dimension_size	大小
+com.android.documentsui	sort_dimension_summary	摘要
+com.android.documentsui	sort_direction_ascending	升序
+com.android.documentsui	sort_direction_descending	降序
+com.android.documentsui	title_open	打开文档
+com.android.documentsui	title_save	保存文档
+com.android.documentsui	toast_failed_delete	无法删除部分文档
+com.android.documentsui	toast_no_application	无法打开文件
+com.android.documentsui	toast_view_in_archives_unsupported	无法打开归档文件
+com.android.documentsui	txt_file_type	纯文本
+com.android.documentsui	undo	撤消
+com.android.documentsui	video_extension_file_type	%1$s 视频
+com.android.documentsui	video_file_type	视频
+com.android.documentsui	word_file_type	Word 文档
+com.android.providers.downloads	app_label	内容下载管理器
+com.android.providers.downloads	storage_description	下载内容
+com.android.providers.downloads	permlab_downloadManager	访问下载管理器。
+com.android.providers.downloads	permdesc_downloadManager	允许该应用使用下载管理器并通过它下载文件。恶意应用可能会借此中断下载并访问私人信息。
+com.android.providers.downloads	permlab_downloadManagerAdvanced	高级下载管理器功能。
+com.android.providers.downloads	permdesc_downloadManagerAdvanced	允许该应用使用下载管理器的高级功能。恶意应用可能会借此中断下载并访问私人信息。
+com.android.providers.downloads	permlab_downloadCompletedIntent	发送下载通知。
+com.android.providers.downloads	permdesc_downloadCompletedIntent	允许该应用发送下载已完成的通知。恶意应用可能借此伪装成其他下载文件的应用。
+com.android.providers.downloads	permlab_seeAllExternal	查看下载到SD卡的全部内容
+com.android.providers.downloads	permdesc_seeAllExternal	允许该应用查看所有下载到SD卡上的内容（无论这些内容是由哪个应用下载的）。
+com.android.providers.downloads	permlab_downloadCacheNonPurgeable	保留下载缓存中的空间
+com.android.providers.downloads	permdesc_downloadCacheNonPurgeable	允许该应用将文件下载到下载缓存中（系统不会因下载管理器需要更多空间而自动删除下载缓存中的内容）。
+com.android.providers.downloads	permlab_downloadWithoutNotification	直接下载文件而不显示通知
+com.android.providers.downloads	permdesc_downloadWithoutNotification	允许该应用在不向用户显示任何通知的情况下通过下载管理器下载文件。
+com.android.providers.downloads	permlab_accessAllDownloads	访问所有系统下载内容
+com.android.providers.downloads	permdesc_accessAllDownloads	允许该应用查看和修改系统上的任意应用下载的所有内容。
+com.android.providers.downloads	download_unknown_title	<未命名>
+com.android.providers.downloads	notification_download_complete	下载已完成。
+com.android.providers.downloads	notification_download_failed	下载失败。
+com.android.providers.downloads	notification_need_wifi_for_size	文件过大，需要通过WLAN网络下载。
+com.android.providers.downloads	notification_paused_in_background	已在后台暂停。
+com.android.providers.downloads	wifi_required_title	文件太大，不适于通过运营商网络下载
+com.android.providers.downloads	wifi_required_body	您必须使用WLAN完成此内容 (%s ) 的下载。\n\n触摸“%s ”可在下次连接到WLAN网络时开始下载此内容。
+com.android.providers.downloads	wifi_recommended_title	稍后再加入下载队列吗？
+com.android.providers.downloads	wifi_recommended_body	立即开始下载此内容 (%s ) 可能会缩短电池的使用时间并/或导致过量使用移动数据连接流量（这可能导致移动运营商向您收费，具体取决于您的流量套餐）。\n\n触摸“%s”可在下次连接到WLAN网络时开始下载此内容。
+com.android.providers.downloads	button_queue_for_wifi	排队
+com.android.providers.downloads	button_cancel_download	取消
+com.android.providers.downloads	button_start_now	立即开始
+com.android.providers.downloads	download_remaining	剩余时间：%s
+com.android.providers.downloads	download_no_application_title	无法打开文件
+com.android.providers.downloads	root_downloads	下载
+com.android.providers.downloads	download_queued	已加入队列
+com.android.providers.downloads	download_running	正在下载
+com.android.providers.downloads	download_error	失败
+com.android.providers.downloads	download_running_percent	下载中：%s
+com.android.externalstorage	app_label	外部存储设备
+com.android.externalstorage	storage_description	本地存储空间
+com.android.externalstorage	root_internal_storage	内部存储空间
+com.android.externalstorage	root_documents	文档
+com.android.location.fused	app_label	一体化位置信息
+com.android.inputdevices	app_label	输入设备
+com.android.inputdevices	keyboard_layouts_label	Android键盘
+com.android.inputdevices	keyboard_layout_english_uk_label	英语（英国）
+com.android.inputdevices	keyboard_layout_english_us_label	英语（美国）
+com.android.inputdevices	keyboard_layout_english_us_intl	英语（美国），国际风格
+com.android.inputdevices	keyboard_layout_english_us_colemak_label	英语（美国），Colemak 风格
+com.android.inputdevices	keyboard_layout_english_us_dvorak_label	英语（美国），Dvorak 风格
+com.android.inputdevices	keyboard_layout_english_us_workman_label	英语（美国），Workman 风格
+com.android.inputdevices	keyboard_layout_german_label	德语
+com.android.inputdevices	keyboard_layout_french_label	法语
+com.android.inputdevices	keyboard_layout_french_ca_label	法语（加拿大）
+com.android.inputdevices	keyboard_layout_russian_label	俄语
+com.android.inputdevices	keyboard_layout_russian_mac_label	俄语，Mac 风格
+com.android.inputdevices	keyboard_layout_spanish_label	西班牙语
+com.android.inputdevices	keyboard_layout_swiss_french_label	瑞士法语
+com.android.inputdevices	keyboard_layout_swiss_german_label	瑞士德语
+com.android.inputdevices	keyboard_layout_belgian	比利时语
+com.android.inputdevices	keyboard_layout_bulgarian	保加利亚语
+com.android.inputdevices	keyboard_layout_italian	意大利语
+com.android.inputdevices	keyboard_layout_danish	丹麦语
+com.android.inputdevices	keyboard_layout_norwegian	挪威语
+com.android.inputdevices	keyboard_layout_swedish	瑞典语
+com.android.inputdevices	keyboard_layout_finnish	芬兰语
+com.android.inputdevices	keyboard_layout_croatian	克罗地亚语
+com.android.inputdevices	keyboard_layout_czech	捷克语
+com.android.inputdevices	keyboard_layout_estonian	爱沙尼亚语
+com.android.inputdevices	keyboard_layout_hungarian	匈牙利语
+com.android.inputdevices	keyboard_layout_icelandic	冰岛语
+com.android.inputdevices	keyboard_layout_brazilian	巴西语
+com.android.inputdevices	keyboard_layout_portuguese	葡萄牙语
+com.android.inputdevices	keyboard_layout_slovak	斯洛伐克语
+com.android.inputdevices	keyboard_layout_slovenian	斯洛文尼亚语
+com.android.inputdevices	keyboard_layout_turkish	土耳其语
+com.android.inputdevices	keyboard_layout_ukrainian	乌克兰语
+com.android.inputdevices	keyboard_layout_arabic	阿拉伯语
+com.android.inputdevices	keyboard_layout_greek	希腊语
+com.android.inputdevices	keyboard_layout_hebrew	希伯来语
+com.android.inputdevices	keyboard_layout_lithuanian	立陶宛语
+com.android.inputdevices	keyboard_layout_spanish_latin	西班牙语（拉丁美洲）
+com.android.inputdevices	keyboard_layout_latvian	拉脱维亚语
+com.android.inputdevices	keyboard_layout_persian	波斯语
+com.android.inputdevices	keyboard_layout_azerbaijani	阿塞拜疆语
+com.android.inputdevices	keyboard_layout_polish	波兰语
+com.android.providers.media	uid_label	媒体
+com.android.providers.media	storage_description	本地存储空间
+com.android.providers.media	app_label	媒体存储设备
+com.android.providers.media	artist_label	音乐人
+com.android.providers.media	ringtone_default	默认铃声
+com.android.providers.media	notification_sound_default	默认通知提示音
+com.android.providers.media	alarm_sound_default	默认闹钟铃声
+com.android.providers.media	root_images	图片
+com.android.providers.media	root_videos	视频
+com.android.providers.media	root_audio	音频
+com.android.providers.media	add_ringtone_text	添加铃声
+com.android.providers.media	delete_ringtone_text	删除
+com.android.providers.media	unable_to_add_ringtone	无法添加自定义铃声
+com.android.providers.media	unable_to_delete_ringtone	无法删除自定义铃声
+com.android.packageinstaller	Parse_error_dlg_text	解析软件包时出现问题。
+com.android.packageinstaller	accessibility_display_daltonizer_preference_subtitle	这是实验性功能，性能可能不稳定。
+com.android.packageinstaller	accessibility_display_daltonizer_preference_title	色彩校正
+com.android.packageinstaller	accessibility_manual_zen_less_time	减少时间。
+com.android.packageinstaller	accessibility_manual_zen_more_time	增加时间。
+com.android.packageinstaller	accessibility_no_wifi	WLAN 连接已断开。
+com.android.packageinstaller	accessibility_wifi_off	WLAN 已关闭。
+com.android.packageinstaller	accessibility_wifi_one_bar	WLAN 信号强度为一格。
+com.android.packageinstaller	accessibility_wifi_security_type_none	开放网络
+com.android.packageinstaller	accessibility_wifi_security_type_secured	安全网络
+com.android.packageinstaller	accessibility_wifi_signal_full	WLAN 信号满格。
+com.android.packageinstaller	accessibility_wifi_three_bars	WLAN 信号强度为三格。
+com.android.packageinstaller	accessibility_wifi_two_bars	WLAN 信号强度为两格。
+com.android.packageinstaller	action_bar_expand_collapse_button	“展开”/“收起”按钮
+com.android.packageinstaller	active_input_method_subtypes	有效的输入法
+com.android.packageinstaller	adb_keys_warning_message	是否针对您之前授权的所有计算机撤消 USB 调试的访问权限？
+com.android.packageinstaller	adb_warning_message	USB 调试仅用于开发目的。该功能可用于在您的计算机和设备之间复制数据、在您的设备上安装应用（事先不发通知）以及读取日志数据。
+com.android.packageinstaller	adb_warning_title	是否允许 USB 调试？
+com.android.packageinstaller	additional_permissions	其他权限
+com.android.packageinstaller	alarm_template	时间：%1$s
+com.android.packageinstaller	alarm_template_far	时间：%1$s
+com.android.packageinstaller	allPerms	全部
+com.android.packageinstaller	all_permissions	所有权限
+com.android.packageinstaller	allow_mock_location	允许模拟位置
+com.android.packageinstaller	allow_mock_location_summary	允许模拟位置
+com.android.packageinstaller	animator_duration_scale_title	Animator 时长缩放
+com.android.packageinstaller	anonymous_source_continue	继续
+com.android.packageinstaller	anonymous_source_warning	来历不明的应用很可能会损害您的电视和个人数据。安装该应用即表示，您同意对于因使用该应用可能导致的任何电视损坏或数据丢失情况，您负有全部责任。
+com.android.packageinstaller	apn_settings_not_available	此用户无权修改接入点名称设置
+com.android.packageinstaller	app_name	软件包安装程序
+com.android.packageinstaller	app_name_unknown	未知
+com.android.packageinstaller	app_not_found_dlg_text	未在已安装应用的列表中找到该应用。
+com.android.packageinstaller	app_not_found_dlg_title	未找到应用
+com.android.packageinstaller	app_permissions	应用权限
+com.android.packageinstaller	app_permissions_breadcrumb	应用
+com.android.packageinstaller	app_permissions_group_summary	已授权 %1$d 个应用（共 %2$d 个）
+com.android.packageinstaller	app_permissions_info_button_label	打开应用信息
+com.android.packageinstaller	app_process_limit_title	后台进程限制
+com.android.packageinstaller	available_via_carrier	可通过%1$s连接
+com.android.packageinstaller	available_via_passpoint	可通过%1$s连接
+com.android.packageinstaller	battery_info_status_charging	正在充电
+com.android.packageinstaller	battery_info_status_charging_lower	正在充电
+com.android.packageinstaller	battery_info_status_discharging	未在充电
+com.android.packageinstaller	battery_info_status_full	电量充足
+com.android.packageinstaller	battery_info_status_not_charging	已插入电源，但是现在无法充电
+com.android.packageinstaller	battery_info_status_unknown	未知
+com.android.packageinstaller	bluetooth_a2dp_profile_summary_connected	已连接到媒体音频
+com.android.packageinstaller	bluetooth_a2dp_profile_summary_use_for	用于媒体音频
+com.android.packageinstaller	bluetooth_active_battery_level	使用中，电池电量：%1$s
+com.android.packageinstaller	bluetooth_active_no_battery_level	使用中
+com.android.packageinstaller	bluetooth_battery_level	电池电量：%1$s
+com.android.packageinstaller	bluetooth_connected	已连接%1$s
+com.android.packageinstaller	bluetooth_connected_battery_level	已连接，电量为 %1$s %2$s
+com.android.packageinstaller	bluetooth_connected_no_a2dp	已连接（无媒体信号）%1$s
+com.android.packageinstaller	bluetooth_connected_no_a2dp_battery_level	已连接（无媒体信号），电量为 %1$s %2$s
+com.android.packageinstaller	bluetooth_connected_no_headset	已连接（无手机信号）%1$s
+com.android.packageinstaller	bluetooth_connected_no_headset_battery_level	已连接（无手机信号），电量为 %1$s %2$s
+com.android.packageinstaller	bluetooth_connected_no_headset_no_a2dp	已连接（无手机或媒体信号）%1$s
+com.android.packageinstaller	bluetooth_connected_no_headset_no_a2dp_battery_level	已连接（无手机或媒体信号），电量为 %1$s %2$s
+com.android.packageinstaller	bluetooth_connected_no_map	已连接（无消息访问权限）%1$s
+com.android.packageinstaller	bluetooth_connecting	正在连接...
+com.android.packageinstaller	bluetooth_disable_absolute_volume	停用绝对音量功能
+com.android.packageinstaller	bluetooth_disable_absolute_volume_summary	停用蓝牙绝对音量功能，即可避免在连接到远程设备时出现音量问题（例如音量高得让人无法接受或无法控制音量等）。
+com.android.packageinstaller	bluetooth_disconnected	已断开连接
+com.android.packageinstaller	bluetooth_disconnecting	正在断开连接...
+com.android.packageinstaller	bluetooth_headset_profile_summary_connected	已连接到手机音频
+com.android.packageinstaller	bluetooth_headset_profile_summary_use_for	用于手机音频
+com.android.packageinstaller	bluetooth_hearing_aid_profile_summary_connected	已连接到助听器
+com.android.packageinstaller	bluetooth_hearing_aid_profile_summary_use_for	用于助听器
+com.android.packageinstaller	bluetooth_hearingaid_left_battery_level	左侧 - 电池电量：%1$s
+com.android.packageinstaller	bluetooth_hearingaid_left_pairing_message	正在配对左侧助听器…
+com.android.packageinstaller	bluetooth_hearingaid_right_battery_level	右侧 - 电池电量：%1$s
+com.android.packageinstaller	bluetooth_hearingaid_right_pairing_message	正在配对右侧助听器…
+com.android.packageinstaller	bluetooth_hid_profile_summary_connected	已连接到输入设备
+com.android.packageinstaller	bluetooth_hid_profile_summary_use_for	用于输入
+com.android.packageinstaller	bluetooth_map_profile_summary_connected	已连接到地图
+com.android.packageinstaller	bluetooth_map_profile_summary_use_for	用于地图
+com.android.packageinstaller	bluetooth_opp_profile_summary_connected	已连接到文件传输服务器
+com.android.packageinstaller	bluetooth_opp_profile_summary_not_connected	未连接到文件传输服务器
+com.android.packageinstaller	bluetooth_opp_profile_summary_use_for	用于文件传输
+com.android.packageinstaller	bluetooth_pairing	正在配对...
+com.android.packageinstaller	bluetooth_pairing_accept	配对
+com.android.packageinstaller	bluetooth_pairing_accept_all_caps	配对
+com.android.packageinstaller	bluetooth_pairing_decline	取消
+com.android.packageinstaller	bluetooth_pairing_device_down_error_message	无法与“%1$s”进行通信。
+com.android.packageinstaller	bluetooth_pairing_error_message	无法与“%1$s”进行配对。
+com.android.packageinstaller	bluetooth_pairing_pin_error_message	PIN码或配对密钥不正确，无法与%1$s配对。
+com.android.packageinstaller	bluetooth_pairing_rejected_error_message	%1$s 已拒绝配对。
+com.android.packageinstaller	bluetooth_pairing_will_share_phonebook	配对之后，所配对的设备将可以在建立连接后访问您的通讯录和通话记录。
+com.android.packageinstaller	bluetooth_pan_nap_profile_summary_connected	与其他设备共享该设备的互联网连接
+com.android.packageinstaller	bluetooth_pan_profile_summary_use_for	用于访问互联网
+com.android.packageinstaller	bluetooth_pan_user_profile_summary_connected	经由其他设备连接到互联网
+com.android.packageinstaller	bluetooth_profile_a2dp	媒体音频
+com.android.packageinstaller	bluetooth_profile_a2dp_high_quality	HD 音频：%1$s
+com.android.packageinstaller	bluetooth_profile_a2dp_high_quality_unknown_codec	HD 音频
+com.android.packageinstaller	bluetooth_profile_headset	通话
+com.android.packageinstaller	bluetooth_profile_hearing_aid	助听器
+com.android.packageinstaller	bluetooth_profile_hid	输入设备
+com.android.packageinstaller	bluetooth_profile_map	短信
+com.android.packageinstaller	bluetooth_profile_opp	文件传输
+com.android.packageinstaller	bluetooth_profile_pan	互联网连接
+com.android.packageinstaller	bluetooth_profile_pan_nap	共享互联网连接
+com.android.packageinstaller	bluetooth_profile_pbap	共享联系人
+com.android.packageinstaller	bluetooth_profile_pbap_summary	用于共享联系人
+com.android.packageinstaller	bluetooth_profile_sap	SIM 卡存取权限
+com.android.packageinstaller	bluetooth_sap_profile_summary_connected	已连接到 SAP
+com.android.packageinstaller	bluetooth_sap_profile_summary_use_for	用于存取 SIM 卡
+com.android.packageinstaller	bluetooth_select_a2dp_codec_bits_per_sample	蓝牙音频每样本位数
+com.android.packageinstaller	bluetooth_select_a2dp_codec_bits_per_sample_dialog_title	触发蓝牙音频编解码器\n选择：每样本位数
+com.android.packageinstaller	bluetooth_select_a2dp_codec_channel_mode	蓝牙音频声道模式
+com.android.packageinstaller	bluetooth_select_a2dp_codec_channel_mode_dialog_title	触发蓝牙音频编解码器\n选择：声道模式
+com.android.packageinstaller	bluetooth_select_a2dp_codec_ldac_playback_quality	蓝牙音频 LDAC 编解码器：播放质量
+com.android.packageinstaller	bluetooth_select_a2dp_codec_ldac_playback_quality_dialog_title	触发蓝牙音频 LDAC\n编解码器选择：播放质量
+com.android.packageinstaller	bluetooth_select_a2dp_codec_sample_rate	蓝牙音频采样率
+com.android.packageinstaller	bluetooth_select_a2dp_codec_sample_rate_dialog_title	触发蓝牙音频编解码器\n选择：采样率
+com.android.packageinstaller	bluetooth_select_a2dp_codec_streaming_label	正在流式传输：%1$s
+com.android.packageinstaller	bluetooth_select_a2dp_codec_type	蓝牙音频编解码器
+com.android.packageinstaller	bluetooth_select_a2dp_codec_type_dialog_title	触发蓝牙音频编解码器\n选择
+com.android.packageinstaller	bluetooth_select_avrcp_version_dialog_title	选择蓝牙 AVRCP 版本
+com.android.packageinstaller	bluetooth_select_avrcp_version_string	蓝牙 AVRCP 版本
+com.android.packageinstaller	bluetooth_show_devices_without_names	显示没有名称的蓝牙设备
+com.android.packageinstaller	bluetooth_show_devices_without_names_summary	系统将显示没有名称（只有 MAC 地址）的蓝牙设备
+com.android.packageinstaller	bluetooth_talkback_bluetooth	蓝牙
+com.android.packageinstaller	bluetooth_talkback_computer	计算机
+com.android.packageinstaller	bluetooth_talkback_headphone	耳机
+com.android.packageinstaller	bluetooth_talkback_headset	耳麦
+com.android.packageinstaller	bluetooth_talkback_imaging	成像设备
+com.android.packageinstaller	bluetooth_talkback_input_peripheral	外围输入设备
+com.android.packageinstaller	bluetooth_talkback_phone	手机
+com.android.packageinstaller	bt_hci_snoop_log	启用蓝牙 HCI 信息收集日志
+com.android.packageinstaller	bt_hci_snoop_log_summary	捕获单个文件中的所有蓝牙 HCI 包（更改此设置之后切换蓝牙开关）
+com.android.packageinstaller	bugreport_in_power	错误报告快捷方式
+com.android.packageinstaller	bugreport_in_power_summary	在电源菜单中显示用于提交错误报告的按钮
+com.android.packageinstaller	button_convert_fbe	清除并转换…
+com.android.packageinstaller	cancel	取消
+com.android.packageinstaller	category_personal	个人
+com.android.packageinstaller	category_work	工作
+com.android.packageinstaller	charge_length_format	%1$s前
+com.android.packageinstaller	choose_profile	选择个人资料
+com.android.packageinstaller	clear_adb_keys	撤消 USB 调试授权
+com.android.packageinstaller	confirm_enable_oem_unlock_text	警告：如果开启此设置，此设备上的设备保护功能将无法使用。
+com.android.packageinstaller	confirm_enable_oem_unlock_title	要允许 OEM 解锁吗？
+com.android.packageinstaller	connected_via_carrier	已通过%1$s连接
+com.android.packageinstaller	connected_via_network_scorer	已通过%1$s自动连接
+com.android.packageinstaller	connected_via_network_scorer_default	已自动连接（通过网络评分服务提供方）
+com.android.packageinstaller	connected_via_passpoint	已通过%1$s连接
+com.android.packageinstaller	content_description_menu_button	菜单
+com.android.packageinstaller	convert_to_fbe_warning	将数据分区转换为文件加密。\n！！警告！！此操作将会清除您所有的数据。\n此功能为 Alpha 版功能，可能无法正常运行。\n要继续操作，请按“清除并转换…”。
+com.android.packageinstaller	convert_to_file_encryption	转换为文件加密
+com.android.packageinstaller	convert_to_file_encryption_done	文件已加密
+com.android.packageinstaller	convert_to_file_encryption_enabled	转换…
+com.android.packageinstaller	current_permission_template	第 %1$s 项权限（共 %2$s 项）
+com.android.packageinstaller	current_permissions_category	当前权限
+com.android.packageinstaller	daltonizer_mode_deuteranomaly	绿色弱视（红绿不分）
+com.android.packageinstaller	daltonizer_mode_disabled	已停用
+com.android.packageinstaller	daltonizer_mode_monochromacy	全色盲
+com.android.packageinstaller	daltonizer_mode_protanomaly	红色弱视（红绿不分）
+com.android.packageinstaller	daltonizer_mode_tritanomaly	蓝色弱视（蓝黄不分）
+com.android.packageinstaller	daltonizer_type_overridden	已被“%1$s”覆盖
+com.android.packageinstaller	data_usage_uninstalled_apps	已删除的应用
+com.android.packageinstaller	data_usage_uninstalled_apps_users	已删除的应用和用户
+com.android.packageinstaller	debug_app	选择调试应用
+com.android.packageinstaller	debug_app_not_set	未设置任何调试应用
+com.android.packageinstaller	debug_app_set	调试应用：%1$s
+com.android.packageinstaller	debug_applications_category	应用
+com.android.packageinstaller	debug_debugging_category	调试
+com.android.packageinstaller	debug_drawing_category	绘图
+com.android.packageinstaller	debug_hw_drawing_category	硬件加速渲染
+com.android.packageinstaller	debug_hw_overdraw	调试 GPU 过度绘制
+com.android.packageinstaller	debug_input_category	输入
+com.android.packageinstaller	debug_layout	显示布局边界
+com.android.packageinstaller	debug_layout_summary	显示剪辑边界、边距等。
+com.android.packageinstaller	debug_monitoring_category	监控
+com.android.packageinstaller	debug_networking_category	网络
+com.android.packageinstaller	debug_view_attributes	启用视图属性检查功能
+com.android.packageinstaller	default_permission_description	执行未知操作
+com.android.packageinstaller	dev_logpersist_clear_warning_message	当我们不再使用永久日志记录器进行监控时，我们需要清除保存在您设备上的日志记录器数据。
+com.android.packageinstaller	dev_logpersist_clear_warning_title	要清除永久存储的日志记录器数据吗？
+com.android.packageinstaller	dev_settings_warning_message	这些设置仅适用于开发工作。一旦启用，会导致您的设备以及设备上的应用崩溃或出现异常。
+com.android.packageinstaller	dev_settings_warning_title	允许开发设置？
+com.android.packageinstaller	development_settings_enable	启用开发者选项
+com.android.packageinstaller	development_settings_not_available	此用户无法使用开发者选项
+com.android.packageinstaller	development_settings_summary	设置应用开发选项
+com.android.packageinstaller	development_settings_title	开发者选项
+com.android.packageinstaller	devicePerms	设备相关权限
+com.android.packageinstaller	direct_boot_unaware_dialog_message	注意：重新启动后，您必须将手机解锁才能运行此应用
+com.android.packageinstaller	disable_overlays	停用 HW 叠加层
+com.android.packageinstaller	disable_overlays_summary	始终使用 GPU 进行屏幕合成
+com.android.packageinstaller	disabled	已停用
+com.android.packageinstaller	disabled_by_admin	已被管理员停用
+com.android.packageinstaller	disabled_by_admin_summary_text	由管理员控制
+com.android.packageinstaller	dlg_app_replacement_statement	您要安装的应用将替换另一应用。\n\n系统将保存您以前的所有用户数据。
+com.android.packageinstaller	dlg_app_replacement_title	要替换该应用吗？
+com.android.packageinstaller	dlg_ok	确定
+com.android.packageinstaller	dlg_sys_app_replacement_statement	这是系统应用。\n\n系统将保存您以前的所有用户数据。
+com.android.packageinstaller	done	完成
+com.android.packageinstaller	enable_adb	USB 调试
+com.android.packageinstaller	enable_adb_summary	连接 USB 后启用调试模式
+com.android.packageinstaller	enable_freeform_support	启用可自由调整的窗口
+com.android.packageinstaller	enable_freeform_support_summary	启用可自由调整的窗口这一实验性功能。
+com.android.packageinstaller	enable_gpu_debug_layers	启用 GPU 调试层
+com.android.packageinstaller	enable_gpu_debug_layers_summary	允许为调试应用加载 GPU 调试层
+com.android.packageinstaller	enable_opengl_traces_title	启用 OpenGL 跟踪
+com.android.packageinstaller	enable_terminal_summary	启用终端应用，以便在本地访问 Shell
+com.android.packageinstaller	enable_terminal_title	本地终端
+com.android.packageinstaller	enabled_by_admin	已被管理员启用
+com.android.packageinstaller	expand_button_title	高级
+com.android.packageinstaller	external_source_trusted	允许
+com.android.packageinstaller	external_source_untrusted	不允许
+com.android.packageinstaller	external_sources_settings	设置
+com.android.packageinstaller	failed_to_open_app_settings_toast	无法打开 %1$s 的设置
+com.android.packageinstaller	force_allow_on_external	强制允许将应用写入外部存储设备
+com.android.packageinstaller	force_allow_on_external_summary	允许将任何应用写入外部存储设备（无论清单值是什么）
+com.android.packageinstaller	force_hw_ui	强制进行 GPU 渲染
+com.android.packageinstaller	force_hw_ui_summary	强制使用 GPU 进行 2D 绘图
+com.android.packageinstaller	force_msaa	强制启用 4x MSAA
+com.android.packageinstaller	force_msaa_summary	在 OpenGL ES 2.0 应用中启用 4x MSAA
+com.android.packageinstaller	force_resizable_activities	强制将活动设为可调整大小
+com.android.packageinstaller	force_resizable_activities_summary	将所有 Activity 设为可配合多窗口环境调整大小（忽略清单值）。
+com.android.packageinstaller	force_rtl_layout_all_locales	强制使用从右到左的布局方向
+com.android.packageinstaller	force_rtl_layout_all_locales_summary	强制将所有语言区域的屏幕布局方向改为从右到左
+com.android.packageinstaller	generic_error_dlg_text	无法卸载应用。
+com.android.packageinstaller	generic_error_dlg_title	错误
+com.android.packageinstaller	grant_confirm_question	要向该应用授予以下权限吗？
+com.android.packageinstaller	grant_dialog_button_allow	允许
+com.android.packageinstaller	grant_dialog_button_deny	拒绝
+com.android.packageinstaller	grant_dialog_button_deny_anyway	仍然拒绝
+com.android.packageinstaller	grant_dialog_button_more_info	详情
+com.android.packageinstaller	hdcp_checking_dialog_title	设置 HDCP 检查行为
+com.android.packageinstaller	hdcp_checking_title	HDCP 检查
+com.android.packageinstaller	help_feedback_label	帮助和反馈
+com.android.packageinstaller	home	设置主屏幕
+com.android.packageinstaller	ime_security_warning	此输入法可能会收集您输入的所有内容，包括密码和信用卡号等个人数据。它来自“%1$s”应用。要使用此输入法吗？
+com.android.packageinstaller	immediately_destroy_activities	不保留活动
+com.android.packageinstaller	immediately_destroy_activities_summary	用户离开后即销毁每个活动
+com.android.packageinstaller	ims_reg_status_not_registered	未注册
+com.android.packageinstaller	ims_reg_status_registered	已注册
+com.android.packageinstaller	ims_reg_title	IMS 注册状态
+com.android.packageinstaller	inactive_app_active_summary	已启用。点按即可切换。
+com.android.packageinstaller	inactive_app_inactive_summary	未启用。点按即可切换。
+com.android.packageinstaller	inactive_apps_title	待机应用
+com.android.packageinstaller	install	安装
+com.android.packageinstaller	install_apps_user_restriction_dlg_text	此用户不能安装应用
+com.android.packageinstaller	install_confirm_question	要安装此应用吗？它将获得以下权限：
+com.android.packageinstaller	install_confirm_question_no_perms	您要安装此应用吗？此应用不需要任何特殊权限。
+com.android.packageinstaller	install_confirm_question_update	您要安装此应用的新版本吗？您现有的数据不会丢失。更新后的应用将具备以下权限：
+com.android.packageinstaller	install_confirm_question_update_no_perms	是否要为这一现有应用安装更新？您现有的数据不会丢失，且安装过程无需任何特殊权限。
+com.android.packageinstaller	install_confirm_question_update_system	您要安装此内置应用的新版本吗？您现有的数据不会丢失。更新后的应用将具备以下权限：
+com.android.packageinstaller	install_confirm_question_update_system_no_perms	是否要为这一内置应用安装更新？您现有的数据不会丢失，且安装过程无需任何特殊权限。
+com.android.packageinstaller	install_done	应用安装完成。
+com.android.packageinstaller	install_failed	应用未安装。
+com.android.packageinstaller	install_failed_blocked	系统禁止安装该软件包。
+com.android.packageinstaller	install_failed_conflict	应用未安装：软件包与现有软件包存在冲突。
+com.android.packageinstaller	install_failed_incompatible	此应用与您的电视不兼容。
+com.android.packageinstaller	install_failed_invalid_apk	应用未安装：软件包似乎无效。
+com.android.packageinstaller	install_failed_msg	无法将%1$s安装到您的电视上。
+com.android.packageinstaller	install_other_apps	安装未知应用
+com.android.packageinstaller	installing	正在安装...
+com.android.packageinstaller	installing_app	正在安装%1$s…
+com.android.packageinstaller	keep_screen_on	不锁定屏幕
+com.android.packageinstaller	keep_screen_on_summary	充电时屏幕不会休眠
+com.android.packageinstaller	launch	打开
+com.android.packageinstaller	launch_defaults_none	没有默认操作
+com.android.packageinstaller	launch_defaults_some	已设置部分默认选项
+com.android.packageinstaller	loading	正在加载…
+com.android.packageinstaller	local_backup_password_summary_change	点按即可更改或移除用于保护桌面完整备份的密码
+com.android.packageinstaller	local_backup_password_summary_none	桌面完整备份当前未设置密码保护
+com.android.packageinstaller	local_backup_password_title	桌面备份密码
+com.android.packageinstaller	local_backup_password_toast_confirmation_mismatch	新密码和确认密码不一致
+com.android.packageinstaller	local_backup_password_toast_success	已设置了新的备份密码
+com.android.packageinstaller	local_backup_password_toast_validation_failure	设置备份密码失败
+com.android.packageinstaller	location_settings	位置信息设置
+com.android.packageinstaller	location_warning	“%1$s”是此设备的一个位置信息服务提供程序。您可以在位置信息设置中修改位置信息使用权。
+com.android.packageinstaller	manage_applications	管理应用
+com.android.packageinstaller	manage_device_administrators	管理设备管理应用
+com.android.packageinstaller	manage_users	管理用户
+com.android.packageinstaller	managed_user_title	所有工作应用
+com.android.packageinstaller	media_category	媒体
+com.android.packageinstaller	menu_hide_system	隐藏系统应用
+com.android.packageinstaller	menu_show_system	显示系统应用
+com.android.packageinstaller	message_staging	正在准备安装应用…
+com.android.packageinstaller	mobile_data_always_on	始终开启移动数据网络
+com.android.packageinstaller	mobile_data_always_on_summary	始终开启移动数据网络，即使 WLAN 网络已开启（便于快速切换网络）。
+com.android.packageinstaller	mock_location_app	选择模拟位置信息应用
+com.android.packageinstaller	mock_location_app_not_set	尚未设置模拟位置信息应用
+com.android.packageinstaller	mock_location_app_set	模拟位置信息应用：%1$s
+com.android.packageinstaller	never_ask_again	不再询问
+com.android.packageinstaller	newPerms	新权限
+com.android.packageinstaller	new_permissions_category	新权限
+com.android.packageinstaller	next	下一步
+com.android.packageinstaller	no_application	无
+com.android.packageinstaller	no_apps	没有应用
+com.android.packageinstaller	no_new_perms	新版本不需要任何新的权限。
+com.android.packageinstaller	no_permissions	没有权限
+com.android.packageinstaller	oem_unlock_enable	OEM 解锁
+com.android.packageinstaller	oem_unlock_enable_summary	允许解锁引导加载程序
+com.android.packageinstaller	ok	确定
+com.android.packageinstaller	okay	确定
+com.android.packageinstaller	old_sdk_deny_warning	此应用专为旧版 Android 打造。拒绝权限可能会导致其无法正常运行。
+com.android.packageinstaller	orb_search_action	搜索操作
+com.android.packageinstaller	other_permissions	其他应用功能
+com.android.packageinstaller	out_of_space_dlg_text	无法安装“%1$s”，请释放一些存储空间并重试。
+com.android.packageinstaller	out_of_space_dlg_title	没有存储空间
+com.android.packageinstaller	overlay_display_devices_title	模拟辅助显示设备
+com.android.packageinstaller	permission_request_title	权限请求
+com.android.packageinstaller	permission_review_title_template_install	请选择要向<b>%1$s</b>授予哪些权限
+com.android.packageinstaller	permission_review_title_template_update	<b>%1$s</b>已更新。请选择要向此应用授予哪些权限。
+com.android.packageinstaller	permission_review_warning_title_template_update	%1$s已更新。要向%1$s授予以下权限吗？
+com.android.packageinstaller	permission_revoked_all	全部已停用
+com.android.packageinstaller	permission_revoked_count	%1$d 项已停用
+com.android.packageinstaller	permission_revoked_none	均未停用
+com.android.packageinstaller	permission_summary_enforced_by_policy	依据政策强制执行
+com.android.packageinstaller	permission_title	%1$s权限
+com.android.packageinstaller	permission_warning_template	要允许<b>%1$s</b>%2$s吗？
+com.android.packageinstaller	pointer_location	指针位置
+com.android.packageinstaller	pointer_location_summary	屏幕叠加层显示当前触摸数据
+com.android.packageinstaller	power_charging_duration	%1$s - 还需 %2$s充满
+com.android.packageinstaller	power_discharge_by	目前电量为 %2$s，估计大约还能用到%1$s
+com.android.packageinstaller	power_discharge_by_enhanced	根据您的使用情况，估计大约还能用到%1$s（目前电量为 %2$s）
+com.android.packageinstaller	power_discharge_by_only	估计大约还能用到%1$s
+com.android.packageinstaller	power_discharge_by_only_enhanced	根据您的使用情况，估计大约还能用到%1$s
+com.android.packageinstaller	power_discharging_duration	大约还可使用 %1$s (%2$s)
+com.android.packageinstaller	power_discharging_duration_enhanced	根据您的使用情况，大约还可使用 %1$s (%2$s)
+com.android.packageinstaller	power_remaining_charging_duration_only	还需 %1$s充满电
+com.android.packageinstaller	power_remaining_duration_only	大约还可使用 %1$s
+com.android.packageinstaller	power_remaining_duration_only_enhanced	根据您的使用情况，大约还可使用 %1$s
+com.android.packageinstaller	power_remaining_duration_only_short	还可使用 %1$s
+com.android.packageinstaller	power_remaining_duration_only_shutdown_imminent	手机可能即将关机
+com.android.packageinstaller	power_remaining_duration_shutdown_imminent	手机可能即将关机 (%1$s)
+com.android.packageinstaller	power_remaining_less_than_duration	电量剩余使用时间不到 %1$s (%2$s)
+com.android.packageinstaller	power_remaining_less_than_duration_only	剩余电池续航时间不到 %1$s
+com.android.packageinstaller	power_remaining_more_than_subtext	电量剩余使用时间超过 %1$s (%2$s)
+com.android.packageinstaller	power_remaining_only_more_than_subtext	电量剩余使用时间超过 %1$s
+com.android.packageinstaller	privacyPerms	隐私相关权限
+com.android.packageinstaller	private_dns_mode_off	关闭
+com.android.packageinstaller	private_dns_mode_opportunistic	自动
+com.android.packageinstaller	private_dns_mode_provider	私人 DNS 提供商主机名
+com.android.packageinstaller	private_dns_mode_provider_failure	无法连接
+com.android.packageinstaller	private_dns_mode_provider_hostname_hint	输入 DNS 提供商的主机名
+com.android.packageinstaller	process_kernel_label	Android 操作系统
+com.android.packageinstaller	remaining_length_format	还剩 %1$s
+com.android.packageinstaller	retail_demo_reset_message	输入密码即可在演示模式下恢复出厂设置
+com.android.packageinstaller	retail_demo_reset_next	下一步
+com.android.packageinstaller	retail_demo_reset_title	需要输入密码
+com.android.packageinstaller	review_button_cancel	取消
+com.android.packageinstaller	review_button_continue	继续
+com.android.packageinstaller	running_process_item_user_label	用户：%1$s
+com.android.packageinstaller	runningservices_settings_summary	查看和控制当前正在运行的服务
+com.android.packageinstaller	runningservices_settings_title	正在运行的服务
+com.android.packageinstaller	saved_network	由“%1$s”保存
+com.android.packageinstaller	screen_overlay_button	打开设置
+com.android.packageinstaller	screen_overlay_message	要更改此权限设置，您必须首先在“设置”>“应用”中关闭屏幕叠加层
+com.android.packageinstaller	screen_overlay_title	检测到屏幕叠加层
+com.android.packageinstaller	screen_zoom_summary_custom	自定义 (%d)
+com.android.packageinstaller	screen_zoom_summary_default	默认
+com.android.packageinstaller	screen_zoom_summary_extremely_large	最大
+com.android.packageinstaller	screen_zoom_summary_large	大
+com.android.packageinstaller	screen_zoom_summary_small	小
+com.android.packageinstaller	screen_zoom_summary_very_large	较大
+com.android.packageinstaller	security_settings_desc	允许此应用获取：
+com.android.packageinstaller	select_application	选择应用
+com.android.packageinstaller	select_logd_size_dialog_title	选择每个日志缓冲区的日志记录器大小
+com.android.packageinstaller	select_logd_size_title	日志记录器缓冲区大小
+com.android.packageinstaller	select_logpersist_dialog_title	选择要在设备上永久存储的日志缓冲区
+com.android.packageinstaller	select_logpersist_title	在设备上永久存储日志记录器数据
+com.android.packageinstaller	select_private_dns_configuration_dialog_title	选择私人 DNS 模式
+com.android.packageinstaller	select_private_dns_configuration_title	私人 DNS
+com.android.packageinstaller	select_usb_configuration_dialog_title	选择USB配置
+com.android.packageinstaller	select_usb_configuration_title	选择USB配置
+com.android.packageinstaller	select_webview_provider_dialog_title	设置 WebView 实现
+com.android.packageinstaller	select_webview_provider_title	WebView 实现
+com.android.packageinstaller	select_webview_provider_toast_text	此选项已失效，请重试。
+com.android.packageinstaller	settings	设置
+com.android.packageinstaller	show_all_anrs	显示后台 ANR
+com.android.packageinstaller	show_all_anrs_summary	为后台应用显示“应用无响应”对话框
+com.android.packageinstaller	show_hw_layers_updates	显示硬件层更新
+com.android.packageinstaller	show_hw_layers_updates_summary	Flash 硬件层在进行更新时会显示为绿色
+com.android.packageinstaller	show_hw_screen_updates	显示 GPU 视图更新
+com.android.packageinstaller	show_hw_screen_updates_summary	使用 GPU 进行绘图时闪烁显示窗口中的视图
+com.android.packageinstaller	show_non_rect_clip	调试非矩形剪裁操作
+com.android.packageinstaller	show_notification_channel_warnings	显示通知渠道警告
+com.android.packageinstaller	show_notification_channel_warnings_summary	当应用未经有效渠道发布通知时，在屏幕上显示警告
+com.android.packageinstaller	show_password	显示密码
+com.android.packageinstaller	show_screen_updates	显示面 (surface) 更新
+com.android.packageinstaller	show_screen_updates_summary	窗口中的面 (surface) 更新时全部闪烁
+com.android.packageinstaller	show_touches	显示点按操作反馈
+com.android.packageinstaller	show_touches_summary	显示点按操作的视觉反馈
+com.android.packageinstaller	simulate_color_space	模拟颜色空间
+com.android.packageinstaller	speed_bump_lockout_message	请专心驾驶
+com.android.packageinstaller	speed_label_fast	快
+com.android.packageinstaller	speed_label_medium	适中
+com.android.packageinstaller	speed_label_okay	良好
+com.android.packageinstaller	speed_label_slow	慢
+com.android.packageinstaller	speed_label_very_fast	很快
+com.android.packageinstaller	speed_label_very_slow	很慢
+com.android.packageinstaller	standby_bucket_summary	应用待机状态： %s
+com.android.packageinstaller	status_unavailable	无法获取
+com.android.packageinstaller	strict_mode	启用严格模式
+com.android.packageinstaller	strict_mode_summary	应用在主线程上执行长时间操作时闪烁屏幕
+com.android.packageinstaller	summary_collapsed_preference_list	当前显示了 %1$s 项（已添加 %2$s 项）
+com.android.packageinstaller	system_warning	如果您拒绝此权限，您设备的基本功能可能会无法正常使用。
+com.android.packageinstaller	tether_settings_title_all	网络共享与便携式热点
+com.android.packageinstaller	tether_settings_title_bluetooth	蓝牙网络共享
+com.android.packageinstaller	tether_settings_title_usb	USB 网络共享
+com.android.packageinstaller	tether_settings_title_usb_bluetooth	网络共享
+com.android.packageinstaller	tether_settings_title_wifi	便携式热点
+com.android.packageinstaller	tethering_hardware_offload	网络共享硬件加速
+com.android.packageinstaller	tethering_hardware_offload_summary	使用网络共享硬件加速功能（如果可用）
+com.android.packageinstaller	tethering_settings_not_available	此用户无权修改网络共享设置
+com.android.packageinstaller	time_unit_just_now	刚刚
+com.android.packageinstaller	title_convert_fbe	正在转换为文件加密
+com.android.packageinstaller	track_frame_time	GPU 渲染模式分析
+com.android.packageinstaller	transition_animation_scale_title	过渡动画缩放
+com.android.packageinstaller	tts_default_lang_summary	设置文字转语音功能要使用的语言
+com.android.packageinstaller	tts_default_lang_title	语言
+com.android.packageinstaller	tts_default_pitch_summary	会影响合成语音的音调
+com.android.packageinstaller	tts_default_pitch_title	音高
+com.android.packageinstaller	tts_default_rate_summary	文字转换成语音后的播放速度
+com.android.packageinstaller	tts_default_rate_title	语速
+com.android.packageinstaller	tts_default_sample_string	这是语音合成示例
+com.android.packageinstaller	tts_engine_network_required	您必须连接到网络才能使用文字转语音功能输出这种语言。
+com.android.packageinstaller	tts_engine_preference_section_title	首选引擎
+com.android.packageinstaller	tts_engine_security_warning	此语音合成引擎能够收集语音中出现的所有信息，包括密码和信用卡号码之类的个人数据。此功能由 %s 引擎提供。是否启用此语音合成引擎？
+com.android.packageinstaller	tts_engine_settings_button	进行引擎设置
+com.android.packageinstaller	tts_engine_settings_title	“%s”的设置
+com.android.packageinstaller	tts_general_section_title	常规
+com.android.packageinstaller	tts_install_data_summary	安装语音合成所需的数据包
+com.android.packageinstaller	tts_install_data_title	安装语音数据包
+com.android.packageinstaller	tts_lang_not_selected	未选择语言
+com.android.packageinstaller	tts_lang_use_system	使用系统语言
+com.android.packageinstaller	tts_play_example_summary	播放简短的语音合成示例
+com.android.packageinstaller	tts_play_example_title	收听示例
+com.android.packageinstaller	tts_reset_speech_pitch_summary	将文字的读出音调重置为默认值。
+com.android.packageinstaller	tts_reset_speech_pitch_title	重置语音音调
+com.android.packageinstaller	tts_settings	文字转语音设置
+com.android.packageinstaller	tts_settings_title	文字转语音 (TTS) 输出
+com.android.packageinstaller	tts_status_checking	正在检查…
+com.android.packageinstaller	tts_status_not_supported	不支持%1$s
+com.android.packageinstaller	tts_status_ok	完全支持%1$s
+com.android.packageinstaller	tts_status_requires_network	只有在连接到网络的情况下，才支持%1$s
+com.android.packageinstaller	tts_status_title	默认语言状态
+com.android.packageinstaller	uninstall_activity_text	%1$s属于以下应用：
+com.android.packageinstaller	uninstall_all_blocked_profile_owner	这是部分用户或个人资料所需的应用；已为其他用户或个人资料卸载此应用
+com.android.packageinstaller	uninstall_application_text	要卸载此应用吗？
+com.android.packageinstaller	uninstall_application_text_all_users	是否要为所有用户卸载此应用？系统将为设备上的所有用户删除此应用及其数据。
+com.android.packageinstaller	uninstall_application_text_user	您要为用户%1$s卸载此应用吗？
+com.android.packageinstaller	uninstall_application_title	卸载应用
+com.android.packageinstaller	uninstall_blocked_device_owner	这是您的设备管理员要求必须安装的应用，因此无法卸载。
+com.android.packageinstaller	uninstall_blocked_profile_owner	这是您的个人资料所需的应用，因此无法卸载。
+com.android.packageinstaller	uninstall_done	卸载完成。
+com.android.packageinstaller	uninstall_done_app	已卸载%1$s
+com.android.packageinstaller	uninstall_failed	卸载失败。
+com.android.packageinstaller	uninstall_failed_app	卸载%1$s失败。
+com.android.packageinstaller	uninstall_failed_device_policy_manager	无法卸载正在使用中的设备管理应用
+com.android.packageinstaller	uninstall_failed_device_policy_manager_of_user	无法为%1$s卸载正在使用中的设备管理应用
+com.android.packageinstaller	uninstall_failed_msg	无法卸载“%1$s”。
+com.android.packageinstaller	uninstall_failure_notification_channel	失败的卸载操作
+com.android.packageinstaller	uninstall_update_text	要将此应用替换为出厂版本吗？这样会移除所有数据。
+com.android.packageinstaller	uninstall_update_text_multiuser	要将此应用替换为出厂版本吗？这样会移除所有数据，并会影响此设备的所有用户（包括已设置工作资料的用户）。
+com.android.packageinstaller	uninstall_update_title	卸载更新
+com.android.packageinstaller	uninstalling	正在卸载...
+com.android.packageinstaller	uninstalling_app	正在卸载%1$s…
+com.android.packageinstaller	uninstalling_notification_channel	进行中的卸载操作
+com.android.packageinstaller	unknown	未知
+com.android.packageinstaller	unknown_apps_admin_dlg_text	您的管理员不允许安装来源不明的应用
+com.android.packageinstaller	unknown_apps_user_restriction_dlg_text	该用户无法安装未知应用
+com.android.packageinstaller	untrusted_external_source_warning	出于安全考虑，已禁止您的电视安装来自此来源的未知应用。
+com.android.packageinstaller	usb_audio_disable_routing	关闭 USB 音频转接
+com.android.packageinstaller	usb_audio_disable_routing_summary	关闭自动转接至 USB 音频外围设备的功能
+com.android.packageinstaller	use_system_language_to_select_input_method_subtypes	使用系统语言
+com.android.packageinstaller	user_guest	访客
+com.android.packageinstaller	user_is_not_allowed_dlg_text	当前用户无法执行这项卸载操作。
+com.android.packageinstaller	user_is_not_allowed_dlg_title	不允许
+com.android.packageinstaller	v7_preference_off	关闭
+com.android.packageinstaller	v7_preference_on	开启
+com.android.packageinstaller	verify_apps_over_usb_summary	通过 ADB/ADT 检查安装的应用是否存在有害行为。
+com.android.packageinstaller	verify_apps_over_usb_title	通过USB验证应用
+com.android.packageinstaller	vpn_settings_not_available	此用户无权修改VPN设置
+com.android.packageinstaller	wait_for_debugger	等待调试程序
+com.android.packageinstaller	wait_for_debugger_summary	调试应用会在执行前等待附加调试器
+com.android.packageinstaller	wear_app_channel	正在安装/卸载 Android Wear 应用
+com.android.packageinstaller	wear_not_allowed_dlg_text	Wear 不支持安装/卸载操作。
+com.android.packageinstaller	wifi_ap_unable_to_handle_new_sta	接入点暂时满载
+com.android.packageinstaller	wifi_cant_connect	无法连接
+com.android.packageinstaller	wifi_cant_connect_to_ap	无法连接到“%1$s”
+com.android.packageinstaller	wifi_check_password_try_again	请检查密码，然后重试
+com.android.packageinstaller	wifi_connected_mac_randomization	连接时随机选择 MAC 网址
+com.android.packageinstaller	wifi_connected_mac_randomization_summary	连接到 WLAN 网络时随机选择 MAC 地址
+com.android.packageinstaller	wifi_connected_no_internet	已连接，但无法访问互联网
+com.android.packageinstaller	wifi_disabled_by_recommendation_provider	网络质量较差，因此未连接
+com.android.packageinstaller	wifi_disabled_generic	已停用
+com.android.packageinstaller	wifi_disabled_network_failure	IP 配置失败
+com.android.packageinstaller	wifi_disabled_password_failure	身份验证出现问题
+com.android.packageinstaller	wifi_disabled_wifi_failure	WLAN 连接失败
+com.android.packageinstaller	wifi_display_certification	无线显示认证
+com.android.packageinstaller	wifi_display_certification_summary	显示无线显示认证选项
+com.android.packageinstaller	wifi_fail_to_scan	无法扫描网络
+com.android.packageinstaller	wifi_metered_label	按流量计费
+com.android.packageinstaller	wifi_no_internet	无法访问互联网
+com.android.packageinstaller	wifi_no_internet_no_reconnect	无法自动连接
+com.android.packageinstaller	wifi_not_in_range	不在范围内
+com.android.packageinstaller	wifi_remembered	已保存
+com.android.packageinstaller	wifi_security_none	无
+com.android.packageinstaller	wifi_status_mac_randomized	MAC 已随机化
+com.android.packageinstaller	wifi_status_no_internet	无法访问互联网
+com.android.packageinstaller	wifi_status_sign_in_required	必须登录
+com.android.packageinstaller	wifi_unmetered_label	不按流量计费
+com.android.packageinstaller	wifi_verbose_logging	启用 WLAN 详细日志记录功能
+com.android.packageinstaller	wifi_verbose_logging_summary	提升 WLAN 日志记录级别（在 WLAN 选择器中显示每个 SSID 的 RSSI）
+com.android.packageinstaller	window_animation_scale_title	窗口动画缩放
+com.android.packageinstaller	zen_alarm_warning	您将不会听到下一个%1$s 的闹钟响铃
+com.android.packageinstaller	zen_alarm_warning_indef	您将不会听到下一个%1$s 的闹钟响铃，除非您在该时间之前关闭这项功能
+com.android.packageinstaller	zen_interruption_level_priority	仅限优先事项
+com.android.packageinstaller	zen_mode_duration_always_prompt_title	每次都询问
+com.android.packageinstaller	zen_mode_duration_settings_title	持续时间
+com.android.packageinstaller	zen_mode_enable_dialog_turn_on	开启
+com.android.packageinstaller	zen_mode_settings_summary_off	永不
+com.android.packageinstaller	zen_mode_settings_turn_on_dialog_title	开启“勿扰”模式
+com.android.newsettings	bluetooth_incoming_pairing_msg	来自： %1$s \n要与此设备配对吗？
+com.android.newsettings	brightness_adjustment_back_subtitle	通过 IRIS (光圈) 调节亮度，低亮度下\n对比度更高，画面更清晰
+com.android.newsettings	brightness_adjustment_back_subtitle_boost	: IRIS调节亮度，低亮度下画面对比度更高，画面更清晰\n10+: 切换至 Boost 档可提供更高亮度
+com.android.newsettings	calibration_gyroscope_dialog_title	陀螺仪已校准\n当前画面是否方正？
+com.android.newsettings	calibration_gyroscope_txt	保持投影仪水平放置并正投\n确保画面矩形且底边和地面平行
+com.android.newsettings	calibration_keystone_dialog_title	梯形校正已校准\n当前画面是否方正？
+com.android.newsettings	calibration_keystone_dialog_xiao_bai_title	自动画面调整功能已校准\n当前画面是否方正？
+com.android.newsettings	clear_pair_desc	清除后，无法使用遥控器控制此投影设备，可\n长按back和home重新配对
+com.android.newsettings	correcting_setting_level_top_tip	调整设备角度，使设备水平放置，再点击校准\n水平校准越精确，画面校准效果越佳
+com.android.newsettings	data_restore_dialog_desc	将删除所有设置数据，同时保留本地文件和\n已安装应用
+com.android.newsettings	data_restore_keep_apps_des	将删除所有设置数据，\n保留已安装的应用和本地文件
+com.android.newsettings	dialog_desc_switch_to_hoist	投影仪倒挂于画面前方天花板上时使用，调节画面翻转\n∗ 吊装下暂不支持实时画面校正、巨幕模式等功能，该适配将在后续OTA更新
+com.android.newsettings	dialog_desc_switch_to_hoist_not_giant_screen	投影仪倒挂于画面前方天花板上时使用，调节画面翻转\n∗ 吊装下暂不支持实时画面校正等功能，该适配将在后续OTA更新
+com.android.newsettings	dialog_msg_sure_check_leveltop	请确认画面矩形、底边和地面平行，且校准完成\n前不要移动设备，否则会影响自动梯形校正效果
+com.android.newsettings	dialog_update_usb_bin_des	本次更新将删除当前设置数据、本地文件、已安装应用，\n过程中请勿断开电源及U盘
+com.android.newsettings	dialog_update_usb_ota_des	本次更新将保留当前设置数据、本地文件、已安装应用，\n过程中请勿断开电源及U盘
+com.android.newsettings	eye_project_confirm_desc_open	开启后，检测到镜头前有人时，降低投影仪亮度，避免人眼刺激\n*该功能处于Beta测试中，可能存在不稳定现象
+com.android.newsettings	focus_correction_txt	将设备 正投 并保持投影距离在 1—2米，再进行对焦校准
+com.android.newsettings	focus_dialog_msg	请确认画面矩形、且校准完成前不要移动设备，\n否则会影响自动对焦效果
+com.android.newsettings	keystone_dialog_msg	请确认画面矩形、且校准完成前不要移动设备，\n否则会影响自动梯形校正效果
+com.android.newsettings	microphoen_dialog_desc	1. 按电源键打开麦克风\n2. 长按电源键重新配对
+com.android.newsettings	microphoen_dialog_title	连接有问题？请试试\n以下办法：
+com.android.newsettings	music_control_dialog_des	清除后，无法使用遥控器控制此投影设备，可\n长按@和$重新配对
+com.android.newsettings	wall_color_dialog_desc	1.开启后，使用自动画面调整功能时将执行墙面\n颜色适配，以获得最佳色彩效果\n\n2.自定义色彩风格、3D模式和亮度自适应下将\n不支持墙面颜色适配
+com.android.providers.settings	app_label	设置存储
+com.android.shell	bugreport_notification_channel	错误报告
+com.android.shell	bugreport_in_progress_title	正在生成错误报告 #%d
+com.android.shell	bugreport_finished_title	已获取错误报告 #%d
+com.android.shell	bugreport_updating_title	正在向错误报告添加详细信息
+com.android.shell	bugreport_updating_wait	请稍候…
+com.android.shell	bugreport_finished_text	选择即可分享您的错误报告
+com.android.shell	bugreport_finished_pending_screenshot_text	您可以选择分享不含屏幕截图的错误报告，也可以等待屏幕截图完成
+com.android.shell	bugreport_confirm	错误报告包含的数据来自于系统的各种日志文件，其中可能包含您认为敏感的数据（例如应用使用情况信息和位置数据）。请务必只与您信任的人和应用分享错误报告。
+com.android.shell	bugreport_confirm_dont_repeat	不再显示
+com.android.shell	bugreport_storage_title	错误报告
+com.android.shell	bugreport_unreadable_text	无法读取错误报告文件
+com.android.shell	bugreport_add_details_to_zip_failed	无法将错误报告详细信息添加到 ZIP 文件中
+com.android.shell	bugreport_unnamed	未命名
+com.android.shell	bugreport_info_action	详细信息
+com.android.shell	bugreport_screenshot_action	屏幕截图
+com.android.shell	bugreport_screenshot_taken	已成功截图。
+com.android.shell	bugreport_screenshot_failed	无法截图。
+com.android.shell	bugreport_info_dialog_title	错误报告 #%d 详情
+com.android.shell	bugreport_info_name	文件名
+com.android.shell	bugreport_info_title	错误标题
+com.android.shell	bugreport_info_description	错误摘要
+com.android.shell	save	保存
+com.android.shell	bugreport_intent_chooser_title	分享错误报告
+com.xgimi.systemui	ak_calibrete_content	若画面自动校正效果未达到预期，\n可尝试通过【校正设置-梯形校正校准】提升校正效果。
+com.xgimi.systemui	dialog_ptz_reset_desc	关闭后，关机时将不再自动复位云台\n*或拔出外接设备后再关机
+com.xgimi.systemui	eye_project_confirm_desc	关闭后，镜头前有人时不再自动降低亮度。\n请注意保护眼睛，避免直视光源
+com.xgimi.systemui	throw_win_content	检测到当前设备温度异常，即将自动关机\n请联系客服 400-002-8960 进行解决
+com.xgimi.systemui	time_power_off_tip2	取消\n%s
+com.android.providers.tv	permlab_readTvListings	读取所有电视节目表
+com.android.providers.tv	permdesc_readTvListings	读取您设备上的所有电视节目表
+com.android.providers.userdictionary	app_label	用户字典
+com.android.vpndialogs	prompt	网络连接请求
+com.android.vpndialogs	warning	“%s”想要设置一个 VPN 连接，以便监控网络流量。除非您信任该来源，否则请勿接受此请求。<br /> <br />启用 VPN 后，屏幕顶部会出现一个 <img src=vpn_icon /> 图标。
+com.android.vpndialogs	legacy_title	已连接VPN
+com.android.vpndialogs	session	会话：
+com.android.vpndialogs	duration	时长：
+com.android.vpndialogs	data_transmitted	已发送：
+com.android.vpndialogs	data_received	已接收：
+com.android.vpndialogs	data_value_format	%1$s 字节/%2$s 个数据包
+com.android.vpndialogs	always_on_disconnected_title	无法连接到始终开启的 VPN
+com.android.vpndialogs	always_on_disconnected_message	%1$s已设为始终保持连接状态，但目前无法连接。您的手机将使用公共网络，直到能够重新连接到%1$s。
+com.android.vpndialogs	always_on_disconnected_message_lockdown	%1$s已设为始终保持连接状态，但目前无法连接。您将无法连接到网络，直到您能够重新连接该 VPN。
+com.android.vpndialogs	always_on_disconnected_message_settings_link	更改 VPN 设置
+com.android.vpndialogs	configure	配置
+com.android.vpndialogs	disconnect	断开连接
+com.android.vpndialogs	open_app	打开应用
+com.android.vpndialogs	dismiss	关闭
+com.xgimi.ota.accessories	ct_title_upgrading_sub_label	· 更新过程中幕布暂不可使用\n· 请保持幕布靠近投影仪，处于连接状态\n· 请勿关闭设备或切断电源
+com.xgimi.ota.accessories	hdmi_screen_player_connect_failed_desc	可以尝试以下解决方法：\n1、长按同屏器按钮重试\n2、将同屏器重新插入电脑、电视盒子、游戏机等信号源\n
+com.xgimi.ota.accessories	hdmi_screen_player_sub_upgrading_desc_label	1.升级过程中，无线HDMI同屏器不可使用\n2.请保持无线HDMI同屏器靠近投影仪，处于连接状态\n3.请勿关闭设备或切断电源
+com.xgimi.ota.accessories	rc_title_upgrading_sub_label	1、升级过程中遥控器暂不可使用\n2、请保持遥控器靠近投影仪，处于连接状态\n3、请勿关闭设备或切断电源
+com.xgimi.ota.accessories	rtk_dfu_toast_error_message	错误码：%1$s\n概述：%2$s\n详情：%3$s
+com.xgimi.ota.accessories	sp_title_upgrading_sub_label	· 更新过程中音响暂不可使用\n· 请保持音响靠近投影仪，处于连接状态\n· 请勿关闭设备或切断电源
+com.xgimi.ota.accessories	switch_panel_guide_upgrading_warning_label	1、升级过程中无线开关面板暂不可使用\n2、请保持无线开关面板靠近投影仪，处于连接状态\n3、请勿关闭设备或切断电源
+com.xgimi.tof	str_auto_focus_error	自动对焦已被打断\n请重新按确认键开始流程
+com.xgimi.tof	str_calibration_calibration_failed_data_error	AF【已计算失败】\n读取数据为0\n
+com.xgimi.tof	str_calibration_failed_is_too_small	AF【已计算失败】\n画面覆盖比例过小，请调整摄像头角度\n
+com.xgimi.tof	str_calibration_failed_no_pic	AF【已计算失败】\n请保证对焦清晰且计算图正确显示\n
+com.xgimi.tof	str_calibration_failed_over_size	AF【已计算失败】\n画面超出绿色矩形框，请调整摄像头角度\n
+com.xgimi.tof	str_calibration_failed_photo_exception	AF【已计算失败】\n摄像头异常\n
+com.xgimi.tof	str_calibration_successful	AF【已计算成功】\n
+com.xgimi.tof	str_dialog_warning_message	已校正完成\n是否重新开始校正
+com.xgimi.tof	str_tip_af_camera_error	【对焦失败】\n摄像头异常
+com.xgimi.tof	str_tip_af_is_interrput	【对焦失败】\n自动对焦已被打断
+com.xgimi.tof	str_tip_af_time	【对焦失败】\n自动对焦超时
+com.xgimi.tof	str_tip_calibration_failed_data_error	【已计算失败】\n读取数据为0
+com.xgimi.tof	str_tip_calibration_failed_is_too_small	【已计算失败】\n画面覆盖比例过小，请调整摄像头角度
+com.xgimi.tof	str_tip_calibration_failed_no_pic	【已计算失败】\n请保证对焦清晰且计算图正确显示
+com.xgimi.tof	str_tip_calibration_failed_over_size	【已计算失败】\n画面超出绿色矩形框，请调整摄像头角度
+com.xgimi.tof	str_tip_calibration_failed_photo_exception	【已计算失败】\n摄像头异常
+com.xgimi.tof	str_tip_calibration_successful_rotate_180	【已计算成功】\nRotate 180
+com.xgimi.tof	str_tip_calibration_successful_rotate_270	【已计算成功】\nRotate 270
+com.xgimi.tof	str_tip_calibration_successful_rotate_90	【已计算成功】\nRotate 90
+com.xgimi.autokst	str_auto_calculate_failed	%1$s 【计算失败】\n按确认键重新开始自动流程
+com.xgimi.autokst	str_calculate_success	%1$s 【计算成功】\n按确认键进行下一点位
+com.xgimi.autokst	str_dialog_warning_message	已校正完成\n是否重新开始校正
+com.xgimi.autokst	str_dialog_warning_test_mode_message	已存在测试数据\n是否重新开始测试
+com.xgimi.autokst	str_direction_all	测试通过\n等级:%s
+com.xgimi.autokst	str_direction_left	左投测试通过\n等级:%d\n旋转:%f
+com.xgimi.autokst	str_direction_right	右投测试通过\n等级:%d\n旋转:%f
+com.xgimi.autokst	str_failed_info	【测试失败】\n等级:%d\n最大等级:%d\n最大旋转:%f\n
+com.xgimi.autokst	str_failed_standard	【测试失败】\n未满足测试标准\n等级:%d\n旋转:%f
+com.xgimi.autokst	str_gyro_motion_error	陀螺仪数据有误\n请重新在陀螺仪水平校正工位进行校正
+com.xgimi.autokst	str_net_init_error	通信控制初始化失败:\n%s
+com.xgimi.autokst	str_pic_gyro_not_init	陀螺仪未标定\n请先在陀螺仪水平校正工位进行校正
+com.xgimi.autokst	str_rec_msg_error	接收通信消息出错:\n%s
+com.xgimi.autokst	str_review_direction_all	【复验模式】\n最终等级:%s
+com.xgimi.autokst	str_set_pos_result_error	点位结果传送失败:\n%s
+com.xgimi.autokst	str_shake_hands_error	握手失败:\n%s
+com.xgimi.autokst	str_success_info	测试通过\n等级:%d\n最大等级:%d\n最大旋转:%f\n
+com.xgimi.autokst	str_unknown_failed_check	【测试失败】\n测试模式异常错误
+com.xgimi.smartconnect	guide_three	在爱机找到 “为设备联网” 功能\n按照手机步骤提示进行连网
+com.xgimi.user	user_qrcode_load_error	加载失败\n请按OK键重试
+com.xgimi.bootwizard	common_manual_project_tips	使用过程中可进入“设置”，手动调整画面形状\n
+com.xgimi.bootwizard	common_network_tips	1. 在手机上下载安装极米App \n2. 在“爱机”页面右上角找到“为设备连网”功能\n3. 按照手机提示步骤为设备连网
+com.xgimi.bootwizard	common_null_boot	当前为最新机器，没有开机向导，\n需要进行新的开机向导开发。
+com.xgimi.bootwizard	common_skip_tips	学习画面对焦和校正使用方法，并对画面进一步调整\n
+com.xgimi.bootwizard	common_zoom_tips	使用过程中可进入“设置”，调整画面大小\n
+com.xgimi.bootwizard	cp01_machine_check_title	确保顶部开关已拨至\n绿色解锁状态
+com.xgimi.bootwizard	cp01_manual_rotation_title	转动设备使镜头正对墙面\n确保画面方正
+com.xgimi.bootwizard	cp01_smart_network_tips	1. 扫码下载极米 App（还可领取以换代修权益） \n2. 在“爱机”页面右上角找到“为设备连网”功能\n3. 按照手机提示步骤为设备连网
+com.xgimi.bootwizard	cp01_wifi_voice_title	请对我说“极米神灯”\n开启光影世界
+com.xgimi.bootwizard	default_text_key_focus_flank_subtitle	画面模糊时，可按遥控器侧边 @ 自动对焦，或长按使用手\n动对焦
+com.xgimi.bootwizard	kl_voice_title	请对我说“你好极米”\n开启光影世界
+com.xgimi.bootwizard	kl_wall_adpter_tips1	1. 在极米App找到“为设备连网”，完成连网与 \n绑定
+com.xgimi.bootwizard	pan_text_auto_positioning_subtitle	云台自动转动扫描墙面，识别最佳投影位置\n调整画面清晰、方正
+com.xgimi.atmosphere	bluetooh_music_guide_tips_des	1.在手机蓝牙列表中搜索“%s”并配对连接\n2.连接后可使用手机播放音乐，在任意门中实现边看边听
+com.xgimi.filemanager	add_device_add	添加设备
+com.xgimi.filemanager	add_device_add_support	支持Samba/DLNA/NFS
+com.xgimi.filemanager	add_device_add_support_without_nfs	支持Samba/DLNA
+com.xgimi.filemanager	add_network_device	添加局域网设备
+com.xgimi.filemanager	all	全部
+com.xgimi.filemanager	app_name	资源管理器
+com.xgimi.filemanager	auto_connect	手动连接
+com.xgimi.filemanager	baidu_net_title	百度网盘
+com.xgimi.filemanager	cancel	取消
+com.xgimi.filemanager	cancel_hide_samba	取消
+com.xgimi.filemanager	chanal	取消
+com.xgimi.filemanager	change_time	修改时间:
+com.xgimi.filemanager	choose_added_device	选择要添加的设备
+com.xgimi.filemanager	choose_file_type	选择文件类型
+com.xgimi.filemanager	clear_history	清除观看记录
+com.xgimi.filemanager	clear_record_success	播放记录已清除
+com.xgimi.filemanager	clear_usb_ing	正在格式化
+com.xgimi.filemanager	clear_usb_name	设备名: %s
+com.xgimi.filemanager	clear_usb_path	设备路径: %s
+com.xgimi.filemanager	clear_usb_quota	设备容量: %s
+com.xgimi.filemanager	clearhistory	清空播放历史记录
+com.xgimi.filemanager	close_samba_server	关闭共享服务
+com.xgimi.filemanager	connect	连接
+com.xgimi.filemanager	connect_and_add	连接并添加
+com.xgimi.filemanager	connect_data_empty	连接信息为空
+com.xgimi.filemanager	connect_fail	连接失败
+com.xgimi.filemanager	connect_share_device	连接共享设备
+com.xgimi.filemanager	connect_timeout	连接超时，请检查网络后重试
+com.xgimi.filemanager	connecting	正在连接中...
+com.xgimi.filemanager	conntent_null	内容为空
+com.xgimi.filemanager	copy	复制文件
+com.xgimi.filemanager	copy_fail	复制失败
+com.xgimi.filemanager	copy_success	复制成功
+com.xgimi.filemanager	copying	正在复制
+com.xgimi.filemanager	create_dir_failure	创建文件夹失败
+com.xgimi.filemanager	create_dir_success	创建文件夹成功
+com.xgimi.filemanager	create_file_fail	创建文件失败
+com.xgimi.filemanager	create_success	创建成功
+com.xgimi.filemanager	create_time	修改时间 ：%s
+com.xgimi.filemanager	cut	剪切文件
+com.xgimi.filemanager	cutting	正在粘贴
+com.xgimi.filemanager	del_history	清除
+com.xgimi.filemanager	del_history_dialog_content	清除所有观看记录?
+com.xgimi.filemanager	del_history_dialog_notice	提示
+com.xgimi.filemanager	deleting	正在删除
+com.xgimi.filemanager	delfile	删除文件
+com.xgimi.filemanager	delhistory	删除播放历史记录
+com.xgimi.filemanager	detail	详细信息
+com.xgimi.filemanager	device_choose_notice	选择设备类型
+com.xgimi.filemanager	device_notice_close	当前存储共享服务已关闭
+com.xgimi.filemanager	device_notice_open	共享文件可支持同WIFI的其他设备访问，访问
+com.xgimi.filemanager	device_notice_open_unconnect	未连入WIFI网络
+com.xgimi.filemanager	dialog_left	取消
+com.xgimi.filemanager	dialog_right	确定
+com.xgimi.filemanager	dialog_type_audio	音频
+com.xgimi.filemanager	dialog_type_image	图片
+com.xgimi.filemanager	dialog_type_other	其他
+com.xgimi.filemanager	dialog_type_text	文本
+com.xgimi.filemanager	dialog_type_video	视频
+com.xgimi.filemanager	doc	文档
+com.xgimi.filemanager	edit	编辑
+com.xgimi.filemanager	edittext_passward	请输入密码
+com.xgimi.filemanager	edittext_user_name	请输入用户名
+com.xgimi.filemanager	empty	内容为空
+com.xgimi.filemanager	emptycontentnotice	内容为空
+com.xgimi.filemanager	error_in_file_paste	文件粘贴出错
+com.xgimi.filemanager	error_offline_search_dlna	无法连接服务器，请检查你的网络
+com.xgimi.filemanager	file_already_exist	文件已存在
+com.xgimi.filemanager	file_category_directory	文件夹
+com.xgimi.filemanager	file_category_file	文件
+com.xgimi.filemanager	file_copy_dest_path_error	复制文件目的地错误
+com.xgimi.filemanager	file_data_null	文件信息为空
+com.xgimi.filemanager	file_header_notice_off	或者长按 “OK” 进行更多操作
+com.xgimi.filemanager	file_header_notice_pre	遥控器点击菜单键或长按OK键进行更多操作
+com.xgimi.filemanager	file_info	大小:%1$s 修改日期:%2$s
+com.xgimi.filemanager	file_info_dest	粘贴至:
+com.xgimi.filemanager	file_info_name	文件名:
+com.xgimi.filemanager	file_info_path	原路径:
+com.xgimi.filemanager	file_info_size	文件大小:
+com.xgimi.filemanager	file_name_not_allow_null	文件名不能为空
+com.xgimi.filemanager	file_not_exist	文件不存在
+com.xgimi.filemanager	file_not_find	未发现指定文件
+com.xgimi.filemanager	file_opened_by_another_process	文件已被其他进程打开
+com.xgimi.filemanager	file_operation	文件操作
+com.xgimi.filemanager	file_operation_choosetype	类型：
+com.xgimi.filemanager	file_operation_clear_usb	格式化磁盘设备
+com.xgimi.filemanager	file_operation_count_info	总共 %1$d个文件,%2$d个文件夹
+com.xgimi.filemanager	file_operation_decompress_file	解压文件到当前目录
+com.xgimi.filemanager	file_operation_decompress_path	文件:
+com.xgimi.filemanager	file_operation_decompress_to	解压到:
+com.xgimi.filemanager	file_operation_del_file	删除后将无法恢复
+com.xgimi.filemanager	file_operation_delete_success	文件删除成功
+com.xgimi.filemanager	file_operation_length_info	占用 %1$s空间
+com.xgimi.filemanager	file_operation_modify	上次修改时间
+com.xgimi.filemanager	file_operation_name	文件名称
+com.xgimi.filemanager	file_operation_not_exist	文件不存在
+com.xgimi.filemanager	file_operation_openas	打开方式
+com.xgimi.filemanager	file_operation_parentpath	位置：
+com.xgimi.filemanager	file_operation_path	文件路径
+com.xgimi.filemanager	file_operation_r	可读
+com.xgimi.filemanager	file_operation_rw	读写权限
+com.xgimi.filemanager	file_operation_size	文件大小
+com.xgimi.filemanager	file_operation_type	文件类型
+com.xgimi.filemanager	file_operation_w	可写
+com.xgimi.filemanager	filefrom	从:
+com.xgimi.filemanager	filename	名称:
+com.xgimi.filemanager	filepath	路径:
+com.xgimi.filemanager	filesize	大小:
+com.xgimi.filemanager	fileto	到:
+com.xgimi.filemanager	folder_cannot_play	文件夹不能播放
+com.xgimi.filemanager	folder_mode	目录模式
+com.xgimi.filemanager	grid_mode	图标模式
+com.xgimi.filemanager	had_cancel	已取消
+com.xgimi.filemanager	had_start_smb_service	已开启SMB服务
+com.xgimi.filemanager	hide_file	文件隐藏
+com.xgimi.filemanager	hide_samba_device	断开设备
+com.xgimi.filemanager	hide_samba_notice	确定断开设备？
+com.xgimi.filemanager	hidedialog	隐藏
+com.xgimi.filemanager	hint	提示
+com.xgimi.filemanager	hint_searching_dlna	已启动搜索
+com.xgimi.filemanager	illegal_path	路径不合法
+com.xgimi.filemanager	in_refresh	正在刷新...
+com.xgimi.filemanager	info_file_sum_movie	%1$s(共%2$d个)
+com.xgimi.filemanager	info_file_sum_music	%1$s(共%2$d首)
+com.xgimi.filemanager	info_file_sum_picture	%1$s(共%2$d张)
+com.xgimi.filemanager	input_device_ip	请输入共享设备IP地址
+com.xgimi.filemanager	ip_invalid	IP地址无效
+com.xgimi.filemanager	ip_not_allow_null	IP不能为空
+com.xgimi.filemanager	is_disconnection	连接已断开
+com.xgimi.filemanager	lack_storage_space	存储空间不足
+com.xgimi.filemanager	list_mode	列表模式
+com.xgimi.filemanager	local_picture	本地图片
+com.xgimi.filemanager	login_data_check_pass	登录信息校验通过
+com.xgimi.filemanager	login_data_null	登录信息为空
+com.xgimi.filemanager	login_deny	登录被拒绝
+com.xgimi.filemanager	login_fail	登录失败
+com.xgimi.filemanager	login_in	登录中...
+com.xgimi.filemanager	login_pwd_wrong	登录密码错误
+com.xgimi.filemanager	login_samba_failure	连接失败，请检查用户名和密码后重试
+com.xgimi.filemanager	login_time_out	登录超时
+com.xgimi.filemanager	manual_connect	手动连接
+com.xgimi.filemanager	many_connections_can_accept	连接数超限
+com.xgimi.filemanager	maybe_open_file	您可能想打开的文件
+com.xgimi.filemanager	memory_not_full	内存空间不足
+com.xgimi.filemanager	menu_notice	点击遥控器菜单键，唤出更多功能
+com.xgimi.filemanager	menu_title	下次可通过“快捷设置”\n快速访问U盘
+com.xgimi.filemanager	mount_samba_success	网上邻居登录成功
+com.xgimi.filemanager	msg_ret_command	命令行错误
+com.xgimi.filemanager	msg_ret_failure	解压失败
+com.xgimi.filemanager	msg_ret_fault	严重错误
+com.xgimi.filemanager	msg_ret_memmory	内存不足
+com.xgimi.filemanager	msg_ret_success	解压成功
+com.xgimi.filemanager	msg_ret_user_stop	用户停止进程
+com.xgimi.filemanager	msg_ret_warning	警告
+com.xgimi.filemanager	multiselect	多选
+com.xgimi.filemanager	music	音乐
+com.xgimi.filemanager	name_sort	按名称排序
+com.xgimi.filemanager	name_too_long	文件名超过最大限制
+com.xgimi.filemanager	network_not_available	指定的网络名不可用
+com.xgimi.filemanager	network_notlink	网络不可用，请检查网络后重试
+com.xgimi.filemanager	new_dir	新建文件夹
+com.xgimi.filemanager	newfile	新建文件
+com.xgimi.filemanager	no_authority	当前用户无访问权限
+com.xgimi.filemanager	no_device	未搜索到可连接设备
+com.xgimi.filemanager	no_find_open_app	无法打开该文件
+com.xgimi.filemanager	no_hide_file	该目录下没有被隐藏的文件
+com.xgimi.filemanager	no_response	未收到设备回复
+com.xgimi.filemanager	no_support	此文件不支持打开
+com.xgimi.filemanager	not_a_folder	不是文件夹
+com.xgimi.filemanager	not_allow_login	用户不被允许登录
+com.xgimi.filemanager	not_find_folder	没有发现文件夹
+com.xgimi.filemanager	notice_copy_file	请先复制或剪切文件
+com.xgimi.filemanager	notice_nothing_selected	没有选中任何文件
+com.xgimi.filemanager	open	打开
+com.xgimi.filemanager	open_fail	打开失败
+com.xgimi.filemanager	open_folder	打开文件夹
+com.xgimi.filemanager	open_samba_server	打开共享服务
+com.xgimi.filemanager	password	密码
+com.xgimi.filemanager	password_error	密码错误
+com.xgimi.filemanager	password_expired	密码过期
+com.xgimi.filemanager	paste	粘贴
+com.xgimi.filemanager	paste_file	粘贴文件
+com.xgimi.filemanager	path_invalid	指定的路径无效
+com.xgimi.filemanager	picture	图片
+com.xgimi.filemanager	play_iso_fail	iso文件打开失败
+com.xgimi.filemanager	play_mode	播放模式
+com.xgimi.filemanager	please_link_network	网络不可用，请检查网络后重试
+com.xgimi.filemanager	please_select_file	请选择文件
+com.xgimi.filemanager	press_again_exit	再按一次退出
+com.xgimi.filemanager	progress_wait_fail	网络异常
+com.xgimi.filemanager	progress_wait_loading	正在加载中...
+com.xgimi.filemanager	read_only_file_system	当前文件系统为只读
+com.xgimi.filemanager	refresh	刷新
+com.xgimi.filemanager	rename	重命名
+com.xgimi.filemanager	rename_file_exist	文件已存在
+com.xgimi.filemanager	rename_file_failure	重命名失败
+com.xgimi.filemanager	rename_file_success	重命名成功
+com.xgimi.filemanager	samba_scan_over	扫描完成
+com.xgimi.filemanager	scan_again	重新扫描
+com.xgimi.filemanager	scanning_device	正在扫描设备
+com.xgimi.filemanager	sdcard_name	内置存储
+com.xgimi.filemanager	search_apk_file	搜索应用文件
+com.xgimi.filemanager	search_apk_file_hint	应用文件名 (关键字)
+com.xgimi.filemanager	search_audio_file	搜索音频文件
+com.xgimi.filemanager	search_audio_file_hint	音频文件名 (关键字)
+com.xgimi.filemanager	search_dlna_service	搜索DLNA服务
+com.xgimi.filemanager	search_document_file	搜索文档文件
+com.xgimi.filemanager	search_document_file_hint	文档文件名 (关键字)
+com.xgimi.filemanager	search_file_hint	文件名 (关键字)
+com.xgimi.filemanager	search_hint	请输入关键字
+com.xgimi.filemanager	search_picture_file	搜索图片文件
+com.xgimi.filemanager	search_picture_file_hint	图片 文件名 (关键字)
+com.xgimi.filemanager	search_video_file	搜索视频文件
+com.xgimi.filemanager	search_video_file_hint	视频文件名 (关键字)
+com.xgimi.filemanager	searching	搜索文件
+com.xgimi.filemanager	searching_device	扫描设备中...
+com.xgimi.filemanager	select_all	全选
+com.xgimi.filemanager	select_invert	反选
+com.xgimi.filemanager	serach_file_done	搜索文件结束
+com.xgimi.filemanager	serach_file_start	开始搜索文件
+com.xgimi.filemanager	setting_backgound	正在设置壁纸
+com.xgimi.filemanager	setting_backgound_fail	设置壁纸失败
+com.xgimi.filemanager	setting_backgound_success	设置壁纸成功
+com.xgimi.filemanager	show_file	文件显示
+com.xgimi.filemanager	size	大小 ：%s
+com.xgimi.filemanager	str_pre_file_node_empty	上级文件节点为空
+com.xgimi.filemanager	sure_del_chosed_file	确定删除选中的%d个文件 ?
+com.xgimi.filemanager	sure_hide_samba	断开
+com.xgimi.filemanager	time_sort	按时间排序
+com.xgimi.filemanager	tip_nulldata	当前无数据
+com.xgimi.filemanager	tips_for_pasting_large_files	文件复制完成前请勿退出应用
+com.xgimi.filemanager	u_out	U盘已拔出
+com.xgimi.filemanager	ubwritable_file	没有写权限
+com.xgimi.filemanager	unmount_device	删除设备
+com.xgimi.filemanager	unselect_all	全不选
+com.xgimi.filemanager	usb_loader	检测到您已插入USB设备
+com.xgimi.filemanager	usb_name	移动存储
+com.xgimi.filemanager	usb_native	内接硬盘
+com.xgimi.filemanager	user_name	用户名
+com.xgimi.filemanager	user_not_exist	用户不存在
+com.xgimi.filemanager	user_or_password_error	用户名或密码错误
+com.xgimi.filemanager	video	视频
+com.xgimi.filemanager	video_all_video	所有影片
+com.xgimi.filemanager	video_recent_add	最近添加
+com.xgimi.filemanager	video_recent_history	观看记录
+com.xgimi.config	eye_project_confirm_desc	关闭后，镜头前有人时不再自动降低亮度。\n请注意保护眼睛，避免直视光源
+com.xgimi.config	hdmi_menu_title	下次可通过“快捷设置”\n快速进入信号源
+com.xgimi.stream.video	giant_screen_wizard_desc	侧投观看21:9影片时，将自动延展空余画幅，开启巨幕模式，呈现更大精彩画面\n\n\n• 不支持搭配幕布使用\n• 部分系统菜单存在拉伸现象
+com.xgimi.stream.video	user_qrcode_load_error	加载失败\n请按OK键重试
+com.xgimi.gimiplayer	ak_3d_mode_content	侧投梯形校正状态下进入3D模式，\n梯形校正效果将消失且暂时无法自动校正
+com.xgimi.gimiplayer	dialog_ak_game_mode_content	侧投状态下进入3D模式，\n梯形校正效果将消失且暂时无法自动梯形校正
+com.xgimi.gimiplayer	dialog_not_ak_game_mode_content	3D模式下不支持侧投梯形校正，\n使用3D模式时请保持画面正投
+com.xgimi.gimiplayer	error_ConnectException	网络连接异常\n错误码：%s
+com.xgimi.gimiplayer	error_SSLHandshakeException	请查看系统时间日期是否正确\n错误码：%s
+com.xgimi.gimiplayer	error_SocketTimeoutException	网络连接超时\n错误码：%s
+com.xgimi.gimiplayer	error_code	出错啦！\n错误码：
+com.xgimi.gimiplayer	error_default	未知异常\n错误码：%s
+com.xgimi.gimiplayer	error_no_network	未连接网络\n错误码：%s
+com.xgimi.gimiplayer	giant_screen_wizard_desc	侧投观看21:9影片时，将自动延展空余画幅，开启巨幕模式，呈现更大精彩画面\n\n\n• 不支持搭配幕布使用\n• 部分系统菜单存在拉伸现象
+com.xgimi.gimiplayer	top_content_ak_tip	画面校正效果会消失且暂时无法自动校正\n请正投画面使用
+com.xgimi.msgcenter	test	消息
+com.xgimi.xhplayer	dialog_cancel	取消
+com.xgimi.xhplayer	dialog_confirm	切换
+com.xgimi.xhplayer	dialog_exit_message	确定要退出当前信号源
+com.xgimi.xhplayer	dialog_message	检测到新信号接入，是否切入？
+com.xgimi.xhplayer	dialog_sure	确认
+com.xgimi.xhplayer	dialog_title_notice	提示
+com.xgimi.xhplayer	game_simple_basemode	已切换“游戏-基础”模式
+com.xgimi.xhplayer	game_simple_msg	该模式不支持“画面校正”，请将投影设备移动至正投状态，否则将导致画面歪斜
+com.xgimi.xhplayer	game_simple_title	确认使用上次的“游戏-极速”模式？
+com.xgimi.xhplayer	game_unak_title	极速模式延迟更低，但不支持“画面校正”。
+com.xgimi.xhplayer	gamemode_tip_more	正投下延迟更低，按 @ 了解
+com.xgimi.xhplayer	gamemode_title	已开启游戏低延迟
+com.xgimi.xhplayer	info_signal_waiting	HDMI 等待连接中…
+com.xgimi.xhplayer	msg_back_key_guide	“返回”键用于控制连接的设备。按“主屏幕”按钮即可退出。
+com.xgimi.xhplayer	msg_plugout	%s 已断开
+com.xgimi.smartaccessories	smart_curtain_abnormal_des_1	确保幕布电源正常连接\n
+com.xgimi.smartaccessories	smart_curtain_abnormal_des_2	同时按住幕布遥控器【上键】和【下键】5s 直至听到“滴”声 \n
+com.xgimi.smartaccessories	smart_curtain_abnormal_title	连接有问题？请试试 \n以下办法：
+com.xgimi.smartaccessories	smart_curtain_dialog_skip_dialog_des	可在“设置 > 蓝牙 > 极米智能光子幕\n布”开启或关闭幕布动画
+com.xgimi.smartaccessories	smart_curtain_guide_adjust_picture_des	移动投影仪，确保投影画面四边超出幕布边框，以达到最佳\n画幕对齐效果
+com.xgimi.smartaccessories	smart_speaker_guide_connect_tips	1. 扫码下载并打开极米 App \n2. 点击“添加设备”搜索并连接投影 \n3. 按照提示开始配置音响
+com.xgimi.smartaccessories	smart_speaker_guide_connecting_error_tip	1. 检查所有音响的通电状态\n2. 将未连接音响重新接入电源\n3. 将未连接音响重新配对（长按音响顶部按钮 2s 后重试）\n\n*若连接成功，音响顶部按钮灯光将保持常亮
+com.xgimi.smartaccessories	smart_speaker_guide_connecting_error_tip1	1. 检查所有音响的通电状态\n
+com.xgimi.smartaccessories	smart_speaker_guide_connecting_error_tip2	2. 将未连接音响重新接入电源\n
+com.xgimi.smartaccessories	smart_speaker_guide_connecting_error_tip3	3. 将未连接音响重新配对（长按音响顶部按钮 2s 后重试）\n\n
+com.xgimi.smartaccessories	smart_speaker_guide_connecting_error_title	连接有问题？请试试\n以下办法：
+com.xgimi.smartaccessories	smart_speaker_guide_reset_location_title	当前声道配置如下，是否\n重新配置？
+com.xgimi.smartaccessories	smart_speaker_guide_reset_title	是否创建新的 XGIMI Sound\n组合？
+com.xgimi.smartaccessories	smart_speaker_guide_type_tip	根据音响数量将音响放至最佳位置，并保持所有音响处于\n通电状态
+com.xgimi.smartaccessories	speaker_connect_error_tips	可通过以下方法修复网络：\n1.尝试使用信号更强的Wi-Fi网络，并尽量连接到\n5GHz 网络\n2.请尽量使用安全网络，避免使用公共网络\n3.请尝试重新启动路由器和设备
+com.xgimi.vcontrol	Download_completed_and_installation_in_progress	下载完成，正在安装中…
+com.xgimi.vcontrol	Download_error_task_object_is_empty	暂不支持下载该应用
+com.xgimi.vcontrol	app_name	极米助手
+com.xgimi.vcontrol	black_list_connect	已拒绝连接，本次开机内将拒绝该设备连接
+com.xgimi.vcontrol	connect_black_list	拒绝连接
+com.xgimi.vcontrol	connect_pass	允许
+com.xgimi.vcontrol	connect_refuse	取消
+com.xgimi.vcontrol	connect_time_out	连接超时，请通过无屏助手重试
+com.xgimi.vcontrol	connecting	正在连接投影仪…
+com.xgimi.vcontrol	device_ip	设备地址:
+com.xgimi.vcontrol	downlaoderror	下载失败
+com.xgimi.vcontrol	download	下载：
+com.xgimi.vcontrol	exception_in_playing_file_id	播放文件ID异常
+com.xgimi.vcontrol	exit_3d	请退出3D模式后再进行校正
+com.xgimi.vcontrol	failed_to_initialize_folder	文件夹初始化失败
+com.xgimi.vcontrol	install_complete	安装完成
+com.xgimi.vcontrol	install_failure	安装失败
+com.xgimi.vcontrol	installing	正在安装…
+com.xgimi.vcontrol	kst_bl	左下角像素调整距离超出范围，请调整机器位置后重试
+com.xgimi.vcontrol	kst_br	右下角像素调整距离超出范围，请调整机器位置后重试
+com.xgimi.vcontrol	kst_tl	左上角像素调整距离超出范围，请调整机器位置后重试
+com.xgimi.vcontrol	kst_tr	右上角像素调整距离超出范围，请调整机器位置后重试
+com.xgimi.vcontrol	main_tips	拿出手机扫一扫， 手机连接无屏电视体验更多功能
+com.xgimi.vcontrol	main_tips2	影视投屏、音乐投播、应用管理、手机遥控、本地资源推送，无屏电视与手机新玩法
+com.xgimi.vcontrol	memory_full	存储空间已满，传输失败
+com.xgimi.vcontrol	no_gimi_tv	播放错误，请安装极米电台
+com.xgimi.vcontrol	nonsupport	该机型不支持此功能
+com.xgimi.vcontrol	palyrecovery	已恢复
+com.xgimi.vcontrol	palystop	已暂停
+com.xgimi.vcontrol	pass_connect	连接成功
+com.xgimi.vcontrol	playback_type_exception	播放类型异常
+com.xgimi.vcontrol	playerror	播放失败
+com.xgimi.vcontrol	qr_cmd_unbind	解除绑定
+com.xgimi.vcontrol	qr_unbind	暂时未绑定
+com.xgimi.vcontrol	refuse_connect	连接已取消
+com.xgimi.vcontrol	scan_wx_connect	扫码连接微信也可以遥控哦!
+com.xgimi.vcontrol	sdtoast	请插入SD卡
+com.xgimi.vcontrol	setting_error	设置失败
+com.xgimi.vcontrol	setting_success	设置成功
+com.xgimi.vcontrol	show_picture_error	显示图片失败
+com.xgimi.vcontrol	threedtoast	仅在视频播放时有效
+com.xgimi.vcontrol	unknown_error	未知错误
+com.xgimi.vcontrol	unnetwork	网络不可用
+com.xgimi.vcontrol	vcontrol	无屏助手
+com.xgimi.vcontrol	vcontrol_version_too_low	无屏助手手机端版本过低，请升级后重试
+com.xgimi.vcontrol	version	版本号：
+com.xgimi.vcontrol	videotoast	仅在视频播放时有效
+com.xgimi.vcontrol	wifiap	wifi热点：
+com.xgimi.vcontrol	wirednetwork	有线网络：
+com.xgimi.vcontrol	wirelesswork	无线网络：
+com.xgimi.wirelessscreen	airplay_description	影响苹果设备的同屏功能
+com.xgimi.wirelessscreen	already_latest	当前已是最新版本
+com.xgimi.wirelessscreen	android_wired_desc	仅部分type-c接口安卓手机支持此功能，某些深度定制系统手机暂不支持\n请将数据线连接投影仪USB接口，另一端连接手机
+com.xgimi.wirelessscreen	ap	热点模式
+com.xgimi.wirelessscreen	apple_cast_desc	苹果系列产品默认投屏方式，支持iOS4.2以上的iPhone、iPad、Mac OS X以上的Mac产品 \n\n请确保iPhone/iPad设备与投屏设备在同一网络下
+com.xgimi.wirelessscreen	cancel	取消
+com.xgimi.wirelessscreen	close	关闭
+com.xgimi.wirelessscreen	connect_accept	始终允许
+com.xgimi.wirelessscreen	connect_accept_once	临时允许
+com.xgimi.wirelessscreen	connect_refuse	加入黑名单
+com.xgimi.wirelessscreen	connect_request	请求连接您的设备
+com.xgimi.wirelessscreen	current_net	当前网络：
+com.xgimi.wirelessscreen	current_type	当前状态 ：
+com.xgimi.wirelessscreen	defend_description	打开防骚扰后，投屏需要在接收端允许后才能进行
+com.xgimi.wirelessscreen	detail_frag_desc_android	请确保手机或平板设备与投屏设备在同一网络下
+com.xgimi.wirelessscreen	detail_frag_desc_imac	请确保iMac设备与投屏设备在同一网络下
+com.xgimi.wirelessscreen	detail_frag_desc_iphone	请确保iPhone/iPad设备与投屏设备在同一网络下
+com.xgimi.wirelessscreen	detail_frag_header_android	安卓设备
+com.xgimi.wirelessscreen	detail_frag_header_imac	苹果电脑投屏
+com.xgimi.wirelessscreen	detail_frag_header_iphone	苹果手机投屏
+com.xgimi.wirelessscreen	device_name	设备名称：
+com.xgimi.wirelessscreen	device_set_success	设备名称已设置成功
+com.xgimi.wirelessscreen	devicename_set_error	名称无法设置
+com.xgimi.wirelessscreen	dlg_cancel	取消
+com.xgimi.wirelessscreen	dlg_msg_wlan	开启WFD功能需要打开WIFI，确定打开?
+com.xgimi.wirelessscreen	dlg_ok	确定
+com.xgimi.wirelessscreen	dlg_prompt	提示
+com.xgimi.wirelessscreen	dlna_description	影响安卓系统的手机、平板以及视频应用的同屏功能
+com.xgimi.wirelessscreen	ethernet	有线网络
+com.xgimi.wirelessscreen	exit_toast_tip	再按一次返回键退出投屏
+com.xgimi.wirelessscreen	fast	极速
+com.xgimi.wirelessscreen	fhd	全高清
+com.xgimi.wirelessscreen	hd	高清
+com.xgimi.wirelessscreen	hotpot_main	无线热点
+com.xgimi.wirelessscreen	ip_addr	IP地址：
+com.xgimi.wirelessscreen	item_close	关
+com.xgimi.wirelessscreen	item_open	开
+com.xgimi.wirelessscreen	line_notice_des_mac_1	使用数据线连接IOS设备与该设备连接后\n在IOS设备弹出框上选择“信任”
+com.xgimi.wirelessscreen	line_notice_des_mac_2	如您设备存在密码，需输入密码确认\n稍作等待后即可完成同屏
+com.xgimi.wirelessscreen	line_notice_title_mac	IOS设备有线投屏连接引导
+com.xgimi.wirelessscreen	miracast_wait	等待连接
+com.xgimi.wirelessscreen	mirror_service_stoped	投屏服务已经停止
+com.xgimi.wirelessscreen	mirror_tip	演示DEMO
+com.xgimi.wirelessscreen	net_unconnect	未连接
+com.xgimi.wirelessscreen	network_disconnect	网络断开，请检查网络
+com.xgimi.wirelessscreen	no_upgrade_file	未检测到升级文件
+com.xgimi.wirelessscreen	not_support_key	当前场景不支持此操作
+com.xgimi.wirelessscreen	not_support_seek	当前不支持快进快退
+com.xgimi.wirelessscreen	notice_button_cancel	我知道了
+com.xgimi.wirelessscreen	notice_button_sure	去看看
+com.xgimi.wirelessscreen	notice_content_first	亲爱的用户，您好:
+com.xgimi.wirelessscreen	notice_content_forth	&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;同时，PC桌面端《极米PC同屏助手》也进行了大幅优化，提升设备查找效率和连接稳定性。请前往<font color=#5996ec><b> http://z.xgimi.com</b></font>,下载《极米PC同屏助手》最新版本体验（<strong>需要v3.1版本及其以上，低版本无法扫描发现设备</strong>）。
+com.xgimi.wirelessscreen	notice_content_second	&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;为了提供更好的投屏体验，进一步提升投屏的稳定性和流畅性，原《PC 同屏助手》应用已全新升级为《无线投屏》。
+com.xgimi.wirelessscreen	notice_content_third	进入《无线投屏》体验更多功能
+com.xgimi.wirelessscreen	notice_title	《PC同屏助手》应用变更说明
+com.xgimi.wirelessscreen	notice_upgrade	检测到新版本, 是否更新?
+com.xgimi.wirelessscreen	open	开启
+com.xgimi.wirelessscreen	open_ap_mode	正在开启热点模式
+com.xgimi.wirelessscreen	opened_ap_mode	热点已开启
+com.xgimi.wirelessscreen	passward	连接密码
+com.xgimi.wirelessscreen	passward_close	密码已关闭
+com.xgimi.wirelessscreen	passward_description	设定后连接此设备需输入密码才能进行同屏
+com.xgimi.wirelessscreen	passward_limite	密码最多为8个字符
+com.xgimi.wirelessscreen	passward_set_success	密码设置成功
+com.xgimi.wirelessscreen	player_error_msg_video_format_not_support	视频格式不支持
+com.xgimi.wirelessscreen	player_error_notice	播放失败，请重试！
+com.xgimi.wirelessscreen	player_init_failed	初始化失败，请重试！
+com.xgimi.wirelessscreen	push_video	DLNA共享
+com.xgimi.wirelessscreen	recovery_net	正在恢复网络
+com.xgimi.wirelessscreen	resolution_description	分辨率越高，画质越清晰
+com.xgimi.wirelessscreen	setting_main	设置
+com.xgimi.wirelessscreen	setting_projection	投屏设置
+com.xgimi.wirelessscreen	stardand	标准
+com.xgimi.wirelessscreen	start_button	启动服务
+com.xgimi.wirelessscreen	sure	确定
+com.xgimi.wirelessscreen	unknown	未知
+com.xgimi.wirelessscreen	upgrading	正在升级。。。
+com.xgimi.wirelessscreen	wfd_device_name	设备名称
+com.xgimi.wirelessscreen	wfd_search	搜索
+com.xgimi.wirelessscreen	wfd_searching	正在搜索…
+com.xgimi.wirelessscreen	wfd_setting	设置
+com.xgimi.wirelessscreen	wfd_status_connected	已连接…
+com.xgimi.wirelessscreen	wfd_status_connecting	正在连接…
+com.xgimi.wirelessscreen	wfd_status_waiting	等待连接…
+com.xgimi.wirelessscreen	wifi_p2p_cancel_connect_message	要取消连接%1$s的邀请吗？
+com.xgimi.wirelessscreen	wifi_p2p_cancel_connect_title	取消邀请？
+com.xgimi.wirelessscreen	wifi_p2p_delete_group_message	取消保存此群组？
+com.xgimi.wirelessscreen	wifi_p2p_device_info	设备信息
+com.xgimi.wirelessscreen	wifi_p2p_disconnect_message	如果断开连接，您与%1$s的连接将中断。
+com.xgimi.wirelessscreen	wifi_p2p_disconnect_multiple_message	如果断开连接，您与%1$s和另外 %2$s 台设备的连接将中断。
+com.xgimi.wirelessscreen	wifi_p2p_disconnect_title	断开连接？
+com.xgimi.wirelessscreen	wifi_p2p_failed_connect_message	无法连接。
+com.xgimi.wirelessscreen	wifi_p2p_failed_initname_message	无法初始化设备名称。
+com.xgimi.wirelessscreen	wifi_p2p_failed_rename_message	无法重命名设备。
+com.xgimi.wirelessscreen	wifi_p2p_menu_rename	重命名设备
+com.xgimi.wirelessscreen	wifi_p2p_menu_search	搜索设备
+com.xgimi.wirelessscreen	wifi_p2p_menu_searching	正在搜索…
+com.xgimi.wirelessscreen	wifi_p2p_peer_devices	源端设备
+com.xgimi.wirelessscreen	wifi_p2p_persist_network	记住该连接
+com.xgimi.wirelessscreen	wifi_p2p_remembered_groups	已匹配的群组
+com.xgimi.home	error_ConnectException	网络连接异常\n错误码：%s
+com.xgimi.home	error_SSLHandshakeException	请查看系统时间日期是否正确\n错误码：%s
+com.xgimi.home	error_SocketTimeoutException	网络请求超时\n错误码：%s
+com.xgimi.home	error_TimeoutException	网络连接超时\n错误码：%s
+com.xgimi.home	error_default	未知异常\n错误码：%s
+com.xgimi.home	error_no_network	未连接网络\n错误码：%s
+com.xgimi.home	error_no_space	存储空间不足，请清理存储后重试\n错误码：%s
+com.xgimi.home	play_tips	小朋友坐端正\n影片开始啦
+com.xgimi.home	safe_mode_tips	由于检测到极米桌面多次崩溃，已自动进入安全模式界面\n您可以尝试点击下面的 “清空极米桌面数据” 并点击Home按键，看是否能正常使用
+com.xgimi.home	search_tip_content	1.遥控器操作输入“JM” \n2.按住语音键说“极米”
+com.xgimi.home	setting_project_eye_tips	开启护眼模式，过滤蓝光保护宝宝眼睛\n投影漫反射与蓝光过滤搭配，更加护眼
+com.xgimi.home	setting_timing_tips	专家建议每观看20分钟，休息一下保护宝宝眼睛\n达到观看时长后，将自动关机提醒宝宝休息
+com.xgimi.home	test	消息
+com.xgimi.home	tip_nulldata	当前无数据
+com.xgimi.payview	error_tips	亲，请求出错拉，请稍后重试。\n若仍有问题，请联系您购买设备的商家或者通过400-0028-960联系我们获取支持
+com.xgimi.payview	error_tips_2040341	Oops,发生了罕见错误。\n请及时通过400-0028-960联系我们协助您激活芒果VIP
+com.xgimi.payview	error_tips_7	非常抱歉，我们无法查询到此设备信息。\n请联系您购买设备的商家或者通过400-0028-960联系我们获取支持
+com.xgimi.payview	logout_hint	退出后将无法使用会员购买和数据备份等功能\n确定退出吗?
+com.xgimi.payview	qrcode_load_error	加载失败\n请按OK键重试

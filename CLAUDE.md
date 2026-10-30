@@ -13,7 +13,8 @@ Vietnamese; user-facing text (launcher, updater, guides) is Vietnamese.
   - `updater/` the updater app: talks to the TV's own adbd on 127.0.0.1:5555 (`LocalAdb.java`). Flavors:
     `chung` (every known TV, `USB-CapNhat`), `xgimi` (XGIMI DOHKO only, `USB-CapNhat-XGIMI-DOHKO`) and
     `dienthoai` (`BuildConfig.REMOTE`: runs on an Android phone, reaches the TV's network ADB by IP, streams files
-    into /data/local/tmp, self-updates from the latest GitHub Release, `Updates.java`).
+    into /data/local/tmp, self-updates from the latest GitHub Release, `Updates.java`). The `xgimi` flavor also carries
+    Google's speech recogniser for voice search (`src/xgimi/assets/speech.apk`, 40 MB, not in Git).
   - `karaoke/` karaoke app `com.gathin.karaoke` (Java, minSdk 23, same debug key): searches YouTube by reading
     its results page (no API key, `SearchParser.java`, risks in `karaoke/README.md`), plays in a WebView IFrame
     player with a queue, or in the YouTube app. Phone page on port 8687 (`PhoneRemote.java`, `res/raw/phone.html`,
@@ -32,6 +33,7 @@ Vietnamese; user-facing text (launcher, updater, guides) is Vietnamese.
   `launcher/build-and-install.ps1` builds and installs the launcher.
 - `tools/xgimi-vi/` Vietnamese translations for XGIMI system apps and the scripts that apply them: fabricated
   overlays on the DOHKO, installed overlay APKs for RS10/H6 (m7642) and IRONMAN (`rs10-overlays.ps1 -Device`).
+  `build-firmware-vi.ps1` puts them in a USB firmware bin as static overlays (not flash-tested, see its guide).
   `examples/<device>/debloat.txt` hold each device's removal list and its notes.
 - Not in Git (see `.gitignore`): `backup/` (per-TV data), `dist/`, `prebuilt/`, build outputs, `tools/platform-tools`
   (download Google's platform-tools there), `tools/venv`, and `tools/adbkey` (this PC's ADB key; each PC has its own).

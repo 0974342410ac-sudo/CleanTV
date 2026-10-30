@@ -62,6 +62,8 @@ $appsDir = Join-Path $assets 'apps'
 if (Test-Path $appsDir) { Remove-Item $appsDir -Recurse -Force }
 & powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $root 'tools\xgimi-vi\dohko-apps-xml.ps1') -OutDir $appsDir
 if ($LASTEXITCODE -ne 0) { Pop-Location; throw 'Tao file dich ung dung XGIMI that bai' }
+# Ten o trong menu cai dat nhanh (trigger trong co so du lieu cua newsettings, UpdaterActivity.quickPanelVi)
+Copy-Item (Join-Path $root 'tools\xgimi-vi\dohko-quick-panel-vi.sql') (Join-Path $assets 'quick-panel-vi.sql') -Force
 $boot = [IO.File]::ReadAllText((Join-Path $root 'tools\xgimi-vi\dohko-boot.sh'), [Text.Encoding]::UTF8).Replace("`r", '')
 [IO.File]::WriteAllText((Join-Path $assets 'boot.sh'), $boot, (New-Object Text.UTF8Encoding $false))
 

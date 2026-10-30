@@ -82,3 +82,4 @@
 # INSTALL_FAILED lines (installOverlays, UpdaterActivity). Full system Vietnamese needs the overlays baked into the
 # firmware image as static overlays in /product/overlay, flashed with the USB upgrade -- to be built and flash-
 # tested when a real m7642 unit is available (none online at the time of this test).
+# Built for the H6 family on 2026-10-30 (/vendor/overlay, see examples\xgimi-h6\debloat.txt), still not flash-tested.

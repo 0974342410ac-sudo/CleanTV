@@ -1,0 +1,1024 @@
+# Bang dich them, tu lan quet toan bo APK cua firmware XGIMI_PIGCHIVALROUS_XM03D (= XM13F), 2026-10-30:
+# chuoi nhieu dong ma bang cu bo sot, chuoi chi co o values-zh, va cac muc cua mang (string-array, plurals).
+%1$s - 还需 %2$s充满	%1$s - còn %2$s nữa sẽ đầy
+%1$s 【计算失败】\n按确认键重新开始自动流程	%1$s 【Tính toán thất bại】\nNhấn OK để bắt đầu lại quy trình tự động
+%1$s 【计算成功】\n按确认键进行下一点位	%1$s 【Tính toán thành công】\nNhấn OK để sang điểm tiếp theo
+%1$s 已拒绝配对。	%1$s đã từ chối ghép nối.
+%1$s(共%2$d个)	%1$s (tổng %2$d mục)
+%1$s(共%2$d张)	%1$s (tổng %2$d ảnh)
+%1$s(共%2$d首)	%1$s (tổng %2$d bài)
+%1$s前	%1$s trước
+%s 已断开	Đã ngắt kết nối %s
+1. 在极米App找到“为设备连网”，完成连网与 \n绑定	1. Trong ứng dụng XGIMI, tìm “Kết nối mạng cho thiết bị” để kết nối mạng và \nliên kết
+1.升级过程中，无线HDMI同屏器不可使用\n2.请保持无线HDMI同屏器靠近投影仪，处于连接状态\n3.请勿关闭设备或切断电源	1. Trong lúc nâng cấp, không dùng được bộ truyền HDMI không dây\n2. Giữ bộ truyền HDMI không dây gần máy chiếu và ở trạng thái kết nối\n3. Không tắt thiết bị hoặc ngắt nguồn điện
+1.开启后，使用自动画面调整功能时将执行墙面\n颜色适配，以获得最佳色彩效果\n\n2.自定义色彩风格、3D模式和亮度自适应下将\n不支持墙面颜色适配	1. Khi bật, chức năng tự động chỉnh hình sẽ thích ứng theo\nmàu tường để có màu sắc tốt nhất\n\n2. Không hỗ trợ thích ứng màu tường khi dùng kiểu màu\ntùy chỉnh, chế độ 3D và độ sáng thích ứng
+1、升级过程中无线开关面板暂不可使用\n2、请保持无线开关面板靠近投影仪，处于连接状态\n3、请勿关闭设备或切断电源	1. Trong lúc nâng cấp, tạm thời không dùng được bảng công tắc không dây\n2. Giữ bảng công tắc không dây gần máy chiếu và ở trạng thái kết nối\n3. Không tắt thiết bị hoặc ngắt nguồn điện
+1、升级过程中遥控器暂不可使用\n2、请保持遥控器靠近投影仪，处于连接状态\n3、请勿关闭设备或切断电源	1. Trong lúc nâng cấp, tạm thời không dùng được điều khiển\n2. Giữ điều khiển gần máy chiếu và ở trạng thái kết nối\n3. Không tắt thiết bị hoặc ngắt nguồn điện
+3D模式下不支持侧投梯形校正，\n使用3D模式时请保持画面正投	Chế độ 3D không hỗ trợ hiệu chỉnh hình thang khi chiếu nghiêng,\nkhi dùng 3D hãy chiếu thẳng
+AF【已计算失败】\n摄像头异常\n	AF 【Tính toán thất bại】\nCamera bất thường\n
+AF【已计算失败】\n画面覆盖比例过小，请调整摄像头角度\n	AF 【Tính toán thất bại】\nTỷ lệ phủ hình quá nhỏ, hãy chỉnh góc camera\n
+AF【已计算失败】\n画面超出绿色矩形框，请调整摄像头角度\n	AF 【Tính toán thất bại】\nHình vượt khung chữ nhật xanh, hãy chỉnh góc camera\n
+AF【已计算失败】\n请保证对焦清晰且计算图正确显示\n	AF 【Tính toán thất bại】\nHãy lấy nét rõ và hiển thị đúng hình tính toán\n
+AF【已计算失败】\n读取数据为0\n	AF 【Tính toán thất bại】\nDữ liệu đọc được bằng 0\n
+Android 操作系统	Hệ điều hành Android
+Animator 时长缩放	Tỷ lệ thời lượng Animator
+DLNA共享	Chia sẻ DLNA
+Flash 硬件层在进行更新时会显示为绿色	Nháy xanh lá khi lớp phần cứng cập nhật
+GPU 渲染模式分析	Phân tích chế độ dựng hình GPU
+HD 音频	Âm thanh HD
+HD 音频：%1$s	Âm thanh HD: %1$s
+HDCP 检查	Kiểm tra HDCP
+HDMI 等待连接中…	HDMI đang chờ kết nối…
+IMS 注册状态	Trạng thái đăng ký IMS
+IOS设备有线投屏连接引导	Hướng dẫn truyền màn hình iOS qua dây
+IP 配置失败	Cấu hình IP thất bại
+IP不能为空	IP không được để trống
+IP地址无效	Địa chỉ IP không hợp lệ
+IP地址：	Địa chỉ IP:
+MAC 已随机化	MAC đã ngẫu nhiên hóa
+OEM 解锁	Mở khóa OEM
+Oops,发生了罕见错误。\n请及时通过400-0028-960联系我们协助您激活芒果VIP	Rất tiếc, đã xảy ra lỗi hiếm gặp.\nHãy gọi 400-0028-960 để được hỗ trợ kích hoạt Mango VIP
+PIN码或配对密钥不正确，无法与%1$s配对。	Mã PIN hoặc khóa ghép nối không đúng, không thể ghép nối với %1$s.
+ 消息 	 Tin nhắn
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;为了提供更好的投屏体验，进一步提升投屏的稳定性和流畅性，原《PC 同屏助手》应用已全新升级为《无线投屏》。	Để truyền màn hình tốt hơn, ổn định và mượt hơn, ứng dụng “Trợ lý đồng bộ PC” đã được nâng cấp thành “Truyền màn hình không dây”.
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;同时，PC桌面端《极米PC同屏助手》也进行了大幅优化，提升设备查找效率和连接稳定性。请前往<font color=#5996ec><b> http://z.xgimi.com</b></font>,下载《极米PC同屏助手》最新版本体验（<strong>需要v3.1版本及其以上，低版本无法扫描发现设备</strong>）。	Bản dành cho máy tính “Trợ lý đồng bộ PC XGIMI” cũng được tối ưu để tìm thiết bị nhanh và kết nối ổn định hơn. Hãy vào http://z.xgimi.com tải bản mới nhất (cần v3.1 trở lên, bản cũ không tìm được thiết bị).
+将设备 正投 并保持投影距离在 1—2米，再进行对焦校准	Đặt thiết bị chiếu thẳng, giữ khoảng cách chiếu 1–2 m rồi mới hiệu chuẩn lấy nét
+当前无数据	Hiện không có dữ liệu
+SIM 卡存取权限	Quyền truy cập SIM
+USB 网络共享	Chia sẻ mạng qua USB
+USB 调试	Gỡ lỗi USB
+USB 调试仅用于开发目的。该功能可用于在您的计算机和设备之间复制数据、在您的设备上安装应用（事先不发通知）以及读取日志数据。	Gỡ lỗi USB chỉ dành cho phát triển. Chức năng này có thể sao chép dữ liệu giữa máy tính và thiết bị, cài ứng dụng lên thiết bị (không báo trước) và đọc dữ liệu nhật ký.
+U盘已拔出	Đã rút USB
+WLAN 信号强度为一格。	Tín hiệu Wi-Fi một vạch.
+WLAN 信号强度为三格。	Tín hiệu Wi-Fi ba vạch.
+WLAN 信号强度为两格。	Tín hiệu Wi-Fi hai vạch.
+WLAN 信号满格。	Tín hiệu Wi-Fi đầy vạch.
+WLAN 已关闭。	Wi-Fi đã tắt.
+WLAN 连接失败	Kết nối Wi-Fi thất bại
+WLAN 连接已断开。	Đã ngắt kết nối Wi-Fi.
+WebView 实现	Triển khai WebView
+iso文件打开失败	Không mở được tệp iso
+wifi热点：	Điểm phát Wi-Fi:
+· 更新过程中幕布暂不可使用\n· 请保持幕布靠近投影仪，处于连接状态\n· 请勿关闭设备或切断电源	· Trong lúc cập nhật, tạm thời không dùng được màn chiếu\n· Giữ màn chiếu gần máy chiếu và ở trạng thái kết nối\n· Không tắt thiết bị hoặc ngắt nguồn điện
+· 更新过程中音响暂不可使用\n· 请保持音响靠近投影仪，处于连接状态\n· 请勿关闭设备或切断电源	· Trong lúc cập nhật, tạm thời không dùng được loa\n· Giữ loa gần máy chiếu và ở trạng thái kết nối\n· Không tắt thiết bị hoặc ngắt nguồn điện
+“%s”的设置	Cài đặt của “%s”
+“返回”键用于控制连接的设备。按“主屏幕”按钮即可退出。	Phím “Quay lại” dùng để điều khiển thiết bị đã kết nối. Nhấn nút “Màn hình chính” để thoát.
+《PC同屏助手》应用变更说明	Thông báo thay đổi ứng dụng “Trợ lý đồng bộ PC”
+【复验模式】\n最终等级:%s	【Chế độ kiểm tra lại】\nCấp cuối: %s
+【对焦失败】\n摄像头异常	【Lấy nét thất bại】\nCamera bất thường
+【对焦失败】\n自动对焦已被打断	【Lấy nét thất bại】\nTự động lấy nét bị gián đoạn
+【对焦失败】\n自动对焦超时	【Lấy nét thất bại】\nTự động lấy nét quá thời gian
+【已计算失败】\n摄像头异常	【Tính toán thất bại】\nCamera bất thường
+【已计算失败】\n画面覆盖比例过小，请调整摄像头角度	【Tính toán thất bại】\nTỷ lệ phủ hình quá nhỏ, hãy chỉnh góc camera
+【已计算失败】\n画面超出绿色矩形框，请调整摄像头角度	【Tính toán thất bại】\nHình vượt khung chữ nhật xanh, hãy chỉnh góc camera
+【已计算失败】\n请保证对焦清晰且计算图正确显示	【Tính toán thất bại】\nHãy lấy nét rõ và hiển thị đúng hình tính toán
+【已计算失败】\n读取数据为0	【Tính toán thất bại】\nDữ liệu đọc được bằng 0
+【已计算成功】\nRotate 180	【Tính toán thành công】\nXoay 180
+【已计算成功】\nRotate 270	【Tính toán thành công】\nXoay 270
+【已计算成功】\nRotate 90	【Tính toán thành công】\nXoay 90
+【测试失败】\n未满足测试标准\n等级:%d\n旋转:%f	【Kiểm tra thất bại】\nChưa đạt tiêu chuẩn\nCấp: %d\nXoay: %f
+【测试失败】\n测试模式异常错误	【Kiểm tra thất bại】\nLỗi bất thường ở chế độ kiểm tra
+【测试失败】\n等级:%d\n最大等级:%d\n最大旋转:%f\n	【Kiểm tra thất bại】\nCấp: %d\nCấp tối đa: %d\nXoay tối đa: %f\n
+上次修改时间	Lần sửa cuối
+上级文件节点为空	Nút thư mục cha trống
+下次可通过“快捷设置”\n快速访问U盘	Lần sau có thể mở nhanh USB\nqua “Cài đặt nhanh”
+下次可通过“快捷设置”\n快速进入信号源	Lần sau có thể vào nhanh nguồn tín hiệu\nqua “Cài đặt nhanh”
+下载完成，正在安装中…	Đã tải xong, đang cài đặt…
+下载：	Tải xuống:
+不保留活动	Không giữ hoạt động
+不允许	Không cho phép
+不在范围内	Ngoài vùng phủ sóng
+不按流量计费	Không đo lưu lượng
+不支持%1$s	Không hỗ trợ %1$s
+不是文件夹	Không phải thư mục
+不锁定屏幕	Không khóa màn hình
+与其他设备共享该设备的互联网连接	Chia sẻ kết nối Internet của thiết bị này với thiết bị khác
+严重错误	Lỗi nghiêm trọng
+个人	Cá nhân
+临时允许	Cho phép tạm thời
+为后台应用显示“应用无响应”对话框	Hiện hộp thoại “Ứng dụng không phản hồi” cho ứng dụng nền
+互联网连接	Kết nối Internet
+亲爱的用户，您好:	Xin chào quý khách:
+亲，请求出错拉，请稍后重试。\n若仍有问题，请联系您购买设备的商家或者通过400-0028-960联系我们获取支持	Yêu cầu bị lỗi, vui lòng thử lại sau.\nNếu vẫn lỗi, hãy liên hệ nơi bán thiết bị hoặc gọi 400-0028-960 để được hỗ trợ
+仅部分type-c接口安卓手机支持此功能，某些深度定制系统手机暂不支持\n请将数据线连接投影仪USB接口，另一端连接手机	Chỉ một số điện thoại Android cổng Type-C hỗ trợ, một số máy dùng hệ thống tùy biến sâu chưa hỗ trợ\nHãy cắm cáp vào cổng USB của máy chiếu, đầu kia vào điện thoại
+仅限优先事项	Chỉ ưu tiên
+从:	Từ:
+会影响合成语音的音调	Ảnh hưởng đến cao độ của giọng tổng hợp
+估计大约还能用到%1$s	Ước tính dùng được đến %1$s
+位置：	Vị trí:
+使用 GPU 进行绘图时闪烁显示窗口中的视图	Nháy các khung nhìn trong cửa sổ khi vẽ bằng GPU
+使用中	Đang dùng
+使用中，电池电量：%1$s	Đang dùng, pin: %1$s
+使用数据线连接IOS设备与该设备连接后\n在IOS设备弹出框上选择“信任”	Dùng cáp nối thiết bị iOS với máy này\nrồi chọn “Tin cậy” trên thiết bị iOS
+使用系统语言	Dùng ngôn ngữ hệ thống
+使用网络共享硬件加速功能（如果可用）	Dùng tăng tốc phần cứng cho chia sẻ mạng (nếu có)
+侧投梯形校正状态下进入3D模式，\n梯形校正效果将消失且暂时无法自动校正	Vào 3D khi đang hiệu chỉnh hình thang chiếu nghiêng,\nhiệu chỉnh sẽ mất và tạm thời không tự hiệu chỉnh được
+侧投状态下进入3D模式，\n梯形校正效果将消失且暂时无法自动梯形校正	Vào 3D khi đang chiếu nghiêng,\nhiệu chỉnh hình thang sẽ mất và tạm thời không tự hiệu chỉnh được
+侧投观看21:9影片时，将自动延展空余画幅，开启巨幕模式，呈现更大精彩画面\n\n\n• 不支持搭配幕布使用\n• 部分系统菜单存在拉伸现象	Khi chiếu nghiêng xem phim 21:9, máy tự mở rộng khung hình, bật chế độ màn hình lớn cho hình to hơn\n\n\n• Không dùng được với màn chiếu\n• Một số menu hệ thống có thể bị kéo giãn
+便携式热点	Điểm phát di động
+修改时间 ：%s	Thời gian sửa: %s
+修改时间:	Thời gian sửa:
+停用 HW 叠加层	Tắt lớp phủ phần cứng
+停用绝对音量功能	Tắt âm lượng tuyệt đối
+停用蓝牙绝对音量功能，即可避免在连接到远程设备时出现音量问题（例如音量高得让人无法接受或无法控制音量等）。	Tắt âm lượng tuyệt đối Bluetooth để tránh lỗi âm lượng khi kết nối thiết bị từ xa (như âm lượng quá lớn hoặc không điều chỉnh được).
+允许为调试应用加载 GPU 调试层	Cho phép tải lớp gỡ lỗi GPU cho ứng dụng gỡ lỗi
+允许将任何应用写入外部存储设备（无论清单值是什么）	Cho phép mọi ứng dụng ghi vào bộ nhớ ngoài (bất kể giá trị trong manifest)
+允许开发设置？	Cho phép cài đặt phát triển?
+允许模拟位置	Cho phép vị trí mô phỏng
+允许解锁引导加载程序	Cho phép mở khóa trình khởi động
+充电时屏幕不会休眠	Màn hình không ngủ khi đang sạc
+全不选	Bỏ chọn tất cả
+全色盲	Mù màu toàn phần
+全高清	Full HD
+共享互联网连接	Chia sẻ kết nối Internet
+共享文件可支持同WIFI的其他设备访问，访问	Tệp chia sẻ có thể được thiết bị khác cùng Wi-Fi truy cập, truy cập
+关闭 USB 音频转接	Tắt định tuyến âm thanh USB
+关闭共享服务	Tắt dịch vụ chia sẻ
+关闭后，关机时将不再自动复位云台\n*或拔出外接设备后再关机	Khi tắt, giá xoay sẽ không tự về vị trí khi tắt máy\n*hoặc rút thiết bị ngoài rồi mới tắt máy
+关闭后，镜头前有人时不再自动降低亮度。\n请注意保护眼睛，避免直视光源	Khi tắt, máy không còn tự giảm độ sáng khi có người trước ống kính.\nHãy bảo vệ mắt, tránh nhìn thẳng vào nguồn sáng
+关闭自动转接至 USB 音频外围设备的功能	Tắt tự động chuyển âm thanh sang thiết bị âm thanh USB
+内存不足	Không đủ bộ nhớ
+内存空间不足	Không đủ dung lượng
+内接硬盘	Ổ cứng trong
+再按一次返回键退出投屏	Nhấn Quay lại lần nữa để thoát truyền màn hình
+减少时间。	Giảm thời gian.
+出错啦！\n错误码：	Đã xảy ra lỗi!\nMã lỗi:
+分辨率越高，画质越清晰	Độ phân giải càng cao, hình càng nét
+列表模式	Dạng danh sách
+创建成功	Đã tạo
+创建文件失败	Tạo tệp thất bại
+创建文件夹失败	Tạo thư mục thất bại
+创建文件夹成功	Đã tạo thư mục
+初始化失败，请重试！	Khởi tạo thất bại, hãy thử lại!
+删除后将无法恢复	Xóa rồi sẽ không khôi phục được
+删除播放历史记录	Xóa lịch sử phát
+删除文件	Xóa tệp
+删除设备	Xóa thiết bị
+到:	Đến:
+剩余电池续航时间不到 %1$s	Pin còn dùng được chưa đến %1$s
+剪切文件	Cắt tệp
+加入黑名单	Thêm vào danh sách chặn
+助听器	Máy trợ thính
+占用 %1$s空间	Chiếm %1$s dung lượng
+原路径:	Đường dẫn gốc:
+去看看	Xem ngay
+反选	Đảo lựa chọn
+取消\n%s	Hủy\n%s
+取消保存此群组？	Hủy lưu nhóm này?
+取消邀请？	Hủy lời mời?
+只有在连接到网络的情况下，才支持%1$s	Chỉ hỗ trợ %1$s khi đã kết nối mạng
+可以尝试以下解决方法：\n1、长按同屏器按钮重试\n2、将同屏器重新插入电脑、电视盒子、游戏机等信号源\n	Có thể thử các cách sau:\n1. Giữ nút trên bộ truyền để thử lại\n2. Cắm lại bộ truyền vào nguồn tín hiệu như máy tính, TV box, máy chơi game\n
+可写	Ghi được
+可读	Đọc được
+可通过%1$s连接	Kết nối được qua %1$s
+可通过以下方法修复网络：\n1.尝试使用信号更强的Wi-Fi网络，并尽量连接到\n5GHz 网络\n2.请尽量使用安全网络，避免使用公共网络\n3.请尝试重新启动路由器和设备	Có thể sửa mạng theo các cách sau:\n1. Dùng Wi-Fi có sóng mạnh hơn và ưu tiên\nmạng 5 GHz\n2. Ưu tiên mạng an toàn, tránh mạng công cộng\n3. Khởi động lại bộ định tuyến và thiết bị
+右上角像素调整距离超出范围，请调整机器位置后重试	Khoảng chỉnh điểm ảnh góc trên phải vượt giới hạn, hãy chỉnh vị trí máy rồi thử lại
+右下角像素调整距离超出范围，请调整机器位置后重试	Khoảng chỉnh điểm ảnh góc dưới phải vượt giới hạn, hãy chỉnh vị trí máy rồi thử lại
+右侧 - 电池电量：%1$s	Bên phải - pin: %1$s
+右投测试通过\n等级:%d\n旋转:%f	Kiểm tra chiếu phải đạt\nCấp: %d\nXoay: %f
+名称:	Tên:
+名称无法设置	Không đặt được tên
+后台进程限制	Giới hạn tiến trình nền
+启动服务	Khởi động dịch vụ
+启用 GPU 调试层	Bật lớp gỡ lỗi GPU
+启用 OpenGL 跟踪	Bật theo dõi OpenGL
+启用 WLAN 详细日志记录功能	Bật ghi nhật ký Wi-Fi chi tiết
+启用严格模式	Bật chế độ nghiêm ngặt
+启用可自由调整的窗口	Bật cửa sổ đổi cỡ tự do
+启用可自由调整的窗口这一实验性功能。	Bật tính năng thử nghiệm cửa sổ đổi cỡ tự do.
+启用开发者选项	Bật tùy chọn nhà phát triển
+启用终端应用，以便在本地访问 Shell	Bật ứng dụng dòng lệnh để truy cập Shell cục bộ
+启用蓝牙 HCI 信息收集日志	Bật nhật ký HCI Bluetooth
+启用视图属性检查功能	Bật kiểm tra thuộc tính khung nhìn
+命令行错误	Lỗi dòng lệnh
+图标模式	Dạng biểu tượng
+图片	Hình ảnh
+图片 文件名 (关键字)	Tên tệp ảnh (từ khóa)
+在 OpenGL ES 2.0 应用中启用 4x MSAA	Bật 4x MSAA trong ứng dụng OpenGL ES 2.0
+在爱机找到 “为设备联网” 功能\n按照手机步骤提示进行连网	Tìm chức năng “Kết nối mạng cho thiết bị”\nrồi làm theo các bước trên điện thoại
+在电源菜单中显示用于提交错误报告的按钮	Hiện nút gửi báo cáo lỗi trong menu nguồn
+在设备上永久存储日志记录器数据	Lưu vĩnh viễn dữ liệu nhật ký trên thiết bị
+增加时间。	Tăng thời gian.
+复制失败	Sao chép thất bại
+复制成功	Đã sao chép
+复制文件	Sao chép tệp
+复制文件目的地错误	Sai đích sao chép tệp
+外围输入设备	Thiết bị nhập ngoại vi
+多选	Chọn nhiều
+大	Lớn
+大小 ：%s	Kích thước: %s
+大小:	Kích thước:
+大小:%1$s 修改日期:%2$s	Kích thước: %1$s Ngày sửa: %2$s
+大约还可使用 %1$s	Còn dùng được khoảng %1$s
+大约还可使用 %1$s (%2$s)	Còn dùng được khoảng %1$s (%2$s)
+如您设备存在密码，需输入密码确认\n稍作等待后即可完成同屏	Nếu thiết bị có mật khẩu, hãy nhập để xác nhận\nchờ một lát là đồng bộ xong
+如果断开连接，您与%1$s和另外 %2$s 台设备的连接将中断。	Nếu ngắt, kết nối của bạn với %1$s và %2$s thiết bị khác sẽ bị gián đoạn.
+如果断开连接，您与%1$s的连接将中断。	Nếu ngắt, kết nối của bạn với %1$s sẽ bị gián đoạn.
+始终使用 GPU 进行屏幕合成	Luôn dùng GPU để tổng hợp màn hình
+始终允许	Luôn cho phép
+始终开启移动数据网络	Luôn bật dữ liệu di động
+始终开启移动数据网络，即使 WLAN 网络已开启（便于快速切换网络）。	Luôn bật dữ liệu di động kể cả khi Wi-Fi đang bật (để chuyển mạng nhanh).
+媒体	Đa phương tiện
+媒体音频	Âm thanh đa phương tiện
+存储空间已满，传输失败	Bộ nhớ đầy, truyền thất bại
+安全网络	Mạng an toàn
+安装未知应用	Cài ứng dụng không rõ nguồn gốc
+安装语音合成所需的数据包	Cài gói dữ liệu cho tổng hợp giọng nói
+安装语音数据包	Cài gói dữ liệu giọng nói
+完全支持%1$s	Hỗ trợ đầy đủ %1$s
+密码已关闭	Đã tắt mật khẩu
+密码最多为8个字符	Mật khẩu tối đa 8 ký tự
+密码设置成功	Đã đặt mật khẩu
+密码过期	Mật khẩu hết hạn
+将所有 Activity 设为可配合多窗口环境调整大小（忽略清单值）。	Cho mọi Activity đổi cỡ được trong đa cửa sổ (bỏ qua giá trị manifest).
+将数据分区转换为文件加密。\n！！警告！！此操作将会清除您所有的数据。\n此功能为 Alpha 版功能，可能无法正常运行。\n要继续操作，请按“清除并转换…”。	Chuyển phân vùng dữ liệu sang mã hóa tệp.\n!! CẢNH BÁO !! Thao tác này xóa toàn bộ dữ liệu.\nĐây là tính năng Alpha, có thể không hoạt động đúng.\nĐể tiếp tục, nhấn “Xóa và chuyển…”.
+将文字的读出音调重置为默认值。	Đặt lại cao độ đọc văn bản về mặc định.
+小	Nhỏ
+尚未设置模拟位置信息应用	Chưa đặt ứng dụng vị trí mô phỏng
+屏幕叠加层显示当前触摸数据	Lớp phủ hiện dữ liệu chạm hiện tại
+左上角像素调整距离超出范围，请调整机器位置后重试	Khoảng chỉnh điểm ảnh góc trên trái vượt giới hạn, hãy chỉnh vị trí máy rồi thử lại
+左下角像素调整距离超出范围，请调整机器位置后重试	Khoảng chỉnh điểm ảnh góc dưới trái vượt giới hạn, hãy chỉnh vị trí máy rồi thử lại
+左侧 - 电池电量：%1$s	Bên trái - pin: %1$s
+左投测试通过\n等级:%d\n旋转:%f	Kiểm tra chiếu trái đạt\nCấp: %d\nXoay: %f
+已停用	Đã tắt
+已切换“游戏-基础”模式	Đã chuyển sang chế độ “Trò chơi - Cơ bản”
+已删除的应用	Ứng dụng đã xóa
+已删除的应用和用户	Ứng dụng và người dùng đã xóa
+已匹配的群组	Nhóm đã khớp
+已启动搜索	Đã bắt đầu tìm kiếm
+已启用。点按即可切换。	Đã bật. Nhấn để chuyển.
+已存在测试数据\n是否重新开始测试	Đã có dữ liệu kiểm tra\nBắt đầu kiểm tra lại?
+已开启SMB服务	Đã bật dịch vụ SMB
+已开启游戏低延迟	Đã bật độ trễ thấp cho trò chơi
+已恢复	Đã khôi phục
+已拒绝连接，本次开机内将拒绝该设备连接	Đã từ chối kết nối, thiết bị này sẽ bị từ chối đến lần khởi động sau
+已插入电源，但是现在无法充电	Đã cắm nguồn nhưng hiện không sạc được
+已断开连接	Đã ngắt kết nối
+已注册	Đã đăng ký
+已自动连接（通过网络评分服务提供方）	Đã tự kết nối (qua nhà cung cấp đánh giá mạng)
+已被“%1$s”覆盖	Bị “%1$s” ghi đè
+已被管理员停用	Đã bị quản trị viên tắt
+已被管理员启用	Đã được quản trị viên bật
+已设置了新的备份密码	Đã đặt mật khẩu sao lưu mới
+已设置部分默认选项	Đã đặt một số mặc định
+已连接%1$s	Đã kết nối %1$s
+已连接…	Đã kết nối…
+已连接到 SAP	Đã kết nối SAP
+已连接到助听器	Đã kết nối máy trợ thính
+已连接到媒体音频	Đã kết nối âm thanh đa phương tiện
+已连接到手机音频	Đã kết nối âm thanh điện thoại
+已连接到文件传输服务器	Đã kết nối máy chủ truyền tệp
+已连接到输入设备	Đã kết nối thiết bị nhập
+已连接（无媒体信号）%1$s	Đã kết nối (không có âm thanh đa phương tiện) %1$s
+已连接（无媒体信号），电量为 %1$s %2$s	Đã kết nối (không có âm thanh đa phương tiện), pin %1$s %2$s
+已连接（无手机信号）%1$s	Đã kết nối (không có âm thanh điện thoại) %1$s
+已连接（无手机信号），电量为 %1$s %2$s	Đã kết nối (không có âm thanh điện thoại), pin %1$s %2$s
+已连接（无手机或媒体信号）%1$s	Đã kết nối (không có âm thanh điện thoại hoặc đa phương tiện) %1$s
+已连接（无手机或媒体信号），电量为 %1$s %2$s	Đã kết nối (không có âm thanh điện thoại hoặc đa phương tiện), pin %1$s %2$s
+已连接（无消息访问权限）%1$s	Đã kết nối (không có quyền truy cập tin nhắn) %1$s
+已连接，但无法访问互联网	Đã kết nối nhưng không có Internet
+已连接，电量为 %1$s %2$s	Đã kết nối, pin %1$s %2$s
+已通过%1$s自动连接	Đã tự kết nối qua %1$s
+已通过%1$s连接	Đã kết nối qua %1$s
+帮助和反馈	Trợ giúp và phản hồi
+常规	Chung
+应用在主线程上执行长时间操作时闪烁屏幕	Nháy màn hình khi ứng dụng làm việc lâu trên luồng chính
+应用待机状态： %s	Trạng thái chờ của ứng dụng: %s
+应用文件名 (关键字)	Tên tệp ứng dụng (từ khóa)
+开发者选项	Tùy chọn nhà phát triển
+开启WFD功能需要打开WIFI，确定打开?	Bật WFD cần bật Wi-Fi, bật ngay?
+开启“勿扰”模式	Bật “Không làm phiền”
+开始搜索文件	Bắt đầu tìm tệp
+开放网络	Mạng mở
+强制使用 GPU 进行 2D 绘图	Bắt buộc vẽ 2D bằng GPU
+强制使用从右到左的布局方向	Bắt buộc bố cục từ phải sang trái
+强制允许将应用写入外部存储设备	Bắt buộc cho phép ghi ứng dụng vào bộ nhớ ngoài
+强制启用 4x MSAA	Bắt buộc bật 4x MSAA
+强制将所有语言区域的屏幕布局方向改为从右到左	Bắt buộc mọi ngôn ngữ dùng bố cục từ phải sang trái
+强制将活动设为可调整大小	Bắt buộc hoạt động đổi cỡ được
+强制进行 GPU 渲染	Bắt buộc dựng hình bằng GPU
+当前不支持快进快退	Hiện không hỗ trợ tua
+当前为最新机器，没有开机向导，\n需要进行新的开机向导开发。	Đây là máy mới nhất, chưa có trình hướng dẫn khởi động,\ncần phát triển trình hướng dẫn mới.
+当前场景不支持此操作	Tình huống hiện tại không hỗ trợ thao tác này
+当前存储共享服务已关闭	Dịch vụ chia sẻ bộ nhớ đang tắt
+当前已是最新版本	Đã là phiên bản mới nhất
+当前文件系统为只读	Hệ thống tệp hiện chỉ đọc
+当前显示了 %1$s 项（已添加 %2$s 项）	Đang hiện %1$s mục (đã thêm %2$s mục)
+当前状态 ：	Trạng thái hiện tại:
+当前用户无访问权限	Người dùng hiện tại không có quyền truy cập
+当前网络：	Mạng hiện tại:
+当应用未经有效渠道发布通知时，在屏幕上显示警告	Hiện cảnh báo khi ứng dụng gửi thông báo không qua kênh hợp lệ
+当我们不再使用永久日志记录器进行监控时，我们需要清除保存在您设备上的日志记录器数据。	Khi không còn dùng trình ghi nhật ký vĩnh viễn, cần xóa dữ liệu nhật ký lưu trên thiết bị.
+影响安卓系统的手机、平板以及视频应用的同屏功能	Ảnh hưởng đến đồng bộ màn hình của điện thoại, máy bảng Android và ứng dụng video
+影响苹果设备的同屏功能	Ảnh hưởng đến đồng bộ màn hình của thiết bị Apple
+影视投屏、音乐投播、应用管理、手机遥控、本地资源推送，无屏电视与手机新玩法	Truyền phim, truyền nhạc, quản lý ứng dụng, điều khiển bằng điện thoại, đẩy tệp cục bộ: cách dùng mới giữa máy chiếu và điện thoại
+待机应用	Ứng dụng chờ
+很快	Rất nhanh
+很慢	Rất chậm
+必须登录	Bắt buộc đăng nhập
+快	Nhanh
+总共 %1$d个文件,%2$d个文件夹	Tổng %1$d tệp, %2$d thư mục
+您可能想打开的文件	Tệp có thể bạn muốn mở
+您将不会听到下一个%1$s 的闹钟响铃	Bạn sẽ không nghe báo thức lúc %1$s tới
+您将不会听到下一个%1$s 的闹钟响铃，除非您在该时间之前关闭这项功能	Bạn sẽ không nghe báo thức lúc %1$s tới, trừ khi tắt chức năng này trước giờ đó
+您必须连接到网络才能使用文字转语音功能输出这种语言。	Cần kết nối mạng để đọc văn bản bằng ngôn ngữ này.
+慢	Chậm
+成像设备	Thiết bị hình ảnh
+或者长按 “OK” 进行更多操作	Hoặc giữ “OK” để có thêm thao tác
+所有工作应用	Mọi ứng dụng công việc
+所有影片	Tất cả phim
+手动连接	Kết nối thủ công
+手机	Điện thoại
+手机可能即将关机	Điện thoại có thể sắp tắt
+手机可能即将关机 (%1$s)	Điện thoại có thể sắp tắt (%1$s)
+打开共享服务	Bật dịch vụ chia sẻ
+打开文件夹	Mở thư mục
+打开方式	Mở bằng
+打开防骚扰后，投屏需要在接收端允许后才能进行	Khi bật chống làm phiền, phải được cho phép trên máy nhận mới truyền được màn hình
+扫描完成	Đã quét xong
+扫描设备中...	Đang quét thiết bị...
+扫码连接微信也可以遥控哦!	Quét mã kết nối WeChat cũng điều khiển được!
+投屏服务已经停止	Dịch vụ truyền màn hình đã dừng
+投屏设置	Cài đặt truyền màn hình
+投影仪倒挂于画面前方天花板上时使用，调节画面翻转\n∗ 吊装下暂不支持实时画面校正、巨幕模式等功能，该适配将在后续OTA更新	Dùng khi máy chiếu treo ngược trên trần phía trước hình, sẽ lật hình\n∗ Khi treo, chưa hỗ trợ hiệu chỉnh hình trực tiếp, chế độ màn hình lớn; sẽ có trong bản OTA sau
+投影仪倒挂于画面前方天花板上时使用，调节画面翻转\n∗ 吊装下暂不支持实时画面校正等功能，该适配将在后续OTA更新	Dùng khi máy chiếu treo ngược trên trần phía trước hình, sẽ lật hình\n∗ Khi treo, chưa hỗ trợ hiệu chỉnh hình trực tiếp; sẽ có trong bản OTA sau
+拒绝连接	Từ chối kết nối
+拿出手机扫一扫， 手机连接无屏电视体验更多功能	Dùng điện thoại quét mã, kết nối với máy chiếu để dùng thêm nhiều chức năng
+持续时间	Thời lượng
+指定的网络名不可用	Tên mạng đã chỉ định không dùng được
+指定的路径无效	Đường dẫn đã chỉ định không hợp lệ
+指针位置	Vị trí con trỏ
+按名称排序	Sắp xếp theo tên
+按时间排序	Sắp xếp theo thời gian
+按流量计费	Đo lưu lượng
+捕获单个文件中的所有蓝牙 HCI 包（更改此设置之后切换蓝牙开关）	Ghi mọi gói HCI Bluetooth vào một tệp (bật/tắt Bluetooth sau khi đổi cài đặt này)
+接入点暂时满载	Điểm truy cập tạm thời quá tải
+接收通信消息出错:\n%s	Lỗi nhận tin liên lạc:\n%s
+提升 WLAN 日志记录级别（在 WLAN 选择器中显示每个 SSID 的 RSSI）	Tăng mức ghi nhật ký Wi-Fi (hiện RSSI của từng SSID trong bộ chọn Wi-Fi)
+握手失败:\n%s	Bắt tay thất bại:\n%s
+搜索DLNA服务	Tìm dịch vụ DLNA
+搜索图片文件	Tìm tệp ảnh
+搜索应用文件	Tìm tệp ứng dụng
+搜索文件	Tìm tệp
+搜索文件结束	Đã tìm tệp xong
+搜索文档文件	Tìm tệp tài liệu
+搜索视频文件	Tìm tệp video
+搜索设备	Tìm thiết bị
+搜索音频文件	Tìm tệp âm thanh
+撤消 USB 调试授权	Thu hồi quyền gỡ lỗi USB
+播放失败，请重试！	Phát thất bại, hãy thử lại!
+播放文件ID异常	ID tệp phát bất thường
+播放简短的语音合成示例	Phát mẫu giọng tổng hợp ngắn
+播放类型异常	Kiểu phát bất thường
+播放记录已清除	Đã xóa lịch sử phát
+播放错误，请安装极米电台	Lỗi phát, hãy cài Đài XGIMI
+支持Samba/DLNA	Hỗ trợ Samba/DLNA
+支持Samba/DLNA/NFS	Hỗ trợ Samba/DLNA/NFS
+收听示例	Nghe thử
+文件:	Tệp:
+文件传输	Truyền tệp
+文件信息为空	Thông tin tệp trống
+文件删除成功	Đã xóa tệp
+文件名 (关键字)	Tên tệp (từ khóa)
+文件名:	Tên tệp:
+文件名不能为空	Tên tệp không được để trống
+文件名称	Tên tệp
+文件名超过最大限制	Tên tệp quá dài
+文件复制完成前请勿退出应用	Không thoát ứng dụng trước khi sao chép xong
+文件大小	Kích thước tệp
+文件大小:	Kích thước tệp:
+文件夹	Thư mục
+文件夹不能播放	Không phát được thư mục
+文件夹初始化失败	Khởi tạo thư mục thất bại
+文件已加密	Tệp đã mã hóa
+文件已存在	Tệp đã tồn tại
+文件已被其他进程打开	Tệp đang được tiến trình khác mở
+文件操作	Thao tác tệp
+文件显示	Hiện tệp
+文件类型	Loại tệp
+文件粘贴出错	Lỗi dán tệp
+文件路径	Đường dẫn tệp
+文件隐藏	Ẩn tệp
+文字转换成语音后的播放速度	Tốc độ đọc văn bản
+文字转语音 (TTS) 输出	Đầu ra chuyển văn bản thành giọng nói (TTS)
+文字转语音设置	Cài đặt chuyển văn bản thành giọng nói
+文本	Văn bản
+文档	Tài liệu
+文档文件名 (关键字)	Tên tệp tài liệu (từ khóa)
+断开	Ngắt kết nối
+断开设备	Ngắt thiết bị
+断开连接？	Ngắt kết nối?
+新密码和确认密码不一致	Mật khẩu mới và xác nhận không khớp
+新建文件	Tạo tệp mới
+无屏助手手机端版本过低，请升级后重试	Ứng dụng Trợ lý trên điện thoại quá cũ, hãy nâng cấp rồi thử lại
+无法与“%1$s”进行通信。	Không liên lạc được với “%1$s”.
+无法与“%1$s”进行配对。	Không ghép nối được với “%1$s”.
+无法初始化设备名称。	Không khởi tạo được tên thiết bị.
+无法打开 %1$s 的设置	Không mở được cài đặt của %1$s
+无法打开该文件	Không mở được tệp này
+无法扫描网络	Không quét được mạng
+无法自动连接	Không tự kết nối được
+无法获取	Không lấy được
+无法访问互联网	Không truy cập được Internet
+无法连接	Không kết nối được
+无法连接。	Không kết nối được.
+无法连接到“%1$s”	Không kết nối được với “%1$s”
+无法连接服务器，请检查你的网络	Không kết nối được máy chủ, hãy kiểm tra mạng
+无法重命名设备。	Không đổi tên được thiết bị.
+无线显示认证	Chứng nhận hiển thị không dây
+无线网络：	Mạng không dây:
+日志记录器缓冲区大小	Kích thước bộ đệm nhật ký
+时间：%1$s	Thời gian: %1$s
+是否允许 USB 调试？	Cho phép gỡ lỗi USB?
+是否针对您之前授权的所有计算机撤消 USB 调试的访问权限？	Thu hồi quyền gỡ lỗi USB của mọi máy tính đã cho phép trước đây?
+显示 GPU 视图更新	Hiện cập nhật khung nhìn GPU
+显示剪辑边界、边距等。	Hiện biên cắt, lề, v.v.
+显示后台 ANR	Hiện ANR nền
+显示图片失败	Không hiện được ảnh
+显示布局边界	Hiện biên bố cục
+显示无线显示认证选项	Hiện tùy chọn chứng nhận hiển thị không dây
+显示没有名称的蓝牙设备	Hiện thiết bị Bluetooth không có tên
+显示点按操作反馈	Hiện phản hồi khi nhấn
+显示点按操作的视觉反馈	Hiện phản hồi hình ảnh khi nhấn
+显示硬件层更新	Hiện cập nhật lớp phần cứng
+显示通知渠道警告	Hiện cảnh báo kênh thông báo
+显示面 (surface) 更新	Hiện cập nhật bề mặt (surface)
+暂不支持下载该应用	Chưa hỗ trợ tải ứng dụng này
+暂时未绑定	Chưa liên kết
+最大	Lớn nhất
+最近添加	Thêm gần đây
+有效的输入法	Phương thức nhập hợp lệ
+有线网络：	Mạng có dây:
+未发现指定文件	Không thấy tệp đã chỉ định
+未启用。点按即可切换。	Chưa bật. Nhấn để chuyển.
+未在充电	Không sạc
+未搜索到可连接设备	Không tìm thấy thiết bị kết nối được
+未收到设备回复	Thiết bị không phản hồi
+未检测到升级文件	Không thấy tệp nâng cấp
+未注册	Chưa đăng ký
+未设置任何调试应用	Chưa đặt ứng dụng gỡ lỗi
+未连入WIFI网络	Chưa kết nối Wi-Fi
+未连接到文件传输服务器	Chưa kết nối máy chủ truyền tệp
+未选择语言	Chưa chọn ngôn ngữ
+本地图片	Ảnh cục bộ
+本地终端	Dòng lệnh cục bộ
+来自： %1$s \n要与此设备配对吗？	Từ: %1$s \nGhép nối với thiết bị này?
+极米助手	Trợ lý XGIMI
+极米音乐遥控器	Điều khiển nhạc XGIMI
+极速模式延迟更低，但不支持“画面校正”。	Chế độ siêu tốc có độ trễ thấp hơn nhưng không hỗ trợ “Hiệu chỉnh hình”.
+查看和控制当前正在运行的服务	Xem và điều khiển các dịch vụ đang chạy
+根据您的使用情况，估计大约还能用到%1$s	Theo cách bạn dùng, ước tính dùng được đến %1$s
+根据您的使用情况，估计大约还能用到%1$s（目前电量为 %2$s）	Theo cách bạn dùng, ước tính dùng được đến %1$s (pin hiện %2$s)
+根据您的使用情况，大约还可使用 %1$s	Theo cách bạn dùng, còn dùng được khoảng %1$s
+根据您的使用情况，大约还可使用 %1$s (%2$s)	Theo cách bạn dùng, còn dùng được khoảng %1$s (%2$s)
+格式化磁盘设备	Định dạng ổ đĩa
+桌面备份密码	Mật khẩu sao lưu máy tính
+桌面完整备份当前未设置密码保护	Sao lưu đầy đủ trên máy tính chưa có mật khẩu bảo vệ
+检测到当前设备温度异常，即将自动关机\n请联系客服 400-002-8960 进行解决	Nhiệt độ thiết bị bất thường, máy sắp tự tắt\nHãy gọi tổng đài 400-002-8960 để được hỗ trợ
+检测到您已插入USB设备	Đã phát hiện thiết bị USB
+检测到新信号接入，是否切入？	Phát hiện tín hiệu mới, chuyển sang?
+检测到新版本, 是否更新?	Có phiên bản mới, cập nhật?
+模拟位置信息应用：%1$s	Ứng dụng vị trí mô phỏng: %1$s
+模拟辅助显示设备	Mô phỏng màn hình phụ
+模拟颜色空间	Mô phỏng không gian màu
+正在刷新...	Đang làm mới...
+正在升级。。。	Đang nâng cấp...
+正在复制	Đang sao chép
+正在安装…	Đang cài đặt…
+正在开启热点模式	Đang bật điểm phát
+正在恢复网络	Đang khôi phục mạng
+正在扫描设备	Đang quét thiết bị
+正在搜索…	Đang tìm…
+正在断开连接...	Đang ngắt kết nối...
+正在格式化	Đang định dạng
+正在检查…	Đang kiểm tra…
+正在流式传输：%1$s	Đang truyền phát: %1$s
+正在粘贴	Đang dán
+正在设置壁纸	Đang đặt hình nền
+正在转换为文件加密	Đang chuyển sang mã hóa tệp
+正在运行的服务	Dịch vụ đang chạy
+正在连接中...	Đang kết nối...
+正在连接投影仪…	Đang kết nối máy chiếu…
+正在配对...	Đang ghép nối...
+正在配对右侧助听器…	Đang ghép nối máy trợ thính bên phải…
+正在配对左侧助听器…	Đang ghép nối máy trợ thính bên trái…
+正投下延迟更低，按 @ 了解	Chiếu thẳng có độ trễ thấp hơn, nhấn @ để tìm hiểu
+此文件不支持打开	Không hỗ trợ mở tệp này
+此用户无权修改VPN设置	Người dùng này không có quyền đổi cài đặt VPN
+此用户无权修改接入点名称设置	Người dùng này không có quyền đổi cài đặt tên điểm truy cập
+此用户无权修改网络共享设置	Người dùng này không có quyền đổi cài đặt chia sẻ mạng
+此用户无法使用开发者选项	Người dùng này không dùng được tùy chọn nhà phát triển
+此语音合成引擎能够收集语音中出现的所有信息，包括密码和信用卡号码之类的个人数据。此功能由 %s 引擎提供。是否启用此语音合成引擎？	Công cụ tổng hợp giọng này có thể thu thập mọi nội dung được đọc, kể cả dữ liệu cá nhân như mật khẩu và số thẻ tín dụng. Chức năng do công cụ %s cung cấp. Bật công cụ này?
+此输入法可能会收集您输入的所有内容，包括密码和信用卡号等个人数据。它来自“%1$s”应用。要使用此输入法吗？	Phương thức nhập này có thể thu thập mọi nội dung bạn gõ, kể cả dữ liệu cá nhân như mật khẩu và số thẻ tín dụng. Nó đến từ ứng dụng “%1$s”. Dùng phương thức nhập này?
+此选项已失效，请重试。	Tùy chọn này đã hết hiệu lực, hãy thử lại.
+每次都询问	Luôn hỏi
+没有写权限	Không có quyền ghi
+没有发现文件夹	Không thấy thư mục
+没有选中任何文件	Chưa chọn tệp nào
+没有默认操作	Không có thao tác mặc định
+注意：重新启动后，您必须将手机解锁才能运行此应用	Lưu ý: sau khi khởi động lại, phải mở khóa thiết bị thì ứng dụng này mới chạy
+测试通过\n等级:%d\n最大等级:%d\n最大旋转:%f\n	Kiểm tra đạt\nCấp: %d\nCấp tối đa: %d\nXoay tối đa: %f\n
+测试通过\n等级:%s	Kiểm tra đạt\nCấp: %s
+添加局域网设备	Thêm thiết bị mạng nội bộ
+添加设备	Thêm thiết bị
+清空播放历史记录	Xóa sạch lịch sử phát
+清除并转换…	Xóa và chuyển…
+清除所有观看记录?	Xóa toàn bộ lịch sử xem?
+清除观看记录	Xóa lịch sử xem
+源端设备	Thiết bị nguồn
+演示DEMO	Bản trình diễn
+点位结果传送失败:\n%s	Gửi kết quả điểm thất bại:\n%s
+点击遥控器菜单键，唤出更多功能	Nhấn phím Menu trên điều khiển để có thêm chức năng
+点按即可更改或移除用于保护桌面完整备份的密码	Nhấn để đổi hoặc gỡ mật khẩu bảo vệ sao lưu đầy đủ trên máy tính
+热点已开启	Điểm phát đã bật
+热点模式	Chế độ điểm phát
+版本号：	Số phiên bản:
+用于助听器	Dùng cho máy trợ thính
+用于媒体音频	Dùng cho âm thanh đa phương tiện
+用于存取 SIM 卡	Dùng để truy cập SIM
+用于手机音频	Dùng cho âm thanh điện thoại
+用于文件传输	Dùng để truyền tệp
+用于访问互联网	Dùng để truy cập Internet
+用于输入	Dùng để nhập
+用户不存在	Người dùng không tồn tại
+用户不被允许登录	Người dùng không được phép đăng nhập
+用户停止进程	Người dùng đã dừng tiến trình
+用户名	Tên người dùng
+用户名或密码错误	Sai tên người dùng hoặc mật khẩu
+用户离开后即销毁每个活动	Hủy mọi hoạt động ngay khi rời đi
+用户：%1$s	Người dùng: %1$s
+由“%1$s”保存	Do “%1$s” lưu
+由管理员控制	Do quản trị viên kiểm soát
+电池电量：%1$s	Pin: %1$s
+电量充足	Pin đầy đủ
+电量剩余使用时间不到 %1$s (%2$s)	Pin còn dùng được chưa đến %1$s (%2$s)
+电量剩余使用时间超过 %1$s	Pin còn dùng được hơn %1$s
+电量剩余使用时间超过 %1$s (%2$s)	Pin còn dùng được hơn %1$s (%2$s)
+画面校正效果会消失且暂时无法自动校正\n请正投画面使用	Hiệu chỉnh hình sẽ mất và tạm thời không tự hiệu chỉnh được\nHãy chiếu thẳng
+登录中...	Đang đăng nhập...
+登录信息为空	Thông tin đăng nhập trống
+登录信息校验通过	Đã xác minh thông tin đăng nhập
+登录失败	Đăng nhập thất bại
+登录密码错误	Sai mật khẩu đăng nhập
+登录被拒绝	Đăng nhập bị từ chối
+登录超时	Đăng nhập quá thời gian
+百度网盘	Baidu Netdisk
+监控	Giám sát
+目前电量为 %2$s，估计大约还能用到%1$s	Pin hiện %2$s, ước tính dùng được đến %1$s
+目录模式	Dạng thư mục
+短信	Tin nhắn
+硬件加速渲染	Dựng hình tăng tốc phần cứng
+确定删除选中的%d个文件 ?	Xóa %d tệp đã chọn?
+确定断开设备？	Ngắt thiết bị?
+确定要退出当前信号源	Thoát nguồn tín hiệu hiện tại?
+确认使用上次的“游戏-极速”模式？	Dùng lại chế độ “Trò chơi - Siêu tốc” lần trước?
+私人 DNS	DNS riêng
+私人 DNS 提供商主机名	Tên máy chủ nhà cung cấp DNS riêng
+移动存储	Bộ nhớ di động
+窗口中的面 (surface) 更新时全部闪烁	Nháy toàn bộ bề mặt cửa sổ khi cập nhật
+窗口动画缩放	Tỷ lệ hiệu ứng cửa sổ
+等待调试程序	Chờ trình gỡ lỗi
+等待连接	Chờ kết nối
+等待连接…	Chờ kết nối…
+粘贴	Dán
+粘贴文件	Dán tệp
+粘贴至:	Dán vào:
+系统将显示没有名称（只有 MAC 地址）的蓝牙设备	Hệ thống sẽ hiện thiết bị Bluetooth không có tên (chỉ có địa chỉ MAC)
+红色弱视（红绿不分）	Mù màu đỏ (đỏ-lục)
+经由其他设备连接到互联网	Kết nối Internet qua thiết bị khác
+绘图	Vẽ
+绿色弱视（红绿不分）	Mù màu lục (đỏ-lục)
+网上邻居登录成功	Đã đăng nhập mạng nội bộ
+网络共享	Chia sẻ mạng
+网络共享与便携式热点	Chia sẻ mạng và điểm phát di động
+网络共享硬件加速	Tăng tốc phần cứng chia sẻ mạng
+网络断开，请检查网络	Mất mạng, hãy kiểm tra mạng
+网络质量较差，因此未连接	Chất lượng mạng kém nên không kết nối
+耳麦	Tai nghe có mic
+自定义 (%d)	Tùy chỉnh (%d)
+良好	Tốt
+若画面自动校正效果未达到预期，\n可尝试通过【校正设置-梯形校正校准】提升校正效果。	Nếu tự hiệu chỉnh hình chưa như ý,\ncó thể thử 【Cài đặt hiệu chỉnh - Hiệu chuẩn hình thang】 để cải thiện.
+苹果手机投屏	Truyền màn hình từ iPhone
+苹果电脑投屏	Truyền màn hình từ máy Mac
+苹果系列产品默认投屏方式，支持iOS4.2以上的iPhone、iPad、Mac OS X以上的Mac产品 \n\n请确保iPhone/iPad设备与投屏设备在同一网络下	Cách truyền mặc định của Apple, hỗ trợ iPhone, iPad iOS 4.2 trở lên và Mac OS X trở lên \n\nHãy đảm bảo iPhone/iPad và máy nhận cùng một mạng
+菜单	Menu
+蓝牙 AVRCP 版本	Phiên bản AVRCP Bluetooth
+蓝牙网络共享	Chia sẻ mạng qua Bluetooth
+蓝牙音频 LDAC 编解码器：播放质量	Bộ mã hóa LDAC Bluetooth: chất lượng phát
+蓝牙音频声道模式	Chế độ kênh âm thanh Bluetooth
+蓝牙音频每样本位数	Số bit mỗi mẫu âm thanh Bluetooth
+蓝牙音频编解码器	Bộ mã hóa âm thanh Bluetooth
+蓝牙音频采样率	Tốc độ lấy mẫu âm thanh Bluetooth
+蓝色弱视（蓝黄不分）	Mù màu lam (lam-vàng)
+要允许 OEM 解锁吗？	Cho phép mở khóa OEM?
+要取消连接%1$s的邀请吗？	Hủy lời mời kết nối %1$s?
+要清除永久存储的日志记录器数据吗？	Xóa dữ liệu nhật ký lưu vĩnh viễn?
+观看记录	Lịch sử xem
+视频文件名 (关键字)	Tên tệp video (từ khóa)
+解压到:	Giải nén vào:
+解压失败	Giải nén thất bại
+解压成功	Đã giải nén
+解压文件到当前目录	Giải nén vào thư mục hiện tại
+触发蓝牙音频 LDAC\n编解码器选择：播放质量	Kích hoạt chọn bộ mã hóa\nLDAC Bluetooth: chất lượng phát
+触发蓝牙音频编解码器\n选择	Kích hoạt chọn bộ mã hóa\nâm thanh Bluetooth
+触发蓝牙音频编解码器\n选择：声道模式	Kích hoạt chọn bộ mã hóa\nâm thanh Bluetooth: chế độ kênh
+触发蓝牙音频编解码器\n选择：每样本位数	Kích hoạt chọn bộ mã hóa\nâm thanh Bluetooth: số bit mỗi mẫu
+触发蓝牙音频编解码器\n选择：采样率	Kích hoạt chọn bộ mã hóa\nâm thanh Bluetooth: tốc độ lấy mẫu
+警告：如果开启此设置，此设备上的设备保护功能将无法使用。	Cảnh báo: nếu bật cài đặt này, chức năng bảo vệ thiết bị sẽ không hoạt động.
+计算机	Máy tính
+记住该连接	Nhớ kết nối này
+设备名: %s	Tên thiết bị: %s
+设备名称已设置成功	Đã đặt tên thiết bị
+设备地址:	Địa chỉ thiết bị:
+设备容量: %s	Dung lượng thiết bị: %s
+设备路径: %s	Đường dẫn thiết bị: %s
+设定后连接此设备需输入密码才能进行同屏	Khi đặt, phải nhập mật khẩu mới đồng bộ màn hình với thiết bị này được
+设置 HDCP 检查行为	Đặt cách kiểm tra HDCP
+设置 WebView 实现	Đặt triển khai WebView
+设置主屏幕	Đặt màn hình chính
+设置壁纸失败	Đặt hình nền thất bại
+设置壁纸成功	Đã đặt hình nền
+设置备份密码失败	Đặt mật khẩu sao lưu thất bại
+设置失败	Cài đặt thất bại
+设置应用开发选项	Đặt tùy chọn phát triển ứng dụng
+设置成功	Đã cài đặt
+设置文字转语音功能要使用的语言	Đặt ngôn ngữ cho chuyển văn bản thành giọng nói
+访客	Khách
+该机型不支持此功能	Máy này không hỗ trợ chức năng này
+该模式不支持“画面校正”，请将投影设备移动至正投状态，否则将导致画面歪斜	Chế độ này không hỗ trợ “Hiệu chỉnh hình”, hãy đặt máy chiếu thẳng, nếu không hình sẽ bị méo
+该目录下没有被隐藏的文件	Thư mục này không có tệp ẩn
+详细信息	Chi tiết
+语言	Ngôn ngữ
+语速	Tốc độ đọc
+请先复制或剪切文件	Hãy sao chép hoặc cắt tệp trước
+请插入SD卡	Hãy cắm thẻ SD
+请检查密码，然后重试	Hãy kiểm tra mật khẩu rồi thử lại
+请求连接您的设备	Yêu cầu kết nối thiết bị của bạn
+请确保iMac设备与投屏设备在同一网络下	Hãy đảm bảo iMac và máy nhận cùng một mạng
+请确保iPhone/iPad设备与投屏设备在同一网络下	Hãy đảm bảo iPhone/iPad và máy nhận cùng một mạng
+请确保手机或平板设备与投屏设备在同一网络下	Hãy đảm bảo điện thoại hoặc máy bảng và máy nhận cùng một mạng
+请确认画面矩形、且校准完成前不要移动设备，\n否则会影响自动对焦效果	Hãy xác nhận hình chữ nhật và không di chuyển máy trước khi hiệu chuẩn xong,\nnếu không sẽ ảnh hưởng tự động lấy nét
+请确认画面矩形、且校准完成前不要移动设备，\n否则会影响自动梯形校正效果	Hãy xác nhận hình chữ nhật và không di chuyển máy trước khi hiệu chuẩn xong,\nnếu không sẽ ảnh hưởng tự động hiệu chỉnh hình thang
+请输入共享设备IP地址	Hãy nhập địa chỉ IP thiết bị chia sẻ
+请输入关键字	Hãy nhập từ khóa
+请输入用户名	Hãy nhập tên người dùng
+请退出3D模式后再进行校正	Hãy thoát chế độ 3D rồi mới hiệu chỉnh
+请选择文件	Hãy chọn tệp
+读写权限	Quyền đọc ghi
+调试	Gỡ lỗi
+调试 GPU 过度绘制	Gỡ lỗi vẽ đè GPU
+调试应用会在执行前等待附加调试器	Ứng dụng gỡ lỗi chờ gắn trình gỡ lỗi trước khi chạy
+调试应用：%1$s	Ứng dụng gỡ lỗi: %1$s
+调试非矩形剪裁操作	Gỡ lỗi thao tác cắt không phải hình chữ nhật
+路径:	Đường dẫn:
+路径不合法	Đường dẫn không hợp lệ
+身份验证出现问题	Lỗi xác thực
+转换…	Chuyển…
+转换为文件加密	Chuyển sang mã hóa tệp
+较大	Lớn hơn
+输入	Nhập
+输入 DNS 提供商的主机名	Nhập tên máy chủ của nhà cung cấp DNS
+输入密码即可在演示模式下恢复出厂设置	Nhập mật khẩu để đặt lại máy ở chế độ trình diễn
+输入设备	Thiết bị nhập
+过渡动画缩放	Tỷ lệ hiệu ứng chuyển cảnh
+还剩 %1$s	Còn %1$s
+还可使用 %1$s	Còn dùng được %1$s
+还需 %1$s充满电	Còn %1$s nữa sẽ đầy pin
+这些设置仅适用于开发工作。一旦启用，会导致您的设备以及设备上的应用崩溃或出现异常。	Các cài đặt này chỉ dành cho phát triển. Khi bật có thể làm thiết bị và ứng dụng bị treo hoặc hoạt động bất thường.
+这是实验性功能，性能可能不稳定。	Đây là tính năng thử nghiệm, có thể không ổn định.
+这是语音合成示例	Đây là mẫu giọng tổng hợp
+进入《无线投屏》体验更多功能	Vào “Truyền màn hình không dây” để dùng thêm chức năng
+进行引擎设置	Cài đặt công cụ
+连接 USB 后启用调试模式	Bật chế độ gỡ lỗi khi cắm USB
+连接信息为空	Thông tin kết nối trống
+连接共享设备	Kết nối thiết bị chia sẻ
+连接到 WLAN 网络时随机选择 MAC 地址	Chọn ngẫu nhiên địa chỉ MAC khi kết nối Wi-Fi
+连接失败，请检查用户名和密码后重试	Kết nối thất bại, hãy kiểm tra tên người dùng và mật khẩu rồi thử lại
+连接密码	Mật khẩu kết nối
+连接已取消	Đã hủy kết nối
+连接已断开	Đã ngắt kết nối
+连接并添加	Kết nối và thêm
+连接数超限	Quá số kết nối cho phép
+连接时随机选择 MAC 网址	Chọn ngẫu nhiên địa chỉ MAC khi kết nối
+连接超时，请检查网络后重试	Kết nối quá thời gian, hãy kiểm tra mạng rồi thử lại
+连接超时，请通过无屏助手重试	Kết nối quá thời gian, hãy thử lại bằng ứng dụng Trợ lý
+退出后将无法使用会员购买和数据备份等功能\n确定退出吗?	Khi thoát sẽ không dùng được mua hội viên, sao lưu dữ liệu...\nThoát thật chứ?
+适中	Vừa phải
+选择USB配置	Chọn cấu hình USB
+选择个人资料	Chọn hồ sơ
+选择应用	Chọn ứng dụng
+选择文件类型	Chọn loại tệp
+选择模拟位置信息应用	Chọn ứng dụng vị trí mô phỏng
+选择每个日志缓冲区的日志记录器大小	Chọn kích thước trình ghi cho mỗi bộ đệm nhật ký
+选择私人 DNS 模式	Chọn chế độ DNS riêng
+选择蓝牙 AVRCP 版本	Chọn phiên bản AVRCP Bluetooth
+选择要在设备上永久存储的日志缓冲区	Chọn bộ đệm nhật ký lưu vĩnh viễn trên thiết bị
+选择要添加的设备	Chọn thiết bị cần thêm
+选择设备类型	Chọn loại thiết bị
+选择调试应用	Chọn ứng dụng gỡ lỗi
+通信控制初始化失败:\n%s	Khởi tạo điều khiển liên lạc thất bại:\n%s
+通话	Cuộc gọi
+通过 ADB/ADT 检查安装的应用是否存在有害行为。	Kiểm tra hành vi có hại của ứng dụng cài qua ADB/ADT.
+通过USB验证应用	Xác minh ứng dụng qua USB
+遥控器点击菜单键或长按OK键进行更多操作	Nhấn phím Menu hoặc giữ OK trên điều khiển để có thêm thao tác
+遥控器电量不足，请及时更换电池	Pin điều khiển yếu, hãy thay pin sớm
+配对之后，所配对的设备将可以在建立连接后访问您的通讯录和通话记录。	Sau khi ghép nối, thiết bị đã ghép có thể truy cập danh bạ và lịch sử cuộc gọi khi kết nối.
+重命名	Đổi tên
+重命名失败	Đổi tên thất bại
+重命名成功	Đã đổi tên
+重命名设备	Đổi tên thiết bị
+重新扫描	Quét lại
+重置语音音调	Đặt lại cao độ giọng
+错误报告快捷方式	Lối tắt báo cáo lỗi
+错误码：%1$s\n概述：%2$s\n详情：%3$s	Mã lỗi: %1$s\nTóm tắt: %2$s\nChi tiết: %3$s
+陀螺仪数据有误\n请重新在陀螺仪水平校正工位进行校正	Dữ liệu con quay sai\nHãy hiệu chỉnh lại ở trạm cân bằng con quay
+陀螺仪未标定\n请先在陀螺仪水平校正工位进行校正	Con quay chưa hiệu chuẩn\nHãy hiệu chỉnh trước ở trạm cân bằng con quay
+隐藏	Ẩn
+需要输入密码	Cần nhập mật khẩu
+非常抱歉，我们无法查询到此设备信息。\n请联系您购买设备的商家或者通过400-0028-960联系我们获取支持	Rất tiếc, không tra được thông tin thiết bị này.\nHãy liên hệ nơi bán thiết bị hoặc gọi 400-0028-960 để được hỗ trợ
+音频	Âm thanh
+音频文件名 (关键字)	Tên tệp âm thanh (từ khóa)
+音高	Cao độ
+首选引擎	Công cụ ưu tiên
+高级	Nâng cao
+默认语言状态	Trạng thái ngôn ngữ mặc định
+%1$d 个文件传输失败。	%1$d tệp truyền thất bại.
+%1$d 个文件传输成功，%2$s	%1$d tệp truyền thành công, %2$s
+%1$d 分钟（到%2$s）	%1$d phút (đến %2$s)
+%1$d 分钟（到%2$s)）	%1$d phút (đến %2$s)
+%1$d 小时（到%2$s）	%1$d giờ (đến %2$s)
+%1$d 小时（直到%2$s）	%1$d giờ (đến %2$s)
+%1$d 项	%1$d mục
+%d 分钟前	%d phút trước
+%d 分钟后	%d phút nữa
+%d 天	%d ngày
+%d 天前	%d ngày trước
+%d 天后	%d ngày nữa
+%d 小时	%d giờ
+%d 小时前	%d giờ trước
+%d 小时后	%d giờ nữa
+%d 年	%d năm
+%d 年前	%d năm trước
+%d 年后	%d năm nữa
+%d 秒后重试	Thử lại sau %d giây
+%s WLAN 通话功能	Gọi qua Wi-Fi của %s
+，使用中	, đang dùng
+，使用中（媒体）	, đang dùng (đa phương tiện)
+，使用中（手机）	, đang dùng (điện thoại)
+1 分钟	1 phút
+1 分钟（到%2$s）	1 phút (đến %2$s)
+1 小时	1 giờ
+1 小时（到%2$s）	1 giờ (đến %2$s)
+1 小时（直到%2$s）	1 giờ (đến %2$s)
+1 条结果	1 kết quả
+1 秒后重试	Thử lại sau 1 giây
+1080p（安全）	1080p (an toàn)
+120分钟	120 phút
+16 位/样本	16 bit/mẫu
+20分钟	20 phút
+24 位/样本	24 bit/mẫu
+2小时	2 giờ
+32 位/样本	32 bit/mẫu
+3小时	3 giờ
+40分钟	40 phút
+45分钟	45 phút
+480p（安全）	480p (an toàn)
+4K（安全）	4K (an toàn)
+4K（画质提升）	4K (nâng cao chất lượng hình)
+4K（画质提升、安全）	4K (nâng cao chất lượng hình, an toàn)
+50分钟	50 phút
+60分钟	60 phút
+720p（安全）	720p (an toàn)
+720p，1080p（双屏）	720p, 1080p (hai màn hình)
+90分钟	90 phút
+Airplay/DLNA设置	Cài đặt Airplay/DLNA
+AirPlay镜像	Phản chiếu AirPlay
+AVRCP 1.4（默认）	AVRCP 1.4 (mặc định)
+glGetError 上的调用堆栈	Ngăn xếp gọi trên glGetError
+MTP（媒体传输协议）	MTP (truyền đa phương tiện)
+PTP（图片传输协议）	PTP (truyền ảnh)
+Qualcomm® aptX™ HD 音频	Âm thanh Qualcomm® aptX™ HD
+Qualcomm® aptX™ 音频	Âm thanh Qualcomm® aptX™
+RNDIS（USB 以太网）	RNDIS (Ethernet USB)
+Systrace（图形）	Systrace (đồ họa)
+VPN和应用	VPN và ứng dụng
+一律不使用 HDCP 检查	Không bao giờ kiểm tra HDCP
+下载/打开极米 App，添加投影设备：	Tải/mở ứng dụng XGIMI, thêm máy chiếu:
+不允许后台进程	Không cho tiến trình nền
+不得超过1个进程	Tối đa 1 tiến trình
+不得超过2个进程	Tối đa 2 tiến trình
+不得超过3个进程	Tối đa 3 tiến trình
+不得超过4个进程	Tối đa 4 tiến trình
+不要赞美我，低调低调	Đừng khen tôi, khiêm tốn thôi
+不限制	Không giới hạn
+专辑封面	Bìa album
+中国雅虎	Yahoo Trung Quốc
+中文 (简体)	Tiếng Trung (giản thể)
+中文 (繁體)	Tiếng Trung (phồn thể)
+仅使用 HDCP 检查 DRM 内容	Chỉ kiểm tra HDCP với nội dung DRM
+仅检查 DRM 内容	Chỉ kiểm tra nội dung DRM
+仅限内核	Chỉ kernel
+仅限内核日志缓冲区	Chỉ bộ đệm nhật ký kernel
+以太网	Ethernet
+以绿色突出显示测试绘制命令	Tô xanh lá lệnh vẽ thử
+以蓝色填充非矩形剪裁区域	Tô xanh lam vùng cắt không phải hình chữ nhật
+伍	5
+伍 × 柒 = ？	5 × 7 = ?
+住宅	Nhà riêng
+住宅传真	Fax nhà riêng
+使用系统选择（默认）	Theo lựa chọn của hệ thống (mặc định)
+依次点击：遥控器 > 快捷工具及应用 > 投屏	Lần lượt chọn: Điều khiển > Công cụ nhanh và ứng dụng > Truyền màn hình
+依次点击：遥控器 > 快捷工具及应用 > 本地资源	Lần lượt chọn: Điều khiển > Công cụ nhanh và ứng dụng > Tệp cục bộ
+偏重连接质量	Ưu tiên chất lượng kết nối
+偏重连接质量 (330kbps/303kbps)	Ưu tiên chất lượng kết nối (330kbps/303kbps)
+偏重音频质量	Ưu tiên chất lượng âm thanh
+偏重音频质量 (990kbps/909kbps)	Ưu tiên chất lượng âm thanh (990kbps/909kbps)
+停用可选编解码器	Tắt bộ mã hóa tùy chọn
+偶尔你们也可以膜拜一下我	Thỉnh thoảng các bạn cũng có thể ngưỡng mộ tôi
+充电	Sạc
+全屏	Toàn màn hình
+全速	Tốc độ tối đa
+关光机	Tắt đèn chiếu
+关闭动画	Tắt hiệu ứng
+兼容多种安卓设备	Tương thích nhiều thiết bị Android
+兼顾音频和连接质量	Cân bằng âm thanh và kết nối
+兼顾音频和连接质量 (660kbps/606kbps)	Cân bằng âm thanh và kết nối (660kbps/606kbps)
+加油！勇于挑战，才能超越自我。	Cố lên! Dám thử thách mới vượt qua chính mình.
+动感频谱	Phổ âm động
+动画缩放 0.5x	Tỷ lệ hiệu ứng 0.5x
+动画缩放 1.5x	Tỷ lệ hiệu ứng 1.5x
+动画缩放 10x	Tỷ lệ hiệu ứng 10x
+动画缩放 1x	Tỷ lệ hiệu ứng 1x
+动画缩放 2x	Tỷ lệ hiệu ứng 2x
+动画缩放 5x	Tỷ lệ hiệu ứng 5x
+华为手机专属增强投屏功能	Chức năng truyền màn hình nâng cao riêng cho điện thoại Huawei
+单位	Cơ quan
+单位传真	Fax cơ quan
+叁	3
+叁 × 陆 = ？	3 × 6 = ?
+另外 %1$d 项	%1$d mục khác
+可用	Sẵn dùng
+向您的运营商注册 WLAN 通话时遇到问题：%1$s	Lỗi khi đăng ký gọi qua Wi-Fi với nhà mạng: %1$s
+听完这首歌，世界都有了色彩，评分%1$s的歌曲《%2$s》不容错过。	Nghe xong bài này, thế giới như có màu sắc: bài “%2$s” đạt điểm %1$s, đừng bỏ lỡ.
+启用可选编解码器	Bật bộ mã hóa tùy chọn
+在 adb shell dumpsys gfxinfo 中	Trong adb shell dumpsys gfxinfo
+在“隔空播放”显示器中选择投屏设备：	Trong màn hình “AirPlay”, chọn máy nhận:
+在iPhone弹窗中选择\n        “信任”	Trên hộp thoại iPhone, chọn\n“Tin cậy”
+在iPhone控制中心点击 “屏幕镜像 ”	Trong Trung tâm điều khiển iPhone, chọn “Phản chiếu màn hình”
+在乐播中选择投屏设备：	Trong Lebo, chọn máy nhận:
+在屏幕上显示为条形图	Hiện dạng biểu đồ cột trên màn hình
+在弹窗中选择投屏设备：	Trong hộp thoại, chọn máy nhận:
+在页面中选择投屏设备：	Trên trang, chọn máy nhận:
+坚持练习，坚持就是胜利！	Cứ luyện tập, kiên trì là thắng!
+增强的颜色	Màu tăng cường
+壹	1
+始终使用 HDCP 检查	Luôn kiểm tra HDCP
+安装即可找到 %1$s 台打印机	Cài đặt để tìm %1$s máy in
+寻呼机	Máy nhắn tin
+将手机Wi-Fi连接至网络：	Kết nối Wi-Fi điện thoại vào mạng:
+将电脑Wi-Fi连接至网络：	Kết nối Wi-Fi máy tính vào mạng:
+小朋友，今天想要看些什么呢	Bạn nhỏ ơi, hôm nay muốn xem gì nào
+小朋友，快来一起看动画学习吧	Bạn nhỏ ơi, cùng xem hoạt hình và học nhé
+小朋友，想好看什么了吗	Bạn nhỏ ơi, đã nghĩ ra muốn xem gì chưa
+小朋友，我要去上学了，你呢	Bạn nhỏ ơi, mình đi học đây, còn bạn thì sao
+小朋友，我要去休息了，你也该去休息了	Bạn nhỏ ơi, mình đi nghỉ đây, bạn cũng nên nghỉ nhé
+小朋友，我要去做作业了，你呢	Bạn nhỏ ơi, mình đi làm bài tập đây, còn bạn thì sao
+小朋友，我要去吃饭了，你呢	Bạn nhỏ ơi, mình đi ăn cơm đây, còn bạn thì sao
+小朋友，有没有想看的动画片呢	Bạn nhỏ ơi, có muốn xem phim hoạt hình nào không
+小朋友，见到你，我好高兴啊	Bạn nhỏ ơi, gặp bạn mình vui quá
+尽可能提供更佳音质（自适应比特率）	Âm thanh tốt nhất có thể (tốc độ bit thích ứng)
+已安装证书授权中心	Đã cài tổ chức cấp chứng chỉ
+已将 %1$d 个文件复制到剪贴板。	Đã sao chép %1$d tệp vào bảng nhớ tạm.
+已将以下文件转换成其他格式：%1$s	Đã chuyển các tệp sau sang định dạng khác: %1$s
+已连接 %1$d 个设备	Đã kết nối %1$d thiết bị
+已连接到 %1$s	Đã kết nối với %1$s
+已选择 %1$d 项	Đã chọn %1$d mục
+已选择%1$d项	Đã chọn %1$d mục
+已邀请	Đã mời
+弹窗中确认打开极米 App，并同意隐私政策等	Trong hộp thoại, xác nhận mở ứng dụng XGIMI và đồng ý chính sách riêng tư
+当投屏搜索不到设备时，可尝试重启投屏服务自动为你修复	Khi không tìm thấy thiết bị, hãy thử khởi động lại dịch vụ truyền màn hình để tự sửa
+彩色	Màu
+总是检查	Luôn kiểm tra
+总有一天，我也会是歌神	Một ngày nào đó tôi cũng sẽ là ca thần
+您还可尝试 %d 次。如果仍不正确，SIM 卡将被锁定。	Còn %d lần thử. Nếu vẫn sai, SIM sẽ bị khóa.
+我在酷狗唱唱中获得了%1$s，简直碉堡了！快来听听我的《%2$s》	Tôi đạt %1$s trên Kugou Changchang, tuyệt quá! Nghe bài “%2$s” của tôi nhé
+我真的不是原唱！	Tôi thật sự không phải ca sĩ gốc!
+所有日志缓冲区	Mọi bộ đệm nhật ký
+所有非无线电	Mọi loại trừ radio
+所有非无线电日志缓冲区	Mọi bộ đệm nhật ký trừ radio
+打开 Mac “系统偏好设置”，选择“显示器”	Mở “Tùy chọn hệ thống” trên Mac, chọn “Màn hình”
+打开安卓手机的设置 > 更多连接 > 无线投屏/投屏	Mở Cài đặt của điện thoại Android > Kết nối khác > Truyền màn hình không dây
+打开手机视频应用播放页面，点击投屏图标	Mở trang phát của ứng dụng video trên điện thoại, chọn biểu tượng truyền màn hình
+扫码下载安装极米 App	Quét mã để tải và cài ứng dụng XGIMI
+找到 %1$s 台打印机	Tìm thấy %1$s máy in
+拾壹 - 肆 = ？	11 - 4 = ?
+拾贰 - 肆 = ？	12 - 4 = ?
+拾陆 - 柒 = ？	16 - 7 = ?
+捌	8
+捌 × 叁 = ？	8 × 3 = ?
+捌 ÷ 贰 = ？	8 ÷ 2 = ?
+支持 Airplay 屏幕镜像投屏，实时同步电脑全部画面	Hỗ trợ phản chiếu AirPlay, đồng bộ toàn bộ màn hình máy tính theo thời gian thực
+支持 Airplay 投屏，实时同步手机全部画面	Hỗ trợ truyền AirPlay, đồng bộ toàn bộ màn hình điện thoại theo thời gian thực
+支持主流视频 App 投屏，不会实时同步手机画面	Hỗ trợ truyền từ các ứng dụng video phổ biến, không đồng bộ màn hình điện thoại
+支持大屏查看手机本地图片、视频等，不会实时同步手机画面	Xem ảnh, video trong điện thoại trên màn hình lớn, không đồng bộ màn hình điện thoại
+无法删除 %1$d 个文件	Không xóa được %1$d tệp
+无法删除以下文件：%1$s	Không xóa được các tệp sau: %1$s
+无法压缩 %1$d 个文件	Không nén được %1$d tệp
+无法压缩以下文件：%1$s	Không nén được các tệp sau: %1$s
+无法复制 %1$d 个文件	Không sao chép được %1$d tệp
+无法复制以下文件：%1$s	Không sao chép được các tệp sau: %1$s
+无法移动 %1$d 个文件	Không di chuyển được %1$d tệp
+无法移动以下文件：%1$s	Không di chuyển được các tệp sau: %1$s
+无法解压以下文件：%1$s	Không giải nén được các tệp sau: %1$s
+星期一	Thứ Hai
+星期三	Thứ Tư
+星期二	Thứ Ba
+星期五	Thứ Sáu
+星期六	Thứ Bảy
+星期四	Thứ Năm
+星期日	Chủ Nhật
+是谁让导师们纷纷转身？是谁让歌手们潸然泪下？来听听这首评分%1$s的《%2$s》就知道了	Ai khiến giám khảo quay ghế? Ai khiến ca sĩ rơi lệ? Nghe bài “%2$s” đạt điểm %1$s là biết
+显示过度绘制区域	Hiện vùng vẽ đè
+显示适合绿色弱视患者查看的区域	Hiện vùng phù hợp với người mù màu lục
+暂时关闭（网络状况不佳）	Tạm tắt (mạng kém)
+最快	Nhanh nhất
+有可用的 WLAN 网络	Có mạng Wi-Fi khả dụng
+有可用的开放 WLAN 网络	Có mạng Wi-Fi mở khả dụng
+极快	Cực nhanh
+极米 App 中点击“影视”并选择影片播放	Trong ứng dụng XGIMI, chọn “Phim” rồi chọn phim để phát
+极米服务为你提供投屏问题相关帮助	Dịch vụ XGIMI hỗ trợ các vấn đề truyền màn hình
+柒	7
+标准限制	Giới hạn chuẩn
+横向	Ngang
+正在下载 %d 个文件	Đang tải %d tệp
+正在下载 1 个文件	Đang tải 1 tệp
+正在从%1$s获取IP地址...	Đang lấy địa chỉ IP từ %1$s...
+正在删除 %1$d 项。	Đang xóa %1$d mục.
+正在压缩 %1$d 个文件。	Đang nén %1$d tệp.
+正在复制 %1$d 项。	Đang sao chép %1$d mục.
+正在扫描...	Đang quét...
+正在断开与 %1$s 的连接...	Đang ngắt kết nối với %1$s...
+正在移动 %1$d 项。	Đang di chuyển %1$d mục.
+正在等待下载 %d 个文件	Đang chờ tải %d tệp
+正在等待下载 1 个文件	Đang chờ tải 1 tệp
+正在获取IP地址...	Đang lấy địa chỉ IP...
+正在解压 %1$d 个文件。	Đang giải nén %1$d tệp.
+正在连接到 %1$s...	Đang kết nối với %1$s...
+正在通过 %1$s 进行身份验证...	Đang xác thực qua %1$s...
+正在验证身份…	Đang xác thực…
+正常	Bình thường
+此曲只应天上有	Khúc nhạc này chỉ có trên trời
+每个日志缓冲区 16M	16M mỗi bộ đệm nhật ký
+每个日志缓冲区 1M	1M mỗi bộ đệm nhật ký
+每个日志缓冲区 256K	256K mỗi bộ đệm nhật ký
+每个日志缓冲区 4M	4M mỗi bộ đệm nhật ký
+每个日志缓冲区 64K	64K mỗi bộ đệm nhật ký
+永不检查	Không bao giờ kiểm tra
+玖	9
+玖 × 伍 = ？	9 × 5 = ?
+用数据线连接iPhone与投影设备	Dùng cáp nối iPhone với máy chiếu
+用数据线连接安卓手机与投影设备	Dùng cáp nối điện thoại Android với máy chiếu
+电脑访问网址并下载安装乐播投屏电脑版	Trên máy tính, vào địa chỉ này để tải và cài Lebo cho máy tính
+画面质量	Chất lượng hình
+畅享极米 App 精选影视资源，不会实时同步手机画面	Xem kho phim chọn lọc của ứng dụng XGIMI, không đồng bộ màn hình điện thoại
+短边	Cạnh ngắn
+离歌神只差那么一丢丢了	Chỉ còn một chút nữa là thành ca thần
+移动数据	Dữ liệu di động
+立体声	Âm thanh nổi
+第 %d 条结果（共 %d 条）	Kết quả %d (trên %d)
+简直如歌神一般的存在！	Đúng là ca thần!
+简直是百灵鸟一般的歌声	Giọng hát như chim sơn ca
+系统将在 %d 秒后对错误报告进行截屏。	Hệ thống sẽ chụp màn hình báo cáo lỗi sau %d giây.
+纵向	Dọc
+肆	4
+肆 × 玖 = ？	4 × 9 = ?
+肉眼所看到的自然颜色	Màu tự nhiên như mắt thường thấy
+艺术歌词	Lời bài hát nghệ thuật
+若iPhone存在密码，输入密码后开始同屏	Nếu iPhone có mật khẩu, nhập mật khẩu rồi bắt đầu đồng bộ
+要删除 %1$d 个文件吗？	Xóa %1$d tệp?
+要删除 %1$d 个文件夹及其中的内容吗？	Xóa %1$d thư mục và nội dung bên trong?
+要删除 %1$d 项吗？	Xóa %1$d mục?
+要通过 WLAN 打电话和发信息，请先让您的运营商开通此服务，然后再到“设置”中重新开启 WLAN 通话功能（错误代码：%1$s）。	Để gọi và nhắn tin qua Wi-Fi, hãy nhờ nhà mạng bật dịch vụ rồi bật lại gọi qua Wi-Fi trong “Cài đặt” (mã lỗi: %1$s).
+设备发现	Dò thiết bị
+请在 %d 秒后重试。	Hãy thử lại sau %d giây.
+请在 1 秒后重试。	Hãy thử lại sau 1 giây.
+贰	2
+超出范围	Ngoài phạm vi
+超快	Siêu nhanh
+较快	Khá nhanh
+过去 %d 天	%d ngày qua
+通用设置	Cài đặt chung
+通过乐播投屏实现电脑镜像，实时同步电脑全部画面	Phản chiếu máy tính bằng Lebo, đồng bộ toàn bộ màn hình theo thời gian thực
+通过数据线连接设备降低延迟，实时同步手机全部画面	Nối bằng cáp để giảm độ trễ, đồng bộ toàn bộ màn hình điện thoại theo thời gian thực
+通过极米 App 实现设备与手机互动，实时同步手机全部画面	Tương tác giữa máy và điện thoại bằng ứng dụng XGIMI, đồng bộ toàn bộ màn hình theo thời gian thực
+针对数字内容优化的颜色	Màu tối ưu cho nội dung số
+长边	Cạnh dài
+防骚扰	Chống làm phiền
+防骚扰管理	Quản lý chống làm phiền
+陆	6
+陆 × 贰 = ？	6 × 2 = ?
+零	0
+非常快	Rất nhanh
+音频来源	Nguồn âm thanh
+鲜亮（默认）	Sống động (mặc định)
+黑白	Đen trắng

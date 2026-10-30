@@ -329,6 +329,8 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         // The glow is one bitmap, so its alpha can be applied while drawing it. Otherwise every frame of
         // a fade renders it into a full-screen offscreen buffer first.
         if (android.os.Build.VERSION.SDK_INT >= 24) ambient.forceHasOverlappingRendering(false);
+        // A picture or video behind Home keeps its own colours: no glow in the focused app's colour over it.
+        if (cfg.hasWallpaper()) ambient.setVisibility(View.GONE);
         heroName = findViewById(R.id.heroName);
         // dock_title false: the name above the dock never shows; the glow still follows the dock.
         if (!cfg.dockTitle) heroName.setVisibility(View.GONE);

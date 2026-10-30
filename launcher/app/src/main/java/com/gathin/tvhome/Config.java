@@ -55,9 +55,10 @@ final class Config {
     static final String UI_STATS = "ui_show_stats";
     static final String UI_REDUCED_MOTION = "ui_reduced_motion";
     static final String UI_WALLPAPER_DIM = "ui_wallpaper_dim";
+    static final String UI_LUNAR = "ui_lunar_date";
     /** Appearance chosen on the TV; a theme push or "Follow theme" clears them like the other TV choices. */
     static final String[] UI_KEYS = {UI_GREETING, UI_BACKGROUND, UI_SKY, UI_ROWS_BELOW, UI_DOCK_TITLE, UI_STATS,
-            UI_REDUCED_MOTION, UI_WALLPAPER_DIM};
+            UI_REDUCED_MOTION, UI_WALLPAPER_DIM, UI_LUNAR};
 
     /**
      * Tiles that borrow another installed app's banner, icon and name while still opening their own app
@@ -235,6 +236,12 @@ final class Config {
     final int wallpaperRotationMinutes;
     /** Theme images named morning/afternoon/evening/night follow the hour (config.json wallpaper_by_time). */
     final boolean wallpaperByTime;
+
+    /** Whether a picture or video shows behind Home (as WallpaperPlayer decides). */
+    boolean hasWallpaper() {
+        return wallpaperEnabled && (wallpaperVideo != null || !wallpapers.isEmpty());
+    }
+
     /** Switch ADB back on at boot and on Home (config.xml keep_adb_on, AdbKeeper). */
     final boolean keepAdbOn;
     final int wallpaperDim;
@@ -409,6 +416,11 @@ final class Config {
         dockTitle = choices.getBoolean(UI_DOCK_TITLE, dockTitle);
         showStats = choices.getBoolean(UI_STATS, showStats);
         reducedMotion = choices.getBoolean(UI_REDUCED_MOTION, reducedMotion);
+        // Switched on from the TV: above the top buttons, spelled out (lunar_top_right)
+        if (choices.contains(UI_LUNAR)) {
+            lunar = choices.getBoolean(UI_LUNAR, lunar);
+            if (lunar) lunarTopRight = true;
+        }
         String tvWeather = choices.getString(TV_WEATHER_KEY, "");
         boolean weatherByLocation = false;
         if ("off".equals(tvWeather)) {

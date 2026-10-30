@@ -14,14 +14,33 @@ foreach ($f in Get-ChildItem $PSScriptRoot -Filter 'dohko-apps-dich*.tsv' | Sort
         if ($c.Count -ge 2 -and $c[1].Trim()) { if (-not $dict.ContainsKey($c[0])) { $dict[$c[0]] = $c[1].TrimEnd("`r") } }
     }
 }
+# Cac bang dich chung, tim theo chu goc da gop khoang trang: cung mot cau o ung dung khac da duoc dich
+$shared = @{}
+foreach ($f in 'dich.tsv', 'dich-cau-dai.tsv', 'rs10-apps-dich.tsv', 'ironman-apps-dich.tsv', 'h6-full-dich.tsv', 'h6-full-dich2.tsv', 'dohko-full-dich.tsv') {
+    foreach ($l in [IO.File]::ReadAllLines((Join-Path $PSScriptRoot $f), [Text.Encoding]::UTF8)) {
+        if (-not $l -or $l.StartsWith('#')) { continue }
+        $c = $l.Split("`t")
+        if ($c.Count -ge 2 -and $c[1].Trim()) { $shared[($c[0] -replace '\s+', ' ').Trim()] = $c[1].TrimEnd("`r") }
+    }
+}
+# %s, %1$d...: khac voi ban goc thi ung dung co the hong khi chay, nen giu chu goc
+function FormatTokens([string]$s) {
+    (([regex]::Matches($s, '%(\d+\$)?[-#+0(]*\d*(\.\d+)?[a-zA-Z%]') | ForEach-Object { $_.Value }) | Sort-Object) -join ' '
+}
 $byPkg = [ordered]@{}
-foreach ($l in [IO.File]::ReadAllLines((Join-Path $PSScriptRoot 'dohko-apps-chuoi.tsv'), [Text.Encoding]::UTF8)) {
+$seen = @{}
+$lines = foreach ($t in 'dohko-apps-chuoi.tsv', 'dohko-full-chuoi.tsv') { [IO.File]::ReadAllLines((Join-Path $PSScriptRoot $t), [Text.Encoding]::UTF8) }
+foreach ($l in $lines) {
     if (-not $l -or $l.StartsWith('#')) { continue }
     $c = $l.Split("`t")
     # Mang (@ten) va chuoi JSON noi bo (feature) khong doi duoc bang overlay fabricated
-    if ($c.Count -lt 3 -or $c[1].StartsWith('@') -or $c[1] -eq 'feature' -or -not $dict.ContainsKey($c[2])) { continue }
+    if ($c.Count -lt 3 -or $c[1].StartsWith('@') -or $c[1] -eq 'feature') { continue }
+    if ($seen["$($c[0])|$($c[1])"]) { continue }
+    $text = if ($dict.ContainsKey($c[2])) { $dict[$c[2]] } else { $shared[($c[2] -replace '\s+', ' ').Trim()] }
+    if (-not $text -or (FormatTokens $c[2]) -ne (FormatTokens $text)) { continue }
+    $seen["$($c[0])|$($c[1])"] = $true
     # aapt in \" va \n dang thoat: tra ve dau ngoac kep that, \n thanh xuong dong
-    $vi = [Security.SecurityElement]::Escape($dict[$c[2]].Replace('\"', '"')).Replace('\n', '&#10;')
+    $vi = [Security.SecurityElement]::Escape($text.Replace('\"', '"')).Replace('\n', '&#10;')
     if (-not $byPkg.Contains($c[0])) { $byPkg[$c[0]] = New-Object System.Collections.Generic.List[string] }
     $byPkg[$c[0]].Add("    <item target=`"string/$($c[1])`" value=`"$vi`" />")
 }

@@ -96,6 +96,7 @@
     <string name="ui_rows">Hàng dưới dock: %1$s</string>
     <string name="ui_dock_title">Tên app lớn trên dock: %1$s</string>
     <string name="ui_stats">CPU / RAM dưới đồng hồ: %1$s</string>
+    <string name="ui_lunar">Ngày âm lịch: %1$s</string>
     <string name="ui_reduced">Giảm chuyển động: %1$s</string>
     <string name="color_black">Đen</string>
     <string name="color_navy">Xanh đêm</string>

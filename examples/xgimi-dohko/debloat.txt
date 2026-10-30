@@ -95,6 +95,40 @@ com.xgimi.duertts                      # 极米语音 assistant + mic key monito
 # RS 20 Ultra Max (2026-10-23): its firmware XGIMI_HORSEPOPULAR_XR09A.bin (V1.6.52) is encrypted like the XR07A
 # files, so nothing can be read from it. Same platform name (HORSEPOPULAR), so the owner uses the XGIMI DOHKO
 # USB package (it accepts any ro.product.device horse_popular) for it as is. Not yet run on a real Ultra Max.
+# 2026-10-30: dist\USB-CapNhat-RS20 (updater\build-usb-rs20.ps1) adds the quick panel to the updater:
+# UpdaterActivity.quickPanelVi applies dohko-quick-panel-vi.sql itself over adb root (the TV has no sqlite3), backing up
+# to /sdcard/misckey_config.db.bak for Restore. Run on .12 (2026-10-30), whose DB already had the triggers from 10-22, so
+# the first-run path on a stock DB is still untested. .12's .bak was taken after that, so it holds Vietnamese names.
+# Opening the menus without keys (2026-10-30, .12): Settings `am startservice -a com.xgimi.settings.SETTINGS -p
+# com.android.newsettings`; quick panel `-a com.xgimi.misckey.MISCKEY -p com.android.newsettings`; power menu `-a
+# com.xgimi.action.shutdown -p com.xgimi.shutdown --es action com.xgimi.action.WINODWSYSTEM`, which POWERS OFF after a 12 s
+# countdown unless closed with `--es action com.xgimi.action.shutmenu.mutex`. `input keyevent --longpress KEYCODE_POWER`
+# puts the unit to sleep. All three menus showed Vietnamese. Left in Chinese, dex literals no overlay reaches: " 设置"
+# after HDMI 1/2 under Nguon vao, "自动" under Giao dien. "HDMI 1(TV ph?n..." shows a "?": source not found.
+# Voice (2026-10-30): the launcher's voice search needs a recogniser; com.google.android.tts on .12 is a user install
+# (not firmware, no GMS on this unit). The xgimi flavor carries it as assets/speech.apk (not in Git, pulled from .12);
+# UpdaterActivity.speechEngine installs it if missing. On .12 the listening prompt opens; recognition itself and the
+# install path (.12 already has it) are untested. com.vxm.voiceassist.googletv (VietMITV) is third party, not bundled.
+# boot.sh turns com.xgimi.duertts off again and takes com.xgimi.duertts/.MonitorService out of the accessibility list
+# (2026-10-30, checked on .12 by running boot.sh by hand with both turned on, no reboot; a made-up service name is
+# dropped from that list by Android at once). Restore re-enables it and removes boot.sh. Reboot on .12 the same day:
+# launcher re-ran boot.sh (33 overlays on by 56 s, Home and lookups fine), but `pm enable` right before `adb reboot`
+# did not last (already off at 41 s, before boot.sh ended), so that reboot did not prove the auto-off: wait some
+# seconds after pm enable next time. Window focus stayed null for 3-4 min after boot, then came back. Load 40+ means
+# nothing here: it is about 42 MTK kernel tasks sleeping in state D, even when idle.
+# Black screen after boot (owner's report, 2026-10-30): boot.sh had come to force-stop all 33 targets at every boot,
+# once its check became "[x]" (before, a listed overlay was skipped, so it rarely stopped anything). dropbox has
+# com.xgimi.xrmservice crashes (starts disabled com.xgimi.smartconnect's NetActivity) in only the two boots since, back
+# to 10-27. boot.sh now restarts only newsettings and shutdown. Reboot with the fix (18:04): launcher picture and focus by
+# 60 s, focus never null, 33 overlays by 68 s, no crash. Until then focus is xhplayer's InputActivity (power-on source
+# HDMI 1), which screencap shows black, so a short black screen at boot is still there.
+# Auto-off NOT proven: the one reboot with com.xgimi.duertts really on (20 s after pm enable, 17:58) never ran boot.sh
+# (0 overlays at 3 min, no error to read, logcat does not work here); duertts stayed on and replaced the accessibility list
+# with only its MonitorService. Cause unknown. boot.sh run by the updater then fixed both, and now restores InputKeyService.
+# The "?" in "HDMI TV ph?ng ng?" looks like an HDMI device's name ("TV phong ngu"), not a translation string.
+# A read-only scan of .12's apps (v1.6.50, GMUI 6.17.200.05) found strings the tables missed, notably in com.xgimi.systemui;
+# they are in dohko-full-chuoi.tsv / dohko-full-dich.tsv. RS 20 Pro V1.4.8 (XR07A2) is encrypted (entropy 7.998), so its
+# own text can differ from v1.6.50. Fabricated overlays cannot change string arrays, e.g. newsettings color_mode9.
 # RS 30 Ultra (2026-10-25): firmware XGIMI_TIGERSENSITIVE_XM03N.bin (2.1 GB, MTK, header "REE_OFFSET_START = 0x1000")
 # is encrypted after its first 4 KB (8.0 bits/byte throughout, no ext4/sparse/boot/dex signature), like HORSEPOPULAR:
 # nothing about ADB can be read from it. If its ro.product.device is not horse_popular the DOHKO package refuses it and

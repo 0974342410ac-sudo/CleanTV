@@ -25,6 +25,21 @@ CREATE TRIGGER vi_func_name_insert AFTER INSERT ON MisckeyConfigFuncDB BEGIN
         WHEN '任意门' THEN 'Cửa thần kỳ'
         WHEN 'U盘' THEN 'USB'
         WHEN '音乐控件' THEN 'Điều khiển nhạc'
+        WHEN '画面校正' THEN 'Hiệu chỉnh hình'
+        WHEN '亮度' THEN 'Độ sáng'
+        WHEN '音量' THEN 'Âm lượng'
+        WHEN '音效' THEN 'Âm thanh'
+        WHEN '画质' THEN 'Chất lượng hình'
+        WHEN '投屏' THEN 'Truyền màn hình'
+        WHEN '设置' THEN 'Cài đặt'
+        WHEN '巨幕模式' THEN 'Màn hình lớn'
+        WHEN '智能防射眼' THEN 'Chống chói mắt'
+        WHEN '护眼模式' THEN 'Bảo vệ mắt'
+        WHEN '定时关机' THEN 'Hẹn giờ tắt'
+        WHEN '投影方式' THEN 'Kiểu chiếu'
+        WHEN '灯光' THEN 'Đèn'
+        WHEN '关机' THEN 'Tắt máy'
+        WHEN '重启' THEN 'Khởi động lại'
         ELSE NEW.name END
     WHERE id = NEW.id;
 END;
@@ -46,6 +61,21 @@ CREATE TRIGGER vi_func_name_update AFTER UPDATE OF name ON MisckeyConfigFuncDB B
         WHEN '任意门' THEN 'Cửa thần kỳ'
         WHEN 'U盘' THEN 'USB'
         WHEN '音乐控件' THEN 'Điều khiển nhạc'
+        WHEN '画面校正' THEN 'Hiệu chỉnh hình'
+        WHEN '亮度' THEN 'Độ sáng'
+        WHEN '音量' THEN 'Âm lượng'
+        WHEN '音效' THEN 'Âm thanh'
+        WHEN '画质' THEN 'Chất lượng hình'
+        WHEN '投屏' THEN 'Truyền màn hình'
+        WHEN '设置' THEN 'Cài đặt'
+        WHEN '巨幕模式' THEN 'Màn hình lớn'
+        WHEN '智能防射眼' THEN 'Chống chói mắt'
+        WHEN '护眼模式' THEN 'Bảo vệ mắt'
+        WHEN '定时关机' THEN 'Hẹn giờ tắt'
+        WHEN '投影方式' THEN 'Kiểu chiếu'
+        WHEN '灯光' THEN 'Đèn'
+        WHEN '关机' THEN 'Tắt máy'
+        WHEN '重启' THEN 'Khởi động lại'
         ELSE NEW.name END
     WHERE id = NEW.id;
 END;
