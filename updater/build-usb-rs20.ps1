@@ -26,6 +26,8 @@ $usb = Join-Path $root 'dist\USB-CapNhat-RS20'
 if (Test-Path $usb) { Remove-Item $usb -Recurse -Force }
 New-Item -ItemType Directory -Force $usb | Out-Null
 Copy-Item (Join-Path $root 'launcher\updater\build\outputs\apk\xgimi\release\updater-xgimi-release.apk') (Join-Path $usb 'CapNhatXGIMI-DOHKO.apk')
+# Launcher dung trong ung dung cap nhat, de cai rieng khi can
+Copy-Item (Join-Path $assets 'tvhome.apk') (Join-Path $usb 'ManHinhChinh-Launcher.apk')
 $adbGuide = [IO.File]::ReadAllText((Join-Path $here 'HUONG-DAN-BAT-ADB.txt'), [Text.Encoding]::UTF8)
 $guide = [IO.File]::ReadAllText((Join-Path $here 'HUONG-DAN-USB-XGIMI.txt'), [Text.Encoding]::UTF8) + $adbGuide
 [IO.File]::WriteAllText((Join-Path $usb 'HUONG-DAN.txt'), $guide, (New-Object Text.UTF8Encoding $true))

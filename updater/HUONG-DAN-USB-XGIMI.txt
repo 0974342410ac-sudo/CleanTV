@@ -27,6 +27,11 @@ CÁCH DÙNG
 Nếu máy báo không cài được vì trùng hoặc khác chữ ký: gỡ ứng dụng "Cập nhật XGIMI DOHKO" cũ rồi cài lại. Gỡ ứng
 dụng này không làm mất launcher hay bản dịch đã áp dụng.
 
+FILE ManHinhChinh-Launcher.apk (GÓI USB-CapNhat-RS20)
+Đây là launcher đã có sẵn trong ứng dụng cập nhật, nên bình thường không cần cài riêng. Chỉ cài riêng khi muốn thay
+launcher mà không chạy "Cập nhật". Máy đang có launcher khác chữ ký sẽ không cài đè được file này: dùng "Cập nhật"
+để giữ cài đặt launcher. Cài riêng không đặt nút Home, không cấp quyền và không Việt hoá.
+
 CÓ THỂ CÒN TIẾNG TRUNG
 - Firmware máy này bị mã hoá nên bản dịch dựa trên chữ của RS 20 Pro Max bản v1.6.50. Chữ chỉ có trên đời máy hoặc
   bản firmware khác, và ô mới trong menu cài đặt nhanh (tên do máy chủ XGIMI gửi về) có thể còn tiếng Trung.

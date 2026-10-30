@@ -614,6 +614,13 @@ public final class UpdaterActivity extends Activity {
                 .trim().matches("[1-9][0-9]*");
     }
 
+    /** Gives the launcher the HOME role, which makes the "always" preference too (seen on the DOHKO, 2026-10-30). */
+    private boolean homeRole(LocalAdb adb) throws Exception {
+        adb.shell("cmd role add-role-holder --user 0 android.app.role.HOME " + LAUNCHER);
+        Thread.sleep(1500);
+        return homeAlways(adb);
+    }
+
     /**
      * Makes the "always" Home preference the way a person would: opens Home, and in XGIMI's chooser picks the new
      * launcher, then "始终" (always), with remote keys. Brings this app back to the front afterwards.
@@ -652,6 +659,39 @@ public final class UpdaterActivity extends Activity {
     }
 
     /** The installed launcher is byte for byte the one in this app's assets. */
+    private String installLauncher(LocalAdb adb) throws IOException {
+        long size = getAssets().openFd("tvhome.apk").getLength();
+        try (InputStream in = getAssets().open("tvhome.apk")) {
+            return adb.exec("cmd package install -r -S " + size, in);
+        }
+    }
+
+    /**
+     * The launcher on the TV is signed with another key, which Android will not install over: uninstall it and
+     * install this one, carrying its settings, config.json and wallpapers across. Needs adb root to read them.
+     */
+    private String replaceLauncher(LocalAdb adb) throws IOException {
+        if (!"0".equals(adb.shell("id -u").trim())) {
+            throw new IllegalStateException("launcher trên máy ký khóa khác: gỡ launcher cũ rồi bấm \"Cập nhật\" lại (mất cài đặt launcher)");
+        }
+        say("   launcher trên máy ký khóa khác: gỡ rồi cài lại, giữ nguyên cài đặt");
+        String data = "/data/data/" + LAUNCHER, ext = "/sdcard/Android/data/" + LAUNCHER;
+        String saved = "/data/local/tmp/cleantv-launcher";
+        String check = adb.shell("rm -rf " + saved + "; mkdir -p " + saved
+                + " && tar -C " + data + " -cf " + saved + "/data.tar shared_prefs files"
+                + " && { [ ! -d " + ext + "/files ] || tar -C " + ext + " -cf " + saved + "/ext.tar files; } && echo saved");
+        if (!check.contains("saved")) throw new IllegalStateException("không sao lưu được cài đặt launcher, chưa gỡ gì: " + firstLine(check));
+        adb.shell("pm uninstall " + LAUNCHER);
+        String out = installLauncher(adb);
+        if (!out.contains("Success")) return out;   // the saved settings stay in that folder
+        // Without theme_signature: the restored config.json looks like a new theme, which would clear the TV's choices
+        adb.shell("tar -C " + data + " -xf " + saved + "/data.tar; sed -i '/theme_signature/d' " + data
+                + "/shared_prefs/launcher_settings.xml; u=$(stat -c %u " + data + "); chown -R $u:$u " + data
+                + "/shared_prefs " + data + "/files; restorecon -R " + data
+                + "; if [ -f " + saved + "/ext.tar ]; then mkdir -p " + ext + "; tar -C " + ext + " -xf " + saved + "/ext.tar; fi; rm -rf " + saved);
+        return out;
+    }
+
     private boolean launcherUpToDate(LocalAdb adb) {
         try {
             String path = adb.shell("pm path " + LAUNCHER).replace("package:", "").split("\n")[0].trim();
@@ -724,10 +764,8 @@ public final class UpdaterActivity extends Activity {
         String out;
         if (fresh) {
             // Streamed through ADB: a non-root adbd (onn) cannot read a file in this app's storage
-            long size = getAssets().openFd("tvhome.apk").getLength();
-            try (InputStream in = getAssets().open("tvhome.apk")) {
-                out = adb.exec("cmd package install -r -S " + size, in);
-            }
+            out = installLauncher(adb);
+            if (out.contains("INCOMPATIBLE")) out = replaceLauncher(adb);
             if (!out.contains("Success")) throw new IllegalStateException("cài launcher thất bại: " + firstLine(out));
         } else {
             say("   OK  launcher trên máy đã là bản mới nhất (không cài lại)");
@@ -827,7 +865,8 @@ public final class UpdaterActivity extends Activity {
             // "always", which replaces the one the chooser's "始终" made, and Home then shows the chooser
             // again: keep an "always" preference, or make one through the chooser itself
             // No homeNow() here: its `cmd package resolve-activity` turns that preference back to "not always"
-            if (homeAlways(adb) || chooseHomeAlways(adb)) {
+            // Uninstalling the launcher gives the HOME role to XGIMI's home and no chooser shows: take the role back
+            if (homeAlways(adb) || homeRole(adb) || chooseHomeAlways(adb)) {
                 say("   OK  nút Home mở thẳng launcher mới (không hiện hộp chọn)");
             } else {
                 say("   !!  chưa đặt được: bấm Home, chọn \"Màn hình chính\" rồi bấm \"始终\" (luôn chọn) một lần");

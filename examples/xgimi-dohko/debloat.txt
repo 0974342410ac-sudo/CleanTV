@@ -125,6 +125,12 @@ com.xgimi.duertts                      # 极米语音 assistant + mic key monito
 # Auto-off NOT proven: the one reboot with com.xgimi.duertts really on (20 s after pm enable, 17:58) never ran boot.sh
 # (0 overlays at 3 min, no error to read, logcat does not work here); duertts stayed on and replaced the accessibility list
 # with only its MonitorService. Cause unknown. boot.sh run by the updater then fixed both, and now restores InputKeyService.
+# Signing key (2026-10-30, owner chose to go on without the lost 16469b59... key): .12's launcher is now 2.10 signed 82f6ae96...
+# Over a launcher with the other key the updater uninstalls and reinstalls, carrying shared_prefs, files and the
+# external config.json/wallpapers (replaceLauncher, adb root). Uninstalling hands the HOME role to com.xgimi.home with no
+# chooser; `cmd role add-role-holder --user 0 android.app.role.HOME com.gathin.tvhome` takes it back and makes the
+# mAlways=true preference too. `am force-stop com.gathin.tvhome` empties enabled_accessibility_services (mic key gone).
+# Old APK and data: backup/launcher-1646-truoc-khi-doi-khoa/.
 # The "?" in "HDMI TV ph?ng ng?" looks like an HDMI device's name ("TV phong ngu"), not a translation string.
 # A read-only scan of .12's apps (v1.6.50, GMUI 6.17.200.05) found strings the tables missed, notably in com.xgimi.systemui;
 # they are in dohko-full-chuoi.tsv / dohko-full-dich.tsv. RS 20 Pro V1.4.8 (XR07A2) is encrypted (entropy 7.998), so its
