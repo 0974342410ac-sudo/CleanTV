@@ -35,6 +35,30 @@
         <item name="android:drawablePadding">0dp</item>
     </style>
 
+    <!-- look "google" (config.json): Google TV's top bar, bare tabs that turn into a white pill when focused. -->
+    <style name="GoogleTab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:paddingEnd">18dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/google_tab_bg</item>
+        <item name="android:textColor">@drawable/google_tab_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableTint">@drawable/google_tab_text</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="GoogleTabIcon" parent="GoogleTab">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:paddingStart">9dp</item>
+        <item name="android:paddingEnd">9dp</item>
+        <item name="android:drawablePadding">0dp</item>
+    </style>
+
     <style name="SettingsRow">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">52dp</item>

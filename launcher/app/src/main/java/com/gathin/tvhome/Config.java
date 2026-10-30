@@ -185,6 +185,8 @@ final class Config {
     final boolean lunarDate;
     /** The lunar date sits above the top buttons instead of the line above the date (config.json lunar_top_right). */
     final boolean lunarTopRight;
+    /** Home screen dressed like Google TV's top bar (config.json look "google", activity_main_google). */
+    final boolean lookGoogle;
     /** Run /data/local/tmp/cleantv/boot.sh through the TV's adbd after boot (config.json boot_script, BootScript). */
     final boolean bootScript;
     /** Name after the greeting ("Good morning, Mr. Trịnh"); empty for the greeting alone. */
@@ -250,9 +252,11 @@ final class Config {
                    int wallpaperRotationMinutes, int wallpaperDim, boolean overlayApplied,
                    Festival festival, int[] inputKeycodes, List<String> appKeys,
                    String weatherCity, double weatherLatitude, double weatherLongitude, boolean weatherByLocation, boolean wallpaperByTime,
-                   boolean keepAdbOn, boolean lunarDate, boolean lunarTopRight, boolean bootScript, File wallpaperVideo) {
+                   boolean keepAdbOn, boolean lunarDate, boolean lunarTopRight, boolean bootScript, File wallpaperVideo,
+                   boolean lookGoogle) {
         this.lunarDate = lunarDate;
         this.lunarTopRight = lunarTopRight;
+        this.lookGoogle = lookGoogle;
         this.bootScript = bootScript;
         this.wallpaperByTime = wallpaperByTime;
         this.keepAdbOn = keepAdbOn;
@@ -321,6 +325,7 @@ final class Config {
         boolean shamsi = res.getBoolean(R.bool.shamsi_date);
         boolean lunar = res.getBoolean(R.bool.lunar_date);
         boolean lunarTopRight = false;   // config.json only
+        String look = "";                // config.json only: "google", or the launcher's own look
         boolean bootScript = false;   // config.json only: tools/xgimi-vi/dohko-boot-vi.ps1 turns it on
         String greetingName = res.getString(R.string.greeting_name).trim();
         boolean keepAdbOn = res.getBoolean(R.bool.keep_adb_on);
@@ -364,6 +369,7 @@ final class Config {
             shamsi = bool(json, "shamsi_date", shamsi);
             lunar = bool(json, "lunar_date", lunar);
             lunarTopRight = bool(json, "lunar_top_right", lunarTopRight);
+            look = string(json, "look", look).trim();
             bootScript = bool(json, "boot_script", bootScript);
             greetingName = string(json, "greeting_name", greetingName).trim();
             keepAdbOn = bool(json, "keep_adb_on", keepAdbOn);
@@ -464,7 +470,8 @@ final class Config {
                 wallpapers, rotationMinutes, wallpaperDim, applied,
                 festival, inputKeycodes, appKeys,
                 Double.isNaN(weatherLat) || Double.isNaN(weatherLon) ? "" : weatherCity, weatherLat, weatherLon, weatherByLocation,
-                byTime, keepAdbOn, lunar, lunarTopRight, bootScript, wallpaperVideo);
+                byTime, keepAdbOn, lunar, lunarTopRight, bootScript, wallpaperVideo,
+                "google".equalsIgnoreCase(look));
     }
 
     private static void syncThemeChoices(SharedPreferences choices, File dir, File config) {

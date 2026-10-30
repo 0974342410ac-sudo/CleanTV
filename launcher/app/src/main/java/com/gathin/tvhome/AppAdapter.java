@@ -546,6 +546,11 @@ public class AppAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         return position >= 0 && position < items.size() ? items.get(position).label : "";
     }
 
+    /** The app's banner, null if it has none; look "google" shows it as hero art. */
+    Drawable bannerAt(int position) {
+        return position >= 0 && position < items.size() ? items.get(position).banner : null;
+    }
+
     float focusScale() {
         return !animations ? 1f : advancedEffects ? 1.12f : 1.10f;
     }

@@ -65,6 +65,10 @@
     <string name="wallpaper_failed">Could not open this picture</string>
     <string name="wallpaper_video_failed">Could not use this video (too large or unsupported)</string>
     <string name="voice_search">Search</string>
+    <!-- look "google": top bar tabs -->
+    <string name="tab_home">Home</string>
+    <string name="tab_apps">Apps</string>
+    <string name="your_apps">Your apps</string>
     <string name="voice_listening">Listening… hold the mic button while you speak, release to search</string>
     <string name="voice_hold_hint">Hold the mic button while you speak, release to search</string>
     <string name="home_guide_title">Make Home open this screen</string>

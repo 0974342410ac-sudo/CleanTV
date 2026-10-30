@@ -60,6 +60,9 @@
     <string name="wallpaper_failed">Không mở được ảnh này</string>
     <string name="wallpaper_video_failed">Không dùng được video này (quá lớn hoặc không hỗ trợ)</string>
     <string name="voice_search">Tìm kiếm</string>
+    <string name="tab_home">Trang chủ</string>
+    <string name="tab_apps">Ứng dụng</string>
+    <string name="your_apps">Ứng dụng của bạn</string>
     <string name="voice_listening">Đang nghe… giữ phím micro trong lúc nói, thả ra để tìm</string>
     <string name="voice_hold_hint">Giữ phím micro trong lúc nói, thả ra để tìm</string>
     <string name="home_guide_title">Cho nút Home mở màn hình này</string>

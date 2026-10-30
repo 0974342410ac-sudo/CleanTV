@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- look "google" (config.json): the Home screen dressed like Google TV's. One top bar: search, tabs, then Wi-Fi,
+     Settings and a small clock at the end; no greeting or date block. Same ids as activity_main, which MainActivity
+     binds either way: the header texts it fills sit in a hidden block. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000">
+
+    <com.gathin.tvhome.SkyView
+        android:id="@+id/sky"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no" />
+
+    <View
+        android:id="@+id/ambient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0" />
+
+    <!-- Hero art: the focused dock app's banner, large at the top right and fading into the background (sized in
+         MainActivity). -->
+    <com.gathin.tvhome.FadeImageView
+        android:id="@+id/heroArt"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="top|end"
+        android:scaleType="centerCrop"
+        android:alpha="0"
+        android:contentDescription="@null"
+        android:importantForAccessibility="no" />
+
+    <!-- The focused dock app's name, positioned above the dock in code: Google TV's title over its hero. -->
+    <TextView
+        android:id="@+id/heroName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:alpha="0"
+        android:textColor="#FFFFFFFF"
+        android:textSize="44sp"
+        android:fontFamily="sans-serif"
+        android:includeFontPadding="false"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="48dp"
+        android:paddingEnd="48dp"
+        android:paddingTop="28dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:id="@+id/topButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal">
+
+            <!-- Voice search, as Google TV's search pill. -->
+            <TextView
+                android:id="@+id/btnVoice"
+                style="@style/GoogleTab"
+                android:layout_marginStart="0dp"
+                android:background="@drawable/google_search_bg"
+                android:paddingStart="14dp"
+                android:text="@string/voice_search"
+                android:drawableStart="@drawable/ic_search"
+                android:nextFocusDown="@+id/grid" />
+
+            <!-- The tab this screen is: a label, not a button. -->
+            <TextView
+                android:id="@+id/tabHome"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="18dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:gravity="center"
+                android:text="@string/tab_home"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:focusable="false" />
+
+            <!-- Opens the app library. -->
+            <TextView
+                android:id="@+id/btnApps"
+                style="@style/GoogleTab"
+                android:text="@string/tab_apps"
+                android:nextFocusDown="@+id/grid" />
+
+            <TextView
+                android:id="@+id/btnInputs"
+                style="@style/GoogleTab"
+                android:text="@string/inputs"
+                android:nextFocusDown="@+id/grid" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/btnWifi"
+                style="@style/GoogleTab"
+                android:maxWidth="200dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="@string/wifi"
+                android:drawableStart="@drawable/ic_wifi"
+                android:nextFocusDown="@+id/grid" />
+
+            <TextView
+                android:id="@+id/btnReorder"
+                style="@style/GoogleTabIcon"
+                android:contentDescription="@string/reorder"
+                android:drawableStart="@drawable/ic_swap_vert"
+                android:nextFocusDown="@+id/grid" />
+
+            <TextView
+                android:id="@+id/btnSettings"
+                style="@style/GoogleTabIcon"
+                android:contentDescription="@string/settings"
+                android:drawableStart="@drawable/ic_settings"
+                android:nextFocusDown="@+id/grid" />
+
+            <TextClock
+                android:id="@+id/clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:format12Hour="h:mm"
+                android:format24Hour="HH:mm"
+                android:textColor="#FFE8EAED"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextClock
+                android:id="@+id/ampm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:format12Hour="a"
+                android:format24Hour=""
+                android:textColor="#B3E8EAED"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <!-- Filled by MainActivity in every look; Google TV shows none of it. -->
+        <LinearLayout
+            android:id="@+id/leftBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView android:id="@+id/greeting" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/shamsiDate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextClock android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/weatherLine" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/lunarTop" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/stats" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="40dp"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:descendantFocusability="afterDescendants" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.gathin.tvhome.GlassView
+        android:id="@+id/glass"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:alpha="0"
+        android:importantForAccessibility="no" />
+</FrameLayout>

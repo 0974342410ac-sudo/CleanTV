@@ -93,6 +93,8 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
     /** Time zone the clocks were created with (Launcher settings, clock_timezone). */
     private String clockZone = "";
     private static final long MINUTE_MS = 60_000L;
+    /** look "google": hero art opacity, a touch under full so the background tint shows through. */
+    private static final float HERO_ART_ALPHA = 0.8f;
     private static final long STATS_MS = 10_000L;
     private String liveTvPkg;
     private String liveTvAction;
@@ -107,6 +109,9 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
     private GlassView glass;
     private View ambient;
     private TextView heroName;
+    /** look "google": the focused dock app's banner as hero art; null in the launcher's own look. */
+    private ImageView heroArt;
+    private Drawable heroArtSource;
     private int ambientColor = -1;
     private ValueAnimator ambientAnimator;
     private boolean heroShown;
@@ -289,10 +294,10 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         voiceKeycodes = Config.voiceKeycodes(this);
         voicePending = getIntent() != null && ACTION_VOICE_SEARCH.equals(getIntent().getAction());
         if (Config.webRemote(this)) WebRemote.start(this);
-        setContentView(R.layout.activity_main);
-        density = getResources().getDisplayMetrics().density;
         // config.xml, overlaid by config.json from a pushed theme (see Config and tools/theme.sh).
         Config cfg = Config.load(this);
+        setContentView(cfg.lookGoogle ? R.layout.activity_main_google : R.layout.activity_main);
+        density = getResources().getDisplayMetrics().density;
         settingsKeycodes = cfg.settingsKeycodes;
         settingsKeyPanel = cfg.settingsKeyPanel;
         COLUMNS = cfg.columns;
@@ -315,6 +320,11 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         sky.setIntensity(cfg.skyIntensity);
         glass = findViewById(R.id.glass);
         if (festive) glass.setAccent(festival.accentColor());
+        if (cfg.lookGoogle) {
+            glass.setRing(true);
+            heroArt = findViewById(R.id.heroArt);
+            setUpHeroArt();
+        }
         ambient = findViewById(R.id.ambient);
         // The glow is one bitmap, so its alpha can be applied while drawing it. Otherwise every frame of
         // a fade renders it into a full-screen offscreen buffer first.
@@ -405,7 +415,8 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             public void onChildViewDetachedFromWindow(@NonNull View v) {
             }
         });
-        if (dockRow) grid.addItemDecoration(new DockDecoration(COLUMNS, density));
+        if (dockRow) grid.addItemDecoration(new DockDecoration(COLUMNS, density,
+                cfg.lookGoogle ? getString(R.string.your_apps) : null));
         if (animations) {
             int enterAnim = reducedMotion ? R.anim.tile_enter_reduced : R.anim.tile_enter;
             float enterDelay = reducedMotion ? 0f : 0.06f;
@@ -522,8 +533,14 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         btnWifi.setOnKeyListener(pillKeys);
         btnSettings.setOnKeyListener(pillKeys);
         btnReorder.setOnKeyListener(pillKeys);
+        // look "google": the Apps tab opens the app library
+        View btnApps = findViewById(R.id.btnApps);
+        if (btnApps != null) {
+            btnApps.setOnClickListener(v -> onLibraryRequested());
+            btnApps.setOnKeyListener(pillKeys);
+        }
         if (advancedEffects) {
-            for (View button : new View[]{btnVoice, btnInputs, btnWifi, btnReorder, btnSettings}) {
+            for (View button : new View[]{btnVoice, btnApps, btnInputs, btnWifi, btnReorder, btnSettings}) {
                 if (button == null) continue;
                 button.setOnFocusChangeListener((view, focused) -> view.animate()
                         .scaleX(focused ? 1.04f : 1f).scaleY(focused ? 1.04f : 1f)
@@ -687,6 +704,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
             heroShown = false;
             heroName.setAlpha(0f);
             ambient.setAlpha(0f);
+            if (heroArt != null) heroArt.setAlpha(0f);
         }
         reloadTiles();
         if (animate && animations && !reducedMotion) grid.scheduleLayoutAnimation();
@@ -751,6 +769,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         stopAmbientAnimation();
         heroName.animate().cancel();
         ambient.animate().cancel();
+        if (heroArt != null) heroArt.animate().cancel();
         handler.removeCallbacks(minuteTick);
         stopStats();
         if (diya != null) diya.stop();
@@ -1180,7 +1199,58 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
 
     // ---- top shelf -------------------------------------------------------------------------------
 
+    /**
+     * look "google": the hero art covers the top right 62% of the screen at 16:9, under the top bar; FadeImageView
+     * fades it out towards the left and the bottom like Google TV's.
+     */
+    private void setUpHeroArt() {
+        root.addOnLayoutChangeListener((v, l, t, r, b, ol, ot, or, ob) -> {
+            int w = Math.round((r - l) * 0.62f);
+            int h = w * 9 / 16;
+            ViewGroup.LayoutParams lp = heroArt.getLayoutParams();
+            if (lp.width != w || lp.height != h) {
+                lp.width = w;
+                lp.height = h;
+                heroArt.post(() -> heroArt.setLayoutParams(lp));
+            }
+        });
+    }
+
+    /** look "google": shows the app's banner as hero art, crossfading from the last one; none without a banner. */
+    private void showHeroArt(int position) {
+        if (heroArt == null) return;
+        Drawable source = adapter.bannerAt(position);
+        if (source == heroArtSource && heroArt.getDrawable() != null) {
+            heroArt.animate().cancel();
+            heroArt.animate().alpha(HERO_ART_ALPHA).setDuration(animations ? 200 : 0).start();
+            return;
+        }
+        heroArtSource = source;
+        // A copy: the tile shows the same drawable, and a drawable's bounds belong to one view
+        Drawable copy = source == null || source.getConstantState() == null ? source
+                : source.getConstantState().newDrawable(getResources()).mutate();
+        heroArt.animate().cancel();
+        if (!animations || reducedMotion || heroArt.getAlpha() == 0f) {
+            heroArt.setImageDrawable(copy);
+            heroArt.setAlpha(0f);
+            if (copy != null) heroArt.animate().alpha(HERO_ART_ALPHA).setDuration(animations ? 220 : 0).start();
+            return;
+        }
+        heroArt.animate().alpha(0f).setDuration(120).withEndAction(() -> {
+            heroArt.setImageDrawable(copy);
+            if (copy != null) heroArt.animate().alpha(HERO_ART_ALPHA).setDuration(260).start();
+        }).start();
+    }
+
+    private void hideHeroArt() {
+        if (heroArt == null) return;
+        heroArt.animate().cancel();
+        if (animations) heroArt.animate().alpha(0f).setDuration(reducedMotion ? 100 : 200).start();
+        else heroArt.setAlpha(0f);
+    }
+
     private void showHero(int position, float dockTopInRoot) {
+        showHeroArt(position);
         String label = adapter.labelAt(position);
         int color = adapter.ambientColorAt(position);
         float y = dockTopInRoot - 14 * density - 26 * density - heroName.getHeight();
@@ -1297,6 +1367,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
      * show (every tile has its name underneath).
      */
     private void showGlowOnly(int position) {
+        hideHeroArt();
         int color = adapter.ambientColorAt(position);
         stopAmbientAnimation();
         heroName.animate().cancel();
@@ -1320,6 +1391,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
     }
 
     private void hideHero() {
+        hideHeroArt();
         if (!heroShown) return;
         stopAmbientAnimation();
         heroName.animate().cancel();

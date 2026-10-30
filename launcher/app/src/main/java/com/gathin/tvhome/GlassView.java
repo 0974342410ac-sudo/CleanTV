@@ -26,6 +26,8 @@ public class GlassView extends View {
     private int glowRgb = 0xFFFFFF;
     /** Glow strength: the white glow stays faint, a coloured one needs more alpha to read as warm light. */
     private int glowAlpha = 0x30;
+    /** look "google": a plain white ring round the tile, as Google TV draws focus, instead of the glass slab. */
+    private boolean ring;
 
     public GlassView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -58,6 +60,11 @@ public class GlassView extends View {
         invalidate();
     }
 
+    void setRing(boolean on) {
+        ring = on;
+        invalidate();
+    }
+
     void setRadius(float px) {
         radius = px;
         invalidate();
@@ -74,6 +81,23 @@ public class GlassView extends View {
     protected void onDraw(Canvas canvas) {
         float inset = 6f * density;   // room for the glow
         rect.set(inset, inset, getWidth() - inset, getHeight() - inset);
+
+        if (ring) {
+            // A 3dp white ring just outside the tile, with a faint dark halo beyond it; both stay within the inset.
+            float w = 3f * density;
+            glow.setStrokeWidth(2f * density);
+            glow.setColor(0x40000000);
+            float o = 4.5f * density;
+            canvas.drawRoundRect(rect.left - o, rect.top - o, rect.right + o, rect.bottom + o, radius + o, radius + o, glow);
+            rim.setStrokeWidth(w);
+            int rimColor = rim.getColor();
+            rim.setColor(0xFFFFFFFF);
+            o = w / 2f + density;
+            canvas.drawRoundRect(rect.left - o, rect.top - o, rect.right + o, rect.bottom + o, radius + o, radius + o, rim);
+            rim.setColor(rimColor);
+            rim.setStrokeWidth(1.5f * density);
+            return;
+        }
 
         // Outer glow: three widening, fading strokes. The hardware layer caches the result, so
         // they cost one draw, not one per frame of the spring.
