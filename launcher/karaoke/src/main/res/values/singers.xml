@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- "Ca sĩ" tab: each name is searched as "<name> karaoke"; the photo is the first YouTube channel found
+         for the name. Add, remove or reorder freely. -->
+    <string-array name="singers">
+        <item>Sơn Tùng M-TP</item>
+        <item>Mỹ Tâm</item>
+        <item>Đàm Vĩnh Hưng</item>
+        <item>Hồ Ngọc Hà</item>
+        <item>Hà Anh Tuấn</item>
+        <item>Noo Phước Thịnh</item>
+        <item>Bằng Kiều</item>
+        <item>Lệ Quyên</item>
+        <item>Quang Lê</item>
+        <item>Như Quỳnh</item>
+        <item>Phi Nhung</item>
+        <item>Cẩm Ly</item>
+        <item>Đan Trường</item>
+        <item>Lam Trường</item>
+        <item>Tuấn Hưng</item>
+        <item>Thu Minh</item>
+        <item>Hương Lan</item>
+        <item>Chế Linh</item>
+        <item>Tuấn Vũ</item>
+        <item>Trường Vũ</item>
+        <item>Mạnh Quỳnh</item>
+        <item>Ngọc Sơn</item>
+        <item>Duy Mạnh</item>
+        <item>Hiền Thục</item>
+        <item>Phương Thanh</item>
+        <item>Hồ Quang Hiếu</item>
+        <item>Khánh Phương</item>
+        <item>Ưng Hoàng Phúc</item>
+        <item>Khắc Việt</item>
+        <item>Mr. Siro</item>
+        <item>Phan Mạnh Quỳnh</item>
+        <item>Hương Tràm</item>
+        <item>Erik</item>
+        <item>Đức Phúc</item>
+        <item>Hòa Minzy</item>
+        <item>Bích Phương</item>
+        <item>Hoàng Thùy Linh</item>
+        <item>Văn Mai Hương</item>
+        <item>Trúc Nhân</item>
+        <item>Jack</item>
+        <item>Chi Dân</item>
+        <item>Quang Hùng MasterD</item>
+        <item>Tăng Duy Tân</item>
+        <item>Hoàng Dũng</item>
+        <item>Đen Vâu</item>
+        <item>Min</item>
+        <item>Vũ.</item>
+        <item>Mỹ Linh</item>
+    </string-array>
+</resources>

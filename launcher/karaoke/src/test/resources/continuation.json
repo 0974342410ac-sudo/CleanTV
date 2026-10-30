@@ -1,0 +1,4 @@
+{"responseContext":{"visitorData":"Cgt4"},"estimatedResults":"1234","onResponseReceivedCommands":[{"appendContinuationItemsAction":{"continuationItems":[{"itemSectionRenderer":{"contents":[
+{"videoRenderer":{"videoId":"rzl7ztUZD6w","title":{"runs":[{"text":"Đêm Lạnh - Karaoke Tone Nam"}]},"lengthText":{"simpleText":"4:12"},"longBylineText":{"runs":[{"text":"Beat Chuẩn"}]},"viewCountText":{"simpleText":"9.876 lượt xem"}}},
+{"videoRenderer":{"videoId":"H2ye8Q2zBiI","title":{"simpleText":"Đêm Lạnh Karaoke Beat Gốc"},"lengthText":{"simpleText":"5:00"},"ownerText":{"runs":[{"text":"Kara Gốc"}]}}}
+]}},{"continuationItemRenderer":{"continuationEndpoint":{"continuationCommand":{"token":"NEXT_PAGE_TOKEN","request":"CONTINUATION_REQUEST_TYPE_SEARCH"}}}}],"targetId":"search-feed"}}]}

@@ -1,0 +1,47 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.gathin.karaoke'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.gathin.karaoke'
+        minSdk 23
+        targetSdk 34
+        versionCode 18
+        versionName '1.2.1'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // Sideloaded over ADB like the launcher: same debug key (%USERPROFILE%\.android\debug.keystore)
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    testOptions {
+        unitTests.all {
+            // gradlew :karaoke:test -PrealPage=<saved youtube results page>: also parses a live page
+            systemProperty 'karaoke.realPage', project.findProperty('realPage') ?: ''
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    // QR code of the phone page's address (PhoneRemote), encoder only. 3.3.3: newer cores need Android 7
+    implementation 'com.google.zxing:core:3.3.3'
+    // Test only: android.jar's org.json is a stub on the JVM, the real one runs the parser tests
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.json:json:20231013'
+}

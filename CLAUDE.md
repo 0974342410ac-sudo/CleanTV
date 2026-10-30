@@ -14,6 +14,10 @@ Vietnamese; user-facing text (launcher, updater, guides) is Vietnamese.
     `chung` (every known TV, `USB-CapNhat`), `xgimi` (XGIMI DOHKO only, `USB-CapNhat-XGIMI-DOHKO`) and
     `dienthoai` (`BuildConfig.REMOTE`: runs on an Android phone, reaches the TV's network ADB by IP, streams files
     into /data/local/tmp, self-updates from the latest GitHub Release, `Updates.java`).
+  - `karaoke/` karaoke app `com.gathin.karaoke` (Java, minSdk 23, same debug key): searches YouTube by reading
+    its results page (no API key, `SearchParser.java`, risks in `karaoke/README.md`), plays in a WebView IFrame
+    player with a queue, or in the YouTube app. Phone page on port 8687 (`PhoneRemote.java`, `res/raw/phone.html`,
+    QR + PIN on the TV). Not part of the USB/phone updater packages.
 - `updater/build-usb.ps1` builds the launcher, fills the updater assets and writes `dist/USB-CapNhat`. The XGIMI
   DOHKO package (`dist/USB-CapNhat-XGIMI-DOHKO`) is rebuilt only with `-XgimiDohko`; otherwise the old one stays.
   It then runs `updater/build-updater.ps1`, which writes `dist/PC-CapNhat` (the PC updater): `CapNhat.ps1` finds the

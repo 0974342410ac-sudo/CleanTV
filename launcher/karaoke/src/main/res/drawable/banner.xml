@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android TV home row banner: a microphone on a pink-violet gradient -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="320dp" android:height="180dp"
+    android:viewportWidth="160" android:viewportHeight="90">
+    <path android:pathData="M0,0h160v90h-160z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="0" android:startY="0" android:endX="160" android:endY="90"
+                android:startColor="#FFFF3D7F" android:endColor="#FF6A3DFF" />
+        </aapt:attr>
+    </path>
+    <group android:translateX="44" android:translateY="9" android:scaleX="3" android:scaleY="3">
+        <path android:fillColor="#FFFFFFFF"
+            android:pathData="M12,14c1.66,0 3,-1.34 3,-3V5c0,-1.66 -1.34,-3 -3,-3S9,3.34 9,5v6c0,1.66 1.34,3 3,3zM17.3,11c0,3 -2.54,5.1 -5.3,5.1S6.7,14 6.7,11H5c0,3.41 2.72,6.23 6,6.72V21h2v-3.28c3.28,-0.48 6,-3.3 6,-6.72h-1.7z" />
+    </group>
+</vector>

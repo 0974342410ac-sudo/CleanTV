@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Soft stage light from the top right behind the content -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient android:type="radial" android:gradientRadius="1100dp" android:centerX="0.85" android:centerY="0"
+        android:startColor="#FF2B1636" android:endColor="#FF0B0B10" />
+</shape>

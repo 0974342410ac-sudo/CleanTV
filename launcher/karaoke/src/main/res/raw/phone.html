@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B0B10">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Karaoke">
+<link rel="manifest" href="/manifest.json">
+<title>Karaoke</title>
+<style>
+:root{--bg:#0B0B10;--card:#1A1A22;--card2:#24242E;--text:#fff;--dim:#A8B0BC;--accent:#FF3D7F;--accent2:#6A3DFF}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.35 -apple-system,system-ui,Roboto,"Segoe UI",sans-serif}
+body{padding:env(safe-area-inset-top) 0 calc(env(safe-area-inset-bottom) + 8px)}
+button{font:inherit;color:inherit;border:0;cursor:pointer}
+input{font:inherit}
+.hidden{display:none!important}
+header{display:flex;align-items:center;gap:10px;padding:14px 16px 6px}
+.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;font-size:20px}
+header h1{font-size:20px;margin:0;flex:1}
+.dot{width:10px;height:10px;border-radius:50%;background:#555}
+.dot.on{background:#3DDC84}
+/* pair */
+#pair{padding:40px 24px;text-align:center}
+#pair p{color:var(--dim)}
+#pin{width:180px;text-align:center;font-size:34px;letter-spacing:12px;padding:10px;border-radius:14px;border:2px solid #333;background:var(--card);color:#fff}
+.big{display:block;width:100%;max-width:320px;margin:18px auto;padding:14px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));font-weight:600}
+/* now playing */
+#now{margin:6px 12px 10px;padding:12px;border-radius:18px;background:linear-gradient(135deg,#2A1430,#1A1638);border:1px solid #FF3D7F33;position:sticky;top:0;z-index:5}
+.nowrow{display:flex;gap:12px;align-items:center}
+#nowThumb{width:96px;height:54px;border-radius:8px;object-fit:cover;background:#000;flex:none}
+#nowLabel{font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:.5px}
+#nowTitle{font-weight:600;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.controls{display:flex;gap:8px;margin-top:10px}
+.controls button{flex:1;padding:10px 0;border-radius:12px;background:#ffffff1a;font-size:18px}
+.controls button.main{background:var(--accent)}
+/* tabs */
+.tabs{display:flex;gap:8px;padding:0 12px 8px}
+.tabs button{flex:1;padding:10px;border-radius:12px;background:var(--card);color:var(--dim);font-weight:600}
+.tabs button.on{background:#fff;color:#111}
+/* search */
+.searchbar{display:flex;gap:8px;padding:4px 12px 8px}
+#q{flex:1;min-width:0;padding:12px 14px;border-radius:14px;border:1px solid #333;background:var(--card);color:#fff}
+.searchbar button{padding:0 16px;border-radius:14px;background:var(--accent);font-weight:600}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 12px 8px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:8px 14px;border-radius:20px;background:var(--card2);white-space:nowrap;font-size:14px}
+.chip.hot{background:linear-gradient(135deg,var(--accent),var(--accent2))}
+.singers{display:flex;gap:12px;overflow-x:auto;padding:6px 12px 10px;scrollbar-width:none}
+.singers::-webkit-scrollbar{display:none}
+.singer{flex:none;width:68px;text-align:center;font-size:12px;color:var(--dim);background:none;padding:0}
+.singer .av{width:60px;height:60px;border-radius:50%;margin:0 auto 4px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;font-weight:700;font-size:20px;color:#fff;overflow:hidden}
+.singer .av img{width:100%;height:100%;object-fit:cover}
+.singer span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#resultTitle{padding:6px 16px;color:var(--dim);font-size:14px}
+/* song rows */
+.list{padding:0 12px}
+.song{display:flex;gap:10px;padding:8px;margin-bottom:8px;border-radius:14px;background:var(--card)}
+.song img{width:104px;height:59px;border-radius:8px;object-fit:cover;background:#000;flex:none}
+.song .info{flex:1;min-width:0;display:flex;flex-direction:column}
+.song .t{font-size:15px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.song .m{font-size:12px;color:var(--dim);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.acts{display:flex;gap:6px;margin-top:auto;padding-top:6px}
+.acts button{padding:6px 9px;border-radius:10px;background:var(--card2);font-size:13px;white-space:nowrap}
+.acts button.add{background:var(--accent)}
+.acts button.done{background:#3DDC8433;color:#3DDC84}
+.num{width:26px;flex:none;align-self:center;text-align:center;font-weight:700;color:var(--accent);font-size:18px}
+.more{display:block;margin:4px auto 16px;padding:10px 24px;border-radius:12px;background:var(--card2)}
+.empty{padding:30px 20px;text-align:center;color:var(--dim)}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom));transform:translateX(-50%);background:#fff;color:#111;padding:10px 18px;border-radius:20px;font-size:14px;max-width:90vw;opacity:0;transition:opacity .2s;pointer-events:none;z-index:9}
+#toast.show{opacity:1}
+.spin{padding:20px;text-align:center;color:var(--dim)}
+</style>
+</head>
+<body>
+<header><div class="logo">🎤</div><h1>Karaoke</h1><div id="dot" class="dot" title="TV"></div></header>
+
+<section id="pair" class="hidden">
+  <p>Nhập mã 4 số đang hiện trên TV<br>(trang <b>Điện thoại</b> trong app Karaoke)</p>
+  <input id="pin" inputmode="numeric" maxlength="4" autocomplete="off">
+  <button class="big" id="pairBtn">Kết nối</button>
+  <p id="pairMsg"></p>
+</section>
+
+<main id="app" class="hidden">
+  <div id="now">
+    <div class="nowrow">
+      <img id="nowThumb" alt="">
+      <div style="min-width:0;flex:1">
+        <div id="nowLabel">Chưa hát bài nào</div>
+        <div id="nowTitle"></div>
+      </div>
+    </div>
+    <div class="controls" id="playCtl">
+      <button data-cmd="seek" data-dir="-1" title="Lùi 10 giây">⏪</button>
+      <button data-cmd="toggle" class="main" id="toggleBtn" title="Dừng / tiếp">⏯</button>
+      <button data-cmd="seek" data-dir="1" title="Tới 10 giây">⏩</button>
+      <button data-cmd="next" title="Bài kế">⏭</button>
+      <button data-cmd="stop" title="Thoát bài">⏹</button>
+    </div>
+    <div class="controls hidden" id="idleCtl">
+      <button data-cmd="next" class="main" id="singNext">▶ Hát bài kế</button>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button id="tabSearch" class="on">🔎 Tìm bài</button>
+    <button id="tabQueue">🎶 Danh sách (<span id="qCount">0</span>)</button>
+  </div>
+
+  <section id="searchView">
+    <form class="searchbar" id="searchForm">
+      <input id="q" type="search" placeholder="Tên bài hát hoặc ca sĩ…" enterkeyhint="search" autocomplete="off">
+      <button>Tìm</button>
+    </form>
+    <div class="chips" id="genres"></div>
+    <div class="singers" id="singers"></div>
+    <div id="resultTitle"></div>
+    <div class="list" id="results"></div>
+    <button class="more hidden" id="moreBtn">Xem thêm</button>
+  </section>
+
+  <section id="queueView" class="hidden">
+    <div class="list" id="queue"></div>
+    <button class="more hidden" id="clearBtn">Xoá cả danh sách</button>
+  </section>
+</main>
+<div id="toast"></div>
+
+<script>
+'use strict';
+var token = null, state = null, more = null, version = null, queueIds = {};
+try { token = localStorage.getItem('karaokeToken'); } catch (e) {}
+var $ = function (id) { return document.getElementById(id); };
+
+function el(tag, cls, text) {
+  var e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text != null) e.textContent = text;
+  return e;
+}
+function toast(msg) {
+  var t = $('toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toast.timer); toast.timer = setTimeout(function () { t.classList.remove('show'); }, 2200);
+}
+var ERRORS = {
+  tv: 'Mở app Karaoke trên TV trước đã', player: 'Chưa có bài nào đang hát',
+  changed: 'Danh sách vừa đổi, thử lại', search: 'Không tìm được, thử lại', empty: 'Danh sách đang trống',
+  song: 'Bài này không hợp lệ'
+};
+
+function api(path, data) {
+  var body = Object.keys(data || {}).map(function (k) {
+    return encodeURIComponent(k) + '=' + encodeURIComponent(data[k] == null ? '' : data[k]);
+  }).join('&');
+  return fetch('/api/' + path, {
+    method: 'POST', body: body,
+    headers: {'Content-Type': 'application/x-www-form-urlencoded', 'X-Token': token || ''}
+  }).then(function (r) {
+    if (r.status === 401) { showPair(); throw new Error('pin'); }
+    return r.json();
+  }).then(function (j) {
+    if (!j.ok && j.error && ERRORS[j.error]) toast(ERRORS[j.error]);
+    return j;
+  });
+}
+
+// ---- pairing ----
+function showPair(msg) {
+  $('app').classList.add('hidden'); $('pair').classList.remove('hidden');
+  $('pairMsg').textContent = msg || '';
+}
+function pair(pin) {
+  fetch('/api/pin', {method: 'POST', body: 'pin=' + encodeURIComponent(pin),
+    headers: {'Content-Type': 'application/x-www-form-urlencoded'}})
+    .then(function (r) { return r.json(); })
+    .then(function (j) {
+      if (j.ok) {
+        token = j.token;
+        try { localStorage.setItem('karaokeToken', token); } catch (e) {}
+        history.replaceState(null, '', '/');
+        start();
+      } else if (j.error === 'locked') {
+        showPair('Sai nhiều lần, đợi ' + j.seconds + ' giây rồi thử lại.');
+      } else {
+        showPair('Mã chưa đúng, xem lại mã trên TV.');
+      }
+    }).catch(function () { showPair('Không kết nối được TV. Điện thoại có cùng Wi-Fi với TV không?'); });
+}
+$('pairBtn').onclick = function () { pair($('pin').value.trim()); };
+$('pin').onkeydown = function (e) { if (e.key === 'Enter') pair(this.value.trim()); };
+
+// ---- songs ----
+function meta(s) {
+  return [s.channel, s.duration, s.views].filter(Boolean).join(' · ');
+}
+function songData(s) {
+  return {id: s.id, title: s.title, channel: s.channel, duration: s.duration, views: s.views};
+}
+function songRow(s, buttons, number) {
+  var row = el('div', 'song');
+  if (number) row.appendChild(el('div', 'num', number));
+  var img = el('img'); img.loading = 'lazy'; img.src = s.thumb; img.alt = '';
+  row.appendChild(img);
+  var info = el('div', 'info');
+  info.appendChild(el('div', 't', s.title));
+  info.appendChild(el('div', 'm', meta(s)));
+  var acts = el('div', 'acts');
+  buttons.forEach(function (b) { acts.appendChild(b); });
+  info.appendChild(acts);
+  row.appendChild(info);
+  return row;
+}
+function button(text, cls, onclick) {
+  var b = el('button', cls, text);
+  b.onclick = function (e) { e.stopPropagation(); onclick(b); };
+  return b;
+}
+/** "＋ Thêm" / "✓ Đã chọn" as the list on the TV says, also after a song left it (sung or removed). */
+function markAdd(b, queued) {
+  b.textContent = queued ? '✓ Đã chọn' : '＋ Thêm';
+  b.className = queued ? 'done' : 'add';
+}
+function resultRow(s) {
+  var add = button('', '', function (b) {
+    api('add', songData(s)).then(function (j) {
+      if (!j.ok) return;
+      markAdd(b, true);
+      toast(j.added ? 'Đã thêm · ' + j.count + ' bài trong danh sách' : 'Bài này đã có trong danh sách');
+      refresh();
+    });
+  });
+  var prio = button('⤒ Hát kế', '', function () {
+    api('priority', songData(s)).then(function (j) { if (j.ok) { toast('Sẽ hát kế tiếp'); refresh(); } });
+  });
+  var now = button('▶ Hát ngay', '', function () {
+    api('play', songData(s)).then(function (j) { if (j.ok) { toast('Đang mở trên TV…'); setTimeout(refresh, 1500); } });
+  });
+  add.dataset.id = s.id;
+  markAdd(add, !!queueIds[s.id]);
+  return songRow(s, [add, prio, now]);
+}
+
+function search(q, opts) {
+  opts = opts || {};
+  $('results').innerHTML = ''; $('moreBtn').classList.add('hidden');
+  $('results').appendChild(el('div', 'spin', 'Đang tìm…'));
+  $('resultTitle').textContent = opts.title || ('Kết quả cho "' + q + '"');
+  var data = {q: q};
+  if (opts.trending) data.trending = 1;
+  if (opts.exact) data.exact = 1;
+  var failed = function () {
+    $('results').innerHTML = '';
+    var box = el('div', 'empty', 'Chưa tìm được (mạng chậm hoặc TV vừa mở app). ');
+    var again = el('button', 'more', 'Thử lại');
+    again.onclick = function () { search(q, opts); };
+    box.appendChild(again);
+    $('results').appendChild(box);
+  };
+  api('search', data).then(function (j) {
+    if (!j.ok) { failed(); return; }
+    $('results').innerHTML = '';
+    showResults(j);
+  }).catch(failed);
+}
+function showResults(j) {
+  if (!j.songs.length && !$('results').children.length) {
+    $('results').appendChild(el('div', 'empty', 'Không tìm thấy bài nào. Thử tên khác hoặc thêm tên ca sĩ.'));
+  }
+  j.songs.forEach(function (s) { $('results').appendChild(resultRow(s)); });
+  more = j.more || null; version = j.version || null;
+  $('moreBtn').classList.toggle('hidden', !more);
+}
+$('moreBtn').onclick = function () {
+  if (!more) return;
+  var b = this; b.textContent = 'Đang tải…';
+  api('more', {more: more, version: version || ''}).then(function (j) {
+    b.textContent = 'Xem thêm';
+    if (j.ok) showResults(j);
+  });
+};
+$('searchForm').onsubmit = function (e) {
+  e.preventDefault();
+  var q = $('q').value.trim();
+  if (q) { $('q').blur(); search(q); }
+};
+
+function catalog() {
+  api('catalog').then(function (j) {
+    if (!j.ok) return;
+    var g = $('genres'); g.innerHTML = '';
+    var hot = el('button', 'chip hot', '🔥 Thịnh hành');
+    hot.onclick = function () { search('karaoke', {trending: 1, exact: 1, title: 'Thịnh hành tháng này'}); };
+    g.appendChild(hot);
+    j.genres.forEach(function (x) {
+      var c = el('button', 'chip', x.label);
+      c.onclick = function () { search(x.query, {exact: 1, title: 'Karaoke ' + x.label}); };
+      g.appendChild(c);
+    });
+    var box = $('singers'); box.innerHTML = '';
+    j.singers.forEach(function (x) {
+      var b = el('button', 'singer');
+      b.setAttribute('aria-label', x.name);
+      var av = el('div', 'av');
+      if (x.photo) { var i = el('img'); i.loading = 'lazy'; i.src = x.photo; i.alt = ''; av.appendChild(i); }
+      else av.textContent = x.name.split(/\s+/).map(function (w) { return w[0]; }).join('').slice(0, 2).toUpperCase();
+      b.appendChild(av); b.appendChild(el('span', '', x.name));
+      b.onclick = function () { $('q').value = x.name; search(x.name, {title: 'Bài hát của ' + x.name}); };
+      box.appendChild(b);
+    });
+  });
+}
+
+// ---- state: now playing, list ----
+function refresh() {
+  return api('state').then(function (j) {
+    if (!j.ok) return;
+    state = j;
+    $('dot').classList.toggle('on', j.tv);
+    queueIds = {};
+    j.queue.forEach(function (s) { queueIds[s.id] = true; });
+    $('qCount').textContent = j.queue.length;
+    Array.prototype.forEach.call($('results').querySelectorAll('button[data-id]'), function (b) {
+      markAdd(b, !!queueIds[b.dataset.id]);
+    });
+    if (j.now) {
+      $('nowLabel').textContent = j.paused ? 'Tạm dừng' : 'Đang hát';
+      $('nowTitle').textContent = j.now.title;
+      $('nowThumb').src = j.now.thumb; $('nowThumb').classList.remove('hidden');
+      $('playCtl').classList.remove('hidden'); $('idleCtl').classList.add('hidden');
+      $('toggleBtn').textContent = j.paused ? '▶' : '⏸';
+    } else {
+      $('nowLabel').textContent = j.external ? 'Đang phát bằng app YouTube' : 'Chưa hát bài nào';
+      $('nowTitle').textContent = j.queue.length ? 'Bài kế: ' + j.queue[0].title : 'Chọn bài bên dưới';
+      $('nowThumb').classList.add('hidden');
+      $('playCtl').classList.add('hidden');
+      $('idleCtl').classList.toggle('hidden', !j.queue.length);
+    }
+    drawQueue(j.queue);
+  });
+}
+function drawQueue(list) {
+  var box = $('queue'); box.innerHTML = '';
+  $('clearBtn').classList.toggle('hidden', !list.length);
+  if (!list.length) { box.appendChild(el('div', 'empty', 'Danh sách đang trống. Tìm bài rồi bấm ＋ Thêm.')); return; }
+  list.forEach(function (s, i) {
+    var up = button('⤒ Lên đầu', '', function () {
+      api('up', {index: i, id: s.id}).then(function (j) { if (j.ok) refresh(); });
+    });
+    var sing = button('▶ Hát', 'add', function () {
+      api('play', songData(s)).then(function (j) {
+        if (!j.ok) return;
+        api('remove', {index: i, id: s.id}).then(refresh);
+        toast('Đang mở trên TV…');
+      });
+    });
+    var del = button('✕', '', function () {
+      api('remove', {index: i, id: s.id}).then(function (j) { if (j.ok) refresh(); });
+    });
+    box.appendChild(songRow(s, i ? [sing, up, del] : [sing, del], String(i + 1)));
+  });
+}
+$('clearBtn').onclick = function () {
+  if (confirm('Xoá cả danh sách chọn?')) api('clear').then(refresh);
+};
+Array.prototype.forEach.call(document.querySelectorAll('[data-cmd]'), function (b) {
+  b.onclick = function () {
+    var data = b.dataset.dir ? {dir: b.dataset.dir} : {};
+    api(b.dataset.cmd, data).then(function () { setTimeout(refresh, 700); });
+  };
+});
+function tab(which) {
+  var q = which === 'queue';
+  $('tabQueue').classList.toggle('on', q); $('tabSearch').classList.toggle('on', !q);
+  $('queueView').classList.toggle('hidden', !q); $('searchView').classList.toggle('hidden', q);
+}
+$('tabSearch').onclick = function () { tab('search'); };
+$('tabQueue').onclick = function () { tab('queue'); refresh(); };
+
+function start() {
+  $('pair').classList.add('hidden'); $('app').classList.remove('hidden');
+  refresh(); catalog();
+  if (!$('results').children.length) search('karaoke', {trending: 1, exact: 1, title: 'Thịnh hành tháng này'});
+}
+setInterval(function () { if (token && !document.hidden && !$('app').classList.contains('hidden')) refresh(); }, 3000);
+document.addEventListener('visibilitychange', function () { if (!document.hidden && token) refresh(); });
+
+// The TV's QR code carries the PIN: #pin=1234 pairs at once
+var m = /#pin=(\d{4})/.exec(location.hash);
+if (m) pair(m[1]);
+else if (token) start();
+else showPair();
+</script>
+</body>
+</html>

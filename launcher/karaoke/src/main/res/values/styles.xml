@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#FF0E0E12</color>
+    <color name="card">#FF1C1C22</color>
+    <color name="accent">#FFFF3D7F</color>
+    <color name="dim">#FFA8B0BC</color>
+
+    <style name="Karaoke" parent="@android:style/Theme.Material.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+
+    <style name="Karaoke.Player">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="TopButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:focusable">true</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

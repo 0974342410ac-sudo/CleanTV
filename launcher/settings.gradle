@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "tvhome"
 include ':app'
 include ':updater'
+include ':karaoke'

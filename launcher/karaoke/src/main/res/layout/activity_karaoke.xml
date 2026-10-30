@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sidebar (pages) | content: top bar, page, "Bài kế" bar. Pages are filled by KaraokeActivity. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/sidebar"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/sidebar_bg"
+        android:orientation="vertical"
+        android:paddingStart="18dp"
+        android:paddingTop="18dp"
+        android:paddingEnd="18dp"
+        android:paddingBottom="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@null"
+                android:src="@drawable/icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tagline"
+                    android:textColor="@color/dim"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Entries added by KaraokeActivity (item_nav) -->
+        <LinearLayout
+            android:id="@+id/nav"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/player_button"
+            style="@style/TopButton"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="0dp"
+            android:drawableStart="@drawable/ic_tv"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/button_text"
+            android:gravity="center_vertical"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/content_bg"
+        android:orientation="vertical"
+        android:paddingStart="36dp"
+        android:paddingTop="26dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="20dp">
+
+        <!-- Top bar: page title and subtitle, clock -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/page_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/dim"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:format12Hour="HH:mm"
+                android:format24Hour="HH:mm"
+                android:textColor="#FFFFFFFF"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <!-- Search page only -->
+        <LinearLayout
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_bg"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="12dp"
+                android:drawableTint="#80FFFFFF"
+                android:hint="@string/search_hint"
+                android:imeOptions="actionSearch|flagNoExtractUi"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="#FFFFFFFF"
+                android:textColorHint="#80FFFFFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/search_button"
+                style="@style/TopButton"
+                android:layout_height="56dp"
+                android:text="@string/search" />
+
+            <Button
+                android:id="@+id/mic_button"
+                style="@style/TopButton"
+                android:layout_height="56dp"
+                android:drawableStart="@drawable/ic_mic"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/button_text"
+                android:text="@string/mic" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1">
+
+            <!-- Home: rows of songs, singers, genres -->
+            <ScrollView
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/home_rows"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </ScrollView>
+
+            <!-- "Điện thoại": QR code of the phone page and how to open it (KaraokeActivity.showPhone) -->
+            <LinearLayout
+                android:id="@+id/phone_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/phone_qr"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:background="#FFFFFFFF"
+                    android:contentDescription="@null"
+                    android:padding="8dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/phone_steps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="#FFFFFFFF"
+                        android:textIsSelectable="false"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/phone_new_pin"
+                        style="@style/TopButton"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/phone_new_pin" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Every other page: one grid or list -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:descendantFocusability="afterDescendants"
+                android:paddingTop="6dp"
+                android:paddingBottom="12dp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <!-- "Bài kế" bar: the phone page's QR code (always there, scanning it pairs a phone), what is waiting,
+             and one button to sing it -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/nowbar_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="7dp"
+            android:paddingEnd="10dp">
+
+            <ImageView
+                android:id="@+id/now_qr"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="#FFFFFFFF"
+                android:contentDescription="@null"
+                android:padding="2dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/now_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/now_phone_plain"
+                    android:textColor="#FFFF6FA0"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_queue"
+                        android:tint="@color/accent" />
+
+                    <TextView
+                        android:id="@+id/now_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/now_next"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/dim"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next_button"
+                style="@style/TopButton"
+                android:layout_height="46dp"
+                android:drawableStart="@drawable/ic_play"
+                android:drawablePadding="6dp"
+                android:drawableTint="@color/button_text"
+                android:text="@string/sing_next" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Top-right corner of the player: the phone page's QR code, so people can pick songs while one is sung.
+     Top right because karaoke videos put their lyrics at the bottom; the banner in the middle stays clear of it. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|end"
+    android:layout_margin="14dp"
+    android:alpha="0.92"
+    android:background="@drawable/badge_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/player_qr"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="#FFFFFFFF"
+        android:contentDescription="@null"
+        android:padding="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/player_qr"
+        android:textColor="#FFFFFFFF"
+        android:textSize="10sp" />
+</LinearLayout>

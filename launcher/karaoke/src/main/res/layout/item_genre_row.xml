@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One genre in the player's search strip: gradient set per genre in code -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="156dp"
+    android:layout_height="68dp"
+    android:layout_marginEnd="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="@drawable/card_focus">
+
+    <TextView
+        android:id="@+id/genre_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:shadowColor="#80000000"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</FrameLayout>

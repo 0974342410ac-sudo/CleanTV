@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Karaoke</string>
+    <string name="tagline">Hát cùng YouTube</string>
+
+    <!-- Sidebar pages -->
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_search">Tìm kiếm</string>
+    <string name="nav_trending">Thịnh hành</string>
+    <string name="nav_singers">Ca sĩ</string>
+    <string name="nav_genres">Thể loại</string>
+    <string name="nav_favorites">Yêu thích</string>
+    <string name="nav_history">Đã hát</string>
+    <string name="nav_queue">Đã chọn</string>
+    <string name="nav_queue_count">Đã chọn (%d)</string>
+    <string name="queue_title">Danh sách đã chọn</string>
+
+    <string name="nav_phone">Điện thoại</string>
+
+    <!-- Phone page (PhoneRemote) -->
+    <string name="phone_sub">Chọn bài bằng điện thoại: tìm, thêm vào danh sách, dừng, qua bài</string>
+    <string name="phone_steps">1. Điện thoại dùng cùng Wi-Fi với TV.\n2. Mở camera, quét mã QR bên trái.\n\nHoặc mở trình duyệt, vào\n%1$s\nrồi nhập mã: %2$s\n\nNhiều điện thoại cùng chọn bài được. Trên iPhone: Chia sẻ → Thêm vào MH chính để có biểu tượng.</string>
+    <string name="phone_no_network">TV chưa có mạng nội bộ (Wi-Fi hoặc dây mạng).</string>
+    <string name="phone_new_pin">Đổi mã</string>
+    <string name="phone_connected">📱 Một điện thoại đã kết nối</string>
+    <string name="phone_added">📱 Đã thêm: %s</string>
+    <string name="phone_singing">📱 Hát: %s</string>
+
+    <!-- Page titles and lines under them -->
+    <string name="home_hello">Chào buổi tối, hát gì nào?</string>
+    <string name="home_hint">Bấm OK vào bài để hát hoặc thêm vào danh sách · Giữ OK: thêm nhanh</string>
+    <string name="row_trending">🔥 Thịnh hành tháng này</string>
+    <string name="row_singers">🎤 Ca sĩ nổi bật</string>
+    <string name="row_genres">🎵 Thể loại</string>
+    <string name="row_history">🕘 Hát gần đây</string>
+    <string name="row_favorites">♥ Yêu thích</string>
+    <string name="search_title">Tìm bài hát</string>
+    <string name="search_hint">Tên bài hát hoặc ca sĩ…</string>
+    <string name="search">Tìm</string>
+    <string name="mic">Nói</string>
+    <string name="hint_start">Gõ hoặc nói tên bài, tên ca sĩ. Chữ \"karaoke\" được tự thêm vào.</string>
+    <string name="searching">Đang tìm \"%s\"…</string>
+    <string name="results_count">Kết quả cho \"%s\"</string>
+    <string name="trending_sub">Bài karaoke mới đăng trong tháng, nhiều người hát</string>
+    <string name="singers_sub">%d ca sĩ · OK để xem bài hát</string>
+    <string name="singer_songs">Bài hát của %s · Back: về danh sách ca sĩ</string>
+    <string name="genres_sub">Chọn thể loại</string>
+    <string name="genre_songs">Karaoke %s · Back: về thể loại</string>
+    <string name="favorites_sub">%d bài · OK vào bài để hát, thêm vào danh sách hoặc bỏ yêu thích</string>
+    <string name="favorites_empty">Chưa có bài yêu thích. Bấm OK vào bài rồi chọn ♥ Yêu thích.</string>
+    <string name="history_sub">%d bài gần đây nhất</string>
+    <string name="history_empty">Chưa hát bài nào.</string>
+    <string name="queue_sub">%d bài · OK vào bài: hát ngay, ưu tiên hoặc xoá</string>
+    <string name="queue_empty">Danh sách đang trống. Bấm OK vào bài rồi chọn Thêm vào danh sách.</string>
+    <string name="no_results">Không tìm thấy bài nào. Thử tên khác hoặc thêm tên ca sĩ.</string>
+    <string name="error_network">Không kết nối được YouTube. Kiểm tra mạng rồi thử lại.</string>
+    <string name="error_blocked">YouTube tạm thời từ chối tìm kiếm từ máy này. Đợi vài phút rồi thử lại.</string>
+    <string name="error_page">YouTube đã đổi trang kết quả, ứng dụng chưa đọc được. Cần cập nhật ứng dụng.</string>
+
+    <!-- Genres -->
+    <string name="genre_bolero">Bolero</string>
+    <string name="genre_young">Nhạc trẻ</string>
+    <string name="genre_duet">Song ca</string>
+    <string name="genre_live_band">Nhạc sống</string>
+    <string name="genre_remix">Remix</string>
+    <string name="genre_nonstop">Nonstop</string>
+    <string name="genre_nonstop_vocal">Nonstop có lời</string>
+    <string name="genre_trinh">Nhạc Trịnh</string>
+    <string name="genre_medley">Liên khúc</string>
+    <string name="genre_kids">Thiếu nhi</string>
+    <string name="genre_female">Tone nữ</string>
+    <string name="genre_male">Tone nam</string>
+    <string name="genre_chinese">Nhạc Hoa lời Việt</string>
+    <string name="genre_folk">Dân ca · Quê hương</string>
+
+    <!-- Song card and menu -->
+    <string name="in_queue">✓ Đã chọn</string>
+    <string name="favorite_mark">♥</string>
+    <string name="action_sing">Hát ngay</string>
+    <string name="action_add">Thêm vào danh sách</string>
+    <string name="action_priority">Ưu tiên (hát kế tiếp)</string>
+    <string name="action_favorite">Yêu thích</string>
+    <string name="action_unfavorite">Bỏ yêu thích</string>
+    <string name="action_up">Đưa lên đầu</string>
+    <string name="action_remove">Xoá khỏi danh sách</string>
+    <string name="action_clear">Xoá cả danh sách</string>
+    <string name="queued">Đã thêm \"%1$s\" · %2$d bài trong danh sách</string>
+    <string name="already_queued">Bài này đã có trong danh sách</string>
+    <string name="prioritized">\"%s\" sẽ hát kế tiếp</string>
+    <string name="favorited">Đã thêm vào Yêu thích</string>
+    <string name="unfavorited">Đã bỏ khỏi Yêu thích</string>
+    <string name="removed">Đã xoá khỏi danh sách</string>
+    <string name="cleared">Đã xoá cả danh sách</string>
+
+    <!-- "Bài kế" bar -->
+    <string name="now_count">%d bài đang chờ</string>
+    <string name="now_empty">Chưa chọn bài</string>
+    <string name="now_next">Bài kế: %s</string>
+    <string name="now_hint">Bấm OK vào bài để hát · Giữ OK để thêm nhanh</string>
+    <string name="now_phone">📱 Quét mã bằng điện thoại để chọn bài · %s</string>
+    <string name="now_phone_plain">📱 Quét mã bằng điện thoại để chọn bài</string>
+    <string name="player_qr">📱 Quét để chọn bài</string>
+    <string name="sing_next">Hát bài kế</string>
+    <string name="player_builtin">Phát: trong app</string>
+    <string name="player_youtube">Phát: YouTube</string>
+
+    <!-- Player's search panel (PlayerSearch) -->
+    <string name="ps_hint">OK: thêm · Giữ OK: hát kế tiếp · Menu: ♥ · Back: đóng</string>
+    <string name="ps_trending">🔥 Thịnh hành tháng này · %d bài đang chờ</string>
+    <string name="ps_results">Kết quả cho \"%1$s\" · %2$d bài đang chờ</string>
+    <string name="ps_favorites">♥ Yêu thích: %1$d bài · %2$d bài đang chờ</string>
+    <string name="ps_favorites_empty">Chưa có bài yêu thích · bấm Menu vào một bài để thêm</string>
+    <string name="ps_singers">🎤 Chọn ca sĩ hoặc gõ tên · %d bài đang chờ</string>
+    <string name="ps_singers_none">Không có trong danh sách · bấm tìm để tìm \"%s\"</string>
+    <string name="ps_singer">Bài của %1$s · %2$d bài đang chờ · Back: về ca sĩ</string>
+    <string name="ps_genres">🎵 Chọn thể loại · %d bài đang chờ</string>
+    <string name="ps_genre">%1$s · %2$d bài đang chờ · Back: về thể loại</string>
+    <string name="key_delete">⌫</string>
+    <string name="key_space">Cách</string>
+    <string name="key_digits">123</string>
+    <string name="key_letters">abc</string>
+    <string name="key_search">Tìm</string>
+    <string name="player_hint">▲ Lên: tìm bài · ▼ Xuống: bài kế</string>
+
+    <!-- Player -->
+    <string name="now_singing">Đang hát: %s</string>
+    <string name="next_up">Bài kế: %s</string>
+    <string name="next_soon">Sắp tới: %1$s · còn %2$d bài</string>
+    <string name="paused">Tạm dừng: %s · OK để hát tiếp</string>
+    <string name="no_youtube_app">Không có ứng dụng YouTube trên TV này</string>
+
+    <!-- Voice -->
+    <string name="voice_prompt">Nói tên bài hát</string>
+    <string name="voice_unavailable">TV này không có nhận dạng giọng nói</string>
+    <string name="voice_permission">Cần cho phép dùng micrô để tìm bằng giọng nói</string>
+    <string name="voice_no_match">Không nghe rõ, thử nói lại</string>
+</resources>
