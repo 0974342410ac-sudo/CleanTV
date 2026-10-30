@@ -61,3 +61,14 @@
 # Since the microphone cannot record, a launcher build installed by hand on .239 only (not in the update packages:
 # owner's choice, 2026-10-23) opens a typed search box instead. The BT remote counts as a hardware keyboard, which hid the on-screen
 # keyboard: `settings put secure show_ime_with_hard_keyboard 1` (was null) makes LatinIME show. Undo: set it to 0.
+# XGIMI H2 firmware files (read 2026-10-30, device synsepalum_YN, MStar 838, Android 6.0, SDK 23, kernel 3.10.86): USB bins
+# whose system partition is lzop pieces written with "mmc unlzo" (FirmwareVi.java only reads sparse pieces). "CN-GV v1.1.4"
+# (2018) is a Russian community experiment to put Global 1.1.4 on a Chinese unit (MD5.txt, CP1251); Global V1.3.15 is 2020-10;
+# Chinese v1.13.41 is 2020-03. None has /vendor/overlay or a Vietnamese mod. No Android 8 build for this chip was found.
+# XGIMI_IRONMAN_XJ03D.bin (Halo) is MSD848, kernel 4.9, with a vendor partition: never for an H2 (it rewrites mboot).
+# Vietnamese H2 firmware (2026-10-30, tools/xgimi-vi/build-firmware-h2-vi.ps1, NOT flash-tested): V1.3.15 Global with the three
+# overlays in /vendor/overlay, launcher 2.10 (key 82f6) in /priv-app/TvHome so it holds WRITE_SECURE_SETTINGS and enables
+# HomeKeyService itself, Vietnamese and Vietnam time in build.prop. Its system image was made by make_ext4fs: e2fsck already fails
+# on the original (5 files on backup group blocks, image shorter than the file system), no free blocks inside the image, so new files lie
+# past its end. debugfs left the backup blocks alone (11 blocks changed inside the original). Changed lzop blocks are stored raw, as 959
+# original blocks already are; one extra "mmc unlzo.cont" piece holds what lies past the end.

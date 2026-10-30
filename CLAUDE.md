@@ -33,7 +33,8 @@ Vietnamese; user-facing text (launcher, updater, guides) is Vietnamese.
   `launcher/build-and-install.ps1` builds and installs the launcher.
 - `tools/xgimi-vi/` Vietnamese translations for XGIMI system apps and the scripts that apply them: fabricated
   overlays on the DOHKO, installed overlay APKs for RS10/H6 (m7642) and IRONMAN (`rs10-overlays.ps1 -Device`).
-  `build-firmware-vi.ps1` puts them in a USB firmware bin as static overlays (not flash-tested, see its guide).
+  `build-firmware-vi.ps1` puts them in a USB firmware bin as static overlays (not flash-tested, see its guide);
+  `build-firmware-h2-vi.ps1` does it for the XGIMI H2 (Android 6, lzop pieces, `FirmwareLzo.java`) and adds the launcher.
   `examples/<device>/debloat.txt` hold each device's removal list and its notes.
 - Not in Git (see `.gitignore`): `backup/` (per-TV data), `dist/`, `prebuilt/`, build outputs, `tools/platform-tools`
   (download Google's platform-tools there), `tools/venv`, and `tools/adbkey` (this PC's ADB key; each PC has its own).

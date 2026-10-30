@@ -1,0 +1,33 @@
+FIRMWARE TIẾNG VIỆT CHO XGIMI H2 (MSD838, ANDROID 6)
+====================================================
+
+CẢNH BÁO
+- Bản này CHƯA ĐƯỢC FLASH THỬ trên máy thật. Flash có thể làm máy không vào được Android.
+- Flash sẽ XOÁ HẾT dữ liệu trong máy: ứng dụng đã cài, tài khoản, Wi-Fi, cài đặt.
+- Chỉ dùng cho XGIMI H2 (thiết bị synsepalum_YN). KHÔNG flash lên H1, H3, Halo, RS10, H6 hay máy khác.
+- Không rút điện, không rút USB trong lúc flash.
+
+CÓ GÌ TRONG BẢN NÀY
+Dựa trên firmware V1.3.15 Global (Android 6.0) của XGIMI. Chỉ phân vùng system đổi, mboot và các phân vùng khác giữ nguyên.
+- Tiếng Việt cho Cài đặt XGIMI (368 mục), thanh cài đặt nhanh (120 mục) và menu tắt máy (51 mục).
+- Giao diện mới: launcher CleanTV làm màn hình chính. Nút Home mở launcher mới; màn hình XGIMI vẫn còn ở phía sau.
+- Mặc định tiếng Việt, giờ Việt Nam.
+Vẫn là Android 6, không nâng được lên Android 8.
+
+CÁCH FLASH
+1. Chuẩn bị USB định dạng FAT32, cắm trực tiếp vào máy, không qua hub.
+2. Chép file GIMI_XHAD01_XHC05_MAXIM_YN_WMP.bin vào thư mục gốc của USB. KHÔNG đổi tên file.
+3. Tắt hẳn máy chiếu, rút điện. Cắm USB. Giữ nút nguồn trên thân máy rồi cắm điện, giữ tới khi đèn nháy hoặc màn hình báo đang
+   cập nhật (cách vào chế độ cập nhật có thể khác theo đời máy: làm theo cách bạn đã dùng để flash firmware gốc).
+4. Chờ máy tự khởi động lại. Lần đầu có thể mất vài phút.
+5. Bỏ USB. Bấm Home nếu chưa thấy màn hình mới.
+
+CẦN KIỂM TRA SAU KHI FLASH
+- Trình thiết lập lần đầu của XGIMI không có tiếng Việt, có thể hiện tiếng Anh hoặc tiếng Trung. Nếu trong đó có chọn ngôn ngữ, đừng
+  đổi sang ngôn ngữ khác.
+- Cài đặt, menu nhanh, menu tắt máy phải là tiếng Việt. Ứng dụng khác của XGIMI có thể còn tiếng Anh hoặc Trung.
+- Nút Home mở launcher mới. Micro trên remote có thể không dùng được: đây là giới hạn đã biết của dòng máy này.
+
+CỨU MÁY HOẶC TRỞ VỀ BẢN GỐC
+Flash lại file gốc V1.3.15 theo đúng cách trên (file gốc tên giống hệt, nên để riêng USB khác hoặc thư mục khác trên máy tính).
+Vì mboot không bị sửa, chế độ cập nhật bằng USB vẫn còn nếu Android không khởi động được.
