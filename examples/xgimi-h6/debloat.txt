@@ -66,3 +66,12 @@
 #
 # No packages disabled yet (read from firmware only). When applying on a real unit, follow the RS10 DO-NOT-DISABLE
 # set for the m7642 platform and keep each change reversible.
+# Language row in the Vietnamese firmware (2026-10-30, NOT flash-tested): Settings builds its pages from res/raw/settings_product_<name>.json
+# by ro.xgimi.product.name; Product_xiaobai and 21 others leave out the "language" row. Overlay VietHoaNgonNgu-com.android.newsettings (priority 2)
+# adds it to the system page. XGIMI's page only knows Chinese and English, in code (LanguageEnum), so its Chinese row is labelled Tieng Viet and
+# /system/priv-app/XgimiLanguage turns zh into vi-VN on LOCALE_CHANGED. Overlays now also carry values-vi and values-vi-rVN: without them an
+# app's own partial Vietnamese won over the overlay's default. Which product name a real M1/H6 reports at run time was not read from a unit.
+# Firmware overlays now read only this firmware's tables (h6-apps-chuoi, h6-full-chuoi), 2026-10-30: taking the first table with a name had given 19
+# strings another firmware's meaning or format, e.g. power_low_shutdown_window_tip_title %d for this firmware's %ss (crash risk), and 453 names no app here has.
+# Factory menu com.xgimi.minitvfactory translated in the firmware (2026-10-30, tools/xgimi-vi/h6-factory-vi.tsv, by name; only -Static reads it): 437 of 439; the two left are
+# model names (w2_name, w2_pro_name). The app's code still holds 118 Chinese strings. Not opened on a unit: this menu can erase calibration and MAC data.

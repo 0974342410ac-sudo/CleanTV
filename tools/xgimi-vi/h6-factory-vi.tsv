@@ -1,0 +1,439 @@
+# Menu nha may com.xgimi.minitvfactory cua firmware H6/M1 (m7642), theo ten chuoi: s = chuoi, a = mang (cac muc cach nhau bang " | ").
+# rs10-overlays.ps1 -Static doc file nay. Giu nguyen ten ma hieu (AF, AK, TOF, MAC, DLP...). Khong dich hai ten model w2_name, w2_pro_name.
+s	clean_buildin	Xóa dữ liệu lão hóa
+s	item_device_model_info	Model thiết bị: %1$s
+s	color_check	Kiểm tra màu
+s	item_title_aperture_machine	Tự kiểm tra motor khẩu độ IRIS
+s	item_nfc_authentication_failed	Xác thực thất bại, có thể sai mật khẩu
+s	str_calibration_support_error	Máy không hỗ trợ AF/TOF
+s	waitiing_connection	Đang chờ kết nối...
+s	bluetooth_signal	Tín hiệu Bluetooth
+s	cancle	Hủy
+s	focus_chart	Hiện kết quả lấy nét tự động
+s	item_title_door_machine	Tự kiểm tra motor cửa khoang
+s	current_temp	Nhiệt hệ thống chính/phụ:%s/%s, môi trường:%s, DMD:%s, bánh xe màu (color):%s, đèn G:%s, đèn R:%s, đèn R2:%s, đèn BP:%s, đèn B:%s, CPU:%s, bo điều khiển:%s
+s	turn_on	Bật
+s	musci_play_content_incomplete	Chưa kiểm tra xong
+s	ok	Xác nhận
+s	str_af_calibration_result_undo	Chưa làm AF
+s	mac_error	MAC đọc được không đúng, hãy kiểm tra file
+s	pattern_swithc	Công tắc gương rung
+s	msg_first_stage_lumens_mode	Đang lão hóa chế độ độ sáng…
+s	developer	Tùy chọn phát triển và gỡ lỗi
+s	str_askConfirmExit	Xác nhận thoát?
+s	item_title_color_wheel	Index bánh xe màu
+s	virtual_check	Hình kiểm tra lệch nét
+s	str_title_actcail	Hình gương rung
+s	mstv_tool_val_success	Thành công!
+s	auto_key_test_fail	Kiểm tra thất bại, sai phím!
+s	auto_check_failure	Không đạt kiểm tra tự động!
+s	auto_not_support	ERROR Model này chưa hỗ trợ tự động hóa chức năng này
+s	str_test_done	Đã kiểm tra xong. Kết quả:
+s	results_burn_time_third	Thời gian giai đoạn 3: %1$.2f, thực tế: %2$.2f
+s	batter_value	Mức pin
+s	item_factory_version_info	Phiên bản menu nhà máy
+s	dialog_burn_sure	Xác nhận
+s	str_dialog_focus_message	Đã hiệu chỉnh thông số motor, hiệu chỉnh lại sẽ làm TOF/AK mất hiệu lực
+s	item_system_version_info	Phiên bản hệ thống: %1$s
+s	change_background	Đổi nền
+s	auto_key_test_timeout	Kiểm tra thất bại, quá thời gian!
+s	laser_model	Quét Model Name TV laser
+s	laser_sn	Quét SN TV laser
+s	toast_light_power_fail	Thực hiện thất bại
+s	write_device_mac_faile	Ghi vào thiết bị thất bại
+s	factory_mode	Chế độ nhà máy
+s	str_calibration_failed_is_too_small	AF [tính thất bại]\nTỉ lệ phủ hình quá nhỏ, hãy chỉnh góc camera
+s	ten_sec_wait	Đã cập nhật trạng thái, có hiệu lực sau 10 giây
+s	str_tip_af_camera_error	[Lấy nét thất bại]\nCamera bất thường
+s	results_burn_bettery_check	Kiểm tra pin %s
+s	item_test_wall_color	Kiểm tra thích ứng màu tường phía người dùng
+s	str_temperature_drop_control	Giảm dòng khi nhiệt độ cao lúc lão hóa
+s	str_tip_af_time	[Lấy nét thất bại]\nLấy nét tự động quá thời gian
+s	state_btn_txt	Nút button(%1$s)
+s	auto_key_test_success	Kiểm tra thành công, hãy chờ lệnh mới
+s	fan_control	Điều khiển tốc độ quạt
+s	str_tof_calibration_result_failed	TOF thất bại
+s	musci_play_pause	Tạm dừng
+s	item_gyroscope_acquisition	Thu dữ liệu gốc con quay
+s	hardware_info	Thông tin phần cứng
+s	auto_key_test_mcu_power	Hãy bấm: phím nguồn
+s	str_tof_i2_c_error	Lỗi TOF I2C
+s	item_title_8x8_tof_calibration	Hiệu chuẩn TOF mặt 8x8
+s	toast_light_power_success	Thực hiện thành công, sẽ tắt máy STR
+s	str_adopt	Đạt
+s	auto_keystone	Tự hiệu chỉnh hình thang
+s	pattern	Kiểm tra gương rung
+s	str_dialog_xlab_message	Đã hiệu chuẩn XLAB, hiệu chuẩn lại sẽ làm AK mất hiệu lực
+s	page_five_dlp_title	<Trang 5> Gỡ lỗi DLP, bấm trái/phải để lật trang
+s	results_burn_memory	Bộ nhớ %s
+s	item_title_surface_tof_center_precision	Độ chụm tâm
+s	item_content_focus_success	Hiệu chuẩn đạt
+s	results_burn_fan	Lão hóa quạt %s
+s	dialog_nfc_connected_red	%s đã kết nối, đang đọc
+s	str_tip_calibration_successful	[Tính thành công]
+s	item_title_rgbd_check	Hiệu chuẩn RGBD
+s	verify_succ	Xác minh thành công
+s	results_burn_camera_coiled	Kiểm tra camera liên tục %s
+s	str_dialog_8x8_tof	Đã hiệu chuẩn TOF mặt 8x8, không cần kiểm tra lại
+s	item_iot_check_signal	Kiểm tra tín hiệu IOT
+s	str_dialog_warning_title_tip	Hộp cảnh báo (Warning)
+s	item_title_file_title	Kiểm tra video 3D
+s	view_output_text_start	Bắt đầu lão hóa!
+s	str_result_undo	Chưa làm
+s	connection_edned	Đã kết thúc kết nối
+s	serial_port_node_failed	Đọc nút thất bại!
+s	auto_key_test_volume_up	Hãy bấm: tăng âm lượng
+s	str_dialog_warning_message	Đã hiệu chỉnh xong\nCó hiệu chỉnh lại từ đầu không?
+s	copy_wifimac_text	Chép và thay MAC wifi
+s	recovery_text	Khôi phục một chạm
+s	pid_length_error	Độ dài mã vạch không đúng
+s	serial_port_send_success	Đã gửi dữ liệu
+s	item_title_surface_tof_average_value	Kiểm tra độ chuẩn chín ô
+s	str_tip_calibration_failed_data_error	[Tính thất bại]\nDữ liệu đọc được bằng 0
+s	str_calibration_successful	AF [tính thành công]
+s	keybox_verify_success	Xác minh Widevine thành công
+s	str_dialog_grbd_message	Đã hiệu chuẩn RGBD, không cần kiểm tra lại
+s	fan_speed	Tốc độ quạt
+s	results_burn_time_fourth	Thời gian giai đoạn 4: %1$.2f, thực tế: %2$.2f, %3$s
+s	str_result_failed	Thất bại
+s	serial_port_send_failed	Gửi dữ liệu thất bại
+s	wifi_faile	Ăng-ten bất thường
+a	bootview_on_off	Bật | Tắt
+s	str_title_gyro_calibration	Hiệu chỉnh con quay tại nhà máy
+s	item_title_focus_xlab	Chuỗi hiệu chuẩn lấy nét XLAB
+s	factory_user_mode	Chế độ người dùng
+s	str_FileNotFind	Không tìm thấy file
+s	str_dialog_focusing_message	Kết quả hành trình rỗng lấy nét: %s\nCó thể bấm để hiệu chỉnh lại
+s	str_calibration_failed_photo_exception	AF [tính thất bại]\nCamera bất thường
+s	ten_percent	Trung bình 10 lần
+s	dlp_dmd_status	Trạng thái DLP DMD
+s	dialog_nfc_written	Ghi thành công, hãy áp thẻ để đọc
+s	usb_mode	Chuyển chế độ USB
+s	str_dialog_message_shutdown	Đang tắt máy...
+s	item_title_surface_tof_range	Phần trăm chênh lệch độ sâu theo thời gian
+s	str_autofocus_video	Kiểm tra lấy nét tự động - nền video
+s	str_tof_data_error	Lỗi đọc TOF
+s	str_textview_factory_crash_tips	Thông báo sập ứng dụng
+s	item_title_pan_check	Hiệu chuẩn giá xoay
+s	item_title_nfc_red	Kiểm tra thẻ NFC
+s	str_factory_screenmode	Chế độ chiếu
+s	huanyuan_ing	Đang khôi phục, vui lòng chờ......
+s	str_textview_factory_pid	Mã vạch
+s	temperature	Nhiệt độ
+s	modelname_can	ModelName có thể quét:
+s	batterystyle_title	Kiểu hiển thị pin
+s	str_tip_af_is_interrput	[Lấy nét thất bại]\nLấy nét tự động đã bị ngắt
+s	keytosn	Chuyển mã phím sang SN
+s	toast_nfc_unsupported	Loại thẻ không được hỗ trợ
+s	item_nfc_authentication	Thiết bị cần xác thực mới ghi được! Hãy nhập mật khẩu
+s	count_error	Số lần không hợp lệ
+s	customid_before	customId trước đây:
+s	page_five_title	<Trang 5> Tùy chọn gỡ lỗi và tùy biến nhà máy, bấm trái/phải để lật trang
+s	item_title_gyroscope_acquisition_open	Bật>(%1$s)
+s	rtc_test_toast	Bắt đầu kiểm tra RTC, tắt máy sau %d giây, khoảng 1 phút sau tự bật lại
+s	str_InputPIDHit	Hãy quét mã vạch của máy...
+s	item_title_check_tof_structure	TOF mặt - kiểm tra lọt sáng kết cấu
+s	page_four_title	<Trang 4> Thông tin phần mềm và phần cứng, bấm trái/phải để lật trang
+s	item_factory_motor_complete	Hiệu chỉnh thông số motor (đã lão hóa xong)
+s	white_balance_toast	Kiểm tra cân bằng trắng cần chế độ độ sáng Tiêu chuẩn, hãy đổi chế độ độ sáng!
+s	view_output_text_burn	Trạng thái hiện tại: %s
+s	item_des_cail_environment_preparation	Bấm để tắt AF/AK khi bật máy, AF/AK khi dịch chuyển, chống chiếu vào mắt, độ sáng thích ứng, tự tăng cường màu
+s	auto_receive_failure	Gửi lệnh tự động thất bại!
+s	str_autofocus_image	Kiểm tra lấy nét tự động - nền ảnh
+s	toast_camera_reset_filed	Đặt lại camera quá thời gian, thất bại!
+s	str_tip_calibration_failed_is_too_small	[Tính thất bại]\nTỉ lệ phủ hình quá nhỏ, hãy chỉnh góc camera
+s	results_burn_focus	Lão hóa lấy nét %s
+s	results_burn_amp_check	Kiểm tra AMP %s
+s	results_burn_filter	Lão hóa kính lọc Filter %s
+s	results_burn_message	Tổng số lần lão hóa: %d, số lần thành công: %d
+s	bluetooth_rc_version	Phiên bản phần mềm remote Bluetooth
+s	item_title_surface_tof_bad_number	Số điểm lỗi
+s	focus_check	Hình kiểm tra lệch nét khối quang
+s	item_nfc_red	Đọc thành công, hoàn tất quy trình
+s	str_tof_init_error	Lỗi khởi tạo TOF
+s	fan_temp	Thông tin tốc độ quạt và nhiệt độ
+s	item_content_focus_fail	Hiệu chuẩn chưa thành công
+s	rtc_factory_test_content	Dùng cho dòng U
+s	str_dialog_pan_gsensor_message	Đã hiệu chuẩn Gsensor giá xoay, không cần kiểm tra lại
+s	str_dialog_point_tof	Đã hiệu chuẩn TOF điểm, không cần kiểm tra lại
+s	message_dev_error_no_exists	Không có devErrlog.xml
+s	mcu_version	Phiên bản image Mcu
+s	dialog_surface_tof_tips	Đã kiểm tra TOF mặt
+s	bluetooth_log	Công tắc nhật ký
+s	str_af_calibration_result_failed	AF thất bại
+s	do_trapezoid	Hiệu chuẩn hình thang một chạm
+s	str_value_error	Lỗi lấy giá trị
+s	item_nfc_incorrect_data	Định dạng dữ liệu đọc được không đúng
+s	start_app_text	Trình hướng dẫn khi bật máy
+s	str_calibration_failed_over_size	AF [tính thất bại]\nHình vượt khung chữ nhật xanh, hãy chỉnh góc camera
+s	item_title_nfc	Đọc ghi thẻ NFC
+s	keybox_encrypt_fail	Mã hóa KeyBox thất bại, lỗi chạy script
+s	mstv_tool_val_fail	Thất bại!
+s	results_burn_color_temp	Kiểm tra nhiệt bánh xe màu %s
+s	str_tip_calibration_failed_no_pic	[Tính thất bại]\nHãy đảm bảo nét rõ và hình tính toán hiển thị đúng
+s	str_af_item_title	Kiểm tra hiệu chuẩn AF
+s	view_output_text_wait_op	Đang chờ thao tác!
+s	auto_data_timeout	ERROR Lấy dữ liệu quá thời gian
+s	text_ceiling_switch	Đèn bảng điều khiển
+a	balance_flags	Chưa hiệu chỉnh | Đã hiệu chỉnh | Đã đạt | Đang tính toán | Cân bằng trắng NG
+s	customid_now	customId hiện tại:
+s	toast_surface_tof_refresh	Đang làm mới dữ liệu...
+s	str_tof_item_title	Kiểm tra hiệu chuẩn TOF
+s	item_check_wall_color	Kiểm tra thích ứng màu tường tại nhà máy
+s	no_mac_item	Đã dùng hết MAC, hãy cập nhật file MAC
+s	str_FileMacRemain	Ghi xong, số MAC còn lại:
+s	item_title_radar_check	Kiểm tra radar
+s	auto_log_failure	Không có file nhật ký!
+s	str_camera_exit	Bấm lần nữa để thoát
+s	view_pause_burn	Tạm dừng lão hóa
+s	str_af_calibration_result_pass	AF đạt
+s	results_burn_reboot	Khởi động lại %s
+s	auto_trapezoid	Tự hiệu chỉnh thông số hình thang
+s	item_nfc_red_failed	Ghi và đọc không khớp, quy trình thất bại!
+s	msg_fourth_stage	Tắt máy sau 30 giây…
+s	str_dialog_warning_btn_sure	Đồng ý
+s	item_title_surface_tof_refresh	Làm mới dữ liệu một chạm
+s	item_click_light_power	Bấm để thực hiện, thành công sẽ tắt máy STR
+s	toast_erase_eep_rom	Đang xóa DLP EEPROM! Máy sẽ tự khởi động lại, vui lòng chờ
+s	str_textview_lensshift_motor_lith	Hiệu chỉnh thông số motor góc khối quang
+s	musci_play_title	Kiểm tra rung âm thanh
+s	certification	Xác minh tùy biến
+s	widevine_keybox_verify	Xác minh WIDEVINE tại nhà máy
+s	serial_port_open_failed	Mở cổng nối tiếp thất bại
+s	view_description_text	Bắt đầu lão hóa: xóa trạng thái và dữ liệu lão hóa\nTiếp tục lão hóa: tiếp tục từ trạng thái trước\nTạm dừng lão hóa: tiếp tục hoặc khởi động lại để tự lão hóa tiếp\nXóa dữ liệu: đặt lại trạng thái chưa xong và xóa dữ liệu\nĐặt thời gian lão hóa: nhập số giây, mặc định 7200 (2 giờ)\nThời gian lão hóa hiện tại: %d giây
+s	white_balance_success	Hiệu chỉnh cân bằng trắng thành công
+s	batterystyle_percentage	Dạng số
+s	white_balance	Hiệu chỉnh cân bằng trắng
+s	str_test_record	Bản ghi kiểm tra:
+s	item_title_surface_tof_ber	Tỉ lệ lỗi bit
+s	auto_file_path_wrong	Sai đường dẫn file
+s	item_title_remote_voice	Kết quả kiểm tra giọng nói xa
+s	global_color_check	Đồng đều màu
+s	item_nfc_check_failed	Kiểm tra thất bại
+s	power_on_start	Tự bật khi cấp điện
+s	ichips_test_title	Kiểm tra ichips
+s	str_tof_distance_error	Khoảng cách TOF bất thường
+a	product_show	Người dùng thường | H2 tùy biến Tmall
+s	wifi_bt_model	Module Wifi BT
+s	item_click_focus_xlab	Bấm để chạy chuỗi hiệu chuẩn lấy nét XLAB
+s	item_title_light_power	Kiểm tra công suất đèn
+s	mstv_tool_val	Tắt
+s	item_title_surface_tof_center_accuracy	Độ chuẩn tâm
+s	c788_test_title	Kiểm tra C788
+s	check_key	Kiểm tra HDCP
+a	hdmi_on_off	Tắt | Bật
+s	results_burn_face_tof	Dữ liệu lỗi bit TOF mặt: %s
+s	pid_network_error	Nhập mã vạch thất bại! Hãy kiểm tra mạng
+s	item_title_surface_tof	Kiểm tra TOF mặt
+s	toast_nfc_success	Thao tác thành công!
+s	modelname_now	ModelName hiện tại:
+s	dialog_rest_burn_warning_msg	Đã lão hóa xong, bấm xác nhận sẽ xóa dữ liệu và lão hóa lại
+s	toast_nfc_failed	Thao tác thất bại!
+s	toast_md5_error	%1$s, kiểm tra md5 thất bại!
+s	turn_off	Tắt
+s	motor_torsion_code	Tổng số lần kiểm tra lực xoắn/quá lớn/quá nhỏ
+s	auto_key_test_sounder_key	Hãy bấm: chế độ loa
+s	str_auto_focus_error	Lấy nét tự động đã bị ngắt\nHãy bấm xác nhận để bắt đầu lại
+s	toast_nfc_need_card	Hãy áp thẻ
+s	calibration_preparation	Chuẩn bị hiệu chỉnh...
+s	str_number_focusing_undo	Chưa làm số bước hành trình rỗng lấy nét
+s	color_rest	Khôi phục đồng đều màu
+s	text_auto_check	Kiểm tra tự động
+s	str_motor_number_error	Số motor bất thường
+s	dlp_version	Phiên bản image khối quang
+s	batterystyle_icon	Dạng biểu tượng
+s	modelname_before	ModelName trước đây:
+s	url_network_error	Địa chỉ tải key qua mạng bị lỗi!
+s	results_burn_dmd_temp	Kiểm tra nhiệt DMD %s
+s	results_burn_door	Lão hóa cửa khoang %s
+s	restoring_akey	Đang khôi phục, đừng thao tác gì khác, vui lòng chờ......
+s	pid_mac_empty	Thông tin lỗi:
+s	str_tof_null_error	Lỗi con trỏ rỗng TOF
+s	electric_white_balance	Hiệu chỉnh cân bằng trắng
+s	erase_eep_rom	Xóa DLP EEPROM
+s	item_title_pan_gsensor_check	Hiệu chuẩn góc gsensor giá xoay
+s	toast_mes_clear_finish	Đã xóa trạng thái và dữ liệu lão hóa!
+s	auto_temp_failure	Không có file nhiệt độ lão hóa!
+s	results_burn_eye_check	Kiểm tra hồng ngoại bảo vệ mắt %s
+s	str_tof_params_error	Lỗi thông số TOF
+s	view_output_text_pause	Đã tạm dừng lão hóa!
+s	text_check	Hình kiểm tra chữ khối quang
+s	view_restart_burn	Tiếp tục lão hóa
+s	str_not_find_app	Không tìm thấy ứng dụng này
+s	page_three_title	<Trang 3> Tùy chọn gỡ lỗi và tùy biến nhà máy, bấm trái/phải để lật trang
+s	input_code_success	Hoàn tất quét mã!
+s	str_calibration_intent_error	Lỗi tham số khi khởi động
+s	str_calibration_failed_no_pic	AF [tính thất bại]\nHãy đảm bảo nét rõ và hình tính toán hiển thị đúng
+s	toast_camera_filed	Không lấy được thông tin camera, đang đặt lại camera!
+s	str_textview_mstar_factory	Menu nhà máy mstar
+s	dialog_nfc_connected	%s đã kết nối, đang ghi
+s	auto_data_empty	ERROR Dữ liệu lấy được rỗng
+s	update_wifi_mac_success	Cập nhật MAC wifi thành công
+s	str_tof_method_params_error	Tham số truyền TOF bất thường
+s	item_light_detection	Kiểm tra bo nguồn
+s	results_burn_env_temp	Kiểm tra nhiệt môi trường %s
+s	serial_port_read_failed	Đọc dữ liệu thất bại
+s	item_touch_context	Kết quả Touch
+s	item_title_filter_machine	Tự kiểm tra kính lọc filter
+s	update_success	Cập nhật thành công
+s	results_burn_optics	Lão hóa zoom quang %s
+s	hint_error	Lỗi
+s	str_autofocus_stress	Kiểm tra lấy nét tự động -- lão hóa
+s	message_dev_error_no_content	File không có nội dung
+s	dialog_nfc_wait	Đang chờ thiết bị kết nối
+s	results_burn_aperture	Lão hóa khẩu độ IRIS %s
+s	key_write_error	Ghi key thất bại!
+s	musci_play_test_time	Thời gian kiểm tra: %1$s
+s	item_test_wall_temp	Tăng nhiệt nhanh, nhiệt đèn R: %s
+s	item_title_surface_tof_outliers	Kiểm tra tỉ lệ điểm ngoại lai
+s	verify_pid	Quét mã vạch để xác minh
+s	str_please_use_in_the_correct_scene	Hãy dùng trong đúng bối cảnh
+s	connection_timeout	Kết nối đã quá thời gian
+s	auto_address_failure	Sai địa chỉ IP hoặc cổng!
+s	str_number_focusing_item_title	Số bước hành trình rỗng lấy nét
+s	results_burn_time_second	Thời gian giai đoạn 2: %1$.2f, thực tế: %2$.2f, %3$s
+s	net_data_filed	Lỗi lấy thông tin!
+s	have_mac_count	Ghi xong, số MAC còn lại:
+s	device_firmware	Phiên bản firmware linh kiện
+s	white_rest	Khôi phục cân bằng trắng
+s	view_time_burn	Đặt thời gian lão hóa
+s	darren_mcu_version	Phiên bản image Mcu bo nguồn
+s	item_title_tof_check	Kiểm tra TOF
+s	item_title_zoom_focus_motor	Hiệu chỉnh thông số motor zoom
+s	str_production_testing	Kiểm tra tự động trong sản xuất
+s	wifi_signal	Tín hiệu Wifi
+s	str_FactoryMenu	%s Khởi động lão hóa từ menu nhà máy
+s	item_title_cail_environment_preparation	Chuẩn bị môi trường hiệu chuẩn
+s	text_light_mode_test	Chế độ kiểm tra độ sáng
+s	results_burn_camera_single	Kiểm tra camera một lần %s
+s	item_title_surface_tof_surface_accuracy	Kiểm tra độ chuẩn mặt phẳng
+s	not_find_macfile	Không tìm thấy file
+s	item_title_file_content	Mở trình quản lý file
+s	erase_eep_rom_incomplete	Chưa thực hiện
+s	str_press_key_to_run_calibration	Hãy bấm xác nhận để chạy tính toán
+s	laser_mac	Quét MAC TV laser
+s	view_clear_burn	Xóa dữ liệu
+s	waitiing_expired	Đã hết thời gian chờ
+s	str_dialog_gyro_message	Đã hiệu chỉnh con quay, hiệu chỉnh lại sẽ làm AK mất hiệu lực
+s	no_wifi	Chưa kết nối WIFI, không kiểm tra được
+s	hint_sync_error	Lỗi đồng bộ dữ liệu!
+s	cca_test	Kết quả kiểm tra CCA (màu chính xác cao)
+s	results_burn_message_pan	Tổng số lần lão hóa: %d, số lần thành công: %d, số lần độ chụm 0.25–0.4: %d
+s	item_content_hard_speed_fail	Kiểm tra thất bại
+s	item_title_surface_tof_signal_strength	Cường độ tín hiệu
+s	item_title_surface_tof_variance	Phần trăm STD độ sâu theo thời gian
+s	str_confirm_exit	Xác nhận thoát kiểm tra?
+s	page_one_title	<Trang 1> Bấm trái/phải để lật trang
+s	results_burn_tof_check	Kiểm tra TOF %s
+s	mac_network_error	Lỗi lấy dữ liệu qua mạng!
+s	view_output_text_finish	Đã lão hóa xong, đặt lại dữ liệu để bắt đầu!
+s	akey_restore	Khôi phục một chạm?
+s	str_motor_error	Trạng thái motor bất thường
+s	count_success	Kết thúc lão hóa
+s	str_tof_motor_error	Motor TOF đang bị chiếm
+s	str_tof_calibration_result_pass	TOF đạt
+s	str_camera_moudle_name	Module camera
+s	door_correct	Hiệu chỉnh thông số motor cửa khoang
+s	toast_low_battery	Pin dưới 80%!
+s	str_havent_test	Chưa kiểm tra.
+s	results_burn_msensor_check	Kiểm tra con quay %s
+s	item_factory_motor_incomplete	Hiệu chỉnh thông số motor (chưa lão hóa xong)
+s	str_item_factory_customer	Khách hàng tùy biến
+s	auto_file_failure	File không tồn tại!
+s	item_content_data_fail	Lấy dữ liệu thất bại
+s	rtc_factory_test	Kiểm tra RTC tại nhà máy
+s	toast_mcu_fail	Phiên bản MCU bất thường
+s	str_tof_data_params_error	Dữ liệu TOF bất thường
+s	str_tof_calibration_value_error	TOF không có trạng thái
+s	item_title_hard_speed	Đo tốc độ ổ đĩa
+s	str_ak_item_content	Hiệu chuẩn AK: %1$s, cấp kiểm tra AK: %2$s, kiểm tra FOV: %3$s, kiểm tra RGBD: %4$s
+s	item_title_surface_tof_leak	Kiểm tra lọt sáng kết cấu
+s	results_burn_pan	Lão hóa giá xoay %s
+s	dialog_burn_cancel	Hủy
+s	pid_doing_error	Đang trong quy trình quét mã
+s	page_two_title	<Trang 2> Bấm trái/phải để lật trang
+s	str_tip_calibration_successful_rotate_180	[Tính thành công]\nRotate 180
+s	results_burn_touch_check	Kiểm tra Touch %s
+s	str_please_wait_ui_reset	Hãy chờ đặt lại mục hiển thị…
+s	text_send_check_data	Gửi dữ liệu
+s	on_connection	Đang kết nối...
+s	auto_cmd_error	Lỗi lệnh tự động
+s	str_dialog_message_shutdown_time	Tự tắt máy sau %d giây
+s	str_af_calibration_value_error	AF không có trạng thái
+s	item_title_surface_tof_flatness	Phần trăm STD không gian
+s	str_no_tof_module	Không có thiết bị TOF
+s	builin_test_info	Chế độ kiểm tra lão hóa
+s	toast_xlab_cail_environment_preparation	Đã chuẩn bị môi trường hiệu chuẩn
+s	toast_nfc_encrypted	Thiết bị đã được mã hóa! Đừng mã hóa lại
+s	is_ok	Xác nhận khôi phục
+s	str_ak_item_title	Kiểm tra hiệu chuẩn AK
+s	image_check	Hình kiểm tra khối quang
+s	item_title_point_tof_calibration	Hiệu chuẩn TOF điểm
+s	str_dialog_warning_btn_cancel	Hủy
+s	str_tip_calibration_successful_rotate_90	[Tính thành công]\nRotate 90
+s	str_dialog_pan_message	Đã hiệu chuẩn giá xoay, không cần kiểm tra lại
+s	item_nfc_check_success	Kiểm tra thành công
+s	item_check_touch	Kiểm tra Touch
+s	item_calc_wall_color	Hiệu chuẩn thích ứng màu tường tại nhà máy
+s	start_focus_app	Mở hiệu chỉnh lấy nét tự động
+s	item_title_surface_tof_energy_distribution	Phân bố cường độ tín hiệu
+s	dlp_off	Tắt khối quang
+s	str_textview_factory_update_logo	Cập nhật hoạt ảnh khởi động
+s	factory_fireware_time	Thời gian firmware xuất xưởng
+s	white_balance_fail	Hiệu chỉnh cân bằng trắng thất bại!
+s	item_content_hard_speed_test	Đang đo tốc độ ổ đĩa!
+s	item_light_strip_version	Version bo nguồn
+s	message_boot_error_no_exists	Không có devErrBootlog.xml
+s	musci_play_content_complete	Đã kiểm tra xong
+s	batter_check	Kiểm tra pin
+s	str_tip_calibration_failed_photo_exception	[Tính thất bại]\nCamera bất thường
+s	start_check	Bắt đầu hiệu chỉnh
+s	view_output_text_clear	Đã xóa! Đang chờ bắt đầu lão hóa
+s	item_content_hard_speed_success	Tốc độ ghi: %s, tốc độ đọc: %s
+s	results_burn_sys_temp	Kiểm tra nhiệt hệ thống %s
+s	keybox_verify_fail	Xác minh Widevine thất bại
+s	str_result_pass	Đạt
+s	update_mboot	Cập nhật mboot
+s	no_fit_image	Không có hình lệch nét tương ứng
+s	auto_key_test_wait	Đang chờ lệnh kiểm tra phím
+s	write_device_mac_success	Ghi vào thiết bị thành công
+s	dialog_burn_time	Bấm trái/phải để đặt thời gian lão hóa, đơn vị giờ
+s	str_tip_calibration_successful_rotate_270	[Tính thành công]\nRotate 270
+s	keybox_download_fail	Tải KeyBox thất bại
+s	monitor_max_step	Số bước tối đa của motor
+s	str_tip_calibration_failed_over_size	[Tính thất bại]\nHình vượt khung chữ nhật xanh, hãy chỉnh góc camera
+s	customid_not_adapter	customId đã quét không khớp với trước đó!
+s	item_title_surface_tof_standard_deviation	Kiểm tra độ chụm chín ô
+s	view_output_text_start_countdown	Bắt đầu lão hóa sau %d giây
+s	collection_log	Thu nhật ký lỗi
+s	auto_key_test_play_pause	Hãy bấm: phát/tạm dừng
+s	view_output_text_no_started	Chưa bắt đầu lão hóa, hãy bấm bắt đầu lão hóa!
+s	toast_nfc_no_devices	Không tìm thấy đầu đọc thẻ nào dùng được
+s	modelname_not_adapter	ModelName đã quét không khớp với trước đó!
+s	wifi_get	Đang lấy tín hiệu wifi
+s	str_dialog_tof_message	Đã hiệu chuẩn AF/TOF, hiệu chuẩn lại sẽ làm AK mất hiệu lực
+s	erase_eep_rom_complete	Đã xóa
+s	modelname_error	ModelName đã quét không đúng!
+s	bluetooth_addr	MAC remote Bluetooth
+s	str_calibration_calibration_failed_data_error	AF [tính thất bại]\nDữ liệu đọc được bằng 0
+s	item_title_wall_color	Thích ứng màu tường
+s	page_six_title	<Trang 6> Thông tin phần mềm và phần cứng, bấm trái/phải để lật trang
+s	verify_fail	Xác minh thất bại
+s	item_nfc_incorrect_pass_format	Định dạng mật khẩu đã nhập không đúng: %1$s
+s	fan_control_light_mode	Chế độ chứng nhận không chỉnh được tốc độ quạt
+s	auto_key_test_volume_down	Hãy bấm: giảm âm lượng
+s	pid_get_fail	Ghi mã vạch thất bại: %s
+s	musci_play_start	Phát tiếp
+s	no_support_function	Không hỗ trợ chức năng này
+s	calibrationTool	Công cụ chỉnh gương rung
+s	factory_script_test	Bật script kiểm tra FPGA TEST
+s	results_burn_time_first	Thời gian giai đoạn 1: %1$.2f, thực tế: %2$.2f
+s	bluetooth_mac	Địa chỉ MAC Bluetooth
+s	str_tof_af_item_title	Kiểm tra hiệu chuẩn TOF-AF
+s	str_dialog_radar_check	Đã kiểm tra radar, không cần kiểm tra lại
+s	str_FileEmupty	Đã dùng hết MAC, hãy cập nhật file MAC
+s	msg_first_stage_lumens_Level	Đang lão hóa chuyển mức độ sáng…
+s	str_tof_calibration_result_undo	Chưa làm TOF
+s	pid_verify	Kiểm tra mã vạch
+s	str_tof_i2_c_time_out	TOF I2C quá thời gian
+s	view_start_burn	Bắt đầu lão hóa

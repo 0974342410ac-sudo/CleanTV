@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="vn.cleantv.language">
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+    </privapp-permissions>
+</permissions>

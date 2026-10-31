@@ -5,6 +5,9 @@
 # Ban dich nam o values/ (mac dinh), thay chu tieng Trung o moi ngon ngu (chuoi da co ban vi cua ung dung van
 # dung ban vi do). Android 6 nap overlay tinh tu /vendor/overlay khi khoi dong; cai bang install-synsepalum-overlay.ps1.
 # Chay: powershell -ExecutionPolicy Bypass -File tools\xgimi-vi\build-synsepalum-overlay.ps1
+# -SettingsRaw adds that folder as res/raw of the Settings overlay and -OutDir writes elsewhere (the H2 firmware's menu).
+# -SettingsExtra is a table of more Settings text, which wins over the main table.
+param([string]$SettingsRaw, [string]$OutDir, [string]$SettingsExtra)
 $ErrorActionPreference = 'Stop'
 $here = $PSScriptRoot
 $root = Split-Path -Parent (Split-Path -Parent $here)
@@ -33,10 +36,18 @@ function Build-Overlay($o) {
     $work = Join-Path $env:TEMP "synsepalum-overlay-$($o.Package)"
     if (Test-Path $work) { Remove-Item $work -Recurse -Force }
     New-Item -ItemType Directory -Force "$work\res\values" | Out-Null
+    if ($SettingsRaw -and $o.Target -eq 'com.android.newsettings') { Copy-Item $SettingsRaw "$work\res\raw" -Recurse }
     $strings = New-Object System.Text.StringBuilder
     $arrays = New-Object System.Text.StringBuilder
     $n = 0
-    foreach ($line in [IO.File]::ReadAllLines((Join-Path $here $o.Tsv), [Text.Encoding]::UTF8)) {
+    $lines = @([IO.File]::ReadAllLines((Join-Path $here $o.Tsv), [Text.Encoding]::UTF8))
+    $extra = @{}
+    if ($SettingsExtra -and $o.Target -eq 'com.android.newsettings') {
+        $more = @([IO.File]::ReadAllLines($SettingsExtra, [Text.Encoding]::UTF8) | Where-Object { $_ -and -not $_.StartsWith('#') })
+        foreach ($l in $more) { $extra[$l.Split("`t")[1]] = 1 }
+        $lines = @($lines | Where-Object { -not $extra.ContainsKey(($_ + "`t`t").Split("`t")[1]) }) + $more
+    }
+    foreach ($line in $lines) {
         if (-not $line -or $line.StartsWith('#')) { continue }
         $p = $line.Split("`t")
         if ($p.Count -lt 3) { continue }
@@ -65,7 +76,7 @@ function Build-Overlay($o) {
     [IO.File]::WriteAllText("$work\AndroidManifest.xml", $manifest, $utf8)
     & "$bt\aapt.exe" package -f -M "$work\AndroidManifest.xml" -S "$work\res" -I $androidJar -F "$work\unsigned.apk"
     if ($LASTEXITCODE -ne 0) { throw "aapt package that bai ($($o.Out))" }
-    $out = Join-Path $root "dist\$($o.Out)"
+    $out = if ($OutDir) { Join-Path $OutDir $o.Out } else { Join-Path $root "dist\$($o.Out)" }
     New-Item -ItemType Directory -Force (Split-Path $out) | Out-Null
     & "$bt\zipalign.exe" -f 4 "$work\unsigned.apk" "$work\aligned.apk"
     & "$bt\apksigner.bat" sign --ks "$env:USERPROFILE\.android\debug.keystore" --ks-pass pass:android --key-pass pass:android `

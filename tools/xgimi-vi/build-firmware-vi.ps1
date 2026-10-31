@@ -72,8 +72,81 @@ Run-Tool unpack $Bin $Work system vendor
 Copy-Item system.img system-new.img -Force
 Copy-Item vendor.img vendor-new.img -Force
 
+Write-Host '== Language row in the Settings menu'
+# Settings builds its pages from res/raw/settings_<product>.json by ro.xgimi.product.name. Most products (Product_xiaobai
+# here) leave out the language row, so an overlay adds it, on top of VietHoa-com.android.newsettings (higher priority).
+$bt = 'E:\buildtools\android-sdk\build-tools\34.0.0'
+$androidJar = 'E:\buildtools\android-sdk\platforms\android-34\android.jar'
+$jdk = 'E:\buildtools\jdk\jdk-17.0.20.1+1\bin'
+$env:JAVA_HOME = 'E:\buildtools\jdk\jdk-17.0.20.1+1'
+$langSrc = Join-Path $here 'm7642-language'
+$utf8 = New-Object Text.UTF8Encoding $false
+Remove-Item lang -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory lang, lang\ov, lang\ov\res, lang\ov\res\raw, lang\ov\res\values, lang\app | Out-Null
+cmd /c 'debugfs -R "dump /system/priv-app/release_838_newsettings/release_838_newsettings.apk lang\ns.apk" system.img 2>nul'
+$map = @{}
+$cur = ''
+foreach ($x in (& "$bt\aapt2.exe" dump resources lang\ns.apk 2>$null)) {
+    if ($x -match '^\s*resource 0x[0-9a-f]+ raw/(settings_product_\S+)') { $cur = $Matches[1] }
+    elseif ($x -match '^\s*resource ') { $cur = '' }
+    elseif ($cur -and $x -match '\(file\)\s+(\S+)') { $map[$cur] = $Matches[1] }
+}
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+$zip = [IO.Compression.ZipFile]::OpenRead("$Work\lang\ns.apk")
+$added = 0
+foreach ($name in ($map.Keys | Sort-Object)) {
+    $r = New-Object IO.StreamReader($zip.GetEntry($map[$name]).Open(), [Text.Encoding]::UTF8)
+    $t = $r.ReadToEnd()
+    $r.Close()
+    if ($t -match '"language"\s*[,\]]') { continue }
+    $sys = [regex]::Match($t, '"system"\s*:\s*\[([^\]]*)\]')
+    if (-not $sys.Success) { Write-Host "  no system page in $name"; continue }
+    # Before the legal rows when there are any, as the products with the row have it
+    $list = $sys.Groups[1].Value
+    if ($list -match '"law_info_title"') { $new = $list -replace '"law_info_title"', '"language", "setting_line", "law_info_title"' }
+    elseif ($list.Trim()) { $new = $list.TrimEnd() + ', "setting_line", "language"' }
+    else { $new = '"language"' }
+    $t = $t.Substring(0, $sys.Groups[1].Index) + $new + $t.Substring($sys.Groups[1].Index + $list.Length)
+    # The row opens the page named "language"
+    $t = [regex]::Replace($t, '^\s*\[', { param($m) '[ { "language": ["language_back", "language_chinese", "language_english"] },' }, 'None', [TimeSpan]::FromSeconds(5))
+    $check = $t | ConvertFrom-Json
+    if (-not (@($check | Where-Object { $_.language }).Count -eq 1)) { throw "language page not added in $name" }
+    if (-not (@(($check | Where-Object { $_.system }).system) -contains 'language')) { throw "language row not added in $name" }
+    [IO.File]::WriteAllText("$Work\lang\ov\res\raw\$name.json", $t, $utf8)
+    $added++
+}
+$zip.Dispose()
+Remove-Item lang\ns.apk
+if (-not (Test-Path 'lang\ov\res\raw\settings_product_xiaobai.json')) { throw 'no language row for this firmware''s product' }
+Write-Host "  language row added for $added products"
+foreach ($v in 'values', 'values-vi', 'values-vi-rVN') {
+    New-Item -ItemType Directory -Force "$Work\lang\ov\res\$v" | Out-Null
+    [IO.File]::WriteAllText("$Work\lang\ov\res\$v\strings.xml", "<?xml version=`"1.0`" encoding=`"utf-8`"?>`n<resources>`n    <string name=`"language_text`">Ng&#244;n ng&#7919;</string>`n    <string name=`"language_chinese_text`">Ti&#7871;ng Vi&#7879;t</string>`n</resources>`n", $utf8)
+}
+[IO.File]::WriteAllText("$Work\lang\ov\AndroidManifest.xml", "<?xml version=`"1.0`" encoding=`"utf-8`"?>`n<manifest xmlns:android=`"http://schemas.android.com/apk/res/android`" package=`"vn.cleantv.overlay.ngonngu`" android:versionCode=`"1`" android:versionName=`"1.0`">`n    <overlay android:targetPackage=`"com.android.newsettings`" android:priority=`"2`" android:isStatic=`"true`" />`n    <application android:hasCode=`"false`" />`n</manifest>`n", $utf8)
+& "$bt\aapt.exe" package -f -M lang\ov\AndroidManifest.xml -S lang\ov\res -I $androidJar -F lang\ov.apk
+if ($LASTEXITCODE -ne 0) { throw 'aapt package failed (language overlay)' }
+& "$bt\zipalign.exe" -f 4 lang\ov.apk lang\ov2.apk
+& "$bt\apksigner.bat" sign --ks "$env:USERPROFILE\.android\debug.keystore" --ks-pass pass:android --key-pass pass:android --min-sdk-version 26 --out lang\VietHoaNgonNgu-com.android.newsettings.apk lang\ov2.apk
+if ($LASTEXITCODE -ne 0) { throw 'signing the language overlay failed' }
+
+Write-Host '== Chinese to Vietnamese switch'
+& "$jdk\javac.exe" -encoding UTF-8 -nowarn -Xlint:-options -source 8 -target 8 -bootclasspath $androidJar -d lang\app\classes (Join-Path $langSrc 'Doi.java')
+if ($LASTEXITCODE -ne 0) { throw 'javac failed' }
+$classes = @(Get-ChildItem lang\app\classes -Recurse -Filter *.class | ForEach-Object { $_.FullName })
+& "$bt\d8.bat" --min-api 26 --lib $androidJar --output lang\app @classes
+if ($LASTEXITCODE -ne 0) { throw 'd8 failed' }
+& "$bt\aapt.exe" package -f -M (Join-Path $langSrc 'AndroidManifest.xml') -I $androidJar -F lang\app\unsigned.apk
+if ($LASTEXITCODE -ne 0) { throw 'aapt package failed (language switch)' }
+Push-Location lang\app
+& "$bt\aapt.exe" add unsigned.apk classes.dex | Out-Null
+Pop-Location
+& "$bt\zipalign.exe" -f 4 lang\app\unsigned.apk lang\app\aligned.apk
+& "$bt\apksigner.bat" sign --ks "$env:USERPROFILE\.android\debug.keystore" --ks-pass pass:android --key-pass pass:android --min-sdk-version 26 --out lang\XgimiLanguage.apk lang\app\aligned.apk
+if ($LASTEXITCODE -ne 0) { throw 'signing the language switch failed' }
+
 Write-Host '== Adding overlays to vendor'
-$apks = Get-ChildItem $overlays -Filter *.apk
+$apks = @(Get-ChildItem $overlays -Filter *.apk) + @(Get-Item 'lang\VietHoaNgonNgu-com.android.newsettings.apk')
 Remove-Item overlays-work -Recurse -Force -ErrorAction SilentlyContinue
 New-Item -ItemType Directory overlays-work | Out-Null
 $cmd = New-Object System.Text.StringBuilder
@@ -104,6 +177,19 @@ Set-Props 'vendor-new.img' '/' @{
 }
 Set-Props 'system-new.img' '/system' @{ 'ro.product.locale' = 'vi-VN' }
 
+Write-Host '== Adding the language switch to system'
+$sysLabel = ([regex]::Match(((cmd /c 'debugfs -R "stat /system/priv-app/release_838_newsettings/release_838_newsettings.apk" system-new.img 2>nul') -join ' '), 'security\.selinux \(\d+\) = "([^"\\]+)')).Groups[1].Value
+$etcLabel = ([regex]::Match(((cmd /c 'debugfs -R "stat /system/etc/permissions/platform.xml" system-new.img 2>nul') -join ' '), 'security\.selinux \(\d+\) = "([^"\\]+)')).Groups[1].Value
+if (-not $sysLabel -or -not $etcLabel) { throw 'no SELinux label for the language switch' }
+Copy-Item (Join-Path $langSrc 'privapp-permissions-vn.cleantv.language.xml') 'lang\privapp.xml'
+$c = New-Object System.Text.StringBuilder
+foreach ($line in @('mkdir /system/priv-app/XgimiLanguage', 'sif /system/priv-app/XgimiLanguage mode 040755', 'sif /system/priv-app/XgimiLanguage uid 0', 'sif /system/priv-app/XgimiLanguage gid 0',
+        "ea_set /system/priv-app/XgimiLanguage security.selinux $sysLabel", 'cd /system/priv-app/XgimiLanguage', 'write lang/XgimiLanguage.apk XgimiLanguage.apk',
+        'sif XgimiLanguage.apk mode 0100644', 'sif XgimiLanguage.apk uid 0', 'sif XgimiLanguage.apk gid 0', "ea_set XgimiLanguage.apk security.selinux $sysLabel",
+        'cd /system/etc/permissions', 'write lang/privapp.xml privapp-permissions-vn.cleantv.language.xml', 'sif privapp-permissions-vn.cleantv.language.xml mode 0100644',
+        'sif privapp-permissions-vn.cleantv.language.xml uid 0', 'sif privapp-permissions-vn.cleantv.language.xml gid 0', "ea_set privapp-permissions-vn.cleantv.language.xml security.selinux $etcLabel")) { [void]$c.AppendLine($line) }
+Debugfs 'system-new.img' $c.ToString()
+
 Write-Host '== Checking the changed file systems (read only)'
 Check-Fs 'vendor-new.img'
 Check-Fs 'system-new.img'
@@ -125,6 +211,6 @@ foreach ($n in 'system', 'vendor') {
     if ((Get-FileHash "check\$n.img").Hash -ne (Get-FileHash "$n-new.img").Hash) { throw "$n from the new bin differs from the built image" }
     Write-Host "$n rebuilt from the new bin matches the built image"
 }
-Remove-Item check -Recurse -Force
+Remove-Item check, lang -Recurse -Force
 Copy-Item (Join-Path $here 'HUONG-DAN-FIRMWARE-VI.txt') $OutDir -Force
 Write-Host "== Done: $out"

@@ -14,6 +14,7 @@ FLASH SẼ LÀM GÌ
 - Xoá toàn bộ dữ liệu trên máy: ứng dụng đã cài, tài khoản, Wi-Fi, cài đặt. Hãy ghi lại những gì cần giữ trước khi làm.
 - Ghi lại toàn bộ firmware như một lần nâng cấp USB chính hãng, kèm các file tiếng Việt trong /vendor/overlay.
 - Đặt mặc định tiếng Việt và giờ Việt Nam.
+- Thêm mục Ngôn ngữ vào Cài đặt, nhóm Hệ thống, gồm Tiếng Việt và English. Bản dịch nằm trong phần tiếng Việt của từng ứng dụng.
 - Tuyệt đối không rút điện trong lúc flash.
 
 CÁCH FLASH

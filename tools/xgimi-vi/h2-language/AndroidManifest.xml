@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vn.cleantv.language"
+    android:versionCode="4"
+    android:versionName="1.3">
+
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="23" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <application android:label="Ngôn ngữ" android:allowBackup="false">
+        <uses-library android:name="com.mstar.android" android:required="false" />
+        <activity
+            android:name=".NgonNgu"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+            <!-- The Settings row's action; above XGIMI's own page, which has no priority set -->
+            <intent-filter android:priority="100">
+                <action android:name="com.xgimi.settings.language" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DieuKhienHdmi"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="vn.cleantv.hdmi_cec" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -12,6 +12,9 @@ Dựa trên firmware V1.3.15 Global (Android 6.0) của XGIMI. Chỉ phân vùng
 - Tiếng Việt cho Cài đặt XGIMI (368 mục), thanh cài đặt nhanh (120 mục) và menu tắt máy (51 mục).
 - Giao diện mới: launcher CleanTV làm màn hình chính. Nút Home mở launcher mới; màn hình XGIMI vẫn còn ở phía sau.
 - Mặc định tiếng Việt, giờ Việt Nam.
+- Mục mới Cài đặt > Chung > Ngôn ngữ, chỉ có Tiếng Việt và English (bỏ tiếng Trung và các ngôn ngữ khác).
+- Mục mới Cài đặt > Chung > Điều khiển HDMI (CEC): bật/tắt CEC, ARC, tắt thiết bị HDMI khi tắt máy, âm lượng dàn loa. Chức năng thử
+  nghiệm: thiết bị HDMI cũng phải bật CEC. Máy này không có eARC.
 Vẫn là Android 6, không nâng được lên Android 8.
 
 CÁCH FLASH
@@ -21,6 +24,10 @@ CÁCH FLASH
    cập nhật (cách vào chế độ cập nhật có thể khác theo đời máy: làm theo cách bạn đã dùng để flash firmware gốc).
 4. Chờ máy tự khởi động lại. Lần đầu có thể mất vài phút.
 5. Bỏ USB. Bấm Home nếu chưa thấy màn hình mới.
+
+LẦN ĐẦU BẬT MÁY: LÀM XONG TRÌNH THIẾT LẬP CỦA XGIMI
+Sau khi flash, máy hiện trình thiết lập ban đầu. Hãy đi hết các bước. Trước khi xong bước này, hệ thống XGIMI chặn phím menu cài đặt
+nhanh trên remote và chưa mở màn hình mới. Xong thiết lập thì màn hình mới tự mở và phím hoạt động.
 
 CẦN KIỂM TRA SAU KHI FLASH
 - Trình thiết lập lần đầu của XGIMI không có tiếng Việt, có thể hiện tiếng Anh hoặc tiếng Trung. Nếu trong đó có chọn ngôn ngữ, đừng

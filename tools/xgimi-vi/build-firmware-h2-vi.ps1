@@ -52,9 +52,18 @@ if (-not (Test-Path $launcher)) { throw 'No launcher: run updater\build-usb.ps1 
 New-Item -ItemType Directory -Force $Work, $OutDir | Out-Null
 Set-Location $Work
 
-Write-Host '== Overlays'
-& powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $here 'build-synsepalum-overlay.ps1') | ForEach-Object { Write-Host "  $_" }
-if ($LASTEXITCODE -ne 0) { throw 'overlay build failed' }
+# Puts the HDMI row after the language row of a menu file that already has one
+function Add-MenuRow([string]$source, [string]$target) {
+    $text = [IO.File]::ReadAllText($source, [Text.Encoding]::UTF8)
+    $at = $text.IndexOf('"com.xgimi.settings.language"')
+    if ($at -lt 0 -or $text.Contains('vn.cleantv.hdmi_cec')) { throw "$source is not as expected" }
+    $end = $text.IndexOf('}', $at)
+    $hdmi = ",`n        {`n          `"note`":`"hdmi cec`",`n          `"resIds`": `"sound_set_input_default,sound_set_input_select`",`n          `"nameIds`": `"adb_state_open`",`n          `"tag`": `"vn.cleantv.hdmi_cec`"`n        }"
+    $menu = $text.Substring(0, $end + 1) + $hdmi + $text.Substring($end + 1)
+    $tags = @(($menu | ConvertFrom-Json).mainItemDatas | ForEach-Object { $_.items } | ForEach-Object { $_.tag })
+    if (-not ($tags -contains 'vn.cleantv.hdmi_cec')) { throw "HDMI row not in the new menu of $source" }
+    [IO.File]::WriteAllText($target, $menu, (New-Object Text.UTF8Encoding $false))
+}
 
 Write-Host '== Original firmware'
 Run-Vi footer $Bin
@@ -62,6 +71,66 @@ Run-Lzo unpack $Bin system system.img
 $prop = cmd /c 'debugfs -R "cat /build.prop" system.img 2>nul'
 if (-not ($prop -match '^ro\.build\.display\.id=.* V1\.3\.15 ')) { throw 'This bin is not V1.3.15: the translations are made for that version' }
 if (-not ($prop -contains 'ro.product.device=synsepalum_YN')) { throw 'This bin is not for synsepalum_YN' }
+
+Write-Host '== Language row in the Settings menu'
+# A flashed H2 reads its menu from /etc/xgimiconfig/settings_synsepalum_Y.ini through XgimiService (see Add-MenuRow below).
+# res/raw/settings.ini, with no language row, is what DataLoader falls back to, so both get the rows.
+# XGIMI's language page has no Vietnamese, so the row opens h2-language, by the same action.
+Remove-Item raw, overlays, lang -Recurse -Force -ErrorAction SilentlyContinue
+New-Item -ItemType Directory raw, overlays, lang | Out-Null
+cmd /c 'debugfs -R "dump /app/setting/setting.apk setting.apk" system.img 2>nul'
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+$zip = [IO.Compression.ZipFile]::OpenRead("$Work\setting.apk")
+$entry = $zip.GetEntry('res/raw/settings.ini')
+$reader = New-Object IO.StreamReader($entry.Open(), [Text.Encoding]::UTF8)
+$ini = $reader.ReadToEnd()
+$reader.Close()
+$zip.Dispose()
+Remove-Item setting.apk
+$row = @'
+"items": [
+        {
+          "note":"language",
+          "resIds": "general_custombt_default,general_set_device_name_select",
+          "nameIds": "language",
+          "tag": "com.xgimi.settings.language"
+        },
+        {
+          "note":"hdmi cec",
+          "resIds": "sound_set_input_default,sound_set_input_select",
+          "nameIds": "adb_state_open",
+          "tag": "vn.cleantv.hdmi_cec"
+        },
+'@
+$pattern = '("titleId":\s*"head_general_setting_text",\s*)"items":\s*\['
+if ($ini -match 'com\.xgimi\.settings\.language' -or $ini -notmatch $pattern) { throw 'settings.ini is not as expected' }
+$new = [regex]::Replace($ini, $pattern, { param($m) $m.Groups[1].Value + $row.Replace("`r`n", "`n") })
+$check = $new | ConvertFrom-Json
+if (-not (@($check.mainItemDatas | ForEach-Object { $_.items } | Where-Object { $_.tag -eq 'com.xgimi.settings.language' }).Count -eq 1)) { throw 'language row not in the new menu' }
+[IO.File]::WriteAllText("$Work\raw\settings.ini", $new, (New-Object Text.UTF8Encoding $false))
+
+Write-Host '== Language page'
+$bt = 'E:\buildtools\android-sdk\build-tools\34.0.0'
+$androidJar = 'E:\buildtools\android-sdk\platforms\android-34\android.jar'
+$jdk = 'E:\buildtools\jdk\jdk-17.0.20.1+1\bin'
+$langSrc = Join-Path $here 'h2-language'
+& "$jdk\javac.exe" -encoding UTF-8 -nowarn -Xlint:-options -source 8 -target 8 -bootclasspath $androidJar -d lang\classes (Join-Path $langSrc 'NgonNgu.java') (Join-Path $langSrc 'DieuKhienHdmi.java')
+if ($LASTEXITCODE -ne 0) { throw 'javac failed' }
+$classes = @(Get-ChildItem lang\classes -Recurse -Filter *.class | ForEach-Object { $_.FullName })
+& "$bt\d8.bat" --min-api 23 --lib $androidJar --output lang @classes
+if ($LASTEXITCODE -ne 0) { throw 'd8 failed' }
+& "$bt\aapt.exe" package -f -M (Join-Path $langSrc 'AndroidManifest.xml') -I $androidJar -F lang\unsigned.apk
+if ($LASTEXITCODE -ne 0) { throw 'aapt failed' }
+Push-Location lang
+& "$bt\aapt.exe" add unsigned.apk classes.dex | Out-Null
+Pop-Location
+& "$bt\zipalign.exe" -f 4 lang\unsigned.apk lang\aligned.apk
+& "$bt\apksigner.bat" sign --ks "$env:USERPROFILE\.android\debug.keystore" --ks-pass pass:android --key-pass pass:android --min-sdk-version 23 --out lang\XgimiLanguage.apk lang\aligned.apk
+if ($LASTEXITCODE -ne 0) { throw 'signing the language page failed' }
+
+Write-Host '== Overlays'
+& powershell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $here 'build-synsepalum-overlay.ps1') -SettingsRaw "$Work\raw" -OutDir "$Work\overlays" -SettingsExtra (Join-Path $langSrc 'settings-them.tsv') | ForEach-Object { Write-Host "  $_" }
+if ($LASTEXITCODE -ne 0) { throw 'overlay build failed' }
 
 Write-Host '== Adding the Vietnamese overlays and the launcher'
 Copy-Item system.img system-new.img -Force
@@ -73,13 +142,24 @@ $c = New-Object System.Text.StringBuilder
 Add-Dir $c '/vendor/overlay' '2000'
 [void]$c.AppendLine('cd /vendor/overlay')
 foreach ($k in $map.Keys) {
-    Copy-Item (Join-Path $root "dist\$k") "add\$($map[$k])"
+    Copy-Item "overlays\$k" "add\$($map[$k])"
     Add-File $c "add/$($map[$k])" $map[$k] '2000'
 }
 Add-Dir $c '/priv-app/TvHome'
 [void]$c.AppendLine('cd /priv-app/TvHome')
 Copy-Item $launcher 'add\TvHome.apk'
 Add-File $c 'add/TvHome.apk' 'TvHome.apk'
+Add-Dir $c '/priv-app/XgimiLanguage'
+[void]$c.AppendLine('cd /priv-app/XgimiLanguage')
+Copy-Item 'lang\XgimiLanguage.apk' 'add\XgimiLanguage.apk'
+Add-File $c 'add/XgimiLanguage.apk' 'XgimiLanguage.apk'
+[void]$c.AppendLine('cd /etc/xgimiconfig')
+foreach ($name in 'settings_synsepalum_Y.ini', 'settings.ini') {
+    cmd /c "debugfs -R `"dump /etc/xgimiconfig/$name add/$name.old`" system-new.img 2>nul" | Out-Null
+    Add-MenuRow "$Work\add\$name.old" "$Work\add\$name"
+    [void]$c.AppendLine("rm $name")
+    Add-File $c "add/$name" $name
+}
 Debugfs 'system-new.img' $c.ToString()
 
 Write-Host '== Vietnamese and Vietnam time as the defaults'
@@ -121,7 +201,7 @@ Write-Host '== Checking the new bin'
 Run-Vi footer $out
 Run-Lzo compare $Bin $out
 Run-Lzo verify $out system system-new.img
-Remove-Item add -Recurse -Force
+Remove-Item add, raw, overlays, lang -Recurse -Force
 Remove-Item prop.old, prop.new, system-new.img, system.img -ErrorAction SilentlyContinue
 Copy-Item (Join-Path $here 'HUONG-DAN-FIRMWARE-H2.txt') $OutDir -Force
 Write-Host "== Done: $out"

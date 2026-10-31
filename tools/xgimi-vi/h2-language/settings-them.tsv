@@ -1,0 +1,2 @@
+# Chu them cho menu Cai dat cua firmware H2. Overlay khong them duoc ten chuoi moi, nen dung ten khong noi nao trong ung dung dung toi.
+s	adb_state_open	Điều khiển HDMI (CEC)

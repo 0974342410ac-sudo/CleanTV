@@ -19,7 +19,10 @@ $dev = @{
     rs10    = @{ Strings = 'rs10-apps-chuoi.tsv', 'h6-apps-chuoi.tsv', 'plus-apps-chuoi.tsv', 'z7-apps-chuoi.tsv', 'h6-full-chuoi.tsv'; Arrays = 'h6-full-mang.tsv'; Sdk = 28 }
     ironman = @{ Strings = 'ironman-apps-chuoi.tsv'; Sdk = 26 }
 }[$Device]
-$outDir = Join-Path $root "dist\$Device-vi$(if ($Static) { '-static' })"
+# In a firmware (-Static, the H6/M1 bin) only that firmware's own text counts: the first table with a name decides its
+# translation, and the same name in another firmware can mean something else or take another format (%ds and %ss)
+if ($Static) { $dev.Strings = 'h6-apps-chuoi.tsv', 'h6-full-chuoi.tsv' }
+$outDir =Join-Path $root "dist\$Device-vi$(if ($Static) { '-static' })"
 
 # Khong dich: ban phim Sogou (dung Gboard), menu nha may, giong doc, thu thap du lieu, quang cao, dich vu ben thu ba
 $skip = 'com.sohu.inputmethod.sogou.tv', 'com.xgimi.minitvfactory', 'mediatek.factorymenu.ui', 'com.xgimi.duertts',
@@ -109,6 +112,25 @@ foreach ($file in @($dev.Arrays | Where-Object { $_ })) {
     }
 }
 
+# Factory menu, firmware only: translated by name, since its text is not in the tables above
+if ($Static) {
+    $factory = 'com.xgimi.minitvfactory'
+    if (-not $byPkg.Contains($factory)) { $byPkg[$factory] = New-Object System.Collections.Generic.List[object] }
+    $sb = New-Object System.Text.StringBuilder
+    foreach ($line in [IO.File]::ReadAllLines((Join-Path $here 'h6-factory-vi.tsv'), [Text.Encoding]::UTF8)) {
+        if (-not $line -or $line.StartsWith('#')) { continue }
+        $p = $line.Split("`t")
+        if ($p[0] -eq 's') { $byPkg[$factory].Add(@($p[1], $p[2])) }
+        elseif ($p[0] -eq 'a') {
+            [void]$sb.AppendLine("    <string-array name=`"$($p[1])`">")
+            foreach ($item in ($p[2] -split ' \| ')) { [void]$sb.AppendLine("        <item>$(Escape $item)</item>") }
+            [void]$sb.AppendLine('    </string-array>')
+            $arrayCount++
+        }
+    }
+    $arrayXml[$factory] = $sb
+}
+
 if (Test-Path $outDir) { Remove-Item $outDir -Recurse -Force }
 New-Item -ItemType Directory -Force $outDir | Out-Null
 $utf8 = New-Object Text.UTF8Encoding $false
@@ -131,7 +153,8 @@ foreach ($target in $byPkg.Keys) {
     }
     if ($arrayXml.ContainsKey($target)) { [void]$sb.Append($arrayXml[$target].ToString()) }
     $xml = "<?xml version=`"1.0`" encoding=`"utf-8`"?>`n<resources>`n$sb</resources>`n"
-    foreach ($v in 'values', 'values-zh-rCN') {
+    # values-vi too: an app's own, partial Vietnamese would otherwise win over the default here when Vietnamese is chosen
+    foreach ($v in 'values', 'values-zh-rCN', 'values-vi', 'values-vi-rVN') {
         New-Item -ItemType Directory -Force "$work\res\$v" | Out-Null
         [IO.File]::WriteAllText("$work\res\$v\strings.xml", $xml, $utf8)
     }
