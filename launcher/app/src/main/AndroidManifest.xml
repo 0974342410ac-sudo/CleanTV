@@ -31,6 +31,9 @@
     <!-- "Gỡ ứng dụng" (the Settings menu): Android 9+ only shows the system uninstall
          prompt (ACTION_DELETE) to apps that declare this; the user still confirms every uninstall there. -->
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <!-- HdmiCecVolume: an HDMI device's volume keys, which only show in tvos's log. Held as a system priv-app. -->
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
 
     <!-- Android 11+ package visibility: lets the launcher list the TV apps it shows as tiles, and the
          apps that declare a module card (docs/specs/card.md). -->

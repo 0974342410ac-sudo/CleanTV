@@ -35,6 +35,10 @@ public class HomeKeyService extends AccessibilityService {
     private String redirectHome = "";
     /** home_key: Home opens this launcher (no chooser), with no window redirect. */
     private boolean homeKey;
+    /** The window in front, for HdmiCecKey. */
+    private String frontWindow = "";
+    private boolean cecOkSent;
+    private HdmiCecVolume cecVolume;
 
     @Override
     protected void onServiceConnected() {
@@ -58,6 +62,16 @@ public class HomeKeyService extends AccessibilityService {
 
     @Override
     protected boolean onKeyEvent(KeyEvent event) {
+        if (event.getKeyCode() == KeyEvent.KEYCODE_DPAD_CENTER && HdmiCecKey.isPlayer(frontWindow)) {
+            boolean sent = cecOkSent;
+            if (event.getAction() == KeyEvent.ACTION_DOWN) {
+                if (event.getRepeatCount() == 0) cecOkSent = HdmiCecKey.sendOk();
+                return cecOkSent;
+            }
+            if (sent) HdmiCecKey.endOk();
+            cecOkSent = false;
+            return sent;
+        }
         // The stock launcher handled the remote's Settings button; with it disabled the button does nothing.
         if (isSettingsKey(event)) {
             if (event.getAction() == KeyEvent.ACTION_UP && !event.isCanceled()) {
@@ -76,7 +90,7 @@ public class HomeKeyService extends AccessibilityService {
         }
         boolean home = event.getKeyCode() == KeyEvent.KEYCODE_ALL_APPS
                 || event.getKeyCode() == KeyEvent.KEYCODE_HOME && (!redirectHome.isEmpty() || homeKey);
-        if (!home) return false;
+        if (!home || Config.setupWizardPending(this)) return false;
         if (event.getAction() == KeyEvent.ACTION_UP && !event.isCanceled()) openHome();
         return true;
     }
@@ -91,11 +105,28 @@ public class HomeKeyService extends AccessibilityService {
 
     @Override
     public void onAccessibilityEvent(AccessibilityEvent event) {
+        // The volume bar opens no window of its own for keys
+        if (event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED
+                && !"com.android.systemui".equals(String.valueOf(event.getPackageName()))) {
+            frontWindow = String.valueOf(event.getClassName());
+            if (HdmiCecKey.isPlayer(frontWindow)) {
+                if (cecVolume == null) cecVolume = new HdmiCecVolume(this);
+                cecVolume.start();
+            } else if (cecVolume != null) {
+                cecVolume.stop();
+            }
+        }
         // The stock home came up anyway (Back to home, boot): this launcher goes over it
         if (!redirectHome.isEmpty() && event.getEventType() == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED
                 && redirectHome.equals(String.valueOf(event.getPackageName()))) {
             openHome();
         }
+    }
+
+    @Override
+    public void onDestroy() {
+        if (cecVolume != null) cecVolume.stop();
+        super.onDestroy();
     }
 
     @Override

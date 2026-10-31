@@ -60,10 +60,15 @@ public final class QuickSettingsActivity extends Activity {
         if (status != 0) hint.setText(status);
         else hint.setVisibility(View.GONE);
         row.setOnClickListener(v -> {
-            try {
-                startActivity(target.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-            } catch (ActivityNotFoundException e) {
-                Toast.makeText(this, R.string.not_available, Toast.LENGTH_SHORT).show();
+            // A system screen this firmware lacks (XGIMI has none of them) opens the nearest thing, its own settings panel
+            if (target.getComponent() == null) {
+                SystemSettings.open(this, target.getAction());
+            } else {
+                try {
+                    startActivity(target.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+                } catch (ActivityNotFoundException e) {
+                    Toast.makeText(this, R.string.not_available, Toast.LENGTH_SHORT).show();
+                }
             }
             finish();
         });

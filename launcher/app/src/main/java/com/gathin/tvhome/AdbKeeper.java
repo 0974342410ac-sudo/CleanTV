@@ -33,6 +33,8 @@ public final class AdbKeeper extends BroadcastReceiver {
         // even before HomeKeyService is enabled (on the Android 6 XGIMI only ADB can enable it)
         if (Config.takesHomeKey(context)) {
             ensureHomeKeyService(context);
+            // Not over XGIMI's setup wizard: it is a Home of its own on a freshly flashed unit (see setupWizardPending)
+            if (Config.setupWizardPending(context)) return;
             Intent home = new Intent(context, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             try {
                 context.startActivity(home);

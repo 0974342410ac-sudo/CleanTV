@@ -138,6 +138,21 @@ final class Config {
         return !homeRedirect(ctx).isEmpty() || homeKey(ctx);
     }
 
+    /**
+     * XGIMI's first-boot setup wizard has not finished (it disables its BootActivity when it does). Until then the Android 6
+     * firmware ignores the remote's quick settings key (xgimi_bootwizard_environment, PhoneWindowManager), so nothing may
+     * cover the wizard, or it never ends. False on a TV without it.
+     */
+    static boolean setupWizardPending(Context ctx) {
+        try {
+            return ctx.getPackageManager().getComponentEnabledSetting(new android.content.ComponentName(
+                    "com.xgimi.bootwizard", "com.xgimi.bootwizard.activity.BootActivity"))
+                    != android.content.pm.PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
+        } catch (IllegalArgumentException e) {
+            return false;
+        }
+    }
+
     private static boolean installed(Context ctx, String pkg) {
         try {
             ctx.getPackageManager().getApplicationInfo(pkg, 0);
