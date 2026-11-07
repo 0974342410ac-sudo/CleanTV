@@ -1,0 +1,34 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.gathin.dateweather'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.gathin.dateweather'
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            // Sideloaded over ADB like the launcher; keep classes (tvprovider/WorkManager use reflection)
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.tvprovider:tvprovider:1.0.0'
+    implementation 'androidx.work:work-runtime:2.9.1'
+}

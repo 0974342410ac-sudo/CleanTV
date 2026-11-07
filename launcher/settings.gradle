@@ -16,3 +16,4 @@ rootProject.name = "tvhome"
 include ':app'
 include ':updater'
 include ':karaoke'
+include ':dateweather'
