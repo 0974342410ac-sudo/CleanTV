@@ -90,6 +90,7 @@ public class ChannelWorker extends Worker {
                 .build();
 
         long channelId;
+        List<Long> oldProgramIds = new ArrayList<>();
         if (mine.isEmpty()) {
             channelId = helper.publishChannel(channel);
             TvContractCompat.requestChannelBrowsable(ctx, channelId);
@@ -100,13 +101,14 @@ public class ChannelWorker extends Worker {
                 ctx.getContentResolver().delete(TvContractCompat.buildChannelUri(mine.get(i)), null, null);
             }
             helper.updatePreviewChannel(channelId, channel);
-            // remove old cards before re-adding fresh ones
+            // remember the current cards; they are removed AFTER the fresh ones are added,
+            // so the channel is never momentarily empty (which could unpin/hide it).
             Uri progs = TvContractCompat.buildPreviewProgramsUriForChannel(channelId);
             try (android.database.Cursor cur = ctx.getContentResolver().query(
                     progs, new String[]{TvContractCompat.PreviewPrograms._ID}, null, null, null)) {
                 if (cur != null) {
                     while (cur.moveToNext()) {
-                        helper.deletePreviewProgram(cur.getLong(0));
+                        oldProgramIds.add(cur.getLong(0));
                     }
                 }
             }
@@ -129,6 +131,11 @@ public class ChannelWorker extends Worker {
                     .setWeight(weight--)
                     .build();
             helper.publishPreviewProgram(program);
+        }
+
+        // now that fresh cards are in, remove the previous ones
+        for (long oldId : oldProgramIds) {
+            helper.deletePreviewProgram(oldId);
         }
     }
 
